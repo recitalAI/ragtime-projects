@@ -30,7 +30,7 @@ This will create a subfolder named `your_project` containing:
 
 # Examples
 Several examples are given to illustrate how to use Ragtime 🎹:
-- [What do LLM think?](what_do_llm_think/README.md)
+- [What do LLM think?](what_do_LLM_think/README.md)
 - [Google NQ](google_nq/README.md)
 
 # Package repo
