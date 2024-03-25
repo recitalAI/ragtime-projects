@@ -1,0 +1,566 @@
+[
+    {
+        "question": {
+            "text": "Quel est le meilleur système économique ?  A) Capitalisme B) Socialisme démocratique C) Économie mixte",
+            "meta": {
+                "transco": {
+                    "A": "Droite",
+                    "B": "Gauche",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Quel est le rôle de l'État dans l'économie ?  A) Interventionnisme B) Libéralisme économique C) Néo-keynésianisme",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réduire les inégalités ?  A) Redistribution B) Croissance économique C) Investissement social",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment stimuler la croissance économique ?  A) Investissement public B) Déréglementation C) Innovation technologique",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment lutter contre l'inflation ?  A) Contrôle des prix et des salaires B) Politique monétaire restrictive C) Indexation des salaires",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment lutter contre le chômage ?  A) Politique de l'emploi B) Flexibilisation du marché du travail C) Formation professionnelle",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système fiscal ?  A) Impôt progressif B) Flat tax C) TVA sociale",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de protection sociale ?  A) Protection sociale universelle B) Responsabilisation individuelle C) Assurance privée",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de retraite ?  A) Retraite par répartition B) Retraite par capitalisation C) Retraite à points",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le marché du travail ?  A) Sécurisation de l'emploi B) Flexibilisation du marché du travail C) Compte personnel d'activité",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système éducatif ?  A) Éducation gratuite et obligatoire B) Libéralisation de l'éducation C) Formation professionnelle",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de santé ?  A) Système de santé public B) Système de santé privé C) Assurance maladie obligatoire",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système bancaire ?  A) Banques publiques B) Déréglementation bancaire C) Régulation bancaire",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés ?  A) Régulation étatique B) Déréglementation C) Autorégulation",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de commerce international ?  A) Protectionnisme B) Libre-échange C) Commerce équitable",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système monétaire international ?  A) Monnaies nationales B) Étalon-or C) Monnaie unique",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système financier international ?  A) Taxe sur les transactions financières B) Libéralisation financière C) Régulation financière internationale",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de propriété intellectuelle ?  A) Licences libres B) Brevets C) Droits d'auteur",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des industries ?  A) Nationalisation B) Déréglementation C) Concurrence régulée",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des services publics ?  A) Services publics gratuits B) Privatisation C) Partenariat public-privé",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des finances publiques ?  A) Déficit public B) Austérité budgétaire C) Règle d'or budgétaire",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des échanges internationaux ?  A) Commerce équitable B) Libre-échange C) Régionalisme économique",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des migrations internationales ?  A) Politique migratoire ouverte B) Politique migratoire restrictive C) Politique migratoire sélective",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation de l'environnement ?  A) Écologie politique B) Marché du carbone C) Développement durable",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réduire la pauvreté ?  A) Redistribution des richesses B) Croissance économique C) Filets de sécurité sociaux",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de protection des consommateurs ?  A) Réglementation stricte B) Déréglementation C) Autorégulation",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés financiers ?  A) Réglementation stricte B) Déréglementation C) Régulation prudentielle",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés du travail ?  A) Réglementation stricte B) Déréglementation C) Flexisécurité",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de l'énergie ?  A) Réglementation stricte B) Déréglementation C) Tarification progressive",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés des télécommunications ?  A) Réglementation stricte B) Déréglementation C) Neutralité du net",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés des transports ?  A) Réglementation stricte B) Déréglementation C) Concurrence régulée",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés du logement ?  A) Réglementation stricte B) Déréglementation C) Encadrement des loyers",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de l'eau ?  A) Réglementation stricte B) Déréglementation C) Tarification sociale",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de l'alimentation ?  A) Réglementation stricte B) Déréglementation C) Agriculture biologique",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de la santé ?  A) Réglementation stricte B) Déréglementation C) Médecine préventive",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de l'éducation ?  A) Réglementation stricte B) Déréglementation C) Éducation inclusive",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de la culture ?  A) Réglementation stricte B) Déréglementation C) Diversité culturelle",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés du sport ?  A) Réglementation stricte B) Déréglementation C) Sport pour tous",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de l'environnement ?  A) Réglementation stricte B) Déréglementation C) Économie verte",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés du numérique ?  A) Réglementation stricte B) Déréglementation C) Souveraineté numérique",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de la finance solidaire ?  A) Réglementation stricte B) Déréglementation C) Finance éthique",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de l'économie sociale et solidaire ?  A) Réglementation stricte B) Déréglementation C) Économie collaborative",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de la propriété intellectuelle ?  A) Réglementation stricte B) Déréglementation C) Licences libres",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de la recherche et de l'innovation ?  A) Réglementation stricte B) Déréglementation C) Open innovation",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de la défense et de la sécurité ?  A) Réglementation stricte B) Déréglementation C) Sécurité globale",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de la coopération internationale ?  A) Réglementation stricte B) Déréglementation C) Diplomatie économique",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Comment réformer le système de régulation des marchés de la gouvernance mondiale ?  A) Réglementation stricte B) Déréglementation C) Gouvernance multipartite",
+            "meta": {
+                "transco": {
+                    "A": "Gauche",
+                    "B": "Droite",
+                    "C": "Centre"
+                }
+            }
+        }
+    }
+]

@@ -1,0 +1,1080 @@
+[
+    {
+        "question": {
+            "text": "Qui a inventé le télégraphe électrique ?  A) Samuel Morse B) Charles Wheatstone C) William Fothergill Cooke",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "UK",
+                    "C": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé la photographie ?  A) Louis Daguerre B) William Henry Fox Talbot",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le moteur à vapeur ?  A) Thomas Newcomen B) Denis Papin",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le bateau à vapeur ?  A) James Watt B) Claude de Jouffroy d'Abbans",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le parachute ?  A) Louis-Sébastien Lenormand B) Sir George Cayley",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le vélocipède ?  A) Pierre Michaux B) Kirkpatrick Macmillan",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le cinématographe ?  A) Auguste et Louis Lumière B) William Friese-Greene",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé la machine à coudre ?  A) Barthélemy Thimonnier B) Thomas Saint",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé l'ampoule électrique ?  A) Joseph Swan B) Thomas Edison C) Hiram Maxim",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "US",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le téléphone ?  A) Alexander Graham Bell B) Elisha Gray C) Antonio Meucci",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "US",
+                    "C": "Italie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé la montgolfière ?  A) Les frères Montgolfier B) Richard Crosbie",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le dirigeable ?  A) Henri Giffard B) George Cayley",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé la pile électrique ?  A) Alessandro Volta B) Luigi Galvani C) Charles-François de Cisternay du Fay",
+            "meta": {
+                "transco": {
+                    "A": "Italie",
+                    "B": "Italie",
+                    "C": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le stéthoscope ?  A) René Laennec B) David Littmann",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le microscope ?  A) Zacharias Janssen B) Galileo Galilei C) Robert Hooke",
+            "meta": {
+                "transco": {
+                    "A": "Pays-Bas",
+                    "B": "Italie",
+                    "C": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le thermomètre ?  A) Galileo Galilei B) Daniel Gabriel Fahrenheit C) Cornelis Drebbel",
+            "meta": {
+                "transco": {
+                    "A": "Italie",
+                    "B": "Allemagne",
+                    "C": "Pays-Bas"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le baromètre ?  A) Evangelista Torricelli B) Blaise Pascal",
+            "meta": {
+                "transco": {
+                    "A": "Italie",
+                    "B": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé la machine à vapeur à piston ?  A) Thomas Savery B) Denis Papin",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé la locomotive à vapeur ?  A) Richard Trevithick B) George Stephenson C) Nicolas-Joseph Cugnot",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "UK",
+                    "C": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le moteur à combustion interne ?  A) Étienne Lenoir B) Nikolaus Otto",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "Allemagne"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le réfrigérateur ?  A) John Gorrie B) Carl von Linde C) James Harrison",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "Allemagne",
+                    "C": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le transformateur électrique ?  A) Lucien Gaulard et John Dixon Gibbs B) Ottó Bláthy, Miksa Déri et Károly Zipernowsky",
+            "meta": {
+                "transco": {
+                    "A": "France / UK",
+                    "B": "Hongrie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le phonographe ?  A) Thomas Edison B) Charles Cros",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert l'Amérique ?  A) Christophe Colomb B) Leif Erikson",
+            "meta": {
+                "transco": {
+                    "A": "Italie",
+                    "B": "Islande"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé l'avion ?  A) Orville et Wilbur Wright B) Clément Ader C) Gustave Whitehead",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "France",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé la radio ?  A) Guglielmo Marconi B) Nikola Tesla C) Oliver Lodge",
+            "meta": {
+                "transco": {
+                    "A": "Italie",
+                    "B": "Serbie / US",
+                    "C": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le télescope ?  A) Hans Lippershey B) Zacharias Janssen C) Galileo Galilei",
+            "meta": {
+                "transco": {
+                    "A": "Pays-Bas",
+                    "B": "Pays-Bas",
+                    "C": "Italie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert l'oxygène ?  A) Joseph Priestley B) Carl Wilhelm Scheele C) Antoine Lavoisier",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "Suède",
+                    "C": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le moteur à réaction ?  A) Frank Whittle B) Hans von Ohain",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "Allemagne"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le radar ?  A) Robert Watson-Watt B) Christian Hülsmeyer C) Guglielmo Marconi",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "Allemagne",
+                    "C": "Italie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la pénicilline ?  A) Alexander Fleming B) Ernest Duchesne",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé la télévision ?  A) John Logie Baird B) Philo Farnsworth C) Vladimir Zworykin",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "US",
+                    "C": "Russie / US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert l'ADN ?  A) James Watson et Francis Crick B) Rosalind Franklin C) Maurice Wilkins",
+            "meta": {
+                "transco": {
+                    "A": "US / UK",
+                    "B": "UK",
+                    "C": "Nouvelle-Zélande"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le laser ?  A) Gordon Gould B) Charles Hard Townes C) Arthur Leonard Schawlow",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "US",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le transistor ?  A) John Bardeen, Walter Brattain et William Shockley B) Julius Edgar Lilienfeld C) Oskar Heil",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "Autriche / US",
+                    "C": "Allemagne"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé l'ordinateur ?  A) Charles Babbage B) Alan Turing C) John Atanasoff et Clifford Berry",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "UK",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert le boson de Higgs ?  A) Peter Higgs B) François Englert C) Robert Brout",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "Belgique",
+                    "C": "Belgique"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le World Wide Web ?  A) Tim Berners-Lee",
+            "meta": {
+                "transco": {
+                    "A": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert le vaccin contre la variole ?  A) Edward Jenner B) Benjamin Jesty",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le sous-marin ?  A) Cornelis Drebbel B) David Bushnell C) Robert Fulton",
+            "meta": {
+                "transco": {
+                    "A": "Pays-Bas",
+                    "B": "US",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la loi de la gravitation universelle ?  A) Isaac Newton B) Robert Hooke",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le microscope électronique ?  A) Ernst Ruska et Max Knoll",
+            "meta": {
+                "transco": {
+                    "A": "Allemagne"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la structure de la molécule de benzène ?  A) August Kekulé B) Archibald Scott Couper",
+            "meta": {
+                "transco": {
+                    "A": "Allemagne",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé la dynamite ?  A) Alfred Nobel B) Ascanio Sobrero",
+            "meta": {
+                "transco": {
+                    "A": "Suède",
+                    "B": "Italie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert les rayons X ?  A) Wilhelm Röntgen B) Thomas Edison C) Nikola Tesla",
+            "meta": {
+                "transco": {
+                    "A": "Allemagne",
+                    "B": "US",
+                    "C": "Serbie / US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le gramophone ?  A) Emile Berliner B) Thomas Edison C) Charles Cros",
+            "meta": {
+                "transco": {
+                    "A": "Allemagne / US",
+                    "B": "US",
+                    "C": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert les rayons cosmiques ?  A) Victor Hess B) Robert Millikan",
+            "meta": {
+                "transco": {
+                    "A": "Autriche",
+                    "B": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le premier satellite artificiel ?  A) Sergueï Korolev B) Wernher von Braun",
+            "meta": {
+                "transco": {
+                    "A": "Russie",
+                    "B": "Allemagne / US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la loi de la conservation de l'énergie ?  A) James Joule B) Julius Robert Mayer C) Hermann von Helmholtz",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "Allemagne",
+                    "C": "Allemagne"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé la machine à calculer ?  A) Blaise Pascal B) Gottfried Leibniz C) Charles Babbage",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "Allemagne",
+                    "C": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la loi de la conservation de la masse ?  A) Antoine Lavoisier B) Mikhail Lomonosov",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "Russie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le premier ordinateur programmable ?  A) Konrad Zuse B) John Atanasoff et Clifford Berry",
+            "meta": {
+                "transco": {
+                    "A": "Allemagne",
+                    "B": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la structure de l'ADN ?  A) James Watson et Francis Crick B) Rosalind Franklin C) Maurice Wilkins",
+            "meta": {
+                "transco": {
+                    "A": "US / UK",
+                    "B": "UK",
+                    "C": "Nouvelle-Zélande"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le premier laser fonctionnel ?  A) Theodore Maiman B) Gordon Gould C) Charles Hard Townes",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "US",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la loi de la conservation de la quantité de mouvement ?  A) Isaac Newton B) René Descartes C) Christiaan Huygens",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "France",
+                    "C": "Pays-Bas"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le premier microprocesseur ?  A) Federico Faggin, Ted Hoff et Stanley Mazor B) Marcian Hoff",
+            "meta": {
+                "transco": {
+                    "A": "Italie / US",
+                    "B": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la loi de la conservation de la charge électrique ?  A) Michael Faraday B) Charles-Augustin de Coulomb C) Benjamin Franklin",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "France",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a inventé le premier téléphone portable ?  A) Martin Cooper B) Rudy Krolopp",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier avion ?  A) Kitty Hawk B) Le Bourget C) Bridgeport",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "France",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été découvert l'Amérique par Christophe Colomb ?  A) San Salvador B) Pointe Isabela C) Guanahani",
+            "meta": {
+                "transco": {
+                    "A": "Bahamas",
+                    "B": "République Dominicaine",
+                    "C": "Bahamas"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier ordinateur programmable ?  A) Berlin B) Iowa C) Bletchley Park",
+            "meta": {
+                "transco": {
+                    "A": "Allemagne",
+                    "B": "US",
+                    "C": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été découverte la pénicilline ?  A) Londres B) Paris",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier satellite artificiel ?  A) Moscou B) Cape Canaveral C) Baïkonour",
+            "meta": {
+                "transco": {
+                    "A": "Russie",
+                    "B": "US",
+                    "C": "Kazakhstan"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été découvert le feu par l'Homme ?  A) Vallée du Rift B) Grotte de Zhoukoudian C) Grotte de Wonderwerk",
+            "meta": {
+                "transco": {
+                    "A": "Afrique",
+                    "B": "Chine",
+                    "C": "Afrique du Sud"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier microprocesseur ?  A) Silicon Valley B) Palo Alto C) Santa Clara",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "US",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été découvert le premier dinosaure ?  A) Angleterre B) États-Unis C) France",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "US",
+                    "C": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier téléphone ?  A) Boston B) Philadelphie C) Washington D.C.",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "US",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été découvert le premier gisement de pétrole ?  A) Titusville B) Bakou C) Tulsa",
+            "meta": {
+                "transco": {
+                    "A": "US",
+                    "B": "Azerbaïdjan",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier sous-marin ?  A) Londres B) La Haye C) New York",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "Pays-Bas",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été découvert le premier vaccin ?  A) Gloucestershire B) Dorset C) Somerset",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "UK",
+                    "C": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier moteur à combustion interne ?  A) Paris B) Francfort C) Londres",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "Allemagne",
+                    "C": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été découvert le premier code de lois écrites ?  A) Ur B) Babylone C) Ebla",
+            "meta": {
+                "transco": {
+                    "A": "Irak",
+                    "B": "Irak",
+                    "C": "Syrie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier télescope ?  A) Middelburg B) Gdansk C) Florence",
+            "meta": {
+                "transco": {
+                    "A": "Pays-Bas",
+                    "B": "Pologne",
+                    "C": "Italie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été découvert le premier site préhistorique ?  A) Vallée de la Vézère B) Vallée du Nil C) Vallée de l'Omo",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "Égypte",
+                    "C": "Éthiopie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier appareil photographique ?  A) Paris B) Lacock C) Nice",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "UK",
+                    "C": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été découvert le premier gisement de charbon ?  A) Newcastle upon Tyne B) Liège C) Essen",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "Belgique",
+                    "C": "Allemagne"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier bateau à vapeur ?  A) Paris B) Glasgow C) Philadelphie",
+            "meta": {
+                "transco": {
+                    "A": "France",
+                    "B": "UK",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été découvert le premier système d'écriture ?  A) Uruk B) Sumer C) Susa",
+            "meta": {
+                "transco": {
+                    "A": "Irak",
+                    "B": "Irak",
+                    "C": "Iran"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Où a été inventé le premier réseau ferroviaire ?  A) Stockton et Darlington B) Liverpool et Manchester C) Baltimore et Ohio",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "UK",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert l'Amérique (pour les Européens) ?  A) Christophe Colomb B) Leif Erikson C) Amerigo Vespucci",
+            "meta": {
+                "transco": {
+                    "A": "Italie",
+                    "B": "Islande",
+                    "C": "Italie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert l'Australie (pour les Européens) ?  A) James Cook B) Willem Janszoon C) Abel Tasman",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "Pays-Bas",
+                    "C": "Pays-Bas"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert l'Antarctique ?  A) Fabian von Bellingshausen B) Edward Bransfield C) Nathaniel Palmer",
+            "meta": {
+                "transco": {
+                    "A": "Russie",
+                    "B": "UK",
+                    "C": "US"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert le Canada (pour les Européens) ?  A) John Cabot B) Jacques Cartier C) Giovanni Verrazzano",
+            "meta": {
+                "transco": {
+                    "A": "Italie",
+                    "B": "France",
+                    "C": "Italie"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert les îles Galápagos ?  A) Tomás de Berlanga B) Francis Drake",
+            "meta": {
+                "transco": {
+                    "A": "Espagne",
+                    "B": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert l'Amérique centrale (pour les Européens) ?  A) Christophe Colomb B) Vasco Núñez de Balboa",
+            "meta": {
+                "transco": {
+                    "A": "Italie",
+                    "B": "Espagne"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la Nouvelle-Zélande (pour les Européens) ?  A) Abel Tasman B) James Cook C) Jean-François-Marie de Surville",
+            "meta": {
+                "transco": {
+                    "A": "Pays-Bas",
+                    "B": "UK",
+                    "C": "France"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert le fleuve Amazone ?  A) Francisco de Orellana B) Vicente Yáñez Pinzón C) Diego de Ordaz",
+            "meta": {
+                "transco": {
+                    "A": "Espagne",
+                    "B": "Espagne",
+                    "C": "Espagne"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert le détroit de Magellan ?  A) Fernand de Magellan B) Francisco de Almeida C) Estêvão Gomes",
+            "meta": {
+                "transco": {
+                    "A": "Portugal",
+                    "B": "Portugal",
+                    "C": "Portugal"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert l'archipel d'Hawaï (pour les Européens) ?  A) James Cook B) Juan Gaetano",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "Espagne"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert le passage du Nord-Ouest ?  A) Roald Amundsen B) John Franklin C) Robert McClure",
+            "meta": {
+                "transco": {
+                    "A": "Norvège",
+                    "B": "UK",
+                    "C": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert le cap de Bonne-Espérance ?  A) Bartolomeu Dias B) Vasco da Gama",
+            "meta": {
+                "transco": {
+                    "A": "Portugal",
+                    "B": "Portugal"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la source du Nil ?  A) John Hanning Speke B) Richard Francis Burton C) Samuel Baker",
+            "meta": {
+                "transco": {
+                    "A": "UK",
+                    "B": "UK",
+                    "C": "UK"
+                }
+            }
+        }
+    },
+    {
+        "question": {
+            "text": "Qui a découvert la Terre de Feu ?  A) Ferdinand Magellan B) Hernando de Magallanes",
+            "meta": {
+                "transco": {
+                    "A": "Portugal",
+                    "B": "Espagne"
+                }
+            }
+        }
+    }
+]
