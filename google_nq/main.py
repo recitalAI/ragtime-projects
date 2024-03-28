@@ -3,7 +3,6 @@ PROJECT_NAME:str = "google_nq"
 import ragtime
 from ragtime import expe, generators
 from ragtime.expe import QA, Chunks, Prompt, Question, WithLLMAnswer
-import keys
 from ragtime.generators import StartFrom, PptrFactsFRv2, PptrEvalFRv2
 from ragtime.expe import Expe
 
