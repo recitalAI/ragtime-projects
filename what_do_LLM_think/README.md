@@ -5,11 +5,7 @@ In this example, we show how to use Ragtime 🎹 to determine if LLMs have cultu
 
 
 ## Create the project
-To do so, we first run
-```python
-from ragtime import config
-config.init_project(name='what_do_LLM_think', init_type='copy_base_files')
-```
+To do so, we first set `PROJECT_NAME='what_do_LLM_think'` in `main.py` and run the script.
 
 ## Create your questions
 We then generate a set of questions using an LLM. Using [Mistral LeChat](https://chat.mistral.ai/chat), we asked it (in French, since we want French questions and answers) to generate tables of inventions and locations where people do not agree about their inventor (French think they invented it, American think they did), with a prompt like:
@@ -126,8 +122,7 @@ generators.gen_Answers(folder_in=FOLDER_QUESTIONS, folder_out=FOLDER_ANSWERS,
                                    "mistral/mistral-large-latest", "command-xlarge-beta", "luminous-supreme-control"])
 ```
 
-Before running it, don't forget to add you API keys in `keys.py`. If you don't have access to all the LLMs listed above, remove them accordingly.
-
+Before running it, don't forget to add you API keys as environment variables, as detailed in [the LiteLLM doc](https://litellm.vercel.app/docs/set_keys). For the LLMs mentioned in the example above, the following environment variables must be set : `OPENAI_API_KEY`, `ANTHROPIC_API_KEY`, `ALEPHALPHA_API_KEY`, `MISTRAL_API_KEY` and `COHERE_API_KEY`.
 
 You can now run the script! You will see quite a lot of logging, showing which question it is working on and which LLM is being used. At then end, a message like `Expe saved as JSON to...` is displayed.
 

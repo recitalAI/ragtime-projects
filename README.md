@@ -9,19 +9,13 @@ pip install ragtime
 ```
 
 ## Create your project
-Then choose a folder where you will create your Ragtime 🎹 projects. In this folder, create a `main.py` containing:
-```python
-from ragtime import config
-config.init_project(name='your_project', init_type='copy_base_files')
-```
-and run it.
+Then choose a folder where you will create your Ragtime 🎹 projects. In this folder, there is a `main.py`. Open it, set the `PROJECT_NAME` variable and run the script.
 
-This will create a subfolder named `your_project` containing:
+This will create a subfolder named according to `PROJECT_NAME` containing:
 - folder `expe`: contains 4 sub-folders containing the data which will be created at each step of your experiments
 - folder `logs`: the logs associated with your project
 - folder `res`: contains templates for the file exports
 - `config.py`: configuration for logs, default folders...
-- `keys.py`: API keys
 - `.gitignore`: tells not to sync the `keys.py` file
 - `classes.py`: your classes to define the Prompter and Retrievers you may use
 - `main.py`: the file containing the `main` function for your project

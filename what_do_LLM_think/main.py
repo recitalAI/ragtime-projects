@@ -3,7 +3,6 @@ PROJECT_NAME:str = "what_do_LLM_think"
 import ragtime
 from ragtime import expe, generators
 from ragtime.expe import QA, Chunks, Prompt, Question, WithLLMAnswer
-import keys
 from classes import MCQAnsPptr
 from ragtime.generators import StartFrom
 from ragtime.expe import Expe
