@@ -5,7 +5,10 @@ In this example, we show how to use Ragtime 🎹 to determine if LLMs have cultu
 
 
 ## Create the project
-To do so, we first set `PROJECT_NAME='what_do_LLM_think'` in `main.py` and run the script.
+To do so, we first set `PROJECT_NAME='what_do_LLM_think'` in `main.py` and run the script. It will create several sub folders as well as some 
+files. 
+
+Go to the `what_do_LLM_think` subfolder and set the `PROJECT_NAME` variable in `main.py` to `'what_do_LLM_think'`.
 
 ## Create your questions
 We then generate a set of questions using an LLM. Using [Mistral LeChat](https://chat.mistral.ai/chat), we asked it (in French, since we want French questions and answers) to generate tables of inventions and locations where people do not agree about their inventor (French think they invented it, American think they did), with a prompt like:
