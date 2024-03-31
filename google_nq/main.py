@@ -11,6 +11,8 @@ from ragtime.expe import Expe
 # calling init_project are not updated after the function call
 ragtime.config.init_project(name=PROJECT_NAME, init_type="globals_only")
 from ragtime.config import FOLDER_ANSWERS, FOLDER_QUESTIONS, FOLDER_FACTS, FOLDER_EVALS, logger, FOLDER_SST_TEMPLATES
+ragtime.config.init_API_keys(['OPENAI_API_KEY', 'ALEPHALPHA_API_KEY', 'ANTHROPIC_API_KEY',
+                             'COHERE_API_KEY', 'HUGGINGFACE_API_KEY', 'MISTRAL_API_KEY'])
 
 
 logger.debug('MAIN STARTS')
@@ -23,8 +25,8 @@ logger.debug('MAIN STARTS')
 #                      llm_names=['gpt-4'], prompter=PptrEvalFRv2())
 
 
-# expe.export_to_html(json_path=FOLDER_EVALS / "google_nq--30Q_0C_221F_1M_30A_30HE_29AE_2024-03-16_23h24,01.json")
-expe.export_to_spreadsheet(json_path=FOLDER_EVALS / "google_nq--30Q_0C_221F_1M_30A_30HE_29AE_2024-03-16_23h24,01.json",
+expe.export_to_html(json_path=FOLDER_EVALS / "google_nq--30Q_0C_221F_1M_30A_30HE_30AE_2024-04-01_00h47,35.json")
+expe.export_to_spreadsheet(json_path=FOLDER_EVALS / "google_nq--30Q_0C_221F_1M_30A_30HE_30AE_2024-04-01_00h47,35.json",
                            template_path=FOLDER_SST_TEMPLATES/'test_facts.xlsx')
 
 

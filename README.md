@@ -29,3 +29,7 @@ Several examples are given to illustrate how to use Ragtime 🎹:
 
 # Package repo
 If you are looking for the package, not the examples, [it is here](https://github.com/recitalAI/ragtime-package).
+
+# Troubleshooting
+## Environment variables for API not recognized in Windows
+In this case, just call `ragtime.config.init_API_keys' as detailed [here](https://github.com/recitalAI/ragtime-package/tree/main?tab=readme-ov-file#windows)
