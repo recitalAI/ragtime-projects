@@ -32,4 +32,4 @@ If you are looking for the package, not the examples, [it is here](https://githu
 
 # Troubleshooting
 ## Environment variables for API not recognized in Windows
-In this case, just call `ragtime.config.init_API_keys' as detailed [here](https://github.com/recitalAI/ragtime-package/tree/main?tab=readme-ov-file#windows)
+In this case, just call `ragtime.config.init_win_env' as detailed [here](https://github.com/recitalAI/ragtime-package/tree/main?tab=readme-ov-file#windows)

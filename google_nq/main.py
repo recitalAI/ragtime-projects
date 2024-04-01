@@ -11,7 +11,7 @@ from ragtime.expe import Expe
 # calling init_project are not updated after the function call
 ragtime.config.init_project(name=PROJECT_NAME, init_type="globals_only")
 from ragtime.config import FOLDER_ANSWERS, FOLDER_QUESTIONS, FOLDER_FACTS, FOLDER_EVALS, logger, FOLDER_SST_TEMPLATES
-ragtime.config.init_API_keys(['OPENAI_API_KEY', 'ALEPHALPHA_API_KEY', 'ANTHROPIC_API_KEY',
+ragtime.config.init_win_env(['OPENAI_API_KEY', 'ALEPHALPHA_API_KEY', 'ANTHROPIC_API_KEY',
                              'COHERE_API_KEY', 'HUGGINGFACE_API_KEY', 'MISTRAL_API_KEY'])
 
 
