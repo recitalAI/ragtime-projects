@@ -114,13 +114,10 @@ Let us see on the HTML output what the evaluation is:
 <img src="img/2024-03-31_google_nq_incorrect_quest_9.png">
 
 We see that the fact n°4 is not found and is considered an hallucination instead (the red question mark).
-Indeed, the term "mitosis" is used in the answer, but is not present in the fact n°4. In this case, the mistake happened during the fact generation since it has omitted the term "mitosis". We can add it in the fact n°4 definition in the spreadsheet (cell D67):
+Indeed, the term "mitosis" is used in the answer, but is not present in the fact n°4. In this case, the mistake happened during the fact generation since it has omitted the term "mitosis". We can associate it with the fact n°4 in the spreadsheet (cell D67):
 <img src="img/2024-03-31_google_nq_fix_fact_4_quest_9.png">
 
 The next question whose evaluation is different from 1 is the number 23. In this case, the fact n°4 "4. These muscle spasms are another symptom of opioid discontinuation." is not mentioned in the answer. But it can be removed since this information is already present in facts 1 and 2. Hence, the fact n°4 for this question is deleted in the spreadsheet (cell D165).
-
-
-
 
 We repeat the same process, i.e. detecting evaluation not equal to 1 and fixing the facts. The resulting file is saved with the prefix `fixed` in the same folder.
 
