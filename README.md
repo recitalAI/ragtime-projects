@@ -15,12 +15,11 @@ This will create a subfolder named according to `PROJECT_NAME` containing:
 - folder `expe`: contains 4 sub-folders containing the data which will be created at each step of your experiments
 - folder `logs`: the logs associated with your project
 - folder `res`: contains templates for the file exports
-- `config.py`: configuration for logs, default folders...
-- `.gitignore`: tells not to sync the `keys.py` file
 - `classes.py`: your classes to define the Prompter and Retrievers you may use
 - `main.py`: the file containing the `main` function for your project
 - `LICENSE`: MIT by default - don't forget to add you name / company in it
 - `README.md`: your project's doc
+- `.gitignore`
 
 # Examples
 Several examples are given to illustrate how to use Ragtime 🎹:
