@@ -8,8 +8,22 @@ Make sure you have already installed the Ragtime 🎹 package. If not, just run:
 pip install ragtime
 ```
 
+If you want to modify the `ragtime-package` then you will want to install it as an editable version. In this case, go to the base folder of `ragtime-package` and run in the shell:
+```
+pip install -e .
+```
+(don't forget the last dot).
+If you have an error `(A "pyproject.toml" file was found, but editable mode currently requires a setup.py based build.)`, upgrade `pip`.
+
 ## Create your project
-Then choose a folder where you will create your Ragtime 🎹 projects. In this folder, there is a `main.py`. Open it, set the `PROJECT_NAME` variable and run the script.
+Create a folder where you will create your Ragtime 🎹 projects. In this folder, create a `main.py` file containing:
+```
+PROJECT_NAME:str = "your-project-name"
+
+from ragtime import config
+config.init_project(name=PROJECT_NAME, init_type='copy_base_files')
+```
+Set the `PROJECT_NAME` variable with your project name and run the script.
 
 This will create a subfolder named according to `PROJECT_NAME` containing:
 - folder `expe`: contains 4 sub-folders containing the data which will be created at each step of your experiments
