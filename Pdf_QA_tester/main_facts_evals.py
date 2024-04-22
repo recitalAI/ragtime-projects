@@ -21,16 +21,16 @@ ragtime.config.init_win_env(['OPENAI_API_KEY', 'GOOGLE_API_KEY'])
 
 logger.debug('MAIN STARTS')
 
-generators.gen_Facts(folder_in=FOLDER_ANSWERS, folder_out=FOLDER_FACTS, json_file='questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json',
-                     llm_names=['gpt-4'], prompter=PptrFactsFRv2())
+# generators.gen_Facts(folder_in=FOLDER_ANSWERS, folder_out=FOLDER_FACTS, json_file='questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json',
+#                      llm_names=['gpt-4'], prompter=PptrFactsFRv2())
 
-generators.gen_Evals(folder_in=FOLDER_FACTS, folder_out=FOLDER_EVALS, 
-                     json_file='questions--10Q_170C_72F_2M_20A_20HE_0AE_2024-04-22_09h43,16.json',
-                     llm_names=['gpt-4'], prompter=PptrSimpleEvalFR())
+# generators.gen_Evals(folder_in=FOLDER_FACTS, folder_out=FOLDER_EVALS, 
+#                     json_file='questions--10Q_170C_72F_2M_20A_20HE_0AE_2024-04-22_09h43,16.json',
+#                     llm_names=['gpt-4'], prompter=PptrSimpleEvalFR())
 
 
-expe.export_to_html(json_path=FOLDER_EVALS / "questions--10Q_170C_72F_2M_20A_20HE_20AE_2024-04-22_09h58,19.json")
-expe.export_to_spreadsheet(json_path=FOLDER_EVALS / "questions--10Q_170C_72F_2M_20A_20HE_20AE_2024-04-22_09h58,19.json",
+# expe.export_to_html(json_path=FOLDER_EVALS / "questions--10Q_170C_72F_2M_20A_20HE_20AE_2024-04-22_09h58,19.json")
+# expe.export_to_spreadsheet(json_path=FOLDER_EVALS / "questions--10Q_170C_72F_2M_20A_20HE_20AE_2024-04-22_09h58,19.json",
                            template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
 
 
