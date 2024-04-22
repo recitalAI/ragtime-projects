@@ -117,9 +117,7 @@ Manually evaluate the generated answers by editing the JSON file. Locate entries
 
 You can add other LLMs for evaluation by modifying the code accordingly and ensuring dependencies are met.
 
-##Retriever advanced explanation
-
-
+## Retriever advanced explanation
 
 ### BM25 Retriever
 
