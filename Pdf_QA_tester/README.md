@@ -9,6 +9,54 @@ This project aims to test the generation capabilities of Large Language Models (
 
 - ZAOUG Imad
 
+Sure, here's a concise and well-explained README for all the files you provided:
+
+## Files
+
+### `rag.py`
+
+This file contains utility functions for working with the RAG system:
+
+- `read_doc(name: str)`: Reads documents from a directory.
+- `question_gen(name: str)`: Generates evaluation questions from documents.
+- `nodes_cr(name: str)`: Creates nodes (text chunks) from documents.
+- `index_cr(nodes)`: Creates a vector store index from the nodes for efficient retrieval.
+
+### `classes.py`
+
+This file defines two custom classes:
+
+- `MyRetriever`: Retrieves relevant chunks of text from the document corpus based on a query, combining results from BM25 and vector similarity retrieval.
+- `MCQAnsPptr`: Generates prompts for the language model, including the question and relevant context from retrieved chunks.
+
+### `question_generation.py`
+
+This script generates evaluation questions from the document corpus and saves them as a JSON file.
+
+### `retrieve_chunks.py`
+
+This script retrieves relevant chunks of text for each generated question using `MyRetriever` and saves the results as a JSON file.
+
+### `main_answer_generation.py`
+
+This script generates answers to the questions using a language model. It initializes the project, creates instances of `MyRetriever` and `MCQAnsPptr`, retrieves relevant chunks, generates prompts, and passes them to the language model. The results are exported to HTML and spreadsheet formats.
+
+### `main_facts_evals.py`
+
+This script generates facts and evaluations based on the generated answers. It initializes the project and contains commented-out sections for generating facts and evaluations using specific prompters. The results can be exported to HTML and spreadsheet formats.
+
+## Usage
+
+1. Set up the required dependencies and environment variables.
+2. Run `question_generation.py` to generate evaluation questions.
+3. Run `retrieve_chunks.py` to retrieve relevant chunks for the questions.
+4. Run `main_answer_generation.py` to generate answers using a language model.
+5. (Optional) Run `main_facts_evals.py` to generate facts and evaluations based on the answers.
+
+Note: Adjust file paths and configurations as needed for your setup.
+
+
+
 ## Setup
 
 1. **Database Setup**: Place the PDF documents you want to use in the "pdf" folder.
