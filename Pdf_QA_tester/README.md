@@ -136,11 +136,6 @@ BM25 (Best Matching 25) is a probabilistic information retrieval model based on 
 
 3. **Scalability**: BM25 is scalable to large collections of documents and performs well in real-world scenarios.
 
-#### Implementation
-- In the project, the BM25 retriever retrieves relevant chunks of text based on the query terms provided.
-- It calculates the relevance score for each chunk using BM25 scoring algorithm.
-- The top-ranked chunks are selected for further processing.
-
 ### Vector Retriever
 
 #### Overview
