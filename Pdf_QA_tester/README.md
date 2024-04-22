@@ -1,4 +1,5 @@
-# Project Name
+# Pdf_QA_tester
+
 
 ## Introduction
 
@@ -115,7 +116,3 @@ You can add other LLMs for evaluation by modifying the code accordingly and ensu
 ## Contributors
 
 - ZAOUG Imad
-
-## License
-
-This project is licensed under [License Name]. See the LICENSE file for details.
