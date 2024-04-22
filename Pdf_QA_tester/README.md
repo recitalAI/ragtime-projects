@@ -75,7 +75,7 @@ This project aims to test the generation capabilities of Large Language Models (
 
 6. **Visualization**: Visualize the answers by opening the generated HTML file located in `expe/02. Answers` folder.
 
-<img src="img/Q_and_A_only.png">
+<img src="img/ Q_and_A_only.png">
 
 ## Manual Human Evaluation
 
