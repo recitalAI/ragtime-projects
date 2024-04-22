@@ -107,7 +107,7 @@ Manually evaluate the generated answers by editing the JSON file. Locate entries
     ```
 The HTMl export for the test:
 
-<img src="img/Q_and_A_with_C_F_E.png">
+<img src="img/ Q_and_A_with_C_F_E.png">
 
 ## How to Run
 
