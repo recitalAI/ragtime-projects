@@ -1,0 +1,3954 @@
+<!--
+This Jinja templates needs the "expe" variable to generate the HTML.
+Moreover, it uses several boolean variables to control the rendering:
+- "show_answers": True to show the answers for each model
+- "show_chunks": True to show the Chunks in a table (images on the left column, text on the right)
+- "show_facts": True to show the Facts
+- "show_evals": True to show the Evaluations
+-->
+<html>
+<head>
+  <style>
+    h3 {
+      background-color: LightGray;
+      padding: 0px;
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: #FFFFFF;
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    img {
+      width: 100%;
+      width: 800;
+      display: block;
+    }
+
+    .my_img {
+      width: 100px;
+      vertical-align: middle;
+    }
+
+    * {
+      font-family: Arial
+    }
+
+    .collapsible {
+      background-color: #777;
+      border-bottom: 1px solid #ccc;
+      color: white;
+      cursor: pointer;
+      padding: 3px;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0px;
+      display: none;
+      overflow: hidden;
+      /*background-color: #f1f1f1;*/
+    }
+    .facts {
+      text-decoration: underline;
+      color: #0000EE;
+      font-weight: bold;
+    }
+    .hallus {
+      text-decoration: underline;
+      color: #FF1111;
+      font-weight: bold;
+    } 
+    .model_name {
+      background-color: #ffffa0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <span style="font-size: 20px;">10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h29,27</span>
+  <!-- For each QA -->
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>1. What breakthrough paper was published by Hinton et al. in 2006, leading to the resurgence of deep learning?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The breakthrough paper published by Hinton et al. in 2006 was titled "A fast learning algorithm for deep belief nets".<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gpt-3.5-turbo-0125</span> &nbsp;
+          The breakthrough paper published by Hinton et al. in 2006, leading to the resurgence of deep learning, was titled "A fast learning algorithm for deep belief nets."<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Backpropagation, the key optimization technique, encountered a
+number of issues such as vanishing gradients, exploding gradients, and
+the inability to learn long-term information, to name a few [115].
+Hochreiter and Schmidhuber, in their work,“Long short-term memory
+(LSTM)” architecture, demonstrated how issues with long-term depen-
+denciescouldovercomeshortcomingsofbackpropagationovertime[116].
+Hinton et al. published a breakthrough paper in 2006 titled “A fast
+learning algorithm for deep belief nets”; it was one of the reasons for the
+resurgence of deep learning [113]. The research highlighted the eﬀective-
+ness of layer-by-layer training using unsupervised methods followed by
+supervised “ﬁne-tuning” to achieve state-of-the-art results in character
+recognition. Bengio et al., in their seminal work following this, oﬀered</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />LeCun et al., through their research and implementation, led to the
+ﬁrst widespread application of neural networks to recognize the hand-
+writtendigitsusedbytheU.S.PostalService[150].Thisworkisacritical
+milestone in deep learning history, proving the utility of convolution op-
+erations and weight sharing in learning the features in computer vision.
+Backpropagation, the key optimization technique, encountered a
+number of issues such as vanishing gradients, exploding gradients, and
+the inability to learn long-term information, to name a few [115].
+Hochreiter and Schmidhuber, in their work,“Long short-term memory
+(LSTM)” architecture, demonstrated how issues with long-term depen-
+denciescouldovercomeshortcomingsofbackpropagationovertime[116].
+Hinton et al. published a breakthrough paper in 2006 titled “A fast
+learning algorithm for deep belief nets”; it was one of the reasons for the
+resurgence of deep learning [113].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The
+research paper by Collobert and Weston was instrumental in demon-
+strating many concepts such as pre-trained word embeddings, CNNs for
+text, and sharing of the embedding matrix for multi-task learning [60].
+Mikolovetal.furtherimprovedtheeﬃciencyoftrainingthewordembed-
+dings proposed by Bengio et al. by eliminating the hidden layer and for-
+mulatinganapproximateobjectiveforlearninggivingriseto“word2vec”,
+an eﬃcient large-scale implementation of word embeddings [185, 183].
+Sutskever’s research, which proposed a Hessian-free optimizer to train
+RNNs eﬃciently on long-term dependencies, was a breakthrough in re-
+viving the usage of RNNs, especially in NLP [237]. Sutskever et al.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Mikolov et al. and Graves proposed language models using RNNs
+and long short-term memory, which later became the building blocks for
+many natural language processing (NLP) architectures [184, 97]. The
+research paper by Collobert and Weston was instrumental in demon-
+strating many concepts such as pre-trained word embeddings, CNNs for
+text, and sharing of the embedding matrix for multi-task learning [60].
+Mikolovetal.furtherimprovedtheeﬃciencyoftrainingthewordembed-
+dings proposed by Bengio et al. by eliminating the hidden layer and for-
+mulatinganapproximateobjectiveforlearninggivingriseto“word2vec”,
+an eﬃcient large-scale implementation of word embeddings [185, 183].
+Sutskever’s research, which proposed a Hessian-free optimizer to train
+RNNs eﬃciently on long-term dependencies, was a breakthrough in re-
+viving the usage of RNNs, especially in NLP [237].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The
+research paper by Collobert and Weston was instrumental in demon-
+strating many concepts such as pre-trained word embeddings, CNNs for
+text, and sharing of the embedding matrix for multi-task learning [60].
+Mikolovetal.furtherimprovedtheeﬃciencyoftrainingthewordembed-
+dings proposed by Bengio et al. by eliminating the hidden layer and for-
+mulatinganapproximateobjectiveforlearninggivingriseto“word2vec”,
+an eﬃcient large-scale implementation of word embeddings [185, 183].
+Sutskever’s research, which proposed a Hessian-free optimizer to train
+RNNs eﬃciently on long-term dependencies, was a breakthrough in re-
+viving the usage of RNNs, especially in NLP [237]. Sutskever et al. in-
+troduced sequence-to-sequence learning as a generic neural framework
+comprised of an encoder neural network processing inputs as a sequence
+and a decoder neural network predicting the outputs based on the in-
+put sequence states and the current output states [238].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />[113]G. E. Hinton, S. Osindero, and Y.-W. Teh ,A fast learn-
+ing algorithm for deep belief nets , Neural Comput., 18 (2006),
+pp. 1527–1554.
+[114]J. Ho, N. Kalchbrenner, D. Weissenborn, and T. Sal-
+imans,Axial attention in multidimensional transformers , ArXiv,
+abs/1912.12180 (2019).
+[115]S. Hochreiter ,The vanishing gradient problem during learning
+recurrent neural nets and problem solutions , International Journal
+of Uncertainty, Fuzziness and Knowledge-Based Systems, 6 (1998),
+pp. 107–116.
+[116]S. Hochreiter and J. Schmidhuber ,Long short-term mem-
+ory, Neural Comput., 9 (1997), pp. 1735–1780.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Bibliography ■233
+[112]G. Hinton, O. Vinyals, and J. Dean ,Distilling the knowledge
+in a neural network , arXiv preprint arXiv:1503.02531, (2015).
+[113]G. E. Hinton, S. Osindero, and Y.-W. Teh ,A fast learn-
+ing algorithm for deep belief nets , Neural Comput., 18 (2006),
+pp. 1527–1554.
+[114]J. Ho, N. Kalchbrenner, D. Weissenborn, and T. Sal-
+imans,Axial attention in multidimensional transformers , ArXiv,
+abs/1912.12180 (2019).
+[115]S. Hochreiter ,The vanishing gradient problem during learning
+recurrent neural nets and problem solutions , International Journal
+of Uncertainty, Fuzziness and Knowledge-Based Systems, 6 (1998),
+pp. 107–116.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />4■Transformers for Machine Learning: A Deep Dive
+monolithic phrase-based machine translation models with sequence-to-
+sequence neural machine translation models [272]. To overcome the bot-
+tleneck issues with the sequence-to-sequence framework, seminal work
+by Bahdanau et al. proposed the attention mechanism, which plays a
+crucial role in transformers and their variants [17].
+1.2 TRANSFORMERS AND TAXONOMY
+The transformer architecture [254] was introduced in 2017, in the paper
+Attention Is All You Need , for sequence-to-sequence problems. It was
+an alternative to using recurrent or convolutional layers. Since its in-
+troduction, there’s been a wide variety of research into various ways to
+improveuponthestandardtransformer.Twosurveys[163, 243]havecat-
+egorized transformer-related papers. Transformer research has focused
+on three things: architecture modiﬁcation, pre-training methods, and
+applications.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Sutskever’s research, which proposed a Hessian-free optimizer to train
+RNNs eﬃciently on long-term dependencies, was a breakthrough in re-
+viving the usage of RNNs, especially in NLP [237]. Sutskever et al. in-
+troduced sequence-to-sequence learning as a generic neural framework
+comprised of an encoder neural network processing inputs as a sequence
+and a decoder neural network predicting the outputs based on the in-
+put sequence states and the current output states [238]. As a result, the
+sequence-to-sequence framework became the core architecture for a wide
+range of NLP tasks such as constituency parsing, named entity recogni-
+tion (NER), machine translation, question-answering, and summariza-
+tion, to name a few. Furthermore, even Google started replacing its</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />[113]G. E. Hinton, S. Osindero, and Y.-W. Teh ,A fast learn-
+ing algorithm for deep belief nets , Neural Comput., 18 (2006),
+pp. 1527–1554.
+[114]J. Ho, N. Kalchbrenner, D. Weissenborn, and T. Sal-
+imans,Axial attention in multidimensional transformers , ArXiv,
+abs/1912.12180 (2019).
+[115]S. Hochreiter ,The vanishing gradient problem during learning
+recurrent neural nets and problem solutions , International Journal
+of Uncertainty, Fuzziness and Knowledge-Based Systems, 6 (1998),
+pp. 107–116.
+[116]S. Hochreiter and J. Schmidhuber ,Long short-term mem-
+ory, Neural Comput., 9 (1997), pp. 1735–1780.
+[117]J. J. Hopfield ,Neural networks and physical systems with emer-
+gent collective computational abilities , Proceedings of the National
+Academy of Sciences of the United States of America, 79 (1982),
+pp.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Improvements in computer hardware,
+primarily through GPUs, increasing the throughput by almost 10×ev-
+ery ﬁve years, and the existence of a large amount of data to learn from
+resulted in a paradigm shift in the ﬁeld. Instead of hand-engineered fea-
+tures that were the primary focus for many sophisticated applications,
+by learning from a large volume of training data, where the necessary
+features emerge, the deep learning network became the foundation for
+many state-of-the-art techniques.
+Mikolov et al. and Graves proposed language models using RNNs
+and long short-term memory, which later became the building blocks for
+many natural language processing (NLP) architectures [184, 97]. The
+research paper by Collobert and Weston was instrumental in demon-
+strating many concepts such as pre-trained word embeddings, CNNs for
+text, and sharing of the embedding matrix for multi-task learning [60].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The building blocks for this work had been laid down by various research
+over the years by S. Linnainmaa, P. Werbos, K. Fukushima, D. Parker,
+and Y. LeCun [164, 267,91,196,149].
+LeCun et al., through their research and implementation, led to the
+ﬁrst widespread application of neural networks to recognize the hand-
+writtendigitsusedbytheU.S.PostalService[150].Thisworkisacritical
+milestone in deep learning history, proving the utility of convolution op-
+erations and weight sharing in learning the features in computer vision.
+Backpropagation, the key optimization technique, encountered a
+number of issues such as vanishing gradients, exploding gradients, and
+the inability to learn long-term information, to name a few [115].
+Hochreiter and Schmidhuber, in their work,“Long short-term memory
+(LSTM)” architecture, demonstrated how issues with long-term depen-
+denciescouldovercomeshortcomingsofbackpropagationovertime[116].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Improvements in computer hardware,
+primarily through GPUs, increasing the throughput by almost 10×ev-
+ery ﬁve years, and the existence of a large amount of data to learn from
+resulted in a paradigm shift in the ﬁeld. Instead of hand-engineered fea-
+tures that were the primary focus for many sophisticated applications,
+by learning from a large volume of training data, where the necessary
+features emerge, the deep learning network became the foundation for
+many state-of-the-art techniques.
+Mikolov et al. and Graves proposed language models using RNNs
+and long short-term memory, which later became the building blocks for
+many natural language processing (NLP) architectures [184, 97]. The
+research paper by Collobert and Weston was instrumental in demon-
+strating many concepts such as pre-trained word embeddings, CNNs for
+text, and sharing of the embedding matrix for multi-task learning [60].
+Mikolovetal.furtherimprovedtheeﬃciencyoftrainingthewordembed-
+dings proposed by Bengio et al.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Fei-
+Fei Li, head of the artiﬁcial intelligence lab at Stanford University, along
+with other researchers, launched ImageNet, which resulted in the most
+extensive collection of images and, for the ﬁrst time, highlighted the
+usefulness of data in learning essential tasks such as object recognition,
+classiﬁcation, and clustering [70]. Improvements in computer hardware,
+primarily through GPUs, increasing the throughput by almost 10×ev-
+ery ﬁve years, and the existence of a large amount of data to learn from
+resulted in a paradigm shift in the ﬁeld. Instead of hand-engineered fea-
+tures that were the primary focus for many sophisticated applications,
+by learning from a large volume of training data, where the necessary
+features emerge, the deep learning network became the foundation for
+many state-of-the-art techniques.
+Mikolov et al. and Graves proposed language models using RNNs
+and long short-term memory, which later became the building blocks for
+many natural language processing (NLP) architectures [184, 97].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />John Hopﬁeld introduced “Hopﬁeld Networks”, one of the ﬁrst recur-
+rentneuralnetworks(RNNs)thatserveasacontent-addressablememory
+system [117].
+In 1986, David Rumelhart, Geoﬀ Hinton, and Ronald Williams pub-
+lished the seminal work “Learning representations by back-propagating
+errors” [217]. Their work conﬁrms how a multi-layered neural network
+using many “hidden” layers can overcome the weakness of perceptrons
+in learning complex patterns with relatively simple training procedures.
+The building blocks for this work had been laid down by various research
+over the years by S. Linnainmaa, P. Werbos, K. Fukushima, D. Parker,
+and Y. LeCun [164, 267,91,196,149].
+LeCun et al., through their research and implementation, led to the
+ﬁrst widespread application of neural networks to recognize the hand-
+writtendigitsusedbytheU.S.PostalService[150].Thisworkisacritical
+milestone in deep learning history, proving the utility of convolution op-
+erations and weight sharing in learning the features in computer vision.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />In their research, Bengio and LeCun emphasized the advantages of deep
+learning through architectures such as convolutional neural networks
+(CNNs), restricted Boltzmann machines (RBMs), and deep belief net-
+works(DBNs),andthroughtechniquessuchasunsupervisedpre-training
+with ﬁne-tuning, thus inspiring the next wave of deep learning [28]. Fei-
+Fei Li, head of the artiﬁcial intelligence lab at Stanford University, along
+with other researchers, launched ImageNet, which resulted in the most
+extensive collection of images and, for the ﬁrst time, highlighted the
+usefulness of data in learning essential tasks such as object recognition,
+classiﬁcation, and clustering [70]. Improvements in computer hardware,
+primarily through GPUs, increasing the throughput by almost 10×ev-
+ery ﬁve years, and the existence of a large amount of data to learn from
+resulted in a paradigm shift in the ﬁeld.</td>
+            </tr>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>2. How is the value matrix generated in the self-attention block of Funnel-Transformer?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          In the self-attention block of the Funnel-Transformer, the value matrix is generated from the unpooled output, denoted as h. This is done by projecting the unpooled output h onto a learnable weight matrix WV. The resulting value matrix V is then used in the self-attention mechanism of the next layer. The equation for this operation is V=hWV, where h is the unpooled output and WV is the weight matrix.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gpt-3.5-turbo-0125</span> &nbsp;
+          In the self-attention block of Funnel-Transformer, the value matrix is generated by projecting the input vector at time i on a learnable weight matrix to obtain the value vector vi. This process is similar to how the query and key vectors are generated in the self-attention block.
+
+Specifically, the value matrix V is obtained by multiplying the input vector xi with a weight matrix Wv:
+
+V = XWv
+
+Here, X represents the input sequence, and Wv is the learnable weight matrix used for projecting the input vectors to generate the value vectors.
+
+The value matrix V contains the value vectors vi for each token in the input sequence, and it plays a crucial role in the self-attention mechanism by providing the information that is used to compute the weighted sum in the attention mechanism.
+
+Overall, in the self-attention block of Funnel-Transformer, the value matrix is generated by projecting the input vectors onto a weight matrix to obtain the value vectors that are used in the attention computation.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />4.3.1 Data preprocessing 99
+4.4.3.2 Experiments 101
+Chapter 5■Transformer Modiﬁcations 109
+5.1 TRANSFORMER BLOCK MODIFICATIONS 109
+5.1.1 Lightweight Transformers 109
+5.1.1.1 Funnel-transformer 109
+5.1.1.2 DeLighT 112
+5.1.2 Connections between Transformer Blocks 114
+5.1.2.1 RealFormer 114
+5.1.3 Adaptive Computation Time 115
+5.1.3.1 Universal transformers (UT) 115
+5.1.4 RecurrenceRelationsbetweenTransformerBlocks 116
+5.1.4.1 Transformer-XL 116
+5.1.5 Hierarchical Transformers 120
+5.2 TRANSFORMERS WITH MODIFIED MULTI-HEAD
+SELF-ATTENTION 120
+5.2.1 Structure of Multi-Head Self-Attention 120
+5.2.1.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />110■Transformers for Machine Learning: A Deep Dive
+Figure 5.1 Schematic architecture diagram for Funnel-Transformer’s en-
+coder. Each layer represents a block composed of several transformer
+layers with the same sequence length. Shows three pooling operations
+between blocks, with each decreasing the sequence length of the output
+by half.
+before the pooling operation. This is shown in Fig. 5.1. If the output of a
+given layer is h, then the output of the pooling layer is h′=Pooling (h),
+where h∈RT×dandh′∈RT′×d, for someT′<T.
+h′is used to construct the query and the residual connection for the
+self-attention block, his used for the key and value vectors:
+Q=h′WQ,∈RT′×dk(5.1)
+K=hWK,∈RT×dk(5.2)
+V=hWV,∈RT×dv(5.3)
+This relationship between the unpooled and pooled outputs and the
+query, key, and value matrices of the next layer is shown in Fig.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />2 Experiments 101
+Chapter 5■Transformer Modiﬁcations 109
+5.1 TRANSFORMER BLOCK MODIFICATIONS 109
+5.1.1 Lightweight Transformers 109
+5.1.1.1 Funnel-transformer 109
+5.1.1.2 DeLighT 112
+5.1.2 Connections between Transformer Blocks 114
+5.1.2.1 RealFormer 114
+5.1.3 Adaptive Computation Time 115
+5.1.3.1 Universal transformers (UT) 115
+5.1.4 RecurrenceRelationsbetweenTransformerBlocks 116
+5.1.4.1 Transformer-XL 116
+5.1.5 Hierarchical Transformers 120
+5.2 TRANSFORMERS WITH MODIFIED MULTI-HEAD
+SELF-ATTENTION 120
+5.2.1 Structure of Multi-Head Self-Attention 120
+5.2.1.1 Multi-head self-attention 122
+5.2.1.2 Space and time complexity 123
+5.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />4.2 Data, Tools, and Libraries 98
+4.4.3 Experiments, Results, and Analysis 98
+4.4.3.1 Data preprocessing 99
+4.4.3.2 Experiments 101
+Chapter 5■Transformer Modiﬁcations 109
+5.1 TRANSFORMER BLOCK MODIFICATIONS 109
+5.1.1 Lightweight Transformers 109
+5.1.1.1 Funnel-transformer 109
+5.1.1.2 DeLighT 112
+5.1.2 Connections between Transformer Blocks 114
+5.1.2.1 RealFormer 114
+5.1.3 Adaptive Computation Time 115
+5.1.3.1 Universal transformers (UT) 115
+5.1.4 RecurrenceRelationsbetweenTransformerBlocks 116
+5.1.4.1 Transformer-XL 116
+5.1.5 Hierarchical Transformers 120
+5.2 TRANSFORMERS WITH MODIFIED MULTI-HEAD
+SELF-ATTENTION 120
+5.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />1.1 Lightweight Transformers 109
+5.1.1.1 Funnel-transformer 109
+5.1.1.2 DeLighT 112
+5.1.2 Connections between Transformer Blocks 114
+5.1.2.1 RealFormer 114
+5.1.3 Adaptive Computation Time 115
+5.1.3.1 Universal transformers (UT) 115
+5.1.4 RecurrenceRelationsbetweenTransformerBlocks 116
+5.1.4.1 Transformer-XL 116
+5.1.5 Hierarchical Transformers 120
+5.2 TRANSFORMERS WITH MODIFIED MULTI-HEAD
+SELF-ATTENTION 120
+5.2.1 Structure of Multi-Head Self-Attention 120
+5.2.1.1 Multi-head self-attention 122
+5.2.1.2 Space and time complexity 123
+5.2.2 Reducing Complexity of Self-Attention 124
+5.2.2.1 Longformer 124
+5.2.2.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />122■Transformers for Machine Learning: A Deep Dive
+For two sequences, the query matrix is formed from X1and the key and
+value matrices are formed from X2:
+Q=X1Wk,∈RL1×dk×h
+K=X2Wk,∈RL2×dk×h
+V=X2Wv,∈RL2×dv×h(5.26)
+where X1∈RL1×dandX2∈RL2×d. This is generally what happens in
+a transformer decoder block. X1∈RL×d
+The softmax portion of (5.23) is the attention weight matrix Aij:
+Aij=exp(qikT
+j√dk)
+∑
+r∈Siexp(qikTr√dk), (5.27)
+whereSiis the set of key positions that query qican attend to.
+5.2.1.1 Multi-head self-attention
+So far, we have only discussed single-head self-attention.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />This is generally what happens in
+a transformer decoder block. X1∈RL×d
+The softmax portion of (5.23) is the attention weight matrix Aij:
+Aij=exp(qikT
+j√dk)
+∑
+r∈Siexp(qikTr√dk), (5.27)
+whereSiis the set of key positions that query qican attend to.
+5.2.1.1 Multi-head self-attention
+So far, we have only discussed single-head self-attention. Multi-head at-
+tention is mainly partitioning the matrices shown above into hpieces,
+wherehis the number of attention heads.
+Each attention head has its own query/key/value that is obtained
+by breaking the single-head versions into hequally sized pieces, that are
+indexed by n= 1,...,h:
+Qn=XW(q)
+n,∈RL×d k/h
+Kn=XW(k)
+n,∈RL×d k/h
+Vn=XW(v)
+n,∈RL×d v/h(5.28)
+This does not mean that we now have hquery, key, and value ma-
+trices, but that the matrices shown in (5.28) are a part of the matrices
+shown in (5.24).</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />This is generally what happens in
+a transformer decoder block. X1∈RL×d
+The softmax portion of (5.23) is the attention weight matrix Aij:
+Aij=exp(qikT
+j√dk)
+∑
+r∈Siexp(qikTr√dk), (5.27)
+whereSiis the set of key positions that query qican attend to.
+5.2.1.1 Multi-head self-attention
+So far, we have only discussed single-head self-attention. Multi-head at-
+tention is mainly partitioning the matrices shown above into hpieces,
+wherehis the number of attention heads.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Transformer Modiﬁcations ■111
+Figure 5.2 Shows how the pooling operation between Funnel-
+Transformer’s encoder layers aﬀect the input of the next layer. h
+is the output of the layer before the pooling and h′is the output of the
+pooling operation. The query matrix for the next layer is constructed
+from the pooled output, h′. The key and value matrices for the next
+layer are made from the unpooled output, h.
+The attention weight matrix of each attention head is (T′×T), which
+has decreasing complexity for each successive layer. The output of multi-
+head attention has the same dimensions as h′.
+By constructing the query from the pooled sequence and the key
+and value from the unpooled sequence, the attention mechanism tries
+to learn how the pooled and unpooled sequences should best attend to
+each other to result in high quality compression. Funnel-Transformer
+uses mean pooling with stride and window size both set to two.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />110■Transformers for Machine Learning: A Deep Dive
+Figure 5.1 Schematic architecture diagram for Funnel-Transformer’s en-
+coder. Each layer represents a block composed of several transformer
+layers with the same sequence length. Shows three pooling operations
+between blocks, with each decreasing the sequence length of the output
+by half.
+before the pooling operation. This is shown in Fig. 5.1. If the output of a
+given layer is h, then the output of the pooling layer is h′=Pooling (h),
+where h∈RT×dandh′∈RT′×d, for someT′<T.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The query matrix for the next layer is constructed
+from the pooled output, h′. The key and value matrices for the next
+layer are made from the unpooled output, h.
+The attention weight matrix of each attention head is (T′×T), which
+has decreasing complexity for each successive layer. The output of multi-
+head attention has the same dimensions as h′.
+By constructing the query from the pooled sequence and the key
+and value from the unpooled sequence, the attention mechanism tries
+to learn how the pooled and unpooled sequences should best attend to
+each other to result in high quality compression. Funnel-Transformer
+uses mean pooling with stride and window size both set to two.
+Decoder To support token-level prediction tasks where the model
+needs to produce a full output sequence, like machine translation,
+Funnel-Transformer has an optional decoder that upsamples the com-
+pressed encoder output to a full sequence length. Mencoder layers will
+have the output sequence h(M)that has length TM=T/2M−1.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />h
+is the output of the layer before the pooling and h′is the output of the
+pooling operation. The query matrix for the next layer is constructed
+from the pooled output, h′. The key and value matrices for the next
+layer are made from the unpooled output, h.
+The attention weight matrix of each attention head is (T′×T), which
+has decreasing complexity for each successive layer. The output of multi-
+head attention has the same dimensions as h′.
+By constructing the query from the pooled sequence and the key
+and value from the unpooled sequence, the attention mechanism tries
+to learn how the pooled and unpooled sequences should best attend to
+each other to result in high quality compression. Funnel-Transformer
+uses mean pooling with stride and window size both set to two.
+Decoder To support token-level prediction tasks where the model
+needs to produce a full output sequence, like machine translation,
+Funnel-Transformer has an optional decoder that upsamples the com-
+pressed encoder output to a full sequence length.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The key and value matrices for the next
+layer are made from the unpooled output, h.
+The attention weight matrix of each attention head is (T′×T), which
+has decreasing complexity for each successive layer. The output of multi-
+head attention has the same dimensions as h′.
+By constructing the query from the pooled sequence and the key
+and value from the unpooled sequence, the attention mechanism tries
+to learn how the pooled and unpooled sequences should best attend to
+each other to result in high quality compression. Funnel-Transformer
+uses mean pooling with stride and window size both set to two.
+Decoder To support token-level prediction tasks where the model
+needs to produce a full output sequence, like machine translation,
+Funnel-Transformer has an optional decoder that upsamples the com-
+pressed encoder output to a full sequence length. Mencoder layers will
+have the output sequence h(M)that has length TM=T/2M−1. It will
+be upsampled in a single step to h(up)= [h(up)
+1,...,h(up)
+T]by repeating
+each hidden vector 2M−1times:
+hup
+i=h(M)
+i//2N−1,∀i= 1,...,T (5.5)
+x//y =floor (x/y) (5.6)</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />self-attention. Fig. 2.10 shows how the input vectors, xi, are converted
+to the output vectors, zi, through the self-attention layer. Each input
+vector, xi, generates three diﬀerent vectors: the query, key, and value,
+(qi,ki,vi,). The query, key, and value vectors are obtained by projecting
+the input vector, xi, at timeion the learnable weight matrices Wq,Wk,
+andWvtoget qi,ki,andvi,respectively.Thesequery/key/valueweight
+matrices are randomly initialized and the weights are jointly learned
+from the training process. For the ﬁrst attention layer of the encoder
+and decoder, the inputs are the summation of the word embeddings and
+positional encodings.
+Similar to the attention discussion in section 2.3 where we discussed
+the query, key, and values, and how they impact the ﬁnal attention
+scores, the self-attention has all three vectors generated for every input
+and the following are their key roles:
+1.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Transformers: Basics and Introduction ■23
+Figure 2.10 Self-attention inputs mapped to query, keys, and values and
+generated output for each input.
+self-attention. Fig. 2.10 shows how the input vectors, xi, are converted
+to the output vectors, zi, through the self-attention layer. Each input
+vector, xi, generates three diﬀerent vectors: the query, key, and value,
+(qi,ki,vi,). The query, key, and value vectors are obtained by projecting
+the input vector, xi, at timeion the learnable weight matrices Wq,Wk,
+andWvtoget qi,ki,andvi,respectively.Thesequery/key/valueweight
+matrices are randomly initialized and the weights are jointly learned
+from the training process. For the ﬁrst attention layer of the encoder
+and decoder, the inputs are the summation of the word embeddings and
+positional encodings.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Each input
+vector, xi, generates three diﬀerent vectors: the query, key, and value,
+(qi,ki,vi,). The query, key, and value vectors are obtained by projecting
+the input vector, xi, at timeion the learnable weight matrices Wq,Wk,
+andWvtoget qi,ki,andvi,respectively.Thesequery/key/valueweight
+matrices are randomly initialized and the weights are jointly learned
+from the training process. For the ﬁrst attention layer of the encoder
+and decoder, the inputs are the summation of the word embeddings and
+positional encodings.
+Similar to the attention discussion in section 2.3 where we discussed
+the query, key, and values, and how they impact the ﬁnal attention
+scores, the self-attention has all three vectors generated for every input
+and the following are their key roles:
+1. The role of the query vector of token i,qi, is to combine with every
+other key vectors∑l
+j=0qikjTto inﬂuence the weights for its own
+output, zi.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />As we saw in section 2.4.2.1, the output of the attention mechanism
+(before the heads are concatenated) can be represented by
+Attn (Q,K,V) = softmax(
+QKT
+√dk(
+V, (5.23)
+where Q,K,Vare the query, key, and value matrices, respectively.
+Each is the result of transforming the input sequence into a diﬀerent
+vector space:
+Q=XWq,∈RL×d k
+K=XWk,∈RL×d k
+V=XWv,∈RL×d v(5.24)
+wheredkis the dimension of the query and key spaces and is typi-
+cally set to d, anddvis the value dimension. The matrices Wq,Wk∈
+Rd×dk, and Wv∈Rd×dvare basically rotation matrices. Each row of
+a query/key/value matrix corresponds to the query/key/value vector of
+theithtoken:
+Q=)
+])q1
+...
+qL(
+⌊[,K=)
+])k1
+...
+kL(
+⌊[,V=)
+])v1
+...
+vL(
+⌊[ (5.25)
+Note that (5.24) can be adapted for the case of multi-head attention
+between two sequences, X1andX2, of lengths L1andL2, respectively.</td>
+            </tr>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>3. How does Mama Ricotta's differ from traditional Italian restaurants in terms of its location?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          Mama Ricotta's differs from traditional Italian restaurants in terms of its location as it is situated in a strip mall, which is not typically where one would expect to find a nice Italian restaurant. Despite this unconventional location, Mama Ricotta's manages to maintain an atmosphere and decor that gives the impression of a nicer Italian place.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gpt-3.5-turbo-0125</span> &nbsp;
+          Mama Ricotta's differs from traditional Italian restaurants in terms of its location because it is located in a strip mall, which is not typically where you would expect to find a nice Italian restaurant. Despite being in a strip mall, Mama Ricotta's atmosphere and decor give the impression of a nicer Italian place. This location choice bucks the trend of traditional Italian restaurants being in more upscale or standalone locations.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />60■Transformers for Machine Learning: A Deep Dive
+shovel this stuff down. \n\nAh well, Arrivederci (no more)
+Mama Ricotta
+I met up with friends for a birthday gathering at Frankie ’s.It
+wasmyfirst time and ,while Iusually don ’t go out of my
+wayfor Italian, I was very impressed with Frankie ’s.I
+felt like Istepped back intime .The ambiance and decor
+seemed elegant from the 50sera ,yet the friendliness of
+theserver and the atmosphere was casual .\n\nThe menu
+contained everything you ’d expect on an Italian restaurant
+menu and everything from the bread to the appetizer to the
+entree to the wine tasted delicious. Frankie ’sis
+definitely aplace you can take friends and family to
+impress them ,but not spend afortune doing so.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />When you think ofanice Italian restaurant ,you don ’t think it
+would come ina strip mall, but Mama Ricotta ’sbucks the
+trend .Not only does the atmosphere &decor give the
+impression ofanicer Italian place ,the food ispretty
+good .\n\nWhile you may bethinking that this isadinner
+only place ,this isactually areally popular lunch place .
+There isusually aline during lunch ,but itmoves pretty
+quickly ,especially ifthe outside seating isopen .While
+thefood can beatad onthe pricey side ,Ihave yet to
+have ameal Ihaven ’t been happy with. They have plenty of
+selections for all Italian lovers so don ’texpect just the
+obvious options .\n\nI’d suggest this place as more of a
+dinner place, mainly because of the prices along with the
+portion sizes. If you lunch it here, it may be a long
+afternoon at work trying to stay awake.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Frankie ’sis
+definitely aplace you can take friends and family to
+impress them ,but not spend afortune doing so.
+When you think ofanice Italian restaurant ,you don ’t think it
+would come ina strip mall, but Mama Ricotta ’sbucks the
+trend .Not only does the atmosphere &decor give the
+impression ofanicer Italian place ,the food ispretty
+good .\n\nWhile you may bethinking that this isadinner
+only place ,this isactually areally popular lunch place .
+There isusually aline during lunch ,but itmoves pretty
+quickly ,especially ifthe outside seating isopen .While
+thefood can beatad onthe pricey side ,Ihave yet to
+have ameal Ihaven ’t been happy with. They have plenty of
+selections for all Italian lovers so don ’texpect just the
+obvious options .\n\nI’d suggest this place as more of a
+dinner place, mainly because of the prices along with the
+portion sizes.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />60■Transformers for Machine Learning: A Deep Dive
+shovel this stuff down. \n\nAh well, Arrivederci (no more)
+Mama Ricotta
+I met up with friends for a birthday gathering at Frankie ’s.It
+wasmyfirst time and ,while Iusually don ’t go out of my
+wayfor Italian, I was very impressed with Frankie ’s.I
+felt like Istepped back intime .The ambiance and decor
+seemed elegant from the 50sera ,yet the friendliness of
+theserver and the atmosphere was casual .\n\nThe menu
+contained everything you ’d expect on an Italian restaurant
+menu and everything from the bread to the appetizer to the
+entree to the wine tasted delicious. Frankie ’sis
+definitely aplace you can take friends and family to
+impress them ,but not spend afortune doing so.
+When you think ofanice Italian restaurant ,you don ’t think it
+would come ina strip mall, but Mama Ricotta ’sbucks the
+trend .Not only does the atmosphere &decor give the
+impression ofanicer Italian place ,the food ispretty
+good .\n\nWhile you may bethinking that this isadinner
+only place ,this isactually areally popular lunch place .</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Multilingual Transformer Architectures ■105
+for t, best_index, score_pair in zip(text, preds, scores):
+results.append({
+"text ": t,
+"label" :"positive "ifbest_index == 1 else
+"negative" ,
+"score" : score_pair[best_index]
+})
+return results
+predict([" I love that restaurant!", "I hate italian food."])
+#>> [{"label": ’positive’, "score": 0.99751616, "text": ’I love
+that restaurant!’},
+# {"label ": ’negative’, "score": 0.9791407, "text": ’I hate
+italian food.’}]
+Listing 4.6 Load best model and run inference
+Since we used USEm embeddings, we should be able to predict sen-
+timent for non-English languages. Let’s try it out. As mentioned ear-
+lier, USEm supports 16 languages: Arabic, Chinese-simpliﬁed, Chinese-
+traditional, English, French, German, Italian, Japanese, Korean, Dutch,
+Polish, Portuguese, Spanish, Thai, Turkish, Russian.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />", "I hate italian food."])
+#>> [{"label": ’positive’, "score": 0.99751616, "text": ’I love
+that restaurant!’},
+# {"label ": ’negative’, "score": 0.9791407, "text": ’I hate
+italian food.’}]
+Listing 4.6 Load best model and run inference
+Since we used USEm embeddings, we should be able to predict sen-
+timent for non-English languages. Let’s try it out. As mentioned ear-
+lier, USEm supports 16 languages: Arabic, Chinese-simpliﬁed, Chinese-
+traditional, English, French, German, Italian, Japanese, Korean, Dutch,
+Polish, Portuguese, Spanish, Thai, Turkish, Russian. In Listing 4.7, we
+compare sentiment predictions between pairs of languages, ﬁnding that
+even though our model was trained on a small subset of the Yelp Po-
+larity training set, it can still perform well.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />There isusually aline during lunch ,but itmoves pretty
+quickly ,especially ifthe outside seating isopen .While
+thefood can beatad onthe pricey side ,Ihave yet to
+have ameal Ihaven ’t been happy with. They have plenty of
+selections for all Italian lovers so don ’texpect just the
+obvious options .\n\nI’d suggest this place as more of a
+dinner place, mainly because of the prices along with the
+portion sizes. If you lunch it here, it may be a long
+afternoon at work trying to stay awake. And with their wine
+selection, making this a date destination isn ’tabad idea
+either .
+[(’italian ’,0.010707434311063687) ,
+(’pasta ’,0.007218630048706305) ,
+(’sauce ’,0.004690392541116093) ,
+(’it was ’,0.003576349729937027) ,
+(’food ’,0.0035416017180294685) ,
+(’restaurant ’,0.0034094836517629345) ,
+(’salad ’,0.003321322452779836) ,
+(’olive ’,0.0032739980714160824) ,
+(’bread ’,0.0032417620081978916) ,
+(’italian food ’,0.0031995754647714428) ]
+Listing 3.10 Largest topic: Italian food restaurants</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Multilingual Transformer Architectures ■105
+for t, best_index, score_pair in zip(text, preds, scores):
+results.append({
+"text ": t,
+"label" :"positive "ifbest_index == 1 else
+"negative" ,
+"score" : score_pair[best_index]
+})
+return results
+predict([" I love that restaurant!", "I hate italian food."])
+#>> [{"label": ’positive’, "score": 0.99751616, "text": ’I love
+that restaurant!’},
+# {"label ": ’negative’, "score": 0.9791407, "text": ’I hate
+italian food.’}]
+Listing 4.6 Load best model and run inference
+Since we used USEm embeddings, we should be able to predict sen-
+timent for non-English languages. Let’s try it out.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Our model will use the Multilingual Universal Sentence Encoder
+(mUSE) [49, 284] for feature generation. mUSE is a Transformer en-
+coder trained such that text which is in diﬀerent languages, but has
+similarmeaning,willresultinasimilarencoding.Thisisanalogoustothe
+way two words with similar meaning (and usage) will have similar word
+embeddings. mUSE supports 16 languages: Arabic, Chinese-simpliﬁed,
+Chinese-traditional,English,French,German,Italian,Japanese,Korean,
+Dutch, Polish, Portuguese, Spanish, Thai, Turkish, Russian.
+In this case study, we’ll use TensorFlow Hub to load the mUSE
+model, Huggingface Datasets to load the Yelp Polarity dataset, and Py-
+Torch Lightning for make training a bit simpler. mUSE internally uses
+TensorFlow Text for tokenization, so we install that as well.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The dataset consists of 560K highly polar Yelp
+reviews for training and 38K reviews for testing. Original Yelp reviews
+take numerical score from 1 to 5 stars. This dataset is constructed by
+grouping the 1 and 2 stars reviews into the negative sentiment class and
+the 3 and 4 stars reviews into the positive sentiment class.
+Our model will use the Multilingual Universal Sentence Encoder
+(mUSE) [49, 284] for feature generation. mUSE is a Transformer en-
+coder trained such that text which is in diﬀerent languages, but has
+similarmeaning,willresultinasimilarencoding.Thisisanalogoustothe
+way two words with similar meaning (and usage) will have similar word
+embeddings. mUSE supports 16 languages: Arabic, Chinese-simpliﬁed,
+Chinese-traditional,English,French,German,Italian,Japanese,Korean,
+Dutch, Polish, Portuguese, Spanish, Thai, Turkish, Russian.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />\n\nOne reviewer
+mentioned the 90’s music and the goofy food art on the
+walls. I could not agree more that this isso funny. Whoa
+and talk about noisy. This place isdeafening inside on a
+Friday orSaturday night, worse than a cafeteria. I think
+that everyone with a City-Pass crams inthere insearch of
+the best two-for-one deal on a massive mound of macaroni
+slathered indreadful red sauce and salty cheese. \n\nI
+actually ordered a salad as my main the last time that I
+dined there because I know how universally disappointing
+the pasta dishes were and they actually screwed up a salad.
+I am not sure what on earth it was supposed to be, but they
+called it a chopped salad and it had a little M next to it
+inthe menu as ifit were a specialty of the house. I asked
+for grilled chicken on top and received a dried out piece
+of leather sitting above a mess of lettuce, beans, nuts,
+cheese and peppers.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />I think
+that everyone with a City-Pass crams inthere insearch of
+the best two-for-one deal on a massive mound of macaroni
+slathered indreadful red sauce and salty cheese. \n\nI
+actually ordered a salad as my main the last time that I
+dined there because I know how universally disappointing
+the pasta dishes were and they actually screwed up a salad.
+I am not sure what on earth it was supposed to be, but they
+called it a chopped salad and it had a little M next to it
+inthe menu as ifit were a specialty of the house. I asked
+for grilled chicken on top and received a dried out piece
+of leather sitting above a mess of lettuce, beans, nuts,
+cheese and peppers. Just plain salty and awful. Everything
+was either from a can ora jar. \n\nI do agree with others
+who have said that the service isvery fast and friendly.
+They kept the beer and wine flowing at our table at every
+visit.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />I’ve dined here with large groups
+of friends when we needed to have a big table and they all
+wanted to be bursting full of cheap food and that is really
+the only excuse to go to this place. \n\nOne reviewer
+mentioned the 90’s music and the goofy food art on the
+walls. I could not agree more that this isso funny. Whoa
+and talk about noisy. This place isdeafening inside on a
+Friday orSaturday night, worse than a cafeteria. I think
+that everyone with a City-Pass crams inthere insearch of
+the best two-for-one deal on a massive mound of macaroni
+slathered indreadful red sauce and salty cheese. \n\nI
+actually ordered a salad as my main the last time that I
+dined there because I know how universally disappointing
+the pasta dishes were and they actually screwed up a salad.
+I am not sure what on earth it was supposed to be, but they
+called it a chopped salad and it had a little M next to it
+inthe menu as ifit were a specialty of the house.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Whoa
+and talk about noisy. This place isdeafening inside on a
+Friday orSaturday night, worse than a cafeteria. I think
+that everyone with a City-Pass crams inthere insearch of
+the best two-for-one deal on a massive mound of macaroni
+slathered indreadful red sauce and salty cheese. \n\nI
+actually ordered a salad as my main the last time that I
+dined there because I know how universally disappointing
+the pasta dishes were and they actually screwed up a salad.
+I am not sure what on earth it was supposed to be, but they
+called it a chopped salad and it had a little M next to it
+inthe menu as ifit were a specialty of the house. I asked
+for grilled chicken on top and received a dried out piece
+of leather sitting above a mess of lettuce, beans, nuts,
+cheese and peppers. Just plain salty and awful. Everything
+was either from a can ora jar.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />There isusually aline during lunch ,but itmoves pretty
+quickly ,especially ifthe outside seating isopen .While
+thefood can beatad onthe pricey side ,Ihave yet to
+have ameal Ihaven ’t been happy with. They have plenty of
+selections for all Italian lovers so don ’texpect just the
+obvious options .\n\nI’d suggest this place as more of a
+dinner place, mainly because of the prices along with the
+portion sizes. If you lunch it here, it may be a long
+afternoon at work trying to stay awake. And with their wine
+selection, making this a date destination isn ’tabad idea
+either .</td>
+            </tr>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>4. How many patents does Kenneth L. Graham have related to natural language processing?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          Kenneth L. Graham has five patents related to natural language processing.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gpt-3.5-turbo-0125</span> &nbsp;
+          Kenneth L. Graham has five patents related to natural language processing.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />He currently works as the chief analytics oﬃcer for
+Smarsh. He is responsible for data science, research of analytical prod-
+ucts employing deep learning, transformers, explainable AI, and modern
+techniques in speech and text for the ﬁnancial domain and healthcare.
+Kenneth L. Graham has two decades experience solving quantita-
+tive problems in multiple domains, including Monte Carlo simulation,
+NLP, anomaly detection, cybersecurity, and behavioral proﬁling. For the
+past ten years, he has focused on building scalable solutions in NLP for
+government and industry, including entity coreference resolution, text
+classiﬁcation, active learning, automatic speech recognition, and tempo-
+ral normalization. He currently works at AppFolio as a senior machine
+learning engineer. Dr. Graham has ﬁve patents for his work in natural
+language processing, seven research publications, and a PhD in con-
+densed matter physics.
+Wael Emara has two decades of experience in academia and indus-
+try.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Kenneth L. Graham has two decades experience solving quantita-
+tive problems in multiple domains, including Monte Carlo simulation,
+NLP, anomaly detection, cybersecurity, and behavioral proﬁling. For the
+past ten years, he has focused on building scalable solutions in NLP for
+government and industry, including entity coreference resolution, text
+classiﬁcation, active learning, automatic speech recognition, and tempo-
+ral normalization. He currently works at AppFolio as a senior machine
+learning engineer. Dr. Graham has ﬁve patents for his work in natural
+language processing, seven research publications, and a PhD in con-
+densed matter physics.
+Wael Emara has two decades of experience in academia and indus-
+try. He has a PhD in computer engineering and computer science with
+emphasis on machine learning and artiﬁcial intelligence. His techni-
+cal background and research spans signal and image processing, com-
+puter vision, medical imaging, social media analytics, machine learning,
+xxiii</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Transformers for 
+Machine Learning
+A Deep Dive
+Uday Kamath
+Kenneth L. Graham
+Wael Emara</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Dr. Kamath has many patents and has built commercial products
+using AI in domains such as compliance, cybersecurity, ﬁnancial crime,
+and bioinformatics. He currently works as the chief analytics oﬃcer for
+Smarsh. He is responsible for data science, research of analytical prod-
+ucts employing deep learning, transformers, explainable AI, and modern
+techniques in speech and text for the ﬁnancial domain and healthcare.
+Kenneth L. Graham has two decades experience solving quantita-
+tive problems in multiple domains, including Monte Carlo simulation,
+NLP, anomaly detection, cybersecurity, and behavioral proﬁling. For the
+past ten years, he has focused on building scalable solutions in NLP for
+government and industry, including entity coreference resolution, text
+classiﬁcation, active learning, automatic speech recognition, and tempo-
+ral normalization. He currently works at AppFolio as a senior machine
+learning engineer. Dr.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />He has contributed to many journals, conferences, and books, is
+the author of XAI: An Introduction to Interpretable XAI, Deep Learn-
+ing for NLP and Speech Recognition, Mastering Java Machine Learning,
+and Machine Learning: End-to-End Guide for Java Developers . He held
+many senior roles: chief analytics oﬃcer for Digital Reasoning, advisor
+for Falkonry, and chief data scientist for BAE Systems Applied Intelli-
+gence. Dr. Kamath has many patents and has built commercial products
+using AI in domains such as compliance, cybersecurity, ﬁnancial crime,
+and bioinformatics. He currently works as the chief analytics oﬃcer for
+Smarsh. He is responsible for data science, research of analytical prod-
+ucts employing deep learning, transformers, explainable AI, and modern
+techniques in speech and text for the ﬁnancial domain and healthcare.
+Kenneth L. Graham has two decades experience solving quantita-
+tive problems in multiple domains, including Monte Carlo simulation,
+NLP, anomaly detection, cybersecurity, and behavioral proﬁling.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />He held
+many senior roles: chief analytics oﬃcer for Digital Reasoning, advisor
+for Falkonry, and chief data scientist for BAE Systems Applied Intelli-
+gence. Dr. Kamath has many patents and has built commercial products
+using AI in domains such as compliance, cybersecurity, ﬁnancial crime,
+and bioinformatics. He currently works as the chief analytics oﬃcer for
+Smarsh. He is responsible for data science, research of analytical prod-
+ucts employing deep learning, transformers, explainable AI, and modern
+techniques in speech and text for the ﬁnancial domain and healthcare.
+Kenneth L. Graham has two decades experience solving quantita-
+tive problems in multiple domains, including Monte Carlo simulation,
+NLP, anomaly detection, cybersecurity, and behavioral proﬁling. For the
+past ten years, he has focused on building scalable solutions in NLP for
+government and industry, including entity coreference resolution, text
+classiﬁcation, active learning, automatic speech recognition, and tempo-
+ral normalization.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />To all the researchers and frontline COVID workers
+for their extraordinary service.
+– Uday Kamath, Kenneth L. Graham,
+and Wael Emara
+To my parents Krishna and Bharathi, my wife
+Pratibha, the kids Aaroh and Brandy, my family and
+friends for their support.
+–Uday Kamath
+To my wife Alyson, to my mother, my in-laws, my
+family and friends, thank you for the support and your
+willingness to sacriﬁce your time with me.
+–Kenneth L. Graham
+To my wife Noha, my parents Ali and Zainab, my
+sister Wesam, my extended family and friends, thank
+you all for being there for me all the time.
+–Wael Emara</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />ISBN: 978-0-367-77165-2 (hbk)
+ISBN: 978-0-367-76734-1 (pbk)
+ 
+ISBN: 978-1-003-17008-2 (ebk)
+DOI: 10.1201/9781003170082
+Typeset in Latin Modern  font 
+by KnowledgeWorks Global Ltd.
+Publisher’s note: This book has been prepared from camera-ready copy provided by the authors.Library of Congress Cataloging-in-Publication Data
+Names: Kamath, Uday, author. 
+Title: Transformers for machine learning : a deep dive / Uday Kamath, Kenneth L. Graham, Wael Emara. Description: First edition. | Boca Raton : CRC Press, 2022. | Includes bibliographical references and index.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Publisher’s note: This book has been prepared from camera-ready copy provided by the authors.Library of Congress Cataloging-in-Publication Data
+Names: Kamath, Uday, author. 
+Title: Transformers for machine learning : a deep dive / Uday Kamath, Kenneth L. Graham, Wael Emara. Description: First edition. | Boca Raton : CRC Press, 2022. | Includes bibliographical references and index. Identifiers: LCCN 2021059529 | ISBN 9780367771652 (hardback) | ISBN 9780367767341 (paperback) | ISBN 9781003170082 (ebook) Subjects: LCSH: Neural networks (Computer science). | Computational intelligence. | Machine learning. Classification: LCC QA76.87 .K354 2022 | DDC 006.3/2--dc23/eng/20220218 LC record available at https://lccn.loc.gov/2021059529</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />ISBN: 978-0-367-77165-2 (hbk)
+ISBN: 978-0-367-76734-1 (pbk)
+ 
+ISBN: 978-1-003-17008-2 (ebk)
+DOI: 10.1201/9781003170082
+Typeset in Latin Modern  font 
+by KnowledgeWorks Global Ltd.
+Publisher’s note: This book has been prepared from camera-ready copy provided by the authors.Library of Congress Cataloging-in-Publication Data
+Names: Kamath, Uday, author. 
+Title: Transformers for machine learning : a deep dive / Uday Kamath, Kenneth L. Graham, Wael Emara. Description: First edition. | Boca Raton : CRC Press, 2022. | Includes bibliographical references and index. Identifiers: LCCN 2021059529 | ISBN 9780367771652 (hardback) | ISBN 9780367767341 (paperback) | ISBN 9781003170082 (ebook) Subjects: LCSH: Neural networks (Computer science).</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Mikolov et al. and Graves proposed language models using RNNs
+and long short-term memory, which later became the building blocks for
+many natural language processing (NLP) architectures [184, 97]. The
+research paper by Collobert and Weston was instrumental in demon-
+strating many concepts such as pre-trained word embeddings, CNNs for
+text, and sharing of the embedding matrix for multi-task learning [60].
+Mikolovetal.furtherimprovedtheeﬃciencyoftrainingthewordembed-
+dings proposed by Bengio et al. by eliminating the hidden layer and for-
+mulatinganapproximateobjectiveforlearninggivingriseto“word2vec”,
+an eﬃcient large-scale implementation of word embeddings [185, 183].
+Sutskever’s research, which proposed a Hessian-free optimizer to train
+RNNs eﬃciently on long-term dependencies, was a breakthrough in re-
+viving the usage of RNNs, especially in NLP [237].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Improvements in computer hardware,
+primarily through GPUs, increasing the throughput by almost 10×ev-
+ery ﬁve years, and the existence of a large amount of data to learn from
+resulted in a paradigm shift in the ﬁeld. Instead of hand-engineered fea-
+tures that were the primary focus for many sophisticated applications,
+by learning from a large volume of training data, where the necessary
+features emerge, the deep learning network became the foundation for
+many state-of-the-art techniques.
+Mikolov et al. and Graves proposed language models using RNNs
+and long short-term memory, which later became the building blocks for
+many natural language processing (NLP) architectures [184, 97]. The
+research paper by Collobert and Weston was instrumental in demon-
+strating many concepts such as pre-trained word embeddings, CNNs for
+text, and sharing of the embedding matrix for multi-task learning [60].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Improvements in computer hardware,
+primarily through GPUs, increasing the throughput by almost 10×ev-
+ery ﬁve years, and the existence of a large amount of data to learn from
+resulted in a paradigm shift in the ﬁeld. Instead of hand-engineered fea-
+tures that were the primary focus for many sophisticated applications,
+by learning from a large volume of training data, where the necessary
+features emerge, the deep learning network became the foundation for
+many state-of-the-art techniques.
+Mikolov et al. and Graves proposed language models using RNNs
+and long short-term memory, which later became the building blocks for
+many natural language processing (NLP) architectures [184, 97]. The
+research paper by Collobert and Weston was instrumental in demon-
+strating many concepts such as pre-trained word embeddings, CNNs for
+text, and sharing of the embedding matrix for multi-task learning [60].
+Mikolovetal.furtherimprovedtheeﬃciencyoftrainingthewordembed-
+dings proposed by Bengio et al.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />[184]T. Mikolov, M. Karafiát, L. Burget, J. Cernocký, and
+S. Khudanpur ,Recurrent neural network based language model. ,
+in INTERSPEECH, T. Kobayashi, K. Hirose, and S. Nakamura,
+eds., ISCA, 2010, pp. 1045–1048.
+[185]T. Mikolov, I. Sutskever, K. Chen, G. S. Corrado, and
+J. Dean ,Distributed representations of words and phrases and
+their compositionality , in Advances in Neural Information Process-
+ingSystems26,C.J.C.Burges,L.Bottou,M.Welling,Z.Ghahra-
+mani, and K. Q. Weinberger, eds., Curran Associates, Inc., 2013,
+pp. 3111–3119.
+[186]M. Minsky and S. A. Papert ,Perceptrons: An introduction to
+computational geometry , MIT press, 2017.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />,
+in INTERSPEECH, T. Kobayashi, K. Hirose, and S. Nakamura,
+eds., ISCA, 2010, pp. 1045–1048.
+[185]T. Mikolov, I. Sutskever, K. Chen, G. S. Corrado, and
+J. Dean ,Distributed representations of words and phrases and
+their compositionality , in Advances in Neural Information Process-
+ingSystems26,C.J.C.Burges,L.Bottou,M.Welling,Z.Ghahra-
+mani, and K. Q. Weinberger, eds., Curran Associates, Inc., 2013,
+pp. 3111–3119.
+[186]M. Minsky and S. A. Papert ,Perceptrons: An introduction to
+computational geometry , MIT press, 2017.
+[187]G. Montavon, S. Lapuschkin, A. Binder, W. Samek,
+and K.-R.</td>
+            </tr>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>5. In what scenarios is global attention beneficial in transformer models?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          Global attention in transformer models is beneficial in scenarios where some tokens need to attend to all tokens in the sequence. These global tokens are also attended to by all tokens. This is particularly useful in tasks such as machine translation, topic mining, zero-shot multilingual classification, sentiment analysis, automatic speech recognition, and text classification/categorization. It allows for a more comprehensive understanding of the context and relationships within the data. Additionally, global attention is beneficial in dealing with long sequences of data, as it allows the model to consider the entire sequence at once, rather than in smaller, separate segments.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gpt-3.5-turbo-0125</span> &nbsp;
+          Global attention in transformer models is beneficial in scenarios where:
+
+1. **Long-range dependencies:** Global attention allows tokens in the sequence to attend to all other tokens, making it easier to capture long-range dependencies in the data.
+
+2. **Contextual understanding:** By allowing all tokens to attend to each other, global attention helps in capturing contextual information from the entire sequence, leading to better understanding of the input data.
+
+3. **Global information:** Global attention is useful when certain tokens need to have access to global information or context present in the entire sequence, rather than just local information.
+
+4. **Tasks requiring holistic understanding:** For tasks that require a holistic understanding of the input data, global attention can be beneficial as it enables tokens to consider information from the entire sequence, rather than just nearby tokens.
+
+5. **Enhancing performance:** In some cases, global attention can improve the performance of transformer models by providing a broader context for making predictions or decisions.
+
+Overall, global attention in transformer models is advantageous in scenarios where a comprehensive view of the input data is necessary for accurate processing and prediction.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />xx■Preface
+•Acomprehensivereferencebookfor detailedexplanationsforevery
+algorithm and technique related to transformers.
+•Over 60transformer architectures covered in a comprehensive
+manner.
+•A book for understanding how to apply the transformer techniques
+in diﬀerent NLP applications, speech, time series, and computer
+vision.
+•Practical tips and tricks for each architecture and how to use it in
+the real world.
+•Hands-on case studies providing practical insights to real-world
+scenarios in diverse topics such as machine translation, topic min-
+ing, zero-shot multilingual classiﬁcation, sentiment analysis, au-
+tomatic speech recognition, and text classiﬁcation/categorization
+are covered in suﬃcient detail from the task, process, and analysis
+perspective, all ready to run in Google Colab.
+WHO IS THIS BOOK WRITTEN FOR?</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />•Hands-on case studies providing practical insights to real-world
+scenarios in diverse topics such as machine translation, topic min-
+ing, zero-shot multilingual classiﬁcation, sentiment analysis, au-
+tomatic speech recognition, and text classiﬁcation/categorization
+are covered in suﬃcient detail from the task, process, and analysis
+perspective, all ready to run in Google Colab.
+WHO IS THIS BOOK WRITTEN FOR?
+The theoretical explanations of the state-of-the-art transformer archi-
+tectures will appeal to postgraduate students and researchers (academic
+andindustry)asitwillprovideasingle-entrypointwithdeepdiscussions
+of a quickly moving ﬁeld. The practical hands-on case studies and code
+will appeal to undergraduate students, practitioners, and professionals
+as it allows for quick experimentation and lowers the barrier to entry
+into the ﬁeld.
+Transformers are already a cornerstone for NLP deep learning archi-
+tectures. They are also rapidly employed in other applications such as
+computer vision and audio.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />xx■Preface
+•Acomprehensivereferencebookfor detailedexplanationsforevery
+algorithm and technique related to transformers.
+•Over 60transformer architectures covered in a comprehensive
+manner.
+•A book for understanding how to apply the transformer techniques
+in diﬀerent NLP applications, speech, time series, and computer
+vision.
+•Practical tips and tricks for each architecture and how to use it in
+the real world.
+•Hands-on case studies providing practical insights to real-world
+scenarios in diverse topics such as machine translation, topic min-
+ing, zero-shot multilingual classiﬁcation, sentiment analysis, au-
+tomatic speech recognition, and text classiﬁcation/categorization
+are covered in suﬃcient detail from the task, process, and analysis
+perspective, all ready to run in Google Colab.
+WHO IS THIS BOOK WRITTEN FOR?
+The theoretical explanations of the state-of-the-art transformer archi-
+tectures will appeal to postgraduate students and researchers (academic
+andindustry)asitwillprovideasingle-entrypointwithdeepdiscussions
+of a quickly moving ﬁeld.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />•Practical tips and tricks for each architecture and how to use it in
+the real world.
+•Hands-on case studies providing practical insights to real-world
+scenarios in diverse topics such as machine translation, topic min-
+ing, zero-shot multilingual classiﬁcation, sentiment analysis, au-
+tomatic speech recognition, and text classiﬁcation/categorization
+are covered in suﬃcient detail from the task, process, and analysis
+perspective, all ready to run in Google Colab.
+WHO IS THIS BOOK WRITTEN FOR?
+The theoretical explanations of the state-of-the-art transformer archi-
+tectures will appeal to postgraduate students and researchers (academic
+andindustry)asitwillprovideasingle-entrypointwithdeepdiscussions
+of a quickly moving ﬁeld. The practical hands-on case studies and code
+will appeal to undergraduate students, practitioners, and professionals
+as it allows for quick experimentation and lowers the barrier to entry
+into the ﬁeld.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Here, A(i,:) =A(:,i) = 1,∀i∈G. The
+expanded adjacency matrix Bis shown in Fig. 5.11.
+The external transformer construction adds gadditional tokens to
+theexisting Ltokens.Theadditionaltokensareglobal.Examplesinclude
+special tokens used in transformers, like [CLS]. This essentially creates a
+new adjacency matrix, B, that includes the special tokens by prepending
+grows and columns onto A. Here,B(i,:) =B(:,i) = 1, wherei=
+1,...,g, andB(g+i,g+j) =A(i,j), whereiandj= 1,...,L. The
+expanded adjacency matrix Bis shown in Fig. 5.12.
+Finally,anexampleadjacencymatrixforthecombinationofrandom,
+sliding window, and global attention (external construction) is shown in
+Fig. 5.13 .</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />• ⌊] ⌊]]· · • • · · • · · · · · ⌊⌊] ⌊]· · • • · · • · · · · · ⌊] ⌊]· · • • · · • · · · · · ⌊] ⌊)· · • • · · • · · · · · [
+· · • • · · • · · · · ·
+Figure 5.11 Global attention adjacency matrix for the internal trans-
+former construction, for L= 12andG= 3,4,7. Rowicorresponds
+to queryi. Columns with a •are keys that query iattends to and·
+represents a lack of attention (a missing edge).
+Global attention Big Bird also allows some tokens to attend to all
+tokens in the sequence. These global tokens are also attended to by all
+tokens. Big Bird uses two types of global tokens: internal transformer
+construction and external transformer construction.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />In the internal transformer construction, a subset of the Lvertex,G,
+arepromotedtoglobaltokens.Thusthequeriesorkeysinthosepositions
+attend to all other positions. Here, A(i,:) =A(:,i) = 1,∀i∈G. The
+expanded adjacency matrix Bis shown in Fig. 5.11.
+The external transformer construction adds gadditional tokens to
+theexisting Ltokens.Theadditionaltokensareglobal.Examplesinclude
+special tokens used in transformers, like [CLS]. This essentially creates a
+new adjacency matrix, B, that includes the special tokens by prepending
+grows and columns onto A. Here,B(i,:) =B(:,i) = 1, wherei=
+1,...,g, andB(g+i,g+j) =A(i,j), whereiandj= 1,...,L. The
+expanded adjacency matrix Bis shown in Fig. 5.12.
+Finally,anexampleadjacencymatrixforthecombinationofrandom,
+sliding window, and global attention (external construction) is shown in
+Fig.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />285–286.
+[240]S. Tan, R. Caruana, G. Hooker, P. Koch, and A. Gordo ,
+Learning global additive explanations for neural nets using model
+distillation , arXiv preprint arXiv:1801.08640, (2018).
+[241]Y. Tay, D. Bahri, D. Metzler, D.-C. Juan, Z. Zhao, and
+C. Zheng ,Synthesizer: Rethinking self-attention in transformer
+models, ArXiv, abs/2005.00743 (2021).
+[242]Y. Tay, D. Bahri, L. Yang, D. Metzler, and D.-C. Juan ,
+Sparse Sinkhorn attention , in ICML, 2020.
+[243]Y. Tay, M. Dehghani, D. Bahri, and D. Metzler ,Eﬃcient
+transformers: A survey , ArXiv, abs/2009.06732 (2020).</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />· · · ⌊⌊] ⌊]· · • • · · • · · · · · ⌊] ⌊]· · • • · · • · · · · · ⌊] ⌊)· · • • · · • · · · · · [
+· · • • · · • · · · · ·
+Figure 5.11 Global attention adjacency matrix for the internal trans-
+former construction, for L= 12andG= 3,4,7. Rowicorresponds
+to queryi. Columns with a •are keys that query iattends to and·
+represents a lack of attention (a missing edge).
+Global attention Big Bird also allows some tokens to attend to all
+tokens in the sequence. These global tokens are also attended to by all
+tokens. Big Bird uses two types of global tokens: internal transformer
+construction and external transformer construction.
+In the internal transformer construction, a subset of the Lvertex,G,
+arepromotedtoglobaltokens.Thusthequeriesorkeysinthosepositions
+attend to all other positions.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />• · · • · · · · · ⌊] ⌊)· · • • · · • · · · · · [
+· · • • · · • · · · · ·
+Figure 5.11 Global attention adjacency matrix for the internal trans-
+former construction, for L= 12andG= 3,4,7. Rowicorresponds
+to queryi. Columns with a •are keys that query iattends to and·
+represents a lack of attention (a missing edge).
+Global attention Big Bird also allows some tokens to attend to all
+tokens in the sequence. These global tokens are also attended to by all
+tokens. Big Bird uses two types of global tokens: internal transformer
+construction and external transformer construction.
+In the internal transformer construction, a subset of the Lvertex,G,
+arepromotedtoglobaltokens.Thusthequeriesorkeysinthosepositions
+attend to all other positions. Here, A(i,:) =A(:,i) = 1,∀i∈G.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Simon in the same global academic
+citation impact studies.
+Given the above background, I am thrilled to share with you the
+most thorough and up-to-date compendium of research, practices, case
+studies, and applications available today that can provide the best ROI
+on the latest AI technological advances on transformers inspired by the
+paper, “Attention is All You Need.” Since Google introduced transformer
+architecture in 2017, transformers have provided exponential improve-
+ments in context-focused realization toward meaning-aware AI as deep
+(neuralnetwork)learningmodelsbaseduponattentionmechanismssuch
+as dot-product attention and multi-head attention. Resulting advances
+in enhanced parallel processing of sequential data have made eﬃcient
+context sensitive and hence more “meaningful” for ever-larger datasets
+and much more feasible than earlier.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />3.Globalattention Thedeﬁnitionofglobalattentionisunchanged,
+except it is deﬁned in terms of blocks rather than sequence posi-
+tion.
+5.2.3 Improving Multi-Head-Attention
+Now we focus on some of the ways the attention mechanism has been
+changed to improve performance of the transformer.
+5.2.3.1 Talking-heads attention
+Vaswani et al. [254] showed that multi-head attention allows the trans-
+former to perform h(number of attention heads) separate attention
+calculations. Talking-Heads Attention [227] instead allows the atten-
+tion heads to share information. It works by adding two linear layers
+that project the product of the query and key matrices, QKT(at-
+tention logits), into a new space and projects the attention weights,
+Softmax(QKT), into a new space.
+Talking-Heads Attention (THA) also partitions the attention heads
+into three types: heads for the queries and keys, heads for the value, and
+heads for the attention logits and attention weights.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Foreword
+Renowned AI pioneer and Nobel laureate Herbert Simon underscored
+“attention” as the most valuable resource of the information econ-
+omy, as necessary to allocate attention eﬃciently among the over-
+abundance of information resources. Having written the foundational
+paper on meaning-aware AI and recently having served as MIT-
+Princeton-USAF-AFRL AI Faculty-SME, I had the privilege of pub-
+lishing by invitation in the same journal’s special issue of ASQ, and of
+being the Malcolm Baldrige National Quality Award administrator, as
+well as being ranked along with Dr. Simon in the same global academic
+citation impact studies.
+Given the above background, I am thrilled to share with you the
+most thorough and up-to-date compendium of research, practices, case
+studies, and applications available today that can provide the best ROI
+on the latest AI technological advances on transformers inspired by the
+paper, “Attention is All You Need.” Since Google introduced transformer
+architecture in 2017, transformers have provided exponential improve-
+ments in context-focused realization toward meaning-aware AI as deep
+(neuralnetwork)learningmodelsbaseduponattentionmechanismssuch
+as dot-product attention and multi-head attention.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The joint attention is O(N·F).
+The paper ﬁnds that in many cases, spatial attention is more im-
+portant than temporal attention. But, there are cases where the tem-
+poral attention is very important. Another ﬁnding is that the divided
+space-time attention is able to learn more than the full, joint space-time
+attention because the divided case treats them as two separate attention
+mechanisms, and thus it has twice the parameters and can learn more, in
+principal. Because of this, the recommended attention method is divided
+space-time attention.
+6.6 GRAPH TRANSFORMERS
+Can transformers be applied to graph datasets? When a transformer
+uses a full attention mechanism, meaning it has no hard-coded sparsity,
+it treats an input sequence as a fully-connected graph. This is true for
+text, images, videos, etc. We saw this for text data with Big Bird in
+section 5.2.2.4, for images with Vision Transformer in section 6.2.1, and
+with video for TimeSformer in section 6.5.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Simon in the same global academic
+citation impact studies.
+Given the above background, I am thrilled to share with you the
+most thorough and up-to-date compendium of research, practices, case
+studies, and applications available today that can provide the best ROI
+on the latest AI technological advances on transformers inspired by the
+paper, “Attention is All You Need.” Since Google introduced transformer
+architecture in 2017, transformers have provided exponential improve-
+ments in context-focused realization toward meaning-aware AI as deep
+(neuralnetwork)learningmodelsbaseduponattentionmechanismssuch
+as dot-product attention and multi-head attention. Resulting advances
+in enhanced parallel processing of sequential data have made eﬃcient
+context sensitive and hence more “meaningful” for ever-larger datasets
+and much more feasible than earlier.
+Covering the latest advances in neural network architectures related
+to transformers spanning applications such as Natural Language Pro-
+cessing (NLP), speech recognition, time series analysis, and computer
+vision and domain-speciﬁc models spanning science, medicine, and ﬁ-
+nance, the book aims to meet the theoretical, research, application, and
+practical needs across academia and industry for multiple audiences in-
+cluding postgraduate students and researchers, undergraduate students,
+industry practitioners, and professionals.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Saliency maps of attention on image or text highlights
+the parts of the input that are important from the model per-
+spective for decision-making (classiﬁcation, recognition, question-
+answering, etc.), with the output mimicking how trained hu-
+mans associate a focus-based mechanism as a form of explana-
+tion [195, 127, 254,106,154].
+2.Safety. When deployed in applications that directly or indi-
+rectly impact human life, the transformer-based models should be
+deemed safe. One can qualify safety in terms of the (i) consistent
+and deterministic behavior, i.e., given the same input, the out-
+put remains the same every time, (ii) robust and reliable under
+standard and exceptional conditions, and (iii) the ability to guard
+against choices that negatively impact society in general [191].
+3.Trust. Dependable models are the ones that do not need valida-
+tion.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />208■Transformers for Machine Learning: A Deep Dive
+7.4.2.3 Attention probing
+To validate if the attention distributions work well in uncontextualized
+settings, the attention weights from the BiLSTM are imposed on an
+uncontextualized trained MLP layer with the bag of word-vector rep-
+resentation. Thus, high performance in the task implies that attention
+scorescapturetherelationshipbetweentheinputandtheoutput.Except
+for Stanford Sentiment Treebank (SST) dataset, every task and dataset
+shows the BiLSTM trained attention weights outperforming the MLP
+and the uniform weights, indicating the usefulness of attention weights.
+In conclusion, the research has laid down three essential components
+for validating the usefulness of the attention mechanism and three meth-
+odstoquantifyitforfaithfulexplanation.Theusefulnessoftheattention
+mechanism is shown to be task dependent.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />This directly corresponds to the exclusivity requisite
+for faithful explanations and will guide the search for adversarial
+models.
+3. Attention distributions should work well in uncontextualized set-
+tings. Since the attention weights are typically learned on contex-
+tualized hidden layer outputs, to see the impact on input tokens,
+one needs to use uncontextualized settings to judge their useful-
+ness.
+7.4.2.1 Is attention necessary for all tasks?
+The authors use the same three sets of tasks and six classiﬁcation
+datasets using the BiLSTM model from the Jain and Wallace setting
+and create another model where the attention weights are uniform in
+distribution compared to the learned weights. Based on the F1 scores
+on all six classiﬁcation datasets comparing the uniform and learned at-
+tention weights, the news datasets show no variations and hence are not
+used for the subsequent two analyses. The Stanford Sentiment Treebank</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Thus, high performance in the task implies that attention
+scorescapturetherelationshipbetweentheinputandtheoutput.Except
+for Stanford Sentiment Treebank (SST) dataset, every task and dataset
+shows the BiLSTM trained attention weights outperforming the MLP
+and the uniform weights, indicating the usefulness of attention weights.
+In conclusion, the research has laid down three essential components
+for validating the usefulness of the attention mechanism and three meth-
+odstoquantifyitforfaithfulexplanation.Theusefulnessoftheattention
+mechanism is shown to be task dependent.
+7.5 QUANTIFYING ATTENTION FLOW
+As discussed in the previous two sections, correlating the attention
+weights to inputs for explanation in a simple BiLSTM with a single
+attention layer before the output itself is an open research topic. In
+transformers with self-attention, multiple attention heads, and many at-
+tention layers in the encoder, the problem becomes even more diﬃcult.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Furthermore,
+self-attention, the critical innovation in the transformers, helps in paral-
+lelizingthecomputationofper-symbolcontext-basedvectorsandcreates
+a global receptive ﬁeld where the symbol gets information from all the
+symbols. On the other hand, the absence of recurrent inductive bias of
+RNNs becomes an issue when solving tasks with inherent hierarchical
+structures or when the lengths vary signiﬁcantly between the training
+and the unseen data the model predicts. Also, the number of sequen-
+tial computations in transformers is independent of the input size but
+only dependent on the number of layers, making it computationally non-
+universal or Turing incomplete. Transformers apply the same amount of
+computation to all the inputs leading to ineﬃciencies in many cases
+where computations can be conditioned on the complexity.
+Universaltransformers(UT)byDehghanietal.[69]isanextensionof
+transformerswheretheparallelizabilityandglobalreceptiveﬁeldbeneﬁts
+get supplemented by the recurrent inductive bias of RNNs while being
+computationally universal.</td>
+            </tr>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>6. Explain the importance of consistent distance between two time-steps across sentences of various lengths.</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The consistent distance between two time-steps across sentences of various lengths is important for maintaining the integrity of the positional encoding in transformer models. This consistency ensures that the model can accurately capture the relative positions of words in a sentence, regardless of the sentence's length. 
+
+In natural language processing tasks, the position of a word in a sentence often carries important contextual information. For example, the word "not" can change the meaning of a sentence depending on where it is placed. If the distance between time-steps is not consistent, the model may misinterpret the positional relationship between words, leading to inaccurate predictions or interpretations.
+
+Moreover, maintaining a consistent distance between time-steps allows the model to generalize better to sentences of different lengths. This is because the positional encoding would remain consistent and meaningful across different sentence lengths, allowing the model to understand and process shorter or longer sentences effectively. 
+
+In summary, a consistent distance between two time-steps across sentences of various lengths is crucial for accurate positional encoding, effective model generalization, and overall performance in natural language processing tasks.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gpt-3.5-turbo-0125</span> &nbsp;
+          Consistent distance between two time-steps across sentences of various lengths is important for several reasons:
+
+1. **Maintaining Contextual Relationships**: In natural language processing tasks, the distance between two time-steps (words in a sentence) can affect the contextual relationships between them. Consistent distance ensures that the model can capture and understand the relationships between words regardless of the sentence length.
+
+2. **Generalization**: By maintaining a consistent distance between time-steps, the model can generalize its learning across sentences of different lengths. This is crucial for the model to perform well on unseen data and tasks.
+
+3. **Information Flow**: Consistent distance helps in the smooth flow of information between time-steps. If the distance varies significantly across sentences, it can lead to information loss or confusion in the model's understanding of the text.
+
+4. **Model Stability**: Having a consistent distance between time-steps helps in stabilizing the model's training process. It ensures that the model learns to process and encode information in a consistent manner, leading to more stable and reliable predictions.
+
+Overall, consistent distance between time-steps is a key factor in ensuring that the model can effectively understand and process text data, regardless of the length or complexity of the sentences.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />One can derive various requirements for
+eﬀective positional encodings. They are
+1. Unique encoding value for each time-step (word in the sentence).
+2. Consistentdistancebetweentwotime-stepsacrosssentencesofvar-
+ious lengths.
+3. Encoding results are generalized independent of the length of the
+sentence.
+4. The encoding is deterministic.
+One trivial way of accomplishing all the requirements for positional en-
+coding is to use binary representation. Fig. 2.8 highlights how with a
+vector of size or depth 3, we can generate 8positional encodings using
+binary values that meet all the requirements given above. The represen-
+tation of each bit as grey (0) and white (1) shows how each position is
+diﬀerent and has a constant diﬀerence. Using binary values is very costly
+from a memory perspective.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Transformers: Basics and Introduction ■21
+Figure 2.8 Positional encoding for 8positions with dimensionality 3.
+known as positional encoding. One can derive various requirements for
+eﬀective positional encodings. They are
+1. Unique encoding value for each time-step (word in the sentence).
+2. Consistentdistancebetweentwotime-stepsacrosssentencesofvar-
+ious lengths.
+3. Encoding results are generalized independent of the length of the
+sentence.
+4. The encoding is deterministic.
+One trivial way of accomplishing all the requirements for positional en-
+coding is to use binary representation. Fig. 2.8 highlights how with a
+vector of size or depth 3, we can generate 8positional encodings using
+binary values that meet all the requirements given above. The represen-
+tation of each bit as grey (0) and white (1) shows how each position is
+diﬀerent and has a constant diﬀerence.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The length of the sequence, T, is the
+number of time steps in the audio. Some spans of in the sequence of
+speech representations are then masked.
+The encodings are able to be learned because the speech is decom-
+posed into discrete speech units akin to the WordPiece tokens used as
+inputs into a text Transformer. The speech units are a ﬁnite set of dis-
+crete units of the audio sequence and are shorter than phonemes (they’re
+25 ms in length). The latent speech encodings are analogous to the em-
+beddings learned in the initial embedding layer in a text transformer.
+These masked encodings are passed into a transformer to build con-
+textualized representations. A contrastive loss function [219, 250] lets
+the wav2vec 2.0 transformer learn the relative importance of the speech
+units.
+Note that the discrete speech units also enable cross-lingual train-
+ing, where the model learns which units are only used for a particular
+language and which units are used across multiple languages.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />84■Transformers for Machine Learning: A Deep Dive
+Figure 4.5 Illustration of BTMLM [194] pre-training task. The ﬁrst step
+on the left is where a pre-trained CAMLM is used to generate pseudo-
+parallel sentences. The second step on the right is where the generated
+pseudo-parallel sentences are then used to further train the CAMLM.
+consists of two steps; the ﬁrst step generates pseudo-parallel data from
+a given monolingual corpus. ERNIE-M [194] constructs pseudo-parallel
+sentences by ﬁrst pre-training the model using CAMLM and then adding
+placeholder masks to the end of the original monolingual sentence to
+show the location and language that the model should generate. The
+second step masks the tokens in the original monolingual sentence, then
+concatenates it with the created pseudo-parallel sentence. Finally, the
+model should predict the masked tokens. Fig. 4.5shows the two steps of
+BTMLM.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The ﬁrst step
+on the left is where a pre-trained CAMLM is used to generate pseudo-
+parallel sentences. The second step on the right is where the generated
+pseudo-parallel sentences are then used to further train the CAMLM.
+consists of two steps; the ﬁrst step generates pseudo-parallel data from
+a given monolingual corpus. ERNIE-M [194] constructs pseudo-parallel
+sentences by ﬁrst pre-training the model using CAMLM and then adding
+placeholder masks to the end of the original monolingual sentence to
+show the location and language that the model should generate. The
+second step masks the tokens in the original monolingual sentence, then
+concatenates it with the created pseudo-parallel sentence. Finally, the
+model should predict the masked tokens. Fig. 4.5shows the two steps of
+BTMLM.
+Due to their superior performance in XLM architecture, the mMLM
+and TLM pre-training tasks are employed as part of training ERNIE-
+M as well.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />2.2.4 Issues with RNN-Based Encoder-Decoder
+Asdescribedintheabovesection,completeinformationaboutthesource
+sentence is compressed and encoded in one context variable used by the
+decoder component. As the input size increases, there will be a loss of
+information while compressing the input. The words in a sentence can
+also have complex structure and long-distance associations based on the
+language.Capturingthisinacompressedwayinasinglevectoralsoleads
+to ineﬃciencies. On the other hand, each time step’s hidden variables
+on the encoder side are available and carry information to be used by
+the decoder network. Each time step in the decoder can be inﬂuenced
+diﬀerently by the hidden variables in the encoder. RNNs also have issues
+with vanishing and explosive gradients [115]. One of the computational
+issues with RNNs is that the recurrence or dependence on previous time
+steps makes the architecture very diﬃcult to parallelize.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The second step on the right is where the generated
+pseudo-parallel sentences are then used to further train the CAMLM.
+consists of two steps; the ﬁrst step generates pseudo-parallel data from
+a given monolingual corpus. ERNIE-M [194] constructs pseudo-parallel
+sentences by ﬁrst pre-training the model using CAMLM and then adding
+placeholder masks to the end of the original monolingual sentence to
+show the location and language that the model should generate. The
+second step masks the tokens in the original monolingual sentence, then
+concatenates it with the created pseudo-parallel sentence. Finally, the
+model should predict the masked tokens. Fig. 4.5shows the two steps of
+BTMLM.
+Due to their superior performance in XLM architecture, the mMLM
+and TLM pre-training tasks are employed as part of training ERNIE-
+M as well. ERNIE-M is trained with monolingual and parallel corpora
+with 96 languages and is initialized with XLM-R weights.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />With larger datasets the model can learn the relevant
+correlations on its own, as has been shown for various Transformers.
+ViT also shows that the spatial relationship between patches (distance
+inside the image) is learned by the positional encodings. Patches that
+are close to each other end up with similar positional encodings. The
+two-dimensional spatial correlations are also learned by the positional
+encodings,i.e.,patchesinthesameroworcolumnhavesimilarpositional
+encodings.Theexperimentsalsodemonstratedthathard-codingthetwo-
+dimensional structure of the image patches into the positional encodings
+does not improve quality. This is likely because building inductive biases
+into a model as versatile as a transformer prevents it from learning on
+its own what is or is not important.
+Lastly, the Vision Transformer investigates a modiﬁcation to the self-
+attention mechanism, axial attention [126, 114]. Axial attention, where
+attention is between patches in the same row or the same column.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Interpretability and Explainability Techniques for Transformers ■207
+(SST) is a borderline case and shows a small diﬀerence as compared to
+the MIMIC (III) and IMDB dataset.
+7.4.2.2 Searching for adversarial models
+To ﬁnd attention weight distributions that mimic the base model pre-
+dictions, the authors propose a model-consistent training protocol for
+ﬁnding adversarial attention distributions through a combined parame-
+terization that holds for all training examples. The two measures they
+employ for the adversarial training are Total Variation Distance (TVD)
+and Jensen-Shannon Divergence (JSD).</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />204■Transformers for Machine Learning: A Deep Dive
+The experiments show a consistently low correlation between the atten-
+tion weights and feature importance scores across all the datasets, espe-
+cially for contextualized encoders .
+7.4.1.2 Counterfactual experiments
+To validate the second hypothesis, the authors put forth two empirical
+questions
+1. How much does the output change if the attention scores are ran-
+domly permutated?
+2. Can we ﬁnd maximally diﬀerent attention that does not change
+the output more than a predeﬁned threshold epsilon?</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />They are
+1. Unique encoding value for each time-step (word in the sentence).
+2. Consistentdistancebetweentwotime-stepsacrosssentencesofvar-
+ious lengths.
+3. Encoding results are generalized independent of the length of the
+sentence.
+4. The encoding is deterministic.
+One trivial way of accomplishing all the requirements for positional en-
+coding is to use binary representation. Fig. 2.8 highlights how with a
+vector of size or depth 3, we can generate 8positional encodings using
+binary values that meet all the requirements given above. The represen-
+tation of each bit as grey (0) and white (1) shows how each position is
+diﬀerent and has a constant diﬀerence. Using binary values is very costly
+from a memory perspective.
+If the length of the sentence is given by land the embedding di-
+mension/depth is given by d, positional encoding Pis a2-d matrix of
+same dimension, i.e., P∈Rl×d.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Then we tokenize the sentences, convert the words to token IDs, and
+append <bos> and <eos> IDs to the beginning and end of the token
+ID sequences. Padding the variable-length sequences to the maximum
+observed length in the batch using the <pad> token ensures a ﬁxed-
+size tensor for training and evaluation.
+The total of 135,842language pairs after ﬁltering reduce to 131,951
+and we further split it into 80% training, 10% validation and 10% test
+data, i.e., 105,460, 13,308, and 13,183respectively.
+Figs. 2.13 and 2.14 show the distribution plots as histograms for En-
+glish/French and joint distribution. Most of the sentences in the parallel
+corpus are between 4and8tokens/words length.
+Figure 2.13 SentencelengthdistributionforEnglishandFrenchsentences.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />To prepare for training, the phrase
+pairs are created such that ﬁfty percent of the occurrences are consec-
+utive and the remaining ﬁfty percent are not consecutive. Pre-training
+the model at the sentence level is beneﬁcial in downstream tasks like
+question answering (QA) , natural language inference (NLI), and se-
+mantic text similarity (STS), which need sentence pairs as input. Let
+l∈{1, 0}represents two sentences (x,y)being consecutive or not, NSP
+loss is deﬁned as follows:
+L(x,y)
+NSP =−logP (l|x,y) (4.2)
+4.1.2.2 Cross-Lingual Language Model (XLM)
+Cross-Lingual Language Model (XLM) [146] is an improvement over
+the mBERT architecture by learning from monolingual and parallel cor-
+pora. For learning from monolingual data XLM uses the standard MLM
+pre-training task used by mBERT.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />As the input size increases, there will be a loss of
+information while compressing the input. The words in a sentence can
+also have complex structure and long-distance associations based on the
+language.Capturingthisinacompressedwayinasinglevectoralsoleads
+to ineﬃciencies. On the other hand, each time step’s hidden variables
+on the encoder side are available and carry information to be used by
+the decoder network. Each time step in the decoder can be inﬂuenced
+diﬀerently by the hidden variables in the encoder. RNNs also have issues
+with vanishing and explosive gradients [115]. One of the computational
+issues with RNNs is that the recurrence or dependence on previous time
+steps makes the architecture very diﬃcult to parallelize.
+2.3 ATTENTION MECHANISM
+2.3.1 Background
+The attention mechanism involves selectively focusing on speciﬁc ele-
+ments while ﬁltering out the less relevant ones. The human optic nerve</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The teacher forcing helps in ad-
+dressing the slow convergence and instability problems when training
+RNNs.
+2.2.4 Issues with RNN-Based Encoder-Decoder
+Asdescribedintheabovesection,completeinformationaboutthesource
+sentence is compressed and encoded in one context variable used by the
+decoder component. As the input size increases, there will be a loss of
+information while compressing the input. The words in a sentence can
+also have complex structure and long-distance associations based on the
+language.Capturingthisinacompressedwayinasinglevectoralsoleads
+to ineﬃciencies. On the other hand, each time step’s hidden variables
+on the encoder side are available and carry information to be used by
+the decoder network. Each time step in the decoder can be inﬂuenced
+diﬀerently by the hidden variables in the encoder. RNNs also have issues
+with vanishing and explosive gradients [115].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />124■Transformers for Machine Learning: A Deep Dive
+lengthincreases.Forexample,ifthesequencelengthdoubles,theamount
+of time needed to compute and store the attention weights will increase
+fourfold.
+5.2.2 Reducing Complexity of Self-Attention
+This section discusses several transformer models that reduce the com-
+putational complexity of multi-head self-attention.
+5.2.2.1 Longformer
+When calculating self-attention (omitting the causal requirement for the
+self-attention between the encoder and decoder blocks) there are usually
+no restrictions on which positions in the sequence can attend to each
+other. This means that, in principle, the matrix of attention weights for
+every head could be dense. When viewed as a graph, it corresponds to a
+fully-connected, weighted bipartite graph. If the sequence has Ltokens,
+then there would be L(L−1)/2edges.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Next Sentence Prediction (NSP) Many downstream NLP tasks
+require understanding the relationship between two sentences, such as
+Question Answering (QA) and Natural Language Inference (NLI). Stan-
+dard language models do not pick up this type of knowledge. This moti-
+vatestheNSPtask,whereBERTisfedpairsofsentencesandpre-trained
+to predict if the second sentence should follow the ﬁrst one in a contin-
+uous context. As discussed earlier, the ﬁrst sentence is preﬁxed with the
+[CLS]token, then the two sentences are delimited by the special token
+[SEP]. During NSP task pre-training, the model is given sentence pairs
+where 50% of the time the second sentence comes after the ﬁrst sentence
+and the other 50% the second sentence is a random sentence from the
+full training corpus. The self-attention of Transformer layers encourages</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Next Sentence Prediction (NSP) In the context of sentence-level
+pre-training tasks, NSP assists the model in learning associations be-
+tween phrases [71]. It is a binary sentence pair classiﬁcation problem
+that learns to identify consecutive sentences. For two sentences xandy,
+the[CLS]token vector representing the aggregate representation of the
+two sentences (x,y)is passed to the Sigmoid layer to obtain the proba-
+bility of being consecutive sentences. To prepare for training, the phrase
+pairs are created such that ﬁfty percent of the occurrences are consec-
+utive and the remaining ﬁfty percent are not consecutive. Pre-training
+the model at the sentence level is beneﬁcial in downstream tasks like
+question answering (QA) , natural language inference (NLI), and se-
+mantic text similarity (STS), which need sentence pairs as input. Let
+l∈{1, 0}represents two sentences (x,y)being consecutive or not, NSP
+loss is deﬁned as follows:
+L(x,y)
+NSP =−logP (l|x,y) (4.2)
+4.1.2.2 Cross-Lingual Language Model (XLM)
+Cross-Lingual Language Model (XLM) [146] is an improvement over
+the mBERT architecture by learning from monolingual and parallel cor-
+pora.</td>
+            </tr>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>7. Describe the computation process for each hidden unit in layer normalization.</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          In layer normalization, each hidden unit, denoted as hi, is computed using the following formula:
+
+hi = g * (hi - µ) / σ
+
+Here, g is the gain variable which can be set to 1, µ is the mean of the hidden units, and σ is the standard deviation of the hidden units. The mean µ is calculated by summing all the hidden units and dividing by the total number of hidden units, represented as H. The standard deviation σ is calculated by taking the square root of the average of the squared deviations of the hidden units from their mean.
+
+This computation ensures that each layer has a mean of 0 and a variance of 1, reducing the covariance shift, i.e., the gradient dependencies between each layer. This speeds up the convergence as fewer iterations are needed.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gpt-3.5-turbo-0125</span> &nbsp;
+          In layer normalization, the computation process for each hidden unit can be described as follows:
+
+1. Calculate the mean (µ) of all the hidden units in the layer:
+   µ = 1/H * Σ(i=1 to H) hi
+
+2. Calculate the standard deviation (σ) of the hidden units in the layer:
+   σ = √(1/H * Σ(i=1 to H) (hi - µ)^2)
+
+3. Compute the normalized value for each hidden unit (hi) using the following formula:
+   hi_normalized = g * (hi - µ) / σ
+
+   where:
+   - hi_normalized is the normalized value of the hidden unit hi
+   - g is the gain variable (usually set to 1)
+   - µ is the mean calculated in step 1
+   - σ is the standard deviation calculated in step 2
+
+4. The normalized values are then passed through an activation function (e.g., ReLU) to introduce non-linearity and enhance the representation of the hidden units.
+
+5. The normalized and activated hidden units are then combined with the original hidden units using a residual connection, and the resulting values are passed through another normalization step to ensure stability and faster convergence.
+
+Overall, layer normalization helps to reduce the covariance shift between layers, speeds up convergence by reducing gradient dependencies, and ensures that each layer has a mean of 0 and a unit variance.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />2.7.
+2.4.3 Residuals and Layer Normalization
+Similar to ResNets, the inputs, X, are short circuited to the out-
+put,Z, and both are added and passed through layer normalization
+addAndNorm (X+Z)[105]. Layer normalization ensures each layer to
+have 0mean and a unit ( 1) variance.
+For each hidden unit, hi, we can compute
+hi=g
+σ(hi−µ) (2.21)
+wheregis the gain variable (can be set to 1), µis the mean given by
+1
+H∑H
+i=1hiandσis the standard deviation given by∑
+1
+H(hi−µ)2.
+Layer normalization reduces the covariance shift , i.e., the gradient
+dependencies between each layer, and therefore speeds up the conver-
+gence as fewer iterations are needed [13].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Layer normalization ensures each layer to
+have 0mean and a unit ( 1) variance.
+For each hidden unit, hi, we can compute
+hi=g
+σ(hi−µ) (2.21)
+wheregis the gain variable (can be set to 1), µis the mean given by
+1
+H∑H
+i=1hiandσis the standard deviation given by∑
+1
+H(hi−µ)2.
+Layer normalization reduces the covariance shift , i.e., the gradient
+dependencies between each layer, and therefore speeds up the conver-
+gence as fewer iterations are needed [13]. This is related to batch nor-
+malization, where batch normalization happens at one hidden unit level
+and a 0mean and a unit ( 1) variance is achieved on that one batch [130].
+Advantage of layer normalization is that it works independent of the
+batch size, i.e., can give a single example, small batch or a large batch.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />2.7.
+2.4.3 Residuals and Layer Normalization
+Similar to ResNets, the inputs, X, are short circuited to the out-
+put,Z, and both are added and passed through layer normalization
+addAndNorm (X+Z)[105]. Layer normalization ensures each layer to
+have 0mean and a unit ( 1) variance.
+For each hidden unit, hi, we can compute
+hi=g
+σ(hi−µ) (2.21)
+wheregis the gain variable (can be set to 1), µis the mean given by
+1
+H∑H
+i=1hiandσis the standard deviation given by∑
+1
+H(hi−µ)2.
+Layer normalization reduces the covariance shift , i.e., the gradient
+dependencies between each layer, and therefore speeds up the conver-
+gence as fewer iterations are needed [13]. This is related to batch nor-
+malization, where batch normalization happens at one hidden unit level
+and a 0mean and a unit ( 1) variance is achieved on that one batch [130].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />For each hidden unit, hi, we can compute
+hi=g
+σ(hi−µ) (2.21)
+wheregis the gain variable (can be set to 1), µis the mean given by
+1
+H∑H
+i=1hiandσis the standard deviation given by∑
+1
+H(hi−µ)2.
+Layer normalization reduces the covariance shift , i.e., the gradient
+dependencies between each layer, and therefore speeds up the conver-
+gence as fewer iterations are needed [13]. This is related to batch nor-
+malization, where batch normalization happens at one hidden unit level
+and a 0mean and a unit ( 1) variance is achieved on that one batch [130].
+Advantage of layer normalization is that it works independent of the
+batch size, i.e., can give a single example, small batch or a large batch.
+2.4.4 Positionwise Feed-forward Networks
+Both encoder and decoder contain a fully connected feed-forward net-
+work after the attention sub layers.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Contents ■xiii
+6.2 COMPUTER VISION 163
+6.2.1 Vision Transformer 163
+6.3 AUTOMATIC SPEECH RECOGNITION 164
+6.3.1 Wav2vec 2.0 165
+6.3.2 Speech2Text2 165
+6.3.3 HuBERT: Hidden Units BERT 166
+6.4 MULTIMODAL AND MULTITASKING TRANSFORMER 166
+6.4.1 Vision-and-Language BERT (VilBERT) 167
+6.4.2 Uniﬁed Transformer (UniT) 168
+6.5 VIDEO PROCESSING WITH TIMESFORMER 169
+6.5.1 Patch Embeddings 169
+6.5.2 Self-Attention 170
+6.5.2.1 Spatiotemporal self-attention 171
+6.5.2.2 Spatiotemporal attention blocks 171
+6.6 GRAPH TRANSFORMERS 172
+6.6.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />˜h(l+1)
+iispassedintotheremainderofthetransformerlayerasfollows,
+resulting in the output of the transformer layer, h(l+1)
+i:
+h(l+1)
+i =Norm (h′(l+1)
+i+h′′(l+1)
+i) (6.23)
+h′(l+1)
+i =Norm (h(l)
+i+˜h(l+1)
+i) (6.24)
+h′′(l+1)
+i =W(l)
+2ReLU(
+W(l)
+1h′(l+1)
+i)
+(6.25)
+where W(l)
+1∈R2d×d,W(l)
+2∈Rd×2d, andNormcan be layer normal-
+ization or batch normalization. The structure of the Graph Transformer
+described in (6.23)–(6.25) is shown in Fig. 6.3.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />maskedAttention (Q,K,V) = softmax(QKT+M√dk)
+V(2.20)
+2.4.2.4 Encoder-decoder multi-head attention
+In the decoder side there is a need to learn the attention relationship
+between the entire source input and the target output at a given time.
+Therefore, the query vectors from the target sequence (before a given
+time) and the keys and values from the entire input sequence of the
+encoder are passed to the self-attention layer in the decoder as shown in
+Fig. 2.7.
+2.4.3 Residuals and Layer Normalization
+Similar to ResNets, the inputs, X, are short circuited to the out-
+put,Z, and both are added and passed through layer normalization
+addAndNorm (X+Z)[105]. Layer normalization ensures each layer to
+have 0mean and a unit ( 1) variance.
+For each hidden unit, hi, we can compute
+hi=g
+σ(hi−µ) (2.21)
+wheregis the gain variable (can be set to 1), µis the mean given by
+1
+H∑H
+i=1hiandσis the standard deviation given by∑
+1
+H(hi−µ)2.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Layer normalization reduces the covariance shift , i.e., the gradient
+dependencies between each layer, and therefore speeds up the conver-
+gence as fewer iterations are needed [13]. This is related to batch nor-
+malization, where batch normalization happens at one hidden unit level
+and a 0mean and a unit ( 1) variance is achieved on that one batch [130].
+Advantage of layer normalization is that it works independent of the
+batch size, i.e., can give a single example, small batch or a large batch.
+2.4.4 Positionwise Feed-forward Networks
+Both encoder and decoder contain a fully connected feed-forward net-
+work after the attention sub layers. For each position, similar linear
+transformations with a ReLU activation in between is performed.
+FFN (x) = max(0,xW 1+b1)W2+b2 (2.22)</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />3.1 Wav2vec 2.0 165
+6.3.2 Speech2Text2 165
+6.3.3 HuBERT: Hidden Units BERT 166
+6.4 MULTIMODAL AND MULTITASKING TRANSFORMER 166
+6.4.1 Vision-and-Language BERT (VilBERT) 167
+6.4.2 Uniﬁed Transformer (UniT) 168
+6.5 VIDEO PROCESSING WITH TIMESFORMER 169
+6.5.1 Patch Embeddings 169
+6.5.2 Self-Attention 170
+6.5.2.1 Spatiotemporal self-attention 171
+6.5.2.2 Spatiotemporal attention blocks 171
+6.6 GRAPH TRANSFORMERS 172
+6.6.1 Positional Encodings in a Graph 173
+6.6.1.1 Laplacian positional encodings 173
+6.6.2 Graph Transformer Input 173
+6.6.2.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />3.3 HuBERT: Hidden Units BERT 166
+6.4 MULTIMODAL AND MULTITASKING TRANSFORMER 166
+6.4.1 Vision-and-Language BERT (VilBERT) 167
+6.4.2 Uniﬁed Transformer (UniT) 168
+6.5 VIDEO PROCESSING WITH TIMESFORMER 169
+6.5.1 Patch Embeddings 169
+6.5.2 Self-Attention 170
+6.5.2.1 Spatiotemporal self-attention 171
+6.5.2.2 Spatiotemporal attention blocks 171
+6.6 GRAPH TRANSFORMERS 172
+6.6.1 Positional Encodings in a Graph 173
+6.6.1.1 Laplacian positional encodings 173
+6.6.2 Graph Transformer Input 173
+6.6.2.1 Graphs without edge attributes 174
+6.6.2.2 Graphs with edge attributes 175
+6.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />32)
+h′′(l+1)
+i =W(l)
+n,2ReLU(
+W(l)
+n,1h′(l+1)
+i)
+(6.33)
+e(l+1)
+ij =Norm (e′(l+1)
+ij+e′′(l+1)
+ij) (6.34)
+e′(l+1)
+ij =Norm (e(l)
+ij+˜ e(l+1)
+ij) (6.35)
+e′′(l+1)
+ij =W(l)
+e,2ReLU(
+W(l)
+e,1e′(l+1)
+ij)
+(6.36)
+where W(l)
+n,1,W(l)
+e,1∈R2d×d,W(l)
+n,2,W(l)
+e,2∈Rd×2d, andNormcan be layer
+normalization or batch normalization. Subscripts nandeare for nodes
+and edges, respectively. This is shown schematically in Fig. 6.4.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />[13]L.J.Ba,J.R.Kiros,andG.E.Hinton ,Layer normalization ,
+CoRR, abs/1607.06450 (2016).
+[14]S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R.
+Müller, and W. Samek ,On pixel-wise explanations for non-
+linear classiﬁer decisions by layer-wise relevance propagation , PloS
+one, 10 (2015), p. e0130140.
+[15]D. Baehrens, T. Schroeter, S. Harmeling, M. Kawan-
+abe, K. Hansen, and K.-R. Müller ,How to explain indi-
+vidual classiﬁcation decisions , The Journal of Machine Learning
+Research, 11 (2010), pp. 1803–1831.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Shows three pooling operations
+between blocks, with each decreasing the sequence length of the output
+by half.
+before the pooling operation. This is shown in Fig. 5.1. If the output of a
+given layer is h, then the output of the pooling layer is h′=Pooling (h),
+where h∈RT×dandh′∈RT′×d, for someT′<T.
+h′is used to construct the query and the residual connection for the
+self-attention block, his used for the key and value vectors:
+Q=h′WQ,∈RT′×dk(5.1)
+K=hWK,∈RT×dk(5.2)
+V=hWV,∈RT×dv(5.3)
+This relationship between the unpooled and pooled outputs and the
+query, key, and value matrices of the next layer is shown in Fig. 5.2. The
+output of the (n+ 1)stlayer is then
+h(n+1)=LayerNorm (h′(n)+multihead (Q(h′(n)),K(h(n)),V(h(n)))
+(5.4)</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />[13]L.J.Ba,J.R.Kiros,andG.E.Hinton ,Layer normalization ,
+CoRR, abs/1607.06450 (2016).
+[14]S. Bach, A. Binder, G. Montavon, F. Klauschen, K.-R.
+Müller, and W. Samek ,On pixel-wise explanations for non-
+linear classiﬁer decisions by layer-wise relevance propagation , PloS
+one, 10 (2015), p. e0130140.
+[15]D. Baehrens, T. Schroeter, S. Harmeling, M. Kawan-
+abe, K. Hansen, and K.-R. Müller ,How to explain indi-
+vidual classiﬁcation decisions , The Journal of Machine Learning
+Research, 11 (2010), pp. 1803–1831.
+[16]A. Baevski, H. Zhou, A. rahman Mohamed, and M. Auli ,
+wav2vec 2.0: A framework for self-supervised learning of speech
+representations , ArXiv, abs/2006.11477 (2020).</td>
+            </tr>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>8. Explain the formula for computing the attention with queries in a cluster in the context of Transformer modifications.</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          In the context of Transformer modifications, the attention with queries in a cluster is computed using the following formula:
+
+At_il = { ˆmjexp(qiklT) / ∑L r=1Tjrexp(qikrT), if Tjl= 1, Ac_jl, otherwise (5.68)
+
+Here, ˆmj = ∑L i=1TijAc_ij and T ∈ {0,1}C×L. If Tij= 1, then ki is one of the top-k keys for in cluster j. 
+
+This formula is used in the context of clustered attention, a method to avoid self-attention’s O(L2·dk+ L2·dv) time complexity that linearizes the self-attention weight computation by clustering LSH hashed queries with the k-means clustering algorithm. The attention is computed for each of the top-k keys for a cluster with the queries in that cluster. The context vectors (weighted average of the values) of the clustered attention are then computed and used as the value matrix. This makes the complexity of the clustered attention calculation to O(CL·dk+LC·dv+kLmax(dk,dv)), which is linear in the sequence length.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gpt-3.5-turbo-0125</span> &nbsp;
+          In the context of Transformer modifications, the formula for computing the attention with queries in a cluster involves a process known as Clustered Attention. This method aims to linearize the self-attention weight computation to improve efficiency.
+
+Here is an overview of the formula and the steps involved in computing the attention with queries in a cluster:
+
+1. **Clustering Query Vectors**: 
+   - Initially, each query vector is hashed using Locality-Sensitive Hashing (LSH).
+   - The hashed queries are then grouped into C clusters using the k-means clustering algorithm. The distance metric used for k-means is the Hamming distance.
+   - The centroid of the jth cluster is calculated using the formula: qcj = ∑i=1L Sij qi / ∑i=1L Sij, where S is a matrix partitioning the query vectors into C non-overlapping clusters.
+
+2. **Query Centroids and Clustered Attention Matrix**:
+   - The centroid queries are grouped into Qc, a matrix of centroid vectors.
+   - The real query matrix is substituted with the query centroid matrix, Qc, to compute the clustered attention matrix using the formula: Ac = softmax(QcKT / √(dk)), where dk is the dimension of the keys.
+
+3. **Output Computation**:
+   - The clustered attention weights obtained from the above calculation can be used to compute the output of the attention mechanism.
+   - The context vectors (weighted average of the values) of the clustered attention are used as the value matrix, denoted as V̂ = AtV.
+
+4. **Complexity**:
+   - The complexity of the clustered attention calculation is linear in the sequence length and is given by O(CL·dk + LC·dv + kL·max(dk, dv)).
+
+In summary, the formula for computing the attention with queries in a cluster involves clustering the query vectors, calculating centroid queries, computing the clustered attention matrix, and using it to derive the output of the attention mechanism. This approach helps optimize the self-attention computation in Transformers for improved efficiency.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />xii■Contents
+5.2.5 Prototype Queries 140
+5.2.5.1 Clustered attention 140
+5.2.6 Compressed Key-Value Memory 141
+5.2.6.1 Luna: Linear Uniﬁed Nested Attention 141
+5.2.7 Low-Rank Approximations 143
+5.2.7.1 Linformer 143
+5.3 MODIFICATIONS FOR TRAINING TASK EFFICIENCY 145
+5.3.1 ELECTRA 145
+5.3.1.1 Replaced token detection 145
+5.3.2 T5 146
+5.4 TRANSFORMER SUBMODULE CHANGES 146
+5.4.1 Switch Transformer 146
+5.5 CASE STUDY: SENTIMENT ANAL YSIS 148
+5.5.1 Goal 148
+5.5.2 Data, Tools, and Libraries 148
+5.5.3 Experiments, Results, and Analysis 150
+5.5.3.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Transformer Modiﬁcations ■141
+each of the Cclusters. And, for each of the top-k keys for a cluster,
+compute the attention with the queries in that cluster:
+At
+il={ ˆmjexp(
+qiklT)
+∑L
+r=1Tjrexp(
+qikrT),ifTjl= 1
+Ac
+jl, otherwise(5.68)
+where ˆmj=∑L
+i=1TijAc
+ijandT∈{0,1}C×L: ifTij= 1, then kiis one of
+the top-k keys for in cluster j.
+Then compute the context vectors (weighted average of the values)
+of the clustered attention and use it as the value matrix: ˆV=AtV,∈
+RL×d v. This makes the complexity of the clustered attention calculation
+toO(CL·dk+LC·dv+kLmax(dk,dv)), which is linear in the sequence
+length.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />And using the query centroids as the queries to compute the
+attention matrix.
+Clustering query vectors Clustered attention happens in two
+stages. First, each query vector is hashed with locality-sensitive hash-
+ing. The hashed queries are then grouped into Cclusters with k-means.
+The distance metric used for k-means is the Hamming distance. The
+centroid of the jthcluster is given by
+qc
+j=∑L
+i=1Sijqi∑L
+i=1Sij(5.66)
+where qc
+jis the centroid of the jthcluster and the matrix S∈
+{0,1}L×Cpartitions the query vectors into Cnon-overlapping clusters,
+so ifSij= 1, then qiis in cluster j. The centroid queries are grouped
+intoQc,∈RC×dk, the matrix of centroid vectors. We can then substitute
+the real query matrix with the query centroid matrix, Qcand compute
+the clustered attention matrix:
+Ac= softmax(
+QcKT
+√(dk)(
+,∈RC×L(5.67)
+You can stop here and just use the clustered attention weights to
+compute the output of the attention mechanism.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The
+centroid of the jthcluster is given by
+qc
+j=∑L
+i=1Sijqi∑L
+i=1Sij(5.66)
+where qc
+jis the centroid of the jthcluster and the matrix S∈
+{0,1}L×Cpartitions the query vectors into Cnon-overlapping clusters,
+so ifSij= 1, then qiis in cluster j. The centroid queries are grouped
+intoQc,∈RC×dk, the matrix of centroid vectors. We can then substitute
+the real query matrix with the query centroid matrix, Qcand compute
+the clustered attention matrix:
+Ac= softmax(
+QcKT
+√(dk)(
+,∈RC×L(5.67)
+You can stop here and just use the clustered attention weights to
+compute the output of the attention mechanism. This calculation has
+time complexity of O(CL·dk+LC·dv), which is explicitly linear in
+the sequence length.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />5.1 Clustered attention 140
+5.2.6 Compressed Key-Value Memory 141
+5.2.6.1 Luna: Linear Uniﬁed Nested Attention 141
+5.2.7 Low-Rank Approximations 143
+5.2.7.1 Linformer 143
+5.3 MODIFICATIONS FOR TRAINING TASK EFFICIENCY 145
+5.3.1 ELECTRA 145
+5.3.1.1 Replaced token detection 145
+5.3.2 T5 146
+5.4 TRANSFORMER SUBMODULE CHANGES 146
+5.4.1 Switch Transformer 146
+5.5 CASE STUDY: SENTIMENT ANAL YSIS 148
+5.5.1 Goal 148
+5.5.2 Data, Tools, and Libraries 148
+5.5.3 Experiments, Results, and Analysis 150
+5.5.3.1 Visualizing attention head weights 150
+5.5.3.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />We also discussed another example of biasing attention with
+priors in section 5.1.2.1, the Realformer.
+5.2.5 Prototype Queries
+5.2.5.1 Clustered attention
+Clustered attention [256] is a method to avoid self-attention’s O(L2·dk+
+L2·dv)time complexity that linearizes the self-attention weight compu-
+tation by clustering LSH hashed queries with the k-means clustering
+algorithm. And using the query centroids as the queries to compute the
+attention matrix.
+Clustering query vectors Clustered attention happens in two
+stages. First, each query vector is hashed with locality-sensitive hash-
+ing. The hashed queries are then grouped into Cclusters with k-means.
+The distance metric used for k-means is the Hamming distance. The
+centroid of the jthcluster is given by
+qc
+j=∑L
+i=1Sijqi∑L
+i=1Sij(5.66)
+where qc
+jis the centroid of the jthcluster and the matrix S∈
+{0,1}L×Cpartitions the query vectors into Cnon-overlapping clusters,
+so ifSij= 1, then qiis in cluster j. The centroid queries are grouped
+intoQc,∈RC×dk, the matrix of centroid vectors.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />It performs better
+on GLUE that RoBERTa, but not SQuAD, where it is slightly worse.
+As number of clusters increases, the approximation becomes more
+accurate.Itconvergesuptotwiceasfastasthestandardtransformer,for
+longsequencelengthsand,forshortsequencelengths,clusteredattention
+isnotfaster than the standard transformer.
+5.2.6 Compressed Key-Value Memory
+5.2.6.1 Luna: Linear Uniﬁed Nested Attention
+Luna [177], which stands for Linear Uniﬁed Nested Attention, replaces
+theattentionweightcomputationineachattentionheadwithtwonested
+linear attention computations using an extra, learnable, input sequence
+that learns to encode contextual information: P∈Rl×d, wherelis the
+length of the sequence.
+As discussed earlier, the output of an attention head between a query
+sequence, X∈Rn×dand a context sequence, C∈Rm×d, can be written
+as
+Y=Attn(X, C) = softmax(
+XWq(CWk)T
+√
+dk/h(
+CV,∈Rn×d(5.69)</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />4.3.1 Data preprocessing 99
+4.4.3.2 Experiments 101
+Chapter 5■Transformer Modiﬁcations 109
+5.1 TRANSFORMER BLOCK MODIFICATIONS 109
+5.1.1 Lightweight Transformers 109
+5.1.1.1 Funnel-transformer 109
+5.1.1.2 DeLighT 112
+5.1.2 Connections between Transformer Blocks 114
+5.1.2.1 RealFormer 114
+5.1.3 Adaptive Computation Time 115
+5.1.3.1 Universal transformers (UT) 115
+5.1.4 RecurrenceRelationsbetweenTransformerBlocks 116
+5.1.4.1 Transformer-XL 116
+5.1.5 Hierarchical Transformers 120
+5.2 TRANSFORMERS WITH MODIFIED MULTI-HEAD
+SELF-ATTENTION 120
+5.2.1 Structure of Multi-Head Self-Attention 120
+5.2.1.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The Longformer model,
+discussed in section 5.2.2.1, and Big Bird model, discussed in section
+5.2.2.4arebothexamplesofattentionwithpriors,sinceeachusesspeciﬁc
+attention patterns, like sliding window attention in sections 5.2.2.1 and
+5.2.2.4. We also discussed another example of biasing attention with
+priors in section 5.1.2.1, the Realformer.
+5.2.5 Prototype Queries
+5.2.5.1 Clustered attention
+Clustered attention [256] is a method to avoid self-attention’s O(L2·dk+
+L2·dv)time complexity that linearizes the self-attention weight compu-
+tation by clustering LSH hashed queries with the k-means clustering
+algorithm. And using the query centroids as the queries to compute the
+attention matrix.
+Clustering query vectors Clustered attention happens in two
+stages.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />We also discussed another example of biasing attention with
+priors in section 5.1.2.1, the Realformer.
+5.2.5 Prototype Queries
+5.2.5.1 Clustered attention
+Clustered attention [256] is a method to avoid self-attention’s O(L2·dk+
+L2·dv)time complexity that linearizes the self-attention weight compu-
+tation by clustering LSH hashed queries with the k-means clustering
+algorithm. And using the query centroids as the queries to compute the
+attention matrix.
+Clustering query vectors Clustered attention happens in two
+stages. First, each query vector is hashed with locality-sensitive hash-
+ing. The hashed queries are then grouped into Cclusters with k-means.
+The distance metric used for k-means is the Hamming distance.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />2.Sliding window attention The query block iattends to key
+blocksi−(w−1)/2throughi+ (w−1)/2.
+3.Globalattention Thedeﬁnitionofglobalattentionisunchanged,
+except it is deﬁned in terms of blocks rather than sequence posi-
+tion.
+5.2.3 Improving Multi-Head-Attention
+Now we focus on some of the ways the attention mechanism has been
+changed to improve performance of the transformer.
+5.2.3.1 Talking-heads attention
+Vaswani et al. [254] showed that multi-head attention allows the trans-
+former to perform h(number of attention heads) separate attention
+calculations. Talking-Heads Attention [227] instead allows the atten-
+tion heads to share information. It works by adding two linear layers
+that project the product of the query and key matrices, QKT(at-
+tention logits), into a new space and projects the attention weights,
+Softmax(QKT), into a new space.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />So, instead of Lqueries and keys, there will be L/b
+queries and keys. This modiﬁes each attention pattern discussed above
+in relatively simple ways:
+1.Random attention The random number of keys for a query to
+attend to, r, becomes the random number of key blocks that a
+query block attends to.
+2.Sliding window attention The query block iattends to key
+blocksi−(w−1)/2throughi+ (w−1)/2.
+3.Globalattention Thedeﬁnitionofglobalattentionisunchanged,
+except it is deﬁned in terms of blocks rather than sequence posi-
+tion.
+5.2.3 Improving Multi-Head-Attention
+Now we focus on some of the ways the attention mechanism has been
+changed to improve performance of the transformer.
+5.2.3.1 Talking-heads attention
+Vaswani et al. [254] showed that multi-head attention allows the trans-
+former to perform h(number of attention heads) separate attention
+calculations.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Transformer Modiﬁcations ■127
+Recall that in the scaled dot-product attention, the query, key, and
+value matrices are the result of transforming the matrix of dmodel-
+dimensional input vectors into queries and keys of dimension dkand
+values of dimension dv.
+In the equation for A, the computationally expensive term is the
+product QKT, moreover, once the softmax function is applied, only the
+largest terms along each dmodeldimension are important. This means
+that for each query vector in Q, we only need the keys in Kthat are
+closest to it. To make this easier, they set Q=K, meaning that for
+each query vector, we only need to ﬁnd the closest queries. This is an
+approximate nearest neighbors problem, so we can use locality-sensitive
+hashing (LSH).
+Locality-sensitive hashing Locality-sensitive hashing, or LSH, was
+introduced in 1998, in [129] as a method of approximate similarity search
+based on hashing.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />K)V,∈RL1×dv×h(5.59)
+whereαis the attention logits, A(Q, K)are the attention weights,
+andC(Q,K,V)is the “context” vector representing the output of the
+hattention heads prior to concatenation of the attention heads and the
+ﬁnal projection layer.
+Partitioning the attention heads THA modiﬁes the attention
+mechanism in a few ways from that shown in (5.56)–(5.59). First, it
+changes the attention head dimension of QandKto be the number
+of query-key attention head hk, and changes the attention head dimen-
+sion of Vto be the number of value attention heads hv. This happens
+by changing the dimension of the projection matrices that generate the
+query, key, and value matrices from the input sequences. In other words,
+(5.56) becomes
+Q=X1Wq,∈RL1×dk×hk
+K=X2Wk,∈RL2×dk×hk
+V=X2Wv,∈RL2×dv×hv(5.60)
+where Wq,Wk∈Rd×dk×hk, and Wv∈Rd×dv×hv.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Partitioning the attention heads THA modiﬁes the attention
+mechanism in a few ways from that shown in (5.56)–(5.59). First, it
+changes the attention head dimension of QandKto be the number
+of query-key attention head hk, and changes the attention head dimen-
+sion of Vto be the number of value attention heads hv. This happens
+by changing the dimension of the projection matrices that generate the
+query, key, and value matrices from the input sequences. In other words,
+(5.56) becomes
+Q=X1Wq,∈RL1×dk×hk
+K=X2Wk,∈RL2×dk×hk
+V=X2Wv,∈RL2×dv×hv(5.60)
+where Wq,Wk∈Rd×dk×hk, and Wv∈Rd×dv×hv.
+Projecting the attention logits Next, the attention logits αare
+projected with a linear layer that mixes the query-key attention heads
+with the attention logit/weight heads, Wα∈Rhk×h, and the attention</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The logical ﬂow of all the computations carried out for each token i
+from input to output is demonstrated in Fig. 2.11.
+Instead of a vector computation for each token i, input matrix
+X∈Rl×dwherelis the maximum length of the sentence and dis
+the dimension of the inputs, combines with each of the query, key, and
+value matrices as a single computation given by
+attention(Q, K,V) = softmax(QKT
+√dk)
+V (2.17)
+2.4.2.2 Multi-head attention
+Instead of a single self-attention head, there can be hparallel self-
+attention heads; this is known as multi-head attention. In the original
+transformer paper, the authors used h= 8heads. Multi-head attention
+provides diﬀerent subspace representations instead of just a single rep-
+resentation for the inputs, which helps capture diﬀerent aspects of the
+same inputs.</td>
+            </tr>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>9. What is the role of the "embedding" and "label" variables in the compute_loss function?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The "embedding" and "label" variables in the compute_loss function are used to calculate the loss of the model during training. 
+
+The "embedding" variable represents the output of the model, which is the predicted value. It is the result of passing the input data through the model.
+
+The "label" variable represents the actual or true value. It is the ground truth against which the model's predictions (embeddings) are compared.
+
+The compute_loss function calculates the difference between the predicted values (embeddings) and the actual values (labels). This difference is the loss, which the model tries to minimize during training. The lower the loss, the better the model's predictions are.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gpt-3.5-turbo-0125</span> &nbsp;
+          In the compute_loss function, the "embedding" variable represents the embeddings of the text examples, which are generated by the embed_text function. These embeddings capture the contextualized information of the text examples and are used as input to the model for training and prediction.
+
+On the other hand, the "label" variable represents the labels associated with the text examples. These labels are converted from their original form to integer values using the label2int dictionary. The model uses these labels to calculate the loss during training, comparing the predicted outputs with the actual labels to update the model parameters through backpropagation.
+
+Overall, the "embedding" and "label" variables play crucial roles in the compute_loss function by providing the input embeddings and target labels necessary for training the model and computing the loss function.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />It investigates the role of the word in each position to en-
+code structural, syntactic, semantic, and even long-range phenomena by
+freezing the layers and using a neural classiﬁer to train and test on vari-
+ous tasks such as part-of-speech tagging (POS), constituent labeling, de-
+pendency labeling, named entity labeling, semantic role labeling (SRL),
+coreference, semantic proto-role and relation Classiﬁcation. They show
+that contextualized embeddings improve over their non-contextualized
+equivalents, mostly on syntactic tasks compared to semantic tasks.
+Tenney et al., in their work, further found that a model like
+BERT can rediscover linguistic information similar to a traditional NLP
+pipeline in an interpretable and localizable way [244]. They discovered
+the sequence: POS tagging, parsing, NER, semantic roles, coreference
+are part of the overall BERT model. They introduce two complemen-</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />introduced “edge probing” to understand the hidden
+representation in deep learning architectures such as ELMO, GPT and
+BERT [245]. It investigates the role of the word in each position to en-
+code structural, syntactic, semantic, and even long-range phenomena by
+freezing the layers and using a neural classiﬁer to train and test on vari-
+ous tasks such as part-of-speech tagging (POS), constituent labeling, de-
+pendency labeling, named entity labeling, semantic role labeling (SRL),
+coreference, semantic proto-role and relation Classiﬁcation. They show
+that contextualized embeddings improve over their non-contextualized
+equivalents, mostly on syntactic tasks compared to semantic tasks.
+Tenney et al., in their work, further found that a model like
+BERT can rediscover linguistic information similar to a traditional NLP
+pipeline in an interpretable and localizable way [244]. They discovered
+the sequence: POS tagging, parsing, NER, semantic roles, coreference
+are part of the overall BERT model.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />int]):
+"Returns a function that encodes each text example and each
+label "
+def encode(batch):
+batch[ "embedding" ] = embed_text(batch["text"])
+batch[ "label" ] = [label2int[str(x)] for xin
+batch[ "label" ]]
+return batch
+return encode
+Listing 4.3 Load model and tokenizer
+4.4.3.2 Experiments
+Next, we deﬁne the model architecture in Listing 4.4.
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from datasets import load_metric
+class Model(pl.LightningModule):
+def __init__(self,
+hidden_dims: List[int] = [768, 128],
+dropout_prob: float = 0.5,
+learning_rate: float = 1e-3):
+super ().__init__()
+self.train_acc = load_metric("accuracy")
+self.val_acc = load_metric("accuracy")
+self.test_acc = load_metric("accuracy")
+self.hidden_dims = hidden_dims
+self.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />test,
+batch_size=self.batch_size,
+num_workers=self.num_workers)
+def encoder_factory(label2int: Dict[str, int]):
+"Returns a function that encodes each text example and each
+label "
+def encode(batch):
+batch[ "embedding" ] = embed_text(batch["text"])
+batch[ "label" ] = [label2int[str(x)] for xin
+batch[ "label" ]]
+return batch
+return encode
+Listing 4.3 Load model and tokenizer
+4.4.3.2 Experiments
+Next, we deﬁne the model architecture in Listing 4.4.
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from datasets import load_metric
+class Model(pl.LightningModule):
+def __init__(self,
+hidden_dims: List[int] = [768, 128],
+dropout_prob: float = 0.5,
+learning_rate: float = 1e-3):
+super ().__init__()
+self.train_acc = load_metric("accuracy")
+self.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Multilingual Transformer Architectures ■101
+pin_memory=self.pin_memory)
+def test_dataloader(self):
+return DataLoader(self.test,
+batch_size=self.batch_size,
+num_workers=self.num_workers)
+def encoder_factory(label2int: Dict[str, int]):
+"Returns a function that encodes each text example and each
+label "
+def encode(batch):
+batch[ "embedding" ] = embed_text(batch["text"])
+batch[ "label" ] = [label2int[str(x)] for xin
+batch[ "label" ]]
+return batch
+return encode
+Listing 4.3 Load model and tokenizer
+4.4.3.2 Experiments
+Next, we deﬁne the model architecture in Listing 4.4.
+import torch
+import torch.nn as nn
+import torch.nn.functional as F
+from datasets import load_metric
+class Model(pl.LightningModule):
+def __init__(self,
+hidden_dims: List[int] = [768, 128],
+dropout_prob: float = 0.5,</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />For the ﬁrst attention layer of the encoder
+and decoder, the inputs are the summation of the word embeddings and
+positional encodings.
+Similar to the attention discussion in section 2.3 where we discussed
+the query, key, and values, and how they impact the ﬁnal attention
+scores, the self-attention has all three vectors generated for every input
+and the following are their key roles:
+1. The role of the query vector of token i,qi, is to combine with every
+other key vectors∑l
+j=0qikjTto inﬂuence the weights for its own
+output, zi.
+2. Theroleofthekeyvectoroftoken i,ki,istobematchedwithevery
+other query vectors to get similarity with query and to inﬂuence
+the output through query-key product scoring.
+3.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Syntactic information probing tasks in-
+vestigates syntax-based properties, for example, “are the embeddings
+sensitive to word order?”, using a classiﬁcation dataset with bigrams
+shifted as positives and non-shifted as negatives. Finally, semantic infor-
+mation probing tasks investigate semantics-based attributes retained in
+the embeddings, for example, “can the embeddings understand tenses?”,
+using a tense classiﬁcation dataset where VBP/VBZ forms are labeled as
+present and VBD as past tense. The comprehensive experiments in this
+work with diﬀerent architectures and downstream tasks provided great
+insights into model architectures and their ability to preserve diﬀerent
+linguistic properties.
+Tenney et al. introduced “edge probing” to understand the hidden
+representation in deep learning architectures such as ELMO, GPT and
+BERT [245]. It investigates the role of the word in each position to en-
+code structural, syntactic, semantic, and even long-range phenomena by
+freezing the layers and using a neural classiﬁer to train and test on vari-
+ous tasks such as part-of-speech tagging (POS), constituent labeling, de-
+pendency labeling, named entity labeling, semantic role labeling (SRL),
+coreference, semantic proto-role and relation Classiﬁcation.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />For the ﬁrst attention layer of the encoder
+and decoder, the inputs are the summation of the word embeddings and
+positional encodings.
+Similar to the attention discussion in section 2.3 where we discussed
+the query, key, and values, and how they impact the ﬁnal attention
+scores, the self-attention has all three vectors generated for every input
+and the following are their key roles:
+1. The role of the query vector of token i,qi, is to combine with every
+other key vectors∑l
+j=0qikjTto inﬂuence the weights for its own
+output, zi.
+2. Theroleofthekeyvectoroftoken i,ki,istobematchedwithevery
+other query vectors to get similarity with query and to inﬂuence
+the output through query-key product scoring.
+3. The role of the value vector of token i,vi, is extracting information
+by combining with the output of the query-key scores to get the
+output vector zi.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The comprehensive experiments in this
+work with diﬀerent architectures and downstream tasks provided great
+insights into model architectures and their ability to preserve diﬀerent
+linguistic properties.
+Tenney et al. introduced “edge probing” to understand the hidden
+representation in deep learning architectures such as ELMO, GPT and
+BERT [245]. It investigates the role of the word in each position to en-
+code structural, syntactic, semantic, and even long-range phenomena by
+freezing the layers and using a neural classiﬁer to train and test on vari-
+ous tasks such as part-of-speech tagging (POS), constituent labeling, de-
+pendency labeling, named entity labeling, semantic role labeling (SRL),
+coreference, semantic proto-role and relation Classiﬁcation. They show
+that contextualized embeddings improve over their non-contextualized
+equivalents, mostly on syntactic tasks compared to semantic tasks.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Tenney et al. introduced “edge probing” to understand the hidden
+representation in deep learning architectures such as ELMO, GPT and
+BERT [245]. It investigates the role of the word in each position to en-
+code structural, syntactic, semantic, and even long-range phenomena by
+freezing the layers and using a neural classiﬁer to train and test on vari-
+ous tasks such as part-of-speech tagging (POS), constituent labeling, de-
+pendency labeling, named entity labeling, semantic role labeling (SRL),
+coreference, semantic proto-role and relation Classiﬁcation. They show
+that contextualized embeddings improve over their non-contextualized
+equivalents, mostly on syntactic tasks compared to semantic tasks.
+Tenney et al., in their work, further found that a model like
+BERT can rediscover linguistic information similar to a traditional NLP
+pipeline in an interpretable and localizable way [244].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />174■Transformers for Machine Learning: A Deep Dive
+embeddings, resulting in node embeddings for node i,˜h(0)
+iand edge
+embeddings ˜ e(0)
+ijbetween nodes iandj:
+˜h(0)
+i=A(0)αi+a(0)(6.16)
+˜ e(0)
+ij=B(0)βij+b(0), (6.17)
+where A(0)∈Rd×dnandB(0)∈Rd×dnare the node and edge embedding
+matrices, respectively, and a(0)andb(0)are bias terms for the nodes and
+edges, respectively. The superscript (0)denotes that this is the input
+layer.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />174■Transformers for Machine Learning: A Deep Dive
+embeddings, resulting in node embeddings for node i,˜h(0)
+iand edge
+embeddings ˜ e(0)
+ijbetween nodes iandj:
+˜h(0)
+i=A(0)αi+a(0)(6.16)
+˜ e(0)
+ij=B(0)βij+b(0), (6.17)
+where A(0)∈Rd×dnandB(0)∈Rd×dnare the node and edge embedding
+matrices, respectively, and a(0)andb(0)are bias terms for the nodes and
+edges, respectively. The superscript (0)denotes that this is the input
+layer.
+The Laplacian positional encodings λialso get embedded into a
+d−dimensional space with an additional learnable embedding layer
+C(0)∈Rd×k, to generate Laplacian positional embeddings λ(0)
+i:
+λ(0)
+i=C(0)λi+c(0)(6.18)
+h(0)
+i=˜h(0)
+i+λ(0)
+i (6.19)
+Note that c(0)∈Rdis a bias term for the Laplacian positional embed-
+ding, h(0)is the full node embedding, and Laplacian positional embed-
+dings are only computed for the input layer and are not used inside
+Transformer layers.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The superscript (0)denotes that this is the input
+layer.
+The Laplacian positional encodings λialso get embedded into a
+d−dimensional space with an additional learnable embedding layer
+C(0)∈Rd×k, to generate Laplacian positional embeddings λ(0)
+i:
+λ(0)
+i=C(0)λi+c(0)(6.18)
+h(0)
+i=˜h(0)
+i+λ(0)
+i (6.19)
+Note that c(0)∈Rdis a bias term for the Laplacian positional embed-
+ding, h(0)is the full node embedding, and Laplacian positional embed-
+dings are only computed for the input layer and are not used inside
+Transformer layers.
+6.6.2.1 Graphs without edge attributes
+There are two ways to structure a graph Transformer, depending on
+whether the graph has edge attributes or not.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />86■Transformers for Machine Learning: A Deep Dive
+Figure 4.6 Illustration of Language-agnostic BERT Sentence Embedding
+(LaBSE) architecture [88].
+whereφis the scoring function of the similarity between the representa-
+tions ofxiandyi
+During training P(yi|xi)is approximated by sampling negatives,
+yn, from translation pairs in the same batch:
+Papprox (yi|xi) =eφ(xi,yi)
+eφ(xi,yi)+∑N
+n=1,n̸=ieφ(xi,yn)(4.12)
+Therefore, for parallel source and target pairs (xi,yi), the model can be
+optimized using the log-likelihood objective [283]:
+Ls=−1
+NN
+i=1logeφ(xi,yi)
+eφ(xi,yi)+∑N
+n=1,n̸=ieφ(xi,yn)(4.13)
+For eachxi, the lossLsaims to identify the correct yi.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Optimization was with
+stochastic gradient descent.
+Supervised ﬁne-tuning In this phase, the model is ﬁne-tuned on la-
+beled, task-speciﬁc corpus, C, where each data point is a token sequence
+x= (x1,...,xm)and a class label y. The pre-trained decoder model is
+used as a feature generator for the labeled data and a fully-connected
+linear layer, with softmax activation and weight matrix W, is appended
+to it and trained by minimizing a second negative log-likelihood
+L2(C) =−
+(x,y)logP(y|x;W) (6.2)
+Radford et al. found that the model converged faster and general-
+ized better when the language modeling objective from the unsupervised
+phase, (6.1), was added to (6.2). So, the full objective was the weighted
+sumL2(C) +λL1(C).</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />(a) Loss curves.
+ (b) Perplexity measures.
+Figure 2.18 Transformer loss and perplexity on training and validation
+sets.
+Fig. 2.19 shows comparative performance of attention-based and
+transformer-based models on the same test dataset. Perplexity of trans-
+formers is almost three times less than that of attention proving the
+beneﬁts of the architecture in the real-world translation problem.
+2.5.3.5 Explainability
+We can use the gradient values for the input sequence to illustrate each
+generated token’s dependence on each input token. We start by perform-
+ing a forward pass on embedded inputs. We then take the token with
+the highest logit value (in the same way as greedy decoding earlier), and
+perform a backward pass from the highest logit value. This populates
+the gradients back through the model to embedded inputs, showing the
+resulting distribution. Finally, we repeat this process for each generated
+token and visualize the resulting matrix.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />found that the model converged faster and general-
+ized better when the language modeling objective from the unsupervised
+phase, (6.1), was added to (6.2). So, the full objective was the weighted
+sumL2(C) +λL1(C).
+Formatting data for ﬁne-tuning Data for each of the four training tasks
+is formatted diﬀerently:
+•Textclassiﬁcationdatahasasimpleformat;eachinstanceisbrack-
+eted with a start and an end token, so the input is formatted like
+[⟨s⟩,text,⟨/s⟩].
+•A natural language inference (NLI) instance has two parts, the
+premise,p, and the hypothesis, h. Labels can be entailment, con-
+tradiction, or neutral. The input is formatted like [⟨s⟩,p,$,h,⟨/s⟩],
+where $ is a delimiter token.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Transformers: Basics and Introduction ■35
+(a) Loss.
+ (b) Perplexity.
+Figure 2.16 Attention-based seq2seq loss and perplexity on training and
+validation sets.
+The outputs help visualizing and diagnosing issues in the data and the
+model. For example, Fig. 2.17(a) shows how English word “going” pays
+attention to “je” and “vais” and similarly how the “store” word pays
+attention to “au”, “magasin”, “.” and “<eos>”.
+2.5.3.3 Transformer
+The Listing 2.6 shows transformer model wrapping the PyTorch trans-
+former block.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The validation loss plateau’s at a value less than 2 in epoch 20,
+comparing to the value around 2.5 in the attention mechanism. Also,
+the perplexity of attention is almost double of the transformer model in
+the validation set.
+(a) Loss curves.
+ (b) Perplexity measures.
+Figure 2.18 Transformer loss and perplexity on training and validation
+sets.
+Fig. 2.19 shows comparative performance of attention-based and
+transformer-based models on the same test dataset. Perplexity of trans-
+formers is almost three times less than that of attention proving the
+beneﬁts of the architecture in the real-world translation problem.
+2.5.3.5 Explainability
+We can use the gradient values for the input sequence to illustrate each
+generated token’s dependence on each input token. We start by perform-
+ing a forward pass on embedded inputs.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The validation loss plateau’s at a value less than 2 in epoch 20,
+comparing to the value around 2.5 in the attention mechanism. Also,
+the perplexity of attention is almost double of the transformer model in
+the validation set.
+(a) Loss curves.
+ (b) Perplexity measures.
+Figure 2.18 Transformer loss and perplexity on training and validation
+sets.
+Fig. 2.19 shows comparative performance of attention-based and
+transformer-based models on the same test dataset. Perplexity of trans-
+formers is almost three times less than that of attention proving the
+beneﬁts of the architecture in the real-world translation problem.
+2.5.3.5 Explainability
+We can use the gradient values for the input sequence to illustrate each
+generated token’s dependence on each input token. We start by perform-
+ing a forward pass on embedded inputs. We then take the token with
+the highest logit value (in the same way as greedy decoding earlier), and
+perform a backward pass from the highest logit value.</td>
+            </tr>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>10. How does the attention mechanism address the issue of long-distance associations in language processing?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The attention mechanism addresses the issue of long-distance associations in language processing by selectively focusing on specific elements while filtering out the less relevant ones. It allows each time step in the decoder to be influenced differently by the hidden variables in the encoder. This means that the decoder can access information from any point in the input sequence, not just the last output of the encoder. This allows the model to maintain and utilize long-distance associations in the language, overcoming the limitations of traditional RNN-based encoder-decoder architectures.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gpt-3.5-turbo-0125</span> &nbsp;
+          The attention mechanism addresses the issue of long-distance associations in language processing by selectively focusing on specific elements while filtering out less relevant ones. In traditional RNN-based encoder-decoder architectures, complete information about the source sentence is compressed and encoded in a single context variable used by the decoder. This compression can lead to a loss of information, especially when dealing with complex sentence structures and long-distance associations in language.
+
+With the attention mechanism, each time step's hidden variables on the encoder side are available and carry information to be used by the decoder network. This means that each time step in the decoder can be influenced differently by the hidden variables in the encoder, allowing for a more nuanced understanding of the input sequence.
+
+By selectively attending to different parts of the input sequence based on their relevance to the current decoding step, the attention mechanism enables the model to capture long-distance associations more effectively. This selective focus helps in addressing the inefficiencies of compressing complex language structures into a single vector and allows the model to better retain and utilize important information throughout the decoding process.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />As the input size increases, there will be a loss of
+information while compressing the input. The words in a sentence can
+also have complex structure and long-distance associations based on the
+language.Capturingthisinacompressedwayinasinglevectoralsoleads
+to ineﬃciencies. On the other hand, each time step’s hidden variables
+on the encoder side are available and carry information to be used by
+the decoder network. Each time step in the decoder can be inﬂuenced
+diﬀerently by the hidden variables in the encoder. RNNs also have issues
+with vanishing and explosive gradients [115]. One of the computational
+issues with RNNs is that the recurrence or dependence on previous time
+steps makes the architecture very diﬃcult to parallelize.
+2.3 ATTENTION MECHANISM
+2.3.1 Background
+The attention mechanism involves selectively focusing on speciﬁc ele-
+ments while ﬁltering out the less relevant ones. The human optic nerve</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Thus, the encoder and decoder are jointly trained, and the cross-entropy
+loss is used for optimization and is given by
+max
+θ1
+NN
+n=1logpθ(y(n)|x(n)) (2.7)
+The process of concatenating the <bos> and the original output se-
+quence, excluding the ﬁnal token, as the input to the decoder during
+the training is called teacher forcing . The teacher forcing helps in ad-
+dressing the slow convergence and instability problems when training
+RNNs.
+2.2.4 Issues with RNN-Based Encoder-Decoder
+Asdescribedintheabovesection,completeinformationaboutthesource
+sentence is compressed and encoded in one context variable used by the
+decoder component. As the input size increases, there will be a loss of
+information while compressing the input. The words in a sentence can
+also have complex structure and long-distance associations based on the
+language.Capturingthisinacompressedwayinasinglevectoralsoleads
+to ineﬃciencies.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />2.2.4 Issues with RNN-Based Encoder-Decoder
+Asdescribedintheabovesection,completeinformationaboutthesource
+sentence is compressed and encoded in one context variable used by the
+decoder component. As the input size increases, there will be a loss of
+information while compressing the input. The words in a sentence can
+also have complex structure and long-distance associations based on the
+language.Capturingthisinacompressedwayinasinglevectoralsoleads
+to ineﬃciencies. On the other hand, each time step’s hidden variables
+on the encoder side are available and carry information to be used by
+the decoder network. Each time step in the decoder can be inﬂuenced
+diﬀerently by the hidden variables in the encoder. RNNs also have issues
+with vanishing and explosive gradients [115]. One of the computational
+issues with RNNs is that the recurrence or dependence on previous time
+steps makes the architecture very diﬃcult to parallelize.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The teacher forcing helps in ad-
+dressing the slow convergence and instability problems when training
+RNNs.
+2.2.4 Issues with RNN-Based Encoder-Decoder
+Asdescribedintheabovesection,completeinformationaboutthesource
+sentence is compressed and encoded in one context variable used by the
+decoder component. As the input size increases, there will be a loss of
+information while compressing the input. The words in a sentence can
+also have complex structure and long-distance associations based on the
+language.Capturingthisinacompressedwayinasinglevectoralsoleads
+to ineﬃciencies. On the other hand, each time step’s hidden variables
+on the encoder side are available and carry information to be used by
+the decoder network. Each time step in the decoder can be inﬂuenced
+diﬀerently by the hidden variables in the encoder. RNNs also have issues
+with vanishing and explosive gradients [115].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Pre-trained and Application-Speciﬁc Transformers ■173
+fully-connected attention would be computationally intractable, since
+full attention already has quadratic complexity for simple sequences.
+This is the purpose of the Graph Transformer introduced in [80]. It
+addresses the complexity of self-attention by letting a node attend to
+other nodes in its local neighborhood.
+6.6.1 Positional Encodings in a Graph
+As discussed in section 5.2.1, scaled-dot product attention mechanisms
+have quadratic complexity in both time and memory. Since graphs can
+have a very large number of nodes, to make graph transformers com-
+putationally feasible, there must be local sparsity in the attention for
+any node. The problem with this is that generalgraphs have no no-
+tion of distance between nodes, making it non-trivial to use positional
+encodings to provide a measure of distance or locality, as is common
+in Transformers.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Transformer Modiﬁcations ■147
+Figure 5.15 Switch Transformer encoder block illustrating two input to-
+kensx1andx2being processed through the network. The dense FFN is
+replaced with switching FFN as one of the experts.
+in a sparse model with a substantial computational cost and training in-
+stabilities. Switch transformers address most of these issues with a novel
+routing algorithm between the experts, enabling an increase in the num-
+ber of the parameters without an increase in computational cost [87].
+The core innovation of switch transformers is replacing the feed-forward
+layer in the transformer with a switching feed-forward layer, as shown in
+Fig. 5.15.
+In the standard transformer, a single feed-forward network follows
+the outputs from the multi-head attention layer. It is responsible for
+translating the representation token-by-token to the next transformer
+input block. As shown in Fig.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Transformer Modiﬁcations ■147
+Figure 5.15 Switch Transformer encoder block illustrating two input to-
+kensx1andx2being processed through the network. The dense FFN is
+replaced with switching FFN as one of the experts.
+in a sparse model with a substantial computational cost and training in-
+stabilities. Switch transformers address most of these issues with a novel
+routing algorithm between the experts, enabling an increase in the num-
+ber of the parameters without an increase in computational cost [87].
+The core innovation of switch transformers is replacing the feed-forward
+layer in the transformer with a switching feed-forward layer, as shown in
+Fig. 5.15.
+In the standard transformer, a single feed-forward network follows
+the outputs from the multi-head attention layer. It is responsible for
+translating the representation token-by-token to the next transformer
+input block. As shown in Fig. 5.15, in a switch transformer, instead of
+one feed-forward network, there are multiple feed-forward networks, also
+known as the experts.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Pre-trained and Application-Speciﬁc Transformers ■173
+fully-connected attention would be computationally intractable, since
+full attention already has quadratic complexity for simple sequences.
+This is the purpose of the Graph Transformer introduced in [80]. It
+addresses the complexity of self-attention by letting a node attend to
+other nodes in its local neighborhood.
+6.6.1 Positional Encodings in a Graph
+As discussed in section 5.2.1, scaled-dot product attention mechanisms
+have quadratic complexity in both time and memory. Since graphs can
+have a very large number of nodes, to make graph transformers com-
+putationally feasible, there must be local sparsity in the attention for
+any node. The problem with this is that generalgraphs have no no-
+tion of distance between nodes, making it non-trivial to use positional
+encodings to provide a measure of distance or locality, as is common
+in Transformers. As described in [80], this problem is solved by using
+Laplacian positional encodings [81], which are generated via a spectral
+embedding into Euclidean space.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />For example, drawing attention to speciﬁc objects by coloring
+them diﬀerently or attending to a crying baby are nonvolitional cues.
+In contrast, attending to speciﬁc text for answering question or solving
+speciﬁc problems are volitional cues.
+In the context of attention mechanisms in deep learning, volitional
+cues map to queries, keys to nonvolitional cues, and sensory inputs to
+value. Every sensory input (value) maps to the nonvolitional cue (key)
+of that sensory input. Attention mechanisms can be thus considered as
+a process of biasing selection over values (sensory inputs) via attention
+pooling, using the queries (volitional cues) and keys (nonvolitional cues)
+as shown in Fig. 2.3.
+The attention mechanism is designed in a way to overcome the issues
+described with RNN-based encoder-decoder architecture.
+As shown in Fig.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />In contrast, attending to speciﬁc text for answering question or solving
+speciﬁc problems are volitional cues.
+In the context of attention mechanisms in deep learning, volitional
+cues map to queries, keys to nonvolitional cues, and sensory inputs to
+value. Every sensory input (value) maps to the nonvolitional cue (key)
+of that sensory input. Attention mechanisms can be thus considered as
+a process of biasing selection over values (sensory inputs) via attention
+pooling, using the queries (volitional cues) and keys (nonvolitional cues)
+as shown in Fig. 2.3.
+The attention mechanism is designed in a way to overcome the issues
+described with RNN-based encoder-decoder architecture.
+As shown in Fig. 2.3, an attention mechanism can be considered as
+a memory with keys and values and a layer which, when someone queries
+it, generates an output from value whose keys map the input [17].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Attention Probing Probing either by adding an attention layer on top
+of an existing neural architecture or using existing attention weights
+from a layer of deep learning, mapping it to the inputs as “attention
+maps” to explore the relationship between the two is soon developing as
+an eﬀective explanation technique.
+Rocktäschel et al. proposed a neural word-by-word attention mech-
+anism in a sequence-to-sequence network for reasoning over entailments
+of pairs of words and phrases [211]. Visualizations of word-by-word at-
+tention between the premise and hypothesis show that irrelevant parts
+of the premise, such as words capturing little meaning, are correctly ne-
+glected for entailment. The premise and hypothesis connected via deeper
+semantics show proper relevancy through the attention weights.
+Xu et al. use an attention mechanism for automatic image caption-
+ing tasks [278]. The work shows that the attention mechanism not only
+achieves state-of-the-art results but highlights salient objects in the im-
+age while generating the corresponding words in the output sequence,
+thus useful for explanations.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The work
+also answers questions such as “how does the probe design aﬀect probing
+task performance?” and “can the probes pick spurious signals?”.
+Attention Probing Probing either by adding an attention layer on top
+of an existing neural architecture or using existing attention weights
+from a layer of deep learning, mapping it to the inputs as “attention
+maps” to explore the relationship between the two is soon developing as
+an eﬀective explanation technique.
+Rocktäschel et al. proposed a neural word-by-word attention mech-
+anism in a sequence-to-sequence network for reasoning over entailments
+of pairs of words and phrases [211]. Visualizations of word-by-word at-
+tention between the premise and hypothesis show that irrelevant parts
+of the premise, such as words capturing little meaning, are correctly ne-
+glected for entailment. The premise and hypothesis connected via deeper
+semantics show proper relevancy through the attention weights.
+Xu et al. use an attention mechanism for automatic image caption-
+ing tasks [278].</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Every sensory input (value) maps to the nonvolitional cue (key)
+of that sensory input. Attention mechanisms can be thus considered as
+a process of biasing selection over values (sensory inputs) via attention
+pooling, using the queries (volitional cues) and keys (nonvolitional cues)
+as shown in Fig. 2.3.
+The attention mechanism is designed in a way to overcome the issues
+described with RNN-based encoder-decoder architecture.
+As shown in Fig. 2.3, an attention mechanism can be considered as
+a memory with keys and values and a layer which, when someone queries
+it, generates an output from value whose keys map the input [17].
+To formalize, let us consider the memory unit consisting of nkey-
+value pairs (k1,v1),..., (kn,vn)withki∈Rdkandvi∈Rdv. The at-
+tention layer receives an input as query q∈Rdqand returns an output
+o∈Rdvwith same shape as the value v.
+The attention layer measures the similarity between the query and
+the key using a score function αwhich returns scores a1,...,anfor keys
+k1,...,kngiven by
+ai=α(q,ki) (2.8)</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Transformers: Basics and Introduction ■15
+receives information in the order of billion bits per second, while the
+brain’s capacity to process is far less. Visual attention, a form of atten-
+tion, involves orienting to and sustaining focus on a stimulus such as a
+person or inanimate object or a speciﬁc task, thus enabling the brain’s
+eﬃcient processing. Therefore, the attention mechanism has allowed hu-
+mans to focus on only a fraction of information of interest, thus enabling
+optimum resource usage, leading to better survival and growth.
+The “father of American psychology”, William James, created a two-
+component framework to explain the visual attention mechanism [133].
+In this framework, the spotlight of attention uses both nonvolitional
+(involuntary) and volitional (voluntary) cues to bias the sensory input.
+Thenonvolitional cue is involuntary and is based on the saliency and
+noticeability of targets in the environment.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The authors lay the following three requirements for faithful expla-
+nations for attention mechanisms.
+1. Attention mechanism should be a NECESSARY component for
+good model performance.
+2. Attention distributions should be hard to manipulate, i.e., if any
+trained model can vary the distribution of attention weights and
+yet have similar predictions, they may not be suitable for the ex-
+planation. This directly corresponds to the exclusivity requisite
+for faithful explanations and will guide the search for adversarial
+models.
+3. Attention distributions should work well in uncontextualized set-
+tings. Since the attention weights are typically learned on contex-
+tualized hidden layer outputs, to see the impact on input tokens,
+one needs to use uncontextualized settings to judge their useful-
+ness.
+7.4.2.1 Is attention necessary for all tasks?
+The authors use the same three sets of tasks and six classiﬁcation
+datasets using the BiLSTM model from the Jain and Wallace setting
+and create another model where the attention weights are uniform in
+distribution compared to the learned weights.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />It was shown that the majority
+of self-attention heads do not encode any non-trivial linguistic informa-
+tion directly, since fewer than half of them exhibited the "heterogeneous"
+pattern2. The vertical pattern was stored in a large portion of the model
+(attention to [CLS], [SEP], and punctuation tokens). Additionally, cer-
+tain BERT heads seem to specialize in particular sorts of syntactic re-
+lations, with heads paying much more attention to words in speciﬁc
+syntactic places than a random baseline. Other studies discovered that
+no one head contains the whole syntactic tree. Additionally, attention
+weightsareillustrativeofsubject-verbagreementandreﬂexiveanaphora.
+Additionally, it was shown that even when attention heads specialize in
+monitoring semantic relations, they do not always help BERT perform
+well on related tasks.
+For layer-level knowledge localization, provided that the ﬁrst layer of
+BERT gets representations in the form of a mix of token, segment, and
+positionalembeddingsasinput.Itcomestoreasonthatthebottomlevels
+contain the most linear information about word order.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />The authors lay the following three requirements for faithful expla-
+nations for attention mechanisms.
+1. Attention mechanism should be a NECESSARY component for
+good model performance.
+2. Attention distributions should be hard to manipulate, i.e., if any
+trained model can vary the distribution of attention weights and
+yet have similar predictions, they may not be suitable for the ex-
+planation. This directly corresponds to the exclusivity requisite
+for faithful explanations and will guide the search for adversarial
+models.
+3. Attention distributions should work well in uncontextualized set-
+tings. Since the attention weights are typically learned on contex-
+tualized hidden layer outputs, to see the impact on input tokens,
+one needs to use uncontextualized settings to judge their useful-
+ness.
+7.4.2.1 Is attention necessary for all tasks?</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />Therefore, the attention mechanism has allowed hu-
+mans to focus on only a fraction of information of interest, thus enabling
+optimum resource usage, leading to better survival and growth.
+The “father of American psychology”, William James, created a two-
+component framework to explain the visual attention mechanism [133].
+In this framework, the spotlight of attention uses both nonvolitional
+(involuntary) and volitional (voluntary) cues to bias the sensory input.
+Thenonvolitional cue is involuntary and is based on the saliency and
+noticeability of targets in the environment. In contrast, the volitional
+cue is based on the subject’s voluntary eﬀort to focus on the target de-
+liberately. For example, drawing attention to speciﬁc objects by coloring
+them diﬀerently or attending to a crying baby are nonvolitional cues.
+In contrast, attending to speciﬁc text for answering question or solving
+speciﬁc problems are volitional cues.</td>
+            </tr>
+          
+            <tr>
+              <td><a href= target="_blank"><img src=></a></td>
+              <td><i> (p. )</i><br /><br />7.4 ATTENTION AND EXPLANATION
+As discussed in the previous section, one of the emerging patterns, es-
+pecially in NLP, is to associate the magnitude of the attention weights
+with the inputs and use it to interpret the model behavior. Next, we dis-
+cuss few papers and the research that impacts how one views attention
+mechanisms and their contribution towards explainability.
+7.4.1 Attention is Not an Explanation
+In this paper, Jain and Wallace try to ask fundamental questions on
+attention and their interpretations [132]. For example, when we create
+an attention map as shown in Fig. 7.4 that correlates attention weights
+directly to the input tokens or weights, the impact of many transforma-
+tions or computations such as intermediate hidden states, query vectors,
+attention techniques is not taken into account. The paper poses two cru-
+cial questions—(i) do the attention heat maps reveal the importance of
+words/tokens?</td>
+            </tr>
+          
+        </table>
+      
+    </div>
+  
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].nextElementSibling.style.display = "block"
+    }
+  </script>
+</body>
+
+</html>
