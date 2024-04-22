@@ -5,6 +5,10 @@
 
 This project aims to test the generation capabilities of Large Language Models (LLMs) when integrated with a RAG (Retrieval-Augmented Generation) system. The process involves generating questions from a set of PDF documents, retrieving relevant context chunks for the questions, and evaluating the answers provided by LLMs.
 
+## Contributors
+
+- ZAOUG Imad
+
 ## Setup
 
 1. **Database Setup**: Place the PDF documents you want to use in the "pdf" folder.
@@ -113,6 +117,39 @@ Manually evaluate the generated answers by editing the JSON file. Locate entries
 
 You can add other LLMs for evaluation by modifying the code accordingly and ensuring dependencies are met.
 
-## Contributors
+##Retriever advanced explanation
 
-- ZAOUG Imad
+### BM25 Retriever
+
+#### Overview
+BM25 (Best Matching 25) is a probabilistic information retrieval model based on the probabilistic relevance framework. It's an extension of the TF-IDF (Term Frequency-Inverse Document Frequency) model. 
+
+#### Functionality
+1. **Bag-of-Words Approach**: BM25 treats each document as a bag of words, ignoring the order in which they appear. It calculates relevance based on the presence of query terms in each document.
+   
+2. **Ranking Documents**: It ranks documents based on the similarity between the query and the document. The relevance score is determined by considering the term frequency, document length, and inverse document frequency.
+
+3. **Scalability**: BM25 is scalable to large collections of documents and performs well in real-world scenarios.
+
+#### Implementation
+- In the project, the BM25 retriever retrieves relevant chunks of text based on the query terms provided.
+- It calculates the relevance score for each chunk using BM25 scoring algorithm.
+- The top-ranked chunks are selected for further processing.
+
+### Vector Retriever
+
+#### Overview
+The Vector Retriever utilizes vector representations of documents and queries to find relevant documents. It operates on the principle of similarity between vectors in a high-dimensional space.
+
+#### Functionality
+1. **Vector Representation**: Each document and query is represented as a vector in a high-dimensional space. These vectors capture the semantic meaning of the text.
+
+2. **Similarity Calculation**: Similarity between documents and queries is computed using metrics like cosine similarity or Euclidean distance. Documents with vectors closest to the query vector are considered most relevant.
+
+3. **Flexibility**: Vector retrievers are flexible and can capture complex relationships between words and documents.
+
+### Comparison
+- **BM25**: Relies on term frequency and document length, suitable for bag-of-words representation.
+- **Vector Retriever**: Captures semantic meaning using vector representations, suitable for capturing complex relationships and semantics in text.
+
+In this project, both retrievers are used in conjunction to retrieve relevant chunks of text for further analysis and evaluation by the LLMs.
