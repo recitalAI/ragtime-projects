@@ -12,7 +12,7 @@ This project aims to test the generation capabilities of Large Language Models (
 2. **Question Generation**: Run `question_generation.py` to generate questions. You can test on the provided PDFs or your own.
 
     - The script `question_generation.py` utilizes the function `question_gen(name:str)` in `Rag.py` to generate questions.
-    - The function selects 10 questions randomly from the generated questions for evaluation purposes.
+    - The function randomizes the question order for evaluation purposes.
 
     ```python
     def question_gen(name:str):
