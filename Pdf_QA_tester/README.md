@@ -75,6 +75,8 @@ This project aims to test the generation capabilities of Large Language Models (
 
 6. **Visualization**: Visualize the answers by opening the generated HTML file located in `expe/02. Answers` folder.
 
+<img src="img/Q_and_A_only.png">
+
 ## Manual Human Evaluation
 
 Manually evaluate the generated answers by editing the JSON file. Locate entries with `"human": null` and assign a score for each answer.
@@ -103,6 +105,8 @@ Manually evaluate the generated answers by editing the JSON file. Locate entries
     expe.export_to_spreadsheet(json_path=FOLDER_EVALS / "questions--10Q_170C_72F_2M_20A_20HE_20AE_2024-04-22_09h58,19.json",
                                template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
     ```
+
+<img src="img/Q_and_A_with_C_F_E.png">
 
 ## How to Run
 
