@@ -69,7 +69,7 @@ This project aims to test the generation capabilities of Large Language Models (
                             llm_names=["gpt-4", "gpt-3.5-turbo"],retriever = MyRetriever(vector_retriever=vector_retriever,bm25_retriever=bm25_retriever))
     ```
 
-6. **Visualization**: Visualize the answers by opening the generated HTML file located in `expe/01. Questions` folder.
+6. **Visualization**: Visualize the answers by opening the generated HTML file located in `expe/02. Answers` folder.
 
 ## Manual Human Evaluation
 
