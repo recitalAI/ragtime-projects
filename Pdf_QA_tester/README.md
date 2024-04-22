@@ -105,6 +105,7 @@ Manually evaluate the generated answers by editing the JSON file. Locate entries
     expe.export_to_spreadsheet(json_path=FOLDER_EVALS / "questions--10Q_170C_72F_2M_20A_20HE_20AE_2024-04-22_09h58,19.json",
                                template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
     ```
+The HTMl export for the test:
 
 <img src="img/Q_and_A_with_C_F_E.png">
 
