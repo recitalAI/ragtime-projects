@@ -9,8 +9,6 @@ This project aims to test the generation capabilities of Large Language Models (
 
 - ZAOUG Imad
 
-Sure, here's a concise and well-explained README for all the files you provided:
-
 ## Files
 
 ### `rag.py`
