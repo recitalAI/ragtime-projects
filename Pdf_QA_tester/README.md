@@ -164,7 +164,7 @@ The HTMl export for the test:
 
 2. Follow the steps outlined above for question generation, context retrieval, answer generation, manual evaluation, fact generation, and evaluation.
 
-# Datasets
+## Datasets
 
 - **Transformers for Machine Learning_ A Deep Dive.pdf**: course material.
 - **Docs**: Example [dataset](https://storage.recital.ai/s/ZnIx.GWJqg2ZXgGpPq4o).
@@ -216,7 +216,7 @@ eval_questions = question_gen(name=path)
 ```
 
 
-# Results
+## Results
 
 To visualize the results, there is an HTML file in both "02. Answers" and "04. Evals" directories for both cases.
 
@@ -228,11 +228,11 @@ To visualize the results, there is an HTML file in both "02. Answers" and "04. E
 
 - Evals for the Example dataset case: [Link](https://github.com/ImadZaoug/ragtime-projects/blob/main/Pdf_QA_tester/expe/04.%20Evals/questions--30Q_600C_174F_2M_60A_60HE_59AE_2024-04-24_14h29%2C52.html)
 
-# Note
+## Note
 
 You can add other LLMs for evaluation by modifying the code accordingly and ensuring dependencies are met.
 
-# Retriever advanced explanation
+## Retriever advanced explanation
 
 ### BM25 Retriever
 
