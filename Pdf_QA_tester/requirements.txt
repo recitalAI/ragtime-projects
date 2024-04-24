@@ -14,9 +14,3 @@ ragtime
 spacy
 enum
 google-cloud-aiplatform
-requests
-retry
-openpyxl
-pydantic
-jinja2
-tabulate

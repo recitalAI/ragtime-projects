@@ -30,12 +30,12 @@ bm25_retriever = BM25Retriever.from_defaults(nodes=nodes, similarity_top_k=10)
 logger.debug('MAIN STARTS')
 
 generators.gen_Answers(folder_in=FOLDER_QUESTIONS, folder_out=FOLDER_ANSWERS,
-                        json_file='questions--10Q_170C_0F_0M_0A_0HE_0AE_2024-04-22_08h56,06.json',
+                        json_file='questions--30Q_600C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json',
                         prompter=MCQAnsPptr(), b_missing_only=True,
                         llm_names=["gpt-4", "gpt-3.5-turbo"],retriever = MyRetriever(vector_retriever=vector_retriever,bm25_retriever=bm25_retriever))
 
-expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json')
-expe.export_to_spreadsheet(json_path=FOLDER_ANSWERS / "questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json",
+expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--30Q_600C_0F_2M_60A_0HE_0AE_2024-04-24_14h10,25.json')
+expe.export_to_spreadsheet(json_path=FOLDER_ANSWERS / "questions--30Q_600C_0F_2M_60A_0HE_0AE_2024-04-24_14h10,25.json",
                            template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
 
 

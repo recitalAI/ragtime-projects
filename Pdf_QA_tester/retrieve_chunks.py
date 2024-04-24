@@ -19,10 +19,9 @@ load_dotenv()
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
 def main() :
 
-    exper = Expe('expe/01. Questions/questions--10Q_0C_0F_0M_0A_0HE_0AE_2024-04-22_08h21,20.json')
+    exper = Expe('expe/01. Questions/questions--30Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_13h47,06.json')
     nodes = nodes_cr(name="pdf")
     index = index_cr(nodes)
-
 
     # retireve the top 10 most similar nodes using embeddings
     vector_retriever = index.as_retriever(similarity_top_k=10)
@@ -34,7 +33,7 @@ def main() :
         vector_retriever=vector_retriever,
         bm25_retriever=bm25_retriever
     )
-    for i in range(10):
+    for i in range(len(exper)):
         hybrid_retriever.retrieve(exper[i])
     exper.save_to_json(path = Path("expe/01. Questions/questions.json"))
 

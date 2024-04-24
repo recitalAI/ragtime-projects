@@ -1906,3 +1906,860 @@ TypeError: sequence item 0: expected str instance, int found
 [2024-04-22 10:01:32,042 INFO expe.py save_to_spreadsheet l.379] (10/10) Expe saved as Spreadsheet to /Users/admin/Downloads/Pdf_QA_tester/expe/04. Evals/questions--10Q_170C_72F_2M_20A_20HE_20AE_2024-04-22_10h01,31.xlsx
 [2024-04-22 10:01:32,043 DEBUG main_facts_evals.py <module> l.37] MAIN ENDS
 [2024-04-22 10:01:32,043 DEBUG main_facts_evals.py <module> l.39] Pdf_QA_tester STARTS
+[2024-04-24 13:47:06,240 INFO expe.py save_to_json l.286] Expe saved as JSON to expe/01. Questions/questions--30Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_13h47,06.json
+[2024-04-24 13:56:06,136 DEBUG main_answer_generation.py <module> l.30] MAIN STARTS
+[2024-04-24 13:56:06,141 INFO generators.py generate l.488] (1/30) *** AnsGenerator for question "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+[2024-04-24 13:56:06,141 INFO generators.py gen_for_qa l.555] (1/30) Compute chunks
+[2024-04-24 13:56:07,393 INFO generators.py gen_for_qa l.565] (1/30) * Start with LLM "gpt-4"
+[2024-04-24 13:56:07,394 DEBUG generators.py generate l.362] (1/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 13:56:07,394 DEBUG generators.py generate l.371] (1/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 13:56:14,660 DEBUG generators.py generate l.383] (1/30) Post-process Answer
+[2024-04-24 13:56:14,661 INFO generators.py gen_for_qa l.565] (1/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 13:56:14,665 DEBUG generators.py generate l.362] (1/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 13:56:14,668 DEBUG generators.py generate l.371] (1/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:01:02,318 INFO expe.py save_to_json l.286] Expe saved as JSON to expe/01. Questions/questions--30Q_600C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json
+[2024-04-24 14:04:26,647 DEBUG main_answer_generation.py <module> l.30] MAIN STARTS
+[2024-04-24 14:04:26,683 INFO generators.py generate l.488] (1/30) *** AnsGenerator for question "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+[2024-04-24 14:04:26,684 INFO generators.py gen_for_qa l.558] (1/30) Reuse existing chunks
+[2024-04-24 14:04:26,685 INFO generators.py gen_for_qa l.565] (1/30) * Start with LLM "gpt-4"
+[2024-04-24 14:04:26,696 DEBUG generators.py generate l.362] (1/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:04:26,697 DEBUG generators.py generate l.371] (1/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:04:30,401 DEBUG generators.py generate l.383] (1/30) Post-process Answer
+[2024-04-24 14:04:30,402 INFO generators.py gen_for_qa l.565] (1/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:04:30,402 DEBUG generators.py generate l.362] (1/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:04:30,403 DEBUG generators.py generate l.371] (1/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:04:37,838 DEBUG generators.py generate l.383] (1/30) Post-process Answer
+[2024-04-24 14:04:37,839 INFO generators.py generate l.490] (1/30) End question "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+[2024-04-24 14:04:37,839 INFO generators.py generate l.488] (2/30) *** AnsGenerator for question "Under what circumstances does the insured have the freedom to choose their defense lawyer in legal actions related to penal defense and recourse guarantee?"
+[2024-04-24 14:04:37,840 INFO generators.py gen_for_qa l.558] (2/30) Reuse existing chunks
+[2024-04-24 14:04:37,840 INFO generators.py gen_for_qa l.565] (2/30) * Start with LLM "gpt-4"
+[2024-04-24 14:04:37,841 DEBUG generators.py generate l.362] (2/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:04:37,842 DEBUG generators.py generate l.371] (2/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:04:57,715 DEBUG generators.py generate l.383] (2/30) Post-process Answer
+[2024-04-24 14:04:57,716 INFO generators.py gen_for_qa l.565] (2/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:04:57,717 DEBUG generators.py generate l.362] (2/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:04:57,718 DEBUG generators.py generate l.371] (2/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:05:02,021 DEBUG generators.py generate l.383] (2/30) Post-process Answer
+[2024-04-24 14:05:02,024 INFO generators.py generate l.490] (2/30) End question "Under what circumstances does the insured have the freedom to choose their defense lawyer in legal actions related to penal defense and recourse guarantee?"
+[2024-04-24 14:05:02,024 INFO generators.py generate l.488] (3/30) *** AnsGenerator for question "In what situations does MAAF Assistance intervene for psychological trauma?"
+[2024-04-24 14:05:02,025 INFO generators.py gen_for_qa l.558] (3/30) Reuse existing chunks
+[2024-04-24 14:05:02,025 INFO generators.py gen_for_qa l.565] (3/30) * Start with LLM "gpt-4"
+[2024-04-24 14:05:02,026 DEBUG generators.py generate l.362] (3/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:05:02,026 DEBUG generators.py generate l.371] (3/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:05:08,985 DEBUG generators.py generate l.383] (3/30) Post-process Answer
+[2024-04-24 14:05:08,987 INFO generators.py gen_for_qa l.565] (3/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:05:08,987 DEBUG generators.py generate l.362] (3/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:05:08,988 DEBUG generators.py generate l.371] (3/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:05:12,657 DEBUG generators.py generate l.383] (3/30) Post-process Answer
+[2024-04-24 14:05:12,657 INFO generators.py generate l.490] (3/30) End question "In what situations does MAAF Assistance intervene for psychological trauma?"
+[2024-04-24 14:05:12,658 INFO generators.py generate l.488] (4/30) *** AnsGenerator for question "What additional options and costs are the responsibility of the renter when using a rental vehicle?"
+[2024-04-24 14:05:12,658 INFO generators.py gen_for_qa l.558] (4/30) Reuse existing chunks
+[2024-04-24 14:05:12,658 INFO generators.py gen_for_qa l.565] (4/30) * Start with LLM "gpt-4"
+[2024-04-24 14:05:12,659 DEBUG generators.py generate l.362] (4/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:05:12,660 DEBUG generators.py generate l.371] (4/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:05:15,506 DEBUG generators.py generate l.383] (4/30) Post-process Answer
+[2024-04-24 14:05:15,506 INFO generators.py gen_for_qa l.565] (4/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:05:15,506 DEBUG generators.py generate l.362] (4/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:05:15,506 DEBUG generators.py generate l.371] (4/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:05:24,456 DEBUG generators.py generate l.383] (4/30) Post-process Answer
+[2024-04-24 14:05:24,457 INFO generators.py generate l.490] (4/30) End question "What additional options and costs are the responsibility of the renter when using a rental vehicle?"
+[2024-04-24 14:05:24,457 INFO generators.py generate l.488] (5/30) *** AnsGenerator for question "Discuss the distinction between a "passager à titre gratuit" and a regular passenger in terms of insurance coverage."
+[2024-04-24 14:05:24,457 INFO generators.py gen_for_qa l.558] (5/30) Reuse existing chunks
+[2024-04-24 14:05:24,458 INFO generators.py gen_for_qa l.565] (5/30) * Start with LLM "gpt-4"
+[2024-04-24 14:05:24,458 DEBUG generators.py generate l.362] (5/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:05:24,459 DEBUG generators.py generate l.371] (5/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:05:39,188 DEBUG generators.py generate l.383] (5/30) Post-process Answer
+[2024-04-24 14:05:39,190 INFO generators.py gen_for_qa l.565] (5/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:05:39,190 DEBUG generators.py generate l.362] (5/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:05:39,191 DEBUG generators.py generate l.371] (5/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:05:49,894 DEBUG generators.py generate l.383] (5/30) Post-process Answer
+[2024-04-24 14:05:49,895 INFO generators.py generate l.490] (5/30) End question "Discuss the distinction between a "passager à titre gratuit" and a regular passenger in terms of insurance coverage."
+[2024-04-24 14:05:49,895 INFO generators.py generate l.488] (6/30) *** AnsGenerator for question "What is the next course of action if a dispute persists between the insured and the insurer after attempting to resolve it internally?"
+[2024-04-24 14:05:49,896 INFO generators.py gen_for_qa l.558] (6/30) Reuse existing chunks
+[2024-04-24 14:05:49,896 INFO generators.py gen_for_qa l.565] (6/30) * Start with LLM "gpt-4"
+[2024-04-24 14:05:49,896 DEBUG generators.py generate l.362] (6/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:05:49,897 DEBUG generators.py generate l.371] (6/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:05:55,416 DEBUG generators.py generate l.383] (6/30) Post-process Answer
+[2024-04-24 14:05:55,417 INFO generators.py gen_for_qa l.565] (6/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:05:55,417 DEBUG generators.py generate l.362] (6/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:05:55,418 DEBUG generators.py generate l.371] (6/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:06:00,782 DEBUG generators.py generate l.383] (6/30) Post-process Answer
+[2024-04-24 14:06:00,783 INFO generators.py generate l.490] (6/30) End question "What is the next course of action if a dispute persists between the insured and the insurer after attempting to resolve it internally?"
+[2024-04-24 14:06:00,783 INFO generators.py generate l.488] (7/30) *** AnsGenerator for question "What are the implications of failing to pay one installment of your insurance premium if it is divided into multiple payments?"
+[2024-04-24 14:06:00,783 INFO generators.py gen_for_qa l.558] (7/30) Reuse existing chunks
+[2024-04-24 14:06:00,785 INFO generators.py gen_for_qa l.565] (7/30) * Start with LLM "gpt-4"
+[2024-04-24 14:06:00,785 DEBUG generators.py generate l.362] (7/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:06:00,786 DEBUG generators.py generate l.371] (7/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:06:21,219 DEBUG generators.py generate l.383] (7/30) Post-process Answer
+[2024-04-24 14:06:21,221 INFO generators.py gen_for_qa l.565] (7/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:06:21,221 DEBUG generators.py generate l.362] (7/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:06:21,222 DEBUG generators.py generate l.371] (7/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:06:32,124 DEBUG generators.py generate l.383] (7/30) Post-process Answer
+[2024-04-24 14:06:32,124 INFO generators.py generate l.490] (7/30) End question "What are the implications of failing to pay one installment of your insurance premium if it is divided into multiple payments?"
+[2024-04-24 14:06:32,124 INFO generators.py generate l.488] (8/30) *** AnsGenerator for question "What type of guarantee does the insurance provide for legal defense in criminal cases?"
+[2024-04-24 14:06:32,125 INFO generators.py gen_for_qa l.558] (8/30) Reuse existing chunks
+[2024-04-24 14:06:32,125 INFO generators.py gen_for_qa l.565] (8/30) * Start with LLM "gpt-4"
+[2024-04-24 14:06:32,125 DEBUG generators.py generate l.362] (8/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:06:32,126 DEBUG generators.py generate l.371] (8/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:06:34,255 DEBUG generators.py generate l.383] (8/30) Post-process Answer
+[2024-04-24 14:06:34,256 INFO generators.py gen_for_qa l.565] (8/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:06:34,256 DEBUG generators.py generate l.362] (8/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:06:34,257 DEBUG generators.py generate l.371] (8/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:06:37,015 DEBUG generators.py generate l.383] (8/30) Post-process Answer
+[2024-04-24 14:06:37,016 INFO generators.py generate l.490] (8/30) End question "What type of guarantee does the insurance provide for legal defense in criminal cases?"
+[2024-04-24 14:06:37,016 INFO generators.py generate l.488] (9/30) *** AnsGenerator for question "Under what circumstances does the exclusion for damages caused by transporting hazardous materials not apply?"
+[2024-04-24 14:06:37,017 INFO generators.py gen_for_qa l.558] (9/30) Reuse existing chunks
+[2024-04-24 14:06:37,017 INFO generators.py gen_for_qa l.565] (9/30) * Start with LLM "gpt-4"
+[2024-04-24 14:06:37,017 DEBUG generators.py generate l.362] (9/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:06:37,018 DEBUG generators.py generate l.371] (9/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:06:39,258 DEBUG generators.py generate l.383] (9/30) Post-process Answer
+[2024-04-24 14:06:39,259 INFO generators.py gen_for_qa l.565] (9/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:06:39,259 DEBUG generators.py generate l.362] (9/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:06:39,260 DEBUG generators.py generate l.371] (9/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:06:43,193 DEBUG generators.py generate l.383] (9/30) Post-process Answer
+[2024-04-24 14:06:43,193 INFO generators.py generate l.490] (9/30) End question "Under what circumstances does the exclusion for damages caused by transporting hazardous materials not apply?"
+[2024-04-24 14:06:43,193 INFO generators.py generate l.488] (10/30) *** AnsGenerator for question "How is the refund calculated for the portion of the premium or contribution not used during the period when the risk did not occur?"
+[2024-04-24 14:06:43,193 INFO generators.py gen_for_qa l.558] (10/30) Reuse existing chunks
+[2024-04-24 14:06:43,194 INFO generators.py gen_for_qa l.565] (10/30) * Start with LLM "gpt-4"
+[2024-04-24 14:06:43,194 DEBUG generators.py generate l.362] (10/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:06:43,194 DEBUG generators.py generate l.371] (10/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:06:52,451 DEBUG generators.py generate l.383] (10/30) Post-process Answer
+[2024-04-24 14:06:52,452 INFO generators.py gen_for_qa l.565] (10/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:06:52,452 DEBUG generators.py generate l.362] (10/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:06:52,453 DEBUG generators.py generate l.371] (10/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:06:58,950 DEBUG generators.py generate l.383] (10/30) Post-process Answer
+[2024-04-24 14:06:58,951 INFO generators.py generate l.490] (10/30) End question "How is the refund calculated for the portion of the premium or contribution not used during the period when the risk did not occur?"
+[2024-04-24 14:06:58,951 INFO generators.py generate l.488] (11/30) *** AnsGenerator for question "Define "Préjudice d’affection" as described in the document."
+[2024-04-24 14:06:58,952 INFO generators.py gen_for_qa l.558] (11/30) Reuse existing chunks
+[2024-04-24 14:06:58,952 INFO generators.py gen_for_qa l.565] (11/30) * Start with LLM "gpt-4"
+[2024-04-24 14:06:58,952 DEBUG generators.py generate l.362] (11/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:06:58,954 DEBUG generators.py generate l.371] (11/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:05,747 DEBUG generators.py generate l.383] (11/30) Post-process Answer
+[2024-04-24 14:07:05,747 INFO generators.py gen_for_qa l.565] (11/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:07:05,748 DEBUG generators.py generate l.362] (11/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:05,748 DEBUG generators.py generate l.371] (11/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:09,643 DEBUG generators.py generate l.383] (11/30) Post-process Answer
+[2024-04-24 14:07:09,644 INFO generators.py generate l.490] (11/30) End question "Define "Préjudice d’affection" as described in the document."
+[2024-04-24 14:07:09,644 INFO generators.py generate l.488] (12/30) *** AnsGenerator for question "Under what circumstances does the insurance cover occasional and voluntary towing or assistance of a vehicle?"
+[2024-04-24 14:07:09,644 INFO generators.py gen_for_qa l.558] (12/30) Reuse existing chunks
+[2024-04-24 14:07:09,645 INFO generators.py gen_for_qa l.565] (12/30) * Start with LLM "gpt-4"
+[2024-04-24 14:07:09,645 DEBUG generators.py generate l.362] (12/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:09,646 DEBUG generators.py generate l.371] (12/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:12,607 DEBUG generators.py generate l.383] (12/30) Post-process Answer
+[2024-04-24 14:07:12,608 INFO generators.py gen_for_qa l.565] (12/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:07:12,608 DEBUG generators.py generate l.362] (12/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:12,609 DEBUG generators.py generate l.371] (12/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:20,140 DEBUG generators.py generate l.383] (12/30) Post-process Answer
+[2024-04-24 14:07:20,141 INFO generators.py generate l.490] (12/30) End question "Under what circumstances does the insurance cover occasional and voluntary towing or assistance of a vehicle?"
+[2024-04-24 14:07:20,141 INFO generators.py generate l.488] (13/30) *** AnsGenerator for question "What are the requirements for maintaining insurance coverage during test drives for a vehicle being prepared for sale?"
+[2024-04-24 14:07:20,141 INFO generators.py gen_for_qa l.558] (13/30) Reuse existing chunks
+[2024-04-24 14:07:20,142 INFO generators.py gen_for_qa l.565] (13/30) * Start with LLM "gpt-4"
+[2024-04-24 14:07:20,142 DEBUG generators.py generate l.362] (13/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:20,143 DEBUG generators.py generate l.371] (13/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:22,591 DEBUG generators.py generate l.383] (13/30) Post-process Answer
+[2024-04-24 14:07:22,592 INFO generators.py gen_for_qa l.565] (13/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:07:22,593 DEBUG generators.py generate l.362] (13/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:22,593 DEBUG generators.py generate l.371] (13/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:31,589 DEBUG generators.py generate l.383] (13/30) Post-process Answer
+[2024-04-24 14:07:31,589 INFO generators.py generate l.490] (13/30) End question "What are the requirements for maintaining insurance coverage during test drives for a vehicle being prepared for sale?"
+[2024-04-24 14:07:31,589 INFO generators.py generate l.488] (14/30) *** AnsGenerator for question "What is the special deductible for the "Formules Tiers Eco" and "Tous Risques Eco" in case a driver is not designated?"
+[2024-04-24 14:07:31,590 INFO generators.py gen_for_qa l.558] (14/30) Reuse existing chunks
+[2024-04-24 14:07:31,590 INFO generators.py gen_for_qa l.565] (14/30) * Start with LLM "gpt-4"
+[2024-04-24 14:07:31,591 DEBUG generators.py generate l.362] (14/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:31,591 DEBUG generators.py generate l.371] (14/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:37,366 DEBUG generators.py generate l.383] (14/30) Post-process Answer
+[2024-04-24 14:07:37,367 INFO generators.py gen_for_qa l.565] (14/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:07:37,367 DEBUG generators.py generate l.362] (14/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:37,368 DEBUG generators.py generate l.371] (14/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:43,672 DEBUG generators.py generate l.383] (14/30) Post-process Answer
+[2024-04-24 14:07:43,673 INFO generators.py generate l.490] (14/30) End question "What is the special deductible for the "Formules Tiers Eco" and "Tous Risques Eco" in case a driver is not designated?"
+[2024-04-24 14:07:43,673 INFO generators.py generate l.488] (15/30) *** AnsGenerator for question "What is the guarantee included in all four formulas of guarantees?"
+[2024-04-24 14:07:43,673 INFO generators.py gen_for_qa l.558] (15/30) Reuse existing chunks
+[2024-04-24 14:07:43,674 INFO generators.py gen_for_qa l.565] (15/30) * Start with LLM "gpt-4"
+[2024-04-24 14:07:43,674 DEBUG generators.py generate l.362] (15/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:43,675 DEBUG generators.py generate l.371] (15/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:45,599 DEBUG generators.py generate l.383] (15/30) Post-process Answer
+[2024-04-24 14:07:45,600 INFO generators.py gen_for_qa l.565] (15/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:07:45,601 DEBUG generators.py generate l.362] (15/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:45,601 DEBUG generators.py generate l.371] (15/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:47,887 DEBUG generators.py generate l.383] (15/30) Post-process Answer
+[2024-04-24 14:07:47,887 INFO generators.py generate l.490] (15/30) End question "What is the guarantee included in all four formulas of guarantees?"
+[2024-04-24 14:07:47,888 INFO generators.py generate l.488] (16/30) *** AnsGenerator for question "What is the default coefficient used in the calculation of the premium for the insured as mentioned in Article 1?"
+[2024-04-24 14:07:47,888 INFO generators.py gen_for_qa l.558] (16/30) Reuse existing chunks
+[2024-04-24 14:07:47,889 INFO generators.py gen_for_qa l.565] (16/30) * Start with LLM "gpt-4"
+[2024-04-24 14:07:47,889 DEBUG generators.py generate l.362] (16/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:47,890 DEBUG generators.py generate l.371] (16/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:50,416 DEBUG generators.py generate l.383] (16/30) Post-process Answer
+[2024-04-24 14:07:50,417 INFO generators.py gen_for_qa l.565] (16/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:07:50,417 DEBUG generators.py generate l.362] (16/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:50,418 DEBUG generators.py generate l.371] (16/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:52,427 DEBUG generators.py generate l.383] (16/30) Post-process Answer
+[2024-04-24 14:07:52,428 INFO generators.py generate l.490] (16/30) End question "What is the default coefficient used in the calculation of the premium for the insured as mentioned in Article 1?"
+[2024-04-24 14:07:52,428 INFO generators.py generate l.488] (17/30) *** AnsGenerator for question "What are the different options proposed by the medical team for transport or medical repatriation?"
+[2024-04-24 14:07:52,429 INFO generators.py gen_for_qa l.558] (17/30) Reuse existing chunks
+[2024-04-24 14:07:52,429 INFO generators.py gen_for_qa l.565] (17/30) * Start with LLM "gpt-4"
+[2024-04-24 14:07:52,429 DEBUG generators.py generate l.362] (17/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:52,431 DEBUG generators.py generate l.371] (17/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:55,133 DEBUG generators.py generate l.383] (17/30) Post-process Answer
+[2024-04-24 14:07:55,134 INFO generators.py gen_for_qa l.565] (17/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:07:55,134 DEBUG generators.py generate l.362] (17/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:55,135 DEBUG generators.py generate l.371] (17/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:07:59,457 DEBUG generators.py generate l.383] (17/30) Post-process Answer
+[2024-04-24 14:07:59,457 INFO generators.py generate l.490] (17/30) End question "What are the different options proposed by the medical team for transport or medical repatriation?"
+[2024-04-24 14:07:59,458 INFO generators.py generate l.488] (18/30) *** AnsGenerator for question "How is the coverage amount determined based on the level of permanent disability?"
+[2024-04-24 14:07:59,458 INFO generators.py gen_for_qa l.558] (18/30) Reuse existing chunks
+[2024-04-24 14:07:59,458 INFO generators.py gen_for_qa l.565] (18/30) * Start with LLM "gpt-4"
+[2024-04-24 14:07:59,459 DEBUG generators.py generate l.362] (18/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:07:59,460 DEBUG generators.py generate l.371] (18/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:02,460 DEBUG generators.py generate l.383] (18/30) Post-process Answer
+[2024-04-24 14:08:02,460 INFO generators.py gen_for_qa l.565] (18/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:08:02,460 DEBUG generators.py generate l.362] (18/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:02,460 DEBUG generators.py generate l.371] (18/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:09,697 DEBUG generators.py generate l.383] (18/30) Post-process Answer
+[2024-04-24 14:08:09,699 INFO generators.py generate l.490] (18/30) End question "How is the coverage amount determined based on the level of permanent disability?"
+[2024-04-24 14:08:09,699 INFO generators.py generate l.488] (19/30) *** AnsGenerator for question "How are the names and addresses of the members present or represented recorded during a general assembly?"
+[2024-04-24 14:08:09,699 INFO generators.py gen_for_qa l.558] (19/30) Reuse existing chunks
+[2024-04-24 14:08:09,700 INFO generators.py gen_for_qa l.565] (19/30) * Start with LLM "gpt-4"
+[2024-04-24 14:08:09,700 DEBUG generators.py generate l.362] (19/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:09,701 DEBUG generators.py generate l.371] (19/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:12,216 DEBUG generators.py generate l.383] (19/30) Post-process Answer
+[2024-04-24 14:08:12,217 INFO generators.py gen_for_qa l.565] (19/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:08:12,217 DEBUG generators.py generate l.362] (19/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:12,217 DEBUG generators.py generate l.371] (19/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:15,248 DEBUG generators.py generate l.383] (19/30) Post-process Answer
+[2024-04-24 14:08:15,249 INFO generators.py generate l.490] (19/30) End question "How are the names and addresses of the members present or represented recorded during a general assembly?"
+[2024-04-24 14:08:15,249 INFO generators.py generate l.488] (20/30) *** AnsGenerator for question "What is the maximum limit beyond which the policyholder cannot be held responsible for additional charges, except for increases in fiscal and similar burdens?"
+[2024-04-24 14:08:15,249 INFO generators.py gen_for_qa l.558] (20/30) Reuse existing chunks
+[2024-04-24 14:08:15,250 INFO generators.py gen_for_qa l.565] (20/30) * Start with LLM "gpt-4"
+[2024-04-24 14:08:15,250 DEBUG generators.py generate l.362] (20/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:15,250 DEBUG generators.py generate l.371] (20/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:17,922 DEBUG generators.py generate l.383] (20/30) Post-process Answer
+[2024-04-24 14:08:17,923 INFO generators.py gen_for_qa l.565] (20/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:08:17,923 DEBUG generators.py generate l.362] (20/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:17,923 DEBUG generators.py generate l.371] (20/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:21,227 DEBUG generators.py generate l.383] (20/30) Post-process Answer
+[2024-04-24 14:08:21,228 INFO generators.py generate l.490] (20/30) End question "What is the maximum limit beyond which the policyholder cannot be held responsible for additional charges, except for increases in fiscal and similar burdens?"
+[2024-04-24 14:08:21,228 INFO generators.py generate l.488] (21/30) *** AnsGenerator for question "What is the role of the board of directors in determining the remuneration of the director general?"
+[2024-04-24 14:08:21,228 INFO generators.py gen_for_qa l.558] (21/30) Reuse existing chunks
+[2024-04-24 14:08:21,229 INFO generators.py gen_for_qa l.565] (21/30) * Start with LLM "gpt-4"
+[2024-04-24 14:08:21,229 DEBUG generators.py generate l.362] (21/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:21,230 DEBUG generators.py generate l.371] (21/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:23,771 DEBUG generators.py generate l.383] (21/30) Post-process Answer
+[2024-04-24 14:08:23,772 INFO generators.py gen_for_qa l.565] (21/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:08:23,772 DEBUG generators.py generate l.362] (21/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:23,773 DEBUG generators.py generate l.371] (21/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:30,585 DEBUG generators.py generate l.383] (21/30) Post-process Answer
+[2024-04-24 14:08:30,586 INFO generators.py generate l.490] (21/30) End question "What is the role of the board of directors in determining the remuneration of the director general?"
+[2024-04-24 14:08:30,586 INFO generators.py generate l.488] (22/30) *** AnsGenerator for question "What expenses are covered for a person waiting for the repatriation of a non-transportable injured individual?"
+[2024-04-24 14:08:30,586 INFO generators.py gen_for_qa l.558] (22/30) Reuse existing chunks
+[2024-04-24 14:08:30,587 INFO generators.py gen_for_qa l.565] (22/30) * Start with LLM "gpt-4"
+[2024-04-24 14:08:30,587 DEBUG generators.py generate l.362] (22/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:30,588 DEBUG generators.py generate l.371] (22/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:34,484 DEBUG generators.py generate l.383] (22/30) Post-process Answer
+[2024-04-24 14:08:34,484 INFO generators.py gen_for_qa l.565] (22/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:08:34,485 DEBUG generators.py generate l.362] (22/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:34,485 DEBUG generators.py generate l.371] (22/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:38,996 DEBUG generators.py generate l.383] (22/30) Post-process Answer
+[2024-04-24 14:08:38,996 INFO generators.py generate l.490] (22/30) End question "What expenses are covered for a person waiting for the repatriation of a non-transportable injured individual?"
+[2024-04-24 14:08:38,997 INFO generators.py generate l.488] (23/30) *** AnsGenerator for question "How does the insurer ensure compliance with data protection regulations in handling the personal information of the beneficiaries for the assistance contract?"
+[2024-04-24 14:08:38,997 INFO generators.py gen_for_qa l.558] (23/30) Reuse existing chunks
+[2024-04-24 14:08:38,997 INFO generators.py gen_for_qa l.565] (23/30) * Start with LLM "gpt-4"
+[2024-04-24 14:08:38,998 DEBUG generators.py generate l.362] (23/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:38,998 DEBUG generators.py generate l.371] (23/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:42,000 DEBUG generators.py generate l.383] (23/30) Post-process Answer
+[2024-04-24 14:08:42,000 INFO generators.py gen_for_qa l.565] (23/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:08:42,000 DEBUG generators.py generate l.362] (23/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:42,001 DEBUG generators.py generate l.371] (23/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:49,681 DEBUG generators.py generate l.383] (23/30) Post-process Answer
+[2024-04-24 14:08:49,681 INFO generators.py generate l.490] (23/30) End question "How does the insurer ensure compliance with data protection regulations in handling the personal information of the beneficiaries for the assistance contract?"
+[2024-04-24 14:08:49,681 INFO generators.py generate l.488] (24/30) *** AnsGenerator for question "Are damages resulting from climatic events covered under the "Garantie Dommages tous accidents"?"
+[2024-04-24 14:08:49,682 INFO generators.py gen_for_qa l.558] (24/30) Reuse existing chunks
+[2024-04-24 14:08:49,682 INFO generators.py gen_for_qa l.565] (24/30) * Start with LLM "gpt-4"
+[2024-04-24 14:08:49,682 DEBUG generators.py generate l.362] (24/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:49,683 DEBUG generators.py generate l.371] (24/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:55,618 DEBUG generators.py generate l.383] (24/30) Post-process Answer
+[2024-04-24 14:08:55,618 INFO generators.py gen_for_qa l.565] (24/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:08:55,619 DEBUG generators.py generate l.362] (24/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:55,619 DEBUG generators.py generate l.371] (24/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:08:59,520 DEBUG generators.py generate l.383] (24/30) Post-process Answer
+[2024-04-24 14:08:59,522 INFO generators.py generate l.490] (24/30) End question "Are damages resulting from climatic events covered under the "Garantie Dommages tous accidents"?"
+[2024-04-24 14:08:59,522 INFO generators.py generate l.488] (25/30) *** AnsGenerator for question "What components are covered under the warranty for the Crémaillère, vérins de direction, and pompe d’assistance in the document?"
+[2024-04-24 14:08:59,522 INFO generators.py gen_for_qa l.558] (25/30) Reuse existing chunks
+[2024-04-24 14:08:59,523 INFO generators.py gen_for_qa l.565] (25/30) * Start with LLM "gpt-4"
+[2024-04-24 14:08:59,524 DEBUG generators.py generate l.362] (25/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:08:59,524 DEBUG generators.py generate l.371] (25/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:09:05,659 DEBUG generators.py generate l.383] (25/30) Post-process Answer
+[2024-04-24 14:09:05,659 INFO generators.py gen_for_qa l.565] (25/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:09:05,660 DEBUG generators.py generate l.362] (25/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:09:05,660 DEBUG generators.py generate l.371] (25/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:09:08,349 DEBUG generators.py generate l.383] (25/30) Post-process Answer
+[2024-04-24 14:09:08,349 INFO generators.py generate l.490] (25/30) End question "What components are covered under the warranty for the Crémaillère, vérins de direction, and pompe d’assistance in the document?"
+[2024-04-24 14:09:08,350 INFO generators.py generate l.488] (26/30) *** AnsGenerator for question "What actions can the insurer take if the policyholder fails to fulfill their obligations under the contract?"
+[2024-04-24 14:09:08,350 INFO generators.py gen_for_qa l.558] (26/30) Reuse existing chunks
+[2024-04-24 14:09:08,350 INFO generators.py gen_for_qa l.565] (26/30) * Start with LLM "gpt-4"
+[2024-04-24 14:09:08,351 DEBUG generators.py generate l.362] (26/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:09:08,351 DEBUG generators.py generate l.371] (26/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:09:27,770 DEBUG generators.py generate l.383] (26/30) Post-process Answer
+[2024-04-24 14:09:27,772 INFO generators.py gen_for_qa l.565] (26/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:09:27,773 DEBUG generators.py generate l.362] (26/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:09:27,774 DEBUG generators.py generate l.371] (26/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:09:36,398 DEBUG generators.py generate l.383] (26/30) Post-process Answer
+[2024-04-24 14:09:36,400 INFO generators.py generate l.490] (26/30) End question "What actions can the insurer take if the policyholder fails to fulfill their obligations under the contract?"
+[2024-04-24 14:09:36,400 INFO generators.py generate l.488] (27/30) *** AnsGenerator for question "What are the consequences of not respecting the deadlines for reporting a claim?"
+[2024-04-24 14:09:36,401 INFO generators.py gen_for_qa l.558] (27/30) Reuse existing chunks
+[2024-04-24 14:09:36,401 INFO generators.py gen_for_qa l.565] (27/30) * Start with LLM "gpt-4"
+[2024-04-24 14:09:36,401 DEBUG generators.py generate l.362] (27/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:09:36,402 DEBUG generators.py generate l.371] (27/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:09:38,732 DEBUG generators.py generate l.383] (27/30) Post-process Answer
+[2024-04-24 14:09:38,734 INFO generators.py gen_for_qa l.565] (27/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:09:38,734 DEBUG generators.py generate l.362] (27/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:09:38,735 DEBUG generators.py generate l.371] (27/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:09:47,564 DEBUG generators.py generate l.383] (27/30) Post-process Answer
+[2024-04-24 14:09:47,564 INFO generators.py generate l.490] (27/30) End question "What are the consequences of not respecting the deadlines for reporting a claim?"
+[2024-04-24 14:09:47,564 INFO generators.py generate l.488] (28/30) *** AnsGenerator for question "How is the prescription period interrupted by a conservatory measure or forced execution act?"
+[2024-04-24 14:09:47,565 INFO generators.py gen_for_qa l.558] (28/30) Reuse existing chunks
+[2024-04-24 14:09:47,565 INFO generators.py gen_for_qa l.565] (28/30) * Start with LLM "gpt-4"
+[2024-04-24 14:09:47,565 DEBUG generators.py generate l.362] (28/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:09:47,566 DEBUG generators.py generate l.371] (28/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:09:54,955 DEBUG generators.py generate l.383] (28/30) Post-process Answer
+[2024-04-24 14:09:54,957 INFO generators.py gen_for_qa l.565] (28/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:09:54,957 DEBUG generators.py generate l.362] (28/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:09:54,958 DEBUG generators.py generate l.371] (28/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:10:03,493 DEBUG generators.py generate l.383] (28/30) Post-process Answer
+[2024-04-24 14:10:03,493 INFO generators.py generate l.490] (28/30) End question "How is the prescription period interrupted by a conservatory measure or forced execution act?"
+[2024-04-24 14:10:03,493 INFO generators.py generate l.488] (29/30) *** AnsGenerator for question "How does the insurer handle the analysis of a dispute and decision-making process?"
+[2024-04-24 14:10:03,493 INFO generators.py gen_for_qa l.558] (29/30) Reuse existing chunks
+[2024-04-24 14:10:03,494 INFO generators.py gen_for_qa l.565] (29/30) * Start with LLM "gpt-4"
+[2024-04-24 14:10:03,494 DEBUG generators.py generate l.362] (29/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:10:03,494 DEBUG generators.py generate l.371] (29/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:10:09,225 DEBUG generators.py generate l.383] (29/30) Post-process Answer
+[2024-04-24 14:10:09,225 INFO generators.py gen_for_qa l.565] (29/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:10:09,225 DEBUG generators.py generate l.362] (29/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:10:09,226 DEBUG generators.py generate l.371] (29/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:10:19,703 DEBUG generators.py generate l.383] (29/30) Post-process Answer
+[2024-04-24 14:10:19,705 INFO generators.py generate l.490] (29/30) End question "How does the insurer handle the analysis of a dispute and decision-making process?"
+[2024-04-24 14:10:19,705 INFO generators.py generate l.488] (30/30) *** AnsGenerator for question "What is the file size of the document?"
+[2024-04-24 14:10:19,705 INFO generators.py gen_for_qa l.558] (30/30) Reuse existing chunks
+[2024-04-24 14:10:19,706 INFO generators.py gen_for_qa l.565] (30/30) * Start with LLM "gpt-4"
+[2024-04-24 14:10:19,706 DEBUG generators.py generate l.362] (30/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:10:19,706 DEBUG generators.py generate l.371] (30/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:10:22,929 DEBUG generators.py generate l.383] (30/30) Post-process Answer
+[2024-04-24 14:10:22,929 INFO generators.py gen_for_qa l.565] (30/30) * Start with LLM "gpt-3.5-turbo"
+[2024-04-24 14:10:22,930 DEBUG generators.py generate l.362] (30/30) Either no Answer / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:10:22,930 DEBUG generators.py generate l.371] (30/30) Either no Answer / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:10:25,254 DEBUG generators.py generate l.383] (30/30) Post-process Answer
+[2024-04-24 14:10:25,255 INFO generators.py generate l.490] (30/30) End question "What is the file size of the document?"
+[2024-04-24 14:10:25,286 INFO expe.py save_to_json l.286] (30/30) Expe saved as JSON to /Users/admin/Downloads/Pdf_QA_tester/expe/02. Answers/questions--30Q_600C_0F_2M_60A_0HE_0AE_2024-04-24_14h10,25.json
+[2024-04-24 14:10:25,293 DEBUG main_answer_generation.py <module> l.42] MAIN ENDS
+[2024-04-24 14:10:25,294 DEBUG main_answer_generation.py <module> l.44] Pdf_QA_tester STARTS
+[2024-04-24 14:17:45,400 DEBUG main_answer_generation.py <module> l.30] MAIN STARTS
+[2024-04-24 14:17:45,474 INFO expe.py save_to_html l.299] Expe saved as HTML to /Users/admin/Downloads/Pdf_QA_tester/expe/02. Answers/questions--30Q_600C_0F_2M_60A_0HE_0AE_2024-04-24_14h17,45.html
+[2024-04-24 14:17:45,903 INFO expe.py save_to_spreadsheet l.379] Expe saved as Spreadsheet to /Users/admin/Downloads/Pdf_QA_tester/expe/02. Answers/questions--30Q_600C_0F_2M_60A_0HE_0AE_2024-04-24_14h17,45.xlsx
+[2024-04-24 14:17:45,905 DEBUG main_answer_generation.py <module> l.42] MAIN ENDS
+[2024-04-24 14:17:45,906 DEBUG main_answer_generation.py <module> l.44] Pdf_QA_tester STARTS
+[2024-04-24 14:20:24,685 DEBUG main_facts_evals.py <module> l.22] MAIN STARTS
+[2024-04-24 14:20:24,720 INFO generators.py generate l.488] (1/30) *** FactGenerator for question "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+[2024-04-24 14:20:24,720 ERROR generators.py generate l.493] (1/30) Exception caught - saving what has been done so far:
+Traceback (most recent call last):
+  File "/Users/admin/anaconda3/envs/myenv/lib/python3.12/site-packages/ragtime/generators.py", line 489, in generate
+    self.gen_for_qa(qa=qa, start_from=start_from,  b_missing_only=b_missing_only, only_llms=only_llms)
+  File "/Users/admin/anaconda3/envs/myenv/lib/python3.12/site-packages/ragtime/generators.py", line 597, in gen_for_qa
+    ans:Answer = next((a for a in qa.answers if a.eval and a.eval.human == 1.0))
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+StopIteration
+[2024-04-24 14:20:24,750 INFO expe.py save_to_json l.286] (1/30) Expe saved as JSON to /Users/admin/Downloads/Pdf_QA_tester/expe/02. Answers/Stopped_at_1_of_30_questions--30Q_600C_0F_2M_60A_0HE_0AE_2024-04-24_14h20,24.json
+[2024-04-24 14:20:24,755 DEBUG main_facts_evals.py <module> l.37] MAIN ENDS
+[2024-04-24 14:20:24,756 DEBUG main_facts_evals.py <module> l.39] Pdf_QA_tester STARTS
+[2024-04-24 14:21:38,005 DEBUG main_facts_evals.py <module> l.22] MAIN STARTS
+[2024-04-24 14:21:38,047 INFO generators.py generate l.488] (1/30) *** FactGenerator for question "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+[2024-04-24 14:21:38,047 INFO generators.py gen_for_qa l.600] (1/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:21:38,047 DEBUG generators.py generate l.362] (1/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:21:38,047 DEBUG generators.py generate l.371] (1/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:21:48,086 DEBUG generators.py generate l.383] (1/30) Post-process Facts
+[2024-04-24 14:21:48,087 INFO generators.py generate l.490] (1/30) End question "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+[2024-04-24 14:21:48,087 INFO generators.py generate l.488] (2/30) *** FactGenerator for question "Under what circumstances does the insured have the freedom to choose their defense lawyer in legal actions related to penal defense and recourse guarantee?"
+[2024-04-24 14:21:48,087 INFO generators.py gen_for_qa l.600] (2/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:21:48,087 DEBUG generators.py generate l.362] (2/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:21:48,088 DEBUG generators.py generate l.371] (2/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:22:06,484 DEBUG generators.py generate l.383] (2/30) Post-process Facts
+[2024-04-24 14:22:06,485 INFO generators.py generate l.490] (2/30) End question "Under what circumstances does the insured have the freedom to choose their defense lawyer in legal actions related to penal defense and recourse guarantee?"
+[2024-04-24 14:22:06,485 INFO generators.py generate l.488] (3/30) *** FactGenerator for question "In what situations does MAAF Assistance intervene for psychological trauma?"
+[2024-04-24 14:22:06,486 INFO generators.py gen_for_qa l.600] (3/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:22:06,486 DEBUG generators.py generate l.362] (3/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:22:06,486 DEBUG generators.py generate l.371] (3/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:22:12,892 DEBUG generators.py generate l.383] (3/30) Post-process Facts
+[2024-04-24 14:22:12,893 INFO generators.py generate l.490] (3/30) End question "In what situations does MAAF Assistance intervene for psychological trauma?"
+[2024-04-24 14:22:12,893 INFO generators.py generate l.488] (4/30) *** FactGenerator for question "What additional options and costs are the responsibility of the renter when using a rental vehicle?"
+[2024-04-24 14:22:12,894 INFO generators.py gen_for_qa l.600] (4/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:22:12,894 DEBUG generators.py generate l.362] (4/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:22:12,894 DEBUG generators.py generate l.371] (4/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:22:19,954 DEBUG generators.py generate l.383] (4/30) Post-process Facts
+[2024-04-24 14:22:19,954 INFO generators.py generate l.490] (4/30) End question "What additional options and costs are the responsibility of the renter when using a rental vehicle?"
+[2024-04-24 14:22:19,955 INFO generators.py generate l.488] (5/30) *** FactGenerator for question "Discuss the distinction between a "passager à titre gratuit" and a regular passenger in terms of insurance coverage."
+[2024-04-24 14:22:19,955 INFO generators.py gen_for_qa l.600] (5/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:22:19,956 DEBUG generators.py generate l.362] (5/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:22:19,956 DEBUG generators.py generate l.371] (5/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:22:28,893 DEBUG generators.py generate l.383] (5/30) Post-process Facts
+[2024-04-24 14:22:28,894 INFO generators.py generate l.490] (5/30) End question "Discuss the distinction between a "passager à titre gratuit" and a regular passenger in terms of insurance coverage."
+[2024-04-24 14:22:28,903 INFO generators.py generate l.488] (6/30) *** FactGenerator for question "What is the next course of action if a dispute persists between the insured and the insurer after attempting to resolve it internally?"
+[2024-04-24 14:22:28,903 INFO generators.py gen_for_qa l.600] (6/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:22:28,904 DEBUG generators.py generate l.362] (6/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:22:28,904 DEBUG generators.py generate l.371] (6/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:22:35,776 DEBUG generators.py generate l.383] (6/30) Post-process Facts
+[2024-04-24 14:22:35,777 INFO generators.py generate l.490] (6/30) End question "What is the next course of action if a dispute persists between the insured and the insurer after attempting to resolve it internally?"
+[2024-04-24 14:22:35,777 INFO generators.py generate l.488] (7/30) *** FactGenerator for question "What are the implications of failing to pay one installment of your insurance premium if it is divided into multiple payments?"
+[2024-04-24 14:22:35,778 INFO generators.py gen_for_qa l.600] (7/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:22:35,778 DEBUG generators.py generate l.362] (7/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:22:35,778 DEBUG generators.py generate l.371] (7/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:22:45,371 DEBUG generators.py generate l.383] (7/30) Post-process Facts
+[2024-04-24 14:22:45,371 INFO generators.py generate l.490] (7/30) End question "What are the implications of failing to pay one installment of your insurance premium if it is divided into multiple payments?"
+[2024-04-24 14:22:45,372 INFO generators.py generate l.488] (8/30) *** FactGenerator for question "What type of guarantee does the insurance provide for legal defense in criminal cases?"
+[2024-04-24 14:22:45,372 INFO generators.py gen_for_qa l.600] (8/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:22:45,372 DEBUG generators.py generate l.362] (8/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:22:45,373 DEBUG generators.py generate l.371] (8/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:22:51,392 DEBUG generators.py generate l.383] (8/30) Post-process Facts
+[2024-04-24 14:22:51,392 INFO generators.py generate l.490] (8/30) End question "What type of guarantee does the insurance provide for legal defense in criminal cases?"
+[2024-04-24 14:22:51,392 INFO generators.py generate l.488] (9/30) *** FactGenerator for question "Under what circumstances does the exclusion for damages caused by transporting hazardous materials not apply?"
+[2024-04-24 14:22:51,392 INFO generators.py gen_for_qa l.600] (9/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:22:51,392 DEBUG generators.py generate l.362] (9/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:22:51,393 DEBUG generators.py generate l.371] (9/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:22:58,522 DEBUG generators.py generate l.383] (9/30) Post-process Facts
+[2024-04-24 14:22:58,522 INFO generators.py generate l.490] (9/30) End question "Under what circumstances does the exclusion for damages caused by transporting hazardous materials not apply?"
+[2024-04-24 14:22:58,523 INFO generators.py generate l.488] (10/30) *** FactGenerator for question "How is the refund calculated for the portion of the premium or contribution not used during the period when the risk did not occur?"
+[2024-04-24 14:22:58,523 INFO generators.py gen_for_qa l.600] (10/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:22:58,524 DEBUG generators.py generate l.362] (10/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:22:58,524 DEBUG generators.py generate l.371] (10/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:23:08,121 DEBUG generators.py generate l.383] (10/30) Post-process Facts
+[2024-04-24 14:23:08,122 INFO generators.py generate l.490] (10/30) End question "How is the refund calculated for the portion of the premium or contribution not used during the period when the risk did not occur?"
+[2024-04-24 14:23:08,122 INFO generators.py generate l.488] (11/30) *** FactGenerator for question "Define "Préjudice d’affection" as described in the document."
+[2024-04-24 14:23:08,123 INFO generators.py gen_for_qa l.600] (11/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:23:08,123 DEBUG generators.py generate l.362] (11/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:23:08,124 DEBUG generators.py generate l.371] (11/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:23:16,196 DEBUG generators.py generate l.383] (11/30) Post-process Facts
+[2024-04-24 14:23:16,196 INFO generators.py generate l.490] (11/30) End question "Define "Préjudice d’affection" as described in the document."
+[2024-04-24 14:23:16,196 INFO generators.py generate l.488] (12/30) *** FactGenerator for question "Under what circumstances does the insurance cover occasional and voluntary towing or assistance of a vehicle?"
+[2024-04-24 14:23:16,197 INFO generators.py gen_for_qa l.600] (12/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:23:16,198 DEBUG generators.py generate l.362] (12/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:23:16,198 DEBUG generators.py generate l.371] (12/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:23:21,397 DEBUG generators.py generate l.383] (12/30) Post-process Facts
+[2024-04-24 14:23:21,397 INFO generators.py generate l.490] (12/30) End question "Under what circumstances does the insurance cover occasional and voluntary towing or assistance of a vehicle?"
+[2024-04-24 14:23:21,398 INFO generators.py generate l.488] (13/30) *** FactGenerator for question "What are the requirements for maintaining insurance coverage during test drives for a vehicle being prepared for sale?"
+[2024-04-24 14:23:21,398 INFO generators.py gen_for_qa l.600] (13/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:23:21,398 DEBUG generators.py generate l.362] (13/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:23:21,399 DEBUG generators.py generate l.371] (13/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:23:27,901 DEBUG generators.py generate l.383] (13/30) Post-process Facts
+[2024-04-24 14:23:27,901 INFO generators.py generate l.490] (13/30) End question "What are the requirements for maintaining insurance coverage during test drives for a vehicle being prepared for sale?"
+[2024-04-24 14:23:27,902 INFO generators.py generate l.488] (14/30) *** FactGenerator for question "What is the special deductible for the "Formules Tiers Eco" and "Tous Risques Eco" in case a driver is not designated?"
+[2024-04-24 14:23:27,902 INFO generators.py gen_for_qa l.600] (14/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:23:27,902 DEBUG generators.py generate l.362] (14/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:23:27,903 DEBUG generators.py generate l.371] (14/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:23:33,802 DEBUG generators.py generate l.383] (14/30) Post-process Facts
+[2024-04-24 14:23:33,803 INFO generators.py generate l.490] (14/30) End question "What is the special deductible for the "Formules Tiers Eco" and "Tous Risques Eco" in case a driver is not designated?"
+[2024-04-24 14:23:33,803 INFO generators.py generate l.488] (15/30) *** FactGenerator for question "What is the guarantee included in all four formulas of guarantees?"
+[2024-04-24 14:23:33,803 INFO generators.py gen_for_qa l.600] (15/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:23:33,804 DEBUG generators.py generate l.362] (15/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:23:33,804 DEBUG generators.py generate l.371] (15/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:23:39,486 DEBUG generators.py generate l.383] (15/30) Post-process Facts
+[2024-04-24 14:23:39,487 INFO generators.py generate l.490] (15/30) End question "What is the guarantee included in all four formulas of guarantees?"
+[2024-04-24 14:23:39,487 INFO generators.py generate l.488] (16/30) *** FactGenerator for question "What is the default coefficient used in the calculation of the premium for the insured as mentioned in Article 1?"
+[2024-04-24 14:23:39,488 INFO generators.py gen_for_qa l.600] (16/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:23:39,488 DEBUG generators.py generate l.362] (16/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:23:39,488 DEBUG generators.py generate l.371] (16/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:23:45,226 DEBUG generators.py generate l.383] (16/30) Post-process Facts
+[2024-04-24 14:23:45,227 INFO generators.py generate l.490] (16/30) End question "What is the default coefficient used in the calculation of the premium for the insured as mentioned in Article 1?"
+[2024-04-24 14:23:45,227 INFO generators.py generate l.488] (17/30) *** FactGenerator for question "What are the different options proposed by the medical team for transport or medical repatriation?"
+[2024-04-24 14:23:45,229 INFO generators.py gen_for_qa l.600] (17/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:23:45,229 DEBUG generators.py generate l.362] (17/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:23:45,230 DEBUG generators.py generate l.371] (17/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:23:54,452 DEBUG generators.py generate l.383] (17/30) Post-process Facts
+[2024-04-24 14:23:54,453 INFO generators.py generate l.490] (17/30) End question "What are the different options proposed by the medical team for transport or medical repatriation?"
+[2024-04-24 14:23:54,453 INFO generators.py generate l.488] (18/30) *** FactGenerator for question "How is the coverage amount determined based on the level of permanent disability?"
+[2024-04-24 14:23:54,453 INFO generators.py gen_for_qa l.600] (18/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:23:54,453 DEBUG generators.py generate l.362] (18/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:23:54,454 DEBUG generators.py generate l.371] (18/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:24:04,812 DEBUG generators.py generate l.383] (18/30) Post-process Facts
+[2024-04-24 14:24:04,812 INFO generators.py generate l.490] (18/30) End question "How is the coverage amount determined based on the level of permanent disability?"
+[2024-04-24 14:24:04,813 INFO generators.py generate l.488] (19/30) *** FactGenerator for question "How are the names and addresses of the members present or represented recorded during a general assembly?"
+[2024-04-24 14:24:04,813 INFO generators.py gen_for_qa l.600] (19/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:24:04,813 DEBUG generators.py generate l.362] (19/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:24:04,814 DEBUG generators.py generate l.371] (19/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:24:12,853 DEBUG generators.py generate l.383] (19/30) Post-process Facts
+[2024-04-24 14:24:12,854 INFO generators.py generate l.490] (19/30) End question "How are the names and addresses of the members present or represented recorded during a general assembly?"
+[2024-04-24 14:24:12,854 INFO generators.py generate l.488] (20/30) *** FactGenerator for question "What is the maximum limit beyond which the policyholder cannot be held responsible for additional charges, except for increases in fiscal and similar burdens?"
+[2024-04-24 14:24:12,854 INFO generators.py gen_for_qa l.600] (20/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:24:12,855 DEBUG generators.py generate l.362] (20/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:24:12,855 DEBUG generators.py generate l.371] (20/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:24:19,274 DEBUG generators.py generate l.383] (20/30) Post-process Facts
+[2024-04-24 14:24:19,275 INFO generators.py generate l.490] (20/30) End question "What is the maximum limit beyond which the policyholder cannot be held responsible for additional charges, except for increases in fiscal and similar burdens?"
+[2024-04-24 14:24:19,275 INFO generators.py generate l.488] (21/30) *** FactGenerator for question "What is the role of the board of directors in determining the remuneration of the director general?"
+[2024-04-24 14:24:19,276 INFO generators.py gen_for_qa l.600] (21/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:24:19,276 DEBUG generators.py generate l.362] (21/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:24:19,276 DEBUG generators.py generate l.371] (21/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:24:28,298 DEBUG generators.py generate l.383] (21/30) Post-process Facts
+[2024-04-24 14:24:28,299 INFO generators.py generate l.490] (21/30) End question "What is the role of the board of directors in determining the remuneration of the director general?"
+[2024-04-24 14:24:28,299 INFO generators.py generate l.488] (22/30) *** FactGenerator for question "What expenses are covered for a person waiting for the repatriation of a non-transportable injured individual?"
+[2024-04-24 14:24:28,299 INFO generators.py gen_for_qa l.600] (22/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:24:28,300 DEBUG generators.py generate l.362] (22/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:24:28,300 DEBUG generators.py generate l.371] (22/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:24:33,726 DEBUG generators.py generate l.383] (22/30) Post-process Facts
+[2024-04-24 14:24:33,727 INFO generators.py generate l.490] (22/30) End question "What expenses are covered for a person waiting for the repatriation of a non-transportable injured individual?"
+[2024-04-24 14:24:33,727 INFO generators.py generate l.488] (23/30) *** FactGenerator for question "How does the insurer ensure compliance with data protection regulations in handling the personal information of the beneficiaries for the assistance contract?"
+[2024-04-24 14:24:33,728 INFO generators.py gen_for_qa l.600] (23/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:24:33,728 DEBUG generators.py generate l.362] (23/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:24:33,728 DEBUG generators.py generate l.371] (23/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:24:40,408 DEBUG generators.py generate l.383] (23/30) Post-process Facts
+[2024-04-24 14:24:40,409 INFO generators.py generate l.490] (23/30) End question "How does the insurer ensure compliance with data protection regulations in handling the personal information of the beneficiaries for the assistance contract?"
+[2024-04-24 14:24:40,409 INFO generators.py generate l.488] (24/30) *** FactGenerator for question "Are damages resulting from climatic events covered under the "Garantie Dommages tous accidents"?"
+[2024-04-24 14:24:40,410 INFO generators.py gen_for_qa l.600] (24/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:24:40,410 DEBUG generators.py generate l.362] (24/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:24:40,411 DEBUG generators.py generate l.371] (24/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:24:50,419 DEBUG generators.py generate l.383] (24/30) Post-process Facts
+[2024-04-24 14:24:50,419 INFO generators.py generate l.490] (24/30) End question "Are damages resulting from climatic events covered under the "Garantie Dommages tous accidents"?"
+[2024-04-24 14:24:50,420 INFO generators.py generate l.488] (25/30) *** FactGenerator for question "What components are covered under the warranty for the Crémaillère, vérins de direction, and pompe d’assistance in the document?"
+[2024-04-24 14:24:50,420 INFO generators.py gen_for_qa l.600] (25/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:24:50,420 DEBUG generators.py generate l.362] (25/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:24:50,421 DEBUG generators.py generate l.371] (25/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:24:59,848 DEBUG generators.py generate l.383] (25/30) Post-process Facts
+[2024-04-24 14:24:59,849 INFO generators.py generate l.490] (25/30) End question "What components are covered under the warranty for the Crémaillère, vérins de direction, and pompe d’assistance in the document?"
+[2024-04-24 14:24:59,849 INFO generators.py generate l.488] (26/30) *** FactGenerator for question "What actions can the insurer take if the policyholder fails to fulfill their obligations under the contract?"
+[2024-04-24 14:24:59,850 INFO generators.py gen_for_qa l.600] (26/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:24:59,850 DEBUG generators.py generate l.362] (26/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:24:59,851 DEBUG generators.py generate l.371] (26/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:25:14,531 DEBUG generators.py generate l.383] (26/30) Post-process Facts
+[2024-04-24 14:25:14,532 INFO generators.py generate l.490] (26/30) End question "What actions can the insurer take if the policyholder fails to fulfill their obligations under the contract?"
+[2024-04-24 14:25:14,532 INFO generators.py generate l.488] (27/30) *** FactGenerator for question "What are the consequences of not respecting the deadlines for reporting a claim?"
+[2024-04-24 14:25:14,533 INFO generators.py gen_for_qa l.600] (27/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:25:14,533 DEBUG generators.py generate l.362] (27/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:25:14,533 DEBUG generators.py generate l.371] (27/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:25:20,721 DEBUG generators.py generate l.383] (27/30) Post-process Facts
+[2024-04-24 14:25:20,723 INFO generators.py generate l.490] (27/30) End question "What are the consequences of not respecting the deadlines for reporting a claim?"
+[2024-04-24 14:25:20,723 INFO generators.py generate l.488] (28/30) *** FactGenerator for question "How is the prescription period interrupted by a conservatory measure or forced execution act?"
+[2024-04-24 14:25:20,724 INFO generators.py gen_for_qa l.600] (28/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:25:20,725 DEBUG generators.py generate l.362] (28/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:25:20,725 DEBUG generators.py generate l.371] (28/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:25:31,467 DEBUG generators.py generate l.383] (28/30) Post-process Facts
+[2024-04-24 14:25:31,469 INFO generators.py generate l.490] (28/30) End question "How is the prescription period interrupted by a conservatory measure or forced execution act?"
+[2024-04-24 14:25:31,469 INFO generators.py generate l.488] (29/30) *** FactGenerator for question "How does the insurer handle the analysis of a dispute and decision-making process?"
+[2024-04-24 14:25:31,469 INFO generators.py gen_for_qa l.600] (29/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:25:31,470 DEBUG generators.py generate l.362] (29/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:25:31,470 DEBUG generators.py generate l.371] (29/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:25:38,365 DEBUG generators.py generate l.383] (29/30) Post-process Facts
+[2024-04-24 14:25:38,366 INFO generators.py generate l.490] (29/30) End question "How does the insurer handle the analysis of a dispute and decision-making process?"
+[2024-04-24 14:25:38,366 INFO generators.py generate l.488] (30/30) *** FactGenerator for question "What is the file size of the document?"
+[2024-04-24 14:25:38,366 INFO generators.py gen_for_qa l.600] (30/30) Generate Facts since it has a human validated answer (eval.human == 1.0) associated with answer from model gpt-4-0613
+[2024-04-24 14:25:38,367 DEBUG generators.py generate l.362] (30/30) Either no Facts / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:25:38,368 DEBUG generators.py generate l.371] (30/30) Either no Facts / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:25:44,606 DEBUG generators.py generate l.383] (30/30) Post-process Facts
+[2024-04-24 14:25:44,609 INFO generators.py generate l.490] (30/30) End question "What is the file size of the document?"
+[2024-04-24 14:25:44,646 INFO expe.py save_to_json l.286] (30/30) Expe saved as JSON to /Users/admin/Downloads/Pdf_QA_tester/expe/03. Facts/questions--30Q_600C_174F_2M_60A_60HE_0AE_2024-04-24_14h25,44.json
+[2024-04-24 14:25:44,650 DEBUG main_facts_evals.py <module> l.37] MAIN ENDS
+[2024-04-24 14:25:44,651 DEBUG main_facts_evals.py <module> l.39] Pdf_QA_tester STARTS
+[2024-04-24 14:27:15,799 DEBUG main_facts_evals.py <module> l.22] MAIN STARTS
+[2024-04-24 14:27:15,830 INFO generators.py generate l.488] (1/30) *** EvalGenerator for question "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+[2024-04-24 14:27:15,831 DEBUG generators.py gen_for_qa l.630] (1/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:15,831 DEBUG generators.py generate l.362] (1/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:15,831 DEBUG generators.py generate l.371] (1/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:17,913 DEBUG generators.py generate l.383] (1/30) Post-process Eval
+[2024-04-24 14:27:17,914 DEBUG generators.py gen_for_qa l.630] (1/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:17,914 DEBUG generators.py generate l.362] (1/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:17,915 DEBUG generators.py generate l.371] (1/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:19,703 DEBUG generators.py generate l.383] (1/30) Post-process Eval
+[2024-04-24 14:27:19,704 INFO generators.py generate l.490] (1/30) End question "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+[2024-04-24 14:27:19,704 INFO generators.py generate l.488] (2/30) *** EvalGenerator for question "Under what circumstances does the insured have the freedom to choose their defense lawyer in legal actions related to penal defense and recourse guarantee?"
+[2024-04-24 14:27:19,704 DEBUG generators.py gen_for_qa l.630] (2/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:19,705 DEBUG generators.py generate l.362] (2/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:19,705 DEBUG generators.py generate l.371] (2/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:22,588 DEBUG generators.py generate l.383] (2/30) Post-process Eval
+[2024-04-24 14:27:22,588 DEBUG generators.py gen_for_qa l.630] (2/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:22,589 DEBUG generators.py generate l.362] (2/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:22,589 DEBUG generators.py generate l.371] (2/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:24,034 DEBUG generators.py generate l.383] (2/30) Post-process Eval
+[2024-04-24 14:27:24,035 INFO generators.py generate l.490] (2/30) End question "Under what circumstances does the insured have the freedom to choose their defense lawyer in legal actions related to penal defense and recourse guarantee?"
+[2024-04-24 14:27:24,035 INFO generators.py generate l.488] (3/30) *** EvalGenerator for question "In what situations does MAAF Assistance intervene for psychological trauma?"
+[2024-04-24 14:27:24,036 DEBUG generators.py gen_for_qa l.630] (3/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:24,036 DEBUG generators.py generate l.362] (3/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:24,037 DEBUG generators.py generate l.371] (3/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:26,336 DEBUG generators.py generate l.383] (3/30) Post-process Eval
+[2024-04-24 14:27:26,337 DEBUG generators.py gen_for_qa l.630] (3/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:26,338 DEBUG generators.py generate l.362] (3/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:26,338 DEBUG generators.py generate l.371] (3/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:27,457 DEBUG generators.py generate l.383] (3/30) Post-process Eval
+[2024-04-24 14:27:27,458 INFO generators.py generate l.490] (3/30) End question "In what situations does MAAF Assistance intervene for psychological trauma?"
+[2024-04-24 14:27:27,458 INFO generators.py generate l.488] (4/30) *** EvalGenerator for question "What additional options and costs are the responsibility of the renter when using a rental vehicle?"
+[2024-04-24 14:27:27,459 DEBUG generators.py gen_for_qa l.630] (4/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:27,459 DEBUG generators.py generate l.362] (4/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:27,459 DEBUG generators.py generate l.371] (4/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:29,033 DEBUG generators.py generate l.383] (4/30) Post-process Eval
+[2024-04-24 14:27:29,034 DEBUG generators.py gen_for_qa l.630] (4/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:29,034 DEBUG generators.py generate l.362] (4/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:29,034 DEBUG generators.py generate l.371] (4/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:31,114 DEBUG generators.py generate l.383] (4/30) Post-process Eval
+[2024-04-24 14:27:31,114 INFO generators.py generate l.490] (4/30) End question "What additional options and costs are the responsibility of the renter when using a rental vehicle?"
+[2024-04-24 14:27:31,115 INFO generators.py generate l.488] (5/30) *** EvalGenerator for question "Discuss the distinction between a "passager à titre gratuit" and a regular passenger in terms of insurance coverage."
+[2024-04-24 14:27:31,115 DEBUG generators.py gen_for_qa l.630] (5/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:31,115 DEBUG generators.py generate l.362] (5/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:31,116 DEBUG generators.py generate l.371] (5/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:34,176 DEBUG generators.py generate l.383] (5/30) Post-process Eval
+[2024-04-24 14:27:34,177 DEBUG generators.py gen_for_qa l.630] (5/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:34,177 DEBUG generators.py generate l.362] (5/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:34,177 DEBUG generators.py generate l.371] (5/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:35,902 DEBUG generators.py generate l.383] (5/30) Post-process Eval
+[2024-04-24 14:27:35,902 INFO generators.py generate l.490] (5/30) End question "Discuss the distinction between a "passager à titre gratuit" and a regular passenger in terms of insurance coverage."
+[2024-04-24 14:27:35,902 INFO generators.py generate l.488] (6/30) *** EvalGenerator for question "What is the next course of action if a dispute persists between the insured and the insurer after attempting to resolve it internally?"
+[2024-04-24 14:27:35,903 DEBUG generators.py gen_for_qa l.630] (6/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:35,903 DEBUG generators.py generate l.362] (6/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:35,904 DEBUG generators.py generate l.371] (6/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:37,124 DEBUG generators.py generate l.383] (6/30) Post-process Eval
+[2024-04-24 14:27:37,124 DEBUG generators.py gen_for_qa l.630] (6/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:37,125 DEBUG generators.py generate l.362] (6/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:37,125 DEBUG generators.py generate l.371] (6/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:38,561 DEBUG generators.py generate l.383] (6/30) Post-process Eval
+[2024-04-24 14:27:38,561 INFO generators.py generate l.490] (6/30) End question "What is the next course of action if a dispute persists between the insured and the insurer after attempting to resolve it internally?"
+[2024-04-24 14:27:38,562 INFO generators.py generate l.488] (7/30) *** EvalGenerator for question "What are the implications of failing to pay one installment of your insurance premium if it is divided into multiple payments?"
+[2024-04-24 14:27:38,562 DEBUG generators.py gen_for_qa l.630] (7/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:38,563 DEBUG generators.py generate l.362] (7/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:38,563 DEBUG generators.py generate l.371] (7/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:42,182 DEBUG generators.py generate l.383] (7/30) Post-process Eval
+[2024-04-24 14:27:42,186 DEBUG generators.py gen_for_qa l.630] (7/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:42,190 DEBUG generators.py generate l.362] (7/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:42,190 DEBUG generators.py generate l.371] (7/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:43,906 DEBUG generators.py generate l.383] (7/30) Post-process Eval
+[2024-04-24 14:27:43,907 INFO generators.py generate l.490] (7/30) End question "What are the implications of failing to pay one installment of your insurance premium if it is divided into multiple payments?"
+[2024-04-24 14:27:43,907 INFO generators.py generate l.488] (8/30) *** EvalGenerator for question "What type of guarantee does the insurance provide for legal defense in criminal cases?"
+[2024-04-24 14:27:43,907 DEBUG generators.py gen_for_qa l.630] (8/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:43,908 DEBUG generators.py generate l.362] (8/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:43,908 DEBUG generators.py generate l.371] (8/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:45,393 DEBUG generators.py generate l.383] (8/30) Post-process Eval
+[2024-04-24 14:27:45,394 DEBUG generators.py gen_for_qa l.630] (8/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:45,394 DEBUG generators.py generate l.362] (8/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:45,395 DEBUG generators.py generate l.371] (8/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:46,174 DEBUG generators.py generate l.383] (8/30) Post-process Eval
+[2024-04-24 14:27:46,174 INFO generators.py generate l.490] (8/30) End question "What type of guarantee does the insurance provide for legal defense in criminal cases?"
+[2024-04-24 14:27:46,175 INFO generators.py generate l.488] (9/30) *** EvalGenerator for question "Under what circumstances does the exclusion for damages caused by transporting hazardous materials not apply?"
+[2024-04-24 14:27:46,175 DEBUG generators.py gen_for_qa l.630] (9/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:46,175 DEBUG generators.py generate l.362] (9/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:46,176 DEBUG generators.py generate l.371] (9/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:48,077 DEBUG generators.py generate l.383] (9/30) Post-process Eval
+[2024-04-24 14:27:48,078 DEBUG generators.py gen_for_qa l.630] (9/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:48,078 DEBUG generators.py generate l.362] (9/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:48,079 DEBUG generators.py generate l.371] (9/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:49,042 DEBUG generators.py generate l.383] (9/30) Post-process Eval
+[2024-04-24 14:27:49,043 INFO generators.py generate l.490] (9/30) End question "Under what circumstances does the exclusion for damages caused by transporting hazardous materials not apply?"
+[2024-04-24 14:27:49,043 INFO generators.py generate l.488] (10/30) *** EvalGenerator for question "How is the refund calculated for the portion of the premium or contribution not used during the period when the risk did not occur?"
+[2024-04-24 14:27:49,043 DEBUG generators.py gen_for_qa l.630] (10/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:49,044 DEBUG generators.py generate l.362] (10/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:49,044 DEBUG generators.py generate l.371] (10/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:51,297 DEBUG generators.py generate l.383] (10/30) Post-process Eval
+[2024-04-24 14:27:51,298 DEBUG generators.py gen_for_qa l.630] (10/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:51,298 DEBUG generators.py generate l.362] (10/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:51,299 DEBUG generators.py generate l.371] (10/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:53,308 DEBUG generators.py generate l.383] (10/30) Post-process Eval
+[2024-04-24 14:27:53,308 INFO generators.py generate l.490] (10/30) End question "How is the refund calculated for the portion of the premium or contribution not used during the period when the risk did not occur?"
+[2024-04-24 14:27:53,309 INFO generators.py generate l.488] (11/30) *** EvalGenerator for question "Define "Préjudice d’affection" as described in the document."
+[2024-04-24 14:27:53,309 DEBUG generators.py gen_for_qa l.630] (11/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:53,309 DEBUG generators.py generate l.362] (11/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:53,310 DEBUG generators.py generate l.371] (11/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:55,004 DEBUG generators.py generate l.383] (11/30) Post-process Eval
+[2024-04-24 14:27:55,005 DEBUG generators.py gen_for_qa l.630] (11/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:55,006 DEBUG generators.py generate l.362] (11/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:55,006 DEBUG generators.py generate l.371] (11/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:56,238 DEBUG generators.py generate l.383] (11/30) Post-process Eval
+[2024-04-24 14:27:56,239 INFO generators.py generate l.490] (11/30) End question "Define "Préjudice d’affection" as described in the document."
+[2024-04-24 14:27:56,239 INFO generators.py generate l.488] (12/30) *** EvalGenerator for question "Under what circumstances does the insurance cover occasional and voluntary towing or assistance of a vehicle?"
+[2024-04-24 14:27:56,239 DEBUG generators.py gen_for_qa l.630] (12/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:56,240 DEBUG generators.py generate l.362] (12/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:56,240 DEBUG generators.py generate l.371] (12/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:57,739 DEBUG generators.py generate l.383] (12/30) Post-process Eval
+[2024-04-24 14:27:57,740 DEBUG generators.py gen_for_qa l.630] (12/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:27:57,740 DEBUG generators.py generate l.362] (12/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:57,740 DEBUG generators.py generate l.371] (12/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:27:59,128 DEBUG generators.py generate l.383] (12/30) Post-process Eval
+[2024-04-24 14:27:59,129 INFO generators.py generate l.490] (12/30) End question "Under what circumstances does the insurance cover occasional and voluntary towing or assistance of a vehicle?"
+[2024-04-24 14:27:59,129 INFO generators.py generate l.488] (13/30) *** EvalGenerator for question "What are the requirements for maintaining insurance coverage during test drives for a vehicle being prepared for sale?"
+[2024-04-24 14:27:59,130 DEBUG generators.py gen_for_qa l.630] (13/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:27:59,130 DEBUG generators.py generate l.362] (13/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:27:59,130 DEBUG generators.py generate l.371] (13/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:00,609 DEBUG generators.py generate l.383] (13/30) Post-process Eval
+[2024-04-24 14:28:00,609 DEBUG generators.py gen_for_qa l.630] (13/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:00,610 DEBUG generators.py generate l.362] (13/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:00,610 DEBUG generators.py generate l.371] (13/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:02,171 DEBUG generators.py generate l.383] (13/30) Post-process Eval
+[2024-04-24 14:28:02,171 INFO generators.py generate l.490] (13/30) End question "What are the requirements for maintaining insurance coverage during test drives for a vehicle being prepared for sale?"
+[2024-04-24 14:28:02,171 INFO generators.py generate l.488] (14/30) *** EvalGenerator for question "What is the special deductible for the "Formules Tiers Eco" and "Tous Risques Eco" in case a driver is not designated?"
+[2024-04-24 14:28:02,171 DEBUG generators.py gen_for_qa l.630] (14/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:02,172 DEBUG generators.py generate l.362] (14/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:02,172 DEBUG generators.py generate l.371] (14/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:03,872 DEBUG generators.py generate l.383] (14/30) Post-process Eval
+[2024-04-24 14:28:03,874 DEBUG generators.py gen_for_qa l.630] (14/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:03,874 DEBUG generators.py generate l.362] (14/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:03,875 DEBUG generators.py generate l.371] (14/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:05,075 DEBUG generators.py generate l.383] (14/30) Post-process Eval
+[2024-04-24 14:28:05,075 INFO generators.py generate l.490] (14/30) End question "What is the special deductible for the "Formules Tiers Eco" and "Tous Risques Eco" in case a driver is not designated?"
+[2024-04-24 14:28:05,076 INFO generators.py generate l.488] (15/30) *** EvalGenerator for question "What is the guarantee included in all four formulas of guarantees?"
+[2024-04-24 14:28:05,076 DEBUG generators.py gen_for_qa l.630] (15/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:05,076 DEBUG generators.py generate l.362] (15/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:05,076 DEBUG generators.py generate l.371] (15/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:06,146 DEBUG generators.py generate l.383] (15/30) Post-process Eval
+[2024-04-24 14:28:06,147 DEBUG generators.py gen_for_qa l.630] (15/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:06,147 DEBUG generators.py generate l.362] (15/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:06,148 DEBUG generators.py generate l.371] (15/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:06,858 DEBUG generators.py generate l.383] (15/30) Post-process Eval
+[2024-04-24 14:28:06,859 INFO generators.py generate l.490] (15/30) End question "What is the guarantee included in all four formulas of guarantees?"
+[2024-04-24 14:28:06,859 INFO generators.py generate l.488] (16/30) *** EvalGenerator for question "What is the default coefficient used in the calculation of the premium for the insured as mentioned in Article 1?"
+[2024-04-24 14:28:06,859 DEBUG generators.py gen_for_qa l.630] (16/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:06,860 DEBUG generators.py generate l.362] (16/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:06,860 DEBUG generators.py generate l.371] (16/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:08,381 DEBUG generators.py generate l.383] (16/30) Post-process Eval
+[2024-04-24 14:28:08,381 DEBUG generators.py gen_for_qa l.630] (16/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:08,382 DEBUG generators.py generate l.362] (16/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:08,382 DEBUG generators.py generate l.371] (16/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:10,558 DEBUG generators.py generate l.383] (16/30) Post-process Eval
+[2024-04-24 14:28:10,558 INFO generators.py generate l.490] (16/30) End question "What is the default coefficient used in the calculation of the premium for the insured as mentioned in Article 1?"
+[2024-04-24 14:28:10,559 INFO generators.py generate l.488] (17/30) *** EvalGenerator for question "What are the different options proposed by the medical team for transport or medical repatriation?"
+[2024-04-24 14:28:10,559 DEBUG generators.py gen_for_qa l.630] (17/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:10,559 DEBUG generators.py generate l.362] (17/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:10,560 DEBUG generators.py generate l.371] (17/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:12,077 DEBUG generators.py generate l.383] (17/30) Post-process Eval
+[2024-04-24 14:28:12,078 DEBUG generators.py gen_for_qa l.630] (17/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:12,078 DEBUG generators.py generate l.362] (17/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:12,079 DEBUG generators.py generate l.371] (17/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:13,512 DEBUG generators.py generate l.383] (17/30) Post-process Eval
+[2024-04-24 14:28:13,513 INFO generators.py generate l.490] (17/30) End question "What are the different options proposed by the medical team for transport or medical repatriation?"
+[2024-04-24 14:28:13,513 INFO generators.py generate l.488] (18/30) *** EvalGenerator for question "How is the coverage amount determined based on the level of permanent disability?"
+[2024-04-24 14:28:13,513 DEBUG generators.py gen_for_qa l.630] (18/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:13,513 DEBUG generators.py generate l.362] (18/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:13,513 DEBUG generators.py generate l.371] (18/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:14,824 DEBUG generators.py generate l.383] (18/30) Post-process Eval
+[2024-04-24 14:28:14,824 DEBUG generators.py gen_for_qa l.630] (18/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:14,825 DEBUG generators.py generate l.362] (18/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:14,825 DEBUG generators.py generate l.371] (18/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:16,365 DEBUG generators.py generate l.383] (18/30) Post-process Eval
+[2024-04-24 14:28:16,366 INFO generators.py generate l.490] (18/30) End question "How is the coverage amount determined based on the level of permanent disability?"
+[2024-04-24 14:28:16,366 INFO generators.py generate l.488] (19/30) *** EvalGenerator for question "How are the names and addresses of the members present or represented recorded during a general assembly?"
+[2024-04-24 14:28:16,367 DEBUG generators.py gen_for_qa l.630] (19/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:16,367 DEBUG generators.py generate l.362] (19/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:16,367 DEBUG generators.py generate l.371] (19/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:18,090 DEBUG generators.py generate l.383] (19/30) Post-process Eval
+[2024-04-24 14:28:18,090 DEBUG generators.py gen_for_qa l.630] (19/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:18,091 DEBUG generators.py generate l.362] (19/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:18,091 DEBUG generators.py generate l.371] (19/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:19,785 DEBUG generators.py generate l.383] (19/30) Post-process Eval
+[2024-04-24 14:28:19,786 INFO generators.py generate l.490] (19/30) End question "How are the names and addresses of the members present or represented recorded during a general assembly?"
+[2024-04-24 14:28:19,786 INFO generators.py generate l.488] (20/30) *** EvalGenerator for question "What is the maximum limit beyond which the policyholder cannot be held responsible for additional charges, except for increases in fiscal and similar burdens?"
+[2024-04-24 14:28:19,786 DEBUG generators.py gen_for_qa l.630] (20/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:19,787 DEBUG generators.py generate l.362] (20/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:19,787 DEBUG generators.py generate l.371] (20/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:22,016 DEBUG generators.py generate l.383] (20/30) Post-process Eval
+[2024-04-24 14:28:22,017 DEBUG generators.py gen_for_qa l.630] (20/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:22,017 DEBUG generators.py generate l.362] (20/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:22,017 DEBUG generators.py generate l.371] (20/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:23,239 DEBUG generators.py generate l.383] (20/30) Post-process Eval
+[2024-04-24 14:28:23,239 INFO generators.py generate l.490] (20/30) End question "What is the maximum limit beyond which the policyholder cannot be held responsible for additional charges, except for increases in fiscal and similar burdens?"
+[2024-04-24 14:28:23,240 INFO generators.py generate l.488] (21/30) *** EvalGenerator for question "What is the role of the board of directors in determining the remuneration of the director general?"
+[2024-04-24 14:28:23,240 DEBUG generators.py gen_for_qa l.630] (21/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:23,241 DEBUG generators.py generate l.362] (21/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:23,241 DEBUG generators.py generate l.371] (21/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:25,654 DEBUG generators.py generate l.383] (21/30) Post-process Eval
+[2024-04-24 14:28:25,654 DEBUG generators.py gen_for_qa l.630] (21/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:25,655 DEBUG generators.py generate l.362] (21/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:25,656 DEBUG generators.py generate l.371] (21/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:27,065 DEBUG generators.py generate l.383] (21/30) Post-process Eval
+[2024-04-24 14:28:27,066 INFO generators.py generate l.490] (21/30) End question "What is the role of the board of directors in determining the remuneration of the director general?"
+[2024-04-24 14:28:27,066 INFO generators.py generate l.488] (22/30) *** EvalGenerator for question "What expenses are covered for a person waiting for the repatriation of a non-transportable injured individual?"
+[2024-04-24 14:28:27,067 DEBUG generators.py gen_for_qa l.630] (22/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:27,067 DEBUG generators.py generate l.362] (22/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:27,067 DEBUG generators.py generate l.371] (22/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:28,502 DEBUG generators.py generate l.383] (22/30) Post-process Eval
+[2024-04-24 14:28:28,503 DEBUG generators.py gen_for_qa l.630] (22/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:28,503 DEBUG generators.py generate l.362] (22/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:28,503 DEBUG generators.py generate l.371] (22/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:30,109 DEBUG generators.py generate l.383] (22/30) Post-process Eval
+[2024-04-24 14:28:30,110 INFO generators.py generate l.490] (22/30) End question "What expenses are covered for a person waiting for the repatriation of a non-transportable injured individual?"
+[2024-04-24 14:28:30,110 INFO generators.py generate l.488] (23/30) *** EvalGenerator for question "How does the insurer ensure compliance with data protection regulations in handling the personal information of the beneficiaries for the assistance contract?"
+[2024-04-24 14:28:30,110 DEBUG generators.py gen_for_qa l.630] (23/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:30,111 DEBUG generators.py generate l.362] (23/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:30,111 DEBUG generators.py generate l.371] (23/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:32,205 DEBUG generators.py generate l.383] (23/30) Post-process Eval
+[2024-04-24 14:28:32,205 DEBUG generators.py gen_for_qa l.630] (23/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:32,206 DEBUG generators.py generate l.362] (23/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:32,206 DEBUG generators.py generate l.371] (23/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:33,777 DEBUG generators.py generate l.383] (23/30) Post-process Eval
+[2024-04-24 14:28:33,777 INFO generators.py generate l.490] (23/30) End question "How does the insurer ensure compliance with data protection regulations in handling the personal information of the beneficiaries for the assistance contract?"
+[2024-04-24 14:28:33,778 INFO generators.py generate l.488] (24/30) *** EvalGenerator for question "Are damages resulting from climatic events covered under the "Garantie Dommages tous accidents"?"
+[2024-04-24 14:28:33,778 DEBUG generators.py gen_for_qa l.630] (24/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:33,778 DEBUG generators.py generate l.362] (24/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:33,779 DEBUG generators.py generate l.371] (24/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:35,339 DEBUG generators.py generate l.383] (24/30) Post-process Eval
+[2024-04-24 14:28:35,340 DEBUG generators.py gen_for_qa l.630] (24/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:35,340 DEBUG generators.py generate l.362] (24/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:35,340 DEBUG generators.py generate l.371] (24/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:36,724 DEBUG generators.py generate l.383] (24/30) Post-process Eval
+[2024-04-24 14:28:36,725 INFO generators.py generate l.490] (24/30) End question "Are damages resulting from climatic events covered under the "Garantie Dommages tous accidents"?"
+[2024-04-24 14:28:36,725 INFO generators.py generate l.488] (25/30) *** EvalGenerator for question "What components are covered under the warranty for the Crémaillère, vérins de direction, and pompe d’assistance in the document?"
+[2024-04-24 14:28:36,726 DEBUG generators.py gen_for_qa l.630] (25/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:36,726 DEBUG generators.py generate l.362] (25/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:36,727 DEBUG generators.py generate l.371] (25/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:38,561 DEBUG generators.py generate l.383] (25/30) Post-process Eval
+[2024-04-24 14:28:38,562 DEBUG generators.py gen_for_qa l.630] (25/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:38,562 DEBUG generators.py generate l.362] (25/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:38,563 DEBUG generators.py generate l.371] (25/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:39,854 DEBUG generators.py generate l.383] (25/30) Post-process Eval
+[2024-04-24 14:28:39,854 INFO generators.py generate l.490] (25/30) End question "What components are covered under the warranty for the Crémaillère, vérins de direction, and pompe d’assistance in the document?"
+[2024-04-24 14:28:39,855 INFO generators.py generate l.488] (26/30) *** EvalGenerator for question "What actions can the insurer take if the policyholder fails to fulfill their obligations under the contract?"
+[2024-04-24 14:28:39,855 DEBUG generators.py gen_for_qa l.630] (26/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:39,855 DEBUG generators.py generate l.362] (26/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:39,856 DEBUG generators.py generate l.371] (26/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:42,937 DEBUG generators.py generate l.383] (26/30) Post-process Eval
+[2024-04-24 14:28:42,937 DEBUG generators.py gen_for_qa l.630] (26/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:42,938 DEBUG generators.py generate l.362] (26/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:42,938 DEBUG generators.py generate l.371] (26/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:44,435 DEBUG generators.py generate l.383] (26/30) Post-process Eval
+[2024-04-24 14:28:44,436 INFO generators.py generate l.490] (26/30) End question "What actions can the insurer take if the policyholder fails to fulfill their obligations under the contract?"
+[2024-04-24 14:28:44,436 INFO generators.py generate l.488] (27/30) *** EvalGenerator for question "What are the consequences of not respecting the deadlines for reporting a claim?"
+[2024-04-24 14:28:44,437 DEBUG generators.py gen_for_qa l.630] (27/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:44,437 DEBUG generators.py generate l.362] (27/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:44,437 DEBUG generators.py generate l.371] (27/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:46,595 DEBUG generators.py generate l.383] (27/30) Post-process Eval
+[2024-04-24 14:28:46,596 DEBUG generators.py gen_for_qa l.630] (27/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:46,596 DEBUG generators.py generate l.362] (27/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:46,597 DEBUG generators.py generate l.371] (27/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:48,616 DEBUG generators.py generate l.383] (27/30) Post-process Eval
+[2024-04-24 14:28:48,616 INFO generators.py generate l.490] (27/30) End question "What are the consequences of not respecting the deadlines for reporting a claim?"
+[2024-04-24 14:28:48,617 INFO generators.py generate l.488] (28/30) *** EvalGenerator for question "How is the prescription period interrupted by a conservatory measure or forced execution act?"
+[2024-04-24 14:28:48,617 DEBUG generators.py gen_for_qa l.630] (28/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:48,617 DEBUG generators.py generate l.362] (28/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:48,617 DEBUG generators.py generate l.371] (28/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:51,284 DEBUG generators.py generate l.383] (28/30) Post-process Eval
+[2024-04-24 14:28:51,285 DEBUG generators.py gen_for_qa l.630] (28/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:51,285 DEBUG generators.py generate l.362] (28/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:51,286 DEBUG generators.py generate l.371] (28/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:52,837 DEBUG generators.py generate l.383] (28/30) Post-process Eval
+[2024-04-24 14:28:52,837 INFO generators.py generate l.490] (28/30) End question "How is the prescription period interrupted by a conservatory measure or forced execution act?"
+[2024-04-24 14:28:52,837 INFO generators.py generate l.488] (29/30) *** EvalGenerator for question "How does the insurer handle the analysis of a dispute and decision-making process?"
+[2024-04-24 14:28:52,838 DEBUG generators.py gen_for_qa l.630] (29/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:52,839 DEBUG generators.py generate l.362] (29/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:52,839 DEBUG generators.py generate l.371] (29/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:54,545 DEBUG generators.py generate l.383] (29/30) Post-process Eval
+[2024-04-24 14:28:54,546 DEBUG generators.py gen_for_qa l.630] (29/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:54,546 DEBUG generators.py generate l.362] (29/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:54,547 DEBUG generators.py generate l.371] (29/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:56,341 DEBUG generators.py generate l.383] (29/30) Post-process Eval
+[2024-04-24 14:28:56,342 INFO generators.py generate l.490] (29/30) End question "How does the insurer handle the analysis of a dispute and decision-making process?"
+[2024-04-24 14:28:56,342 INFO generators.py generate l.488] (30/30) *** EvalGenerator for question "What is the file size of the document?"
+[2024-04-24 14:28:56,343 DEBUG generators.py gen_for_qa l.630] (30/30) Generate Eval for answer generated with "gpt-4"
+[2024-04-24 14:28:56,343 DEBUG generators.py generate l.362] (30/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:56,343 DEBUG generators.py generate l.371] (30/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:57,880 DEBUG generators.py generate l.383] (30/30) Post-process Eval
+[2024-04-24 14:28:57,881 DEBUG generators.py gen_for_qa l.630] (30/30) Generate Eval for answer generated with "gpt-3.5-turbo"
+[2024-04-24 14:28:57,881 DEBUG generators.py generate l.362] (30/30) Either no Eval / LLMAnswer / Prompt exists yet, or you asked to regenerate Prompt ==> generate prompt
+[2024-04-24 14:28:57,882 DEBUG generators.py generate l.371] (30/30) Either no Eval / LLMAnswer exists yet, or you asked to regenerate it ==> generate LLMAnswer
+[2024-04-24 14:28:59,555 DEBUG generators.py generate l.383] (30/30) Post-process Eval
+[2024-04-24 14:28:59,556 INFO generators.py generate l.490] (30/30) End question "What is the file size of the document?"
+[2024-04-24 14:28:59,587 INFO expe.py save_to_json l.286] (30/30) Expe saved as JSON to /Users/admin/Downloads/Pdf_QA_tester/expe/04. Evals/questions--30Q_600C_174F_2M_60A_60HE_59AE_2024-04-24_14h28,59.json
+[2024-04-24 14:28:59,591 DEBUG main_facts_evals.py <module> l.37] MAIN ENDS
+[2024-04-24 14:28:59,591 DEBUG main_facts_evals.py <module> l.39] Pdf_QA_tester STARTS
+[2024-04-24 14:29:52,490 DEBUG main_facts_evals.py <module> l.22] MAIN STARTS
+[2024-04-24 14:29:52,556 INFO expe.py save_to_html l.299] Expe saved as HTML to /Users/admin/Downloads/Pdf_QA_tester/expe/04. Evals/questions--30Q_600C_174F_2M_60A_60HE_59AE_2024-04-24_14h29,52.html
+[2024-04-24 14:29:52,900 INFO expe.py save_to_spreadsheet l.379] Expe saved as Spreadsheet to /Users/admin/Downloads/Pdf_QA_tester/expe/04. Evals/questions--30Q_600C_174F_2M_60A_60HE_59AE_2024-04-24_14h29,52.xlsx
+[2024-04-24 14:29:52,902 DEBUG main_facts_evals.py <module> l.37] MAIN ENDS
+[2024-04-24 14:29:52,903 DEBUG main_facts_evals.py <module> l.39] Pdf_QA_tester STARTS

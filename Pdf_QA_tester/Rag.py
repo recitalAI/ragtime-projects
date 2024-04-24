@@ -24,21 +24,21 @@ import random
 from pathlib import Path
 
 
-def read_doc(name:str):
-    return SimpleDirectoryReader(input_dir=name).load_data()
+def read_doc(name:str, recursive=True):
+    return SimpleDirectoryReader(input_dir=name, recursive=recursive).load_data()
 
 
-def question_gen(name:str):
+def question_gen(name:str, recursive=True):
 
-    documents = read_doc(name)
+    documents = read_doc(name, recursive=recursive)
 
     data_generator = DatasetGenerator.from_documents(documents)
     eval_questions = data_generator.generate_questions_from_nodes()
     random.shuffle(eval_questions)
     return eval_questions
 
-def nodes_cr(name:str):
-    documents = read_doc(name)
+def nodes_cr(name:str,recursive= True):
+    documents = read_doc(name, recursive = recursive)
     llm = OpenAI(model="gpt-3.5-turbo")
     # initialize storage context (by default it's in-memory)
     splitter = SentenceSplitter(chunk_size=256)
