@@ -166,6 +166,58 @@ The HTMl export for the test:
 
 2. Follow the steps outlined above for question generation, context retrieval, answer generation, manual evaluation, fact generation, and evaluation.
 
+##Datasets:
+
+- **Transformers for Machine Learning_ A Deep Dive.pdf**: course material.
+- **Docs**: Example [dataset](https://storage.recital.ai/s/ZnIx.GWJqg2ZXgGpPq4o).
+
+To test with the course material, ensure to specify the PDF path in `question_generation.py`:
+
+```python
+if __name__ == '__main__':
+    path = "pdf" #here
+
+    while True:
+        try:
+            num_quest = int(input("Enter the number of questions you want to test the model on: "))
+            break  # Exit the loop if the input is successfully converted to an integer
+        except ValueError:
+            print("Please enter an integer.")
+
+    # Call the main function with the validated integer value for 'num_quest'
+    main(path=path, num_quest=num_quest)
+```
+
+In the `eval_question` function, set the `recursive` parameter to `False` so the model only selects PDFs from the folder, excluding those in subfolders:
+
+```python
+eval_questions = question_gen(name=path, recursive=False)
+```
+
+To test with the example dataset, ensure to specify the PDF path in `question_generation.py`:
+
+```python
+if __name__ == '__main__':
+    path = "pdf/docs" #here
+
+    while True:
+        try:
+            num_quest = int(input("Enter the number of questions you want to test the model on: "))
+            break  # Exit the loop if the input is successfully converted to an integer
+        except ValueError:
+            print("Please enter an integer.")
+
+    # Call the main function with the validated integer value for 'num_quest'
+    main(path=path, num_quest=num_quest)
+```
+
+In the `eval_question` function, leave it as it is because the `recursive` parameter by default is set to `True` to include all PDF files in the subfolders:
+
+```python
+eval_questions = question_gen(name=path)
+```
+
+
 ## Note
 
 You can add other LLMs for evaluation by modifying the code accordingly and ensuring dependencies are met.
