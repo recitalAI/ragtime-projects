@@ -166,7 +166,7 @@ The HTMl export for the test:
 
 2. Follow the steps outlined above for question generation, context retrieval, answer generation, manual evaluation, fact generation, and evaluation.
 
-# Datasets:
+# Datasets
 
 - **Transformers for Machine Learning_ A Deep Dive.pdf**: course material.
 - **Docs**: Example [dataset](https://storage.recital.ai/s/ZnIx.GWJqg2ZXgGpPq4o).
