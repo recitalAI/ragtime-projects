@@ -218,11 +218,23 @@ eval_questions = question_gen(name=path)
 ```
 
 
-## Note
+# Results
+
+To visualize the results, there is an HTML file in both "02. Answers" and "04. Evals" directories for both cases.
+
+- Question answers for the course case: [Link](https://github.com/ImadZaoug/ragtime-projects/blob/main/Pdf_QA_tester/expe/02.%20Answers/questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h29%2C27.html)
+
+- Question answers for the Example dataset case: [Link](https://github.com/ImadZaoug/ragtime-projects/blob/main/Pdf_QA_tester/expe/02.%20Answers/questions--30Q_600C_0F_2M_60A_0HE_0AE_2024-04-24_14h17%2C45.html)
+
+- Evals for the course case: [Link](https://github.com/ImadZaoug/ragtime-projects/blob/main/Pdf_QA_tester/expe/04.%20Evals/questions--10Q_170C_72F_2M_20A_20HE_20AE_2024-04-22_10h01%2C31.html)
+
+- Evals for the Example dataset case: [Link](https://github.com/ImadZaoug/ragtime-projects/blob/main/Pdf_QA_tester/expe/04.%20Evals/questions--30Q_600C_174F_2M_60A_60HE_59AE_2024-04-24_14h29%2C52.html)
+
+# Note
 
 You can add other LLMs for evaluation by modifying the code accordingly and ensuring dependencies are met.
 
-## Retriever advanced explanation
+# Retriever advanced explanation
 
 ### BM25 Retriever
 
