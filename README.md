@@ -40,6 +40,9 @@ Several examples are given to illustrate how to use Ragtime 🎹:
 - [What do LLM think?](what_do_LLM_think/README.md)
 - [Google NQ](google_nq/README.md)
 
+# Contributing
+Glad you wish to contribute! More details [here](CONTRIBUTING.md).
+
 # Package repo
 If you are looking for the package, not the examples, [it is here](https://github.com/recitalAI/ragtime-package).
 
