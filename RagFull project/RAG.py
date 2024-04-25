@@ -42,29 +42,3 @@ def create_index(documents):
         storage_context = StorageContext.from_defaults(persist_dir=PERSIST_DIR)
         index = load_index_from_storage(storage_context)
     return index
-
-
-# def create_query_engine(index):
-#     """
-#     Creates a query engine from the index.
-#     """
-#     retriever = VectorIndexRetriever(index=index, similarity_top_k=4)
-#     return RetrieverQueryEngine(retriever=retriever)
-
-# def query_and_print(query_engine, query):
-#     # Executes a query and prints the response.
-#     response = query_engine.query(query)
-#     pprint_response(response, show_source=True)
-#     print(response)
-
-def generate_questions(folders):
-    for folder in folders:
-        reader = SimpleDirectoryReader(folder)
-    documents = reader.load_data()
-    data_generator = DatasetGenerator.from_documents(documents)
-    eval_questions = data_generator.generate_questions_from_nodes()
-    return eval_questions
-
-
-
-
