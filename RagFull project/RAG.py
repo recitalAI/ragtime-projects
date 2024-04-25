@@ -17,7 +17,7 @@ from llama_index.core import (
 
 def load_env():
     load_dotenv()
-    # os.environ['OPENAI_API_KEY']=os.getenv('OPENAI_API_KEY')
+    
 
 
 def load_documents(folders):
