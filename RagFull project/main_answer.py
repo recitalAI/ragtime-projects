@@ -34,12 +34,12 @@ my_retriever = MyRetriever(vector_retriever=retriever)
 logger.debug('MAIN STARTS')
 
 # generators.gen_Answers(folder_in=FOLDER_QUESTIONS, folder_out=FOLDER_ANSWERS,
-#                         json_file='questions--16Q_64C_0F_0M_0A_0HE_0AE_2024-04-25_14h25,56.json',
+#                         json_file='questions--16Q_64C_0F_0M_0A_0HE_0AE_2024-04-26_01h52,28.json',
 #                         prompter=MyAnswerPptr(), b_missing_only=True,
 #                         llm_names=["gpt-3.5-turbo"], retriever= my_retriever)
 
-expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--16Q_64C_0F_1M_16A_0HE_0AE_2024-04-25_15h27,37.json')
-expe.export_to_spreadsheet(json_path=FOLDER_ANSWERS / "questions--16Q_64C_0F_1M_16A_0HE_0AE_2024-04-25_15h27,37.json",
+expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--16Q_64C_0F_1M_16A_0HE_0AE_2024-04-26_01h55,36.json')
+expe.export_to_spreadsheet(json_path=FOLDER_ANSWERS / "questions--16Q_64C_0F_1M_16A_0HE_0AE_2024-04-26_01h55,36.json",
                            template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
 
 

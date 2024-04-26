@@ -13,7 +13,7 @@ from pathlib import Path
 
 load_env()
 
-exper = Expe('expe/01. Questions/questionsTest.json')
+exper = Expe('expe/01. Questions/questionsTest(English).json')
 folders=["data1", "data2"]
 documents = load_documents(folders)
 index = create_index(documents)

@@ -1,0 +1,329 @@
+{
+    "meta": {},
+    "items": [
+      {
+        "meta": {},
+        "question": {
+          "meta": {},
+          "text": "When does my insurance contract take effect and how long does it last?"
+        },
+        "facts": {
+          "llm_answer": null,
+          "meta": {},
+          "items": []
+        },
+        "chunks": {
+          "meta": {},
+          "items": []
+        },
+        "answers": {
+          "meta": {},
+          "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+          "meta": {},
+          "text": "How is the insurance year defined in the insurance contract?"
+        },
+        "facts": {
+          "llm_answer": null,
+          "meta": {},
+          "items": []
+        },
+        "chunks": {
+          "meta": {},
+          "items": []
+        },
+        "answers": {
+          "meta": {},
+          "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+          "meta": {},
+          "text": "What is covered by my insurance contract?"
+        },
+        "facts": {
+          "llm_answer": null,
+          "meta": {},
+          "items": []
+        },
+        "chunks": {
+          "meta": {},
+          "items": []
+        },
+        "answers": {
+          "meta": {},
+          "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+          "meta": {},
+          "text": "What assistance options are available with my contract?"
+        },
+        "facts": {
+          "llm_answer": null,
+          "meta": {},
+          "items": []
+        },
+        "chunks": {
+          "meta": {},
+          "items": []
+        },
+        "answers": {
+          "meta": {},
+          "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+          "meta": {},
+          "text": "Are there any exclusions to my insurance coverage?"
+        },
+        "facts": {
+          "llm_answer": null,
+          "meta": {},
+          "items": []
+        },
+        "chunks": {
+          "meta": {},
+          "items": []
+        },
+        "answers": {
+          "meta": {},
+          "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+          "meta": {},
+          "text": "How is my insurance premium calculated?"
+        },
+        "facts": {
+          "llm_answer": null,
+          "meta": {},
+          "items": []
+        },
+        "chunks": {
+          "meta": {},
+          "items": []
+        },
+        "answers": {
+          "meta": {},
+          "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+          "meta": {},
+          "text": "How does the claims process work?"
+        },
+        "facts": {
+          "llm_answer": null,
+          "meta": {},
+          "items": []
+        },
+        "chunks": {
+          "meta": {},
+          "items": []
+        },
+        "answers": {
+          "meta": {},
+          "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+          "meta": {},
+          "text": "What changes do I need to declare to the insurer?"
+        },
+        "facts": {
+          "llm_answer": null,
+          "meta": {},
+          "items": []
+        },
+        "chunks": {
+          "meta": {},
+          "items": []
+        },
+        "answers": {
+          "meta": {},
+          "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+            "meta": {},
+            "text": "How can I transfer my coverage to another vehicle?"
+        },
+        "facts": {
+            "llm_answer": null,
+            "meta": {},
+            "items": []
+        },
+        "chunks": {
+            "meta": {},
+            "items": []
+        },
+        "answers": {
+            "meta": {},
+            "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+            "meta": {},
+            "text": "What does fire and storm insurance cover?"
+        },
+        "facts": {
+            "llm_answer": null,
+            "meta": {},
+            "items": []
+        },
+        "chunks": {
+            "meta": {},
+            "items": []
+        },
+        "answers": {
+            "meta": {},
+            "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+            "meta": {},
+            "text": "How can I cancel my insurance policy?"
+        },
+        "facts": {
+            "llm_answer": null,
+            "meta": {},
+            "items": []
+        },
+        "chunks": {
+            "meta": {},
+            "items": []
+        },
+        "answers": {
+            "meta": {},
+            "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+            "meta": {},
+            "text": "What does liability insurance cover?"
+        },
+        "facts": {
+            "llm_answer": null,
+            "meta": {},
+            "items": []
+        },
+        "chunks": {
+            "meta": {},
+            "items": []
+        },
+        "answers": {
+            "meta": {},
+            "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+            "meta": {},
+            "text": "What does bodily injury driver insurance cover?"
+        },
+        "facts": {
+            "llm_answer": null,
+            "meta": {},
+            "items": []
+        },
+        "chunks": {
+            "meta": {},
+            "items": []
+        },
+        "answers": {
+            "meta": {},
+            "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+            "meta": {},
+            "text": "What does theft and attempted theft insurance cover?" 
+        },
+        "facts": {
+            "llm_answer": null,
+            "meta": {},
+            "items": []
+        },
+        "chunks": {
+            "meta": {},
+            "items": []
+        },
+        "answers": {
+            "meta": {},
+            "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+            "meta": {},
+            "text": "What is subrogation?" 
+        },
+        "facts": {
+            "llm_answer": null,
+            "meta": {},
+            "items": []
+        },
+        "chunks": {
+            "meta": {},
+            "items": []
+        },
+        "answers": {
+            "meta": {},
+            "items": []
+        }
+      },
+      {
+        "meta": {},
+        "question": {
+            "meta": {},
+            "text": "What is a deductible, and how does it affect my compensation?"
+        },
+        "facts": {
+            "llm_answer": null,
+            "meta": {},
+            "items": []
+        },
+        "chunks": {
+            "meta": {},
+            "items": []
+        },
+        "answers": {
+            "meta": {},
+            "items": []
+        }
+      }
+    ]
+}
+    
+
+      
+  

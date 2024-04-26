@@ -18,15 +18,15 @@ load_env()
 
 logger.debug('MAIN STARTS')
 
-# generators.gen_Facts(folder_in=FOLDER_ANSWERS, folder_out=FOLDER_FACTS, json_file='questions--16Q_64C_0F_1M_16A_0HE_0AE_2024-04-25_15h27,37.json',
+# generators.gen_Facts(folder_in=FOLDER_ANSWERS, folder_out=FOLDER_FACTS, json_file='questions--16Q_64C_0F_1M_16A_0HE_0AE_2024-04-26_01h55,36.json',
 #                      llm_names=['gpt-3.5-turbo'], prompter=PptrFactsFRv2())
 
 # generators.gen_Evals(folder_in=FOLDER_FACTS, folder_out=FOLDER_EVALS, 
-#                      json_file='questions--16Q_64C_92F_1M_16A_16HE_0AE_2024-04-25_16h52,44.json',
+#                      json_file='questions--16Q_64C_81F_1M_16A_16HE_0AE_2024-04-26_02h16,44.json',
 #                      llm_names=['gpt-3.5-turbo'], prompter=PptrEvalFRv2())
 
-expe.export_to_html(json_path=FOLDER_EVALS / "questions--16Q_64C_92F_1M_16A_16HE_14AE_2024-04-25_19h10,04.json")
-expe.export_to_spreadsheet(json_path=FOLDER_EVALS / "questions--16Q_64C_92F_1M_16A_16HE_14AE_2024-04-25_19h10,04.json",
+expe.export_to_html(json_path=FOLDER_EVALS / "questions--16Q_64C_81F_1M_16A_16HE_12AE_2024-04-26_02h18,45.json")
+expe.export_to_spreadsheet(json_path=FOLDER_EVALS / "questions--16Q_64C_81F_1M_16A_16HE_12AE_2024-04-26_02h18,45.json",
                            template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
 
 
