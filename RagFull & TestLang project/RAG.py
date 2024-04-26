@@ -2,10 +2,6 @@ import os
 from dotenv import load_dotenv
 from llama_index.core import VectorStoreIndex, SimpleDirectoryReader, Response
 from llama_index.core.retrievers import VectorIndexRetriever
-from llama_index.core.query_engine import RetrieverQueryEngine
-from llama_index.core.indices.postprocessor import SimilarityPostprocessor
-from llama_index.core.response.pprint_utils import pprint_response
-from llama_index.core.evaluation import DatasetGenerator, RelevancyEvaluator
 from llama_index.llms.openai import OpenAI
 import os.path
 from llama_index.core import (
