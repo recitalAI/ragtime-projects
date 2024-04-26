@@ -13,17 +13,18 @@ from pathlib import Path
 
 load_env()
 
-exper = Expe('expe/01. Questions/questionsTest(English).json')
+result = Expe('expe/01. Questions/questionsTest(English).json')
+
 folders=["data1", "data2"]
 documents = load_documents(folders)
 index = create_index(documents)
 
-# retrieve the top 10 most similar nodes using embeddings
+# retrieve the top 10 most similar nodes 
 retriever =  VectorIndexRetriever(index=index, similarity_top_k=4)
 
 my_retriever = MyRetriever(vector_retriever=retriever)
 
 
-for i in range(len(exper)):
-    my_retriever.retrieve(exper[i])
+for i in range(len(result)):
+    my_retriever.retrieve(result[i])
 exper.save_to_json(path = Path("expe/01. Questions/questions.json"))
