@@ -67,6 +67,26 @@ We then prepare a set of questions (16Q) using a JSON question file. If you open
 ...
 ```
 ## Context Retrieval & Answer generation
+1.  **Context Retrieval**:
+Relevant context chunks are retrieved using vector index retriever method. The top 10 results are selected and merged.
+The class  `MyRetriever` in  `classes.py`
+```python
+class MyRetriever(Retriever):
+    vector_retriever: VectorIndexRetriever
+
+    class Config:
+        arbitrary_types_allowed = True
+
+    def retrieve(self, qa: QA): 
+        result = self.vector_retriever.retrieve(qa.question.text)
+        # Convert retrieved results to Chunks and add them to qa.chunks
+        for k in result:
+            chunk = Chunk(meta = {"score" : k.score, "node Id" : k.node_id}, text=k.text)
+            qa.chunks.append(chunk)
+```
+Run  `main_retrieve.py ` to retrieve chunks and add them to a JSON file.
+You should be able now to find the result file in the `01. Question` directory in `expe`. The generated file is for instance `countries_and_inventions_fr--93Q_0C_0F_7M_638A_0HE_0AE_2024-03-12_12h13,05.json`. It contains the original file name plus the number of questions in the expe (93Q), of chunks (0 in this case), of facts (0F), of models (7M), of answers (638A), of human evaluations (0HE) and of automatic evaluations (0AE). This code is very useful when you have several versions of the same experiments.
+3.  **Answer generation**:
 
 
 
