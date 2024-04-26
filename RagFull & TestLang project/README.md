@@ -34,7 +34,7 @@ Go to the `RagFull & TestLang project` subfolder and set the `PROJECT_NAME` vari
 - Configure your environment variables (e.g., API keys, file paths).
 
 2. **Set up your Database**:
-We place the PDF documents you want to use in the "data1" and "data2" folders.
+We place the PDF documents we want to use in the "data1" and "data2" folders.
 
 3. **Create your questions**:
 We then prepare a set of questions (16Q) using a JSON question file. If you open the  `questionsTest.json ` file in the `expe/01. Questions` folder, you will see something like this:
