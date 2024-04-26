@@ -20,4 +20,4 @@ my_retriever = MyRetriever(vector_retriever=retriever)
 
 for i in range(len(result)):
     my_retriever.retrieve(result[i])
-exper.save_to_json(path = Path("expe/01. Questions/questions.json"))
+result.save_to_json(path = Path("expe/01. Questions/questions.json"))
