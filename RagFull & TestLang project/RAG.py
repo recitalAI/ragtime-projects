@@ -28,8 +28,8 @@ def create_index(documents):
     PERSIST_DIR = "./storage"
     if not os.path.exists(PERSIST_DIR):
         # load the documents and create the index
-        documents = SimpleDirectoryReader("data1").load_data()
-        documents = SimpleDirectoryReader("data2").load_data()
+        # documents = SimpleDirectoryReader("data1").load_data()
+        # documents = SimpleDirectoryReader("data2").load_data()
         index = VectorStoreIndex.from_documents(documents)
         # store it for later
         index.storage_context.persist(persist_dir=PERSIST_DIR)
