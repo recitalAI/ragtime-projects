@@ -30,7 +30,7 @@ Go to the `RagFull & TestLang project` subfolder and set the `PROJECT_NAME` vari
 ## Getting Started
 
 1. **Set up your environment**:
-- Install necessary Python libraries (e.g., llama_index, dotenv, etc.).
+- Install necessary Python libraries (e.g., llama_index, dotenv, etc.). (requirement.txt)
 - Configure your environment variables (e.g., API keys, file paths).
 
 2. **Set up your Database**:
