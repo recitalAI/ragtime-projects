@@ -1,10 +1,3 @@
-import logging
-import sys
-
-logging.basicConfig(stream=sys.stdout, level=logging.INFO)
-logging.getLogger().handlers = []
-logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
-
 from RAG import load_env, load_documents, create_index
 from classes import MyRetriever
 from llama_index.core.retrievers import VectorIndexRetriever
