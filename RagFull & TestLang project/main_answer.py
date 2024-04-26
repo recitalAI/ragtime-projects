@@ -25,7 +25,7 @@ folders=["data1", "data2"]
 documents = load_documents(folders)
 index = create_index(documents)
 
-# retrieve the top 10 most similar nodes using embeddings
+# retrieve the top 10 most similar nodes 
 retriever = VectorIndexRetriever(index=index, similarity_top_k=10)
 
 my_retriever = MyRetriever(vector_retriever=retriever)
