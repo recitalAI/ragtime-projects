@@ -158,3 +158,15 @@ Before starting, review the generated responses manually by modifying the JSON f
                              template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
     ```
 The HTML output after an Eval shows, on top of the Facts and the Answers, the Evaluations, starting with Hallus:
+
+## TestLang: running tests with prompts translated from French to English to see if it has an impact
+To visualize the results, there are HTML files in both "02. Answers" and "04. Evals" directories for both cases (French an English prompts).
+1. **French prompts**:
+- Chunks andAnswers : [Here](https://github.com/Dahbani1/ragtime-projects/blob/main/RagFull%20%26%20TestLang%20project/expe/02.%20Answers/questions--16Q_64C_0F_1M_16A_0HE_0AE_2024-04-25_15h33%2C02.html)
+- Facts and Evaluation: [Here](https://github.com/Dahbani1/ragtime-projects/blob/main/RagFull%20%26%20TestLang%20project/expe/02.%20Answers/questions--16Q_64C_0F_1M_16A_0HE_0AE_2024-04-26_01h58%2C14.html)
+2. **English prompts**:
+- Chunks andAnswers : [Here](https://github.com/Dahbani1/ragtime-projects/blob/main/RagFull%20%26%20TestLang%20project/expe/04.%20Evals/questions--16Q_64C_81F_1M_16A_16HE_12AE_2024-04-26_02h23%2C37.html)
+- Facts and Evaluation: [Here](https://github.com/Dahbani1/ragtime-projects/blob/main/RagFull%20%26%20TestLang%20project/expe/04.%20Evals/questions--16Q_64C_92F_1M_16A_16HE_14AE_2024-04-25_20h25%2C12.html)
+
+### Observations
+
