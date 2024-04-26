@@ -129,7 +129,7 @@ The HTML export is done with:
 `expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--16Q_64C_0F_1M_16A_0HE_0AE_2024-04-26_01h55,36.json')`
 Go to `expe/02. Answers` to open the generated file.
 
-The HTMl export looks like this:
+The HTML export looks like this:
 <img src="Screenshots/Screenshot 2024-04-26 105613.png">
 
 ## Answer evaluation
