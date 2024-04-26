@@ -129,7 +129,8 @@ The HTML export is done with:
 `expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--16Q_64C_0F_1M_16A_0HE_0AE_2024-04-26_01h55,36.json')`
 Go to `expe/02. Answers` to open the generated file.
 
-The HTMl export looks like this::
+The HTMl export looks like this:
+<img src="Screenshots/Screenshot 2024-04-26 105613.png">
 
 ## Answer evaluation
 Before starting, review the generated responses manually by modifying the JSON file. Identify entries where "human" is not specified (null) and rate each response accordingly (In our case we assigned score 1 for all the answers).
@@ -158,6 +159,7 @@ Before starting, review the generated responses manually by modifying the JSON f
                              template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
     ```
 The HTML output after an Eval shows, on top of the Facts and the Answers, the Evaluations, starting with Hallus:
+<img src="Screenshots/Screenshot 2024-04-26 105538.png">
 
 ## TestLang: running tests with prompts translated from French to English to see if it has an impact
 To visualize the results, there are HTML files in both "02. Answers" and "04. Evals" directories for both cases (French an English prompts).
