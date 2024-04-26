@@ -66,6 +66,40 @@ We then prepare a set of questions (16Q) using a JSON question file. If you open
     },
 [...]
 ```
+4. **Notes about files**:
+   ## `RAG.py`
+
+Contains utility functions designed to facilitate operations within the RAG system:
+
+- `load_env`: This function loads environment variables from a `.env` file using the `load_dotenv()` function from the `dotenv` module. It also sets the value of the environment variable `'OPENAI_API_KEY'` to an empty string, which is commonly used for storing API keys or sensitive information related to OpenAI services.
+- `load-document(list: folders)`: Reads documents stored within folders.
+- `create_index(documents)`: Establishes the vector store index.
+
+## `classes.py`
+
+This file introduces two classes:
+
+- `MyRetriever`
+
+This class extends the functionality of a Retriever by incorporating a vector-based retrieval mechanism (`vector_retriever`). It retrieves relevant information based on a given question (`qa.question.text`). The retrieved results are converted into Chunks and added to the question's `chunks` attribute.
+
+- `MyAnswerPptr`
+
+As a subclass of Prompter, this class handles the generation of prompts for the user and system based on the provided question and retrieved chunks. In the `get_prompt` method, it constructs a user prompt with the original question text and a system prompt that includes relevant information from the retrieved chunks. In the `post_process` method, it assigns the text of the language model answer (`cur_obj.llm_answer.text`) to the current object (`cur_obj.text`).
+
+
+## `main_retrieve.py`
+
+Tasked with obtaining relevant text segments for each generated inquiry, this script utilizes `MyRetriever` and stores the outcomes in a JSON file.
+
+## `main_answer.py`
+
+Dedicated to generating responses to inquiries utilizing a language model. The outputs can be exported in HTML and spreadsheet formats.
+
+## `main_facts_evals.py`
+
+This script generates facts based on the produced answers and automatic evaluation. The findings can be exported in HTML and spreadsheet formats.
+
 ## Context Retrieval & Answer generation
 1.  **Context Retrieval**:
 Relevant context chunks are retrieved using vector index retriever method. The top 10 results are selected and merged.
