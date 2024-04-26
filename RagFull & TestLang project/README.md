@@ -102,7 +102,7 @@ This script generates facts based on the produced answers and automatic evaluati
 
 ## Context Retrieval & Answer generation
 1.  **Context Retrieval**:
-Relevant context chunks are retrieved using vector index retriever method. The top 10 results are selected and merged.
+Relevant context chunks are retrieved using vector index retriever method.
 The class  `MyRetriever` in  `classes.py`
 ```python
 class MyRetriever(Retriever):
