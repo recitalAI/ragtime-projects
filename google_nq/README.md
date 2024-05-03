@@ -114,14 +114,31 @@ Let us see on the HTML output what the evaluation is:
 <img src="img/2024-03-31_google_nq_incorrect_quest_9.png">
 
 We see that the fact n°4 is not found and is considered an hallucination instead (the red question mark).
-Indeed, the term "mitosis" is used in the answer, but is not present in the fact n°4. In this case, the mistake happened during the fact generation since it has omitted the term "mitosis". We can associate it with the fact n°4 in the spreadsheet (cell D67):
+Indeed, the term "mitosis" is used in the answer, but is not present in the fact n°4. In this case, the mistake happened during the fact generation since it has omitted the term "mitosis". We can associate it with the fact n°4 in the spreadsheet (cell D67) by adding "called mitosis" at the end of the fact text:
 <img src="img/2024-03-31_google_nq_fix_fact_4_quest_9.png">
 
-The next question whose evaluation is different from 1 is the number 23. In this case, the fact n°4 "4. These muscle spasms are another symptom of opioid discontinuation." is not mentioned in the answer. But it can be removed since this information is already present in facts 1 and 2. Hence, the fact n°4 for this question is deleted in the spreadsheet (cell D165).
+The next question whose evaluation is different from 1 is the number 23. In this case, the fact n°4 "4. These muscle spasms are another symptom of opioid discontinuation." is not mentioned in the answer. IT is however understated in Fact N°3. Hence Fract n°3 can be rephrased : "3. The term "kick the habit" refers to the muscle spasms that occur during opioid discontinuation.".
 
-We repeat the same process, i.e. detecting evaluation not equal to 1 and fixing the facts. The resulting file is saved with the prefix `fixed` in the same folder.
+We repeat the same process, i.e. detecting evaluation not equal to 1 and fixing the facts. The resulting spreadsheet is saved with the prefix `fixed` in the same folder.
 
+## Generating the validation set
+We can now generate the validation set, i.e. a set of questions plus their associated facts.
 
-TODO:
-- show examples where score is not 1 - add facts if needed
-- run evaluation with other LLMs
+To do so, we need to load the Expe file and update it with the facts which have been modified in the spreadsheet. Since the Expe file also contains information the LLM answers which have been generated, we can remove them so as to obtain a light weight validation set:
+```python
+# Load the original Expe file in JSON
+expe:Expe = Expe(json_path=FOLDER_EVALS / "google_nq--30Q_0C_221F_1M_30A_30HE_29AE_2024-03-16_23h24,01.json")
+
+# Update it with the spreadsheet we just edited
+expe.update_from_spreadsheet(path=FOLDER_EVALS / "ready_to_gen_facts_google_nq--30Q_0C_221F_1M_30A_30HE_30AE_2024-04-01_00h50,33.xlsx", update_type=UpdateTypes.facts)
+
+for qa in expe: # remove intermediate Answers and LLM Answers 
+    qa.answers = Answers()
+    qa.facts.llm_answer = None
+
+# Save the resulting file as the validation set in the Fact folder
+expe.save_to_json(path=FOLDER_FACTS / "validation_set.json")
+```
+
+# Compare LLMs
+TODO
