@@ -19,8 +19,34 @@ for the 2nd dataset : `pdf/Test`
 ![Image Description](img/Set_dataset.png)
 
 
-Once done, execute `the question_generation.py` file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory expe/01 as questions.json.
+Once done, execute `the question_generation.py` file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory `expe/01 Questions` as questions.json.
 
+```json
+{
+  "meta": {},
+  "items": [
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    }
+...
+'''
 
 ## Setup
 
