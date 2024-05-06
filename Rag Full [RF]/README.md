@@ -208,7 +208,7 @@ Here is the structure of our JSON file `questions--10Q_170C_0F_2M_20A_0HE_0AE_20
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": 1,
+              "human": null,
               "auto": null
             }
           }
