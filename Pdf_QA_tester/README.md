@@ -21,7 +21,7 @@ for the 2nd dataset : `pdf/Test`
 
 Once done, execute `the question_generation.py` file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory `expe/01 Questions` as `questions--{Number of questions}Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_{time}.json`.
 
-We attempted to work with the first dataset and obtained the JSON file `questions--30Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json`, which contains 30 randomly generated questions based on the dataset information. Here's how the json file appears.
+We attempted to work with the second dataset and obtained the JSON file `questions--10Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json`, which contains 10 randomly generated questions based on the dataset information. Here's how the json file appears.
 
 ```json
 {
@@ -93,7 +93,7 @@ To extract chunks, go to `retrieve_chunks.py`, ensure the path to the question J
 
 Using our hybrid retriever, we obtain 10 chunks with the `BM25Retriever` and 10 with the `VectorIndexRetriever`, eliminating redundant chunks. The resulting JSON file is stored in the same directory as the questions, named as `questions--{Number of questions}Q_{Number of chunks}C_0F_0M_0A_0HE_0AE_2024-04-24_{time}.json`.
 
-Here's a glimpse of our file `questions--30Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json`. We observe that our retriever has extracted 600 chunks, indicating 20 chunks for each question. This confirms that the two retrievers detected different chunks, validating our earlier analysis.
+Here's a glimpse of our file `questions--10Q_170C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json`. We observe that our retriever has extracted 170 chunks, indicating 17 chunks for each question. This confirms that the two retrievers detected different chunks, validating our earlier analysis.
 
 ```json
 {
@@ -103,7 +103,7 @@ Here's a glimpse of our file `questions--30Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_14h0
       "meta": {},
       "question": {
         "meta": {},
-        "text": "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+        "text": "What breakthrough paper was published by Hinton et al. in 2006, leading to the resurgence of deep learning?"
       },
       "facts": {
         "llm_answer": null,
@@ -115,17 +115,17 @@ Here's a glimpse of our file `questions--30Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_14h0
         "items": [
           {
             "meta": {
-              "score": 13.61730141852371,
-              "Node id": "cb3acf95-4654-4a09-b285-34347d7988a3"
+              "score": 33.192873923114384,
+              "Node id": "1ede6fba-99a5-4386-85d2-51195c2dbb8d"
             },
-            "text": "It performs better\non GLUE that RoBERTa, but not SQuAD, where it is slightly worse.\nAs number of clusters increases, the approximation becomes more\naccurate.Itconvergesuptotwiceasfastasthestandardtransformer,for\nlongsequencelengthsand,forshortsequencelengths,clusteredattention\nisnotfaster than the standard transformer.\n5.2.6 Compressed Key-Value Memory\n5.2.6.1 Luna: Linear Uniﬁed Nested Attention\nLuna [177], which stands for Linear Uniﬁed Nested Attention, replaces\ntheattentionweightcomputationineachattentionheadwithtwonested\nlinear attention computations using an extra, learnable, input sequence\nthat learns to encode contextual information: P∈Rl×d, wherelis the\nlength of the sequence.\nAs discussed earlier, the output of an attention head between a query\nsequence, X∈Rn×dand a context sequence, C∈Rm×d, can be written\nas\nY=Attn(X, C) = softmax(\nXWq(CWk)T\n√\ndk/h(\nCV,∈Rn×d(5.69)"
+            "text": "Backpropagation, the key optimization technique, encountered a\nnumber of issues such as vanishing gradients, exploding gradients, and\nthe inability to learn long-term information, to name a few [115].\nHochreiter and Schmidhuber, in their work,“Long short-term memory\n(LSTM)” architecture, demonstrated how issues with long-term depen-\ndenciescouldovercomeshortcomingsofbackpropagationovertime[116].\nHinton et al. published a breakthrough paper in 2006 titled “A fast\nlearning algorithm for deep belief nets”; it was one of the reasons for the\nresurgence of deep learning [113]. The research highlighted the eﬀective-\nness of layer-by-layer training using unsupervised methods followed by\nsupervised “ﬁne-tuning” to achieve state-of-the-art results in character\nrecognition. Bengio et al., in their seminal work following this, oﬀered"
           },
           {
             "meta": {
-              "score": 11.183004709109658,
-              "Node id": "7f9ba7a0-0741-427b-a314-d064f98906db"
+              "score": 32.31338546294065,
+              "Node id": "1c3c9ed7-2404-4905-89db-a2dd1b81257c"
             },
-            "text": "In contrast, the volitional\ncue is based on the subject’s voluntary eﬀort to focus on the target de-\nliberately. For example, drawing attention to speciﬁc objects by coloring\nthem diﬀerently or attending to a crying baby are nonvolitional cues.\nIn contrast, attending to speciﬁc text for answering question or solving\nspeciﬁc problems are volitional cues.\nIn the context of attention mechanisms in deep learning, volitional\ncues map to queries, keys to nonvolitional cues, and sensory inputs to\nvalue. Every sensory input (value) maps to the nonvolitional cue (key)\nof that sensory input. Attention mechanisms can be thus considered as\na process of biasing selection over values (sensory inputs) via attention\npooling, using the queries (volitional cues) and keys (nonvolitional cues)\nas shown in Fig. 2.3."
+            "text": "LeCun et al., through their research and implementation, led to the\nﬁrst widespread application of neural networks to recognize the hand-\nwrittendigitsusedbytheU.S.PostalService[150].Thisworkisacritical\nmilestone in deep learning history, proving the utility of convolution op-\nerations and weight sharing in learning the features in computer vision.\nBackpropagation, the key optimization technique, encountered a\nnumber of issues such as vanishing gradients, exploding gradients, and\nthe inability to learn long-term information, to name a few [115].\nHochreiter and Schmidhuber, in their work,“Long short-term memory\n(LSTM)” architecture, demonstrated how issues with long-term depen-\ndenciescouldovercomeshortcomingsofbackpropagationovertime[116].\nHinton et al. published a breakthrough paper in 2006 titled “A fast\nlearning algorithm for deep belief nets”; it was one of the reasons for the\nresurgence of deep learning [113]."
           },
 ...
 ```
