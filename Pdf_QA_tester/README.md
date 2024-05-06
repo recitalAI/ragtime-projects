@@ -7,9 +7,6 @@ In this project, we worked with two different datasets:
 
 2nd dataset: An example dataset available [here](https://storage.recital.ai/s/ZnIx.GWJqg2ZXgGpPq4o).
 
-## Create the project
-
-To initiate the project, begin by configuring the PROJECT_NAME variable as 'RagFull [RF]' in the main.py file and executing the script. This action will generate multiple subfolders and files. Next, navigate to the 'RagFull [RF]' subfolder and ensure that the PROJECT_NAME variable in the main.py file is also set as 'RagFull [RF]'.
 
 ## Generate your questions 
 
@@ -22,7 +19,7 @@ for the 2nd dataset : `pdf/Test`
 ![Image Description](img/Set_dataset.png)
 
 
-Once done, execute the question_generation.py file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory expe/01 as questions.json.
+Once done, execute `the question_generation.py` file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory expe/01 as questions.json.
 
 
 ## Setup
