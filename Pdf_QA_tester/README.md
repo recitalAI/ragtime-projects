@@ -19,9 +19,9 @@ for the 2nd dataset : `pdf/Test`
 ![Image Description](img/Set_dataset.png)
 
 
-Once done, execute `the question_generation.py` file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory `expe/01 Questions` as `questions--{Number of questions}Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_{time}.json`.
+Once done, execute `the question_generation.py` file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory `expe/01 Questions` as `questions--{Number of questions}Q_0C_0F_0M_0A_0HE_0AE_{time}.json`.
 
-We attempted to work with the second dataset and obtained the JSON file `questions--10Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json`, which contains 10 randomly generated questions based on the dataset information. Here's how the json file appears.
+We attempted to work with the second dataset and obtained the JSON file `questions--10Q_0C_0F_0M_0A_0HE_0AE_2024-04-22_08h21,20.json`, which contains 10 randomly generated questions based on the dataset information. Here's how the json file appears.
 
 ```json
 {
@@ -91,9 +91,9 @@ We choose the hybrid approach because we observed that retrieving with embedding
 
 To extract chunks, go to `retrieve_chunks.py`, ensure the path to the question JSON file is correct, and execute the code. This script generates a varying number of chunks for each question, typically ranging between 10 and 20.
 
-Using our hybrid retriever, we obtain 10 chunks with the `BM25Retriever` and 10 with the `VectorIndexRetriever`, eliminating redundant chunks. The resulting JSON file is stored in the same directory as the questions, named as `questions--{Number of questions}Q_{Number of chunks}C_0F_0M_0A_0HE_0AE_2024-04-24_{time}.json`.
+Using our hybrid retriever, we obtain 10 chunks with the `BM25Retriever` and 10 with the `VectorIndexRetriever`, eliminating redundant chunks. The resulting JSON file is stored in the same directory as the questions, named as `questions--{Number of questions}Q_{Number of chunks}C_0F_0M_0A_0HE_0AE_{time}.json`.
 
-Here's a glimpse of our file `questions--10Q_170C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json`. We observe that our retriever has extracted 170 chunks, indicating 17 chunks for each question. This confirms that the two retrievers detected different chunks, validating our earlier analysis.
+Here's a glimpse of our file `questions--10Q_170C_0F_0M_0A_0HE_0AE_2024-04-22_08h56,06.json`. We observe that our retriever has extracted 170 chunks, indicating 17 chunks for each question. This confirms that the two retrievers detected different chunks, validating our earlier analysis.
 
 ```json
 {
