@@ -219,6 +219,37 @@ Here is the structure of our JSON file `questions--10Q_170C_0F_2M_20A_0HE_0AE_20
 ## Manual Human Evaluation
 
 Manually evaluate the generated answers by editing the JSON file saved in `expe/02 Answers`. Locate entries with `"human": null` and assign a score for each answer.
+This step is essential and cannot be skipped for the subsequent processes.
+
+```json
+     "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "The breakthrough paper published by Hinton et al. in 2006 was titled \"A fast learning algorithm for deep belief nets\".",
+              "prompt": {
+                "meta": {},
+                "user": "What breakthrough paper was published by Hinton et al. in 2006, leading to the resurgence of deep learning?",
+                "system": "Contexte :  Backpropagation, the key optimization ...
+              },
+              "name": "gpt-4",
+              "full_name": "gpt-4-0613",
+              "timestamp": "2024-04-22T09:24:26.315908",
+              "duration": 2.591401,
+              "cost": 0.10671000000000001
+            },
+            "meta": {},
+            "text": "The breakthrough paper published by Hinton et al. in 2006 was titled \"A fast learning algorithm for deep belief nets\".",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+--------->    "human": 1,
+              "auto": null
+            }
+```
 
 ## Fact Generation and Evaluation
 
