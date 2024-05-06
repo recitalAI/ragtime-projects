@@ -216,28 +216,9 @@ Here is the structure of our JSON file `questions--10Q_170C_0F_2M_20A_0HE_0AE_20
 }
 ```
 
-## Setup
-
-1. **Database Setup**: Place the PDF documents you want to use in the "pdf" folder.
-
-2. **Question Generation**: Run `question_generation.py` to generate questions. You can test on the provided PDFs or your own.
-
-    - The script `question_generation.py` utilizes the function `question_gen(name:str)` in `Rag.py` to generate questions.
-    - The function randomizes the question order for evaluation purposes.
-
-3. **Context Retrieval**: Relevant context chunks are retrieved using Okapi BM25 and index retriever methods. The top 10 results are selected and merged.
-
-    - The class `MyRetriever` in `Rag.py` combines BM25 and vector retrievers to retrieve context chunks.
-
-4. **Adding Chunks to JSON**: Run `retrieve_chunk.py` to add the chunks into the JSON file.
-
-5. **Answer Generation**: Run `main_answer_generation.py` to obtain answers from the chosen LLMs (e.g., "gpt-4" and "gpt-3.5-turbo"). Ensure dependencies are installed and the environment is set.
-
-6. **Visualization**: Visualize the answers by opening the generated HTML file located in `expe/02. Answers` folder.
-
 ## Manual Human Evaluation
 
-Manually evaluate the generated answers by editing the JSON file. Locate entries with `"human": null` and assign a score for each answer.
+Manually evaluate the generated answers by editing the JSON file saved in `expe/02 Answers`. Locate entries with `"human": null` and assign a score for each answer.
 
 ## Fact Generation and Evaluation
 
