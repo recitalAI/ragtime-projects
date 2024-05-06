@@ -1,8 +1,9 @@
 # RagFull [RF]
 
-## Introduction
-
 This project aims to test the generation capabilities of Large Language Models (LLMs) when integrated with a RAG (Retrieval-Augmented Generation) system. The process involves generating questions from a set of PDF documents, retrieving relevant context chunks for the questions, and evaluating the answers provided by LLMs.
+In this project, we worked with two different datasets:
+1st dataset: Tested with [course material](Pdf_QA_tester/pdf/Test).
+2nd dataset: An example dataset available [here](https://storage.recital.ai/s/ZnIx.GWJqg2ZXgGpPq4o).
 
 ## Setup
 
