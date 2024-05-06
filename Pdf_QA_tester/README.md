@@ -2,9 +2,28 @@
 
 This project aims to test the generation capabilities of Large Language Models (LLMs) when integrated with a RAG (Retrieval-Augmented Generation) system. The process involves generating questions from a set of PDF documents, retrieving relevant context chunks for the questions, and evaluating the answers provided by LLMs.
 In this project, we worked with two different datasets:
+
 1st dataset: Tested with [course material](https://github.com/ImadZaoug/ragtime-projects/tree/main/Pdf_QA_tester/pdf/Test).
 
 2nd dataset: An example dataset available [here](https://storage.recital.ai/s/ZnIx.GWJqg2ZXgGpPq4o).
+
+## Create the project
+
+To initiate the project, begin by configuring the PROJECT_NAME variable as 'RagFull [RF]' in the main.py file and executing the script. This action will generate multiple subfolders and files. Next, navigate to the 'RagFull [RF]' subfolder and ensure that the PROJECT_NAME variable in the main.py file is also set as 'RagFull [RF]'.
+
+## Generate your questions 
+
+Navigate to the `question_generation.py` file and specify the `path` to one of the two datasets.
+
+for the 1st dataset : `pdf/docs`
+
+for the 2nd dataset : `pdf/Test`
+
+![Image Description](img/Set_dataset.png)
+
+
+Once done, execute the question_generation.py file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory expe/01 as questions.json.
+
 
 ## Setup
 
