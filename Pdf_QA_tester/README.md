@@ -322,9 +322,7 @@ Finally, to visualize the result, run the following line with the JSON file gene
 ```python
 expe.export_to_html(json_path=FOLDER_EVALS / "questions--10Q_170C_72F_2M_20A_20HE_20AE_2024-04-22_09h58,19.json")
 expe.export_to_spreadsheet(json_path=FOLDER_EVALS / "questions--10Q_170C_72F_2M_20A_20HE_20AE_2024-04-22_09h58,19.json",
-                           template_path=FOLDER_SST_TEMPL
-
-ATES/'spreadsheet_rich_template.xlsx')
+                           template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
 ```
 
 We observed that the auto-evaluation has changed from null to a value between 0 and 1, indicating the number of validated facts divided by the total number of facts. Here is the HTML version: 
