@@ -91,6 +91,9 @@ We choose the hybrid approach because we observed that retrieving with embedding
 
 To extract chunks, go to `retrieve_chunks.py`, ensure the path to the question JSON file is correct, and execute the code. This script generates a varying number of chunks for each question, typically ranging between 10 and 20.
 
+**Remark:** If you do not have an OpenAI API key and are unable to use MyRetriever, replace it with MyRetriever2.
+MyRetriever2 exclusively utilizes the BM25 retriever, which does not require any embedding model.
+
 Using our hybrid retriever, we obtain 10 chunks with the `BM25Retriever` and 10 with the `VectorIndexRetriever`, eliminating redundant chunks. The resulting JSON file is stored in the same directory as the questions, named as `questions--{Number of questions}Q_{Number of chunks}C_0F_0M_0A_0HE_0AE_{time}.json`.
 
 Here's a glimpse of our file `questions--10Q_170C_0F_0M_0A_0HE_0AE_2024-04-22_08h56,06.json`. We observe that our retriever has extracted 170 chunks, indicating 17 chunks for each question. This confirms that the two retrievers detected different chunks, validating our earlier analysis.
