@@ -21,7 +21,7 @@ for the 2nd dataset : `pdf/Test`
 
 Once done, execute `the question_generation.py` file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory `expe/01 Questions` as `questions--{Number of questions}Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_{time}.json`.
 
-We attempted to work with the first dataset and obtained the JSON file `questions--30Q_600C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json`, which contains 30 randomly generated questions based on the dataset information. Here's how the json file appears.
+We attempted to work with the first dataset and obtained the JSON file `questions--30Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json`, which contains 30 randomly generated questions based on the dataset information. Here's how the json file appears.
 
 ```json
 {
@@ -52,6 +52,83 @@ We attempted to work with the first dataset and obtained the JSON file `question
 
 ## Generate the chunks 
 
+The next step is to retrieve the relevant chunks that would aid in answering the questions. To accomplish this, we define a retriever in the `classes.py` file as follows:
+
+```python
+class MyRetriever(Retriever, BaseRetriever):
+    vector_retriever: VectorIndexRetriever
+    bm25_retriever: BM25Retriever
+        
+        
+    class Config:
+        arbitrary_types_allowed = True
+
+    def _retrieve(self, query: str, indexer=None, similarity_top_k: Optional[int] = None, **kwargs) -> list:
+        bm25_nodes = self.bm25_retriever.retrieve(query, **kwargs)
+        vector_nodes = self.vector_retriever.retrieve(query, **kwargs)
+
+        # combine the two lists of nodes
+        all_nodes = []
+        node_ids = set()
+        for n in bm25_nodes + vector_nodes:
+            if n.node.node_id not in node_ids:
+                all_nodes.append(n)
+                node_ids.add(n.node.node_id)
+        return all_nodes
+
+    def retrieve(self, qa: QA, **kwargs):
+        result = self._retrieve(qa.question.text, **kwargs)
+        for r in result:
+            chunk = Chunk()
+            chunk.text , chunk.meta = r.text , {"score":r.score, "Node id" : r.node_id }
+            # Check if the chunk already exists in qa.chunks
+            existing_chunk = next((c for c in qa.chunks if c.text == chunk.text and c.meta == chunk.meta), None)
+            if existing_chunk is None:
+                qa.chunks.append(chunk)
+```
+
+We choose the hybrid approach because we observed that retrieving with embedding similarity and the similarity between the query and the document both provide important information. In the case of specific information about a company, retrieving chunks may be challenging due to certain words being embedded in a general context, or the model not being trained on certain words resulting in random embeddings. On the other hand, the BM25 method overcomes this problem and extracts chunks that treat the query most of the time. However, the embedding similarity often captures contextual nuances, which frequently yields precise information.
+
+To extract chunks, go to `retrieve_chunks.py`, ensure the path to the question JSON file is correct, and execute the code. This script generates a varying number of chunks for each question, typically ranging between 10 and 20.
+
+Using our hybrid retriever, we obtain 10 chunks with the `BM25Retriever` and 10 with the `VectorIndexRetriever`, eliminating redundant chunks. The resulting JSON file is stored in the same directory as the questions, named as `questions--{Number of questions}Q_{Number of chunks}C_0F_0M_0A_0HE_0AE_2024-04-24_{time}.json`.
+
+Here's a glimpse of our file `questions--30Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json`. We observe that our retriever has extracted 600 chunks, indicating 20 chunks for each question. This confirms that the two retrievers detected different chunks, validating our earlier analysis.
+
+```json
+{
+  "meta": {},
+  "items": [
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": [
+          {
+            "meta": {
+              "score": 13.61730141852371,
+              "Node id": "cb3acf95-4654-4a09-b285-34347d7988a3"
+            },
+            "text": "It performs better\non GLUE that RoBERTa, but not SQuAD, where it is slightly worse.\nAs number of clusters increases, the approximation becomes more\naccurate.Itconvergesuptotwiceasfastasthestandardtransformer,for\nlongsequencelengthsand,forshortsequencelengths,clusteredattention\nisnotfaster than the standard transformer.\n5.2.6 Compressed Key-Value Memory\n5.2.6.1 Luna: Linear Uniﬁed Nested Attention\nLuna [177], which stands for Linear Uniﬁed Nested Attention, replaces\ntheattentionweightcomputationineachattentionheadwithtwonested\nlinear attention computations using an extra, learnable, input sequence\nthat learns to encode contextual information: P∈Rl×d, wherelis the\nlength of the sequence.\nAs discussed earlier, the output of an attention head between a query\nsequence, X∈Rn×dand a context sequence, C∈Rm×d, can be written\nas\nY=Attn(X, C) = softmax(\nXWq(CWk)T\n√\ndk/h(\nCV,∈Rn×d(5.69)"
+          },
+          {
+            "meta": {
+              "score": 11.183004709109658,
+              "Node id": "7f9ba7a0-0741-427b-a314-d064f98906db"
+            },
+            "text": "In contrast, the volitional\ncue is based on the subject’s voluntary eﬀort to focus on the target de-\nliberately. For example, drawing attention to speciﬁc objects by coloring\nthem diﬀerently or attending to a crying baby are nonvolitional cues.\nIn contrast, attending to speciﬁc text for answering question or solving\nspeciﬁc problems are volitional cues.\nIn the context of attention mechanisms in deep learning, volitional\ncues map to queries, keys to nonvolitional cues, and sensory inputs to\nvalue. Every sensory input (value) maps to the nonvolitional cue (key)\nof that sensory input. Attention mechanisms can be thus considered as\na process of biasing selection over values (sensory inputs) via attention\npooling, using the queries (volitional cues) and keys (nonvolitional cues)\nas shown in Fig. 2.3."
+          },
+...
+```
 
 ## Setup
 
