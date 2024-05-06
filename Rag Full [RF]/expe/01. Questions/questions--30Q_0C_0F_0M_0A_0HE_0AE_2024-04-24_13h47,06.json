@@ -1,0 +1,605 @@
+{
+  "meta": {},
+  "items": [
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What is the significance of the value of replacement of a vehicle in the context of estimating damages?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "Under what circumstances does the insured have the freedom to choose their defense lawyer in legal actions related to penal defense and recourse guarantee?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "In what situations does MAAF Assistance intervene for psychological trauma?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What additional options and costs are the responsibility of the renter when using a rental vehicle?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "Discuss the distinction between a \"passager à titre gratuit\" and a regular passenger in terms of insurance coverage."
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What is the next course of action if a dispute persists between the insured and the insurer after attempting to resolve it internally?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What are the implications of failing to pay one installment of your insurance premium if it is divided into multiple payments?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What type of guarantee does the insurance provide for legal defense in criminal cases?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "Under what circumstances does the exclusion for damages caused by transporting hazardous materials not apply?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "How is the refund calculated for the portion of the premium or contribution not used during the period when the risk did not occur?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "Define \"Préjudice d’affection\" as described in the document."
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "Under what circumstances does the insurance cover occasional and voluntary towing or assistance of a vehicle?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What are the requirements for maintaining insurance coverage during test drives for a vehicle being prepared for sale?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What is the special deductible for the \"Formules Tiers Eco\" and \"Tous Risques Eco\" in case a driver is not designated?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What is the guarantee included in all four formulas of guarantees?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What is the default coefficient used in the calculation of the premium for the insured as mentioned in Article 1?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What are the different options proposed by the medical team for transport or medical repatriation?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "How is the coverage amount determined based on the level of permanent disability?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "How are the names and addresses of the members present or represented recorded during a general assembly?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What is the maximum limit beyond which the policyholder cannot be held responsible for additional charges, except for increases in fiscal and similar burdens?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What is the role of the board of directors in determining the remuneration of the director general?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What expenses are covered for a person waiting for the repatriation of a non-transportable injured individual?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "How does the insurer ensure compliance with data protection regulations in handling the personal information of the beneficiaries for the assistance contract?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "Are damages resulting from climatic events covered under the \"Garantie Dommages tous accidents\"?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What components are covered under the warranty for the Crémaillère, vérins de direction, and pompe d’assistance in the document?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What actions can the insurer take if the policyholder fails to fulfill their obligations under the contract?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What are the consequences of not respecting the deadlines for reporting a claim?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "How is the prescription period interrupted by a conservatory measure or forced execution act?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "How does the insurer handle the analysis of a dispute and decision-making process?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What is the file size of the document?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": []
+      }
+    }
+  ]
+}
