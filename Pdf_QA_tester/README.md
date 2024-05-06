@@ -19,7 +19,9 @@ for the 2nd dataset : `pdf/Test`
 ![Image Description](img/Set_dataset.png)
 
 
-Once done, execute `the question_generation.py` file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory `expe/01 Questions` as questions.json.
+Once done, execute `the question_generation.py` file. It will prompt you to specify the number of questions you would like to generate. After providing the desired number, the code will randomly select questions related to your dataset and save them in the directory `expe/01 Questions` as `questions--{Number of questions}Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_{time}.json`.
+
+We attempted to work with the first dataset and obtained the JSON file `questions--30Q_600C_0F_0M_0A_0HE_0AE_2024-04-24_14h01,02.json`, which contains 30 randomly generated questions based on the dataset information. Here's how the json file appears.
 
 ```json
 {
@@ -47,6 +49,9 @@ Once done, execute `the question_generation.py` file. It will prompt you to spec
     }
 ...
 ```
+
+## Generate the chunks 
+
 
 ## Setup
 
