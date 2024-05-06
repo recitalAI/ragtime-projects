@@ -129,6 +129,92 @@ Here's a glimpse of our file `questions--10Q_170C_0F_0M_0A_0HE_0AE_2024-04-22_08
           },
 ...
 ```
+## Generate the answers 
+
+For the answer generation phase, navigate to `main_answer_generation.py` and execute the `gen_Answers` function to obtain a new JSON file containing the integrated answers.
+
+```python
+generators.gen_Answers(folder_in=FOLDER_QUESTIONS, folder_out=FOLDER_ANSWERS,
+                        json_file='questions--10Q_170C_0F_0M_0A_0HE_0AE_2024-04-22_08h56,06.json',
+                        prompter=MCQAnsPptr(), b_missing_only=True,
+                        llm_names=["gpt-4", "gpt-3.5-turbo","mistral/mistral-large-latest"],retriever = MyRetriever(vector_retriever=vector_retriever,bm25_retriever=bm25_retriever))
+```
+
+In this example, we utilized only 2 LLMs. If you wish to test more, add their names to `llm_names`. Please refer to the [litellm documentation](https://litellm.vercel.app/docs/providers) to ensure the correct names are used, and remember to set the required API key variable.
+
+To export the JSON file in HTML and XLSX formats, run the following lines:
+
+```python
+expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json')
+expe.export_to_spreadsheet(json_path=FOLDER_ANSWERS / "questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json",
+                           template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
+```
+Run the following lines from `export_to_html` to `export_to_spreadsheet` to export the JSON file in HTML format and XLSX format, respectively. Ensure that you specify the generated answer file as the JSON input file. You can find it in `expe/02 Answers` under the name `questions--{Number of questions}Q_{Number of chunks}C_0F_{Number of models}M_{Number of answers}A_0HE_0AE_{time}.json`. 
+
+Here is the structure of our JSON file `questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json`:
+
+```json
+{
+  "meta": {},
+  "items": [
+    {
+      "meta": {},
+      "question": {
+        "meta": {},
+        "text": "What breakthrough paper was published by Hinton et al. in 2006, leading to the resurgence of deep learning?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": [
+          {
+            "meta": {
+              "score": 33.192873923114384,
+              "Node id": "1ede6fba-99a5-4386-85d2-51195c2dbb8d"
+            },
+            "text": "Backpropagation, the key optimization technique, encountered a\nnumber of issues such as vanishing gradients, exploding gradients, and\nthe inability to learn long-term information, to name a few [115].\nHochreiter and Schmidhuber, in their work,“Long short-term memory\n(LSTM)” architecture, demonstrated how issues with long-term depen-\ndenciescouldovercomeshortcomingsofbackpropagationovertime[116].\nHinton et al. published a breakthrough paper in 2006 titled “A fast\nlearning algorithm for deep belief nets”; it was one of the reasons for the\nresurgence of deep learning [113]. The research highlighted the eﬀective-\nness of layer-by-layer training using unsupervised methods followed by\nsupervised “ﬁne-tuning” to achieve state-of-the-art results in character\nrecognition. Bengio et al., in their seminal work following this, oﬀered"
+          },
+          ...
+        ]
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "The breakthrough paper published by Hinton et al. in 2006 was titled \"A fast learning algorithm for deep belief nets\".",
+              "prompt": {
+                "meta": {},
+                "user": "What breakthrough paper was published by Hinton et al. in 2006, leading to the resurgence of deep learning?",
+                "system": "Contexte :  Backpropagation, the key ....."
+              },
+              "name": "gpt-4",
+              "full_name": "gpt-4-0613",
+              "timestamp": "2024-04-22T09:24:26.315908",
+              "duration": 2.591401,
+              "cost": 0.10671000000000001
+            },
+            "meta": {},
+            "text": "The breakthrough paper published by Hinton et al. in 2006 was titled \"A fast learning algorithm for deep belief nets\".",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1,
+              "auto": null
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
+```
 
 ## Setup
 
