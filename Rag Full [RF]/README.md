@@ -76,11 +76,12 @@ class MyRetriever(Retriever, BaseRetriever):
                 node_ids.add(n.node.node_id)
         return all_nodes
 
-    def retrieve(self, qa: QA, **kwargs):
+    def retrieve(self, qa: QA, nodes : list, **kwargs):
         result = self._retrieve(qa.question.text, **kwargs)
-        for r in result:
+        results = Node_page(nodes=nodes, all_nodes = result)
+        for key, r in results.items():
             chunk = Chunk()
-            chunk.text , chunk.meta = r.text , {"score":r.score, "Node id" : r.node_id }
+            chunk.text , chunk.meta = r['text'] , {"score":r['score'], "Node id" : r['Node id'], "display_name" :r["display_name"], "page_number": r["page_number"] }
             # Check if the chunk already exists in qa.chunks
             existing_chunk = next((c for c in qa.chunks if c.text == chunk.text and c.meta == chunk.meta), None)
             if existing_chunk is None:
@@ -115,18 +116,20 @@ Here's a glimpse of our file `questions--10Q_170C_0F_0M_0A_0HE_0AE_2024-04-22_08
         "items": [
           {
             "meta": {
-              "score": 33.192873923114384,
-              "Node id": "1ede6fba-99a5-4386-85d2-51195c2dbb8d"
+              "score": 0.849446624783471,
+              "Node id": "87d57433-0a01-4af3-b8df-b066ce9c1227",
+              "display_name": "Transformers for Machine Learning_ A Deep Dive.pdf",
+              "page_number": "2"
             },
-            "text": "Backpropagation, the key optimization technique, encountered a\nnumber of issues such as vanishing gradients, exploding gradients, and\nthe inability to learn long-term information, to name a few [115].\nHochreiter and Schmidhuber, in their work,“Long short-term memory\n(LSTM)” architecture, demonstrated how issues with long-term depen-\ndenciescouldovercomeshortcomingsofbackpropagationovertime[116].\nHinton et al. published a breakthrough paper in 2006 titled “A fast\nlearning algorithm for deep belief nets”; it was one of the reasons for the\nresurgence of deep learning [113]. The research highlighted the eﬀective-\nness of layer-by-layer training using unsupervised methods followed by\nsupervised “ﬁne-tuning” to achieve state-of-the-art results in character\nrecognition. Bengio et al., in their seminal work following this, oﬀered"
+            "text": "John Hopﬁeld introduced “Hopﬁeld Networks”, one of the ﬁrst recur-\nrentneuralnetworks(RNNs)thatserveasacontent-addressablememory\nsystem [117].\nIn 1986, David Rumelhart, Geoﬀ Hinton, and Ronald Williams pub-\nlished the seminal work “Learning representations by back-propagating\nerrors” [217]. Their work conﬁrms how a multi-layered neural network\nusing many “hidden” layers can overcome the weakness of perceptrons\nin learning complex patterns with relatively simple training procedures.\nThe building blocks for this work had been laid down by various research\nover the years by S. Linnainmaa, P. Werbos, K. Fukushima, D. Parker,\nand Y. LeCun [164, 267,91,196,149].\nLeCun et al., through their research and implementation, led to the\nﬁrst widespread application of neural networks to recognize the hand-\nwrittendigitsusedbytheU.S.PostalService[150].Thisworkisacritical\nmilestone in deep learning history, proving the utility of convolution op-\nerations and weight sharing in learning the features in computer vision."
           },
           {
             "meta": {
-              "score": 32.31338546294065,
-              "Node id": "1c3c9ed7-2404-4905-89db-a2dd1b81257c"
+              "score": 0.8406410249743105,
+              "Node id": "01ffa358-cd9e-44ce-bd87-d7ed74fd464e",
+              "display_name": "Transformers for Machine Learning_ A Deep Dive.pdf",
+              "page_number": "2"
             },
-            "text": "LeCun et al., through their research and implementation, led to the\nﬁrst widespread application of neural networks to recognize the hand-\nwrittendigitsusedbytheU.S.PostalService[150].Thisworkisacritical\nmilestone in deep learning history, proving the utility of convolution op-\nerations and weight sharing in learning the features in computer vision.\nBackpropagation, the key optimization technique, encountered a\nnumber of issues such as vanishing gradients, exploding gradients, and\nthe inability to learn long-term information, to name a few [115].\nHochreiter and Schmidhuber, in their work,“Long short-term memory\n(LSTM)” architecture, demonstrated how issues with long-term depen-\ndenciescouldovercomeshortcomingsofbackpropagationovertime[116].\nHinton et al. published a breakthrough paper in 2006 titled “A fast\nlearning algorithm for deep belief nets”; it was one of the reasons for the\nresurgence of deep learning [113]."
-          },
 ...
 ```
 **Remark:** If you do not have an OpenAI API key and are unable to use MyRetriever, replace it with MyRetriever2.
