@@ -226,7 +226,15 @@ This is a snippet of the HTML generated after the answer generation :
 
 ## Manual Human Evaluation
 
-Manually evaluate the generated answers by editing the JSON file saved in `expe/02 Answers`. Locate entries with `"human": null` and assign a score for each answer.
+Manually evaluate the generated answers by editing the JSON file saved in `expe/02 Answers`. 
+Locate entries with `"human": null` by presssing CTRL+F, then search for `human`.
+
+![Image Description](img/CTRL+F.png)
+
+You will find all the human evaluation variables you need to change. You can change them manually one by one based on your judgment of the answer quality, or you can assign a value of 1 to all of them to proceed with the rest of the project. To assign a value of 1 to all of them, press CTRL+F, look for `"human" : null`, and replace it with `"human" : 1` as shown below.
+
+![Image Description](img/Replace_all.png)
+
 This step is essential and cannot be skipped for the subsequent processes.
 
 ```json
