@@ -1,0 +1,2448 @@
+<!--
+This Jinja templates needs the "expe" variable to generate the HTML.
+Moreover, it uses several boolean variables to control the rendering:
+- "show_answers": True to show the answers for each model
+- "show_chunks": True to show the Chunks in a table (images on the left column, text on the right)
+- "show_facts": True to show the Facts
+- "show_evals": True to show the Evaluations
+-->
+<html>
+<head>
+  <style>
+    h3 {
+      background-color: LightGray;
+      padding: 0px;
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: #FFFFFF;
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    img {
+      width: 100%;
+      width: 800;
+      display: block;
+    }
+
+    .my_img {
+      width: 100px;
+      vertical-align: middle;
+    }
+
+    * {
+      font-family: Arial
+    }
+
+    .collapsible {
+      background-color: #777;
+      border-bottom: 1px solid #ccc;
+      color: white;
+      cursor: pointer;
+      padding: 3px;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0px;
+      display: none;
+      overflow: hidden;
+      /*background-color: #f1f1f1;*/
+    }
+    .facts {
+      text-decoration: underline;
+      color: #0000EE;
+      font-weight: bold;
+    }
+    .hallus {
+      text-decoration: underline;
+      color: #FF1111;
+      font-weight: bold;
+    } 
+    .model_name {
+      background-color: #ffffa0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <span style="font-size: 20px;">30Q_0C_219F_7M_210A_0HE_0AE_2024-05-03_10h18,28</span>
+  <!-- For each QA -->
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>1. what is the story behind 5 nights at freddy's ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The series revolves around a fictional restaurant called Freddy Fazbear's Pizza, which is similar to Chuck E. Cheese's and ShowBiz Pizza Place.<br/>
+        
+          <span class="facts">2.</span> In the first three games, the player assumes the role of a nighttime security guard.<br/>
+        
+          <span class="facts">3.</span> The player must use various tools, including security cameras, to survive against animatronic characters that become dangerous after-hours.<br/>
+        
+          <span class="facts">4.</span> The fourth game differs in gameplay mechanics and is set in a child's house, where the player must defend against nightmarish animatronics.<br/>
+        
+          <span class="facts">5.</span> The fifth game is set in a maintenance facility owned by a company related to Freddy Fazbear's Pizza.<br/>
+        
+          <span class="facts">6.</span> In the fifth game, the player is a technician who must complete different tasks each night, guided by an AI voice.<br/>
+        
+          <span class="facts">7.</span> The sixth game involves the player as the owner of a pizzeria, decorating it with items that can be purchased.<br/>
+        
+          <span class="facts">8.</span> In the sixth game, the player also works the night shift at their pizzeria, with gameplay similar to the previous games.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The story behind Five Nights at Freddy's, as explained in 'The Story of Five Nights at Freddy's (Page 1)', is about a fictional pizza restaurant called 'Freddy Fazbear's Pizza'. The player is a nighttime security guard who must survive against animatronic characters which become mobile and homicidal after hours. These animatronics, detailed in 'The Animatronics of Five Nights at Freddy's (Page 2)', are programmed to entertain children during the day, but at night, they roam the restaurant and try to kill the security guard. The game is known for its complex story and many mysteries, as mentioned in 'The Mystery of Five Nights at Freddy's (Page 3)'. It is suggested that the animatronics are haunted by the spirits of children who were murdered in the restaurant.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          ## The Story Behind Five Nights at Freddy's (Page 1)nnFive Nights at Freddy's is a survival horror video game series created by Scott Cawthon. The first game was released in 2014 and quickly became a critical and commercial success. The series has since spawned numerous sequels, spin-offs, and merchandise. The games are set in a fictional pizzeria called Freddy Fazbear's Pizza, where the player takes on the role of a night security guard who must survive five nights while being stalked by animatronic characters. The animatronics are possessed by the spirits of murdered children, and they are out for revenge. The player must use the security cameras to monitor the animatronics' movements and avoid being caught. If the player is caught, they will be killed. The games are known for their suspenseful atmosphere, jump scares, and dark humor. They have been praised for their originality and creativity, and they have been credited with helping to revive the survival horror genre. However, they have also been criticized for their violence and disturbing themes. Despite the controversy, the Five Nights at Freddy's series remains one of the most popular and successful video game franchises of all time.nn## The Story of Five Nights at Freddy's (Page 2)nnThe story of Five Nights at Freddy's is complex and convoluted, but it can be summarized as follows: In the 1980s, a pizzeria called Freddy Fazbear's Pizza opened its doors to the public. The pizzeria was a popular destination for families, and it featured a cast of animatronic characters that entertained the children. However, tragedy struck when one of the animatronics, a yellow bear named Golden Freddy, malfunctioned and bit off the head of a child. The pizzeria was closed down, and the animatronics were put into storage. Years later, a new security guard is hired to work at the pizzeria. The guard is unaware of the pizzeria's dark history, and he is soon confronted by the animatronics. The animatronics are possessed by the spirits of the murdered children, and they are out for revenge. The guard must survive five nights while being stalked by the animatronics. If the player is caught, they will be killed. The games are known for their suspenseful atmosphere, jump scares, and dark humor. They have been praised for their originality and creativity, and they have been credited with helping to revive the survival horror genre. However, they have also been criticized for their violence and disturbing themes. Despite the controversy, the Five Nights at Freddy's series remains one of the most popular and successful video game franchises of all time.nn## The Characters of Five Nights at Freddy's (Page 3)nnThe Five Nights at Freddy's series features a cast of memorable characters, including:nn* **Freddy Fazbear:** The main antagonist of the series, Freddy is a large, brown bear animatronic. He is the leader of the animatronics, and he is the most persistent in his pursuit of the player.* **Bonnie the Bunny:** A purple rabbit animatronic, Bonnie is known for his speed and agility. He is often the first animatronic to attack the player.* **Chica the Chicken:** A yellow chicken animatronic, Chica is known for her aggressive nature. She is often the most difficult animatronic to avoid.* **Foxy the Pirate Fox:** A red fox animatronic, Foxy is known for his speed and his ability to run through walls. He is often the most unpredictable animatronic.* **Golden Freddy:** A yellow bear animatronic, Golden Freddy is a rare and mysterious character. He is often associated with death and tragedy.* **The Puppet:** A marionette animatronic, The Puppet is a new character in Five Nights at Freddy's 2. He is responsible for the deaths of the five children who possess the animatronics.* **Springtrap:** A spring-loaded rabbit animatronic, Springtrap is a new character in Five Nights at Freddy's 3. He is the only surviving animatronic from the original Freddy Fazbear's Pizza.* **Circus Baby:** A new character in Five Nights at Freddy's: Sister Location, Circus Baby is a humanoid animatronic clown. She is the leader of the new animatronics, and she is the most dangerous character in the game.* **Ennard:** A new character in Five Nights at Freddy's: Sister Location, Ennard is a combination of all of the new animatronics. He is the final boss of the game, and he is the most challenging character to defeat.nn## The Legacy of Five Nights at Freddy's (Page 4)nnThe Five Nights at Freddy's series has had a profound impact on the video game industry. The games have been praised for their originality, creativity, and suspense. They have also been credited with helping to revive the survival horror genre. The series has also been the subject of much controversy, due to its violence and disturbing themes. Despite the controversy, the Five Nights at Freddy's series remains one of the most popular and successful video game franchises of all time. The series has spawned numerous sequels, spin-offs, and merchandise. The games have also been adapted into a novel and a film. The Five Nights at Freddy's series is a cultural phenomenon, and it is sure to continue to entertain and terrify fans for years to come.nn## Conclusion (Page 5)nnThe Five Nights at Freddy's series is a complex and convoluted story, but it is also a compelling and entertaining one. The games are known for their suspenseful atmosphere, jump scares, and dark humor. They have been praised for their originality and creativity, and they have been credited with helping to revive the survival horror genre. However, they have also been criticized for their violence and disturbing themes. Despite the controversy, the Five Nights at Freddy's series remains one of the most popular and successful video game franchises of all time.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The story behind 'Five Nights at Freddy's' is a complex and dark tale that revolves around a pizzeria named 'Freddy Fazbear's Pizza'. The game's lore is primarily revealed through various clues and hints hidden in the game, as well as mini-games and phone calls. (Five Nights at Freddy's: The Story So Far, Page 1)The main plot involves a security guard who is hired to work at the pizzeria from 12 a.m. to 6 a.m. for five consecutive nights. The guard must survive against animatronic characters who roam the establishment at night and become hostile to any human they encounter. (Five Nights at Freddy's: Gameplay, Page 2)The backstory of the game involves a series of tragic events that occurred at the pizzeria, including the murder of several children by a man in a mascot suit. These children are believed to possess the animatronics, contributing to their hostile behavior. (Five Nights at Freddy's: Lore, Page 3)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the game's lore, the story behind 5 Nights at Freddy's is that Freddy Fazbear's Pizza was a popular family restaurant that was shut down due to a series of tragic events. The restaurant was known for its animatronic animals, including Freddy Fazbear, Bonnie the Bunny, Chica the Chicken, and Foxy the Pirate Fox. However, it was discovered that the animatronics had a tendency to become hostile and violent at night, and several children went missing or were found dead. The restaurant was shut down, and the animatronics were left to rust and decay. The player takes on the role of a security guard who must survive five nights at the abandoned restaurant, avoiding the animatronics and uncovering the dark secrets behind the restaurant's closure. (Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The story behind Five Nights at Freddy's is not explicitly stated in the game, but it can be pieced together through subtle hints and clues. According to the phone guy's messages in the first game, Freddy Fazbear's Pizza was a family-friendly restaurant that was shut down due to a man who used the yellow suit to lure and murder children. (The Story of Freddy Fazbear's Pizza, Page 1) The main antagonist, Freddy Fazbear, was originally a mascot for the restaurant, but was possessed by the vengeful spirit of a child who was murdered at the restaurant. (The Haunted Animatronics, Page 2) The game's creator, Scott Cawthon, has confirmed that the purple man, a mysterious figure, is the main antagonist of the series. (The Purple Man, Page 3)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The story behind 'Five Nights at Freddy's' is about a restaurant called Freddy Fazbear's Pizza, where animatronic animals entertain children during the day. However, at night, these animatronics are said to wander the restaurant. The game's protagonist is a night security guard who must survive five nights of guard duty, avoiding and managing the animatronics. The game's creator, Scott Cawthon, has revealed that the series is based on a real-life incident where he was once confronted by an animatronic in a restaurant. The game series has since expanded into a larger universe with novels, merchandise, and a movie in development. (Source: 'The Story Behind Five Nights at Freddy's', Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          5 Nights at Freddy raconte l'histoire d'un jeune garçon nommé Freddy qui est emprisonné dans une pizzeria infestée par des animatrons malveillants. Il doit combattre pour survivre la nuit en évitant les animatrons et en trouvant une sortie. L'histoire se déroule sur cinq nuits et met en lumière les secrets et les motivations des animatrons.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>2. what was the prison called in the green mile ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Paul, in 1935, was in charge of officers Brutus Howell, Dean Stanton, Harry Terwilliger, and Percy Wetmore at Cold Mountain Penitentiary.<br/>
+        
+          <span class="facts">2.</span> Paul was suffering from a severe bladder infection during his time at the penitentiary.<br/>
+        
+          <span class="facts">3.</span> John Coffey, a physically imposing but mentally challenged black man, was under Paul's custody.<br/>
+        
+          <span class="facts">4.</span> John was sentenced to death for the rape and murder of two white girls.<br/>
+        
+          <span class="facts">5.</span> Arlen Bitterbuck, a Native-American inmate, was charged with murder and was the first to be executed.<br/>
+        
+          <span class="facts">6.</span> Percy, the nephew of Louisiana's First Lady, was known for his sadistic behavior and was untouchable due to his family connections.<br/>
+        
+          <span class="facts">7.</span> Percy was particularly abusive towards inmate Eduard Delacroix, often using a gay slur against him.<br/>
+        
+          <span class="facts">8.</span> Percy broke Delacroix's fingers with his baton and stepped on his pet mouse, Mr. Jingles.<br/>
+        
+          <span class="facts">9.</span> Percy sabotaged Delacroix's execution by not soaking the sponge used to conduct electricity, causing Delacroix to die in extreme pain.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The prison in The Green Mile was called the Cold Mountain Penitentiary. (Source: The Green Mile, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          ```json
+{
+"q_ok": 1,
+"chunks_ok": 1,
+"answer": "Le pénitencier d'État de Cold Mountain dans le film La Ligne verte est une prison fictive située en Louisiane. Le film se déroule dans le couloir de la mort de la prison, surnommé « la ligne verte » en raison de la couleur du sol en linoléum. L'histoire suit Paul Edgecombe, un gardien de prison qui travaille dans le couloir de la mort et qui est témoin de l'arrivée d'un nouveau détenu, John Coffey, un homme imposant accusé du viol et du meurtre de deux jeunes filles.
+
+Bien que le pénitencier d'État de Cold Mountain soit une prison fictive, le film a été tourné dans une véritable prison, la prison d'État du Tennessee à Nashville, dans le Tennessee. La prison a été construite en 1898 et a été utilisée comme prison jusqu'en 1992. Elle a depuis été transformée en musée.
+
+Le film La Ligne verte a été un succès critique et commercial, rapportant plus de 286 millions de dollars dans le monde. Il a été nominé pour quatre Oscars, dont celui du meilleur film.
+
+**Sources**
+
+* **Titre :** La Ligne verte (page 1)
+* **Contenu :** Le pénitencier d'État de Cold Mountain est une prison fictive située en Louisiane.
+* **Titre :** La Ligne verte (page 2)
+* **Contenu :** Le film a été tourné dans une véritable prison, la prison d'État du Tennessee à Nashville, dans le Tennessee.
+* **Titre :** La Ligne verte (page 3)
+* **Contenu :** Le film La Ligne verte a été un succès critique et commercial.
+
+**Justification**
+
+La réponse à la question « Comment s'appelait la prison dans La Ligne verte ? » est le pénitencier d'État de Cold Mountain. Cette information est fournie dans le premier paragraphe de l'article de Wikipédia sur La Ligne verte. Le deuxième paragraphe fournit des informations supplémentaires sur le lieu de tournage du film. Le troisième paragraphe fournit des informations sur le succès du film.
+
+**Explication**
+
+La réponse est générée en extrayant les informations pertinentes des paragraphes fournis. Le premier paragraphe indique que le pénitencier d'État de Cold Mountain est une prison fictive située en Louisiane. Le deuxième paragraphe indique que le film a été tourné dans une véritable prison, la prison d'État du Tennessee à Nashville, dans le Tennessee. Le troisième paragraphe indique que le film La Ligne verte a été un succès critique et commercial. Ces informations sont combinées pour fournir une réponse complète à la question.
+
+**Phrases et mots clés**
+
+Les phrases et mots clés suivants ont été utilisés pour générer la réponse :
+
+* pénitencier d'État de Cold Mountain
+* La Ligne verte
+* prison fictive
+* Louisiane
+* prison d'État du Tennessee
+* Nashville, Tennessee
+* succès critique et commercial
+<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The prison in 'The Green Mile' is referred to as Cold Mountain Penitentiary. This is detailed in the paragraph:- 'Cold Mountain Penitentiary (Page 12)''Cold Mountain Penitentiary is the central location of the story, where the protagonist, Paul Edgecombe, works as a death row supervisor. The prison's death row is known as 'The Green Mile' due to the color of its floor.'<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          The Cold Mountain Penitentiary (Page 12)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          Cold Mountain Penitentiary (Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The prison in The Green Mile was called 'Cold Mountain Penitentiary'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          La prison dans The Green Mile était appelée Shawshank State Penitentiary. (Page 3)<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>3. what is the widest highway in north america ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> King's Highway 401 is a controlled-access highway in Ontario, Canada.<br/>
+        
+          <span class="facts">2.</span> The highway is also known as the Macdonald-Cartier Freeway or colloquially as the four-oh-one.<br/>
+        
+          <span class="facts">3.</span> It stretches 828.0 kilometres from Windsor in the west to the Ontario-Quebec border in the east.<br/>
+        
+          <span class="facts">4.</span> The part of Highway 401 that passes through Toronto is North America's busiest highway.<br/>
+        
+          <span class="facts">5.</span> Highway 401 is also one of the widest highways in North America.<br/>
+        
+          <span class="facts">6.</span> Together with Quebec Autoroute 20, Highway 401 forms the road transportation backbone of the Quebec City-Windsor Corridor.<br/>
+        
+          <span class="facts">7.</span> Over half of Canada's population resides along the Quebec City-Windsor Corridor.<br/>
+        
+          <span class="facts">8.</span> Highway 401 is a Core Route in the National Highway System of Canada.<br/>
+        
+          <span class="facts">9.</span> The Ministry of Transportation of Ontario maintains the route.<br/>
+        
+          <span class="facts">10.</span> The Ontario Provincial Police patrol Highway 401.<br/>
+        
+          <span class="facts">11.</span> The speed limit on Highway 401 is 100 km/h, unless posted otherwise.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The widest highway in North America is Highway 401 in Canada, which has 18 lanes at its widest point. (Source: 'Highway 401 in Canada', Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          La question "Quelle est l'autoroute la plus large d'Amérique du Nord ?" est claire et précise.
+
+Les paragraphes fournis contiennent des informations sur les autoroutes les plus larges du monde, mais ne mentionnent pas spécifiquement l'Amérique du Nord. Par conséquent, je ne peux pas répondre à cette question en utilisant uniquement les paragraphes fournis.
+
+Cependant, je peux vous fournir des informations générales sur les autoroutes les plus larges du monde. Selon le Guinness World Records, l'autoroute la plus large du monde est la Katy Freeway à Houston, au Texas, qui compte 26 voies dans les deux sens. La Katy Freeway est une autoroute à accès contrôlé qui s'étend sur 26 miles à travers la ville de Houston. Elle a été construite en plusieurs étapes, la première section ayant été ouverte en 1964. La Katy Freeway est une autoroute très fréquentée, avec plus de 200 000 véhicules qui l'empruntent chaque jour.
+
+J'espère que ces informations vous seront utiles.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The provided paragraphs do not contain information to answer the question 'what is the widest highway in North America?'<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the text, the widest highway in North America is the I-10 in Texas, with a width of 26 lanes. (Page 12) This information can be found in the paragraph titled 'Widest Highways in North America'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The widest highway in North America is the Katy Freeway in Houston, Texas, which has a total of 26 lanes. (Highways and Roads, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The widest highway in North America is the Katy Freeway (I-10) in Houston, Texas. According to the paragraph 'Highways with the largest number of lanes' (Page 2), it has a total of 26 lanes, making it the widest highway in North America.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          La highway la plus large d'Amérique du Nord est la Interstate 40, avec une largeur de 12 voies.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>4. what was the white thing in sausage party ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Frank and Brenda's packages were selected by a woman named Camille Toh.<br/>
+        
+          <span class="facts">2.</span> They were chosen to leave Shopwell's.<br/>
+        
+          <span class="facts">3.</span> A jar of Bickle's Honey Mustard, which had been returned, tried to warn the groceries about the Great Beyond.<br/>
+        
+          <span class="facts">4.</span> The Honey Mustard claimed that the Great Beyond was a lie.<br/>
+        
+          <span class="facts">5.</span> Only Frank paid attention to Honey Mustard's warning.<br/>
+        
+          <span class="facts">6.</span> Honey Mustard asked Frank to find a bottle of liquor called Firewater.<br/>
+        
+          <span class="facts">7.</span> Honey Mustard fell to his death.<br/>
+        
+          <span class="facts">8.</span> His fall caused a cart collision.<br/>
+        
+          <span class="facts">9.</span> The collision resulted in Frank, Brenda, and several other groceries falling out of the cart.<br/>
+        
+          <span class="facts">10.</span> An aggressive Douche also fell out of the cart and his nozzle got bent.<br/>
+        
+          <span class="facts">11.</span> The Douche started plotting revenge against Frank and Brenda.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The white thing in Sausage Party is a character named Douche. He is a white, anthropomorphic substance who is the main antagonist of the film. (source: Characters in Sausage Party, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Je suis désolé, mais je ne peux pas répondre à votre question. Les paragraphes que vous m'avez fournis ne contiennent pas d'informations sur le film Sausage Party. Par conséquent, je ne peux pas vous dire ce qu'était la chose blanche dans le film.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The provided paragraphs do not contain information about 'the white thing in sausage party'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'The Sausage Party' (Page 12), the white thing in Sausage Party is a bun. The paragraph states: 'The Sausage Party' is a film about a sausage who falls in love with a bun, and the two become inseparable.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The white thing in Sausage Party is the Douche's liquid. (The Douche, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The white thing in Sausage Party is referred to as 'the pure' or 'the light.' It is a metaphysical concept representing the afterlife or the utopia that food items believe they will reach once they are taken out of the supermarket by humans. This is explained in the paragraph titled 'The Great Beyond' on page 5: 'The Great Beyond is the concept that food has of heaven or nirvana, the place where they believe they’ll go once they leave the supermarket and are chosen by humans.' The pure or the light is a representation of this belief, although its exact nature is left ambiguous and open to interpretation.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          La pomme de terre était la chose blanche dans la fête de saucisse.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>5. what makes the center of an atom stable ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The electrons in an atom are attracted to the protons in the nucleus due to the electromagnetic force.<br/>
+        
+          <span class="facts">2.</span> This electromagnetic force keeps the electrons within an electrostatic potential well around the nucleus.<br/>
+        
+          <span class="facts">3.</span> An external energy source is required for an electron to escape from this potential well.<br/>
+        
+          <span class="facts">4.</span> The attractive force between the electron and the nucleus increases as they get closer.<br/>
+        
+          <span class="facts">5.</span> Electrons closer to the nucleus need more energy to escape compared to those further away.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The stability of an atom's nucleus is maintained by two forces: the strong nuclear force and the electromagnetic force. The strong nuclear force binds the protons and neutrons together, overcoming the repulsion between the positively charged protons. The electromagnetic force is responsible for the attraction between the positively charged protons and the negatively charged electrons. (Source: 'Forces in an Atom', Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Le centre d'un atome est stable car les protons et les neutrons sont liés entre eux par la force nucléaire forte. Cette force est l'une des quatre forces fondamentales de la nature, et elle est beaucoup plus forte que la force électromagnétique qui repousse les protons les uns des autres. La force nucléaire forte maintient les protons et les neutrons ensemble, même s'ils ont tous les deux une charge positive.La force nucléaire forte est transmise par des particules appelées mésons. Les mésons sont créés et détruits constamment dans le noyau, et ils interagissent avec les protons et les neutrons pour les maintenir ensemble. La force nucléaire forte est très courte portée, elle n'agit donc qu'à de très courtes distances. C'est pourquoi elle ne maintient ensemble que les protons et les neutrons qui sont très proches les uns des autres dans le noyau.La stabilité du noyau atomique est essentielle à l'existence de la matière telle que nous la connaissons. Si les noyaux atomiques n'étaient pas stables, ils se désintégreraient et libéreraient une énorme quantité d'énergie. Cette énergie détruirait tout ce qui se trouve à proximité. Heureusement, les noyaux atomiques sont très stables, et ils ne se désintègrent que dans des conditions très spécifiques.La stabilité du noyau atomique est également essentielle aux réactions chimiques. Les réactions chimiques se produisent lorsque les atomes se réorganisent pour former de nouvelles molécules. Ces réorganisations ne sont possibles que parce que les noyaux atomiques sont stables. Si les noyaux atomiques n'étaient pas stables, ils se désintégreraient et libéreraient une énorme quantité d'énergie. Cette énergie détruirait les atomes impliqués dans la réaction chimique, et la réaction ne pourrait pas avoir lieu.En résumé, la stabilité du noyau atomique est essentielle à l'existence de la matière et aux réactions chimiques telles que nous les connaissons. Sans la stabilité du noyau atomique, la vie telle que nous la connaissons ne serait pas possible.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The stability of the center of an atom, also known as the atomic nucleus, is primarily due to the strong nuclear force and the balance of protons and neutrons. According to the paragraph titled 'The Strong Nuclear Force (Page 5)', 'The strong nuclear force is one of the four fundamental forces in nature, and it is responsible for holding the nucleus of an atom together. It is stronger than the electromagnetic force, which would otherwise cause the positively charged protons to repel each other and the nucleus to disintegrate.' Additionally, the paragraph titled 'Balance of Protons and Neutrons (Page 7)' states, 'The balance of protons and neutrons within the nucleus is also crucial for its stability. An atom with too many or too few neutrons relative to its number of protons will be unstable and may undergo radioactive decay to achieve a more stable configuration.'<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph titled 'Atomic Structure' on page 12, the center of an atom is stable due to the strong attractive force between the positively charged protons in the nucleus and the negatively charged electrons orbiting around it. This force, known as the electromagnetic force, is what keeps the electrons in their orbits and prevents them from flying off into space.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The stability of the nucleus is due to the strong nuclear force, which holds the protons and neutrons together inside the nucleus. (The Structure of the Atom, Page 12)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The center of an atom is stable due to the presence of protons and neutrons in the nucleus, which are held together by the strong nuclear force (also known as the strong interaction). This force, which is one of the four fundamental forces in the universe, overcomes the electrostatic repulsion between positively charged protons, allowing the nucleus to remain stable. The balance between the strong nuclear force and electrostatic repulsion creates a stable nucleus, even though protons and neutrons are much more massive than electrons.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          La stabilité du centre d'un atome est due à la présence de protons et de neutrons. Les protons ont une charge positive, tandis que les neutrons n'en ont pas. La distribution uniforme des protons et des neutrons dans le noyau atomique contribue à maintenir la stabilité. La force nucléaire forte, qui s'applique entre les nucléons, maintient les protons et les neutrons ensemble, contre la force électrique répulsive des protons.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>6. who did holly matthews play in waterloo rd ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> She was a student at the British drama school East 15 in 2005.<br/>
+        
+          <span class="facts">2.</span> She secured a significant role in the BBC drama Waterloo Road.<br/>
+        
+          <span class="facts">3.</span> In Waterloo Road, she portrayed the character of a bully named Leigh-Ann Galloway.<br/>
+        
+          <span class="facts">4.</span> After Waterloo Road, she continued her acting career in BBC's Doctors.<br/>
+        
+          <span class="facts">5.</span> In Doctors, she played the character Connie Whitfield.<br/>
+        
+          <span class="facts">6.</span> She also acted in ITV's The Bill, where she played a drug addict named Josie Clarke.<br/>
+        
+          <span class="facts">7.</span> In 2009, she returned to the BBC soap Doctors, this time playing Tansy Flack.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          Holly Matthews played the character of Leigh-Ann Galloway in Waterloo Rd. (Source: Holly Matthews, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Holly Matthews a joué le rôle de Ruth Davies dans Waterloo Road. Cela est mentionné dans le paragraphe "Cast" (Page 1) qui indique que "Holly Matthews a joué le rôle de Ruth Davies, une élève de l'école." De plus, le paragraphe "Ruth Davies" (Page 2) confirme que "Holly Matthews a joué le rôle de Ruth Davies".<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          Désolé, je n'ai pas de paragraphe de référence pour répondre à cette question sur le rôle de Holly Matthews dans Waterloo Road.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'Theatre' on page 12, Holly Matthews played the role of 'Sarah' in the production of 'Waterloo Road'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          Holly Matthews played the role of Emily Walker in Waterloo Road. (Holly Matthews (Page 1))<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          Holly Matthews played the character of Michelle Richardson in Waterloo Road.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Holly Matthews a joué le rôle de Billie dans Waterloo Road.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>7. who did the first double backflip on a dirt bike ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Travis Pastrana completed a double backflip on an uphill/sand setup in 2006.<br/>
+        
+          <span class="facts">2.</span> The double backflip was performed in his 'Nitro Circus' Freestyle Motocross movies.<br/>
+        
+          <span class="facts">3.</span> On August 4, 2006, Pastrana became the first rider to land a double backflip in a competition.<br/>
+        
+          <span class="facts">4.</span> This competition took place at X Games 12 in Los Angeles.<br/>
+        
+          <span class="facts">5.</span> After successfully performing the trick, Pastrana decided never to do it again.<br/>
+        
+          <span class="facts">6.</span> The double backflip was a trick that many had considered impossible.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The first double backflip on a dirt bike was performed by Travis Pastrana. (Source: Travis Pastrana's Achievements, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Le premier double backflip sur une moto a été réalisé par **Travis Pastrana** en 2006. Il a réussi cette cascade lors des X Games, un événement annuel de sports extrêmes. Pastrana est un motocycliste professionnel connu pour ses cascades audacieuses et ses compétences exceptionnelles. Il a remporté de nombreux championnats et est considéré comme l'un des plus grands motocyclistes de tous les temps. (Source : **Travis Pastrana**, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The first double backflip on a dirt bike was performed by Travis Pastrana. This information is derived from the following paragraph:- 'Travis Pastrana's Achievements' (Page 7)Travis Pastrana, an American motorsports competitor and stunt performer, is known for his incredible feats on a dirt bike. One of his most notable achievements includes landing the first double backflip on a dirt bike in 2006.The paragraph 'Travis Pastrana's Achievements' on Page 7 provides the answer. The phrase 'landing the first double backflip on a dirt bike in 2006' clearly indicates that Travis Pastrana was the first person to perform this stunt.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to [Title] (Page 12), Travis Pastrana is credited with performing the first double backflip on a dirt bike.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The first double backflip on a dirt bike was performed by Travis Pastrana in 2006. (Travis Pastrana, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The first double backflip on a dirt bike was done by Travis Pastrana. According to the paragraph 'Travis Pastrana's Incredible Double Backflip' (Page 1), 'Travis Pastrana became the first person to land a double backflip on a dirt bike during the 2006 X-Games.'<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          The first double backflip on a dirt bike was done by Travis Pastrana in 2001.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>8. who won season 10 of dancing with the stars ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Season ten of Dancing with the Stars started on March 22, 2010.<br/>
+        
+          <span class="facts">2.</span> The first week of competition in season ten of Dancing with the Stars did not have an elimination.<br/>
+        
+          <span class="facts">3.</span> The first elimination in season ten of Dancing with the Stars occurred on March 30.<br/>
+        
+          <span class="facts">4.</span> Nicole Scherzinger, a singer, was the winner of Dancing with the Stars season ten.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          Nicole Scherzinger won season 10 of Dancing with the Stars. (Source: Dancing with the Stars Season 10, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          La dixième saison de Dancing with the Stars a été remportée par **Nicole Scherzinger** et son partenaire **Derek Hough**. Ils ont été annoncés vainqueurs le 25 novembre 2008, après avoir affronté **Mario Lopez** et **Karina Smirnoff** en finale. nnScherzinger et Hough ont obtenu un score parfait de 30 points pour leur danse libre, ainsi qu'un score de 29 points pour leur danse de style latin. Lopez et Smirnoff ont également obtenu un score parfait pour leur danse libre, mais ont reçu un score de 28 points pour leur danse de style latin. nnLa victoire de Scherzinger a été une surprise pour beaucoup, car elle n'était pas considérée comme la favorite avant le début de la saison. Cependant, elle a impressionné les juges et le public avec ses performances tout au long de la compétition. Hough, quant à lui, était un danseur professionnel expérimenté qui avait déjà remporté deux saisons de Dancing with the Stars. nnLa dixième saison de Dancing with the Stars a été l'une des plus regardées de l'histoire de l'émission. La finale a été regardée par plus de 20 millions de téléspectateurs. nn**Source :**nn* **Dancing with the Stars (U.S. season 10)** (Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The provided paragraphes do not contain information about the winner of season 10 of Dancing with the Stars.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'The Winners' on page 12, Donny Osmond and his partner Kym Johnson won season 10 of Dancing with the Stars.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          {
+"q_ok": 1,
+"chunks_ok": 1,
+"answer": "Nicole Scherzinger and Derek Hough won Season 10 of Dancing with the Stars." (Season 10 (Page 1))
+}
+
+Justification: The answer is constructed using the information provided in the paragraph "Season 10 (Page 1)". The paragraph mentions that Nicole Scherzinger and Derek Hough won Season 10 of Dancing with the Stars.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The winner of season 10 of Dancing with the Stars was Nicole Scherzinger<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Season 10 of Dancing with the Stars was won by Amber Riley and Derek Hough.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>9. when would the quantity of dna double when growing cells ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The cell cycle is the process of cell division which consists of four major phases.<br/>
+        
+          <span class="facts">2.</span> The G1 phase is the first part of the cell cycle, characterized by the synthesis of enzymes needed for DNA replication.<br/>
+        
+          <span class="facts">3.</span> The S phase is the second part of the cell cycle, during which DNA replication occurs, resulting in two identical sets of chromosomes.<br/>
+        
+          <span class="facts">4.</span> The G2 phase is the third part of the cell cycle, marked by significant protein synthesis, particularly the production of microtubules needed for cell division, called mitosis.<br/>
+        
+          <span class="facts">5.</span> The M phase is the fourth and final part of the cell cycle, involving nuclear division (karyokinesis) and cytoplasmic division (cytokinesis).<br/>
+        
+          <span class="facts">6.</span> During the M phase, a new cell membrane is formed, leading to the physical division of the 'mother' and 'daughter' cells.<br/>
+        
+          <span class="facts">7.</span> The M phase is further divided into several distinct phases: prophase, prometaphase, metaphase, anaphase, and telophase, which lead to cytokinesis.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The quantity of DNA within the cell effectively doubles during the S phase of the cell cycle. This is because the DNA molecule is being replicated, or copied, in preparation for cell division. (Source: DNA Replication, Page 5)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          ## The Cell Cycle (Page 1)
+
+The cell cycle is a series of events that take place in a cell leading to its division and duplication (replication) of its DNA (deoxyribonucleic acid). These events are carefully regulated and occur in a specific order. The cell cycle consists of two main phases: interphase and the mitotic phase.
+
+## Interphase (Page 1)
+
+Interphase is the first and longest phase of the cell cycle. During interphase, the cell grows, replicates its DNA, and prepares for cell division. Interphase consists of three subphases: G1, S, and G2.
+
+## S Phase (Page 1)
+
+The S phase is the second stage of interphase. During the S phase, the cell's DNA is replicated. This ensures that each new daughter cell will have a complete copy of the DNA.
+
+## G2 Phase (Page 1)
+
+The G2 phase is the final stage of interphase. During the G2 phase, the cell continues to grow and prepares for mitosis. The cell also checks for any errors in the replicated DNA.
+
+## Mitosis (Page 1)
+
+The mitotic phase is the second main phase of the cell cycle. During mitosis, the cell's nucleus divides into two daughter nuclei. Mitosis consists of four stages: prophase, metaphase, anaphase, and telophase.
+
+## Prophase (Page 1)
+
+Prophase is the first stage of mitosis. During prophase, the chromatin condenses into chromosomes, the nuclear envelope breaks down, and the spindle fibers begin to form.
+
+## Metaphase (Page 1)
+
+Metaphase is the second stage of mitosis. During metaphase, the chromosomes line up at the equator of the cell.
+
+## Anaphase (Page 1)
+
+Anaphase is the third stage of mitosis. During anaphase, the sister chromatids separate and move to opposite poles of the cell.
+
+## Telophase (Page 1)
+
+Telophase is the final stage of mitosis. During telophase, the nuclear envelope reforms around the two sets of chromosomes, and the cytoplasm divides, forming two daughter cells.
+
+## Cytokinesis (Page 1)
+
+Cytokinesis is the final stage of cell division. During cytokinesis, the cytoplasm of the parent cell divides, forming two daughter cells. Cytokinesis usually occurs at the same time as telophase.
+
+## Conclusion (Page 1)
+
+The cell cycle is a complex and tightly regulated process that ensures the accurate replication and division of cells. The S phase of interphase is when the cell's DNA is replicated, ensuring that each new daughter cell will have a complete copy of the DNA. The mitotic phase is when the cell's nucleus divides into two daughter nuclei. Cytokinesis is when the cytoplasm of the parent cell divides, forming two daughter cells.
+
+## Answer to the Question (Page 1)
+
+The quantity of DNA doubles during the S phase of interphase. During the S phase, the cell's DNA is replicated, ensuring that each new daughter cell will have a complete copy of the DNA. This ensures that the genetic information is passed on accurately from one generation to the next.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The quantity of DNA doubles during the synthesis phase (S phase) of the cell cycle. This is a part of the interphase, which is the phase of the cell cycle where the cell grows and replicates its DNA in preparation for cell division. (Cell Cycle and Cell Division - Page 22)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'Cell Division' on page 12, the quantity of DNA would double when the cells are in the S phase of the cell cycle, which is the stage of interphase where DNA replication occurs.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          During the S phase of the cell cycle, the quantity of DNA doubles. (The Cell Cycle, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The quantity of DNA would double during the synthesis phase (S phase) of the cell cycle, when growing cells replicate their DNA in preparation for cell division. This is described in the 'Cell Cycle and DNA Replication' paragraph (Page 2).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          {
+"q_ok": 1,
+"chunks_ok": 1,
+"answer": "La quantité de DNA se double lors de la mitose, qui est une phase de la cell cycle au cours de laquelle les cellules se divisent. Cela se produit quand les chromosomes sont copiés et qu'une cellule devient deux cellules filles identiques." - **Page 2**<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>10. when did the battle of palmito ranch happen ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The Battle of Palmito Ranch is sometimes viewed as the last battle of the American Civil War.<br/>
+        
+          <span class="facts">2.</span> This battle took place on May 12 and 13, 1865.<br/>
+        
+          <span class="facts">3.</span> The location of the battle was on the banks of the Rio Grande, east of Brownsville, Texas.<br/>
+        
+          <span class="facts">4.</span> The Battle of Palmito Ranch was fought near the seaport of Los Brazos de Santiago.<br/>
+        
+          <span class="facts">5.</span> Some argue that the battle should be considered a postwar action, as the Confederacy had already ceased to exist.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The Battle of Palmito Ranch happened on May 12 and 13, 1865. (Source: The Battle of Palmito Ranch, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          La bataille de Palmito Ranch a eu lieu le 12 mai 1865, près de Brownsville, au Texas. Elle a été la dernière bataille terrestre de la guerre de Sécession. La bataille a été livrée entre les forces de l'Union dirigées par le général de division Lew Wallace et les forces confédérées dirigées par le général de brigade John S. Ford. Les forces de l'Union ont été victorieuses, et la bataille a marqué la fin effective de la guerre de Sécession.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The Battle of Palmito Ranch, also known as the Battle of Palmito Hill, was fought on May 12 and 13, 1865 (Battle of Palmito Ranch, Page 1).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'The Battle of Palmito Ranch' (Page 123), the Battle of Palmito Ranch took place on May 12-13, 1865.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The Battle of Palmito Ranch occurred on May 12-13, 1865. (The Battle of Palmito Ranch)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The Battle of Palmito Ranch took place on May 12-13, 1865.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          The Battle of Palmito Ranch took place on May 1, 1913. (See: <a href='Page 3'>Page 3</a>)<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>11. who determined the mass to charge ratio of an electron ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> During the 19th century, the mass-to-charge ratios of some ions were determined using electrochemical methods.<br/>
+        
+          <span class="facts">2.</span> J. J. Thomson first measured the mass-to-charge ratio of the electron in 1897.<br/>
+        
+          <span class="facts">3.</span> Thomson's measurements proved that the electron is a particle with both mass and charge.<br/>
+        
+          <span class="facts">4.</span> The mass-to-charge ratio of an electron is significantly smaller than that of a hydrogen ion H+.<br/>
+        
+          <span class="facts">5.</span> In 1898, Wilhelm Wien separated ions based on their mass-to-charge ratio using an ion optical device.<br/>
+        
+          <span class="facts">6.</span> This device, known as a Wien filter, utilized both electric and magnetic fields.<br/>
+        
+          <span class="facts">7.</span> Walter Kaufman measured the increase of electromagnetic mass of fast electrons in 1901.<br/>
+        
+          <span class="facts">8.</span> This phenomenon is now referred to as relativistic mass increase.<br/>
+        
+          <span class="facts">9.</span> In 1913, Thomson used a parabola spectrograph to measure the mass-to-charge ratio of ions.<br/>
+        
+          <span class="facts">10.</span> Today, a mass spectrometer is the instrument used to measure the mass-to-charge ratio of charged particles.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The mass to charge ratio of an electron was determined by J.J. Thomson, as stated in 'J.J. Thomson's Experiments' (Page 5).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Le physicien britannique **J.J. Thomson** a déterminé le rapport masse/charge d'un électron en 1897. En utilisant un tube à rayons cathodiques, Thomson a mesuré la déviation des rayons cathodiques dans des champs électriques et magnétiques. Il a constaté que le rapport masse/charge des rayons cathodiques était indépendant du matériau de la cathode, ce qui suggérait qu'il s'agissait d'une particule fondamentale. La valeur du rapport masse/charge déterminée par Thomson était de 1,758820 × 10^11 coulombs par kilogramme. Cette valeur a ensuite été affinée par d'autres expériences, et la valeur actuellement acceptée est de 1,758820 × 10^11 coulombs par kilogramme.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The person who determined the mass to charge ratio of an electron is J.J. Thomson. This information is found in the paragraph titled 'The Discovery of the Electron (Page 12)'. The paragraph states 'In 1897, J.J. Thomson conducted experiments that led to the discovery of the electron. He determined the mass to charge ratio of these particles by measuring the deflection of cathode rays in magnetic and electric fields.'<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          The mass-to-charge ratio of an electron was determined by Robert Millikan in his oil drop experiment. (Page 123)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          J.J. Thomson determined the mass-to-charge ratio of an electron. (The Discovery of the Electron, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The mass-to-charge ratio of an electron was determined by J.J. Thomson. In the text 'Thomson and the discovery of the electron (Page 1)', it is mentioned that 'Thomson's experiments with cathode rays in the 1890s led to the discovery of the electron and the determination of its mass-to-charge ratio'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          The mass to charge ratio of an electron was determined by Robert Millikan through his famous oil drop experiment, described in the 'The Determination of the Elementary Charge of an Electron' paper (Page 874). Millikan used a charged plate and a vacuum chamber to measure the charge-to-mass ratio of oil droplets, demonstrating that the charge of an electron is quantized.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>12. where does the last name downs come from ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Downs is a surname.<br/>
+        
+          <span class="facts">2.</span> The origin of the surname Downs is Old English.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The last name Downs is of English origin and is topographical for someone who lived by the down(s), a range of sand hills. This name is especially common in Sussex. The name was first found in Sussex where they held a family seat from very ancient times. [Meaning and Origin of Downs (Page 3)]<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Le nom de famille Downs est d'origine anglaise et signifie 'colline' ou 'pente'. Il est dérivé du vieil anglais 'dūn', qui signifie 'colline'. Le nom de famille Downs est originaire du sud-ouest de l'Angleterre, où il est encore courant aujourd'hui. Il est également courant aux États-Unis, au Canada et en Australie.Le nom de famille Downs est un nom de famille topographique, ce qui signifie qu'il est dérivé de la caractéristique géographique où vivait la famille à l'origine. Dans ce cas, le nom de famille Downs a été donné aux personnes qui vivaient près d'une colline ou d'une pente.Il existe un certain nombre de variantes du nom de famille Downs, notamment Downes, Down, Dun et Dunn. Ces variantes sont toutes dérivées du même mot vieil anglais, 'dūn'.Le nom de famille Downs est un nom de famille courant dans le monde anglophone. Il est classé 127e nom de famille le plus courant aux États-Unis et 134e nom de famille le plus courant en Angleterre.**Sources*** **Histoire et origine du nom de famille Downs** (Page 1)* **Le nom de famille Downs** (Page 2)* **Variantes du nom de famille Downs** (Page 3)* **Classement du nom de famille Downs** (Page 4)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The provided paragraphes do not contain information about the origin of the last name 'Downs'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to [Title: The Downes Family] (Page 12), the last name Downs is of English origin, derived from the Old English words 'dun' meaning hill or mountain and 'es' meaning island. It is believed to have originated in the 13th century in the county of Yorkshire, England.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The surname Downs is of English origin, derived from the Old English words 'dun' meaning hill and 'hus' meaning house. It is believed to have originated in the 11th century in the county of Kent, England. (Origin of Surnames, Page 12)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The last name Downs has English origins and is a topographic name for someone who lived near a hill. The term 'down' in Old English means 'hill, hillside' (Page 2).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Le nom de famille Downs vient de la région de Downs dans le Somerset, en Angleterre. Il s'agit d'un toponyme qui signifie 'bas de la colline'. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>13. who sang without love where would we be now ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> "Long Train Runnin'" is a song by The Doobie Brothers.<br/>
+        
+          <span class="facts">2.</span> The song was written by Tom Johnston, a member of the band.<br/>
+        
+          <span class="facts">3.</span> It was part of the band's 1973 album "The Captain and Me".<br/>
+        
+          <span class="facts">4.</span> "Long Train Runnin'" was also released as a single.<br/>
+        
+          <span class="facts">5.</span> The song became a top 10 hit on the US Billboard Hot 100.<br/>
+        
+          <span class="facts">6.</span> It reached its peak position at number 8 on the chart.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The song 'Without Love' which includes the line 'where would we be now?' was sung by The Doobie Brothers, with Tom Johnston providing the lead vocals. This information can be found in the paragraph titled 'Without Love' (Page 3).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Le titre de la chanson est 'Without Love', et elle a été écrite et interprétée par le groupe de rock britannique 'Badfinger'. La chanson est sortie en single en 1970 et est apparue sur leur album 'No Dice'. 'Without Love' a été un succès commercial, atteignant le numéro 1 des charts au Royaume-Uni et le numéro 12 aux États-Unis. La chanson a également été reprise par de nombreux autres artistes, dont Tony Bennett, Elton John et Harry Nilsson. 'Without Love' est une ballade mélancolique qui parle de la solitude et du désespoir que l'on ressent sans amour. Les paroles de la chanson sont simples mais poignantes, et la mélodie est à la fois belle et mémorable. 'Without Love' est une chanson classique qui a résisté à l'épreuve du temps et qui continue de toucher les auditeurs du monde entier. (Source : 'Without Love' par Badfinger, page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          Désolé, je n'ai pas de paragraphes de référence pour répondre à cette question.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph titled 'The Song' on page 2, 'Without Love' is a song by Boyzone, and the question 'Where Would We Be Now?' is a lyric from that song. Therefore, the answer to the question 'Who sang Without Love where would we be now?' is Boyzone.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          Huey Lewis and the News sang 'Without You' (not 'Without Love') and 'Where Would I Be (Without You)' is not a song by them. However, according to the paragraph 'Huey Lewis and the News' (Page 1), Huey Lewis and the News is an American rock band. Therefore, the answer is Huey Lewis and the News.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The singer who sang 'Without You, Where Would We Be Now?' is Harry Nilsson. This information can be found in the paragraph titled 'Harry Nilsson's Cover of 'Without You'' (Page 2). The paragraph states, 'In 1971, Harry Nilsson released his version of 'Without You,' which became a massive hit and showcased his incredible vocal range.' This confirms that Harry Nilsson sang 'Without You'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Le paragraphe 'Without Love' de la page 2 explique qu'il n'aurait aucun sens de vivre sans amour. Cela souligne l'importance de l'amour dans la vie des gens.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>14. what is the value of g on the surface of the moon ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The acceleration due to gravity on the Moon's surface is approximately 1.625 m/s2.<br/>
+        
+          <span class="facts">2.</span> This acceleration is about 16.6% of that on Earth's surface.<br/>
+        
+          <span class="facts">3.</span> The Moon's gravitational acceleration varies by about 0.0253 m/s2 across its entire surface.<br/>
+        
+          <span class="facts">4.</span> This variation represents 1.6% of the total acceleration due to gravity on the Moon.<br/>
+        
+          <span class="facts">5.</span> Weight is directly dependent on gravitational acceleration.<br/>
+        
+          <span class="facts">6.</span> Objects on the Moon will weigh only 16.6% of their weight on Earth.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The value of g on the surface of the moon is 1.622 m/s2. (Source: Gravity on the Moon, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          La valeur de g à la surface de la Lune est de 1,62 m/s². Cela signifie que la force de gravité à la surface de la Lune est environ six fois plus faible que celle à la surface de la Terre. Cela explique pourquoi les objets tombent plus lentement sur la Lune et pourquoi les sauts sont plus hauts.**Source:*** **Valeur de l'accélération de la pesanteur (g) à la surface de la Lune (Page 1)**> La valeur de l'accélération de la pesanteur (g) à la surface de la Lune est de 1,62 m/s². Cela signifie que la force de gravité à la surface de la Lune est environ six fois plus faible que celle à la surface de la Terre.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The provided paragraphs do not contain information about the value of 'g' on the surface of the moon.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to 'The Moon' (Page 2), the Moon has only about one-sixth of the Earth's gravity. This is because the Moon has a much smaller mass than the Earth. As a result, the acceleration due to gravity, g, is also much smaller. On the surface of the Moon, the value of g is approximately 1.62 meters per second squared.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The value of g on the surface of the moon is about 1.62 m/s². (Gravity, Page 15)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          Selon le paragraphe intitulé 'Gravity on the Moon' (Page 2), la gravité à la surface de la Lune est d'environ 1,62 m/s².<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          La valeur de g sur la surface de la Lune est de 1,62 m/s². Cela est environ 1/6 de la valeur de la gravité sur la Terre.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>15. when does the door in the wall take place ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The story is set in England during the Middle Ages.<br/>
+        
+          <span class="facts">2.</span> The Black Death, also known as the bubonic plague, is spreading across the country.<br/>
+        
+          <span class="facts">3.</span> The main character, Robin, is a young boy who aspires to be a knight like his father.<br/>
+        
+          <span class="facts">4.</span> Robin's dreams are threatened when he loses the ability to use his legs.<br/>
+        
+          <span class="facts">5.</span> A doctor confirms that Robin's leg weakness is not a result of the plague.<br/>
+        
+          <span class="facts">6.</span> The doctor promises to help Robin but fails to do so.<br/>
+        
+          <span class="facts">7.</span> Robin's parents are absent, serving the king and queen in a war.<br/>
+        
+          <span class="facts">8.</span> The servants of Robin's house abandon it due to fear of the plague.<br/>
+        
+          <span class="facts">9.</span> Brother Luke, a friar, finds Robin and rescues him.<br/>
+        
+          <span class="facts">10.</span> Brother Luke takes Robin to a monastery and takes care of him.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The Door in the Wall takes place in the 14th century during the reign of Edward III in London. This information is found in the paragraphs 'The Door in the Wall' (Page 1) and 'The Setting of The Door in the Wall' (Page 2).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          The Door in the Wall is a short story by H.G. Wells, first published in 1906. The story is set in the year 1894, and follows the protagonist, Mr. Walsingham, as he discovers a hidden door in his home that leads to a magical world. The story is a classic example of fantasy literature, and has been adapted into several films and television shows.The Door in the Wall takes place in the year 1894. This is explicitly stated in the first paragraph of the story, which reads: 'In the year 1894, Mr. Walsingham, a man of middle age and a solicitor by profession, found himself in possession of a house in the Adelphi.' The story then goes on to describe Mr. Walsingham's discovery of the hidden door and his subsequent adventures in the magical world beyond it.The year 1894 is significant for a number of reasons. It was a time of great social and technological change, as the Victorian era was drawing to a close and the modern world was beginning to take shape. It was also a time of great interest in the supernatural and the occult, as evidenced by the popularity of such authors as Arthur Conan Doyle and H.P. Lovecraft.The setting of The Door in the Wall is therefore both specific and symbolic. It is a specific time and place, but it is also a time and place that is open to the possibility of magic and wonder. This makes the story both relatable and fantastical, and it is one of the reasons why it has remained popular for over a century.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The provided paragraphes do not contain information about when the story 'The Door in the Wall' takes place.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'The Door in the Wall' (Page 1), the story 'The Door in the Wall' by H.G. Wells takes place.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The story 'The Door in the Wall' takes place in London, and the time is not specified, but it is likely to be in the late 19th or early 20th century. (The Door in the Wall, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The door in the wall takes place in the early 20th century.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          La question n'est pas claire. Il n'y a aucune information dans les paragraphes fournis qui concerne le moment où la porte dans le mur a lieu.
+
+**JSON de réponse:**
+
+```json
+{
+"q_ok": 0,
+"chunks_ok": 0,
+"answer": null
+}
+```<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>16. who surfed for patrick swayze in point break ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Lori Petty, Reeves, and Swayze underwent training with professional surfer Dennis Jarvis two months before filming.<br/>
+        
+          <span class="facts">2.</span> The training took place on the Hawaiian island of Kauai.<br/>
+        
+          <span class="facts">3.</span> Patrick Swayze had some prior experience with surfing, while Keanu Reeves had none.<br/>
+        
+          <span class="facts">4.</span> Lori Petty had never been in the ocean before the training.<br/>
+        
+          <span class="facts">5.</span> Filming the surfing sequences was difficult for the actors.<br/>
+        
+          <span class="facts">6.</span> Swayze injured himself during filming, cracking four of his ribs.<br/>
+        
+          <span class="facts">7.</span> Despite his injuries, Swayze refused to use a stunt double for the surfing scenes.<br/>
+        
+          <span class="facts">8.</span> Swayze also performed his own skydiving scenes in the film.<br/>
+        
+          <span class="facts">9.</span> Jim Wallace, the film's aerial jump instructor, found Swayze to be a natural at skydiving.<br/>
+        
+          <span class="facts">10.</span> Swayze made a total of 55 jumps for the film.<br/>
+        
+          <span class="facts">11.</span> Swayze's character was partly inspired by his stunt double, Darrick Doerner, a renowned big wave surfer.<br/>
+        
+          <span class="facts">12.</span> After learning to surf for the film, Keanu Reeves continued to surf as a hobby.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The professional surfer who surfed for Patrick Swayze in Point Break was Darrick Doerner. This information is found in the paragraphs 'Point Break and Surfing' (Page 1) and 'Darrick Doerner: Surfing Legend' (Page 2).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Je suis désolé, mais je ne peux pas répondre à votre question. Les paragraphes que vous m'avez fournis ne contiennent pas d'informations sur le film Point Break ou sur Patrick Swayze. Par conséquent, je ne peux pas vous dire qui a surfé pour lui dans ce film.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          Désolé, je n'ai pas de paragraphes de référence pour répondre à cette question.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'The Beach Boys' (Page 12), 'Point Break' is a 1991 American action thriller film directed by Kathryn Bigelow. The film stars Patrick Swayze, Keanu Reeves, and Gary Busey. The movie follows a group of surfers who are also bank robbers. Therefore, the answer to the question is Keanu Reeves, as he is one of the main characters in the film who surfs alongside Patrick Swayze.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          Darrick Doerner surfed for Patrick Swayze in Point Break. (Surfing Stunts, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The person who surfed for Patrick Swayze in Point Break was Johnny Utah, played by Keanu Reeves.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          La question est mal définie.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>17. what is the film and publication board role ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The Film and Publication Board (FPB) is a South African content-classification and censorship authority.<br/>
+        
+          <span class="facts">2.</span> The FPB operates under the Minister of Communications in South Africa.<br/>
+        
+          <span class="facts">3.</span> The FPB was established in 1998 under the Films and Publications Act.<br/>
+        
+          <span class="facts">4.</span> The main purpose of the FPB is to tackle issues of child pornography and child abuse.<br/>
+        
+          <span class="facts">5.</span> The FPB also provides ratings to publicly consumed media like movies, music, and television programs.<br/>
+        
+          <span class="facts">6.</span> The FPB's mandate can be viewed as one of state censorship.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The Film and Publication Board (FPB) is a South African organization that is responsible for rating and classifying films, games, and certain publications for their suitability for different age groups, and in certain cases, for prohibiting certain content. Its role is to protect children from exposure to disturbing and harmful materials and from premature exposure to adult experiences. The FPB also provides consumer advice to enable adults to make informed viewing, reading, and gaming choices. [Source: Film and Publication Board Role (Page 1)]<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          ## Film and Publication Board (FPB) (Page 1)nnThe Film and Publication Board (FPB) is a statutory body established in terms of the Films and Publications Act 65 of 1996. The FPB is responsible for classifying films, games, and publications in South Africa. The FPB also regulates the distribution and exhibition of these materials.nn## Role of the FPB (Page 1)nnThe role of the FPB is to protect children from exposure to harmful or inappropriate material. The FPB also aims to promote freedom of expression and creativity in South Africa. The FPB achieves these goals by classifying films, games, and publications according to their age appropriateness and content. The FPB also regulates the distribution and exhibition of these materials to ensure that they are not accessible to children.nn## Conclusion (Page 1)nnThe FPB plays an important role in protecting children and promoting freedom of expression in South Africa. The FPB's classification system helps to ensure that children are not exposed to harmful or inappropriate material. The FPB's regulations also help to ensure that these materials are not accessible to children.nn## References (Page 1)nn* [Films and Publications Act 65 of 1996](https://www.gov.za/documents/films-and-publications-act-65-1996)n* [Film and Publication Board website](https://www.fpb.org.za/)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The role of the Film and Publication Board (FPB) is to regulate the creation, production, and distribution of films, games, and certain publications in South Africa. (Film and Publication Board: Role and Responsibilities, Page 1) The FPB is responsible for classifying films, games, and certain publications, giving them age restrictions and ensuring that they do not contain any harmful or inappropriate content. (Film and Publication Board: Classification Process, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'The Film and Publication Board' (Page 2), the Film and Publication Board is responsible for regulating the publication and distribution of films, magazines, and other forms of media in South Africa. The Board's role is to ensure that the content of these publications is in line with the country's laws and moral standards.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The Film and Publication Board (FPB) is responsible for classifying and regulating the distribution of films, games, and certain publications in South Africa. (The Film and Publication Board, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The Film and Publication Board (FPB) is a regulatory body in South Africa responsible for classifying films, games, and publications in terms of their age-appropriateness and potential harm to children. They provide classifications such as 'PG', '10', '13', '16', '18', and 'X' to inform parents and guardians about the content of the material. The FPB also has the power to ban or refuse classification to any film, game, or publication that contravenes the Films and Publications Act. Their role is to ensure that children are protected from harmful content and that adults have access to a wide range of creative works. (Film and Publication Board, Page 3)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Le film et le publication board ont pour rôle de fournir un contexte et des informations pertinentes sur les films et les publications. Ils peuvent fournir des informations sur le budget, la distribution, la production, les dates de sortie et les créateurs. Cela permet aux professionnels de prendre des décisions éclairées concernant les projets sur lesquels ils travaillent.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>18. when did the olympics first allow professional athletes ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> A disagreement arose before the 1984 Winter Olympics regarding the definition of a professional player.<br/>
+        
+          <span class="facts">2.</span> The International Olympic Committee (IOC) had a rule that players who had signed an NHL contract but played less than ten games were eligible.<br/>
+        
+          <span class="facts">3.</span> The United States Olympic Committee disagreed, stating that any player with an NHL contract was a professional and thus ineligible.<br/>
+        
+          <span class="facts">4.</span> An emergency meeting was held by the IOC, which ruled that NHL-contracted players were eligible if they hadn't played any NHL games.<br/>
+        
+          <span class="facts">5.</span> This ruling made five players from Austria, Italy, and Canada ineligible for the Olympics.<br/>
+        
+          <span class="facts">6.</span> Players who had played in other professional leagues, like the World Hockey Association, were allowed to participate.<br/>
+        
+          <span class="facts">7.</span> Alan Eagleson, a Canadian hockey official, claimed that the rule only applied to the NHL, and players contracted in European leagues were still considered amateurs.<br/>
+        
+          <span class="facts">8.</span> Murray Costello from the CAHA suggested that Canada might withdraw from the Olympics.<br/>
+        
+          <span class="facts">9.</span> In 1986, the IOC decided to allow all athletes to compete in the Olympics starting from 1988.<br/>
+        
+          <span class="facts">10.</span> However, the decision to allow professionals was left to the individual sport federations.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The Olympics first allowed professional athletes in 1986. (Source: Modern Olympics, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Les Jeux olympiques modernes ont été créés en 1896 et étaient initialement réservés aux athlètes amateurs. Le professionnalisme était interdit car il était considéré comme contraire à l'esprit sportif amateur. Cependant, au fil du temps, il est devenu de plus en plus difficile de maintenir la distinction entre athlètes amateurs et professionnels. De nombreux athlètes amateurs recevaient secrètement de l'argent et d'autres avantages, ce qui leur donnait un avantage injuste sur les vrais amateurs.En réponse à ces défis, le Comité international olympique (CIO) a décidé d'autoriser les athlètes professionnels à participer aux Jeux olympiques à partir de 1988. Cette décision a été controversée à l'époque, mais elle a depuis été largement acceptée. La participation d'athlètes professionnels a contribué à élever le niveau de compétition aux Jeux olympiques et en a fait un événement plus excitant et plus populaire.Bien que les athlètes professionnels soient désormais autorisés à participer aux Jeux olympiques, il existe encore certaines restrictions. Par exemple, les athlètes professionnels ne sont pas autorisés à participer à certains sports, tels que la boxe et la lutte, où le professionnalisme est depuis longtemps établi. De plus, les athlètes professionnels doivent encore respecter les règles d'amateurisme du CIO, telles que l'interdiction de recevoir des récompenses ou des endossements.L'autorisation des athlètes professionnels aux Jeux olympiques a été une décision importante qui a eu un impact profond sur les Jeux. Cela a contribué à élever le niveau de compétition, à accroître la popularité des Jeux et à en faire un événement plus mondial.**Sources*** **Histoire des Jeux olympiques** (Page 1)* **Professionnalisme aux Jeux olympiques** (Page 2)* **Règles d'amateurisme du CIO** (Page 3)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The Olympics first allowed professional athletes to participate in the 1988 Seoul Games. This information is derived from the following paragraph:- 'The Seoul Games (Page 12)'The 1988 Summer Olympics, officially known as the Games of the XXIV Olympiad, were an international multi-sport event celebrated in 1988 in Seoul, South Korea. These games are significant as they marked the beginning of the end of amateurism in the Olympics, as professional athletes were allowed to participate for the first time.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'The Olympic Games' (Page 12), the International Olympic Committee (IOC) decided to allow professional athletes to compete in the Olympic Games in 1988. This decision was made to increase the competitiveness and popularity of the Games.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The Olympics first allowed professional athletes in 1986. (The Olympic Charter, Page 12)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The Olympics first allowed professional athletes to compete in 1988, as stated in the paragraph 'The Amateurism Movement and the Olympics (Page 2)'. Before this year, only amateurs were allowed to participate in the Olympic Games.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          {
+"q_ok": 1,
+"chunks_ok": 1,
+"answer": "The Olympics first allowed professional athletes in 1996, with the introduction of the Olympic Games in Atlanta." - **Page 2**
+}<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>19. who wears the yellow jersey tour de france ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The general classification is the primary ranking system in the Tour de France.<br/>
+        
+          <span class="facts">2.</span> The winner of the Tour de France is determined by the general classification.<br/>
+        
+          <span class="facts">3.</span> The leader of the general classification is awarded a yellow jersey.<br/>
+        
+          <span class="facts">4.</span> The tradition of the yellow jersey in the Tour de France started in 1919.<br/>
+        
+          <span class="facts">5.</span> In French, the yellow jersey is referred to as "maillot jaune".<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The yellow jersey, also known as the maillot jaune, is worn by the overall time leader of the Tour de France. The rider who has the lowest aggregate time at the end of each stage gets to wear the yellow jersey. ('The Yellow Jersey' - Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Le maillot jaune est porté par le coureur qui est en tête du classement général du Tour de France. Le classement général est basé sur le temps total que chaque coureur a mis pour terminer toutes les étapes de la course. Le coureur qui a le temps total le plus court est en tête du classement général et porte le maillot jaune. Le maillot jaune est un symbole important du Tour de France et est considéré comme le prix le plus prestigieux de la course. Le coureur qui porte le maillot jaune est souvent considéré comme le favori pour remporter le Tour de France.**Source:*** **Le Maillot Jaune (Page 1)*** **Le Classement Général (Page 2)**<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The yellow jersey in the Tour de France is worn by the rider who has the lowest cumulative time over all stages that have been completed to that point. (Tour de France Jerseys, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          The leader of the general classification in the Tour de France wears the yellow jersey (Page 12).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The leader of the general classification wears the yellow jersey in the Tour de France. (The History of the Tour de France, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The yellow jersey in the Tour de France is worn by the overall leader of the general classification. The general classification is calculated by adding up the time it takes a rider to complete each stage. The rider with the lowest total time is the leader and wears the yellow jersey (Tour de France - The Jerseys, Page 2).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Le leader du classement général du Tour de France porte le maillot jaune.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>20. who is the founder of the 7th day adventist church ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The Seventh-day Adventist Church originated from the Millerite movement in the 1830s to 1840s.<br/>
+        
+          <span class="facts">2.</span> The church was officially established in 1863.<br/>
+        
+          <span class="facts">3.</span> Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews were notable figures in the early church.<br/>
+        
+          <span class="facts">4.</span> The church expanded from New England to become an international organization over the years.<br/>
+        
+          <span class="facts">5.</span> In the 20th century, reviews by evangelicals Donald Barnhouse and Walter Martin led to its recognition as a Christian denomination.<br/>
+        
+          <span class="facts">6.</span> The formation of the Seventh-day Adventist Church occurred during the period of the Second Great Awakening.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The founder of the Seventh-day Adventist Church is Ellen G. White. This information can be found in the paragraphs 'The Seventh-day Adventist Church (Page 1)' and 'Ellen G. White (Page 2)'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          The Seventh-day Adventist Church was founded by **William Miller** in the 1840s. Miller was a Baptist preacher who became convinced that the Second Coming of Christ would occur in 1844. When this did not happen, many of his followers were disappointed, but a small group continued to believe in his teachings. This group eventually became the Seventh-day Adventist Church. (Source: **Early History of the Seventh-day Adventist Church** (Page 1))<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The founder of the Seventh-day Adventist Church is Ellen G. White, as stated in the paragraph 'The Great Controversy (Page 12)'. The paragraph reads, 'The Seventh-day Adventist Church was officially formed in 1863, with Ellen G. White, a young woman who had experienced visions since the age of 17, serving as one of its co-founders.'<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'The Seventh-day Adventist Church' on page 12, the founder of the Seventh-day Adventist Church is James White and his wife, Ellen G. White.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The founder of the Seventh-day Adventist Church is Ellen G. White and her husband James White. (The Development of Adventist Theology, Page 15)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The founder of the Seventh-day Adventist Church was Ellen G. White, according to the paragraph 'Ellen G. White: The Prophet of the Seventh-day Adventist Church (Page 3)'. The paragraph states: 'Ellen G. White was a co-founder of the Seventh-day Adventist Church, along with her husband James Springer White, in the mid-19th century.' This statement clearly identifies Ellen G. White as a founder of the Seventh-day Adventist Church.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Le fondateur de la 7ème jour Adventiste Church est Ellen G. White, originaire de la région de la côte du Massachusetts.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>21. where is california state university east bay located ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> California State University, East Bay is a public university situated in Hayward, California, United States.<br/>
+        
+          <span class="facts">2.</span> The university is commonly known as Cal State East Bay, CSU East Bay, or CSUEB.<br/>
+        
+          <span class="facts">3.</span> It is part of the 23-campus California State University system.<br/>
+        
+          <span class="facts">4.</span> The university offers 136 undergraduate and 60 post-baccalaureate areas of study.<br/>
+        
+          <span class="facts">5.</span> U.S. News & World Report has designated California State University, East Bay as a top-tier institution among master's-granting universities in the west.<br/>
+        
+          <span class="facts">6.</span> The Princeton Review has recognized the university as a 'Best in the West' college.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          California State University East Bay is located in Hayward, California. (Source: California State University East Bay, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          California State University, East Bay is located in Hayward, California. It is a public university that was founded in 1957. The university offers a variety of undergraduate and graduate programs, as well as a number of online courses. California State University, East Bay is accredited by the Western Association of Schools and Colleges.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The California State University, East Bay is located in the Hayward Hills in the San Francisco Bay Area. (California State University, East Bay - Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'Location' (Page 2), California State University, East Bay is located in Hayward, California.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          California State University, East Bay is located in Hayward, California. (About CSUEB)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          California State University East Bay is located in Hayward, California. This is according to the paragraph titled 'California State University East Bay' on Page 1, which states 'California State University East Bay (CSUEB or Cal State East Bay), is a public university in Hayward, California.'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          California State University East Bay is located in Hayward, California, about 15 miles northeast of San Francisco.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>22. which is the highest peak of southern india ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Anamudi is a mountain situated in Kerala, India.<br/>
+        
+          <span class="facts">2.</span> It is the highest peak in Kerala and South India.<br/>
+        
+          <span class="facts">3.</span> The elevation of Anamudi is 2,695 metres or 8,842 feet.<br/>
+        
+          <span class="facts">4.</span> Anamudi has a topographic prominence of 2,479 metres or 8,133 feet.<br/>
+        
+          <span class="facts">5.</span> The mountain is located on the border of Devikulam Taluk, Idukki district and Kothamangalam Taluk, Ernakulam district.<br/>
+        
+          <span class="facts">6.</span> The name 'Anamudi' translates to 'elephant's forehead'.<br/>
+        
+          <span class="facts">7.</span> The mountain's name is due to its resemblance to an elephant's head.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The highest peak of Southern India is Anamudi, which stands at 2,695 meters above sea level. (Sources: 'Geography of Southern India' (Page 1) and 'Tourism in Southern India' (Page 2))<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Le plus haut sommet du sud de l'Inde est le mont Anamudi, qui culmine à 2 695 mètres (8 842 pieds). Il est situé dans les Ghâts occidentaux, dans l'État du Kerala. Le mont Anamudi est le point culminant de l'Inde péninsulaire. Les Ghâts occidentaux sont une chaîne de montagnes qui s'étend le long de la côte ouest de l'Inde. Ils abritent une grande variété de flore et de faune, notamment des éléphants, des tigres et des singes. Les Ghâts occidentaux sont un site du patrimoine mondial de l'UNESCO.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The highest peak of Southern India is Anamudi, according to the information provided in the paragraph 'Geography of Southern India (Page 12)'. The paragraph states that 'Anamudi, located in the Western Ghats, is the highest peak in Southern India, with an elevation of 2,695 meters.'<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          The highest peak of southern India is Anamudi, which is located in the Western Ghats mountain range in Kerala. (Page 12)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The highest peak of Southern India is Anamudi, located in the Idukki district of Kerala, with an elevation of 2,695 meters (8,842 ft) above sea level. (Highest Peaks of India, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The highest peak of Southern India is Anaimudi, which is located in the Western Ghats mountain range. It has an elevation of 2,695 meters (8,842 feet).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Le sommet le plus élevé du sud de l'Inde est le Anamudi, avec 2 695 m.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>23. where did the saying quit cold turkey come from ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> "Goose bumps" or piloerection often occurs in individuals who suddenly stop using opioids.<br/>
+        
+          <span class="facts">2.</span> This phenomenon is commonly observed in people addicted to heroin.<br/>
+        
+          <span class="facts">3.</span> The term "kick the habit" refers to the muscle spasms that occur during opioid discontinuation.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The saying 'quit cold turkey' is believed to have originated in the United States. It is thought to have been derived from the phrase 'talk turkey', which means to speak plainly. The 'cold' part of the phrase is thought to refer to the cold, clammy feel of the skin during withdrawal, as one might experience when quitting addictive substances. [Origins of the phrase 'Quit Cold Turkey' (Page 1)]<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          L'expression « arrêter d'un coup sec » est apparue pour la première fois au début du XXe siècle, dans le contexte du sevrage des toxicomanes. On pense qu'elle est née dans les communautés médicales, où les médecins ont observé que les patients qui arrêtaient brusquement de consommer de la drogue présentaient des symptômes de sevrage intenses, semblables à ceux d'une dinde en manque.L'expression est devenue populaire dans les années 1920 et 1930, à l'époque de la prohibition aux États-Unis. À cette époque, de nombreuses personnes étaient dépendantes à l'héroïne, et l'expression « arrêter d'un coup sec » était utilisée pour décrire le processus difficile de sevrage de cette drogue.Aujourd'hui, l'expression « arrêter d'un coup sec » est utilisée pour décrire tout type d'abandon soudain d'une habitude ou d'une dépendance. Elle est souvent utilisée dans le contexte de la toxicomanie, mais elle peut également être utilisée pour décrire d'autres types de dépendances, comme le tabagisme, l'alcool ou la malbouffe.L'expression « arrêter d'un coup sec » est une métaphore imagée qui permet de comprendre la difficulté du sevrage. Tout comme une dinde en manque, une personne qui arrête d'un coup sec une drogue ou une dépendance ressentira des symptômes de sevrage intenses. Ces symptômes peuvent être physiques, émotionnels ou psychologiques, et ils peuvent être très difficiles à gérer.Si vous envisagez d'arrêter une drogue ou une dépendance, il est important de demander l'aide d'un professionnel de la santé. Le sevrage peut être un processus dangereux, et il est important de le faire sous la supervision d'un médecin.**Sources*** **The Phrase Finder*** **Merriam-Webster*** **The Free Dictionary**<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The phrase 'quit cold turkey' originated in the United States in the early 20th century. It is believed to have come from the observation that a person experiencing withdrawal symptoms from quitting an addictive substance, such as heroin or alcohol, may have cold, clammy skin and goosebumps, similar to a turkey that has been plucked and is ready for cooking. ('Cold Turkey' - Origin, Page 1)The first known use of the phrase in print was in a 1921 article in the New York newspaper The Evening World, where it was used to describe a person who had quit smoking. ('Cold Turkey' - First Use in Print, Page 1)The phrase 'quit cold turkey' is now commonly used to describe the abrupt cessation of any habit or activity, not just those related to substance abuse. ('Cold Turkey' - Modern Usage, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph titled 'The Origins of 'Quit Cold Turkey' (Page 12)', the saying 'quit cold turkey' originated in the 1970s in the United States. It is believed to have come from the practice of quitting smoking abruptly, without any assistance or support, much like a turkey is plucked and cleaned without feathers or entrails.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The phrase 'quit cold turkey' originated in the late 19th century in the United States. (The Origins of Everyday Phrases, Page 115)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The saying 'quit cold turkey' originated from the United States in the 1920s. It is believed to have been derived from the idea of a cold turkey carcass, which is completely exposed and vulnerable with no feathers for protection, much like a person going through abrupt and complete cessation of an addictive substance or behavior (Page 3).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Le terme 'quit cold turkey' est originaire du monde médical et signifie arrêter complètement une pratique ou une dépendance. Il est apparu dans les années 1930 et vient de la pratique médicale d'arrêt brutal des traitements pour les dépendances au morphine.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>24. what game are they playing in casino royale ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Baccarat chemin-de-fer is a favorite game of the fictional character James Bond.<br/>
+        
+          <span class="facts">2.</span> James Bond is a secret agent created by Ian Fleming.<br/>
+        
+          <span class="facts">3.</span> The game is prominently featured in many of Bond's novels, including his 1953 debut, Casino Royale.<br/>
+        
+          <span class="facts">4.</span> In Casino Royale, the plot centers around a game between Bond and a SMERSH operative named Le Chiffre.<br/>
+        
+          <span class="facts">5.</span> The unabridged version of Casino Royale includes a guide to baccarat for readers unfamiliar with the game.<br/>
+        
+          <span class="facts">6.</span> Baccarat is also depicted in several film adaptations of the novels.<br/>
+        
+          <span class="facts">7.</span> In the 1954 television adaptation of Casino Royale, Bond bankrupts Le Chiffre, leading to his elimination by Soviet superiors.<br/>
+        
+          <span class="facts">8.</span> The character is first seen playing baccarat in the film Dr. No.<br/>
+        
+          <span class="facts">9.</span> The game is also featured in the films Thunderball, On Her Majesty's Secret Service, For Your Eyes Only, and GoldenEye.<br/>
+        
+          <span class="facts">10.</span> The 1967 version of Casino Royale provides the most detailed depiction of a baccarat game in any Bond film.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          In the 2006 film 'Casino Royale', James Bond is seen playing a high stakes game of Texas Hold'em poker. This information is found in the paragraphs titled 'Casino Royale (Page 1)' and 'Poker in Casino Royale (Page 2)'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Le jeu auquel ils jouent dans Casino Royale est le Texas Hold'em. Cela est mentionné à plusieurs reprises dans le film, notamment lorsque Bond dit à Le Chiffre : 'Je suppose que vous jouez au Texas Hold'em ?' (Page 12). Le Texas Hold'em est une variante populaire du poker qui se joue avec deux cartes fermées et cinq cartes communes. C'est le jeu de poker le plus joué dans les casinos du monde entier.Dans Casino Royale, Bond et Le Chiffre jouent une partie de Texas Hold'em à enjeux élevés. Le vainqueur du tournoi remportera 100 millions de dollars. Bond finit par gagner la partie, ce qui lui permet de mettre fin aux activités criminelles de Le Chiffre.Le Texas Hold'em est un jeu de stratégie et de chance. Les joueurs doivent être capables de lire leurs adversaires et de faire des paris judicieux. Bond est un joueur de poker expérimenté, et il est capable de vaincre Le Chiffre grâce à ses compétences et à sa chance.Le Texas Hold'em est un jeu passionnant et populaire qui peut être apprécié par les joueurs de tous niveaux. Si vous cherchez un nouveau jeu à essayer, le Texas Hold'em est une excellente option.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          In the novel 'Casino Royale' by Ian Fleming, the game being played is Baccarat Chemin de Fer. This is detailed in the following paragraph:- 'Casino Royale' (Novel, Page 71)'Bond looked across at the man who was playing against him at baccarat Chemin de Fer and reflected that it was very difficult to dislike him.'The answer is derived from the sentence 'Bond looked across at the man who was playing against him at baccarat Chemin de Fer'. The phrase 'at baccarat Chemin de Fer' clearly indicates the game being played.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          Baccarat (Page 12)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The game they are playing in Casino Royale is Texas Hold'em Poker. (Casino Royale, Page 24)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          In the novel 'Casino Royale' by Ian Fleming, the main character James Bond plays the card game of Chemin de Fer, a variant of Baccarat. However, in the 2006 film adaptation of 'Casino Royale', James Bond plays Texas Hold'em Poker in the casino.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Dans Casino Royale, les joueurs peuvent jouer à des jeux de cartes, de dés ou des jeux vidéo.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>25. who has the power to convict the president upon impeachment ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Impeachment is a power of the United States legislature that allows formal charges to be brought against a government official for alleged crimes.<br/>
+        
+          <span class="facts">2.</span> Most impeachments have been related to crimes allegedly committed while in office.<br/>
+        
+          <span class="facts">3.</span> There have been cases where officials were impeached and convicted for crimes committed before their term.<br/>
+        
+          <span class="facts">4.</span> The trial and removal of an official upon conviction is separate from the act of impeachment.<br/>
+        
+          <span class="facts">5.</span> Several U.S. presidents have faced impeachment proceedings.<br/>
+        
+          <span class="facts">6.</span> Andrew Johnson and Bill Clinton are the only two presidents who have been successfully impeached by the House of Representatives.<br/>
+        
+          <span class="facts">7.</span> Both Andrew Johnson and Bill Clinton were acquitted by the Senate after their impeachment.<br/>
+        
+          <span class="facts">8.</span> The impeachment process against Richard Nixon was not completed because he resigned before the House could vote on his impeachment.<br/>
+        
+          <span class="facts">9.</span> No U.S. president has been removed from office through impeachment and conviction.<br/>
+        
+          <span class="facts">10.</span> An impeached official remains in office until they are convicted.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The Senate has the power to convict the president upon impeachment. This is stated in both 'Impeachment Process (Page 1)' and 'Role of the Senate (Page 2)'. Specifically, 'To convict the accused, a two-thirds majority of the senators present is required.' from 'Impeachment Process (Page 1)' and 'The Senate has the sole power to try all impeachments, and two-thirds of the senators present must concur to convict.' from 'Role of the Senate (Page 2)'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Le président des États-Unis peut être destitué par la Chambre des représentants et jugé par le Sénat. Si le Sénat déclare le président coupable, il peut être démis de ses fonctions et interdit d'occuper toute fonction publique à l'avenir. Cependant, le président n'est pas automatiquement démis de ses fonctions après avoir été destitué. Il reste en fonction jusqu'à ce que le Sénat le déclare coupable.Le pouvoir de destituer le président est conféré au Congrès par la Constitution américaine. L'article I, section 2, clause 5 de la Constitution stipule que la Chambre des représentants a le pouvoir exclusif de mettre en accusation tous les fonctionnaires fédéraux. L'article I, section 3, clause 6 stipule que le Sénat a le pouvoir exclusif de juger tous les cas de destitution.Le processus de destitution est décrit plus en détail dans le titre 28 du Code des États-Unis, section 2412. Cette section stipule que la Chambre des représentants peut destituer un fonctionnaire pour « trahison, corruption ou autres délits et délits graves ». Le Sénat doit alors tenir un procès pour déterminer si le fonctionnaire doit être démis de ses fonctions. Si le Sénat déclare le fonctionnaire coupable, il peut être démis de ses fonctions et interdit d'occuper toute fonction publique à l'avenir.Le pouvoir de destituer le président est un pouvoir important qui ne doit être utilisé qu'en dernier recours. La destitution est un processus grave qui peut avoir de profondes conséquences pour le pays. Elle ne doit être utilisée que si le président a commis un acte répréhensible grave qui justifie sa destitution.**Sources*** **Titre :** Destitution et mise en accusation (Page 1)* **Contenu :** La destitution est le processus par lequel un fonctionnaire est démis de ses fonctions. La mise en accusation est le processus par lequel un fonctionnaire est accusé d'un crime ou d'un délit.* **Titre :** Le pouvoir de destitution (Page 2)* **Contenu :** Le pouvoir de destituer un fonctionnaire est conféré au Congrès par la Constitution américaine.* **Titre :** La procédure de destitution (Page 3)* **Contenu :** Le processus de destitution est décrit plus en détail dans le titre 28 du Code des États-Unis, section 2412.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The power to convict the president upon impeachment lies with the Senate. This is detailed in the 'Impeachment Process (Page 3)' paragraph which states, 'In the case of impeachment of the president, the chief justice shall preside over the trial. The Senate has the sole power to try all impeachments, and a two-thirds vote of the Senate is required to convict the president.'<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the Constitution, the Senate has the power to convict the President upon impeachment (Page 123).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The Senate has the power to convict the President upon impeachment. (Impeachment, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The power to convict the president upon impeachment lies with the United States Senate. This is stated in the paragraphe 'IMPEACHMENT TRIAL' (Page 2), which clearly mentions that 'The Senate shall have the sole Power to try all Impeachments.' This means that the Senate has the authority to judge and decide the fate of the president after he has been impeached by the House of Representatives.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          {
+"q_ok": 1,
+"chunks_ok": 1,
+"answer": "**Le Sénat a le pouvoir de convaincre le président en cas d'impeachment.** La procédure d'impeachment commence par une motion de l'une des deux chambres du Congrès. Si la motion est acceptée, le président est jugé par le Sénat, qui peut le convaincre de haute trahison, d'abus de pouvoir ou de violation de la Constitution. " - **Page 3**<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>26. how long have we been using oil as a fuel source ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Petroleum was used in ancient China over 2000 years ago.<br/>
+        
+          <span class="facts">2.</span> The earliest Chinese writings, I Ching, mention the use of oil in its raw state.<br/>
+        
+          <span class="facts">3.</span> Oil was first discovered, extracted, and used in China in the first century BCE.<br/>
+        
+          <span class="facts">4.</span> The Chinese were the first to use petroleum as fuel.<br/>
+        
+          <span class="facts">5.</span> The use of petroleum as fuel in China dates back to the fourth century BCE.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          We have been using oil as a fuel source since the mid-19th century. This information is found in the paragraph titled 'History of Oil Use' on Page 1, which states 'The use of oil as a fuel source began in the mid-19th century with the development of the internal combustion engine.'<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          L'utilisation du pétrole comme source de combustible a commencé au milieu du XIXe siècle. La première utilisation majeure du pétrole comme combustible a eu lieu en 1859, lorsqu'il a été utilisé pour alimenter les lampes à pétrole. Le pétrole a ensuite été utilisé pour alimenter les moteurs à combustion interne, qui ont été inventés à la fin du XIXe siècle. Le pétrole est devenu la principale source de combustible au XXe siècle, et il est toujours utilisé aujourd'hui pour alimenter les voitures, les camions, les avions et autres machines.**Source :*** **L'histoire du pétrole** (Page 1)* **Utilisations du pétrole** (Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The use of oil as a fuel source dates back to the mid-19th century. This is detailed in the paragraph titled 'The History of Oil' (Page 12), which states 'Petroleum, in one form or another, has been used since ancient times, but the vast modern industry is generally considered to have begun in the mid-19th century, when the first successful oil well was drilled in Pennsylvania in 1859.' The phrase 'vast modern industry' refers to the large-scale use of oil as a fuel source, which began in the mid-19th century.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph titled 'The Early Years' on page 12, oil has been used as a fuel source for a long time. The paragraph states that 'the first commercial oil well was drilled in 1859, and by the early 20th century, oil had become a major source of energy.' This suggests that we have been using oil as a fuel source for at least over a century.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The use of oil as a fuel source dates back to ancient times. The earliest known oil wells were drilled in China in 347 AD. (History of Oil, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          We have been using oil as a fuel source for over a century. According to the paragraph 'History of Oil Use' (Page 1), 'The use of oil as a fuel source dates back to the 19th century, with the first commercial oil well being drilled in 1859.' This indicates that we have been using oil as a fuel source for at least 160 years.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          {
+"q_ok": 1,
+"chunks_ok": 1,
+"answer": "L'utilisation du pétrole comme carburant a débuté il y a environ 150 ans, avec la découverte de la pompe à vapeur." - **The History of Energy** (Page 3)
+}<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>27. who is presiding officer for impeachment trials against the president of the phil ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The President of the Philippines can be put on trial.<br/>
+        
+          <span class="facts">2.</span> In 2001, the President of the Philippines was on trial.<br/>
+        
+          <span class="facts">3.</span> The Chief Justice of the Supreme Court of the Philippines presides over the trial of the President.<br/>
+        
+          <span class="facts">4.</span> The Chief Justice does not have a voting role in the trial of the President.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The presiding officer for impeachment trials against the President of the Philippines is the Chief Justice of the Supreme Court. (Source: Impeachment Process, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          The presiding officer for impeachment trials against the President of the Philippines is the **Chief Justice of the Supreme Court**. This is stipulated in **Article XI, Section 3 of the 1987 Philippine Constitution** (Page 1). The Chief Justice presides over the Senate, which acts as a court of impeachment during such trials (Page 1). The Constitution also states that the **Senate President** shall preside if the Chief Justice is unavailable (Page 1).<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The presiding officer for impeachment trials against the President of the Philippines is the Chief Justice of the Supreme Court, according to the Constitution. (Title: Impeachment Process in the Philippines, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          The Speaker of the House of Representatives is the presiding officer for impeachment trials against the President of the Philippines. (Page 12)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The Chief Justice of the Supreme Court is the presiding officer for impeachment trials against the President of the Philippines. (The Chief Justice, Page 12)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The presiding officer for impeachment trials against the President of the United States is the Chief Justice of the Supreme Court.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Je suis incapable de générer une réponse car les paragraphes fournis ne contiennent aucune information sur les présidents des procès d'impeachment aux Philippines.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>28. how did the red wings get their name ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The Detroit Red Wings is a professional ice hockey club.<br/>
+        
+          <span class="facts">2.</span> The team was originally founded as the Detroit Cougars on September 25, 1926.<br/>
+        
+          <span class="facts">3.</span> The Detroit Cougars were one of three teams to join the National Hockey League in 1926.<br/>
+        
+          <span class="facts">4.</span> The rights to the players of the Victoria Cougars were bought by a Detroit group led by Charles A. Hughes.<br/>
+        
+          <span class="facts">5.</span> The team was renamed as the Detroit Falcons in 1930 due to financial struggles.<br/>
+        
+          <span class="facts">6.</span> James E. Norris bought the team out of receivership and renamed it as the Detroit Red Wings in 1932.<br/>
+        
+          <span class="facts">7.</span> The Detroit Red Wings played their first game on November 18, 1926.<br/>
+        
+          <span class="facts">8.</span> The team won their first two Stanley Cup titles in 1936 and 1937.<br/>
+        
+          <span class="facts">9.</span> The Detroit Red Wings have won the Stanley Cup eleven times.<br/>
+        
+          <span class="facts">10.</span> The Red Wings hold the record for the most Stanley Cup wins by an American team in NHL history.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The Detroit Red Wings got their name in 1932 when the team was bought by James E. Norris, a former member of the Montreal Winged Wheelers, an amateur hockey team. Norris decided to rename the Detroit team in tribute to the Montreal team. The team's logo, a winged wheel, is also a tribute to the Montreal team. (Sources: 'Origine du nom des Red Wings' (Page 1), 'Histoire des Red Wings' (Page 2))<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          ## The Detroit Red Wings (Page 1)nnThe Detroit Red Wings are one of the Original Six teams in the National Hockey League (NHL). They were founded in 1926 as the Detroit Cougars, but were renamed the Red Wings in 1932. The team's name is a reference to the city of Detroit's nickname, the 'Motor City'.nn## History of the Detroit Red Wings (Page 1)nnThe Detroit Red Wings were founded in 1926 as the Detroit Cougars. The team was originally owned by the Detroit Olympia, Inc., which also owned the Detroit Tigers baseball team. The Cougars played their home games at the Olympia Stadium, which was also home to the Tigers. The Cougars struggled in their first few seasons, finishing last in the American Hockey Association (AHA) in both 1927 and 1928. In 1929, the AHA merged with the National Hockey League (NHL). The Cougars were one of the teams that joined the NHL as a result of the merger.nn## The Red Wings' Name (Page 1)nnIn 1932, the Cougars were renamed the Red Wings. The team's new name was a reference to the city of Detroit's nickname, the 'Motor City'. Detroit was a major center of the automobile industry, and the Red Wings' name was a way to honor the city's industrial heritage. The Red Wings have been one of the most successful teams in NHL history, winning 11 Stanley Cups. They are also one of the most popular teams in the league, with a large and passionate fan base.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The name 'Red Wings' originated from the team's earlier name, the 'Winged Wheelers,' which was derived from their logo, a winged wheel. The logo was inspired by the Montreal Winged Wheelers, a cycling club. The name 'Red Wings' was officially adopted in 1932 when the team was purchased by James E. Norris, who wanted to give the team a more unique and distinctive name. ('The History of the Detroit Red Wings' Name' - Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the team's official website, the Detroit Red Wings got their name from the winged wheel logo that was introduced in 1932. The logo was designed by Carl Linder, the team's first general manager, and it was meant to represent the speed and agility of the players. The team's name was officially changed to the Red Wings in 1932, and it has remained the same ever since. (Page 12)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The Detroit Red Wings got their name from James Norris, who purchased the team in 1932. Norris named the team the Red Wings in honor of the Montreal Winged Wheelers, a team he had previously owned. (History of the Red Wings, Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The Detroit Red Wings got their name through a popular vote in 1932. According to the paragrpah 'The Origin of the Red Wings Name' (Page 1), 'The name was chosen through a popular vote of the people of Detroit, who were asked to select their favorite name from a list of choices provided by the team.' The options included 'Olympians', 'Cougars', 'Panthers', and 'Red Wings'. The people of Detroit chose 'Red Wings' as their favorite.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Les Red Wings ont reçu leur nom en raison de leurs couleurs de plumage rouge et orange vives. Cela est décrit dans le paragraphe **'The Red Wings' Origin and History** (Page 3).<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>29. what type of dog was in turner and hooch ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> The Dogue de Bordeaux first came to the USA in the 1890s for dog shows.<br/>
+        
+          <span class="facts">2.</span> The first modern Dogues de Bordeaux appeared in 1959 and 1968.<br/>
+        
+          <span class="facts">3.</span> Between 1969 and 1980, Dogues de Bordeaux were rare in the USA.<br/>
+        
+          <span class="facts">4.</span> The breed was officially introduced to American enthusiasts in an article written in 1982.<br/>
+        
+          <span class="facts">5.</span> The article was written by American anthropologist, Dr. Carl Semencic.<br/>
+        
+          <span class="facts">6.</span> Semencic also wrote chapters about the Dogue de Bordeaux in his books.<br/>
+        
+          <span class="facts">7.</span> When Semencic's first article was published, there were no Bordeaux Dogues in the United States.<br/>
+        
+          <span class="facts">8.</span> At that time, there were only 600 Dogues de Bordeaux left in the world, and the breed's numbers were on the decline.<br/>
+        
+          <span class="facts">9.</span> The breed was mostly found in France, the Netherlands, and East Berlin.<br/>
+        
+          <span class="facts">10.</span> The Dogue de Bordeaux was featured in the 1989 movie Turner & Hooch.<br/>
+        
+          <span class="facts">11.</span> Many viewers did not know that the dog in the movie was a Dogue de Bordeaux.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          The type of dog in Turner and Hooch was a Dogue de Bordeaux, also known as a French Mastiff. This information is found in the paragraph titled 'Turner and Hooch (Page 1)'.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          Le film Turner & Hooch met en scène un chien nommé Hooch. Hooch est un Dogue de Bordeaux, une race de chien de grande taille originaire de France. Les Dogues de Bordeaux sont connus pour leur tête massive, leur corps musclé et leur nature protectrice. Dans le film, Hooch est un chien indiscipliné qui cause beaucoup de problèmes à Turner, mais les deux finissent par former un lien fort. Le film a été un succès au box-office et a contribué à faire connaître la race Dogue de Bordeaux au grand public.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The type of dog in the movie 'Turner and Hooch' was a Dogue de Bordeaux. This information is sourced from the following paragraph:- 'Turner and Hooch (1989)' (Page 1)'Turner and Hooch' is a 1989 American buddy cop comedy film starring Tom Hanks and a Dogue de Bordeaux dog named Beasley as Hooch.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'The Dog' (Page 3), the dog in the movie Turner & Hooch is a Dogue de Bordeaux.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          The dog in Turner and Hooch was a Dogue de Bordeaux. (Breed of Dog, Page 1)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          The dog in Turner and Hooch was a French Mastiff.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          Turner and Hooch were German Shepherds.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>30. where does water come from in cell respiration ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Oxidative phosphorylation in eukaryotes takes place in the mitochondrial cristae.<br/>
+        
+          <span class="facts">2.</span> The process involves the electron transport chain which creates a proton gradient across the inner membrane boundary.<br/>
+        
+          <span class="facts">3.</span> This proton gradient is established by oxidizing NADH, a product of the Krebs cycle.<br/>
+        
+          <span class="facts">4.</span> ATP, an energy molecule, is synthesized by an enzyme called ATP synthase.<br/>
+        
+          <span class="facts">5.</span> The ATP synthase enzyme uses the chemiosmotic gradient to drive the phosphorylation of ADP, a precursor to ATP.<br/>
+        
+          <span class="facts">6.</span> The electrons involved in the process are eventually transferred to oxygen from outside the cell.<br/>
+        
+          <span class="facts">7.</span> The addition of two protons to the transferred electrons results in the formation of water.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4-0613</span> &nbsp;
+          In cell respiration, water is produced as a byproduct during the final stage of respiration, known as the electron transport chain. Here, oxygen acts as the final electron acceptor and combines with electrons and hydrogen ions to form water. (Source: 'Water in Cell Respiration' - Page 2)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">gemini-pro</span> &nbsp;
+          L'eau est un produit de la respiration cellulaire. Elle est produite lorsque les molécules de glucose sont décomposées en présence d'oxygène. La réaction chimique est la suivante :
+
+```
+C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O + énergie
+```
+
+Dans cette réaction, le glucose (C6H12O6) réagit avec l'oxygène (O2) pour produire du dioxyde de carbone (CO2), de l'eau (H2O) et de l'énergie. L'eau est produite comme sous-produit de cette réaction.
+
+La respiration cellulaire est un processus important qui permet aux organismes vivants de produire de l'énergie à partir des aliments. Elle se produit dans les mitochondries des cellules. La respiration cellulaire est un processus aérobie, ce qui signifie qu'elle nécessite de l'oxygène. 
+
+L'eau est un produit important de la respiration cellulaire. Elle est utilisée dans de nombreuses fonctions importantes de l'organisme, notamment le transport des nutriments et des déchets, la régulation de la température corporelle et la lubrification des articulations. L'eau est également un composant essentiel du sang et de la lymphe. 
+
+En résumé, l'eau est un produit de la respiration cellulaire. Elle est produite lorsque les molécules de glucose sont décomposées en présence d'oxygène. L'eau est un produit important de la respiration cellulaire et est utilisée dans de nombreuses fonctions importantes de l'organisme.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">mistral/mistral-large-latest</span> &nbsp;
+          The water in cell respiration comes from the breakdown of glucose. This is detailed in the process of glycolysis, which is the first stage of cell respiration.Reference(s):- 'Glycolysis (Page 245)': 'Glycolysis is the first stage of cell respiration. It takes place in the cytoplasm and involves the breakdown of glucose (a six-carbon molecule) into two molecules of pyruvate (a three-carbon molecule). This process also produces a net gain of two ATP molecules and two NADH molecules, and releases two water molecules as a byproduct.'Explanation:The question asks about the source of water in cell respiration. The paragraphed titled 'Glycolysis (Page 245)' provides the answer. It states that glycolysis, the first stage of cell respiration, involves the breakdown of glucose into pyruvate. This process releases two water molecules as a byproduct, indicating that the water comes from the breakdown of glucose.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-8b-8192</span> &nbsp;
+          According to the paragraph 'Cellular Respiration' (Page 12), water is produced as a byproduct of cellular respiration. Specifically, it states: 'During cellular respiration, the energy from the food we eat is converted into a molecule called ATP, and water is produced as a byproduct.'<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/llama3-70b-8192</span> &nbsp;
+          In cellular respiration, water is formed as a byproduct of the electron transport chain. (Electron Transport Chain, Page 23)<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/mixtral-8x7b-32768</span> &nbsp;
+          Water is a product of cellular respiration, specifically during the process of oxidative phosphorylation. According to the paragraph 'The Process of Cellular Respiration (Page 2)', cellular respiration is a series of metabolic reactions that occur in the cells of organisms to convert biochemical energy from nutrients into adenosine triphosphate (ATP), and then release waste products. The paragraph 'Oxidative Phosphorylation (Page 3)' mentions that oxidative phosphorylation is the final pathway of cellular respiration, where most of the ATP is produced. It is during this process that water is formed as a byproduct.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">groq/gemma-7b-it</span> &nbsp;
+          L'eau est produite pendant la respiration cellulaire dans le cycle de Krebs. Le dioxyde de carbone et l'oxygène sont utilisés pour produire de l'énergie, et l'eau est un sous-produit de ce processus. (Source : **Cellular Respiration Pathway** - Page 3)<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].nextElementSibling.style.display = "block"
+    }
+  </script>
+</body>
+
+</html>

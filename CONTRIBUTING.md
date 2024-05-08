@@ -8,5 +8,6 @@ We have tons of ideas to make this repo grow! Don't hesitate to add other ideas 
 - `HuggingFace Leaderboard [HFLB]: create a leaderboard on HuggingFace - [see HF doc](https://huggingface.co/spaces/leaderboards/documentation)
 - `TestLang [TL]`: run tests with prompts translated from French to English to see if it has an impact - if so, which generation steps are changed : answers, facts, evaluation?
 - `JudgeAndJury [JJ]`: run answer generation, fact generation and evaluation with different LLMs to see their influence - can we measure to what extent the LLM having generated answers and facts is favoured when evaluated?
+- 'Documentation [Doc]`: add a wiki in GitHub
 
 [This way](https://github.com/recitalAI/ragtime-package/blob/main/CONTRIBUTING.md) if you want to contribute to Ragtime🎹 package :)
