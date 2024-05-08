@@ -1,16 +1,11 @@
-from importlib.metadata import metadata
 from typing import Optional
 from llama_index.core.retrievers import BaseRetriever
-from ragtime.expe import QA, Chunks, Prompt, Question, WithLLMAnswer, Chunk, Answer
-from ragtime.generators import Retriever, Prompter
-from typing import Optional, TypeVar, Union
+from ragtime.expe import QA, Chunk
+from ragtime.generators import Retriever
+from typing import Optional
 from llama_index.retrievers.bm25 import BM25Retriever
 from llama_index.core.retrievers import VectorIndexRetriever
-from langdetect import detect
-from unidecode import unidecode
-from ragtime.config import logger
-
-
+from Rag import Node_page
 
 class MyRetriever(Retriever, BaseRetriever):
     vector_retriever: VectorIndexRetriever
@@ -33,11 +28,12 @@ class MyRetriever(Retriever, BaseRetriever):
                 node_ids.add(n.node.node_id)
         return all_nodes
 
-    def retrieve(self, qa: QA, **kwargs):
+    def retrieve(self, qa: QA, nodes : list, nodes_ext : dict, **kwargs):
         result = self._retrieve(qa.question.text, **kwargs)
-        for r in result:
+        results = Node_page(nodes=nodes,nodes_ext=nodes_ext, all_nodes = result)
+        for key, r in results.items():
             chunk = Chunk()
-            chunk.text , chunk.meta = r.text , r.meta
+            chunk.text , chunk.meta = r['text'] , {"score":r['score'], "Node id" : r['Node id'], "display_name" :r["display_name"], "page_number": r["page_number"] }
             # Check if the chunk already exists in qa.chunks
             existing_chunk = next((c for c in qa.chunks if c.text == chunk.text and c.meta == chunk.meta), None)
             if existing_chunk is None:

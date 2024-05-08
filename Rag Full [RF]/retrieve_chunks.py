@@ -1,6 +1,5 @@
 import logging
 import sys
-from unittest.util import strclass
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logging.getLogger().handlers = []
@@ -18,24 +17,26 @@ import os
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-def main(path : strclass) :
+def main(path : str) :
 
     exper = Expe('expe/01. Questions/questions--30Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_13h47,06.json')
     nodes = nodes_cr(name=path)
-    index = index_cr(nodes)
+    index = index_cr(nodes, name=path)
 
+
+    nodes_ext = index.storage_context.docstore.docs
     # retireve the top 10 most similar nodes using embeddings
-    vector_retriever = index.as_retriever(similarity_top_k=10)
+    vector_retriever = index.as_retriever(similarity_top_k=5)
 
     # retireve the top 10 most similar nodes using bm25
-    bm25_retriever = BM25Retriever.from_defaults(nodes=nodes, similarity_top_k=10)
+    bm25_retriever = BM25Retriever.from_defaults(nodes=nodes, similarity_top_k=5)
 
     hybrid_retriever = MyRetriever(
         vector_retriever=vector_retriever,
         bm25_retriever=bm25_retriever
     )
     for i in range(len(exper)):
-        hybrid_retriever.retrieve(exper[i])
+        hybrid_retriever.retrieve(exper[i],nodes = nodes, nodes_ext = nodes_ext)
     exper.save_to_json(path = Path("expe/01. Questions/questions.json"))
 
 

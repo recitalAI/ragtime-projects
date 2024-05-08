@@ -1,8 +1,8 @@
+from html.entities import name2codepoint
 import logging
 import sys
 import pandas as pd
 import os.path
-
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logging.getLogger().handlers = []
 logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
@@ -11,8 +11,6 @@ from llama_index.core import (
     VectorStoreIndex,
     StorageContext,
     SimpleDirectoryReader,
-    Document,
-    Response,
     load_index_from_storage,
 )
 from llama_index.core.evaluation import DatasetGenerator, RelevancyEvaluator
@@ -21,8 +19,9 @@ from llama_index.core.retrievers import VectorIndexRetriever
 from llama_index.core.node_parser import SentenceSplitter
 from llama_index.llms.openai import OpenAI
 import random
+from ragtime.expe import Expe
 from pathlib import Path
-
+import hashlib
 
 def list_files(directory):
     files_list = []
@@ -31,6 +30,16 @@ def list_files(directory):
             file_path = os.path.join(root, file)
             files_list.append(f"{root}/{file}")
     return files_list
+
+def generate_unique_name(directory):
+    # Concatenate file names
+    files_list = list_files(directory)
+    concatenated_names = ''.join([os.path.basename(file_path) for file_path in files_list])
+    # Generate hash from concatenated names
+    unique_name = hashlib.md5(concatenated_names.encode()).hexdigest()
+    # Combine directory path with unique name
+    storage_directory = os.path.join("storage", unique_name)
+    return storage_directory
 
 def read_doc(name:str, recursive=True):
     return SimpleDirectoryReader(input_files=list_files(name), exclude_hidden=False, recursive=recursive).load_data()
@@ -56,11 +65,39 @@ def nodes_cr(name:str,recursive= True):
     )
     return nodes
         
+def Node_page(nodes: list, nodes_ext: dict, all_nodes: list) -> dict:
+    nodes_info = {}
+    for r in nodes:
+        for ex in all_nodes :
+            if ex.node_id == r.id_:
+                nodes_info[r.id_] = {
+                    "text": ex.text,
+                    "score": ex.score,
+                    "Node id": ex.node_id,
+                    "display_name": r.metadata.get("file_name"),
+                    "page_number": r.metadata.get("page_label")
+                }
+    if len(all_nodes) != len(nodes_info) :
+        nodes_info.update(Node_page_extra(nodes_ext, all_nodes))
+    return nodes_info
 
+def Node_page_extra(nodes: dict, all_nodes: list) -> dict:
+    nodes_info = {}
+    for idx, val in nodes.items():
+        for ex in all_nodes :
+            if ex.node_id == idx:
+                nodes_info[idx] = {
+                    "text": ex.text,
+                    "score": ex.score,
+                    "Node id": ex.node_id,
+                    "display_name": val.metadata.get("file_name"),
+                    "page_number": val.metadata.get("page_label")
+                }
+    return nodes_info
 
-def index_cr(nodes) :
+def index_cr(nodes, name : str) :
     # check if storage already exists
-    PERSIST_DIR = "./storage"
+    PERSIST_DIR = generate_unique_name(directory=name)
     if not os.path.exists(PERSIST_DIR):
 
         storage_context = StorageContext.from_defaults()
