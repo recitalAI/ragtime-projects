@@ -1,5 +1,6 @@
 import logging
 import sys
+from unittest.util import strclass
 
 logging.basicConfig(stream=sys.stdout, level=logging.INFO)
 logging.getLogger().handlers = []
@@ -17,10 +18,10 @@ import os
 load_dotenv()
 
 OPENAI_API_KEY = os.getenv('OPENAI_API_KEY')
-def main() :
+def main(path : strclass) :
 
     exper = Expe('expe/01. Questions/questions--30Q_0C_0F_0M_0A_0HE_0AE_2024-04-24_13h47,06.json')
-    nodes = nodes_cr(name="pdf")
+    nodes = nodes_cr(name=path)
     index = index_cr(nodes)
 
     # retireve the top 10 most similar nodes using embeddings
@@ -39,5 +40,5 @@ def main() :
 
 
 if __name__ == '__main__':
-    # Call the main function to get the value for 'name'
-    main() 
+    path = "pdf/docs/Conditions générales"
+    main(path=path)

@@ -24,8 +24,16 @@ import random
 from pathlib import Path
 
 
+def list_files(directory):
+    files_list = []
+    for root, dirs, files in os.walk(directory):
+        for file in files:
+            file_path = os.path.join(root, file)
+            files_list.append(f"{root}/{file}")
+    return files_list
+
 def read_doc(name:str, recursive=True):
-    return SimpleDirectoryReader(input_dir=name, recursive=recursive).load_data()
+    return SimpleDirectoryReader(input_files=list_files(name), exclude_hidden=False, recursive=recursive).load_data()
 
 
 def question_gen(name:str, recursive=True):

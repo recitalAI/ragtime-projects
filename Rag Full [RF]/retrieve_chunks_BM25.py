@@ -7,14 +7,10 @@ logging.getLogger().addHandler(logging.StreamHandler(stream=sys.stdout))
 
 from llama_index.retrievers.bm25 import BM25Retriever
 
-from Rag import nodes_cr, index_cr
+from Rag import nodes_cr, read_doc
 from ragtime.expe import Expe
 from pathlib import Path
-from classes import MyRetriever, MyRetriever2
-from dotenv import load_dotenv
-import os
-
-load_dotenv()
+from classes import MyRetriever2
 
 def main(path : Path) :
 
@@ -31,7 +27,6 @@ def main(path : Path) :
         hybrid_retriever.retrieve(exper[i])
     exper.save_to_json(path = Path("expe/01. Questions/questions.json"))
 
-
 if __name__ == '__main__':
     path = "pdf/docs/Conditions générales"
-    main(path = path) 
+    main(path=path)
