@@ -139,7 +139,7 @@ For the answer generation phase, navigate to `main_answer_generation.py` and exe
 ```python
 generators.gen_Answers(folder_in=FOLDER_QUESTIONS, folder_out=FOLDER_ANSWERS,
                         json_file='questions--10Q_170C_0F_0M_0A_0HE_0AE_2024-04-22_08h56,06.json',
-                        prompter=MCQAnsPptr(), b_missing_only=True,
+                        prompter=PptrRAGAnsFR(), b_missing_only=True,
                         llm_names=["gpt-4", "gpt-3.5-turbo"],retriever = MyRetriever(vector_retriever=vector_retriever,bm25_retriever=bm25_retriever))
 ```
 
