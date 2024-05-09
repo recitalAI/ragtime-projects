@@ -85,9 +85,7 @@ def nodes_cr(name:str, recursive=True):
         
 def Node_page(nodes: list, nodes_ext: dict, all_nodes: list) -> dict:
     nodes_info = {}
-    print(len(all_nodes))
     all_nodes = remove_overlapping_texts(texts = all_nodes)
-    print(len(all_nodes))
     for r in nodes:
         for ex in all_nodes :
             if ex.node_id == r.id_:
@@ -100,7 +98,6 @@ def Node_page(nodes: list, nodes_ext: dict, all_nodes: list) -> dict:
                 }
     if len(all_nodes) != len(nodes_info) :
         nodes_info.update(Node_page_extra(nodes_ext, all_nodes))
-    print(len(nodes_info))
     return nodes_info
 
 def remove_overlapping_texts(texts: list):
