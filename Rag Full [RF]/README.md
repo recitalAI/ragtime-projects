@@ -270,7 +270,7 @@ This step is essential and cannot be skipped for the subsequent processes.
             }
 ```
 
-If you prefer to evaluate the answers in XLSX format, navigate to the `expe/02. Answers` directory where you will find an XLSX version of your JSON file. The XLSX file will display all the chunks for each question in the answers.
+If you prefer to evaluate the answers in XLSX format, navigate to the `expe/02. Answers` directory where you will find an XLSX version of your JSON file. The XLSX file will display all the chunks for each question and the answers.
 
 ![Image Description](img/xlsx.png)
 
