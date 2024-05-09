@@ -3,6 +3,7 @@ PROJECT_NAME:str = "Rag Full [RF]"
 import ragtime
 from ragtime import expe, generators
 from ragtime.generators import PptrRAGAnsFR
+from ragtime.expe import Expe
 from classes import MyRetriever
 from Rag import nodes_cr, index_cr
 from dotenv import load_dotenv
@@ -35,9 +36,8 @@ logger.debug('MAIN STARTS')
 #                        prompter=PptrRAGAnsFR(), b_missing_only=True,
 #                        llm_names=["gpt-3.5-turbo","gemini/gemini-pro"],retriever = MyRetriever(vector_retriever=vector_retriever,bm25_retriever=bm25_retriever))
 
-#expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json')
-json_to_xlsx(path=FOLDER_ANSWERS /'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json')
-
+expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json')
+expe.export_to_spreadsheet(json_path=FOLDER_ANSWERS /'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json')
 
 logger.debug('MAIN ENDS')
 # Note: the logger can be used only *after* ragtime.config.init_project
