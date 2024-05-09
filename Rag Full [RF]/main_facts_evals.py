@@ -2,9 +2,9 @@ PROJECT_NAME:str = "Rag Full [RF]"
 
 import ragtime
 from ragtime import expe, generators
+from ragtime.expe import Expe, UpdateTypes
 from ragtime.generators import StartFrom, PptrFactsFRv2, PptrSimpleEvalFR
 from pathlib import Path
-from expe import Expe, UpdateTypes
 from dotenv import load_dotenv
 import os
 
