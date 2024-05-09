@@ -9,7 +9,6 @@ from Rag import nodes_cr, index_cr
 from dotenv import load_dotenv
 from llama_index.retrievers.bm25 import BM25Retriever
 import os
-from Human_evaluation import json_to_xlsx
 import litellm
 litellm.set_verbose=True
 load_dotenv()

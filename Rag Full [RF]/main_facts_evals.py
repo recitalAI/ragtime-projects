@@ -8,8 +8,6 @@ from pathlib import Path
 from dotenv import load_dotenv
 import os
 
-from Human_evaluation import xlsx_to_json
-
 load_dotenv()
 
 
@@ -32,8 +30,6 @@ ragtime.config.init_win_env(['GEMINI_API_KEY', 'ANTHROPIC_API_KEY'])
 logger.debug('MAIN STARTS')
 
 update_json(json_path=FOLDER_ANSWERS /'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json',sheet_path=FOLDER_ANSWERS /'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-09_13h09,42.xlsx',update_type=UpdateTypes.human_eval,data_col= 14,question_col = 1, answer_col = 8)
-
-#xlsx_to_json(json_path=FOLDER_ANSWERS /'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json',xlsx_path=FOLDER_ANSWERS /'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.xlsx')
 
 #generators.gen_Facts(folder_in=FOLDER_ANSWERS, folder_out=FOLDER_FACTS, json_file='questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25updated.json',
 #                    llm_names=['gpt-3.5-turbo'], prompter=PptrFactsFRv2())
