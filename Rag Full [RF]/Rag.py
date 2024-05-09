@@ -85,6 +85,9 @@ def nodes_cr(name:str, recursive=True):
         
 def Node_page(nodes: list, nodes_ext: dict, all_nodes: list) -> dict:
     nodes_info = {}
+    print(len(all_nodes))
+    all_nodes = remove_overlapping_texts(texts = all_nodes)
+    print(len(all_nodes))
     for r in nodes:
         for ex in all_nodes :
             if ex.node_id == r.id_:
@@ -97,7 +100,27 @@ def Node_page(nodes: list, nodes_ext: dict, all_nodes: list) -> dict:
                 }
     if len(all_nodes) != len(nodes_info) :
         nodes_info.update(Node_page_extra(nodes_ext, all_nodes))
+    print(len(nodes_info))
     return nodes_info
+
+def remove_overlapping_texts(texts: list):
+    """
+    Remove overlapping texts from a list of texts, keeping only the longer ones.
+    Args:
+        texts (list): List of objects with attributes 'text', 'score', and 'node_id'.
+    Returns:
+        list: List of objects with non-overlapping texts.
+    """
+    # Sort the texts by length in descending order
+    sorted_texts = sorted(texts, key=lambda x: len(x.text), reverse=True)
+    result = []
+
+    for text_obj in sorted_texts:
+        # Check if the current text overlaps with any text in the result
+        if not any(text_obj.text in existing_text.text or existing_text.text in text_obj.text for existing_text in result):
+            result.append(text_obj)
+
+    return result
 
 def Node_page_extra(nodes: dict, all_nodes: list) -> dict:
     nodes_info = {}
