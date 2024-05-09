@@ -151,8 +151,8 @@ In this example, we utilized only 2 LLMs. If you wish to test more, add their na
 To export the JSON file in HTML and XLSX formats, run the following lines:
 
 ```python
-expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json')
-json_to_xlsx(path=FOLDER_ANSWERS /'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json')
+expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json')
+expe.export_to_spreadsheet(json_path=FOLDER_ANSWERS /'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json')
 
 ```
 Run the following lines from `export_to_html` to `export_to_spreadsheet` to export the JSON file in HTML format and XLSX format, respectively. Ensure that you specify the generated answer file as the JSON input file. You can find it in `expe/02 Answers` under the name `questions--{Number of questions}Q_{Number of chunks}C_0F_{Number of models}M_{Number of answers}A_0HE_0AE_{time}.json`. 
