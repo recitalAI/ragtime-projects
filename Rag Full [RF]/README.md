@@ -152,7 +152,7 @@ To export the JSON file in HTML and XLSX formats, run the following lines:
 
 ```python
 expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json')
-json_to_xlsx(name=FOLDER_ANSWERS /'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json')
+json_to_xlsx(path=FOLDER_ANSWERS /'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json')
 
 ```
 Run the following lines from `export_to_html` to `export_to_spreadsheet` to export the JSON file in HTML format and XLSX format, respectively. Ensure that you specify the generated answer file as the JSON input file. You can find it in `expe/02 Answers` under the name `questions--{Number of questions}Q_{Number of chunks}C_0F_{Number of models}M_{Number of answers}A_0HE_0AE_{time}.json`. 
@@ -270,23 +270,23 @@ This step is essential and cannot be skipped for the subsequent processes.
             }
 ```
 
-Here's the corrected version:
+If you prefer to evaluate the answers in XLSX format, navigate to the `expe/02. Answers` directory where you will find an XLSX version of your JSON file. The XLSX file will display all the chunks for each question in the answers.
 
-"If you prefer to evaluate the answers in XLSX format, navigate to the `expe/02. Answers` directory where you will find an XLSX version of your JSON file. The XLSX file will display all the chunks for each question in the answers.
-
-![Image Description](img/Replace_all.png)
+![Image Description](img/xlsx.png)
 
 To evaluate the quality of each answer, go to the last column named 'Human evaluations' and assign a score between 0 and 1 based on the provided chunks.
 
-![Image Description](img/Replace_all.png)
+![Image Description](img/xlsx_eval.png)
 
 To update the JSON file with the evaluations you provided, run the `xlsx_to_json` function as follows:
 
 ```python
-xlsx_to_json(json_path=FOLDER_ANSWERS/'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json', xlsx_path=FOLDER_ANSWERS/'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.xlsx')
+xlsx_to_json(json_path=FOLDER_ANSWERS/'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json', xlsx_path=FOLDER_ANSWERS/'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.xlsx')
 ```
 
-A new file with the same name, but appended with 'updated' at the end (for example, `questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42updated.json`), will appear in the `expe/02. Answers` directory with the human evaluations updated."
+A new file with the same name, but appended with 'updated' at the end (for example, `questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25updated.json`), will appear in the `expe/02. Answers` directory with the human evaluations updated.
+
+
 ## Fact Generation and Evaluation
 
 Here's the corrected version:
@@ -298,7 +298,7 @@ Remark: Set the fact generation and evaluation LLM to different ones from the on
 Set the JSON file path in this code to the answer JSON file:
 
 ```python
-generators.gen_Facts(folder_in=FOLDER_ANSWERS, folder_out=FOLDER_FACTS, json_file='questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json',
+generators.gen_Facts(folder_in=FOLDER_ANSWERS, folder_out=FOLDER_FACTS, json_file='questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25updated.json',
                     llm_names=['mistral/mistral-large-latest'], prompter=PptrFactsFRv2())
 ```
 
