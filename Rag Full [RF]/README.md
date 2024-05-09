@@ -272,19 +272,19 @@ This step is essential and cannot be skipped for the subsequent processes.
 
 If you prefer to evaluate the answers in XLSX format, navigate to the `expe/02. Answers` directory where you will find an XLSX version of your JSON file. The XLSX file will display all the chunks for each question and the answers.
 
-![Image Description](img/xlsx.png)
+![Image Description](img/Eval_before.png)
 
 To evaluate the quality of each answer, go to the last column named 'Human evaluations' and assign a score between 0 and 1 based on the provided chunks.
 
-![Image Description](img/xlsx_eval.png)
+![Image Description](img/Eval_after.png)
 
 To update the JSON file with the evaluations you provided, run the `update_json` function in `main_facts_evals.py` as follows:
 
 ```python
-update_json(json_path=FOLDER_ANSWERS /'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json',sheet_path=FOLDER_ANSWERS /'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-09_13h09,42.xlsx',update_type=UpdateTypes.human_eval,data_col= 14,question_col = 1, answer_col = 8)
+update_json(json_path=FOLDER_ANSWERS /'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.xlsx',sheet_path=FOLDER_ANSWERS /'questions--10Q_170C_0F_2M_20A_20HE_0AE_2024-05-09_12h45,06.xlsx',update_type=UpdateTypes.human_eval,data_col= 14,question_col = 1, answer_col = 8)
 ```
 
-A new file with the same name, but with the following wording `questions--{Number of questions}Q_{Number of chunks}C_0F_{Number of models}M_{Number of answers}A_{Number of human evaluation}HE_0AE_{time}.json` (for example, `questions--30Q_300C_0F_2M_58A_57HE_0AE_2024-05-09_19h00,36.json`), will appear in the `expe/02. Answers` directory with the human evaluations updated.
+A new file with the same name, but with the following wording `questions--{Number of questions}Q_{Number of chunks}C_0F_{Number of models}M_{Number of answers}A_{Number of human evaluation}HE_0AE_{time}.json` (for example, `questions--10Q_170C_0F_2M_20A_19HE_0AE_2024-05-09_16h38,00.json`), will appear in the `expe/02. Answers` directory with the human evaluations updated.
 
 
 ## Fact Generation and Evaluation
