@@ -152,8 +152,8 @@ To export the JSON file in HTML and XLSX formats, run the following lines:
 
 ```python
 expe.export_to_html(json_path=FOLDER_ANSWERS / 'questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json')
-expe.export_to_spreadsheet(json_path=FOLDER_ANSWERS / "questions--10Q_170C_0F_2M_20A_0HE_0AE_2024-04-22_09h26,25.json",
-                           template_path=FOLDER_SST_TEMPLATES/'spreadsheet_rich_template.xlsx')
+json_to_xlsx(name=FOLDER_ANSWERS /'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json')
+
 ```
 Run the following lines from `export_to_html` to `export_to_spreadsheet` to export the JSON file in HTML format and XLSX format, respectively. Ensure that you specify the generated answer file as the JSON input file. You can find it in `expe/02 Answers` under the name `questions--{Number of questions}Q_{Number of chunks}C_0F_{Number of models}M_{Number of answers}A_0HE_0AE_{time}.json`. 
 
@@ -270,6 +270,23 @@ This step is essential and cannot be skipped for the subsequent processes.
             }
 ```
 
+Here's the corrected version:
+
+"If you prefer to evaluate the answers in XLSX format, navigate to the `expe/02. Answers` directory where you will find an XLSX version of your JSON file. The XLSX file will display all the chunks for each question in the answers.
+
+![Image Description](img/Replace_all.png)
+
+To evaluate the quality of each answer, go to the last column named 'Human evaluations' and assign a score between 0 and 1 based on the provided chunks.
+
+![Image Description](img/Replace_all.png)
+
+To update the JSON file with the evaluations you provided, run the `xlsx_to_json` function as follows:
+
+```python
+xlsx_to_json(json_path=FOLDER_ANSWERS/'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.json', xlsx_path=FOLDER_ANSWERS/'questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42.xlsx')
+```
+
+A new file with the same name, but appended with 'updated' at the end (for example, `questions--30Q_300C_0F_2M_58A_0HE_0AE_2024-05-08_22h56,42updated.json`), will appear in the `expe/02. Answers` directory with the human evaluations updated."
 ## Fact Generation and Evaluation
 
 Here's the corrected version:
