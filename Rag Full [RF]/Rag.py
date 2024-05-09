@@ -1,5 +1,6 @@
 from html.entities import name2codepoint
 import logging
+import pickle
 import sys
 import pandas as pd
 import os.path
@@ -31,14 +32,14 @@ def list_files(directory):
             files_list.append(f"{root}/{file}")
     return files_list
 
-def generate_unique_name(directory):
+def generate_unique_name(directory, Dir = "storage"):
     # Concatenate file names
     files_list = list_files(directory)
     concatenated_names = ''.join([os.path.basename(file_path) for file_path in files_list])
     # Generate hash from concatenated names
     unique_name = hashlib.md5(concatenated_names.encode()).hexdigest()
     # Combine directory path with unique name
-    storage_directory = os.path.join("storage", unique_name)
+    storage_directory = os.path.join(Dir, unique_name)
     return storage_directory
 
 def read_doc(name:str, recursive=True):
@@ -54,15 +55,32 @@ def question_gen(name:str, recursive=True):
     random.shuffle(eval_questions)
     return eval_questions
 
-def nodes_cr(name:str,recursive= True):
-    documents = read_doc(name, recursive = recursive)
-    llm = OpenAI(model="gpt-3.5-turbo")
-    # initialize storage context (by default it's in-memory)
-    splitter = SentenceSplitter(chunk_size=256)
-    # creat nodes
-    nodes = splitter.get_nodes_from_documents(
-        documents
-    )
+def nodes_cr(name:str, recursive=True):
+    # Generate unique name for storage directory
+    storage_dir = generate_unique_name(name,Dir = "Nodes")
+    
+    # Check if storage directory exists, create it if not
+    if not os.path.exists(storage_dir):
+        os.makedirs(storage_dir)
+
+    # Check if nodes file already exists
+    nodes_file = os.path.join(storage_dir, "nodes.pkl")
+    if os.path.exists(nodes_file):
+        # Load nodes from file
+        with open(nodes_file, "rb") as f:
+            nodes = pickle.load(f)
+    else:
+        documents = read_doc(name, recursive=recursive)
+        llm = OpenAI(model="gpt-3.5-turbo")
+        # Initialize storage context (by default it's in-memory)
+        splitter = SentenceSplitter(chunk_size=256)
+        # Create nodes
+        nodes = splitter.get_nodes_from_documents(documents)
+        
+        # Save nodes to file
+        with open(nodes_file, "wb") as f:
+            pickle.dump(nodes, f)
+
     return nodes
         
 def Node_page(nodes: list, nodes_ext: dict, all_nodes: list) -> dict:
