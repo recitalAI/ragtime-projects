@@ -8,9 +8,31 @@
         "text": "What breakthrough paper was published by Hinton et al. in 2006, leading to the resurgence of deep learning?"
       },
       "facts": {
-        "llm_answer": null,
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Le document révolutionnaire a été publié par Hinton et al. en 2006.\n2. Le titre de l'article était \"Un algorithme d'apprentissage rapide pour les réseaux de croyances profondes\".",
+          "prompt": {
+            "meta": {},
+            "user": "The breakthrough paper published by Hinton et al. in 2006 was titled \"A fast learning algorithm for deep belief nets\".",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\n        Chaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\n        Les phrases ne doivent pas contenir de référence au document source ni à sa page.\n        Les phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises."
+          },
+          "name": "gpt-3.5-turbo",
+          "full_name": "gpt-3.5-turbo-0125",
+          "timestamp": "2024-05-09T02:21:03.801774",
+          "duration": 5.016812,
+          "cost": 0.0001515
+        },
         "meta": {},
-        "items": []
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Le document révolutionnaire a été publié par Hinton et al. en 2006."
+          },
+          {
+            "meta": {},
+            "text": "2. Le titre de l'article était \"Un algorithme d'apprentissage rapide pour les réseaux de croyances profondes\"."
+          }
+        ]
       },
       "chunks": {
         "meta": {},
@@ -150,11 +172,24 @@
             "meta": {},
             "text": "The breakthrough paper published by Hinton et al. in 2006 was titled \"A fast learning algorithm for deep belief nets\".",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: The breakthrough paper published by Hinton et al. in 2006 was titled \"A fast learning algorithm for deep belief nets\".\n\n1. 1. Le document révolutionnaire a été publié par Hinton et al. en 2006.\n2. 2. Le titre de l'article était \"Un algorithme d'apprentissage rapide pour les réseaux de croyances profondes\".",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:27.471884",
+                "duration": 1.291195,
+                "cost": 0.0001015
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1. 1.'] - Not validated: ['1', '2']",
+              "human": 1.0,
+              "auto": 0.5
             }
           },
           {
@@ -175,11 +210,24 @@
             "meta": {},
             "text": "The breakthrough paper published by Hinton et al. in 2006, leading to the resurgence of deep learning, was titled \"A fast learning algorithm for deep belief nets.\"",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1. Le document révolutionnaire a été publié par Hinton et al. en 2006.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: The breakthrough paper published by Hinton et al. in 2006, leading to the resurgence of deep learning, was titled \"A fast learning algorithm for deep belief nets.\"\n\n1. 1. Le document révolutionnaire a été publié par Hinton et al. en 2006.\n2. 2. Le titre de l'article était \"Un algorithme d'apprentissage rapide pour les réseaux de croyances profondes\".",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:28.769447",
+                "duration": 1.255356,
+                "cost": 0.000136
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1. 1. Le document révolutionnaire a été publié par Hinton et al. en 2006.'] - Not validated: ['1', '2']",
+              "human": 1.0,
+              "auto": 0.5
             }
           }
         ]
@@ -192,9 +240,39 @@
         "text": "How is the value matrix generated in the self-attention block of Funnel-Transformer?"
       },
       "facts": {
-        "llm_answer": null,
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Dans le bloc d'auto-attention du Funnel-Transformer, la matrice de valeurs est générée à partir de la sortie non regroupée, notée h.\n2. Cela est réalisé en projetant la sortie non regroupée h sur une matrice de poids apprenable WV.\n3. La matrice de valeurs résultante V est ensuite utilisée dans le mécanisme d'auto-attention de la couche suivante.\n4. L'équation pour cette opération est V=hWV, où h est la sortie non regroupée et WV est la matrice de poids.",
+          "prompt": {
+            "meta": {},
+            "user": "In the self-attention block of the Funnel-Transformer, the value matrix is generated from the unpooled output, denoted as h. This is done by projecting the unpooled output h onto a learnable weight matrix WV. The resulting value matrix V is then used in the self-attention mechanism of the next layer. The equation for this operation is V=hWV, where h is the unpooled output and WV is the weight matrix.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\n        Chaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\n        Les phrases ne doivent pas contenir de référence au document source ni à sa page.\n        Les phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises."
+          },
+          "name": "gpt-3.5-turbo",
+          "full_name": "gpt-3.5-turbo-0125",
+          "timestamp": "2024-05-09T02:21:03.816068",
+          "duration": 5.874323,
+          "cost": 0.000301
+        },
         "meta": {},
-        "items": []
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Dans le bloc d'auto-attention du Funnel-Transformer, la matrice de valeurs est générée à partir de la sortie non regroupée, notée h."
+          },
+          {
+            "meta": {},
+            "text": "2. Cela est réalisé en projetant la sortie non regroupée h sur une matrice de poids apprenable WV."
+          },
+          {
+            "meta": {},
+            "text": "3. La matrice de valeurs résultante V est ensuite utilisée dans le mécanisme d'auto-attention de la couche suivante."
+          },
+          {
+            "meta": {},
+            "text": "4. L'équation pour cette opération est V=hWV, où h est la sortie non regroupée et WV est la matrice de poids."
+          }
+        ]
       },
       "chunks": {
         "meta": {},
@@ -341,11 +419,24 @@
             "meta": {},
             "text": "In the self-attention block of the Funnel-Transformer, the value matrix is generated from the unpooled output, denoted as h. This is done by projecting the unpooled output h onto a learnable weight matrix WV. The resulting value matrix V is then used in the self-attention mechanism of the next layer. The equation for this operation is V=hWV, where h is the unpooled output and WV is the weight matrix.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1\n2. 2\n3. 3\n4. 4",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: In the self-attention block of the Funnel-Transformer, the value matrix is generated from the unpooled output, denoted as h. This is done by projecting the unpooled output h onto a learnable weight matrix WV. The resulting value matrix V is then used in the self-attention mechanism of the next layer. The equation for this operation is V=hWV, where h is the unpooled output and WV is the weight matrix.\n\n1. 1. Dans le bloc d'auto-attention du Funnel-Transformer, la matrice de valeurs est générée à partir de la sortie non regroupée, notée h.\n2. 2. Cela est réalisé en projetant la sortie non regroupée h sur une matrice de poids apprenable WV.\n3. 3. La matrice de valeurs résultante V est ensuite utilisée dans le mécanisme d'auto-attention de la couche suivante.\n4. 4. L'équation pour cette opération est V=hWV, où h est la sortie non regroupée et WV est la matrice de poids.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:27.489945",
+                "duration": 1.662317,
+                "cost": 0.00019700000000000002
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1. 1\\n2. 2\\n3. 3\\n4. 4'] - Not validated: ['1', '2', '3', '4']",
+              "human": 1.0,
+              "auto": 0.25
             }
           },
           {
@@ -366,11 +457,24 @@
             "meta": {},
             "text": "In the self-attention block of Funnel-Transformer, the value matrix is generated by projecting the input vector at time i on a learnable weight matrix to obtain the value vector vi. This process is similar to how the query and key vectors are generated in the self-attention block.\n\nSpecifically, the value matrix V is obtained by multiplying the input vector xi with a weight matrix Wv:\n\nV = XWv\n\nHere, X represents the input sequence, and Wv is the learnable weight matrix used for projecting the input vectors to generate the value vectors.\n\nThe value matrix V contains the value vectors vi for each token in the input sequence, and it plays a crucial role in the self-attention mechanism by providing the information that is used to compute the weighted sum in the attention mechanism.\n\nOverall, in the self-attention block of Funnel-Transformer, the value matrix is generated by projecting the input vectors onto a weight matrix to obtain the value vectors that are used in the attention computation.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 2.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: In the self-attention block of Funnel-Transformer, the value matrix is generated by projecting the input vector at time i on a learnable weight matrix to obtain the value vector vi. This process is similar to how the query and key vectors are generated in the self-attention block.\n\nSpecifically, the value matrix V is obtained by multiplying the input vector xi with a weight matrix Wv:\n\nV = XWv\n\nHere, X represents the input sequence, and Wv is the learnable weight matrix used for projecting the input vectors to generate the value vectors.\n\nThe value matrix V contains the value vectors vi for each token in the input sequence, and it plays a crucial role in the self-attention mechanism by providing the information that is used to compute the weighted sum in the attention mechanism.\n\nOverall, in the self-attention block of Funnel-Transformer, the value matrix is generated by projecting the input vectors onto a weight matrix to obtain the value vectors that are used in the attention computation.\n\n1. 1. Dans le bloc d'auto-attention du Funnel-Transformer, la matrice de valeurs est générée à partir de la sortie non regroupée, notée h.\n2. 2. Cela est réalisé en projetant la sortie non regroupée h sur une matrice de poids apprenable WV.\n3. 3. La matrice de valeurs résultante V est ensuite utilisée dans le mécanisme d'auto-attention de la couche suivante.\n4. 4. L'équation pour cette opération est V=hWV, où h est la sortie non regroupée et WV est la matrice de poids.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:29.159911",
+                "duration": 0.730743,
+                "cost": 0.0002315
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1. 2.'] - Not validated: ['1', '2', '3', '4']",
+              "human": 1.0,
+              "auto": 0.25
             }
           }
         ]
@@ -383,9 +487,39 @@
         "text": "How does Mama Ricotta's differ from traditional Italian restaurants in terms of its location?"
       },
       "facts": {
-        "llm_answer": null,
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Mama Ricotta's is located in a strip mall, which is unusual for a nice Italian restaurant.\n2. The restaurant manages to maintain a high-quality atmosphere and decor despite its unconventional location.\n3. The atmosphere and decor at Mama Ricotta's give the impression of a more upscale Italian dining experience.\n4. The location of Mama Ricotta's sets it apart from traditional Italian restaurants.",
+          "prompt": {
+            "meta": {},
+            "user": "Mama Ricotta's differs from traditional Italian restaurants in terms of its location as it is situated in a strip mall, which is not typically where one would expect to find a nice Italian restaurant. Despite this unconventional location, Mama Ricotta's manages to maintain an atmosphere and decor that gives the impression of a nicer Italian place.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\n        Chaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\n        Les phrases ne doivent pas contenir de référence au document source ni à sa page.\n        Les phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises."
+          },
+          "name": "gpt-3.5-turbo",
+          "full_name": "gpt-3.5-turbo-0125",
+          "timestamp": "2024-05-09T02:21:03.823859",
+          "duration": 5.541958,
+          "cost": 0.0002085
+        },
         "meta": {},
-        "items": []
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Mama Ricotta's is located in a strip mall, which is unusual for a nice Italian restaurant."
+          },
+          {
+            "meta": {},
+            "text": "2. The restaurant manages to maintain a high-quality atmosphere and decor despite its unconventional location."
+          },
+          {
+            "meta": {},
+            "text": "3. The atmosphere and decor at Mama Ricotta's give the impression of a more upscale Italian dining experience."
+          },
+          {
+            "meta": {},
+            "text": "4. The location of Mama Ricotta's sets it apart from traditional Italian restaurants."
+          }
+        ]
       },
       "chunks": {
         "meta": {},
@@ -518,11 +652,24 @@
             "meta": {},
             "text": "Mama Ricotta's differs from traditional Italian restaurants in terms of its location as it is situated in a strip mall, which is not typically where one would expect to find a nice Italian restaurant. Despite this unconventional location, Mama Ricotta's manages to maintain an atmosphere and decor that gives the impression of a nicer Italian place.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1. Mama Ricotta's is located in a strip mall, which is unusual for a nice Italian restaurant.\n2. 3. The atmosphere and decor at Mama Ricotta's give the impression of a more upscale Italian dining experience.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: Mama Ricotta's differs from traditional Italian restaurants in terms of its location as it is situated in a strip mall, which is not typically where one would expect to find a nice Italian restaurant. Despite this unconventional location, Mama Ricotta's manages to maintain an atmosphere and decor that gives the impression of a nicer Italian place.\n\n1. 1. Mama Ricotta's is located in a strip mall, which is unusual for a nice Italian restaurant.\n2. 2. The restaurant manages to maintain a high-quality atmosphere and decor despite its unconventional location.\n3. 3. The atmosphere and decor at Mama Ricotta's give the impression of a more upscale Italian dining experience.\n4. 4. The location of Mama Ricotta's sets it apart from traditional Italian restaurants.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:27.500642",
+                "duration": 2.143229,
+                "cost": 0.0002035
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: [\"1. 1. Mama Ricotta's is located in a strip mall\", \"which is unusual for a nice Italian restaurant.\\n2. 3. The atmosphere and decor at Mama Ricotta's give the impression of a more upscale Italian dining experience.\"] - Not validated: ['1', '2', '3', '4']",
+              "human": 1.0,
+              "auto": 0.5
             }
           },
           {
@@ -543,11 +690,24 @@
             "meta": {},
             "text": "Mama Ricotta's differs from traditional Italian restaurants in terms of its location because it is located in a strip mall, which is not typically where you would expect to find a nice Italian restaurant. Despite being in a strip mall, Mama Ricotta's atmosphere and decor give the impression of a nicer Italian place. This location choice bucks the trend of traditional Italian restaurants being in more upscale or standalone locations.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1. Mama Ricotta's is located in a strip mall, which is unusual for a nice Italian restaurant.\n2. 3. The atmosphere and decor at Mama Ricotta's give the impression of a more upscale Italian dining experience.\n3. 4. The location of Mama Ricotta's sets it apart from traditional Italian restaurants.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: Mama Ricotta's differs from traditional Italian restaurants in terms of its location because it is located in a strip mall, which is not typically where you would expect to find a nice Italian restaurant. Despite being in a strip mall, Mama Ricotta's atmosphere and decor give the impression of a nicer Italian place. This location choice bucks the trend of traditional Italian restaurants being in more upscale or standalone locations.\n\n1. 1. Mama Ricotta's is located in a strip mall, which is unusual for a nice Italian restaurant.\n2. 2. The restaurant manages to maintain a high-quality atmosphere and decor despite its unconventional location.\n3. 3. The atmosphere and decor at Mama Ricotta's give the impression of a more upscale Italian dining experience.\n4. 4. The location of Mama Ricotta's sets it apart from traditional Italian restaurants.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:29.649003",
+                "duration": 1.725038,
+                "cost": 0.000241
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: [\"1. 1. Mama Ricotta's is located in a strip mall\", \"which is unusual for a nice Italian restaurant.\\n2. 3. The atmosphere and decor at Mama Ricotta's give the impression of a more upscale Italian dining experience.\\n3. 4. The location of Mama Ricotta's sets it apart from traditional Italian restaurants.\"] - Not validated: ['1', '2', '3', '4']",
+              "human": 1.0,
+              "auto": 0.5
             }
           }
         ]
@@ -560,9 +720,43 @@
         "text": "How many patents does Kenneth L. Graham have related to natural language processing?"
       },
       "facts": {
-        "llm_answer": null,
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Kenneth L. Graham is the holder of five patents.\n2. The patents are related to natural language processing.\n3. The patents are in the field of natural language processing.\n4. Kenneth L. Graham's patents are specifically focused on natural language processing.\n5. The patents owned by Kenneth L. Graham pertain to natural language processing.",
+          "prompt": {
+            "meta": {},
+            "user": "Kenneth L. Graham has five patents related to natural language processing.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\n        Chaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\n        Les phrases ne doivent pas contenir de référence au document source ni à sa page.\n        Les phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises."
+          },
+          "name": "gpt-3.5-turbo",
+          "full_name": "gpt-3.5-turbo-0125",
+          "timestamp": "2024-05-09T02:21:03.834871",
+          "duration": 5.494004,
+          "cost": 0.0001695
+        },
         "meta": {},
-        "items": []
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Kenneth L. Graham is the holder of five patents."
+          },
+          {
+            "meta": {},
+            "text": "2. The patents are related to natural language processing."
+          },
+          {
+            "meta": {},
+            "text": "3. The patents are in the field of natural language processing."
+          },
+          {
+            "meta": {},
+            "text": "4. Kenneth L. Graham's patents are specifically focused on natural language processing."
+          },
+          {
+            "meta": {},
+            "text": "5. The patents owned by Kenneth L. Graham pertain to natural language processing."
+          }
+        ]
       },
       "chunks": {
         "meta": {},
@@ -695,11 +889,24 @@
             "meta": {},
             "text": "Kenneth L. Graham has five patents related to natural language processing.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: Kenneth L. Graham has five patents related to natural language processing.\n\n1. 1. Kenneth L. Graham is the holder of five patents.\n2. 2. The patents are related to natural language processing.\n3. 3. The patents are in the field of natural language processing.\n4. 4. Kenneth L. Graham's patents are specifically focused on natural language processing.\n5. 5. The patents owned by Kenneth L. Graham pertain to natural language processing.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:27.506746",
+                "duration": 1.451057,
+                "cost": 0.000103
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1.'] - Not validated: ['1', '2', '3', '4', '5']",
+              "human": 1.0,
+              "auto": 0.2
             }
           },
           {
@@ -720,11 +927,24 @@
             "meta": {},
             "text": "Kenneth L. Graham has five patents related to natural language processing.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1\n2. 2\n3. 3\n4. 5",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: Kenneth L. Graham has five patents related to natural language processing.\n\n1. 1. Kenneth L. Graham is the holder of five patents.\n2. 2. The patents are related to natural language processing.\n3. 3. The patents are in the field of natural language processing.\n4. 4. Kenneth L. Graham's patents are specifically focused on natural language processing.\n5. 5. The patents owned by Kenneth L. Graham pertain to natural language processing.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:28.963794",
+                "duration": 0.758729,
+                "cost": 0.00012849999999999998
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1. 1\\n2. 2\\n3. 3\\n4. 5'] - Not validated: ['1', '2', '3', '4', '5']",
+              "human": 1.0,
+              "auto": 0.2
             }
           }
         ]
@@ -737,9 +957,43 @@
         "text": "In what scenarios is global attention beneficial in transformer models?"
       },
       "facts": {
-        "llm_answer": null,
+        "llm_answer": {
+          "meta": {},
+          "text": "1. La prise en compte globale dans les modèles de transformer est utile lorsque certains jetons doivent être en relation avec tous les jetons de la séquence.\n2. Ces jetons globaux sont également pris en compte par tous les autres jetons.\n3. Cela est particulièrement avantageux dans des tâches telles que la traduction automatique, l'extraction de sujets, la classification multilingue sans entraînement, l'analyse de sentiment, la reconnaissance automatique de la parole et la classification/catégorisation de texte.\n4. Cela permet une compréhension plus approfondie du contexte et des relations au sein des données.\n5. De plus, la prise en compte globale est bénéfique pour traiter de longues séquences de données, car elle permet au modèle de considérer l'ensemble de la séquence en une seule fois, plutôt que par petits segments séparés.",
+          "prompt": {
+            "meta": {},
+            "user": "Global attention in transformer models is beneficial in scenarios where some tokens need to attend to all tokens in the sequence. These global tokens are also attended to by all tokens. This is particularly useful in tasks such as machine translation, topic mining, zero-shot multilingual classification, sentiment analysis, automatic speech recognition, and text classification/categorization. It allows for a more comprehensive understanding of the context and relationships within the data. Additionally, global attention is beneficial in dealing with long sequences of data, as it allows the model to consider the entire sequence at once, rather than in smaller, separate segments.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\n        Chaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\n        Les phrases ne doivent pas contenir de référence au document source ni à sa page.\n        Les phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises."
+          },
+          "name": "gpt-3.5-turbo",
+          "full_name": "gpt-3.5-turbo-0125",
+          "timestamp": "2024-05-09T02:21:03.842270",
+          "duration": 7.863928,
+          "cost": 0.000415
+        },
         "meta": {},
-        "items": []
+        "items": [
+          {
+            "meta": {},
+            "text": "1. La prise en compte globale dans les modèles de transformer est utile lorsque certains jetons doivent être en relation avec tous les jetons de la séquence."
+          },
+          {
+            "meta": {},
+            "text": "2. Ces jetons globaux sont également pris en compte par tous les autres jetons."
+          },
+          {
+            "meta": {},
+            "text": "3. Cela est particulièrement avantageux dans des tâches telles que la traduction automatique, l'extraction de sujets, la classification multilingue sans entraînement, l'analyse de sentiment, la reconnaissance automatique de la parole et la classification/catégorisation de texte."
+          },
+          {
+            "meta": {},
+            "text": "4. Cela permet une compréhension plus approfondie du contexte et des relations au sein des données."
+          },
+          {
+            "meta": {},
+            "text": "5. De plus, la prise en compte globale est bénéfique pour traiter de longues séquences de données, car elle permet au modèle de considérer l'ensemble de la séquence en une seule fois, plutôt que par petits segments séparés."
+          }
+        ]
       },
       "chunks": {
         "meta": {},
@@ -907,11 +1161,24 @@
             "meta": {},
             "text": "Global attention in transformer models is beneficial in scenarios where some tokens need to attend to all tokens in the sequence. These global tokens are also attended to by all tokens. This is particularly useful in tasks such as machine translation, topic mining, zero-shot multilingual classification, sentiment analysis, automatic speech recognition, and text classification/categorization. It allows for a more comprehensive understanding of the context and relationships within the data. Additionally, global attention is beneficial in dealing with long sequences of data, as it allows the model to consider the entire sequence at once, rather than in smaller, separate segments.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1. La prise en compte globale dans les modèles de transformer est utile lorsque certains jetons doivent être en relation avec tous les jetons de la séquence.\n2. 2. Ces jetons globaux sont également pris en compte par tous les autres jetons.\n3. 3. Cela est particulièrement avantageux dans des tâches telles que la traduction automatique, l'extraction de sujets, la classification multilingue sans entraînement, l'analyse de sentiment, la reconnaissance automatique de la parole et la classification/catégorisation de texte.\n4. 4. Cela permet une compréhension plus approfondie du contexte et des relations au sein des données.\n5. 5. De plus, la prise en compte globale est bénéfique pour traiter de longues séquences de données, car elle permet au modèle de considérer l'ensemble de la séquence en une seule fois, plutôt que par petits segments séparés.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: Global attention in transformer models is beneficial in scenarios where some tokens need to attend to all tokens in the sequence. These global tokens are also attended to by all tokens. This is particularly useful in tasks such as machine translation, topic mining, zero-shot multilingual classification, sentiment analysis, automatic speech recognition, and text classification/categorization. It allows for a more comprehensive understanding of the context and relationships within the data. Additionally, global attention is beneficial in dealing with long sequences of data, as it allows the model to consider the entire sequence at once, rather than in smaller, separate segments.\n\n1. 1. La prise en compte globale dans les modèles de transformer est utile lorsque certains jetons doivent être en relation avec tous les jetons de la séquence.\n2. 2. Ces jetons globaux sont également pris en compte par tous les autres jetons.\n3. 3. Cela est particulièrement avantageux dans des tâches telles que la traduction automatique, l'extraction de sujets, la classification multilingue sans entraînement, l'analyse de sentiment, la reconnaissance automatique de la parole et la classification/catégorisation de texte.\n4. 4. Cela permet une compréhension plus approfondie du contexte et des relations au sein des données.\n5. 5. De plus, la prise en compte globale est bénéfique pour traiter de longues séquences de données, car elle permet au modèle de considérer l'ensemble de la séquence en une seule fois, plutôt que par petits segments séparés.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:27.515255",
+                "duration": 3.771234,
+                "cost": 0.000538
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1. 1. La prise en compte globale dans les modèles de transformer est utile lorsque certains jetons doivent être en relation avec tous les jetons de la séquence.\\n2. 2. Ces jetons globaux sont également pris en compte par tous les autres jetons.\\n3. 3. Cela est particulièrement avantageux dans des tâches telles que la traduction automatique', \"l'extraction de sujets\", 'la classification multilingue sans entraînement', \"l'analyse de sentiment\", 'la reconnaissance automatique de la parole et la classification/catégorisation de texte.\\n4. 4. Cela permet une compréhension plus approfondie du contexte et des relations au sein des données.\\n5. 5. De plus', 'la prise en compte globale est bénéfique pour traiter de longues séquences de données', \"car elle permet au modèle de considérer l'ensemble de la séquence en une seule fois\", 'plutôt que par petits segments séparés.'] - Not validated: ['1', '2', '3', '4', '5']",
+              "human": 1.0,
+              "auto": 1.6
             }
           },
           {
@@ -932,11 +1199,24 @@
             "meta": {},
             "text": "Global attention in transformer models is beneficial in scenarios where:\n\n1. **Long-range dependencies:** Global attention allows tokens in the sequence to attend to all other tokens, making it easier to capture long-range dependencies in the data.\n\n2. **Contextual understanding:** By allowing all tokens to attend to each other, global attention helps in capturing contextual information from the entire sequence, leading to better understanding of the input data.\n\n3. **Global information:** Global attention is useful when certain tokens need to have access to global information or context present in the entire sequence, rather than just local information.\n\n4. **Tasks requiring holistic understanding:** For tasks that require a holistic understanding of the input data, global attention can be beneficial as it enables tokens to consider information from the entire sequence, rather than just nearby tokens.\n\n5. **Enhancing performance:** In some cases, global attention can improve the performance of transformer models by providing a broader context for making predictions or decisions.\n\nOverall, global attention in transformer models is advantageous in scenarios where a comprehensive view of the input data is necessary for accurate processing and prediction.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1\n2\n3\n4\n5",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: Global attention in transformer models is beneficial in scenarios where:\n\n1. **Long-range dependencies:** Global attention allows tokens in the sequence to attend to all other tokens, making it easier to capture long-range dependencies in the data.\n\n2. **Contextual understanding:** By allowing all tokens to attend to each other, global attention helps in capturing contextual information from the entire sequence, leading to better understanding of the input data.\n\n3. **Global information:** Global attention is useful when certain tokens need to have access to global information or context present in the entire sequence, rather than just local information.\n\n4. **Tasks requiring holistic understanding:** For tasks that require a holistic understanding of the input data, global attention can be beneficial as it enables tokens to consider information from the entire sequence, rather than just nearby tokens.\n\n5. **Enhancing performance:** In some cases, global attention can improve the performance of transformer models by providing a broader context for making predictions or decisions.\n\nOverall, global attention in transformer models is advantageous in scenarios where a comprehensive view of the input data is necessary for accurate processing and prediction.\n\n1. 1. La prise en compte globale dans les modèles de transformer est utile lorsque certains jetons doivent être en relation avec tous les jetons de la séquence.\n2. 2. Ces jetons globaux sont également pris en compte par tous les autres jetons.\n3. 3. Cela est particulièrement avantageux dans des tâches telles que la traduction automatique, l'extraction de sujets, la classification multilingue sans entraînement, l'analyse de sentiment, la reconnaissance automatique de la parole et la classification/catégorisation de texte.\n4. 4. Cela permet une compréhension plus approfondie du contexte et des relations au sein des données.\n5. 5. De plus, la prise en compte globale est bénéfique pour traiter de longues séquences de données, car elle permet au modèle de considérer l'ensemble de la séquence en une seule fois, plutôt que par petits segments séparés.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:31.296286",
+                "duration": 0.7450289999999999,
+                "cost": 0.00028
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1\\n2\\n3\\n4\\n5'] - Not validated: ['1', '2', '3', '4', '5']",
+              "human": 1.0,
+              "auto": 0.2
             }
           }
         ]
@@ -949,9 +1229,55 @@
         "text": "Explain the importance of consistent distance between two time-steps across sentences of various lengths."
       },
       "facts": {
-        "llm_answer": null,
+        "llm_answer": {
+          "meta": {},
+          "text": "1. La distance constante entre deux pas de temps à travers des phrases de différentes longueurs est importante pour maintenir l'intégrité du codage de position dans les modèles de transformer.\n2. Cette cohérence garantit que le modèle peut capturer avec précision les positions relatives des mots dans une phrase, quelle que soit sa longueur.\n3. Dans les tâches de traitement du langage naturel, la position d'un mot dans une phrase porte souvent des informations contextuelles importantes.\n4. Par exemple, le mot \"non\" peut changer le sens d'une phrase en fonction de son emplacement.\n5. Si la distance entre les pas de temps n'est pas constante, le modèle peut mal interpréter la relation de position entre les mots, entraînant des prédictions ou interprétations inexactes.\n6. De plus, maintenir une distance constante entre les pas de temps permet au modèle de mieux généraliser aux phrases de différentes longueurs.\n7. Cela est dû au fait que le codage de position resterait cohérent et significatif quelle que soit la longueur de la phrase, permettant au modèle de comprendre et de traiter efficacement des phrases plus courtes ou plus longues.\n8. En résumé, une distance constante entre deux pas de temps à travers des phrases de différentes longueurs est cruciale pour un codage de position précis, une généralisation efficace du modèle et des performances globales dans les tâches de traitement du langage naturel.",
+          "prompt": {
+            "meta": {},
+            "user": "The consistent distance between two time-steps across sentences of various lengths is important for maintaining the integrity of the positional encoding in transformer models. This consistency ensures that the model can accurately capture the relative positions of words in a sentence, regardless of the sentence's length. \n\nIn natural language processing tasks, the position of a word in a sentence often carries important contextual information. For example, the word \"not\" can change the meaning of a sentence depending on where it is placed. If the distance between time-steps is not consistent, the model may misinterpret the positional relationship between words, leading to inaccurate predictions or interpretations.\n\nMoreover, maintaining a consistent distance between time-steps allows the model to generalize better to sentences of different lengths. This is because the positional encoding would remain consistent and meaningful across different sentence lengths, allowing the model to understand and process shorter or longer sentences effectively. \n\nIn summary, a consistent distance between two time-steps across sentences of various lengths is crucial for accurate positional encoding, effective model generalization, and overall performance in natural language processing tasks.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\n        Chaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\n        Les phrases ne doivent pas contenir de référence au document source ni à sa page.\n        Les phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises."
+          },
+          "name": "gpt-3.5-turbo",
+          "full_name": "gpt-3.5-turbo-0125",
+          "timestamp": "2024-05-09T02:21:03.848118",
+          "duration": 9.416669,
+          "cost": 0.0006575
+        },
         "meta": {},
-        "items": []
+        "items": [
+          {
+            "meta": {},
+            "text": "1. La distance constante entre deux pas de temps à travers des phrases de différentes longueurs est importante pour maintenir l'intégrité du codage de position dans les modèles de transformer."
+          },
+          {
+            "meta": {},
+            "text": "2. Cette cohérence garantit que le modèle peut capturer avec précision les positions relatives des mots dans une phrase, quelle que soit sa longueur."
+          },
+          {
+            "meta": {},
+            "text": "3. Dans les tâches de traitement du langage naturel, la position d'un mot dans une phrase porte souvent des informations contextuelles importantes."
+          },
+          {
+            "meta": {},
+            "text": "4. Par exemple, le mot \"non\" peut changer le sens d'une phrase en fonction de son emplacement."
+          },
+          {
+            "meta": {},
+            "text": "5. Si la distance entre les pas de temps n'est pas constante, le modèle peut mal interpréter la relation de position entre les mots, entraînant des prédictions ou interprétations inexactes."
+          },
+          {
+            "meta": {},
+            "text": "6. De plus, maintenir une distance constante entre les pas de temps permet au modèle de mieux généraliser aux phrases de différentes longueurs."
+          },
+          {
+            "meta": {},
+            "text": "7. Cela est dû au fait que le codage de position resterait cohérent et significatif quelle que soit la longueur de la phrase, permettant au modèle de comprendre et de traiter efficacement des phrases plus courtes ou plus longues."
+          },
+          {
+            "meta": {},
+            "text": "8. En résumé, une distance constante entre deux pas de temps à travers des phrases de différentes longueurs est cruciale pour un codage de position précis, une généralisation efficace du modèle et des performances globales dans les tâches de traitement du langage naturel."
+          }
+        ]
       },
       "chunks": {
         "meta": {},
@@ -1105,11 +1431,24 @@
             "meta": {},
             "text": "The consistent distance between two time-steps across sentences of various lengths is important for maintaining the integrity of the positional encoding in transformer models. This consistency ensures that the model can accurately capture the relative positions of words in a sentence, regardless of the sentence's length. \n\nIn natural language processing tasks, the position of a word in a sentence often carries important contextual information. For example, the word \"not\" can change the meaning of a sentence depending on where it is placed. If the distance between time-steps is not consistent, the model may misinterpret the positional relationship between words, leading to inaccurate predictions or interpretations.\n\nMoreover, maintaining a consistent distance between time-steps allows the model to generalize better to sentences of different lengths. This is because the positional encoding would remain consistent and meaningful across different sentence lengths, allowing the model to understand and process shorter or longer sentences effectively. \n\nIn summary, a consistent distance between two time-steps across sentences of various lengths is crucial for accurate positional encoding, effective model generalization, and overall performance in natural language processing tasks.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1. La distance constante entre deux pas de temps à travers des phrases de différentes longueurs est importante pour maintenir l'intégrité du codage de position dans les modèles de transformer.\n2. 2. Cette cohérence garantit que le modèle peut capturer avec précision les positions relatives des mots dans une phrase, quelle que soit sa longueur.\n3. 3. Dans les tâches de traitement du langage naturel, la position d'un mot dans une phrase porte souvent des informations contextuelles importantes.\n4. 4. Par exemple, le mot \"non\" peut changer le sens d'une phrase en fonction de son emplacement.\n5. 5. Si la distance entre les pas de temps n'est pas constante, le modèle peut mal interpréter la relation de position entre les mots, entraînant des prédictions ou interprétations inexactes.\n6. 6. De plus, maintenir une distance constante entre les pas de temps permet au modèle de mieux généraliser aux phrases de différentes longueurs.\n7. 7. Cela est dû au fait que le codage de position resterait cohérent et significatif quelle que soit la longueur de la phrase, permettant au modèle de comprendre et de traiter efficacement des phrases plus courtes ou plus longues.\n8. 8. En résumé, une distance constante entre deux pas de temps à travers des phrases de différentes longueurs est cruciale pour un codage de position précis, une généralisation efficace du modèle et des performances globales dans les tâches de traitement du langage naturel.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: The consistent distance between two time-steps across sentences of various lengths is important for maintaining the integrity of the positional encoding in transformer models. This consistency ensures that the model can accurately capture the relative positions of words in a sentence, regardless of the sentence's length. \n\nIn natural language processing tasks, the position of a word in a sentence often carries important contextual information. For example, the word \"not\" can change the meaning of a sentence depending on where it is placed. If the distance between time-steps is not consistent, the model may misinterpret the positional relationship between words, leading to inaccurate predictions or interpretations.\n\nMoreover, maintaining a consistent distance between time-steps allows the model to generalize better to sentences of different lengths. This is because the positional encoding would remain consistent and meaningful across different sentence lengths, allowing the model to understand and process shorter or longer sentences effectively. \n\nIn summary, a consistent distance between two time-steps across sentences of various lengths is crucial for accurate positional encoding, effective model generalization, and overall performance in natural language processing tasks.\n\n1. 1. La distance constante entre deux pas de temps à travers des phrases de différentes longueurs est importante pour maintenir l'intégrité du codage de position dans les modèles de transformer.\n2. 2. Cette cohérence garantit que le modèle peut capturer avec précision les positions relatives des mots dans une phrase, quelle que soit sa longueur.\n3. 3. Dans les tâches de traitement du langage naturel, la position d'un mot dans une phrase porte souvent des informations contextuelles importantes.\n4. 4. Par exemple, le mot \"non\" peut changer le sens d'une phrase en fonction de son emplacement.\n5. 5. Si la distance entre les pas de temps n'est pas constante, le modèle peut mal interpréter la relation de position entre les mots, entraînant des prédictions ou interprétations inexactes.\n6. 6. De plus, maintenir une distance constante entre les pas de temps permet au modèle de mieux généraliser aux phrases de différentes longueurs.\n7. 7. Cela est dû au fait que le codage de position resterait cohérent et significatif quelle que soit la longueur de la phrase, permettant au modèle de comprendre et de traiter efficacement des phrases plus courtes ou plus longues.\n8. 8. En résumé, une distance constante entre deux pas de temps à travers des phrases de différentes longueurs est cruciale pour un codage de position précis, une généralisation efficace du modèle et des performances globales dans les tâches de traitement du langage naturel.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:27.528837",
+                "duration": 5.392354,
+                "cost": 0.0008635
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: [\"1. 1. La distance constante entre deux pas de temps à travers des phrases de différentes longueurs est importante pour maintenir l'intégrité du codage de position dans les modèles de transformer.\\n2. 2. Cette cohérence garantit que le modèle peut capturer avec précision les positions relatives des mots dans une phrase\", 'quelle que soit sa longueur.\\n3. 3. Dans les tâches de traitement du langage naturel', \"la position d'un mot dans une phrase porte souvent des informations contextuelles importantes.\\n4. 4. Par exemple\", 'le mot \"non\" peut changer le sens d\\'une phrase en fonction de son emplacement.\\n5. 5. Si la distance entre les pas de temps n\\'est pas constante', 'le modèle peut mal interpréter la relation de position entre les mots', 'entraînant des prédictions ou interprétations inexactes.\\n6. 6. De plus', 'maintenir une distance constante entre les pas de temps permet au modèle de mieux généraliser aux phrases de différentes longueurs.\\n7. 7. Cela est dû au fait que le codage de position resterait cohérent et significatif quelle que soit la longueur de la phrase', 'permettant au modèle de comprendre et de traiter efficacement des phrases plus courtes ou plus longues.\\n8. 8. En résumé', 'une distance constante entre deux pas de temps à travers des phrases de différentes longueurs est cruciale pour un codage de position précis', 'une généralisation efficace du modèle et des performances globales dans les tâches de traitement du langage naturel.'] - Not validated: ['1', '2', '3', '4', '5', '6', '7', '8']",
+              "human": 1.0,
+              "auto": 1.25
             }
           },
           {
@@ -1130,11 +1469,24 @@
             "meta": {},
             "text": "Consistent distance between two time-steps across sentences of various lengths is important for several reasons:\n\n1. **Maintaining Contextual Relationships**: In natural language processing tasks, the distance between two time-steps (words in a sentence) can affect the contextual relationships between them. Consistent distance ensures that the model can capture and understand the relationships between words regardless of the sentence length.\n\n2. **Generalization**: By maintaining a consistent distance between time-steps, the model can generalize its learning across sentences of different lengths. This is crucial for the model to perform well on unseen data and tasks.\n\n3. **Information Flow**: Consistent distance helps in the smooth flow of information between time-steps. If the distance varies significantly across sentences, it can lead to information loss or confusion in the model's understanding of the text.\n\n4. **Model Stability**: Having a consistent distance between time-steps helps in stabilizing the model's training process. It ensures that the model learns to process and encode information in a consistent manner, leading to more stable and reliable predictions.\n\nOverall, consistent distance between time-steps is a key factor in ensuring that the model can effectively understand and process text data, regardless of the length or complexity of the sentences.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1\n2\n3",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: Consistent distance between two time-steps across sentences of various lengths is important for several reasons:\n\n1. **Maintaining Contextual Relationships**: In natural language processing tasks, the distance between two time-steps (words in a sentence) can affect the contextual relationships between them. Consistent distance ensures that the model can capture and understand the relationships between words regardless of the sentence length.\n\n2. **Generalization**: By maintaining a consistent distance between time-steps, the model can generalize its learning across sentences of different lengths. This is crucial for the model to perform well on unseen data and tasks.\n\n3. **Information Flow**: Consistent distance helps in the smooth flow of information between time-steps. If the distance varies significantly across sentences, it can lead to information loss or confusion in the model's understanding of the text.\n\n4. **Model Stability**: Having a consistent distance between time-steps helps in stabilizing the model's training process. It ensures that the model learns to process and encode information in a consistent manner, leading to more stable and reliable predictions.\n\nOverall, consistent distance between time-steps is a key factor in ensuring that the model can effectively understand and process text data, regardless of the length or complexity of the sentences.\n\n1. 1. La distance constante entre deux pas de temps à travers des phrases de différentes longueurs est importante pour maintenir l'intégrité du codage de position dans les modèles de transformer.\n2. 2. Cette cohérence garantit que le modèle peut capturer avec précision les positions relatives des mots dans une phrase, quelle que soit sa longueur.\n3. 3. Dans les tâches de traitement du langage naturel, la position d'un mot dans une phrase porte souvent des informations contextuelles importantes.\n4. 4. Par exemple, le mot \"non\" peut changer le sens d'une phrase en fonction de son emplacement.\n5. 5. Si la distance entre les pas de temps n'est pas constante, le modèle peut mal interpréter la relation de position entre les mots, entraînant des prédictions ou interprétations inexactes.\n6. 6. De plus, maintenir une distance constante entre les pas de temps permet au modèle de mieux généraliser aux phrases de différentes longueurs.\n7. 7. Cela est dû au fait que le codage de position resterait cohérent et significatif quelle que soit la longueur de la phrase, permettant au modèle de comprendre et de traiter efficacement des phrases plus courtes ou plus longues.\n8. 8. En résumé, une distance constante entre deux pas de temps à travers des phrases de différentes longueurs est cruciale pour un codage de position précis, une généralisation efficace du modèle et des performances globales dans les tâches de traitement du langage naturel.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:32.929051",
+                "duration": 0.725756,
+                "cost": 0.000359
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1\\n2\\n3'] - Not validated: ['1', '2', '3', '4', '5', '6', '7', '8']",
+              "human": 1.0,
+              "auto": 0.125
             }
           }
         ]
@@ -1147,9 +1499,47 @@
         "text": "Describe the computation process for each hidden unit in layer normalization."
       },
       "facts": {
-        "llm_answer": null,
+        "llm_answer": {
+          "meta": {},
+          "text": "1. En normalisation de couche, chaque unité cachée, notée hi, est calculée à l'aide de la formule hi = g * (hi - µ) / σ.\n2. Le paramètre g est la variable de gain qui peut être fixée à 1.\n3. La moyenne µ des unités cachées est calculée en additionnant toutes les unités cachées et en divisant par le nombre total d'unités cachées, représenté par H.\n4. L'écart type σ est calculé en prenant la racine carrée de la moyenne des écarts au carré des unités cachées par rapport à leur moyenne.\n5. Cette computation garantit que chaque couche a une moyenne de 0 et une variance de 1, réduisant le décalage de covariance, c'est-à-dire les dépendances de gradient entre chaque couche.\n6. Cela accélère la convergence car moins d'itérations sont nécessaires.",
+          "prompt": {
+            "meta": {},
+            "user": "In layer normalization, each hidden unit, denoted as hi, is computed using the following formula:\n\nhi = g * (hi - µ) / σ\n\nHere, g is the gain variable which can be set to 1, µ is the mean of the hidden units, and σ is the standard deviation of the hidden units. The mean µ is calculated by summing all the hidden units and dividing by the total number of hidden units, represented as H. The standard deviation σ is calculated by taking the square root of the average of the squared deviations of the hidden units from their mean.\n\nThis computation ensures that each layer has a mean of 0 and a variance of 1, reducing the covariance shift, i.e., the gradient dependencies between each layer. This speeds up the convergence as fewer iterations are needed.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\n        Chaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\n        Les phrases ne doivent pas contenir de référence au document source ni à sa page.\n        Les phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises."
+          },
+          "name": "gpt-3.5-turbo",
+          "full_name": "gpt-3.5-turbo-0125",
+          "timestamp": "2024-05-09T02:21:03.854503",
+          "duration": 7.494375,
+          "cost": 0.000465
+        },
         "meta": {},
-        "items": []
+        "items": [
+          {
+            "meta": {},
+            "text": "1. En normalisation de couche, chaque unité cachée, notée hi, est calculée à l'aide de la formule hi = g * (hi - µ) / σ."
+          },
+          {
+            "meta": {},
+            "text": "2. Le paramètre g est la variable de gain qui peut être fixée à 1."
+          },
+          {
+            "meta": {},
+            "text": "3. La moyenne µ des unités cachées est calculée en additionnant toutes les unités cachées et en divisant par le nombre total d'unités cachées, représenté par H."
+          },
+          {
+            "meta": {},
+            "text": "4. L'écart type σ est calculé en prenant la racine carrée de la moyenne des écarts au carré des unités cachées par rapport à leur moyenne."
+          },
+          {
+            "meta": {},
+            "text": "5. Cette computation garantit que chaque couche a une moyenne de 0 et une variance de 1, réduisant le décalage de covariance, c'est-à-dire les dépendances de gradient entre chaque couche."
+          },
+          {
+            "meta": {},
+            "text": "6. Cela accélère la convergence car moins d'itérations sont nécessaires."
+          }
+        ]
       },
       "chunks": {
         "meta": {},
@@ -1275,11 +1665,24 @@
             "meta": {},
             "text": "In layer normalization, each hidden unit, denoted as hi, is computed using the following formula:\n\nhi = g * (hi - µ) / σ\n\nHere, g is the gain variable which can be set to 1, µ is the mean of the hidden units, and σ is the standard deviation of the hidden units. The mean µ is calculated by summing all the hidden units and dividing by the total number of hidden units, represented as H. The standard deviation σ is calculated by taking the square root of the average of the squared deviations of the hidden units from their mean.\n\nThis computation ensures that each layer has a mean of 0 and a variance of 1, reducing the covariance shift, i.e., the gradient dependencies between each layer. This speeds up the convergence as fewer iterations are needed.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1. En normalisation de couche, chaque unité cachée, notée hi, est calculée à l'aide de la formule hi = g * (hi - µ) / σ.\n2. 2. Le paramètre g est la variable de gain qui peut être fixée à 1.\n3. 3. La moyenne µ des unités cachées est calculée en additionnant toutes les unités cachées et en divisant par le nombre total d'unités cachées, représenté par H.\n4. 4. L'écart type σ est calculé en prenant la racine carrée de la moyenne des écarts au carré des unités cachées par rapport à leur moyenne.\n5. 5. Cette computation garantit que chaque couche a une moyenne de 0 et une variance de 1, réduisant le décalage de covariance, c'est-à-dire les dépendances de gradient entre chaque couche.\n6. 6. Cela accélère la convergence car moins d'itérations sont nécessaires.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: In layer normalization, each hidden unit, denoted as hi, is computed using the following formula:\n\nhi = g * (hi - µ) / σ\n\nHere, g is the gain variable which can be set to 1, µ is the mean of the hidden units, and σ is the standard deviation of the hidden units. The mean µ is calculated by summing all the hidden units and dividing by the total number of hidden units, represented as H. The standard deviation σ is calculated by taking the square root of the average of the squared deviations of the hidden units from their mean.\n\nThis computation ensures that each layer has a mean of 0 and a variance of 1, reducing the covariance shift, i.e., the gradient dependencies between each layer. This speeds up the convergence as fewer iterations are needed.\n\n1. 1. En normalisation de couche, chaque unité cachée, notée hi, est calculée à l'aide de la formule hi = g * (hi - µ) / σ.\n2. 2. Le paramètre g est la variable de gain qui peut être fixée à 1.\n3. 3. La moyenne µ des unités cachées est calculée en additionnant toutes les unités cachées et en divisant par le nombre total d'unités cachées, représenté par H.\n4. 4. L'écart type σ est calculé en prenant la racine carrée de la moyenne des écarts au carré des unités cachées par rapport à leur moyenne.\n5. 5. Cette computation garantit que chaque couche a une moyenne de 0 et une variance de 1, réduisant le décalage de covariance, c'est-à-dire les dépendances de gradient entre chaque couche.\n6. 6. Cela accélère la convergence car moins d'itérations sont nécessaires.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:27.538100",
+                "duration": 4.075737,
+                "cost": 0.000603
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1. 1. En normalisation de couche', 'chaque unité cachée', 'notée hi', \"est calculée à l'aide de la formule hi = g * (hi - µ) / σ.\\n2. 2. Le paramètre g est la variable de gain qui peut être fixée à 1.\\n3. 3. La moyenne µ des unités cachées est calculée en additionnant toutes les unités cachées et en divisant par le nombre total d'unités cachées\", \"représenté par H.\\n4. 4. L'écart type σ est calculé en prenant la racine carrée de la moyenne des écarts au carré des unités cachées par rapport à leur moyenne.\\n5. 5. Cette computation garantit que chaque couche a une moyenne de 0 et une variance de 1\", 'réduisant le décalage de covariance', \"c'est-à-dire les dépendances de gradient entre chaque couche.\\n6. 6. Cela accélère la convergence car moins d'itérations sont nécessaires.\"] - Not validated: ['1', '2', '3', '4', '5', '6']",
+              "human": 1.0,
+              "auto": 1.1666666666666667
             }
           },
           {
@@ -1300,11 +1703,24 @@
             "meta": {},
             "text": "In layer normalization, the computation process for each hidden unit can be described as follows:\n\n1. Calculate the mean (µ) of all the hidden units in the layer:\n   µ = 1/H * Σ(i=1 to H) hi\n\n2. Calculate the standard deviation (σ) of the hidden units in the layer:\n   σ = √(1/H * Σ(i=1 to H) (hi - µ)^2)\n\n3. Compute the normalized value for each hidden unit (hi) using the following formula:\n   hi_normalized = g * (hi - µ) / σ\n\n   where:\n   - hi_normalized is the normalized value of the hidden unit hi\n   - g is the gain variable (usually set to 1)\n   - µ is the mean calculated in step 1\n   - σ is the standard deviation calculated in step 2\n\n4. The normalized values are then passed through an activation function (e.g., ReLU) to introduce non-linearity and enhance the representation of the hidden units.\n\n5. The normalized and activated hidden units are then combined with the original hidden units using a residual connection, and the resulting values are passed through another normalization step to ensure stability and faster convergence.\n\nOverall, layer normalization helps to reduce the covariance shift between layers, speeds up convergence by reducing gradient dependencies, and ensures that each layer has a mean of 0 and a unit variance.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1\n2\n3\n5",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: In layer normalization, the computation process for each hidden unit can be described as follows:\n\n1. Calculate the mean (µ) of all the hidden units in the layer:\n   µ = 1/H * Σ(i=1 to H) hi\n\n2. Calculate the standard deviation (σ) of the hidden units in the layer:\n   σ = √(1/H * Σ(i=1 to H) (hi - µ)^2)\n\n3. Compute the normalized value for each hidden unit (hi) using the following formula:\n   hi_normalized = g * (hi - µ) / σ\n\n   where:\n   - hi_normalized is the normalized value of the hidden unit hi\n   - g is the gain variable (usually set to 1)\n   - µ is the mean calculated in step 1\n   - σ is the standard deviation calculated in step 2\n\n4. The normalized values are then passed through an activation function (e.g., ReLU) to introduce non-linearity and enhance the representation of the hidden units.\n\n5. The normalized and activated hidden units are then combined with the original hidden units using a residual connection, and the resulting values are passed through another normalization step to ensure stability and faster convergence.\n\nOverall, layer normalization helps to reduce the covariance shift between layers, speeds up convergence by reducing gradient dependencies, and ensures that each layer has a mean of 0 and a unit variance.\n\n1. 1. En normalisation de couche, chaque unité cachée, notée hi, est calculée à l'aide de la formule hi = g * (hi - µ) / σ.\n2. 2. Le paramètre g est la variable de gain qui peut être fixée à 1.\n3. 3. La moyenne µ des unités cachées est calculée en additionnant toutes les unités cachées et en divisant par le nombre total d'unités cachées, représenté par H.\n4. 4. L'écart type σ est calculé en prenant la racine carrée de la moyenne des écarts au carré des unités cachées par rapport à leur moyenne.\n5. 5. Cette computation garantit que chaque couche a une moyenne de 0 et une variance de 1, réduisant le décalage de covariance, c'est-à-dire les dépendances de gradient entre chaque couche.\n6. 6. Cela accélère la convergence car moins d'itérations sont nécessaires.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:31.620507",
+                "duration": 0.94486,
+                "cost": 0.000323
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1\\n2\\n3\\n5'] - Not validated: ['1', '2', '3', '4', '5', '6']",
+              "human": 1.0,
+              "auto": 0.16666666666666666
             }
           }
         ]
@@ -1317,9 +1733,55 @@
         "text": "Explain the formula for computing the attention with queries in a cluster in the context of Transformer modifications."
       },
       "facts": {
-        "llm_answer": null,
+        "llm_answer": {
+          "meta": {},
+          "text": "1. La formule pour calculer l'attention avec les requêtes dans un cluster est donnée par At_il.\n2. Si Tjl est égal à 1, alors le calcul est basé sur une formule spécifique, sinon il est basé sur Ac_jl.\n3. La formule implique l'utilisation de l'exponentielle des produits scalaires des requêtes avec les clés.\n4. La méthode de l'attention groupée vise à réduire la complexité temporelle de l'auto-attention.\n5. Elle utilise un algorithme de clustering k-means pour regrouper les requêtes hachées LSH.\n6. Les vecteurs de contexte de l'attention groupée sont calculés comme une moyenne pondérée des valeurs.\n7. Ces vecteurs de contexte sont ensuite utilisés comme matrice de valeurs.\n8. La complexité de calcul de l'attention groupée est linéaire en fonction de la longueur de la séquence.",
+          "prompt": {
+            "meta": {},
+            "user": "In the context of Transformer modifications, the attention with queries in a cluster is computed using the following formula:\n\nAt_il = { ˆmjexp(qiklT) / ∑L r=1Tjrexp(qikrT), if Tjl= 1, Ac_jl, otherwise (5.68)\n\nHere, ˆmj = ∑L i=1TijAc_ij and T ∈ {0,1}C×L. If Tij= 1, then ki is one of the top-k keys for in cluster j. \n\nThis formula is used in the context of clustered attention, a method to avoid self-attention’s O(L2·dk+ L2·dv) time complexity that linearizes the self-attention weight computation by clustering LSH hashed queries with the k-means clustering algorithm. The attention is computed for each of the top-k keys for a cluster with the queries in that cluster. The context vectors (weighted average of the values) of the clustered attention are then computed and used as the value matrix. This makes the complexity of the clustered attention calculation to O(CL·dk+LC·dv+kLmax(dk,dv)), which is linear in the sequence length.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\n        Chaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\n        Les phrases ne doivent pas contenir de référence au document source ni à sa page.\n        Les phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises."
+          },
+          "name": "gpt-3.5-turbo",
+          "full_name": "gpt-3.5-turbo-0125",
+          "timestamp": "2024-05-09T02:21:03.862884",
+          "duration": 7.830011,
+          "cost": 0.0005065
+        },
         "meta": {},
-        "items": []
+        "items": [
+          {
+            "meta": {},
+            "text": "1. La formule pour calculer l'attention avec les requêtes dans un cluster est donnée par At_il."
+          },
+          {
+            "meta": {},
+            "text": "2. Si Tjl est égal à 1, alors le calcul est basé sur une formule spécifique, sinon il est basé sur Ac_jl."
+          },
+          {
+            "meta": {},
+            "text": "3. La formule implique l'utilisation de l'exponentielle des produits scalaires des requêtes avec les clés."
+          },
+          {
+            "meta": {},
+            "text": "4. La méthode de l'attention groupée vise à réduire la complexité temporelle de l'auto-attention."
+          },
+          {
+            "meta": {},
+            "text": "5. Elle utilise un algorithme de clustering k-means pour regrouper les requêtes hachées LSH."
+          },
+          {
+            "meta": {},
+            "text": "6. Les vecteurs de contexte de l'attention groupée sont calculés comme une moyenne pondérée des valeurs."
+          },
+          {
+            "meta": {},
+            "text": "7. Ces vecteurs de contexte sont ensuite utilisés comme matrice de valeurs."
+          },
+          {
+            "meta": {},
+            "text": "8. La complexité de calcul de l'attention groupée est linéaire en fonction de la longueur de la séquence."
+          }
+        ]
       },
       "chunks": {
         "meta": {},
@@ -1459,11 +1921,24 @@
             "meta": {},
             "text": "In the context of Transformer modifications, the attention with queries in a cluster is computed using the following formula:\n\nAt_il = { ˆmjexp(qiklT) / ∑L r=1Tjrexp(qikrT), if Tjl= 1, Ac_jl, otherwise (5.68)\n\nHere, ˆmj = ∑L i=1TijAc_ij and T ∈ {0,1}C×L. If Tij= 1, then ki is one of the top-k keys for in cluster j. \n\nThis formula is used in the context of clustered attention, a method to avoid self-attention’s O(L2·dk+ L2·dv) time complexity that linearizes the self-attention weight computation by clustering LSH hashed queries with the k-means clustering algorithm. The attention is computed for each of the top-k keys for a cluster with the queries in that cluster. The context vectors (weighted average of the values) of the clustered attention are then computed and used as the value matrix. This makes the complexity of the clustered attention calculation to O(CL·dk+LC·dv+kLmax(dk,dv)), which is linear in the sequence length.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1. La formule pour calculer l'attention avec les requêtes dans un cluster est donnée par At_il.\n2. 2. Si Tjl est égal à 1, alors le calcul est basé sur une formule spécifique, sinon il est basé sur Ac_jl.\n3. 3. La formule implique l'utilisation de l'exponentielle des produits scalaires des requêtes avec les clés.\n4. 4. La méthode de l'attention groupée vise à réduire la complexité temporelle de l'auto-attention.\n5. 5. Elle utilise un algorithme de clustering k-means pour regrouper les requêtes hachées LSH.\n6. 6. Les vecteurs de contexte de l'attention groupée sont calculés comme une moyenne pondérée des valeurs.\n7. 7. Ces vecteurs de contexte sont ensuite utilisés comme matrice de valeurs.\n8. 8. La complexité de calcul de l'attention groupée est linéaire en fonction de la longueur de la séquence.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: In the context of Transformer modifications, the attention with queries in a cluster is computed using the following formula:\n\nAt_il = { ˆmjexp(qiklT) / ∑L r=1Tjrexp(qikrT), if Tjl= 1, Ac_jl, otherwise (5.68)\n\nHere, ˆmj = ∑L i=1TijAc_ij and T ∈ {0,1}C×L. If Tij= 1, then ki is one of the top-k keys for in cluster j. \n\nThis formula is used in the context of clustered attention, a method to avoid self-attention’s O(L2·dk+ L2·dv) time complexity that linearizes the self-attention weight computation by clustering LSH hashed queries with the k-means clustering algorithm. The attention is computed for each of the top-k keys for a cluster with the queries in that cluster. The context vectors (weighted average of the values) of the clustered attention are then computed and used as the value matrix. This makes the complexity of the clustered attention calculation to O(CL·dk+LC·dv+kLmax(dk,dv)), which is linear in the sequence length.\n\n1. 1. La formule pour calculer l'attention avec les requêtes dans un cluster est donnée par At_il.\n2. 2. Si Tjl est égal à 1, alors le calcul est basé sur une formule spécifique, sinon il est basé sur Ac_jl.\n3. 3. La formule implique l'utilisation de l'exponentielle des produits scalaires des requêtes avec les clés.\n4. 4. La méthode de l'attention groupée vise à réduire la complexité temporelle de l'auto-attention.\n5. 5. Elle utilise un algorithme de clustering k-means pour regrouper les requêtes hachées LSH.\n6. 6. Les vecteurs de contexte de l'attention groupée sont calculés comme une moyenne pondérée des valeurs.\n7. 7. Ces vecteurs de contexte sont ensuite utilisés comme matrice de valeurs.\n8. 8. La complexité de calcul de l'attention groupée est linéaire en fonction de la longueur de la séquence.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:27.542533",
+                "duration": 4.367195,
+                "cost": 0.0006555
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: [\"1. 1. La formule pour calculer l'attention avec les requêtes dans un cluster est donnée par At_il.\\n2. 2. Si Tjl est égal à 1\", 'alors le calcul est basé sur une formule spécifique', \"sinon il est basé sur Ac_jl.\\n3. 3. La formule implique l'utilisation de l'exponentielle des produits scalaires des requêtes avec les clés.\\n4. 4. La méthode de l'attention groupée vise à réduire la complexité temporelle de l'auto-attention.\\n5. 5. Elle utilise un algorithme de clustering k-means pour regrouper les requêtes hachées LSH.\\n6. 6. Les vecteurs de contexte de l'attention groupée sont calculés comme une moyenne pondérée des valeurs.\\n7. 7. Ces vecteurs de contexte sont ensuite utilisés comme matrice de valeurs.\\n8. 8. La complexité de calcul de l'attention groupée est linéaire en fonction de la longueur de la séquence.\"] - Not validated: ['1', '2', '3', '4', '5', '6', '7', '8']",
+              "human": 1.0,
+              "auto": 0.375
             }
           },
           {
@@ -1484,11 +1959,24 @@
             "meta": {},
             "text": "In the context of Transformer modifications, the formula for computing the attention with queries in a cluster involves a process known as Clustered Attention. This method aims to linearize the self-attention weight computation to improve efficiency.\n\nHere is an overview of the formula and the steps involved in computing the attention with queries in a cluster:\n\n1. **Clustering Query Vectors**: \n   - Initially, each query vector is hashed using Locality-Sensitive Hashing (LSH).\n   - The hashed queries are then grouped into C clusters using the k-means clustering algorithm. The distance metric used for k-means is the Hamming distance.\n   - The centroid of the jth cluster is calculated using the formula: qcj = ∑i=1L Sij qi / ∑i=1L Sij, where S is a matrix partitioning the query vectors into C non-overlapping clusters.\n\n2. **Query Centroids and Clustered Attention Matrix**:\n   - The centroid queries are grouped into Qc, a matrix of centroid vectors.\n   - The real query matrix is substituted with the query centroid matrix, Qc, to compute the clustered attention matrix using the formula: Ac = softmax(QcKT / √(dk)), where dk is the dimension of the keys.\n\n3. **Output Computation**:\n   - The clustered attention weights obtained from the above calculation can be used to compute the output of the attention mechanism.\n   - The context vectors (weighted average of the values) of the clustered attention are used as the value matrix, denoted as V̂ = AtV.\n\n4. **Complexity**:\n   - The complexity of the clustered attention calculation is linear in the sequence length and is given by O(CL·dk + LC·dv + kL·max(dk, dv)).\n\nIn summary, the formula for computing the attention with queries in a cluster involves clustering the query vectors, calculating centroid queries, computing the clustered attention matrix, and using it to derive the output of the attention mechanism. This approach helps optimize the self-attention computation in Transformers for improved efficiency.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: In the context of Transformer modifications, the formula for computing the attention with queries in a cluster involves a process known as Clustered Attention. This method aims to linearize the self-attention weight computation to improve efficiency.\n\nHere is an overview of the formula and the steps involved in computing the attention with queries in a cluster:\n\n1. **Clustering Query Vectors**: \n   - Initially, each query vector is hashed using Locality-Sensitive Hashing (LSH).\n   - The hashed queries are then grouped into C clusters using the k-means clustering algorithm. The distance metric used for k-means is the Hamming distance.\n   - The centroid of the jth cluster is calculated using the formula: qcj = ∑i=1L Sij qi / ∑i=1L Sij, where S is a matrix partitioning the query vectors into C non-overlapping clusters.\n\n2. **Query Centroids and Clustered Attention Matrix**:\n   - The centroid queries are grouped into Qc, a matrix of centroid vectors.\n   - The real query matrix is substituted with the query centroid matrix, Qc, to compute the clustered attention matrix using the formula: Ac = softmax(QcKT / √(dk)), where dk is the dimension of the keys.\n\n3. **Output Computation**:\n   - The clustered attention weights obtained from the above calculation can be used to compute the output of the attention mechanism.\n   - The context vectors (weighted average of the values) of the clustered attention are used as the value matrix, denoted as V̂ = AtV.\n\n4. **Complexity**:\n   - The complexity of the clustered attention calculation is linear in the sequence length and is given by O(CL·dk + LC·dv + kL·max(dk, dv)).\n\nIn summary, the formula for computing the attention with queries in a cluster involves clustering the query vectors, calculating centroid queries, computing the clustered attention matrix, and using it to derive the output of the attention mechanism. This approach helps optimize the self-attention computation in Transformers for improved efficiency.\n\n1. 1. La formule pour calculer l'attention avec les requêtes dans un cluster est donnée par At_il.\n2. 2. Si Tjl est égal à 1, alors le calcul est basé sur une formule spécifique, sinon il est basé sur Ac_jl.\n3. 3. La formule implique l'utilisation de l'exponentielle des produits scalaires des requêtes avec les clés.\n4. 4. La méthode de l'attention groupée vise à réduire la complexité temporelle de l'auto-attention.\n5. 5. Elle utilise un algorithme de clustering k-means pour regrouper les requêtes hachées LSH.\n6. 6. Les vecteurs de contexte de l'attention groupée sont calculés comme une moyenne pondérée des valeurs.\n7. 7. Ces vecteurs de contexte sont ensuite utilisés comme matrice de valeurs.\n8. 8. La complexité de calcul de l'attention groupée est linéaire en fonction de la longueur de la séquence.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:31.918931",
+                "duration": 0.591148,
+                "cost": 0.00038449999999999997
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1'] - Not validated: ['2', '3', '4', '5', '6', '7', '8']",
+              "human": 1.0,
+              "auto": 0.125
             }
           }
         ]
@@ -1501,9 +1989,51 @@
         "text": "What is the role of the \"embedding\" and \"label\" variables in the compute_loss function?"
       },
       "facts": {
-        "llm_answer": null,
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Les variables \"embedding\" et \"label\" dans la fonction compute_loss sont utilisées pour calculer la perte du modèle pendant l'entraînement.\n2. La variable \"embedding\" représente la sortie du modèle, qui est la valeur prédite.\n3. C'est le résultat de la transformation des données d'entrée à travers le modèle.\n4. La variable \"label\" représente la valeur réelle ou vraie, servant de référence pour comparer les prédictions du modèle (embeddings).\n5. La fonction compute_loss calcule la différence entre les valeurs prédites (embeddings) et les valeurs réelles (labels).\n6. Cette différence est la perte que le modèle tente de minimiser pendant l'entraînement.\n7. Plus la perte est faible, meilleures sont les prédictions du modèle.",
+          "prompt": {
+            "meta": {},
+            "user": "The \"embedding\" and \"label\" variables in the compute_loss function are used to calculate the loss of the model during training. \n\nThe \"embedding\" variable represents the output of the model, which is the predicted value. It is the result of passing the input data through the model.\n\nThe \"label\" variable represents the actual or true value. It is the ground truth against which the model's predictions (embeddings) are compared.\n\nThe compute_loss function calculates the difference between the predicted values (embeddings) and the actual values (labels). This difference is the loss, which the model tries to minimize during training. The lower the loss, the better the model's predictions are.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\n        Chaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\n        Les phrases ne doivent pas contenir de référence au document source ni à sa page.\n        Les phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises."
+          },
+          "name": "gpt-3.5-turbo",
+          "full_name": "gpt-3.5-turbo-0125",
+          "timestamp": "2024-05-09T02:21:03.871038",
+          "duration": 7.269023,
+          "cost": 0.000401
+        },
         "meta": {},
-        "items": []
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Les variables \"embedding\" et \"label\" dans la fonction compute_loss sont utilisées pour calculer la perte du modèle pendant l'entraînement."
+          },
+          {
+            "meta": {},
+            "text": "2. La variable \"embedding\" représente la sortie du modèle, qui est la valeur prédite."
+          },
+          {
+            "meta": {},
+            "text": "3. C'est le résultat de la transformation des données d'entrée à travers le modèle."
+          },
+          {
+            "meta": {},
+            "text": "4. La variable \"label\" représente la valeur réelle ou vraie, servant de référence pour comparer les prédictions du modèle (embeddings)."
+          },
+          {
+            "meta": {},
+            "text": "5. La fonction compute_loss calcule la différence entre les valeurs prédites (embeddings) et les valeurs réelles (labels)."
+          },
+          {
+            "meta": {},
+            "text": "6. Cette différence est la perte que le modèle tente de minimiser pendant l'entraînement."
+          },
+          {
+            "meta": {},
+            "text": "7. Plus la perte est faible, meilleures sont les prédictions du modèle."
+          }
+        ]
       },
       "chunks": {
         "meta": {},
@@ -1671,11 +2201,24 @@
             "meta": {},
             "text": "The \"embedding\" and \"label\" variables in the compute_loss function are used to calculate the loss of the model during training. \n\nThe \"embedding\" variable represents the output of the model, which is the predicted value. It is the result of passing the input data through the model.\n\nThe \"label\" variable represents the actual or true value. It is the ground truth against which the model's predictions (embeddings) are compared.\n\nThe compute_loss function calculates the difference between the predicted values (embeddings) and the actual values (labels). This difference is the loss, which the model tries to minimize during training. The lower the loss, the better the model's predictions are.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1. Les variables \"embedding\" et \"label\" dans la fonction compute_loss sont utilisées pour calculer la perte du modèle pendant l'entraînement.\n2. 2. La variable \"embedding\" représente la sortie du modèle, qui est la valeur prédite.\n4. 4. La variable \"label\" représente la valeur réelle ou vraie, servant de référence pour comparer les prédictions du modèle (embeddings).\n5. 5. La fonction compute_loss calcule la différence entre les valeurs prédites (embeddings) et les valeurs réelles (labels).\n6. 6. Cette différence est la perte que le modèle tente de minimiser pendant l'entraînement.\n7. 7. Plus la perte est faible, meilleures sont les prédictions du modèle.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: The \"embedding\" and \"label\" variables in the compute_loss function are used to calculate the loss of the model during training. \n\nThe \"embedding\" variable represents the output of the model, which is the predicted value. It is the result of passing the input data through the model.\n\nThe \"label\" variable represents the actual or true value. It is the ground truth against which the model's predictions (embeddings) are compared.\n\nThe compute_loss function calculates the difference between the predicted values (embeddings) and the actual values (labels). This difference is the loss, which the model tries to minimize during training. The lower the loss, the better the model's predictions are.\n\n1. 1. Les variables \"embedding\" et \"label\" dans la fonction compute_loss sont utilisées pour calculer la perte du modèle pendant l'entraînement.\n2. 2. La variable \"embedding\" représente la sortie du modèle, qui est la valeur prédite.\n3. 3. C'est le résultat de la transformation des données d'entrée à travers le modèle.\n4. 4. La variable \"label\" représente la valeur réelle ou vraie, servant de référence pour comparer les prédictions du modèle (embeddings).\n5. 5. La fonction compute_loss calcule la différence entre les valeurs prédites (embeddings) et les valeurs réelles (labels).\n6. 6. Cette différence est la perte que le modèle tente de minimiser pendant l'entraînement.\n7. 7. Plus la perte est faible, meilleures sont les prédictions du modèle.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:27.547878",
+                "duration": 3.83553,
+                "cost": 0.000492
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1. 1. Les variables \"embedding\" et \"label\" dans la fonction compute_loss sont utilisées pour calculer la perte du modèle pendant l\\'entraînement.\\n2. 2. La variable \"embedding\" représente la sortie du modèle', 'qui est la valeur prédite.\\n4. 4. La variable \"label\" représente la valeur réelle ou vraie', \"servant de référence pour comparer les prédictions du modèle (embeddings).\\n5. 5. La fonction compute_loss calcule la différence entre les valeurs prédites (embeddings) et les valeurs réelles (labels).\\n6. 6. Cette différence est la perte que le modèle tente de minimiser pendant l'entraînement.\\n7. 7. Plus la perte est faible\", 'meilleures sont les prédictions du modèle.'] - Not validated: ['1', '2', '3', '4', '5', '6', '7']",
+              "human": 1.0,
+              "auto": 0.5714285714285714
             }
           },
           {
@@ -1696,11 +2239,24 @@
             "meta": {},
             "text": "In the compute_loss function, the \"embedding\" variable represents the embeddings of the text examples, which are generated by the embed_text function. These embeddings capture the contextualized information of the text examples and are used as input to the model for training and prediction.\n\nOn the other hand, the \"label\" variable represents the labels associated with the text examples. These labels are converted from their original form to integer values using the label2int dictionary. The model uses these labels to calculate the loss during training, comparing the predicted outputs with the actual labels to update the model parameters through backpropagation.\n\nOverall, the \"embedding\" and \"label\" variables play crucial roles in the compute_loss function by providing the input embeddings and target labels necessary for training the model and computing the loss function.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1. Les variables \"embedding\" et \"label\" dans la fonction compute_loss sont utilisées pour calculer la perte du modèle pendant l'entraînement.\n4. 4. La variable \"label\" représente la valeur réelle ou vraie, servant de référence pour comparer les prédictions du modèle (embeddings).\n5. 5. La fonction compute_loss calcule la différence entre les valeurs prédites (embeddings) et les valeurs réelles (labels).\n6. 6. Cette différence est la perte que le modèle tente de minimiser pendant l'entraînement.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: In the compute_loss function, the \"embedding\" variable represents the embeddings of the text examples, which are generated by the embed_text function. These embeddings capture the contextualized information of the text examples and are used as input to the model for training and prediction.\n\nOn the other hand, the \"label\" variable represents the labels associated with the text examples. These labels are converted from their original form to integer values using the label2int dictionary. The model uses these labels to calculate the loss during training, comparing the predicted outputs with the actual labels to update the model parameters through backpropagation.\n\nOverall, the \"embedding\" and \"label\" variables play crucial roles in the compute_loss function by providing the input embeddings and target labels necessary for training the model and computing the loss function.\n\n1. 1. Les variables \"embedding\" et \"label\" dans la fonction compute_loss sont utilisées pour calculer la perte du modèle pendant l'entraînement.\n2. 2. La variable \"embedding\" représente la sortie du modèle, qui est la valeur prédite.\n3. 3. C'est le résultat de la transformation des données d'entrée à travers le modèle.\n4. 4. La variable \"label\" représente la valeur réelle ou vraie, servant de référence pour comparer les prédictions du modèle (embeddings).\n5. 5. La fonction compute_loss calcule la différence entre les valeurs prédites (embeddings) et les valeurs réelles (labels).\n6. 6. Cette différence est la perte que le modèle tente de minimiser pendant l'entraînement.\n7. 7. Plus la perte est faible, meilleures sont les prédictions du modèle.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:31.394300",
+                "duration": 2.613275,
+                "cost": 0.00043099999999999996
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1. 1. Les variables \"embedding\" et \"label\" dans la fonction compute_loss sont utilisées pour calculer la perte du modèle pendant l\\'entraînement.\\n4. 4. La variable \"label\" représente la valeur réelle ou vraie', \"servant de référence pour comparer les prédictions du modèle (embeddings).\\n5. 5. La fonction compute_loss calcule la différence entre les valeurs prédites (embeddings) et les valeurs réelles (labels).\\n6. 6. Cette différence est la perte que le modèle tente de minimiser pendant l'entraînement.\"] - Not validated: ['1', '2', '3', '4', '5', '6', '7']",
+              "human": 1.0,
+              "auto": 0.2857142857142857
             }
           }
         ]
@@ -1713,9 +2269,43 @@
         "text": "How does the attention mechanism address the issue of long-distance associations in language processing?"
       },
       "facts": {
-        "llm_answer": null,
+        "llm_answer": {
+          "meta": {},
+          "text": "1. L'attention permet de se concentrer sélectivement sur des éléments spécifiques tout en filtrant les moins pertinents.\n2. Chaque étape de temps dans le décodeur peut être influencée de manière différente par les variables cachées dans l'encodeur.\n3. Le décodeur peut ainsi accéder à des informations provenant de n'importe quel point de la séquence d'entrée.\n4. Cela permet au modèle de maintenir et d'utiliser des associations à longue distance dans le langage.\n5. Cela surmonte les limitations des architectures encodeur-décodeur traditionnelles basées sur les RNN.",
+          "prompt": {
+            "meta": {},
+            "user": "The attention mechanism addresses the issue of long-distance associations in language processing by selectively focusing on specific elements while filtering out the less relevant ones. It allows each time step in the decoder to be influenced differently by the hidden variables in the encoder. This means that the decoder can access information from any point in the input sequence, not just the last output of the encoder. This allows the model to maintain and utilize long-distance associations in the language, overcoming the limitations of traditional RNN-based encoder-decoder architectures.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\n        Chaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\n        Les phrases ne doivent pas contenir de référence au document source ni à sa page.\n        Les phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises."
+          },
+          "name": "gpt-3.5-turbo",
+          "full_name": "gpt-3.5-turbo-0125",
+          "timestamp": "2024-05-09T02:21:03.881532",
+          "duration": 8.572537,
+          "cost": 0.000328
+        },
         "meta": {},
-        "items": []
+        "items": [
+          {
+            "meta": {},
+            "text": "1. L'attention permet de se concentrer sélectivement sur des éléments spécifiques tout en filtrant les moins pertinents."
+          },
+          {
+            "meta": {},
+            "text": "2. Chaque étape de temps dans le décodeur peut être influencée de manière différente par les variables cachées dans l'encodeur."
+          },
+          {
+            "meta": {},
+            "text": "3. Le décodeur peut ainsi accéder à des informations provenant de n'importe quel point de la séquence d'entrée."
+          },
+          {
+            "meta": {},
+            "text": "4. Cela permet au modèle de maintenir et d'utiliser des associations à longue distance dans le langage."
+          },
+          {
+            "meta": {},
+            "text": "5. Cela surmonte les limitations des architectures encodeur-décodeur traditionnelles basées sur les RNN."
+          }
+        ]
       },
       "chunks": {
         "meta": {},
@@ -1876,11 +2466,24 @@
             "meta": {},
             "text": "The attention mechanism addresses the issue of long-distance associations in language processing by selectively focusing on specific elements while filtering out the less relevant ones. It allows each time step in the decoder to be influenced differently by the hidden variables in the encoder. This means that the decoder can access information from any point in the input sequence, not just the last output of the encoder. This allows the model to maintain and utilize long-distance associations in the language, overcoming the limitations of traditional RNN-based encoder-decoder architectures.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. 1. L'attention permet de se concentrer sélectivement sur des éléments spécifiques tout en filtrant les moins pertinents.\n2. 2. Chaque étape de temps dans le décodeur peut être influencée de manière différente par les variables cachées dans l'encodeur.\n3. 3. Le décodeur peut ainsi accéder à des informations provenant de n'importe quel point de la séquence d'entrée.\n4. 4. Cela permet au modèle de maintenir et d'utiliser des associations à longue distance dans le langage.\n5. 5. Cela surmonte les limitations des architectures encodeur-décodeur traditionnelles basées sur les RNN.",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: The attention mechanism addresses the issue of long-distance associations in language processing by selectively focusing on specific elements while filtering out the less relevant ones. It allows each time step in the decoder to be influenced differently by the hidden variables in the encoder. This means that the decoder can access information from any point in the input sequence, not just the last output of the encoder. This allows the model to maintain and utilize long-distance associations in the language, overcoming the limitations of traditional RNN-based encoder-decoder architectures.\n\n1. 1. L'attention permet de se concentrer sélectivement sur des éléments spécifiques tout en filtrant les moins pertinents.\n2. 2. Chaque étape de temps dans le décodeur peut être influencée de manière différente par les variables cachées dans l'encodeur.\n3. 3. Le décodeur peut ainsi accéder à des informations provenant de n'importe quel point de la séquence d'entrée.\n4. 4. Cela permet au modèle de maintenir et d'utiliser des associations à longue distance dans le langage.\n5. 5. Cela surmonte les limitations des architectures encodeur-décodeur traditionnelles basées sur les RNN.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:27.564581",
+                "duration": 4.143403,
+                "cost": 0.000425
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: [\"1. 1. L'attention permet de se concentrer sélectivement sur des éléments spécifiques tout en filtrant les moins pertinents.\\n2. 2. Chaque étape de temps dans le décodeur peut être influencée de manière différente par les variables cachées dans l'encodeur.\\n3. 3. Le décodeur peut ainsi accéder à des informations provenant de n'importe quel point de la séquence d'entrée.\\n4. 4. Cela permet au modèle de maintenir et d'utiliser des associations à longue distance dans le langage.\\n5. 5. Cela surmonte les limitations des architectures encodeur-décodeur traditionnelles basées sur les RNN.\"] - Not validated: ['1', '2', '3', '4', '5']",
+              "human": 1.0,
+              "auto": 0.2
             }
           },
           {
@@ -1901,11 +2504,24 @@
             "meta": {},
             "text": "The attention mechanism addresses the issue of long-distance associations in language processing by selectively focusing on specific elements while filtering out less relevant ones. In traditional RNN-based encoder-decoder architectures, complete information about the source sentence is compressed and encoded in a single context variable used by the decoder. This compression can lead to a loss of information, especially when dealing with complex sentence structures and long-distance associations in language.\n\nWith the attention mechanism, each time step's hidden variables on the encoder side are available and carry information to be used by the decoder network. This means that each time step in the decoder can be influenced differently by the hidden variables in the encoder, allowing for a more nuanced understanding of the input sequence.\n\nBy selectively attending to different parts of the input sequence based on their relevance to the current decoding step, the attention mechanism enables the model to capture long-distance associations more effectively. This selective focus helps in addressing the inefficiencies of compressing complex language structures into a single vector and allows the model to better retain and utilize important information throughout the decoding process.",
             "eval": {
-              "llm_answer": null,
+              "llm_answer": {
+                "meta": {},
+                "text": "1. Oui\n2. Oui\n4. Oui\n5. Oui",
+                "prompt": {
+                  "meta": {},
+                  "user": "Réponse: The attention mechanism addresses the issue of long-distance associations in language processing by selectively focusing on specific elements while filtering out less relevant ones. In traditional RNN-based encoder-decoder architectures, complete information about the source sentence is compressed and encoded in a single context variable used by the decoder. This compression can lead to a loss of information, especially when dealing with complex sentence structures and long-distance associations in language.\n\nWith the attention mechanism, each time step's hidden variables on the encoder side are available and carry information to be used by the decoder network. This means that each time step in the decoder can be influenced differently by the hidden variables in the encoder, allowing for a more nuanced understanding of the input sequence.\n\nBy selectively attending to different parts of the input sequence based on their relevance to the current decoding step, the attention mechanism enables the model to capture long-distance associations more effectively. This selective focus helps in addressing the inefficiencies of compressing complex language structures into a single vector and allows the model to better retain and utilize important information throughout the decoding process.\n\n1. 1. L'attention permet de se concentrer sélectivement sur des éléments spécifiques tout en filtrant les moins pertinents.\n2. 2. Chaque étape de temps dans le décodeur peut être influencée de manière différente par les variables cachées dans l'encodeur.\n3. 3. Le décodeur peut ainsi accéder à des informations provenant de n'importe quel point de la séquence d'entrée.\n4. 4. Cela permet au modèle de maintenir et d'utiliser des associations à longue distance dans le langage.\n5. 5. Cela surmonte les limitations des architectures encodeur-décodeur traditionnelles basées sur les RNN.",
+                  "system": "Tu dois dire pour chaque fait numérotés 1, 2, 3...s'il est présent dans la Réponse.\n        Si le fait 1 est présent dans la réponse, renvoie 1. Si le fait 2 est présent dans la réponse, renvoie 2 etc...\n        Si le fait est vrai mais qu'il n'est pas présent dans la réponse, tu ne dois pas le renvoyer."
+                },
+                "name": "gpt-3.5-turbo",
+                "full_name": "gpt-3.5-turbo-0125",
+                "timestamp": "2024-05-09T02:22:31.718390",
+                "duration": 0.8038009999999999,
+                "cost": 0.000265
+              },
               "meta": {},
-              "text": "",
-              "human": null,
-              "auto": null
+              "text": "Validated: ['1. Oui\\n2. Oui\\n4. Oui\\n5. Oui'] - Not validated: ['1', '2', '3', '4', '5']",
+              "human": 1.0,
+              "auto": 0.2
             }
           }
         ]

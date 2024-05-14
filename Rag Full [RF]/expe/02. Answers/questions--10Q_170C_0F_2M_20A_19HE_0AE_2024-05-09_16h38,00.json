@@ -153,7 +153,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           },
@@ -178,7 +178,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           }
@@ -344,7 +344,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           },
@@ -369,7 +369,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           }
@@ -521,7 +521,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           },
@@ -546,7 +546,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           }
@@ -698,7 +698,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           },
@@ -910,7 +910,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           },
@@ -935,7 +935,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           }
@@ -1108,7 +1108,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           },
@@ -1133,7 +1133,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           }
@@ -1278,7 +1278,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           },
@@ -1303,7 +1303,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           }
@@ -1462,7 +1462,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           },
@@ -1487,7 +1487,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           }
@@ -1674,7 +1674,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           },
@@ -1699,7 +1699,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           }
@@ -1879,7 +1879,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           },
@@ -1904,7 +1904,7 @@
               "llm_answer": null,
               "meta": {},
               "text": "",
-              "human": null,
+              "human": 1.0,
               "auto": null
             }
           }
