@@ -141,4 +141,16 @@ expe.save_to_json(path=FOLDER_FACTS / "validation_set.json")
 ```
 
 # Compare LLMs
-TODO
+Now we have a validation set, i.e. a set of questions + facts, we can run all our experiments.
+Let's first compare LLMs. To do so, we generate answers with different LLMs with:
+```python
+expe:Expe = generators.gen_Answers(folder_in=FOLDER_FACTS,
+                                   folder_out=FOLDER_ANSWERS,
+                                   json_file="validation_set--30Q_0C_219F_0M_0A_0HE_0AE_2024-05-02_17h30,58.json",
+                                   prompter=PptrBaseAns(),
+                                   llm_names=["gpt-4", 'vertex_ai/gemini-pro', "mistral/mistral-large-latest", "groq/llama3-8b-8192", "groq/lama3-70b-8192","groq/mixtral-8x7b-32768", "groq/gemma-7b-it"])
+
+expe.save_to_html()
+expe.export_to_spreadsheet(template_path=FOLDER_SST_TEMPLATES / 'without_retriever.xlsx')
+```
+
