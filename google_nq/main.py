@@ -35,8 +35,8 @@ eval_gen:EvalGenerator = EvalGenerator(llm_names=["gpt-4"], prompter=PptrEvalFR(
 expe = generators.generate(text_generator=eval_gen,
                            folder_in=FOLDER_ANSWERS,
                            folder_out=FOLDER_EVALS,
-                           json_file=expe.json_path.stem + '.json',
-                        #    json_file='validation_set--30Q_0C_219F_7M_209A_0HE_0AE_2024-05-11_19h51,17.json',
+                           # json_file=expe.json_path.stem + '.json',
+                           json_file='validation_set--30Q_0C_219F_7M_210A_0HE_0AE_2024-05-08_18h48,57.json',
                            save_to_html=True,
                            save_to_spreadsheet=True,
                            template_spreadsheet_path=FOLDER_SST_TEMPLATES / 'without_retriever.xlsx')

@@ -72,7 +72,7 @@ The HTML export looks like this:
 The 5 facts have been generated from the answer. As we can see, the facts are as independent as possible, and mostly rephrase the different sentences contained in the answer.
 
 ## Testing facts
-A good habit when facts have been generated is to test them using the same LLM used to generated them.
+A good habit when facts have been generated is to test them using the same LLM used to generate them.
 In this case, we run an automatic evaluation using the answers used to generate the facts (replace with your file name):
 ```python
 generators.gen_Evals(folder_in=FOLDER_FACTS, folder_out=FOLDER_EVALS, 
@@ -83,7 +83,7 @@ generators.gen_Evals(folder_in=FOLDER_FACTS, folder_out=FOLDER_EVALS,
 The prompter used for the evaluation asks the LLM to rewrite the original answer including references to the facts within the text. It allows :
 1. to easily review the correctness of the evaluation
 2. to measure the facts actually found in the answer, vs. those missed or even those invented (in this case the LLM is asked to but a question mark)
-The [prompt used in `PptrEvalFRv2()` is here](https://github.com/recitalAI/ragtime-package/blob/main/src/ragtime/generators.py#L235).
+The [prompt used in `PptrEvalFR()` is here](https://github.com/recitalAI/ragtime-package/blob/main/src/ragtime/generators.py#L230).
 
 
 The generated file is in `04. Evals` and should be named like `google_nq--30Q_0C_221F_1M_30A_30HE_29AE_2024-03-16_23h24,01.json`. Compared to the previous file name, we see here that 29 automatic evaluations have been run (`29AE`).
