@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 from typing import Optional
 from ragtime.expe import QA, Chunks, Prompt, Question, WithLLMAnswer
 from ragtime.base.prompter import Prompter
@@ -8,7 +10,7 @@ class MCQAnsPptr(Prompter):
         result.user = f"{question.text}"
         result.system = "Répond uniquement avec la lettre. Ne donne qu'une seule réponse."
         return result
-    
+
     def post_process(self, qa:QA=None, cur_obj:WithLLMAnswer=None):
         na:str = "na"
         # gets the raw output from the LLM and remove blanks
