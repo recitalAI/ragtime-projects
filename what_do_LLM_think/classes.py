@@ -1,5 +1,5 @@
 from typing import Optional
-from ragtime.expe import QA, Chunks, Prompt, Question, WithLLMAnswer
+from ragtime.base.data_type import QA, Chunks, Prompt, Question, WithLLMAnswer
 from ragtime.base.prompter import Prompter
 
 class MCQAnsPptr(Prompter):

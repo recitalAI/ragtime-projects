@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
 
 from datetime import datetime
-from ragtime.expe import Prompt, Question
-from ragtime.generators import LLM, LLMAnswer
-from ragtime.config import logger
+from ragtime.base.data_type import Prompt, LLMAnswer
+from ragtime.base.llm import LLM
 import os
 import asyncio
 import sseclient
 import requests
-import json
-
 
 ALBERT_USERNAME:str = os.getenv("ALBERT_USERNAME")
 ALBERT_EMAIL:str = os.getenv("ALBERT_EMAIL")
