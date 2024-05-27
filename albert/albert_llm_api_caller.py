@@ -21,11 +21,12 @@ ALBERT_FETCH_STREAM: str = ALBERT_URL + "/stream/{stream_id}/start"
 class Albert_LLM(llm.LLM):
     name: str = "AgentPublic/albertlight-7b"
     _model_name: str = "AgentPublic/albertlight-7b"
-    _temperature: int = 20
+    _temperature: int = 0
     _token: str = ""
     _headers: dict = {}
     _token_last_update: datetime = datetime.now()
     _TOKEN_DURATION: int = 24  # max token duration in hours
+    num_retries = 3
 
     async def _refresh_token(self):
         if self._token:
@@ -77,6 +78,7 @@ class Albert_LLM(llm.LLM):
         }
         response = await asyncio.to_thread(api.call, **request)
         json = response.json()
+        # print("JSON", json)
         stream_id = json.get("id")
         return stream_id
 
@@ -103,11 +105,20 @@ class Albert_LLM(llm.LLM):
     # TODO:
     # keep an eye on the rate limite
     async def complete(self, prompt: prompter.Prompt) -> llm.LLMAnswer:
-        start_ts: datetime = datetime.now()
-        await self._refresh_token()
-        stream_id = await self._init_stream(prompt.user)
-        result = self.fetch_stream(stream_id=stream_id)
-        duration = 0  # is the duration of the api call
+        retry: int = 1
+        time_to_wait: float = 3.0
+        while retry < self.num_retries:
+            try:
+                start_ts: datetime = datetime.now()
+                await self._refresh_token()
+                stream_id = await self._init_stream(prompt.user)
+                result = self.fetch_stream(stream_id=stream_id)
+                break
+            except:
+                await asyncio.sleep(time_to_wait)
+                retry += 1
+
+        duration = start_ts - datetime.now()  # is the duration of the api call
         cost = 0.0  # is the cost issued from a api call
 
         return llm.LLMAnswer(
