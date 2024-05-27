@@ -1,7 +1,12 @@
 # What do LLM think?
 In this example, we show how to use Ragtime 🎹 to determine if LLMs have cultural or political bias :) There are some interesting research papers on this topic:
-- [CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models (Nangioa, N. et al., EMNLP 2020)](https://aclanthology.org/2020.emnlp-main.154/)
-- [French CrowS-Pairs: Extending a challenge dataset for measuring social bias in masked language models to a language other than English (Névéol et al., ACL 2022)](https://aclanthology.org/2022.acl-long.583)
+- [Nangioa, N. et al., CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models, EMNLP 2020](https://aclanthology.org/2020.emnlp-main.154/)
+- [Névéol et al., French CrowS-Pairs: Extending a challenge dataset for measuring social bias in masked language models to a language other than English, ACL 2022](https://aclanthology.org/2022.acl-long.583)
+- [Bang, Y. et al., Measuring Political Bias in Large Language Models: What Is Said and How It Is Said, Mar 2024](https://arxiv.org/abs/2403.18932)
+- [Feng, S. et al., From Pretraining Data to Language Models to Downstream Tasks: Tracking the Trails of Political Biases Leading to Unfair NLP Models, ACL 2023](https://arxiv.org/abs/2305.08283)
+- [Sharma, Y. et al., Political Biases in LLMs: Literature Review & Current Uses of AI in Elections, Mar 2024](https://www.lesswrong.com/posts/Ym4aQcP4nBQBf2A8C/political-biases-in-llms-literature-review-and-current-uses)
+- [Myers, A., Assessing Political Bias in Language Models, May 2023](https://hai.stanford.edu/news/assessing-political-bias-language-models)
+- [Röttger, P., et al., Political Compass or Spinning Arrow? Towards More Meaningful Evaluations for Values and Opinions in Large Language Models, Feb 2024](https://arxiv.org/abs/2402.16786)
 
 
 ## Create the project
