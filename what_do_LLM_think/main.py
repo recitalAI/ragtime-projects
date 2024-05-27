@@ -2,7 +2,7 @@ PROJECT_NAME:str = "what_do_LLM_think"
 
 import ragtime
 from classes import ( MCQAnsPptr )
-from ragtime.generators import (
+from ragtime.pipeline import (
     LLMs_from_names,
     run_pipeline,
 )
@@ -17,7 +17,6 @@ ragtime.config.init_project(
 )
 from ragtime.config import FOLDER_ANSWERS, FOLDER_QUESTIONS, logger, FOLDER_SST_TEMPLATES
 
-file_name:str = "economics--47Q_0C_0F_7M_329A_0HE_0AE_2024-03-14_19h17,45.json"
 llms_name:list[str] = [
     "gpt-4",
     "gpt-3.5-turbo",
@@ -37,21 +36,17 @@ llms.append(Albert_LLM(prompter = prompter))
 
 
 configuration:dict = {
-    'retriever': None,
-    'file_name': file_name,
-    'llms': llms,
+    'file_name': "economics--47Q_0C_0F_7M_329A_0HE_0AE_2024-03-14_19h17,45.json",
+    'folder_name': FOLDER_ANSWERS,
     'generate': {
         'answers': {
-            'folder': FOLDER_ANSWERS,
+            'retriever': None,
+            'llms': llms,
             'export': {
-#                'html': {
-#                    'path': FOLDER_ANSWERS / filename
-#                },
                 'spreadsheet': {
                     'path': FOLDER_SST_TEMPLATES / 'MCQ.xlsx',
                 }
             },
-            'b_missing_only': True,
         },
     }
 }
