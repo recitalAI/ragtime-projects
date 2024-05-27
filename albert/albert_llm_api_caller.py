@@ -26,7 +26,7 @@ class Albert_LLM(llm.LLM):
     _headers: dict = {}
     _token_last_update: datetime = datetime.now()
     _TOKEN_DURATION: int = 24  # max token duration in hours
-    num_retries = 3
+    _num_retries: int = 3
 
     async def _refresh_token(self):
         if self._token:
@@ -107,7 +107,7 @@ class Albert_LLM(llm.LLM):
     async def complete(self, prompt: prompter.Prompt) -> llm.LLMAnswer:
         retry: int = 1
         time_to_wait: float = 3.0
-        while retry < self.num_retries:
+        while retry < self._num_retries:
             try:
                 start_ts: datetime = datetime.now()
                 await self._refresh_token()
