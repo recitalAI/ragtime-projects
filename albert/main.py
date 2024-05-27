@@ -22,8 +22,8 @@ def LLMs():
     llms = ragtime.generators.LLMs_from_names(
         prompter=prompter,
         names=[
-            # "gpt-4",
-            # "gpt-3.5-turbo",
+            "gpt-4",
+            "gpt-3.5-turbo",
             "gpt-4",
             "mistral/mistral-large-latest",
             "groq/llama3-8b-8192",
