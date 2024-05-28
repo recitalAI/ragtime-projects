@@ -119,9 +119,8 @@ class Albert_LLM(llm.LLM):
                 await asyncio.sleep(time_to_wait)
                 retry += 1
 
-        duration = (
-            start_ts - datetime.now()
-        ).total_seconds()  # is the duration of the api call
+        duration = (start_ts - datetime.now()).total_seconds()
+        # is the duration of the api call
         cost = 0.0  # is the cost issued from a api call
 
         return llm.LLMAnswer(

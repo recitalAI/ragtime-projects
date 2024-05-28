@@ -1,0 +1,2045 @@
+<!--
+This Jinja templates needs the "expe" variable to generate the HTML.
+Moreover, it uses several boolean variables to control the rendering:
+- "show_answers": True to show the answers for each model
+- "show_chunks": True to show the Chunks in a table (images on the left column, text on the right)
+- "show_facts": True to show the Facts
+- "show_evals": True to show the Evaluations
+-->
+<html>
+<head>
+  <style>
+    h3 {
+      background-color: LightGray;
+      padding: 0px;
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: #FFFFFF;
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    img {
+      width: 100%;
+      width: 800;
+      display: block;
+    }
+
+    .my_img {
+      width: 100px;
+      vertical-align: middle;
+    }
+
+    * {
+      font-family: Arial
+    }
+
+    .collapsible {
+      background-color: #777;
+      border-bottom: 1px solid #ccc;
+      color: white;
+      cursor: pointer;
+      padding: 3px;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0px;
+      display: none;
+      overflow: hidden;
+      /*background-color: #f1f1f1;*/
+    }
+    .facts {
+      text-decoration: underline;
+      color: #0000EE;
+      font-weight: bold;
+    }
+    .hallus {
+      text-decoration: underline;
+      color: #FF1111;
+      font-weight: bold;
+    } 
+    .model_name {
+      background-color: #ffffa0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <span style="font-size: 20px;">33Q_0C_0F_2M_61A_0HE_0AE_2024-05-28_17h59,44</span>
+  <!-- For each QA -->
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>1. Comment contester un PV reçu depuis l’Italie ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Contester un procès-verbal (PV) reçu depuis l'Italie peut être un processus complexe, mais voici les étapes générales que vous pouvez suivre :
+
+1. **Lire attentivement le PV** : Assurez-vous de bien comprendre les détails de l'infraction, la date, l'heure, le lieu et la nature de l'infraction. Vérifiez également les informations personnelles pour vous assurer qu'il n'y a pas d'erreurs.
+
+2. **Vérifier les délais de contestation** : Le PV doit indiquer le délai dans lequel vous pouvez contester l'infraction. En général, ce délai est de 60 jours à compter de la réception du PV.
+
+3. **Rassembler les preuves** : Si vous pensez que le PV est injustifié, rassemblez toutes les preuves qui peuvent soutenir votre contestation. Cela peut inclure des photos, des témoignages, des documents prouvant que vous n'étiez pas sur place, etc.
+
+4. **Rédiger une lettre de contestation** : Rédigez une lettre formelle de contestation en italien ou en anglais. La lettre doit inclure :
+   - Vos coordonnées complètes (nom, adresse, numéro de téléphone, adresse e-mail).
+   - Les détails du PV (numéro de référence, date de l'infraction, etc.).
+   - Une explication claire et concise des raisons pour lesquelles vous contestez le PV.
+   - Les preuves à l'appui de votre contestation.
+
+5. **Envoyer la contestation** : Envoyez votre lettre de contestation et les preuves par courrier recommandé avec accusé de réception à l'adresse indiquée sur le PV. Conservez une copie de tous les documents envoyés et de l'accusé de réception.
+
+6. **Suivre la procédure** : Après avoir envoyé votre contestation, vous devrez attendre une réponse des autorités italiennes. Cela peut prendre du temps, alors soyez patient. Si votre contestation est acceptée, le PV sera annulé. Si elle est rejetée, vous devrez payer l'amende ou envisager d'autres recours légaux.
+
+7. **Consulter un avocat** : Si vous avez des doutes ou si votre contestation est complexe, il peut être utile de consulter un avocat spécialisé en droit international ou en droit routier. Un avocat pourra vous conseiller sur les meilleures démarches à suivre et vous représenter si nécessaire.
+
+8. **Payer l'amende si nécessaire** : Si votre contestation est rejetée et que vous n'avez pas d'autres recours, vous devrez payer l'amende dans les délais impartis pour éviter des pénalités supplémentaires.
+
+Il est important de noter que les procédures peuvent varier en fonction de la région en Italie où l'infraction a été commise, donc assurez-vous de suivre les instructions spécifiques fournies avec le PV.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+          <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>2. Une mairie peut-elle refuser un formulaire cerfa pour une demande de renouvellement de Carte Nationale d’Identité (CNI) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          En France, une mairie peut refuser un formulaire CERFA pour une demande de renouvellement de Carte Nationale d'Identité (CNI) si le formulaire n'est pas correctement rempli ou s'il manque des pièces justificatives nécessaires. Voici quelques raisons pour lesquelles une demande pourrait être refusée :
+
+1. **Formulaire incomplet ou incorrect** : Si le formulaire CERFA n'est pas correctement rempli, contient des erreurs ou des informations manquantes, la mairie peut refuser la demande.
+
+2. **Pièces justificatives manquantes** : La demande de renouvellement de CNI nécessite plusieurs documents justificatifs (par exemple, une photo d'identité conforme, un justificatif de domicile, l'ancienne carte d'identité, etc.). Si l'un de ces documents est manquant ou non conforme, la mairie peut refuser la demande.
+
+3. **Photographie non conforme** : Les photos d'identité doivent respecter des normes strictes (taille, fond, expression faciale, etc.). Si la photo fournie ne respecte pas ces normes, la demande peut être rejetée.
+
+4. **Non-respect des délais** : Dans certains cas, il peut y avoir des délais spécifiques à respecter pour le renouvellement de la CNI. Si ces délais ne sont pas respectés, la demande peut être refusée.
+
+5. **Problèmes de résidence** : La demande doit être faite dans une mairie habilitée à traiter les demandes de CNI. Si la demande est faite dans une mairie non habilitée ou si le justificatif de domicile ne correspond pas à la commune de la mairie, la demande peut être refusée.
+
+Il est donc important de bien vérifier que tous les documents et informations requis sont complets et conformes avant de soumettre une demande de renouvellement de CNI. En cas de doute, il est conseillé de contacter la mairie pour obtenir des précisions sur les documents nécessaires et les procédures à suivre.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Non, une mairie ne peut pas refuser un formulaire cerfa pour une demande de renouvellement de Carte Nationale d'Identité (CNI). En effet, la mairie est chargée d'accueillir les usagers, d'enregistrer la demande et de la transmettre au Centre d'expertise et de ressource titres (Cert). Il n'appartient pas à ses services d'accepter ou de rejeter un dossier. Si vous rencontrez des difficultés avec la mairie, vous pouvez saisir le Cert par courrier pour l'informer de la situation. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>3. Comment renouveler une Carte Nationale d’Identité (CNI) sans passer par la pré-demande en ligne ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour renouveler une Carte Nationale d'Identité (CNI) en France sans passer par la pré-demande en ligne, vous pouvez suivre ces étapes :
+
+1. **Rassembler les documents nécessaires** :
+   - **Ancienne carte d'identité** : Si vous la possédez encore.
+   - **Photo d'identité récente** : Conforme aux normes (35 mm de large et 45 mm de haut, fond clair, visage dégagé, etc.).
+   - **Justificatif de domicile** : Facture d'électricité, de gaz, de téléphone, quittance de loyer, etc., datant de moins d'un an.
+   - **Acte de naissance** : Si votre ancienne carte d'identité est périmée depuis plus de 5 ans ou si vous ne pouvez pas la présenter.
+   - **Justificatif de nationalité française** : Si nécessaire (par exemple, certificat de nationalité française).
+
+2. **Remplir le formulaire de demande** :
+   - Rendez-vous à la mairie de votre domicile ou dans une mairie équipée d'un dispositif de recueil (DR) pour les cartes d'identité.
+   - Demandez le formulaire de demande de carte nationale d'identité (cerfa n°12100*02).
+   - Remplissez le formulaire sur place.
+
+3. **Déposer la demande en personne** :
+   - Présentez-vous en personne à la mairie avec tous les documents requis.
+   - Remettez le formulaire rempli et les documents au guichet.
+   - Un agent vérifiera votre dossier et prendra vos empreintes digitales.
+
+4. **Suivi de la demande** :
+   - Un récépissé vous sera remis après le dépôt de votre demande.
+   - Vous pourrez suivre l'avancement de votre demande en ligne sur le site de l'ANTS (Agence Nationale des Titres Sécurisés) avec le numéro de récépissé.
+
+5. **Retrait de la nouvelle carte** :
+   - Vous serez informé par SMS ou courrier lorsque votre nouvelle carte sera prête.
+   - Rendez-vous à la mairie pour retirer votre nouvelle carte d'identité. Vous devrez rendre votre ancienne carte si vous ne l'avez pas déjà fait lors du dépôt de la demande.
+
+Il est important de noter que certaines mairies peuvent exiger une prise de rendez-vous pour déposer une demande de carte d'identité. Il est donc conseillé de vérifier les modalités auprès de votre mairie avant de vous déplacer.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Pour renouveler une carte nationale d'identité (CNI) sans passer par la pré-demande en ligne, vous devez vous rendre dans une mairie équipée d'une station d'enregistrement. Vous pouvez trouver la liste des mairies équipées en consultant le site internet de l'État ou en utilisant le moteur de recherche mis à votre disposition par l'ANTS. Il est recommandé de préparer la démarche en faisant une pré-demande en ligne, mais cela n'est pas obligatoire. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>4. Quel formulaire cerfa utiliser pour renouveler une Carte Nationale d’Identité (CNI) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour renouveler une Carte Nationale d'Identité (CNI) en France, vous devez utiliser le formulaire Cerfa n°12100*02. Ce formulaire est utilisé pour les demandes de première délivrance et de renouvellement de la carte d'identité.
+
+Vous pouvez obtenir ce formulaire en ligne sur le site officiel de l'administration française (service-public.fr) ou directement en mairie. En plus du formulaire, vous devrez fournir plusieurs documents justificatifs, tels qu'une photo d'identité récente, un justificatif de domicile, et éventuellement d'autres documents selon votre situation (par exemple, un acte de naissance si votre précédente carte d'identité est périmée depuis plus de 5 ans).
+
+Il est recommandé de vérifier les documents requis et les procédures spécifiques auprès de votre mairie ou sur le site service-public.fr avant de vous rendre sur place.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Pour renouveler une Carte Nationale d'Identité (CNI), vous devez utiliser le formulaire cerfa n°16237 de demande de certificat de nationalité française. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>5. Peut-on corriger les informations mises sur une pré-demande en ligne pour le renouvellement d’une Carte Nationale d’Identité (CNI) après le paiement du timbre fiscal ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Oui, il est possible de corriger les informations d'une pré-demande en ligne pour le renouvellement d'une Carte Nationale d'Identité (CNI) même après le paiement du timbre fiscal. Voici les étapes à suivre :
+
+1. **Accéder à votre compte** : Connectez-vous à votre compte sur le site de l'Agence Nationale des Titres Sécurisés (ANTS) où vous avez effectué la pré-demande.
+
+2. **Modifier la pré-demande** : Une fois connecté, vous devriez pouvoir accéder à votre pré-demande en cours. Cherchez l'option pour modifier les informations. Notez que certaines informations peuvent être modifiables directement en ligne, tandis que d'autres peuvent nécessiter une intervention plus spécifique.
+
+3. **Contactez l'ANTS si nécessaire** : Si vous ne parvenez pas à modifier certaines informations en ligne, il est recommandé de contacter le service client de l'ANTS pour obtenir de l'aide. Ils pourront vous guider sur la marche à suivre pour corriger les informations erronées.
+
+4. **Rendez-vous en mairie** : Lors de votre rendez-vous en mairie pour finaliser le renouvellement de votre CNI, informez l'agent des erreurs ou des modifications nécessaires. Apportez tous les documents justificatifs nécessaires pour prouver les informations correctes.
+
+Il est important de corriger toute information erronée avant la finalisation de votre demande pour éviter des complications ou des retards dans le traitement de votre dossier.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Non, il n'est pas possible de corriger les informations mises sur une pré-demande en ligne pour le renouvellement d'une carte nationale d'identité (CNI) après le paiement du timbre fiscal. Les informations saisies sur la pré-demande sont automatiquement transférées sur le formulaire cartonné qui doit être rempli à l'encre noire et en lettres majuscules lors du dépôt du dossier. Si une erreur est commise lors de la saisie des informations, il est préférable de la signaler au guichet de l'ANTS pour qu'elle puisse être corrigée. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>6. La mairie accepte-t-elle de corriger des fautes de frappe dans une pré-demande de carte d’identité ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          En général, la mairie peut vous aider à corriger des erreurs dans une pré-demande de carte d'identité. Voici les étapes que vous pouvez suivre :
+
+1. **Contactez la mairie** : Prenez rendez-vous ou appelez la mairie pour expliquer la situation et demander comment procéder pour corriger les fautes de frappe.
+
+2. **Apportez les documents nécessaires** : Lors de votre rendez-vous, apportez tous les documents justificatifs nécessaires, tels que votre acte de naissance, un justificatif de domicile, et une pièce d'identité actuelle.
+
+3. **Remplissez un nouveau formulaire si nécessaire** : Il se peut que vous deviez remplir un nouveau formulaire de pré-demande en ligne ou sur place.
+
+4. **Vérifiez les informations** : Avant de soumettre à nouveau votre demande, assurez-vous que toutes les informations sont correctes.
+
+Il est toujours préférable de vérifier directement avec votre mairie locale, car les procédures peuvent varier légèrement d'une commune à l'autre.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           La mairie ne peut pas corriger des fautes de frappe dans une pré-demande de carte d'identité. Elle ne peut pas non plus accepter ou rejeter un dossier de demande de carte d'identité. En cas de difficultés avec la mairie, il est possible de saisir le Centre d'expertise et de ressource titres (Cert) par courrier pour informer de la situation. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>7. Le fils est né en France et a la nationalité française. La mère la nationalité tunisienne. Le père les deux nationalités (naturalisé français). Sur le formulaire de l’ANTS, quelle réponse choisir à la question « la personne française est mineure parce que : »</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Sur le formulaire de l'ANTS (Agence Nationale des Titres Sécurisés), la question « la personne française est mineure parce que : » vise à déterminer la raison pour laquelle une personne mineure possède la nationalité française. Dans le cas que vous avez décrit, le fils est né en France et a la nationalité française, avec un père qui est naturalisé français et une mère de nationalité tunisienne.
+
+Voici les options possibles que vous pourriez rencontrer sur le formulaire et la manière de les interpréter :
+
+1. **« Elle est née en France de parents étrangers »** : Cette option s'applique généralement aux enfants nés en France de parents étrangers qui peuvent acquérir la nationalité française sous certaines conditions. Cependant, dans votre cas, le père est naturalisé français, donc cette option ne semble pas appropriée.
+
+2. **« Elle est née en France de parents dont l'un est français »** : Cette option semble la plus appropriée pour votre situation. Le fils est né en France et l'un de ses parents (le père) est français par naturalisation.
+
+3. **« Elle a été adoptée par une personne française »** : Cette option ne s'applique pas dans votre cas, car il n'est pas question d'adoption.
+
+4. **« Elle a acquis la nationalité française par déclaration ou par décision de l'autorité publique »** : Cette option s'applique aux cas où la nationalité française a été acquise par une procédure spécifique, ce qui ne semble pas être le cas ici.
+
+En résumé, la réponse la plus appropriée à la question « la personne française est mineure parce que : » serait :
+
+**« Elle est née en France de parents dont l'un est français »**.
+
+Cela reflète le fait que le fils est né en France et que son père est français par naturalisation.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Sur le formulaire de l’ANTS (Agence nationale des titres sécurisés), pour répondre à la question « la personne française est mineure parce que : », il faut choisir la réponse suivante : « La personne est mineure parce qu'elle est née en France et a la nationalité française ». <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>8. Comment refaire une carte grise si l’ancien propriétaire a perdu la carte d’origine ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Refaire une carte grise (certificat d'immatriculation) en cas de perte de la carte d'origine par l'ancien propriétaire peut sembler compliqué, mais voici les étapes à suivre pour régulariser la situation en France :
+
+1. **Déclaration de perte par l'ancien propriétaire** :
+   - L'ancien propriétaire doit déclarer la perte de la carte grise. Cette déclaration peut être faite en ligne sur le site de l'Agence Nationale des Titres Sécurisés (ANTS) ou en préfecture/sous-préfecture.
+   - Une déclaration de perte (ou de vol) sera alors délivrée.
+
+2. **Certificat de cession** :
+   - L'ancien propriétaire doit remplir et signer un certificat de cession (formulaire Cerfa n°15776*01) en deux exemplaires : un pour lui et un pour vous.
+   - Ce document atteste de la vente ou du don du véhicule.
+
+3. **Demande de duplicata de la carte grise** :
+   - L'ancien propriétaire doit demander un duplicata de la carte grise perdue. Cette demande peut être faite en ligne sur le site de l'ANTS.
+   - Le duplicata sera envoyé à l'adresse de l'ancien propriétaire.
+
+4. **Transmission des documents** :
+   - Une fois le duplicata reçu, l'ancien propriétaire doit vous le transmettre avec le certificat de cession et le contrôle technique (si le véhicule a plus de 4 ans et n'est pas dispensé de contrôle technique).
+
+5. **Demande de nouvelle carte grise à votre nom** :
+   - Vous pouvez alors faire la demande de carte grise à votre nom. Cette demande se fait en ligne sur le site de l'ANTS ou via un professionnel habilité.
+   - Vous aurez besoin des documents suivants :
+     - Le certificat de cession signé par les deux parties.
+     - Le duplicata de la carte grise.
+     - Un justificatif d'identité.
+     - Un justificatif de domicile de moins de 6 mois.
+     - Le contrôle technique en cours de validité (si applicable).
+     - Le formulaire Cerfa n°13750*05 (demande de certificat d'immatriculation).
+
+6. **Paiement des taxes** :
+   - Vous devrez payer les taxes et redevances liées à l'immatriculation du véhicule. Le montant dépend de plusieurs facteurs, dont la puissance fiscale du véhicule et votre région de résidence.
+
+7. **Réception de la nouvelle carte grise** :
+   - Une fois la demande validée, vous recevrez votre nouvelle carte grise par courrier à votre domicile.
+
+Il est important de suivre ces étapes pour régulariser la situation et éviter tout problème juridique ou administratif lié à la possession et à l'utilisation du véhicule.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Si l'ancien propriétaire a perdu la carte d'origine de la carte grise, il ne peut pas faire une demande de duplicata. En effet, la carte grise est un document officiel et son duplicata ne peut pas être obtenu si la carte d'origine n'est pas disponible. Dans ce cas, le propriétaire actuel de la voiture devra faire une demande de duplicata de la carte grise en utilisant les documents nécessaires, tels que le certificat de propriété ou le reçu de paiement de l'impôt sur la fortune immobilière. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>9. Je suis un mineur, qui doit faire la demande de passeport pour moi ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          En tant que mineur, la demande de passeport doit être effectuée par l'un de tes parents ou par ton tuteur légal. Voici les étapes générales à suivre en France :
+
+1. **Présence du mineur et du parent/tuteur** : Le mineur doit être présent lors de la demande, accompagné de son parent ou tuteur légal.
+
+2. **Documents nécessaires** :
+   - **Formulaire de demande** : Remplir le formulaire de demande de passeport (disponible en ligne ou en mairie).
+   - **Justificatif d'identité du parent/tuteur** : Carte d'identité ou passeport en cours de validité.
+   - **Justificatif de domicile** : Facture récente (électricité, gaz, eau, téléphone) ou attestation d'hébergement.
+   - **Acte de naissance** : Extrait d'acte de naissance avec filiation complète.
+   - **Photo d'identité** : Conforme aux normes en vigueur (récentes, de face, sur fond clair).
+   - **Ancien passeport** (si renouvellement) : Si tu as déjà un passeport, il faut le présenter.
+   - **Timbres fiscaux** : Pour le paiement des frais de délivrance du passeport.
+
+3. **Prise de rendez-vous** : Il est souvent nécessaire de prendre rendez-vous en mairie ou en préfecture pour déposer la demande.
+
+4. **Dépôt de la demande** : Se rendre au rendez-vous avec tous les documents nécessaires. Les empreintes digitales du mineur seront également prises s'il a plus de 12 ans.
+
+5. **Délai de traitement** : Le délai de traitement peut varier, il est donc conseillé de s'y prendre à l'avance.
+
+6. **Retrait du passeport** : Une fois le passeport prêt, le parent ou tuteur légal doit se rendre en mairie pour le retirer. La présence du mineur est également requise pour le retrait.
+
+Il est toujours bon de vérifier les informations spécifiques sur le site officiel du gouvernement ou de la mairie, car les exigences peuvent varier légèrement selon les situations.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           En tant que mineur, vous devez faire la demande de passeport avec votre responsable légal, qui peut être votre père, votre mère ou votre tuteur. Vous devez vous rendre ensemble au consulat ou à l'ambassade pour faire la demande. Votre responsable légal doit également se présenter avec sa propre pièce d'identité. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>10. Comment prendre rendez-vous pour faire une demande de carte d'identité auprès de la mairie?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour prendre rendez-vous pour faire une demande de carte d'identité auprès de la mairie, suivez ces étapes :
+
+1. **Recherchez les informations de contact de votre mairie** : Vous pouvez trouver ces informations sur le site internet de votre mairie ou en effectuant une recherche en ligne.
+
+2. **Vérifiez les modalités de prise de rendez-vous** : Certaines mairies permettent de prendre rendez-vous en ligne, tandis que d'autres peuvent nécessiter un appel téléphonique.
+
+3. **Prise de rendez-vous en ligne** :
+   - Rendez-vous sur le site internet de votre mairie.
+   - Recherchez la section dédiée aux démarches administratives ou aux cartes d'identité.
+   - Suivez les instructions pour accéder au système de prise de rendez-vous en ligne.
+   - Choisissez une date et une heure disponibles qui vous conviennent.
+   - Remplissez les informations requises et confirmez votre rendez-vous.
+
+4. **Prise de rendez-vous par téléphone** :
+   - Appelez le numéro de téléphone de la mairie indiqué pour les démarches administratives.
+   - Informez l'agent que vous souhaitez prendre rendez-vous pour une demande de carte d'identité.
+   - L'agent vous proposera des créneaux disponibles. Choisissez celui qui vous convient.
+   - Notez les détails du rendez-vous (date, heure, lieu).
+
+5. **Préparez les documents nécessaires** : Avant votre rendez-vous, assurez-vous de rassembler tous les documents requis pour la demande de carte d'identité. Cela peut inclure :
+   - Une photo d'identité récente et conforme aux normes.
+   - Un justificatif de domicile.
+   - Votre ancienne carte d'identité (si vous en avez une).
+   - Un acte de naissance (si c'est votre première demande ou si votre ancienne carte est périmée depuis plus de 5 ans).
+   - Tout autre document spécifique demandé par la mairie.
+
+6. **Présentez-vous à la mairie le jour du rendez-vous** : Arrivez à l'heure avec tous les documents nécessaires. Vous devrez peut-être remplir un formulaire sur place.
+
+En suivant ces étapes, vous devriez pouvoir prendre rendez-vous facilement pour faire une demande de carte d'identité auprès de votre mairie.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Pour prendre rendez-vous pour faire une demande de carte d'identité auprès de la mairie, vous pouvez utiliser le moteur de recherche de l'ANTS (Agence Nationale de Titres Sécurisés) qui vous permet de trouver un rendez-vous dans une mairie équipée. Vous pouvez également préparer la démarche en faisant une pré-demande en ligne, mais cela n'est pas obligatoire. De nombreuses mairies exigent que le dépôt du dossier se fasse uniquement sur rendez-vous, donc il est recommandé de vérifier les horaires et les conditions de prise de rendez-vous auprès de la mairie de votre choix. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>11. Comment contester un FPS et quelles sont les étapes à suivre ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour contester un Forfait Post-Stationnement (FPS), vous devez suivre une procédure spécifique. Voici les étapes à suivre :
+
+1. **Vérifier les informations sur l'avis de paiement** :
+   - Assurez-vous que toutes les informations sur l'avis de paiement sont correctes (date, heure, lieu, immatriculation, etc.).
+   - Vérifiez également les motifs de l'infraction.
+
+2. **Rassembler les preuves** :
+   - Prenez des photos du lieu de stationnement, des panneaux de signalisation, et de votre ticket de stationnement si vous en avez un.
+   - Rassemblez tout document pouvant prouver que vous avez payé ou que vous n'étiez pas en infraction.
+
+3. **Formuler un Recours Administratif Préalable Obligatoire (RAPO)** :
+   - Vous devez adresser un RAPO à l'autorité compétente (souvent la mairie ou l'organisme gestionnaire du stationnement) dans un délai de 1 mois à compter de la date de notification du FPS.
+   - Le RAPO peut être fait en ligne sur le site indiqué sur l'avis de paiement ou par courrier recommandé avec accusé de réception.
+   - Dans votre recours, expliquez clairement les raisons pour lesquelles vous contestez le FPS et joignez toutes les preuves.
+
+4. **Attendre la réponse de l'autorité compétente** :
+   - L'autorité compétente dispose d'un délai d'un mois pour répondre à votre RAPO.
+   - Si votre recours est accepté, le FPS sera annulé.
+   - Si votre recours est rejeté ou si vous ne recevez pas de réponse dans le délai d'un mois, vous pouvez passer à l'étape suivante.
+
+5. **Saisir la Commission du Contentieux du Stationnement Payant (CCSP)** :
+   - Si votre RAPO est rejeté, vous avez un délai d'un mois pour saisir la CCSP.
+   - La saisine de la CCSP se fait en ligne sur le site de la CCSP ou par courrier recommandé avec accusé de réception.
+   - Vous devrez fournir une copie de votre RAPO, la réponse de l'autorité compétente (ou la preuve de non-réponse), et toutes les preuves de votre contestation.
+
+6. **Attendre la décision de la CCSP** :
+   - La CCSP examinera votre dossier et rendra une décision.
+   - Si la CCSP vous donne raison, le FPS sera annulé.
+   - Si la CCSP rejette votre recours, vous devrez payer le FPS.
+
+**Conseils supplémentaires** :
+- Soyez précis et clair dans vos explications.
+- Respectez les délais à chaque étape pour éviter que votre contestation soit rejetée pour des raisons de forme.
+- Conservez des copies de tous les documents envoyés et reçus.
+
+En suivant ces étapes, vous maximisez vos chances de contester avec succès un FPS.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+          <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>12. Comment obtenir un passeport ou un visa pour un mineur franco-tunisien?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour obtenir un passeport ou un visa pour un mineur franco-tunisien, vous devrez suivre les procédures spécifiques de chaque pays, la France et la Tunisie. Voici les étapes générales pour chaque cas :
+
+### Passeport Français pour un Mineur
+
+1. **Prendre rendez-vous** : Vous devez prendre rendez-vous dans une mairie équipée pour les passeports biométriques, un consulat ou une ambassade française si vous êtes à l'étranger.
+
+2. **Documents nécessaires** :
+   - **Formulaire de demande** : Remplir le formulaire de demande de passeport pour mineur (disponible en ligne ou sur place).
+   - **Acte de naissance** : Original et copie de l'acte de naissance du mineur.
+   - **Justificatif de domicile** : Original et copie d'un justificatif de domicile récent (moins de 3 mois).
+   - **Pièce d'identité des parents** : Original et copie des pièces d'identité des deux parents.
+   - **Photo d'identité** : Une photo d'identité récente et conforme aux normes.
+   - **Ancien passeport** : Si le mineur en possède déjà un, il doit être présenté.
+
+3. **Présence du mineur** : Le mineur doit être présent lors du dépôt de la demande, accompagné d'au moins un parent.
+
+4. **Paiement** : Payer les frais de dossier (le montant peut varier).
+
+5. **Délai de traitement** : Le délai peut varier, mais il est généralement de quelques semaines.
+
+### Passeport Tunisien pour un Mineur
+
+1. **Prendre rendez-vous** : Vous devez prendre rendez-vous dans un bureau de passeport en Tunisie ou dans un consulat/ambassade tunisienne à l'étranger.
+
+2. **Documents nécessaires** :
+   - **Formulaire de demande** : Remplir le formulaire de demande de passeport pour mineur.
+   - **Acte de naissance** : Original et copie de l'acte de naissance du mineur.
+   - **Carte d'identité nationale** : Original et copie de la carte d'identité nationale des parents.
+   - **Autorisation parentale** : Une autorisation parentale signée par les deux parents.
+   - **Photo d'identité** : Une photo d'identité récente et conforme aux normes.
+   - **Ancien passeport** : Si le mineur en possède déjà un, il doit être présenté.
+
+3. **Présence du mineur** : Le mineur doit être présent lors du dépôt de la demande, accompagné d'au moins un parent.
+
+4. **Paiement** : Payer les frais de dossier (le montant peut varier).
+
+5. **Délai de traitement** : Le délai peut varier, mais il est généralement de quelques semaines.
+
+### Visa pour un Mineur
+
+Si le mineur a besoin d'un visa pour se rendre dans un pays tiers, les étapes générales sont les suivantes :
+
+1. **Prendre rendez-vous** : Prendre rendez-vous à l'ambassade ou au consulat du pays de destination.
+
+2. **Documents nécessaires** :
+   - **Formulaire de demande de visa** : Remplir le formulaire de demande de visa pour mineur.
+   - **Passeport** : Original et copie du passeport du mineur.
+   - **Photo d'identité** : Une photo d'identité récente et conforme aux normes.
+   - **Lettre d'invitation** : Si applicable, une lettre d'invitation du pays de destination.
+   - **Preuve de ressources financières** : Preuve que les parents peuvent subvenir aux besoins du mineur pendant le séjour.
+   - **Assurance voyage** : Une assurance voyage couvrant la durée du séjour.
+   - **Autorisation parentale** : Une autorisation parentale signée par les deux parents.
+
+3. **Présence du mineur** : Le mineur doit être présent lors du dépôt de la demande, accompagné d'au moins un parent.
+
+4. **Paiement** : Payer les frais de dossier (le montant peut varier).
+
+5. **Délai de traitement** : Le délai peut varier en fonction du pays de destination.
+
+Il est recommandé de vérifier les exigences spécifiques auprès des autorités compétentes (mairie, consulat, ambassade) car les documents et les procédures peuvent varier légèrement.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Pour un mineur franco-tunisien, il est recommandé de suivre les étapes suivantes pour obtenir un passeport ou un visa :
+
+1. Passeport : Le mineur doit avoir un passeport en cours de validité couvrant au minimum la totalité du séjour. Il est recommandé de prendre avec lui un document prouvant sa filiation, tel qu'un acte de naissance (extrait de l'acte avec filiation ou copie intégrale) ou un livret de famille.
+
+2. Visa : Si la durée de séjour est inférieure ou égale à 3 mois, un visa n'est pas obligatoire, même pour un voyage d'affaire. Cependant, il est recommandé d'avoir un passeport. Si la durée de séjour est supérieure à 3 mois, il est nécessaire de demander un visa et une carte de séjour auprès du ministère de l'intérieur de la Tunisie. La demande peut être faite auprès de l'ambassade de Tunisie.
+
+Il est également recommandé de se renseigner sur les formalités précises auprès de l'ambassade de Tunisie et de consulter le site du Conseil aux voyageurs pour recevoir des informations pendant le voyage. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>13. Comment acheter un timbre fiscal en ligne pour payer les frais de renouvellement de la carte d'identité ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour acheter un timbre fiscal en ligne en France pour payer les frais de renouvellement de la carte d'identité, vous pouvez suivre ces étapes :
+
+1. **Accédez au site officiel** : Rendez-vous sur le site officiel des timbres fiscaux électroniques, qui est géré par la Direction Générale des Finances Publiques (DGFiP). L'adresse est : [https://timbres.impots.gouv.fr](https://timbres.impots.gouv.fr).
+
+2. **Sélectionnez le type de timbre** : Sur la page d'accueil, vous verrez plusieurs options. Choisissez "Timbres pour passeport" ou "Autres timbres fiscaux" selon ce qui est proposé. Pour la carte d'identité, il se peut que vous deviez choisir "Autres timbres fiscaux".
+
+3. **Choisissez le montant** : Sélectionnez le montant correspondant aux frais de renouvellement de la carte d'identité. Assurez-vous de vérifier le montant exact requis pour le renouvellement de votre carte d'identité, car cela peut varier.
+
+4. **Ajoutez au panier** : Une fois le montant sélectionné, ajoutez le timbre fiscal à votre panier.
+
+5. **Procédez au paiement** : Cliquez sur le panier pour finaliser votre achat. Vous devrez fournir des informations personnelles et choisir un mode de paiement (carte bancaire, par exemple).
+
+6. **Recevez votre timbre électronique** : Après le paiement, vous recevrez un courriel contenant un lien pour télécharger votre timbre fiscal électronique. Vous pouvez également le télécharger directement depuis le site après la confirmation de paiement.
+
+7. **Imprimez le timbre** : Imprimez le timbre fiscal électronique ou conservez-le sous forme numérique. Vous devrez le présenter lors de votre rendez-vous pour le renouvellement de votre carte d'identité.
+
+Assurez-vous de bien conserver le reçu de votre achat et le timbre fiscal électronique, car ils seront nécessaires pour finaliser votre demande de renouvellement de carte d'identité.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+          <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>14. Comment contester une amende d'infraction routière en ligne ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Contester une amende d'infraction routière en ligne peut varier légèrement en fonction du pays ou de la région où vous vous trouvez. Cependant, voici les étapes générales que vous pouvez suivre pour contester une amende en ligne en France :
+
+1. **Recevoir l'avis de contravention** : Vous devez d'abord recevoir l'avis de contravention, qui contient des informations importantes telles que le numéro de l'avis, la date de l'infraction, et les détails de l'infraction.
+
+2. **Accéder au site de l'ANTAI** : Rendez-vous sur le site de l'Agence Nationale de Traitement Automatisé des Infractions (ANTAI) à l'adresse suivante : [www.antai.gouv.fr](https://www.antai.gouv.fr).
+
+3. **Sélectionner "Contester une infraction"** : Sur la page d'accueil, vous trouverez une option pour contester une infraction. Cliquez sur cette option.
+
+4. **Saisir les informations requises** : Vous devrez fournir des informations spécifiques telles que le numéro de l'avis de contravention, la date de l'infraction, et d'autres détails personnels pour accéder à votre dossier.
+
+5. **Choisir le motif de contestation** : Vous devrez sélectionner le motif de votre contestation parmi les options proposées. Les motifs courants incluent des erreurs sur l'avis de contravention, le véhicule n'était pas en votre possession au moment de l'infraction, ou d'autres raisons légitimes.
+
+6. **Télécharger les documents justificatifs** : Vous devrez peut-être fournir des documents justificatifs pour appuyer votre contestation. Cela peut inclure des preuves photographiques, des témoignages, ou d'autres documents pertinents.
+
+7. **Soumettre la contestation** : Une fois que vous avez rempli toutes les informations nécessaires et téléchargé les documents justificatifs, vous pouvez soumettre votre contestation en ligne.
+
+8. **Recevoir un accusé de réception** : Après avoir soumis votre contestation, vous recevrez un accusé de réception confirmant que votre demande a été prise en compte. Conservez cet accusé de réception pour vos dossiers.
+
+9. **Attendre la réponse** : L'ANTAI examinera votre contestation et vous informera de la décision par courrier ou par e-mail. Cela peut prendre plusieurs semaines.
+
+10. **Suivre les instructions** : Si votre contestation est acceptée, l'amende sera annulée ou modifiée en conséquence. Si elle est rejetée, vous devrez suivre les instructions fournies pour payer l'amende ou envisager d'autres recours légaux.
+
+Il est important de noter que les délais pour contester une amende sont généralement stricts, donc assurez-vous de soumettre votre contestation dans les délais impartis.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Pour contester une amende d'infraction routière en ligne, vous pouvez utiliser le site de l'Agence nationale de traitement automatisé des infractions (ANTAI). Vous devez remplir le formulaire en ligne et joindre une copie de votre récépissé de dépôt de plainte. Vous pouvez également contester en envoyant le formulaire de requête en exonération joint à votre contravention par courrier recommandé avec accusé de réception. Vous devez joindre une copie de votre récépissé de dépôt de plainte. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>15. Comment renouveler son passeport en ligne et éviter d'avoir à utiliser un formulaire cartonné au guichet ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour renouveler votre passeport en ligne et éviter d'utiliser un formulaire cartonné au guichet, suivez ces étapes :
+
+1. **Préparez les documents nécessaires** :
+   - Une photo d'identité récente et conforme aux normes.
+   - Un justificatif de domicile (facture d'électricité, quittance de loyer, etc.).
+   - Votre ancien passeport.
+   - Un timbre fiscal électronique (que vous pouvez acheter en ligne).
+
+2. **Accédez au site officiel** :
+   - Rendez-vous sur le site de l'Agence Nationale des Titres Sécurisés (ANTS) : [ants.gouv.fr](https://ants.gouv.fr).
+
+3. **Créez un compte ou connectez-vous** :
+   - Si vous n'avez pas encore de compte, créez-en un en suivant les instructions. Si vous avez déjà un compte, connectez-vous.
+
+4. **Remplissez le formulaire en ligne** :
+   - Une fois connecté, sélectionnez l'option pour renouveler votre passeport.
+   - Remplissez le formulaire en ligne avec les informations demandées.
+
+5. **Téléchargez les documents** :
+   - Téléchargez les documents requis (photo d'identité, justificatif de domicile, etc.) directement sur le site.
+
+6. **Payez le timbre fiscal** :
+   - Achetez un timbre fiscal électronique si vous ne l'avez pas encore fait. Vous pouvez le faire directement sur le site de l'ANTS ou sur le site des impôts.
+
+7. **Prenez rendez-vous en mairie** :
+   - Une fois votre demande en ligne complétée, prenez rendez-vous dans une mairie équipée pour la délivrance des passeports biométriques. Vous pouvez généralement prendre rendez-vous en ligne sur le site de la mairie concernée.
+
+8. **Présentez-vous au rendez-vous** :
+   - Le jour du rendez-vous, apportez les documents originaux (photo d'identité, justificatif de domicile, ancien passeport, etc.) ainsi que le récépissé de votre demande en ligne.
+   - La mairie vérifiera vos documents et prendra vos empreintes digitales.
+
+9. **Suivez l'avancement de votre demande** :
+   - Vous pouvez suivre l'avancement de votre demande sur le site de l'ANTS en vous connectant à votre compte.
+
+10. **Récupérez votre passeport** :
+    - Une fois votre passeport prêt, vous serez informé par SMS ou email. Vous devrez vous rendre à la mairie pour le récupérer en personne.
+
+En suivant ces étapes, vous pourrez renouveler votre passeport en ligne et éviter d'utiliser un formulaire cartonné au guichet.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Pour renouveler son passeport en ligne et éviter d'avoir à utiliser un formulaire cartonné au guichet, il est nécessaire de se connecter à FranceConnect+ via son identité numérique La Poste. Si vous n'arrivez pas à vous connecter, vous devrez vous rendre au consulat pour renouveler votre passeport sur place. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>16. Une mairie peut-elle refuser un formulaire papier pour une demande de renouvellement de Carte Nationale d’Identité (CNI) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          En France, les démarches pour le renouvellement de la Carte Nationale d'Identité (CNI) ont été largement dématérialisées. Depuis 2017, les demandes de CNI doivent être effectuées en ligne via le site de l'Agence Nationale des Titres Sécurisés (ANTS). Une fois la pré-demande en ligne réalisée, il est nécessaire de prendre rendez-vous dans une mairie équipée d'un dispositif de recueil (DR) pour finaliser la demande et fournir les pièces justificatives.
+
+Cependant, certaines mairies peuvent encore accepter des formulaires papier pour des raisons spécifiques, comme l'absence d'accès à internet pour certains usagers ou des situations particulières. Cela dépend des politiques locales et des équipements disponibles dans chaque mairie.
+
+En résumé, bien que la procédure standard soit désormais dématérialisée, il est possible que certaines mairies acceptent encore des formulaires papier dans des cas exceptionnels. Il est recommandé de contacter directement la mairie concernée pour obtenir des informations précises sur les modalités de dépôt des demandes de renouvellement de CNI.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Non, une mairie ne peut pas refuser un formulaire papier pour une demande de renouvellement de carte nationale d'identité (CNI). En effet, la loi n'exige pas la présence d'un formulaire papier pour une demande de CNI. Les mairies sont compétentes pour enregistrer les demandes de CNI et les transmettre aux services préfectoraux. Si vous rencontrez des difficultés lors de la démarche, vous pouvez saisir le procureur, puis le juge. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>17. En quoi consiste l'intermédiation financière du service public des pensions alimentaires géré par la Caf et la MSA ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          L'intermédiation financière du service public des pensions alimentaires, gérée par la Caisse d'Allocations Familiales (Caf) et la Mutualité Sociale Agricole (MSA), est un dispositif mis en place pour faciliter et sécuriser le versement des pensions alimentaires. Voici en quoi cela consiste :
+
+1. **Sécurisation des paiements** : L'intermédiation financière permet de garantir que les pensions alimentaires sont versées régulièrement et en temps voulu. La Caf ou la MSA agit comme intermédiaire entre le parent débiteur (celui qui doit payer la pension) et le parent créancier (celui qui doit recevoir la pension).
+
+2. **Prélèvement et versement** : La Caf ou la MSA prélève la pension alimentaire directement sur le compte bancaire du parent débiteur et la verse ensuite sur le compte du parent créancier. Cela évite les retards et les oublis de paiement.
+
+3. **Recouvrement en cas d'impayés** : Si le parent débiteur ne paie pas la pension alimentaire, la Caf ou la MSA peut engager des procédures de recouvrement pour récupérer les sommes dues. Cela peut inclure des saisies sur salaire, des prélèvements sur les prestations sociales, ou d'autres mesures légales.
+
+4. **Accompagnement et soutien** : Le service public des pensions alimentaires offre également un accompagnement aux parents pour les aider à comprendre leurs droits et obligations, et pour les soutenir en cas de difficultés financières ou administratives.
+
+5. **Éligibilité** : Ce service est accessible à tous les parents séparés ou divorcés ayant une décision de justice fixant une pension alimentaire. Il peut être utilisé de manière volontaire ou être imposé par le juge en cas de conflit ou de non-paiement récurrent.
+
+6. **Objectif** : L'objectif principal de ce dispositif est de réduire les conflits entre parents, de garantir le bien-être des enfants en assurant le versement régulier des pensions alimentaires, et de lutter contre la précarité des familles monoparentales.
+
+En résumé, l'intermédiation financière du service public des pensions alimentaires vise à simplifier et sécuriser le processus de versement des pensions alimentaires, tout en offrant un soutien aux familles pour assurer le bien-être des enfants.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           L'intermédiation financière du service public des pensions alimentaires géré par la Caf (Caisse d'allocations familiales) et la MSA (Mutualité sociale agricole) consiste à servir d'intermédiaire entre le parent qui doit payer une pension alimentaire et le parent qui doit recevoir cette pension. Elle permet de réduire les risques de retards de paiement ou d'impayés, en assurant que la pension alimentaire est versée régulièrement et en intervenant en cas de difficultés. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>18. Quelles sont les conditions pour toucher une retraite à taux plein par la MSA ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour toucher une retraite à taux plein par la Mutualité Sociale Agricole (MSA) en France, plusieurs conditions doivent être remplies. Voici les principales :
+
+1. **Âge de la Retraite** :
+   - L'âge légal de départ à la retraite est de 62 ans pour les personnes nées à partir de 1955. Cependant, pour bénéficier d'une retraite à taux plein, il est souvent nécessaire d'avoir atteint un certain âge ou d'avoir cotisé un certain nombre de trimestres.
+
+2. **Nombre de Trimestres Cotisés** :
+   - Le nombre de trimestres requis pour obtenir une retraite à taux plein dépend de votre année de naissance. Par exemple, pour les personnes nées en 1955, il faut avoir cotisé 166 trimestres (41 ans et 6 mois). Ce nombre augmente progressivement pour les générations suivantes.
+
+3. **Âge du Taux Plein Automatique** :
+   - Si vous n'avez pas cotisé le nombre de trimestres requis, vous pouvez tout de même obtenir une retraite à taux plein à partir d'un certain âge, appelé "âge du taux plein automatique". Cet âge est fixé à 67 ans pour les personnes nées à partir de 1955.
+
+4. **Carrière Longue** :
+   - Il existe des dispositifs permettant de partir à la retraite avant l'âge légal si vous avez commencé à travailler très jeune et que vous avez cotisé un nombre suffisant de trimestres. C'est le dispositif de la "carrière longue".
+
+5. **Incapacité ou Invalidité** :
+   - Les personnes en situation d'incapacité permanente ou d'invalidité peuvent également bénéficier d'une retraite à taux plein avant l'âge légal, sous certaines conditions.
+
+6. **Pénibilité** :
+   - Les travailleurs ayant exercé des métiers pénibles peuvent également bénéficier de conditions de départ à la retraite anticipées.
+
+7. **Autres Conditions** :
+   - Il peut y avoir d'autres conditions spécifiques liées à votre situation personnelle ou professionnelle, comme des périodes de chômage, de maladie, de service militaire, etc., qui peuvent être prises en compte dans le calcul de vos trimestres cotisés.
+
+Il est important de vérifier votre relevé de carrière et de contacter la MSA pour obtenir des informations précises et personnalisées concernant votre situation. La MSA peut vous fournir des simulations et des conseils pour optimiser votre départ à la retraite.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+          <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>19. Comment estimer / simuler sa retraite si vous êtes à la mutuelle des salariés agricoles (MSA)?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Estimer ou simuler votre retraite si vous êtes affilié à la Mutuelle Sociale Agricole (MSA) peut se faire en suivant plusieurs étapes. Voici un guide pour vous aider :
+
+### 1. **Rassembler les Informations Nécessaires**
+Avant de commencer la simulation, assurez-vous d'avoir les informations suivantes :
+- Votre numéro de sécurité sociale.
+- Votre relevé de carrière (disponible sur le site de la MSA ou via votre compte personnel de retraite).
+- Vos bulletins de salaire ou tout autre document attestant de vos revenus et périodes de travail.
+
+### 2. **Accéder à Votre Compte Personnel de Retraite**
+- Rendez-vous sur le site officiel de la MSA : [MSA.fr](https://www.msa.fr).
+- Connectez-vous à votre espace personnel. Si vous n'avez pas encore de compte, vous devrez en créer un en suivant les instructions fournies.
+
+### 3. **Utiliser l'Outil de Simulation**
+- Une fois connecté à votre espace personnel, recherchez l'outil de simulation de retraite. La MSA propose généralement un simulateur en ligne qui prend en compte vos données personnelles et votre relevé de carrière.
+- Suivez les instructions pour entrer les informations demandées. Le simulateur vous demandera probablement de confirmer ou de compléter certaines périodes de travail et de revenus.
+
+### 4. **Analyser les Résultats**
+- Le simulateur vous fournira une estimation de votre future pension de retraite en fonction des données que vous avez fournies.
+- Vous pourrez voir différentes hypothèses selon l'âge de départ à la retraite que vous envisagez (âge légal, âge à taux plein, etc.).
+
+### 5. **Consulter un Conseiller MSA**
+- Si vous avez des questions ou des doutes sur les résultats de la simulation, il peut être utile de prendre rendez-vous avec un conseiller de la MSA. Ils pourront vous fournir des informations plus détaillées et personnalisées.
+
+### 6. **Mettre à Jour Vos Informations Régulièrement**
+- Il est important de mettre à jour régulièrement vos informations de carrière et de revenus pour obtenir des estimations précises. Pensez à vérifier votre relevé de carrière chaque année.
+
+### 7. **Utiliser le Service en Ligne Inter-Régimes**
+- Vous pouvez également utiliser le service en ligne inter-régimes "Info Retraite" (disponible sur [info-retraite.fr](https://www.info-retraite.fr)) qui permet de simuler votre retraite en prenant en compte l'ensemble de vos régimes de retraite, y compris la MSA.
+
+### 8. **Prendre en Compte les Spécificités Agricoles**
+- La MSA a des spécificités propres aux salariés agricoles, comme des bonifications pour certaines périodes de travail ou des dispositifs particuliers pour les exploitants agricoles. Assurez-vous de bien comprendre ces spécificités en consultant la documentation disponible sur le site de la MSA ou en discutant avec un conseiller.
+
+En suivant ces étapes, vous devriez être en mesure d'obtenir une estimation assez précise de votre future pension de retraite en tant que salarié agricole affilié à la MSA.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Pour estimer votre retraite en tant que salarié agricole à la Mutualité sociale agricole (MSA), vous pouvez utiliser le simulateur de calcul disponible sur le site de la MSA. Ce simulateur vous permettra de calculer votre pension de retraite en prenant en compte votre salaire, votre âge et d'autres éléments tels que votre expérience professionnelle et les cotisations sociales versées. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>20. Quelles sont les implications d'une faute inexcusable de l'employeur en cas de maladie professionnelle ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          En France, la reconnaissance d'une faute inexcusable de l'employeur en cas de maladie professionnelle a des implications juridiques et financières importantes. Voici les principales conséquences :
+
+1. **Majoration de l'indemnisation** : La victime d'une maladie professionnelle reconnue comme résultant d'une faute inexcusable de l'employeur a droit à une majoration de l'indemnisation versée par la Sécurité sociale. Cette majoration couvre notamment :
+   - Une rente majorée pour incapacité permanente.
+   - Une indemnité complémentaire pour les souffrances physiques et morales, le préjudice esthétique, le préjudice d'agrément, et éventuellement le préjudice résultant de la perte ou de la diminution des possibilités de promotion professionnelle.
+
+2. **Réparation intégrale des préjudices** : La victime peut obtenir la réparation intégrale de ses préjudices, ce qui inclut des dommages et intérêts pour les préjudices non couverts par les prestations de la Sécurité sociale. Cela peut inclure :
+   - Les frais médicaux non remboursés.
+   - La perte de revenus.
+   - Les préjudices personnels (souffrances physiques et morales, préjudice esthétique, etc.).
+
+3. **Recours de la Sécurité sociale contre l'employeur** : La Caisse Primaire d'Assurance Maladie (CPAM) peut exercer un recours contre l'employeur pour récupérer les sommes versées à la victime au titre de la majoration de la rente et des indemnités complémentaires.
+
+4. **Responsabilité pénale** : La reconnaissance d'une faute inexcusable peut également entraîner des poursuites pénales contre l'employeur, notamment pour mise en danger de la vie d'autrui ou pour blessures involontaires.
+
+5. **Impact sur les cotisations** : La reconnaissance d'une faute inexcusable peut entraîner une augmentation des cotisations d'accidents du travail et maladies professionnelles pour l'employeur, car les coûts supplémentaires liés à l'indemnisation de la victime sont pris en compte dans le calcul des cotisations.
+
+6. **Obligation de prévention** : La reconnaissance d'une faute inexcusable met en lumière les manquements de l'employeur en matière de prévention des risques professionnels. Cela peut conduire à des mesures correctives et à une surveillance accrue de la part des autorités compétentes (Inspection du travail, CARSAT, etc.).
+
+En résumé, la reconnaissance d'une faute inexcusable de l'employeur en cas de maladie professionnelle a des conséquences significatives tant pour la victime, qui obtient une meilleure indemnisation, que pour l'employeur, qui peut être confronté à des coûts financiers accrus et à des sanctions juridiques.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           En cas de faute inexcusable de l'employeur en cas de maladie professionnelle, l'employeur s'expose à une réparation financière de préjudice devant le pôle social du tribunal judiciaire. L'employeur a une obligation de sécurité de moyens renforcée et doit justifier avoir pris les mesures suffisantes pour protéger les travailleurs d'un accident du travail et/ou d'une maladie professionnelle. Si l'employeur a volontairement cherché à causer des blessures, le salarié peut faire reconnaître la faute intentionnelle de l'employeur auprès du tribunal correctionnel et obtenir une indemnisation en lien avec cette faute. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>21. Comment définit-on l'IPP (MSA) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          L'IPP, ou Incapacité Permanente Partielle, est un terme utilisé dans le domaine de la sécurité sociale et de la médecine du travail pour évaluer le degré de handicap ou de perte de capacité de travail d'une personne à la suite d'un accident ou d'une maladie professionnelle. 
+
+Dans le contexte de la Mutualité Sociale Agricole (MSA), qui est l'organisme de protection sociale des agriculteurs et des travailleurs du secteur agricole en France, l'IPP est également utilisée pour déterminer les indemnités et les compensations auxquelles une personne peut avoir droit.
+
+L'IPP est exprimée en pourcentage et reflète la diminution de la capacité de travail ou de gain de la personne par rapport à une situation normale. Ce pourcentage est déterminé par un médecin expert qui évalue les séquelles physiques et/ou psychiques laissées par l'accident ou la maladie.
+
+Voici comment l'IPP est généralement définie et évaluée :
+
+1. **Évaluation Médicale** : Un médecin expert examine la personne et évalue les séquelles de l'accident ou de la maladie. Cette évaluation peut inclure des examens cliniques, des tests fonctionnels et des consultations avec d'autres spécialistes si nécessaire.
+
+2. **Barème d'Incapacité** : L'évaluation se base souvent sur un barème d'incapacité, qui est un guide officiel listant les différents types de séquelles et leur correspondance en pourcentage d'incapacité. Ce barème peut varier selon les pays et les organismes de sécurité sociale.
+
+3. **Calcul du Pourcentage** : Le médecin détermine le pourcentage d'incapacité en fonction des séquelles observées et de leur impact sur la capacité de travail de la personne. Ce pourcentage peut être ajusté en fonction de facteurs comme l'âge, la profession et les conditions de travail de la personne.
+
+4. **Indemnisation** : Le pourcentage d'IPP est ensuite utilisé pour calculer les indemnités auxquelles la personne a droit. Ces indemnités peuvent prendre la forme de rentes, de capital ou d'autres compensations financières.
+
+L'IPP est un outil crucial pour assurer que les personnes ayant subi des accidents ou des maladies professionnelles reçoivent une compensation équitable pour leur perte de capacité de travail.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           L'IPP (Incapacité Permanente Partielle) définie par la MSA (Mutualité sociale agricole) est déterminée en fonction de la perte de capacité professionnelle d'une personne agriculteur ou exploitant agricole en raison d'une maladie professionnelle. Cette perte de capacité peut être évaluée par un médecin du travail et aboutir à une indemnisation spécifique et complémentaire en cas de faute importante de l'employeur. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>22. Quelles sont les missions de l'Agence de recouvrement et d'intermédiation des pensions alimentaires (Aripa) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          L'Agence de recouvrement et d'intermédiation des pensions alimentaires (Aripa) est une entité en France qui a pour mission principale de faciliter le versement et le recouvrement des pensions alimentaires. Voici un aperçu de ses missions :
+
+1. **Intermédiation Financière** : L'Aripa peut servir d'intermédiaire pour le versement des pensions alimentaires. Cela signifie qu'elle peut collecter la pension alimentaire auprès du parent débiteur et la reverser au parent créancier, assurant ainsi une régularité et une sécurité dans les paiements.
+
+2. **Recouvrement des Pensions Alimentaires Impayées** : En cas de non-paiement de la pension alimentaire, l'Aripa peut intervenir pour recouvrer les sommes dues. Elle dispose de divers moyens pour cela, y compris des procédures de saisie sur les salaires ou les comptes bancaires du parent débiteur.
+
+3. **Versement de l'Allocation de Soutien Familial (ASF)** : L'Aripa peut verser une allocation de soutien familial aux parents qui ne reçoivent pas ou plus la pension alimentaire prévue. Cette allocation est une aide financière temporaire en attendant le recouvrement des sommes dues.
+
+4. **Information et Accompagnement** : L'agence fournit des informations et un accompagnement aux parents concernant leurs droits et les démarches à suivre pour obtenir ou recouvrer une pension alimentaire. Elle peut également les aider à comprendre les procédures judiciaires et administratives liées aux pensions alimentaires.
+
+5. **Prévention des Impayés** : L'Aripa travaille également à prévenir les impayés de pensions alimentaires en sensibilisant les parents à leurs obligations et en facilitant les démarches administratives pour le versement des pensions.
+
+6. **Collaboration avec les Autorités Judiciaires** : L'agence collabore avec les tribunaux et autres autorités judiciaires pour assurer l'application des décisions de justice relatives aux pensions alimentaires.
+
+En résumé, l'Aripa joue un rôle crucial dans la sécurisation et la régularité des paiements de pensions alimentaires, offrant un soutien aux familles monoparentales et contribuant à la lutte contre la précarité.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           L'Agence de recouvrement et d'intermédiation des pensions alimentaires (Aripa) a plusieurs missions :
+
+1. Recouvrement des pensions alimentaires non versées ou incomplètes : L'Aripa intervient pour récupérer les sommes dues et les reverser au parent créancier pour le mois en cours. Elle peut également récupérer les 24 mois derniers mois d'arriérés.
+
+2. Intermédiation financière : L'Aripa sert d'intermédiaire entre le parent qui doit payer et le parent qui doit recevoir la pension alimentaire. Elle reçoit mensuellement le montant de la pension alimentaire du parent débiteur et se charge de verser effectivement la pension alimentaire au parent créancier chaque mois.
+
+3. Recouvrement des pensions alimentaires ordonnées à l'étranger : L'Aripa peut recouvrer des créances à l'étranger.
+
+4. Recouvrement des pensions alimentaires ordonnées en France par des tribunaux étrangers : L'Aripa peut recouvrer en France des pensions alimentaires ordonnées à l'étranger.
+
+5. Intervention en cas d'impayés : L'Aripa engage une procédure amiable auprès du parent débiteur pour recouvrer la pension alimentaire. Si le débiteur ne s'exécute pas, l'Aripa procède à un recouvrement forcé par l'un des moyens suivants : paiement direct auprès de l'employeur, de la banque, de la caisse de sécurité sociale ou de retraite, France Travail (anciennement Pôle emploi).
+
+6. Recouvrement public : L'Aripa peut procéder à un recouvrement public par la direction générale des finances publiques, notamment pour les débiteurs de pension alimentaire non salariés (travailleurs indépendants, artisans).
+
+7. Revalorisation de la pension alimentaire : L'Aripa applique automatiquement la revalorisation de la pension alimentaire chaque année selon les dates et les indices fixés par la décision judiciaire ou le titre exécutoire.
+
+8. Informations et conseils : L'Aripa fournit des informations et conseils aux parents concernés par les pensions alimentaires.
+
+Il est important de noter que l'Aripa est un service gratuit pour les 2 parents (débiteur et créancier). En cas d'impayé, le débiteur doit payer des frais de gestion à hauteur de 7,5 % de la somme due pour un recouvrement amiable et 10 % de l'arriéré pour un recouvrement forcé. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>23. Quand un abattement de 10% est-il mis en place sur une retraite anticipée ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          En France, un abattement de 10% sur une retraite anticipée peut se référer à plusieurs situations, mais il est souvent associé à la décote appliquée sur les pensions de retraite complémentaire pour les personnes qui partent à la retraite avant l'âge légal ou sans avoir atteint le nombre de trimestres requis pour une retraite à taux plein.
+
+Cependant, il est important de noter que les règles peuvent varier en fonction des régimes de retraite (régime général, régimes complémentaires comme l'Agirc-Arrco, etc.) et des réformes en cours. Voici quelques points clés à considérer :
+
+1. **Régime général (CNAV)** : Pour le régime général de la Sécurité sociale, un abattement ou une décote est appliqué si vous partez à la retraite avant d'avoir atteint l'âge légal de départ à la retraite (62 ans pour les personnes nées à partir de 1955) ou sans avoir validé le nombre de trimestres requis pour une retraite à taux plein. La décote est de 1,25% par trimestre manquant.
+
+2. **Régimes complémentaires (Agirc-Arrco)** : Depuis 2019, une minoration temporaire de 10% est appliquée pendant trois ans sur les pensions de retraite complémentaire Agirc-Arrco pour les personnes qui partent à la retraite dès qu'elles remplissent les conditions du taux plein dans le régime de base, sans attendre une année supplémentaire. Cette minoration ne s'applique pas si le retraité diffère son départ d'un an après avoir atteint le taux plein, ou s'il est exonéré de CSG (Contribution Sociale Généralisée).
+
+3. **Retraite anticipée pour carrière longue** : Certaines personnes peuvent partir à la retraite avant l'âge légal dans le cadre du dispositif de retraite anticipée pour carrière longue. Dans ce cas, si toutes les conditions sont remplies (notamment le nombre de trimestres cotisés), il n'y a pas de décote appliquée.
+
+Il est toujours recommandé de vérifier les conditions spécifiques auprès des organismes de retraite ou de consulter un conseiller en retraite pour obtenir des informations précises et à jour concernant votre situation personnelle.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           D'après les informations fournies, il n'est pas possible de déterminer si un abattement de 10% est mis en place sur une retraite anticipée. Les éléments fournis ne mentionnent pas de tels abattements spécifiques pour les retraites anticipées. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>24. Comment prendre rendez-vous avec l’assurance retraite (régime général)?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour prendre rendez-vous avec l'Assurance Retraite (régime général) en France, vous pouvez suivre ces étapes :
+
+1. **En ligne :**
+   - Rendez-vous sur le site officiel de l'Assurance Retraite : [www.lassuranceretraite.fr](https://www.lassuranceretraite.fr).
+   - Connectez-vous à votre espace personnel avec votre numéro de sécurité sociale et votre mot de passe. Si vous n'avez pas encore de compte, vous pouvez en créer un.
+   - Une fois connecté, vous pouvez accéder à la section "Prendre un rendez-vous" et suivre les instructions pour choisir une date et une heure qui vous conviennent.
+
+2. **Par téléphone :**
+   - Vous pouvez appeler le numéro national de l'Assurance Retraite au 3960 (service gratuit + prix d'un appel). Depuis l'étranger, composez le +33 9 71 10 39 60.
+   - Un conseiller vous aidera à fixer un rendez-vous.
+
+3. **En agence :**
+   - Vous pouvez également vous rendre directement dans une agence de l'Assurance Retraite. Pour trouver l'agence la plus proche de chez vous, utilisez le service de localisation sur le site web de l'Assurance Retraite.
+
+4. **Par courrier :**
+   - Si vous préférez, vous pouvez envoyer une demande de rendez-vous par courrier à l'agence de l'Assurance Retraite de votre région. Assurez-vous d'inclure toutes les informations nécessaires, telles que votre numéro de sécurité sociale, vos coordonnées et les raisons de votre demande de rendez-vous.
+
+Il est recommandé de préparer tous les documents nécessaires avant votre rendez-vous, comme votre relevé de carrière, vos bulletins de salaire, et tout autre document pertinent pour votre dossier de retraite.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Pour prendre rendez-vous avec l'assurance retraite (régime général), vous pouvez le faire en utilisant le service en ligne Info retraite. Vous pouvez consulter les calendriers de paiement de chacune de vos caisses de retraite sur le site officiel Info retraite dans votre compte retraite, à la rubrique Paiements retraite. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>25. Quelles sont les étapes pour préparer sereinement son départ à la retraite?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Préparer sereinement son départ à la retraite nécessite une planification minutieuse et une anticipation des différentes démarches à accomplir. Voici les étapes clés pour vous aider à organiser cette transition :
+
+1. **Évaluation de la situation financière** :
+   - **Estimation des revenus** : Calculez vos futures pensions de retraite en contactant les organismes de retraite (régime général, complémentaire, etc.).
+   - **Épargne et investissements** : Évaluez vos économies, placements et autres sources de revenus (immobilier, épargne retraite, etc.).
+   - **Budget prévisionnel** : Établissez un budget pour estimer vos dépenses à la retraite et ajustez vos économies en conséquence.
+
+2. **Vérification des droits à la retraite** :
+   - **Relevé de carrière** : Consultez votre relevé de carrière pour vérifier que toutes vos périodes de travail ont bien été prises en compte.
+   - **Correction des anomalies** : Si vous constatez des erreurs ou des périodes manquantes, contactez les organismes concernés pour les corriger.
+
+3. **Choix de la date de départ** :
+   - **Âge légal de la retraite** : Vérifiez l'âge légal de départ à la retraite et l'âge auquel vous pouvez bénéficier d'une retraite à taux plein.
+   - **Impact sur la pension** : Évaluez l'impact d'un départ anticipé ou différé sur le montant de votre pension.
+
+4. **Démarches administratives** :
+   - **Demande de retraite** : Déposez votre demande de retraite auprès des différents régimes de retraite dont vous dépendez, généralement 4 à 6 mois avant la date prévue de départ.
+   - **Documents nécessaires** : Préparez les documents requis (pièce d'identité, relevé de carrière, justificatifs de périodes de travail à l'étranger, etc.).
+
+5. **Préparation personnelle et psychologique** :
+   - **Projets personnels** : Réfléchissez à vos projets et activités pour occuper votre temps libre (voyages, bénévolat, hobbies, etc.).
+   - **Santé et bien-être** : Prenez soin de votre santé physique et mentale en adoptant un mode de vie sain et en restant actif.
+
+6. **Organisation pratique** :
+   - **Logement** : Évaluez si votre logement actuel est adapté à votre future situation (accessibilité, coût, localisation).
+   - **Assurances et mutuelles** : Vérifiez et ajustez vos contrats d'assurance santé, habitation, etc., en fonction de vos nouveaux besoins.
+
+7. **Information et conseils** :
+   - **Séminaires et ateliers** : Participez à des séminaires ou ateliers de préparation à la retraite proposés par votre employeur ou des organismes spécialisés.
+   - **Conseillers financiers** : Consultez un conseiller financier pour optimiser votre situation patrimoniale et fiscale.
+
+En suivant ces étapes, vous pourrez aborder votre départ à la retraite de manière sereine et bien préparée.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Voici les étapes pour préparer sereinement son départ à la retraite :
+
+1. Se renseigner sur les conditions de départ à la retraite : Il est important de connaître l'âge minimum à partir duquel il est possible de partir à la retraite, ainsi que les conditions de départ en retraite progressive.
+
+2. Se renseigner sur les indemnités de départ en retraite : Il est également important de se renseigner sur les indemnités de départ en retraite dont il est possible de bénéficier de la part de son employeur.
+
+3. Faire une demande de retraite : Les étapes à suivre pour faire une demande de retraite varient en fonction de la situation professionnelle (fonctionnaire, salarié du secteur privé, contractuel de la fonction publique). Il est donc important de se renseigner sur la démarche à accomplir pour faire sa demande de retraite.
+
+4. Se renseigner sur les conditions d'obtention d'une pension de retraite de base à taux plein et de la retraite complémentaire : Il est important de se renseigner sur les conditions d'obtention d'une pension de retraite de base à taux plein et de la retraite complémentaire.
+
+5. Se renseigner sur les conditions de rachat de trimestres : Il est également important de se renseigner sur les conditions de rachat de ses années d'études supérieures.
+
+6. Consulter son relevé de carrière : Il est important de consulter son relevé de carrière pour se renseigner sur sa carrière professionnelle et évaluer son montant de retraite.
+
+7. Estimer le montant de sa retraite : Il est important de se renseigner sur les différentes options de retraite et de faire une estimation du montant de sa retraite.
+
+8. Se renseigner sur les conditions de départ en cas de handicap ou d'exposition à l'amiante : Il est important de se renseigner sur les conditions de départ en cas de handicap ou d'exposition à l'amiante.
+
+9. Se renseigner sur les conditions de départ en cas de carrière longue ou de carrière jeune : Il est important de se renseigner sur les conditions de départ en cas de carrière longue ou de carrière jeune.
+
+10. Se renseigner sur les conditions de départ en cas de rachat de trimestres : Il est important de se renseigner sur les conditions de rachat de ses années d'études supérieures.
+
+Il est important de noter que les étapes précises peuvent varier en fonction de la situation professionnelle de chaque personne. Il est donc recommandé de se renseigner sur les ressources spécifiques à sa situation professionnelle. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>26. Comment demander sa retraite en ligne ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Demander sa retraite en ligne est un processus qui peut varier légèrement en fonction de votre pays de résidence. Cependant, voici un guide général pour vous aider à naviguer ce processus en France :
+
+### Étapes pour demander sa retraite en ligne en France
+
+1. **Préparez vos documents** :
+   - Carte d'identité ou passeport.
+   - Relevé de carrière (disponible sur le site de l'Assurance Retraite).
+   - Relevés de points pour les régimes complémentaires (Agirc-Arrco, par exemple).
+   - Justificatifs de périodes d'activité à l'étranger, si applicable.
+   - Relevés de situation individuelle (RIS).
+
+2. **Créez un compte sur le site de l'Assurance Retraite** :
+   - Rendez-vous sur le site officiel de l'Assurance Retraite (www.lassuranceretraite.fr).
+   - Si vous n'avez pas encore de compte, créez-en un en suivant les instructions. Vous aurez besoin de votre numéro de sécurité sociale.
+
+3. **Connectez-vous à votre compte** :
+   - Utilisez vos identifiants pour vous connecter à votre espace personnel.
+
+4. **Accédez à la section "Demander ma retraite"** :
+   - Une fois connecté, allez dans la section dédiée à la demande de retraite.
+   - Cliquez sur "Demander ma retraite".
+
+5. **Remplissez le formulaire de demande** :
+   - Suivez les instructions pour remplir le formulaire en ligne. Vous devrez fournir des informations sur votre carrière, vos employeurs, et vos périodes de chômage ou d'inactivité.
+   - Téléchargez les documents nécessaires (relevé de carrière, justificatifs, etc.).
+
+6. **Soumettez votre demande** :
+   - Une fois le formulaire complété et les documents téléchargés, soumettez votre demande.
+   - Vous recevrez une confirmation de réception par email.
+
+7. **Suivez l'avancement de votre demande** :
+   - Vous pouvez suivre l'état de votre demande en vous connectant à votre compte sur le site de l'Assurance Retraite.
+   - Vous recevrez des notifications par email ou par courrier concernant l'avancement de votre dossier.
+
+8. **Contactez votre caisse de retraite si nécessaire** :
+   - Si vous avez des questions ou des problèmes, n'hésitez pas à contacter votre caisse de retraite pour obtenir de l'aide.
+
+### Points à vérifier
+
+- **Anticipation** : Il est recommandé de commencer les démarches environ 6 mois avant la date souhaitée de départ à la retraite.
+- **Vérification des droits** : Assurez-vous que toutes vos périodes de travail ont bien été prises en compte dans votre relevé de carrière.
+- **Régimes complémentaires** : N'oubliez pas de faire également la demande auprès des régimes complémentaires (Agirc-Arrco, par exemple).
+
+En suivant ces étapes, vous devriez être en mesure de demander votre retraite en ligne de manière efficace et sans trop de complications.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Pour demander sa retraite en ligne, vous pouvez utiliser le service Demander ma retraite sur le site officiel Info retraite. Ce service vous permet de faire une demande unique de retraite qui est transmise automatiquement à l'ensemble des caisses de retraite de base et complémentaire auprès desquelles vous avez droit à une pension de retraite. Le formulaire de demande de retraite en ligne est personnalisé et pré-rempli de certaines informations. Vous devez le compléter et joindre les justificatifs demandés scannés ou photographiés. Vous pouvez suivre à tout moment l'état d'avancement de votre demande et la conserver pendant 90 jours. Il est recommandé de prévenir votre administration employeur de la date de votre départ par lettre recommandée avec accusé de réception (LRAR). <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>27. Si vous êtes au régime général de retraite, comment demander sa retraite en ligne sur www.lassuranceretraite.fr ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour demander votre retraite en ligne via le site de l'Assurance Retraite, suivez ces étapes :
+
+1. **Préparez vos documents** : Avant de commencer, assurez-vous d'avoir tous les documents nécessaires, tels que votre numéro de sécurité sociale, vos relevés de carrière, et éventuellement des justificatifs de périodes travaillées à l'étranger ou dans d'autres régimes.
+
+2. **Créez ou connectez-vous à votre compte** :
+   - Rendez-vous sur le site [www.lassuranceretraite.fr](https://www.lassuranceretraite.fr).
+   - Si vous avez déjà un compte, connectez-vous avec vos identifiants (numéro de sécurité sociale et mot de passe).
+   - Si vous n'avez pas encore de compte, créez-en un en suivant les instructions fournies sur le site.
+
+3. **Accédez à la demande de retraite** :
+   - Une fois connecté, allez dans la section "Demander ma retraite".
+   - Cliquez sur "Demander ma retraite en ligne".
+
+4. **Remplissez le formulaire de demande** :
+   - Suivez les instructions pour remplir le formulaire de demande de retraite. Vous devrez fournir des informations sur votre carrière, vos périodes de chômage, de maladie, de maternité, etc.
+   - Vérifiez bien toutes les informations avant de valider.
+
+5. **Téléchargez les documents nécessaires** :
+   - Vous devrez peut-être télécharger certains documents justificatifs. Assurez-vous de les avoir scannés ou photographiés au préalable.
+
+6. **Soumettez votre demande** :
+   - Une fois le formulaire rempli et les documents téléchargés, soumettez votre demande.
+   - Vous recevrez une confirmation de la réception de votre demande par email.
+
+7. **Suivez l'avancement de votre dossier** :
+   - Vous pouvez suivre l'avancement de votre dossier en vous connectant régulièrement à votre compte sur le site de l'Assurance Retraite.
+   - Vous serez informé par email ou courrier des étapes suivantes et des éventuelles pièces complémentaires à fournir.
+
+8. **Attendez la notification de votre retraite** :
+   - Une fois votre dossier traité, vous recevrez une notification indiquant la date de début de votre retraite et le montant de votre pension.
+
+Si vous rencontrez des difficultés ou avez des questions, n'hésitez pas à contacter le service client de l'Assurance Retraite pour obtenir de l'aide.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Je suis désolé, mais je ne suis pas en mesure de répondre à votre question car elle n'est pas incluse dans les éléments de contexte fournis. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>28. Qu’est-ce que la notification de retraite ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          La notification de retraite est un document officiel émis par l'organisme de retraite (comme la Caisse Nationale d'Assurance Vieillesse en France) qui informe le futur retraité de la prise en compte de sa demande de retraite et des conditions de son départ à la retraite. Ce document contient généralement plusieurs informations importantes, telles que :
+
+1. **La date de départ à la retraite** : La date à laquelle le retraité commencera à percevoir sa pension de retraite.
+2. **Le montant de la pension** : Le montant mensuel ou annuel de la pension de retraite qui sera versée.
+3. **Les modalités de versement** : Les détails sur la fréquence et les modalités de paiement de la pension.
+4. **Les droits et obligations** : Les informations sur les droits du retraité et les obligations éventuelles, comme la déclaration de tout changement de situation.
+5. **Les coordonnées de contact** : Les informations de contact pour toute question ou clarification supplémentaire.
+
+La notification de retraite est un document crucial car elle officialise le passage du statut de travailleur actif à celui de retraité et permet au bénéficiaire de connaître précisément ses droits et les conditions de sa retraite.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           La notification de retraite est un document qui informe votre administration employeur de la date de votre départ à la retraite. Elle est obligatoire pour que votre administration employeur puisse procéder à la prise en compte de votre retraite et verser les pensions correspondantes. La notification de retraite peut être faite par lettre recommandée avec accusé de réception (LRAR) et il est recommandé de la faire suffisamment à l'avance pour respecter les procédures de préavis. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>29. Quelles sont les conditions pour bénéficier d'une retraite anticipée et quel impact cela a-t-il sur le taux de retraite ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          En France, la retraite anticipée permet de partir à la retraite avant l'âge légal de départ à la retraite, sous certaines conditions. Voici les principales conditions et l'impact sur le taux de retraite :
+
+### Conditions pour bénéficier d'une retraite anticipée
+
+1. **Carrière longue** :
+   - Avoir commencé à travailler jeune (avant 20 ans).
+   - Justifier d'une durée d'assurance cotisée supérieure à celle requise pour le taux plein.
+   - Avoir validé un certain nombre de trimestres avant un âge donné (par exemple, 5 trimestres avant la fin de l'année civile de vos 20 ans).
+
+2. **Handicap** :
+   - Justifier d'un taux d'incapacité permanente d'au moins 50 %.
+   - Avoir cotisé un certain nombre de trimestres en étant reconnu handicapé.
+
+3. **Inaptitude au travail** :
+   - Être reconnu inapte au travail par le médecin-conseil de la Sécurité sociale.
+
+4. **Pénibilité** :
+   - Avoir accumulé des points sur le compte professionnel de prévention (C2P) en raison de l'exposition à des facteurs de pénibilité.
+
+### Impact sur le taux de retraite
+
+- **Carrière longue** : Si vous partez en retraite anticipée pour carrière longue, vous pouvez bénéficier du taux plein (50 % du salaire annuel moyen) sans décote, à condition de remplir les critères de durée d'assurance cotisée.
+
+- **Handicap** : Les personnes handicapées peuvent également bénéficier du taux plein sans décote, même si elles n'ont pas atteint l'âge légal de départ à la retraite.
+
+- **Inaptitude au travail** : Les personnes reconnues inaptes au travail bénéficient automatiquement du taux plein, quel que soit le nombre de trimestres cotisés.
+
+- **Pénibilité** : Les points accumulés sur le compte professionnel de prévention peuvent être convertis en trimestres de retraite, permettant ainsi un départ anticipé sans décote.
+
+### Décote et Surcote
+
+- **Décote** : Si vous partez à la retraite avant d'avoir atteint le nombre de trimestres requis pour le taux plein (hors dispositifs spécifiques comme ceux mentionnés ci-dessus), votre pension sera réduite par une décote. La décote est une réduction de la pension de retraite par trimestre manquant.
+
+- **Surcote** : À l'inverse, si vous continuez à travailler après avoir atteint l'âge légal de départ à la retraite et le nombre de trimestres requis pour le taux plein, vous pouvez bénéficier d'une surcote, c'est-à-dire une augmentation de votre pension de retraite.
+
+Il est important de vérifier votre situation personnelle et de consulter les services de retraite ou un conseiller pour obtenir des informations précises et adaptées à votre cas.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Les conditions pour bénéficier d'une retraite anticipée pour carrière longue sont les suivantes :
+- Avoir commencé à travailler jeune
+- Justifier d'une certaine durée d'assurance cotisée (tous régimes confondus)
+- Ne pas avoir bénéficié de périodes indemnisées de maladie et accidents du travail, de périodes indemnisées de maternité et d'adoption, de périodes de perception d'une pension d'invalidité, de trimestres de majoration de durée d'assurance attribués dans le cadre du compte professionnel de prévention, et de trimestres obtenus grâce à l'assurance vieillesse des parents au foyer et à l'assurance vieillesse des aidants, dans la limite de 4 trimestres.
+
+Le taux de retraite anticipée pour carrière longue est fixé à 50 % de votre salaire annuel moyen de vos 25 meilleures années.
+
+Il est important de noter que ces conditions peuvent varier en fonction de votre situation individuelle et de vos droits spécifiques. Il est donc recommandé de consulter les services compétents ou de contacter votre organisme de sécurité sociale pour obtenir des informations précises sur votre situation. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>30. À quel âge peut-on prendre sa retraite en France et quelles sont les conditions pour un départ anticipé ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          En France, l'âge légal de départ à la retraite est actuellement fixé à 62 ans pour les personnes nées à partir de 1955. Cependant, pour bénéficier d'une retraite à taux plein, il est nécessaire d'avoir cotisé un certain nombre de trimestres, qui varie en fonction de l'année de naissance.
+
+### Conditions pour un départ anticipé
+
+Il existe plusieurs dispositifs permettant un départ anticipé à la retraite :
+
+1. **Carrières longues** :
+   - Les personnes ayant commencé à travailler très jeunes peuvent partir à la retraite avant l'âge légal, sous certaines conditions. Par exemple, si vous avez commencé à travailler avant 20 ans et que vous avez cotisé un nombre suffisant de trimestres, vous pouvez partir à la retraite avant 62 ans.
+
+2. **Travail pénible** :
+   - Les personnes ayant exercé des métiers considérés comme pénibles peuvent également bénéficier d'un départ anticipé. Le compte professionnel de prévention (C2P) permet de cumuler des points qui peuvent être convertis en trimestres de retraite.
+
+3. **Incapacité permanente** :
+   - Les personnes souffrant d'une incapacité permanente d'au moins 50 % peuvent partir à la retraite dès 60 ans.
+
+4. **Handicap** :
+   - Les personnes en situation de handicap peuvent partir à la retraite dès 55 ans, sous réserve de remplir certaines conditions de durée d'assurance et de cotisation.
+
+5. **Fonction publique** :
+   - Les fonctionnaires peuvent bénéficier de dispositifs spécifiques de départ anticipé, notamment pour les catégories actives (policiers, pompiers, etc.) qui peuvent partir à la retraite plus tôt que les autres fonctionnaires.
+
+### Réformes et évolutions
+
+Il est important de noter que les règles concernant l'âge de départ à la retraite et les conditions de départ anticipé peuvent évoluer en fonction des réformes législatives. Il est donc conseillé de se tenir informé des dernières modifications législatives et de consulter les organismes compétents pour obtenir des informations actualisées.
+
+Pour des informations précises et personnalisées, il est recommandé de consulter le site officiel de l'Assurance retraite ou de prendre rendez-vous avec un conseiller retraite.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           En France, l'âge de départ en retraite varie en fonction de l'année de naissance. Pour les personnes nées avant 1960, l'âge de départ est fixé à 62 ans. Pour les personnes nées entre 1960 et 1969, l'âge de départ est fixé à 63 ans. Pour les personnes nées après 1969, l'âge de départ est fixé à 64 ans.
+
+Pour un départ anticipé, il est possible de prendre sa retraite avant l'âge de départ normal si certaines conditions sont remplies. Ces conditions varient en fonction de la situation du salarié. Voici quelques exemples :
+
+- Si vous avez commencé à travailler jeune, vous pouvez partir en retraite anticipée pour carrière longue si vous justifiez d'une certaine durée d'assurance cotisée, tous régimes confondus. Les conditions spécifiques à remplir sont les suivantes :
+   - Vous devez avoir au moins 10 ans d'ancienneté dans l'entreprise.
+   - Vous devez avoir des périodes indemnisées de maladie et accidents du travail, dans la limite de 4 trimestres.
+   - Vous devez avoir des périodes indemnisées de maternité et d'adoption.
+   - Vous devez avoir des périodes de perception d'une pension d'invalidité, dans la limite de 2 trimestres.
+   - Vous devez avoir des trimestres de majoration de durée d'assurance attribués dans le cadre du compte professionnel de prévention.
+   - Vous devez avoir des trimestres obtenus grâce à l'assurance vieillesse des parents au foyer et à l'assurance vieillesse des aidants, dans la limite de 4 trimestres.
+
+- Si vous êtes atteint d'une incapacité permanente à la suite d'un accident du travail ou d'une maladie professionnelle, vous pouvez également prendre votre retraite anticipée.
+- Si vous avez été exposé à l'amiante au cours de votre vie professionnelle, vous pouvez également prendre votre retraite anticipée.
+
+Il est important de noter que les conditions spécifiques à remplir pour un départ anticipé peuvent varier en fonction de votre situation personnelle et de votre régime de retraite. Il est donc recommandé de consulter les informations spécifiques à votre situation et de contacter votre organisme de sécurité sociale pour obtenir des précisions. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>31. Quelle est la procédure pour demander sa pension de retraite auprès de l'Assurance retraite?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour demander votre pension de retraite auprès de l'Assurance retraite en France, vous devez suivre plusieurs étapes. Voici la procédure générale :
+
+1. **Préparation** :
+   - **Vérifiez votre relevé de carrière** : Avant de faire votre demande, assurez-vous que toutes vos périodes de travail ont bien été prises en compte. Vous pouvez consulter votre relevé de carrière sur le site de l'Assurance retraite (www.lassuranceretraite.fr).
+   - **Calculez votre âge de départ** : Vérifiez à quel âge vous pouvez partir à la retraite en fonction de votre année de naissance et de votre situation professionnelle.
+
+2. **Constitution du dossier** :
+   - **Documents nécessaires** : Préparez les documents nécessaires, tels que votre pièce d'identité, votre relevé de carrière, vos bulletins de salaire, et tout autre document justifiant vos périodes de travail (attestations de chômage, congés maternité, etc.).
+   - **Formulaire de demande** : Téléchargez et remplissez le formulaire de demande de retraite disponible sur le site de l'Assurance retraite.
+
+3. **Dépôt de la demande** :
+   - **En ligne** : La méthode la plus simple et rapide est de faire votre demande en ligne sur le site de l'Assurance retraite. Vous devrez créer un compte ou vous connecter à votre espace personnel.
+   - **Par courrier** : Si vous préférez, vous pouvez envoyer votre demande par courrier. Adressez votre dossier complet à la caisse régionale de l'Assurance retraite dont vous dépendez.
+
+4. **Suivi de la demande** :
+   - **Accusé de réception** : Une fois votre demande déposée, vous recevrez un accusé de réception.
+   - **Traitement du dossier** : Votre dossier sera ensuite examiné par l'Assurance retraite. Vous pouvez suivre l'avancement de votre demande en ligne via votre espace personnel.
+
+5. **Décision et notification** :
+   - **Notification de la décision** : Vous recevrez une notification de la décision concernant votre demande de retraite. Cette notification précisera le montant de votre pension et la date de début de versement.
+   - **Versement de la pension** : Votre pension de retraite sera versée mensuellement à partir de la date indiquée dans la notification.
+
+6. **Contact et assistance** :
+   - **Service client** : Si vous avez des questions ou des difficultés, vous pouvez contacter le service client de l'Assurance retraite par téléphone ou via leur site internet.
+   - **Rendez-vous en agence** : Vous pouvez également prendre rendez-vous dans une agence de l'Assurance retraite pour obtenir de l'aide en personne.
+
+Il est recommandé de commencer les démarches environ 6 mois avant la date à laquelle vous souhaitez partir à la retraite pour éviter tout retard dans le versement de votre pension.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+          <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>32. Quelle est la date limite pour déposer ma demande de départ à la retraite en tant que fonctionnaire ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          La date limite pour déposer une demande de départ à la retraite en tant que fonctionnaire peut varier en fonction de plusieurs facteurs, notamment le type de fonction publique (d'État, territoriale, hospitalière) et les règlements spécifiques de votre administration. Cependant, en général, il est recommandé de déposer votre demande de départ à la retraite au moins six mois avant la date souhaitée de départ. Cela permet de s'assurer que toutes les démarches administratives nécessaires peuvent être effectuées à temps.
+
+Voici quelques étapes générales à suivre :
+
+1. **Vérifiez les conditions de départ** : Assurez-vous que vous remplissez les conditions d'âge et de durée de service pour pouvoir partir à la retraite.
+
+2. **Préparez les documents nécessaires** : Rassemblez tous les documents requis, tels que les relevés de carrière, les justificatifs de services accomplis, etc.
+
+3. **Contactez votre service des ressources humaines** : Informez-vous auprès de votre service des ressources humaines ou de votre gestionnaire de carrière pour connaître les procédures spécifiques et les délais à respecter.
+
+4. **Déposez votre demande** : Soumettez votre demande de départ à la retraite par écrit, en respectant les délais indiqués par votre administration.
+
+5. **Suivez votre dossier** : Assurez-vous que votre demande est bien prise en compte et suivez l'avancement de votre dossier.
+
+Il est toujours conseillé de consulter les règlements spécifiques de votre administration ou de prendre contact avec votre service des ressources humaines pour obtenir des informations précises et personnalisées.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           La date limite pour déposer une demande de départ à la retraite en tant que fonctionnaire dépend de la catégorie de fonctionnaire et de la situation spécifique de chaque individu. 
+
+Pour les fonctionnaires de catégorie active, la date limite pour demander une retraite progressive est variable. Selon les informations fournies, il est possible de choisir la date de départ à la retraite, mais il est nécessaire de respecter certaines conditions. La date de départ choisie ne peut pas être antérieure à la date de dépôt de la demande de retraite. Si la demande est déposée le premier jour d'un mois, il est possible de demander que le point de départ de la retraite soit fixé au jour du dépôt de la demande. Si la demande est déposée le premier jour d'un mois et que la demande est acceptée, la date de départ est automatiquement fixée au premier jour du mois suivant la date de réception de la demande. 
+
+Pour les fonctionnaires de catégorie sédentaire, la date limite pour demander une retraite progressive est également variable. Selon les informations fournies, il est possible de demander une prolongation d'activité jusqu'à ce que l'intérêt du service et l'aptitude physique à continuer à travailler soient respectés. La prolongation d'activité peut être accordée pour une période de 10 trimestres maximum (2 ans et demi) après application des possibilités de recul de la limite d'âge pour enfant. Les périodes de maintien en activité pour carrière incomplète sont prises en compte dans la constitution et la liquidation des droits à pension. La demande de report de la limite d'âge doit être adressée à l'administration employeur au moins 6 mois avant le 67e anniversaire. 
+
+Il est important de noter que ces informations sont basées sur les éléments de contexte fournis et peuvent varier en fonction de chaque situation individuelle. Il est donc recommandé de consulter les textes de loi et de contacter les services compétents pour obtenir des informations précises et à jour sur la date limite pour déposer une demande de départ à la retraite en tant que fonctionnaire. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>33. Si j'ai des périodes de carrière dans différents régimes de retraite, comment puis-je obtenir une correction de carrière et estimer le montant total de ma retraite?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Pour obtenir une correction de carrière et estimer le montant total de votre retraite lorsque vous avez des périodes de carrière dans différents régimes de retraite, vous pouvez suivre les étapes suivantes :
+
+### 1. **Vérification de votre relevé de carrière**
+- **Relevé Individuel de Situation (RIS)** : Ce document récapitule l'ensemble de vos droits à la retraite acquis dans les différents régimes. Vous pouvez le consulter en ligne sur le site de l'Assurance Retraite (www.lassuranceretraite.fr) ou sur le portail inter-régimes Info-Retraite (www.info-retraite.fr).
+- **Relevé de carrière** : Chaque régime de retraite (régime général, régime complémentaire, régimes spéciaux, etc.) vous fournit un relevé de carrière. Vérifiez que toutes vos périodes de travail y sont bien mentionnées.
+
+### 2. **Correction de carrière**
+- **Contactez chaque régime** : Si vous constatez des erreurs ou des omissions dans votre relevé de carrière, vous devez contacter chaque régime de retraite concerné pour demander une correction. Fournissez les justificatifs nécessaires (bulletins de salaire, attestations d'employeurs, etc.).
+- **Démarches en ligne** : Certains régimes permettent de demander des corrections directement en ligne via leur site internet.
+
+### 3. **Estimation du montant total de votre retraite**
+- **Simulateurs en ligne** : Utilisez les simulateurs disponibles sur le site de l'Assurance Retraite ou sur le portail Info-Retraite. Ces outils prennent en compte vos différentes périodes de carrière et vous donnent une estimation de votre future pension.
+- **Entretien Information Retraite (EIR)** : Vous pouvez demander un entretien personnalisé avec un conseiller retraite. Cet entretien est gratuit et permet de faire le point sur votre carrière et d'obtenir des estimations plus précises.
+
+### 4. **Demande de retraite**
+- **Dossier de demande** : Lorsque vous êtes prêt à prendre votre retraite, vous devez déposer une demande auprès de chaque régime de retraite dont vous dépendez. Il est recommandé de le faire environ 6 mois avant la date prévue de départ.
+- **Coordination des régimes** : Les régimes de retraite coordonnent entre eux pour calculer et verser votre pension. Vous n'avez pas besoin de faire des démarches multiples pour chaque régime.
+
+### 5. **Suivi et ajustements**
+- **Suivi de votre dossier** : Une fois votre demande déposée, suivez l'avancement de votre dossier via les sites internet des régimes concernés ou en contactant leurs services.
+- **Ajustements post-retraite** : Si vous constatez des erreurs dans le montant de votre pension après votre départ à la retraite, vous pouvez demander des ajustements en fournissant les justificatifs nécessaires.
+
+### Ressources utiles
+- **Assurance Retraite** : www.lassuranceretraite.fr
+- **Info-Retraite** : www.info-retraite.fr
+- **Agirc-Arrco (régime complémentaire des salariés)** : www.agirc-arrco.fr
+
+En suivant ces étapes, vous pourrez corriger votre carrière et obtenir une estimation précise du montant total de votre retraite, en tenant compte de vos périodes de travail dans différents régimes.<br /><br />
+          <!-- Evals -->
+          
+        
+          <span class="model_name">AgentPublic/albertlight-7b</span> &nbsp;
+           Si vous avez des périodes de carrière dans différents régimes de retraite, vous pouvez obtenir une correction de carrière en utilisant le service en ligne Corriger ma carrière sur votre compte retraite sur le site officiel Info-retraite. Ce service est disponible à partir de 55 ans et uniquement en cas de connexion avec FranceConnect. Vous pouvez également consulter votre relevé de carrière et effectuer une estimation du montant de votre retraite en utilisant le service Mon estimation retraite" sur votre compte retraite. Ce service vous permet de simuler le montant de votre retraite à différents âges et à taux plein ou non, en utilisant les données connues de vos caisses de retraite. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].nextElementSibling.style.display = "block"
+    }
+  </script>
+</body>
+
+</html>
