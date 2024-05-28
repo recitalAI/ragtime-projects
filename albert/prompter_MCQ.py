@@ -26,7 +26,8 @@ class MCQAnsPptr(Prompter):
             else ans
         )
         # keep the first character
-        ans = ans[0]
+        if len(ans) > 0:
+            ans = ans[0]
         # assign this letter as the text of the current Answer being built
         cur_obj.text = ans
         # try to retrieve the Transco dict associated with the current question
