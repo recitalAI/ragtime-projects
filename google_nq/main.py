@@ -1,4 +1,4 @@
-PROJECT_NAME:str = "google_nq"
+PROJECT_NAME: str = "google_nq"
 
 import ragtime
 from ragtime.expe import Expe
