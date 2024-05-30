@@ -1,0 +1,12 @@
+file_name: HF_QCM_reconcilie_V1.json
+generators:
+  answers:
+    prompter: PptrAnsBase
+    llms_name:
+      - gpt-4o
+      - Albert_LLM
+    export:
+      json: {}
+      html: {}
+      spreadsheet:
+        template_file_name: MCQ.xlsx

@@ -1,44 +1,63 @@
-PROJECT_NAME:str = "google_nq"
+PROJECT_NAME: str = "google_nq"
 
 import ragtime
-from ragtime import expe, generators
-from ragtime.expe import QA, Chunks, Prompt, Question, WithLLMAnswer, UpdateTypes, Answers
-from ragtime.generators import StartFrom, PptrFactsFR, PptrEvalFR, PptrAnsBase, AnsGenerator, EvalGenerator
-from ragtime.expe import Expe
+from ragtime.pipeline import (
+    LLMs_from_names,
+    run_pipeline,
+)
+import ragtime.prompters as prompters
 
 # always start with init_project before importing ragtime.config values since they are updated
 # with init_project and import works by value and not by reference, so values imported before
 # calling init_project are not updated after the function call
 ragtime.config.init_project(name=PROJECT_NAME, init_type="globals_only")
-from ragtime.config import FOLDER_ANSWERS, FOLDER_QUESTIONS, FOLDER_FACTS, FOLDER_EVALS, logger, FOLDER_SST_TEMPLATES
-ragtime.config.init_win_env(['OPENAI_API_KEY', 'ALEPHALPHA_API_KEY', 'ANTHROPIC_API_KEY',
-                             'COHERE_API_KEY', 'HUGGINGFACE_API_KEY', 'MISTRAL_API_KEY',
-                             'NLP_CLOUD_API_KEY', 'GROQ_API_KEY'])
+from ragtime.config import FOLDER_ANSWERS, FOLDER_SST_TEMPLATES
 
+ragtime.config.init_win_env(
+    [
+        "OPENAI_API_KEY",
+        "ALEPHALPHA_API_KEY",
+        "ANTHROPIC_API_KEY",
+        "COHERE_API_KEY",
+        "HUGGINGFACE_API_KEY",
+        "MISTRAL_API_KEY",
+        "NLP_CLOUD_API_KEY",
+        "GROQ_API_KEY",
+    ]
+)
 
-logger.debug('MAIN STARTS')
+export: dict = {
+    "html": dict(),
+    "json": dict(),
+    "spreadsheet": {"path": FOLDER_SST_TEMPLATES / "without_retriever.xlsx"},
+}
 
-ans_gen:AnsGenerator = AnsGenerator(retriever=None,
-                                    llm_names=["gpt-4", 'vertex_ai/gemini-pro', "mistral/mistral-large-latest",
-                                              "groq/llama3-8b-8192", "groq/llama3-70b-8192",
-                                              "groq/mixtral-8x7b-32768", "groq/gemma-7b-it"],
-                                    prompter=PptrAnsBase())
-expe:Expe = generators.generate(text_generator=ans_gen,
-                                folder_in=FOLDER_FACTS,
-                                folder_out=FOLDER_ANSWERS,
-                                json_file="validation_set--30Q_0C_219F_0M_0A_0HE_0AE_2024-05-02_17h30,58.json",
-                                save_to_html=True,
-                                save_to_spreadsheet=True,
-                                template_spreadsheet_path=FOLDER_SST_TEMPLATES / 'without_retriever.xlsx')
+configuration: dict = {
+    "file_name": "google_nq.json",
+    "folder_name": FOLDER_ANSWERS,
+    "generate": {
+        "answers": {
+            "llms": LLMs_from_names(
+                prompter=prompters.table["PptrAnsBase"](),
+                names=[
+                    "gpt-4",
+                    "gpt-3.5-turbo",
+                    "mistral/mistral-large-latest",
+                    "groq/llama3-8b-8192",
+                    "groq/llama3-70b-8192",
+                    "groq/mixtral-8x7b-32768",
+                    "groq/gemma-7b-it",
+                ],
+            ),
+            "export": export,
+        },
+        "evals": {
+            "llms": LLMs_from_names(
+                prompter=prompters.table["PptrEvalFR"](), names=["gpt-4"]
+            ),
+            "export": export,
+        },
+    },
+}
 
-eval_gen:EvalGenerator = EvalGenerator(llm_names=["gpt-4"], prompter=PptrEvalFR())
-expe = generators.generate(text_generator=eval_gen,
-                           folder_in=FOLDER_ANSWERS,
-                           folder_out=FOLDER_EVALS,
-                           # json_file=expe.json_path.stem + '.json',
-                           json_file='validation_set--30Q_0C_219F_7M_210A_0HE_0AE_2024-05-08_18h48,57.json',
-                           save_to_html=True,
-                           save_to_spreadsheet=True,
-                           template_spreadsheet_path=FOLDER_SST_TEMPLATES / 'without_retriever.xlsx')
-
-logger.debug('MAIN ENDS')
+run_pipeline(configuration=configuration, start_from="evals")

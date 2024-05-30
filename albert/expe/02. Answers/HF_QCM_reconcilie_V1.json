@@ -1,0 +1,497 @@
+[
+  {
+    "question": {
+      "text": "Comment contester un PV reçu depuis l’Italie ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. la réponse à cette question ne peut se trouver ni sur les documents des opérateurs, ni sur service public.fr, qui par définition ne traite que des démarches françaises. La seule bonne réponse possible est qu'il faut regarder sur le PV les modalités de contestation. ",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Une mairie peut-elle refuser un formulaire cerfa pour une demande de renouvellement de Carte Nationale d’Identité (CNI) ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "A. Non, une mairie ne peut pas refuser un formulaire cerfa pour une demande de renouvellement de CNI.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment renouveler une Carte Nationale d’Identité (CNI) sans passer par la pré-demande en ligne ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "C. En se rendant dans n'importe quelle mairie équipée d'une station d'enregistrement, sans obligation de pré-demande en ligne.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Quel formulaire cerfa utiliser pour renouveler une Carte Nationale d’Identité (CNI) ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "D. Aucun des formulaires cerfa mentionnés ci-dessus.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Peut-on corriger les informations mises sur une pré-demande en ligne pour le renouvellement d’une Carte Nationale d’Identité (CNI) après le paiement du timbre fiscal ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. Non, en cas d'erreur il faut remplr une nouvelle pré demande. La pré demande n'est pas payante, le timbre fiscal est consommé au moment du dépôt en mairie.  ",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "La mairie accepte-t-elle de corriger des fautes de frappe dans une pré-demande de carte d’identité ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "C. Non, la mairie n'accepte pas de corriger des fautes de frappe dans la pré-demande.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Le fils est né en France et a la nationalité française. La mère la nationalité tunisienne. Le père les deux nationalités (naturalisé français). Sur le formulaire de l’ANTS, quelle réponse choisir à la question « la personne française est mineure parce que : »"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. Vous êtes né en France et au moins un de vos parents est français",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment refaire une carte grise si l’ancien propriétaire a perdu la carte d’origine ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "B. Faire une demande de duplicata de la carte grise.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Je suis un mineur, qui doit faire la demande de passeport pour moi ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "D. Le responsable exerçant l'autorité parentale doit faire la demande pour moi.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment prendre rendez-vous pour faire une demande de carte d'identité auprès de la mairie?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "B. Utilisez le moteur de recherche de l'ANTS pour trouver un rendez-vous dans une mairie équipée",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment contester un FPS et quelles sont les étapes à suivre ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "A. Il faut contester le FPS en ligne ou par courrier, en s'appuyant sur l'avis de contravention.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment obtenir un passeport ou un visa pour un mineur franco-tunisien?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. En se rendant sur le site de l'ANTS pour remplir une pré demande en ligne de passeport puis en suivant les indications pour déposer la demande en mairie",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment acheter un timbre fiscal en ligne pour payer les frais de renouvellement de la carte d'identité ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. Aucune des réponses n’est la bonne",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment contester une amende d'infraction routière en ligne ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "C. Vous pouvez contester l'amende en ligne en consultant l'avis de contravention pour connaître la procédure à suivre.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment renouveler son passeport en ligne et éviter d'avoir à utiliser un formulaire cartonné au guichet ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. Aucune des réponses n’est la bonne",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Une mairie peut-elle refuser un formulaire papier pour une demande de renouvellement de Carte Nationale d’Identité (CNI) ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "B. Non, une mairie ne peut pas refuser un formulaire papier pour une demande de renouvellement de CNI, elle doit traiter toutes les demandes.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "En quoi consiste l'intermédiation financière du service public des pensions alimentaires géré par la Caf et la MSA ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "B. L'intermédiation financière est un dispositif dans lequel l'Aripa est l'intermédiaire entre le parent débiteur et le parent créancier, et verse la pension alimentaire au parent créancier.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Quelles sont les conditions pour toucher une retraite à taux plein par la MSA ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. SI vous êtes salarié agricole\nPour les personnes nées à compter du 1er janvier 1968 : l’âge de départ à la retraite est reculé de 62 à 64 ans\nPour les personnes nées à compter du 1er septembre 1961 jusqu’au 31 décembre 1967 : L’âge de départ à la retraite recule de 3 mois par génération.\nPour partir dès 64 ans avec le taux maximum (ou taux plein), il faut disposer d’un certain nombre de trimestres. La durée d’assurance pour bénéficier d’une retraite à taux maximum est portée à 43 ans, soit 172 trimestres pour les générations nées à partir de 1965.\nL’augmentation s’effectuera progressivement à raison d’un trimestre par an pour les générations nées entre le 1er septembre 1961 et le 31 décembre 1964.\nSi vous avez commencé à travailler jeune, vous pouvez prétendre à partir avant 64 ans.\nIl existe désormais 4 bornes d’âge : \n- À partir de 58 ans si vous avez commencé à travailler avant 16 ans\n- À partir de 60 ans si vous avez commencé à travailler avant 18 ans\n- À partir de 62 ans si vous avez commencé à travailler avant 20 ans\n- À partir de 63 ans si vous avez commencé à travailler avant 21 ans\nÀ noter qu’il est également nécessaire de justifier de trimestres acquis avant ces âges et d’une certaine durée d’assurance cotisée.\n\nSi vous êtes non-salarié agricole\nSi vous êtes chef d'exploitation ou d'entreprise agricole, collaborateur ou aide familial, votre retraite est composée d'une retraite de base et d'une retraite complémentaire (RCO) gérées par la MSA.\ncf. site MSA.FR",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment estimer / simuler sa retraite si vous êtes à la mutuelle des salariés agricoles (MSA)?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. Vous pouvez utiliser le simulateur interrégime 'www.info-retraite.fr'",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Quelles sont les implications d'une faute inexcusable de l'employeur en cas de maladie professionnelle ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "B. Si la faute inexcusable de l'employeur est reconnue, cela entraîne une majoration de la rente d'incapacité permanente et une indemnisation pour des préjudices non couverts par la rente.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment définit-on l'IPP (MSA) ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. L'invalidité peut résulter d'une maladie, d'un accident non professionnel ou d'une usure prématurée de l'organisme. L'état d'incapacité est apprécié par le médecin conseil de la MSA en relation avec le médecin traitant.\nLe taux d'IPP définitif peut être révisé en fonction de l'évolution de l'état de santé.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Quelles sont les missions de l'Agence de recouvrement et d'intermédiation des pensions alimentaires (Aripa) ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. L'ARIPA est l'Agence de Recouvrement et d'Intermédiation des Pensions Alimentaires. C'est un service public qui est géré par les CAF et la MSA en vue d'aider les personnes à recevoir ou à verser une pension alimentaire. Elle peut servir d'intermédiaire pour assurer le paiement d'une pension. En cas d'impayés elle peut conseiller chaque parent et récupérer les sommes dues. Si besoin, elle récupère les sommes auprès d'un tiers (employeur, France Travail, banque).\nSi la pension alimentaire n'est pas encore fixée, elle oriente les parents dans les démarches",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Quand un abattement de 10% est-il mis en place sur une retraite anticipée ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": " E. Il n'y a plus d'abattement sur les nouvelles retraites retraite complémentaire depuis décembre 2023.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment prendre rendez-vous avec l’assurance retraite (régime général)?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. A partir du site de l'assurance retraite, en prenant rendez-vous sur l'espace personnel.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Quelles sont les étapes pour préparer sereinement son départ à la retraite?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "D. En ouvrant un espace sur le site de l'assurance retraite, je me renseigne sur les différentes possibilités de départ en retraite, je consulte mon relevé de carrière, je m'inscris à l'agenda retraite j'estime le montant de ma retraite, je m'informe sur le cumul emploi-retraite et la retraite progressive, et enfin, je fais ma demande de retraite.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Comment demander sa retraite en ligne ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "C. En se connectant au site officiel Info retraite et en utilisant le service 'Demander ma retraite'. La connection peut se faire via France Connect",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Si vous êtes au régime général de retraite, comment demander sa retraite en ligne sur www.lassuranceretraite.fr ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "D. En utilisant le service 'Demander ma retraite' sur le site officiel Info retraite, en complétant le formulaire personnalisé et pré-rempli et en joignant les justificatifs demandés scannés ou photographiés. Vous devez faire votre demande de retraite 5 mois avant la date de départ souhaitée. La demande en ligne sera alors automatiquement transmise à l'ensemble des caisses de retraite auprès desquelles vous avez des droits à pension.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Qu’est-ce que la notification de retraite ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "Il s'agit du Titre officiel de retraite :  indiquant le montant et la date de départ en retraite et justifie de votre statut de retraité. Chaque régime envoie sa propre notification. Ce docuement est à conserver impérativement.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Quelles sont les conditions pour bénéficier d'une retraite anticipée et quel impact cela a-t-il sur le taux de retraite ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. Préciser s'il s'agit d'une retraite anticipée pour carrière longue ou d'une retraite anticipée travailleur handicapés\n\nConditions pour la RACL : \nVous pouvez prendre votre retraite avant l’âge légal, si vous avez commencé à travailler avant : 16 ans ; 18 ans ; 20 ans ; 21 ans, et si vous réunissez au moins 5 trimestres avant la fin de l’année civile de vos 16, 18, 20 ou 21 ans. 4 trimestres suffisent si vous êtes né au cours du dernier trimestre de l’année ou si vous avez débuté votre carrière au régime des non-salariés agricoles. Conditions pour les travailleurs handicapés : vous pouvez prendre une retraite anticipée pour travailleur handicapé si :  - vous réunissez un nombre minimum de trimestres cotisés. Toutes les périodes de cotisations à un régime de retraite français ou de la zone d'application des règlements européens sont retenues. Les périodes cotisées à l’étranger peuvent également être retenues si un accord de sécurité sociale est signé avec la France. Certains rachats, les trimestres d’assurance vieillesse des parents au foyer (AVPF) et les périodes de volontariat associatif, ne sont pas retenus dans la durée cotisée ; - vous avez soit exercé votre activité professionnelle, pendant cette période, en étant atteint d’une incapacité permanente au moins égale à 50 % (ou, pour les périodes antérieures au 31 décembre 2015, soit exercé votre activité professionnelle en étant reconnu travailleur handicapé) ou en étant en situation de handicap comparable au taux d’incapacité permanente de 50 %.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "À quel âge peut-on prendre sa retraite en France et quelles sont les conditions pour un départ anticipé ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "C. :L’âge légal de départ à la retraite est de 64 ans si vous êtes né à partir du 1er janvier 1968. Si vous êtes né entre le 1er septembre 1961 et le 31 décembre 1967, l’âge légal augmente progressivement de 62 ans à 64 ans, avec 3 mois supplémentaires par année de naissance. Vous pouvez prendre votre retraite avant l’âge légal, si vous avez commencé à travailler avant : 16 ans ; 18 ans ; 20 ans ; 21 ans, et si vous réunissez au moins 5 trimestres avant la fin de l’année civile de vos 16, 18, 20 ou 21 ans. 4 trimestres suffisent si vous êtes né au cours du dernier trimestre de l’année ou si vous avez débuté votre carrière au régime des non-salariés agricoles.",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Quelle est la procédure pour demander sa pension de retraite auprès de l'Assurance retraite?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "B. La demande de retraite peut également être faite en ligne sur le site de l'assuranceretraite.fr via le service 'Demander ma retraite' Cette demande doit être effectué 4 mois avant la date de départ choisie et non 6 mois",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Quelle est la date limite pour déposer ma demande de départ à la retraite en tant que fonctionnaire ?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "E. L'assurance Retraite traite uniquement  les carrières qui appartiennent au régime général ",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  },
+  {
+    "question": {
+      "text": "Si j'ai des périodes de carrière dans différents régimes de retraite, comment puis-je obtenir une correction de carrière et estimer le montant total de ma retraite?"
+    },
+    "answers": {
+      "items": [
+        {
+          "text": "A.  Avant de faire une estimation du montant il faut faire une mise à jour de sa carrière à adapter selon les régimes concernés L'assurance Retraite traite uniquement  les carrières qui appartiennent au régime général Il convient de s'adresser aux institutions compétentes pour tout autre régime. Dans le cas d'une carrière interrégime, le site info retraite semble être adapté pour visualiser l'ensemble de sa carrière ",
+          "eval": {
+            "human": 1
+          }
+        }
+      ]
+    }
+  }
+]
