@@ -1,12 +1,15 @@
-#!/usr/bin/env python3
+from ragtime.base import call_api, REQ_POST
+from ragtime.prompters import Prompter, Prompt
+from ragtime.llms import LLM
 
-from ragtime.base import llm, prompter
+from ragtime.expe import QA, Chunks, Prompt, Question, Answer, Eval, LLMAnswer
+
+
+from typing import Optional
 from datetime import datetime
 import sseclient
 import asyncio
 import os
-
-from ragtime import api
 
 ALBERT_EMAIL: str = os.getenv("ALBERT_EMAIL")
 ALBERT_USERNAME: str = os.getenv("ALBERT_USERNAME")
@@ -18,7 +21,7 @@ ALBERT_STREAM: str = ALBERT_URL + "/stream"
 ALBERT_FETCH_STREAM: str = ALBERT_URL + "/stream/{stream_id}/start"
 
 
-class Albert_LLM(llm.LLM):
+class Albert_LLM(LLM):
     name: str = "AgentPublic/albertlight-7b"
     _model_name: str = "AgentPublic/albertlight-7b"
     _temperature: int = 0
@@ -36,7 +39,7 @@ class Albert_LLM(llm.LLM):
             if diff_in_hours < self._TOKEN_DURATION:
                 return
         request = {
-            "a_req_type": api.REQ_POST,
+            "a_req_type": REQ_POST,
             "a_url": ALBERT_SIGNIN,
             "headers": {
                 "Content-Type": "application/json",
@@ -47,7 +50,7 @@ class Albert_LLM(llm.LLM):
                 "password": ALBERT_PASSWORD,
             },
         }
-        response = await asyncio.to_thread(api.call, **request)
+        response = await asyncio.to_thread(call_api, **request)
         json = response.json()
         self._token = json.get("token")
         self._token_last_update = datetime.now()
@@ -76,9 +79,8 @@ class Albert_LLM(llm.LLM):
                 #'postprocessing': ??
             },
         }
-        response = await asyncio.to_thread(api.call, **request)
+        response = await asyncio.to_thread(call_api, **request)
         json = response.json()
-        # print("JSON", json)
         stream_id = json.get("id")
         return stream_id
 
@@ -104,7 +106,7 @@ class Albert_LLM(llm.LLM):
 
     # TODO:
     # keep an eye on the rate limite
-    async def complete(self, prompt: prompter.Prompt) -> llm.LLMAnswer:
+    async def complete(self, prompt: Prompt) -> LLMAnswer:
         retry: int = 1
         time_to_wait: float = 3.0
         result: str = ""
@@ -119,11 +121,11 @@ class Albert_LLM(llm.LLM):
                 await asyncio.sleep(time_to_wait)
                 retry += 1
 
-        duration = (start_ts - datetime.now()).total_seconds()
+        duration = (datetime.now() - start_ts).total_seconds()
         # is the duration of the api call
         cost = 0.0  # is the cost issued from a api call
 
-        return llm.LLMAnswer(
+        return LLMAnswer(
             name=self.name,
             prompt=prompt,
             text=result,  # need refacto see albert doc,
@@ -132,3 +134,29 @@ class Albert_LLM(llm.LLM):
             duration=duration,
             cost=cost,
         )
+
+
+class Prompter_from_human_evaluated_Expe(Prompter):
+    """
+    This simple prompter just send the question as is to the LLM
+    and does not perform any post-processing
+    """
+
+    system: str = ""
+
+    def get_prompt(self, question: Question, chunks: Optional[Chunks] = None) -> Prompt:
+        result: Prompt = Prompt()
+        result.user = f"{question.text}"
+        result.system = self.system
+        return result
+
+    def post_process(self, qa: QA = None, cur_obj: Answer = None):
+        """
+        Does not do anything by default, but can be overridden to add fields in meta data for instance
+        """
+        cur_obj.text = cur_obj.llm_answer.text
+        if len(qa.answers.items) > 0:
+            cur_obj.eval = Eval(
+                text=qa.answers.items[0].text,
+                human=qa.answers.items[0].eval.human,
+            )
