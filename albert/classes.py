@@ -1,8 +1,8 @@
 from ragtime.base import call_api, REQ_POST
 from ragtime.prompters import Prompter, Prompt
 from ragtime.llms import LLM
-
 from ragtime.expe import QA, Chunks, Prompt, Question, Answer, Eval, LLMAnswer
+from ragtime.config import logger
 
 
 from typing import Optional
@@ -20,10 +20,12 @@ ALBERT_SIGNIN: str = ALBERT_URL + "/sign_in"
 ALBERT_STREAM: str = ALBERT_URL + "/stream"
 ALBERT_FETCH_STREAM: str = ALBERT_URL + "/stream/{stream_id}/start"
 
+MODEL_NAME = "AgentPublic/llama3-instruct-8b"
+
 
 class Albert_LLM(LLM):
-    name: str = "AgentPublic/albertlight-7b"
-    _model_name: str = "AgentPublic/albertlight-7b"
+    name: str = MODEL_NAME
+    _model_name: str = MODEL_NAME
     _temperature: int = 0
     _token: str = ""
     _headers: dict = {}
@@ -31,7 +33,7 @@ class Albert_LLM(LLM):
     _TOKEN_DURATION: int = 24  # max token duration in hours
     _num_retries: int = 3
 
-    async def _refresh_token(self):
+    def _refresh_token(self):
         if self._token:
             # Calculate the difference in hours between now and the last token update
             diff_in_seconds = (datetime.now() - self._token_last_update).total_seconds()
@@ -50,12 +52,13 @@ class Albert_LLM(LLM):
                 "password": ALBERT_PASSWORD,
             },
         }
-        response = await asyncio.to_thread(call_api, **request)
+        # response = await asyncio.to_thread(call_api, **request)
+        response = call_api(**request)
         json = response.json()
         self._token = json.get("token")
         self._token_last_update = datetime.now()
 
-    async def _init_stream(self, query: str, with_history: bool = False):
+    def _init_stream(self, query: str, with_history: bool = False):
         request = {
             "a_req_type": REQ_POST,
             "a_url": ALBERT_STREAM,
@@ -79,7 +82,7 @@ class Albert_LLM(LLM):
                 #'postprocessing': ??
             },
         }
-        response = await asyncio.to_thread(call_api, **request)
+        response = call_api(**request)
         json = response.json()
         stream_id = json.get("id")
         return stream_id
@@ -113,12 +116,15 @@ class Albert_LLM(LLM):
         while retry < self._num_retries:
             try:
                 start_ts: datetime = datetime.now()
-                await self._refresh_token()
-                stream_id = await self._init_stream(prompt.user)
+                self._refresh_token()
+                stream_id = self._init_stream(prompt.user)
                 result = self.fetch_stream(stream_id=stream_id)
                 break
-            except:
+            except Exception as e:
                 await asyncio.sleep(time_to_wait)
+                logger.debug(
+                    f"Excepton occured during api call, will retry 3 time each 3 second interval\nERROR:\n{e}"
+                )
                 retry += 1
 
         duration = (datetime.now() - start_ts).total_seconds()

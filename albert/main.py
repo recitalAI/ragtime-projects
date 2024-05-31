@@ -63,7 +63,5 @@ configuration: dict = {
 }
 
 run_pipeline(
-    start_from="answers",
-    stop_after="evals",
     configuration=configuration,
 )
