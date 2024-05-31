@@ -57,7 +57,7 @@ class Albert_LLM(LLM):
 
     async def _init_stream(self, query: str, with_history: bool = False):
         request = {
-            "a_req_type": api.REQ_POST,
+            "a_req_type": REQ_POST,
             "a_url": ALBERT_STREAM,
             "headers": {
                 "Content-Type": "application/json",
