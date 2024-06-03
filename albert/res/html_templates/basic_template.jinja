@@ -102,9 +102,12 @@ Moreover, it uses several boolean variables to control the rendering:
           {% if (show_answers is defined and show_answers) %}{{ answer.text }}<br /><br />{% endif %}
           <!-- Evals -->
           {% if show_evals is defined and show_evals and answer.eval.text %}
-            <i>Hallus: {{ answer.eval.meta['hallus'] }} - 
+            <i style="background-color: burlywood;">
+            Hallus: {{ answer.eval.meta['hallus'] }} - 
+            Missing: {{ answer.eval.meta.nb_missing }}/{{ qa.facts|length }} - 
             Auto : {{ '%0.2f' % answer.eval.auto if answer.eval.auto }} - 
-            Human : {{ '%0.2f' % answer.eval.human if answer.eval.human }}</i>&nbsp;&gt;&nbsp;
+            Human : {{ '%0.2f' % answer.eval.human if answer.eval.human }}
+            </i><br />&nbsp;&gt;&nbsp;
             {{ sub('\([\d+,+\s+]+\)', '<span class="facts">\g<0></span><br/>', sub('\(\?\)', '<span class="hallus">\g<0></span><br/>', answer.eval.text)) }}<br/><br/>
           {% endif %}
         {% endfor %}
