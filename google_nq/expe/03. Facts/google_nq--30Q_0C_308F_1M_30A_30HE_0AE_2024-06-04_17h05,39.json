@@ -1,0 +1,2677 @@
+{
+  "meta": {},
+  "items": [
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what is the story behind 5 nights at freddy's ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. La série se concentre sur l'histoire d'un restaurant fictif nommé Freddy Fazbear's Pizza.\n2. Freddy Fazbear's Pizza est une parodie de restaurants comme Chuck E. Cheese's et ShowBiz Pizza Place.\n3. Les trois premiers jeux impliquent le joueur travaillant comme gardien de nuit.\n4. Le joueur doit utiliser plusieurs outils pour survivre contre des personnages animatroniques.\n5. Les animatroniques deviennent mobiles et meurtriers après les heures d'ouverture.\n6. Le quatrième jeu se déroule dans la maison d'un enfant.\n7. L'enfant doit se défendre contre des versions cauchemardesques des animatroniques.\n8. Le joueur doit fermer des portes et fuir à pied dans le quatrième jeu.\n9. Le cinquième jeu se déroule dans une installation de maintenance.\n10. L'installation appartient à une société sœur de Freddy Fazbear's Pizza.\n11. Le personnage du joueur est un technicien dans le cinquième jeu.\n12. Le technicien doit accomplir différentes tâches chaque nuit.\n13. Les tâches sont dictées par une voix d'IA entendue dans le jeu.\n14. Dans le sixième jeu, le joueur est propriétaire d'une pizzeria.\n15. Le joueur doit décorer la pizzeria avec des articles payants.\n16. Le joueur doit également travailler de nuit dans sa pizzeria.\n17. Le travail de nuit dans le sixième jeu est similaire aux jeux précédents.",
+          "prompt": {
+            "meta": {},
+            "user": "The series is centered on the story of a fictional restaurant named Freddy Fazbear's Pizza, a pastiche of restaurants like Chuck E. Cheese's and ShowBiz Pizza Place. The first three games involve the player working as a nighttime security guard, in which they must utilize several tools, most notably checking security cameras, to survive against animatronic characters, which become mobile and homicidal after-hours. The fourth game, which uses different gameplay mechanics from its predecessors, takes place in the house of a child who must defend against nightmarish versions of the animatronics by closing doors and fleeing on foot. The fifth game takes place in a maintenance facility owned by a sister company of Freddy Fazbear's Pizza. The player character is a technician instead of a night guard, who must do different tasks each night as told by an AI voice heard in the game. In the sixth game, the player acts as the owner of a pizzeria which they must decorate with payable items, and must also work the night shift for their pizzeria, which plays similarly to previous games.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.660135",
+          "duration": 8.678053,
+          "cost": 0.006195
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. La série se concentre sur l'histoire d'un restaurant fictif nommé Freddy Fazbear's Pizza."
+          },
+          {
+            "meta": {},
+            "text": "2. Freddy Fazbear's Pizza est une parodie de restaurants comme Chuck E. Cheese's et ShowBiz Pizza Place."
+          },
+          {
+            "meta": {},
+            "text": "3. Les trois premiers jeux impliquent le joueur travaillant comme gardien de nuit."
+          },
+          {
+            "meta": {},
+            "text": "4. Le joueur doit utiliser plusieurs outils pour survivre contre des personnages animatroniques."
+          },
+          {
+            "meta": {},
+            "text": "5. Les animatroniques deviennent mobiles et meurtriers après les heures d'ouverture."
+          },
+          {
+            "meta": {},
+            "text": "6. Le quatrième jeu se déroule dans la maison d'un enfant."
+          },
+          {
+            "meta": {},
+            "text": "7. L'enfant doit se défendre contre des versions cauchemardesques des animatroniques."
+          },
+          {
+            "meta": {},
+            "text": "8. Le joueur doit fermer des portes et fuir à pied dans le quatrième jeu."
+          },
+          {
+            "meta": {},
+            "text": "9. Le cinquième jeu se déroule dans une installation de maintenance."
+          },
+          {
+            "meta": {},
+            "text": "10. L'installation appartient à une société sœur de Freddy Fazbear's Pizza."
+          },
+          {
+            "meta": {},
+            "text": "11. Le personnage du joueur est un technicien dans le cinquième jeu."
+          },
+          {
+            "meta": {},
+            "text": "12. Le technicien doit accomplir différentes tâches chaque nuit."
+          },
+          {
+            "meta": {},
+            "text": "13. Les tâches sont dictées par une voix d'IA entendue dans le jeu."
+          },
+          {
+            "meta": {},
+            "text": "14. Dans le sixième jeu, le joueur est propriétaire d'une pizzeria."
+          },
+          {
+            "meta": {},
+            "text": "15. Le joueur doit décorer la pizzeria avec des articles payants."
+          },
+          {
+            "meta": {},
+            "text": "16. Le joueur doit également travailler de nuit dans sa pizzeria."
+          },
+          {
+            "meta": {},
+            "text": "17. Le travail de nuit dans le sixième jeu est similaire aux jeux précédents."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The series is centered on the story of a fictional restaurant named Freddy Fazbear's Pizza, a pastiche of restaurants like Chuck E. Cheese's and ShowBiz Pizza Place. The first three games involve the player working as a nighttime security guard, in which they must utilize several tools, most notably checking security cameras, to survive against animatronic characters, which become mobile and homicidal after-hours. The fourth game, which uses different gameplay mechanics from its predecessors, takes place in the house of a child who must defend against nightmarish versions of the animatronics by closing doors and fleeing on foot. The fifth game takes place in a maintenance facility owned by a sister company of Freddy Fazbear's Pizza. The player character is a technician instead of a night guard, who must do different tasks each night as told by an AI voice heard in the game. In the sixth game, the player acts as the owner of a pizzeria which they must decorate with payable items, and must also work the night shift for their pizzeria, which plays similarly to previous games.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what was the prison called in the green mile ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. En 1935, Paul supervise des officiers à la prison de Cold Mountain.\n2. Paul souffre d'une grave infection de la vessie.\n3. John Coffey est placé sous la garde de Paul.\n4. John Coffey est un homme noir physiquement imposant mais mentalement déficient.\n5. John Coffey a été condamné à mort pour le viol et le meurtre de deux filles blanches.\n6. Arlen Bitterbuck est un détenu amérindien accusé de meurtre.\n7. Arlen Bitterbuck est le premier à être exécuté.\n8. Percy Wetmore montre une tendance sadique sévère.\n9. Percy est le neveu de la Première Dame de Louisiane.\n10. Percy est particulièrement abusif envers le détenu Eduard Delacroix.\n11. Percy casse les doigts de Delacroix avec sa matraque.\n12. Percy marche sur une souris de compagnie nommée Mr. Jingles.\n13. Delacroix avait adopté la souris Mr. Jingles.\n14. Percy appelle Delacroix par une insulte homophobe.\n15. Percy sabote l'exécution de Delacroix.\n16. Percy ne trempe pas l'éponge utilisée pour conduire l'électricité à la tête de Delacroix.\n17. Delacroix meurt en hurlant de douleur.",
+          "prompt": {
+            "meta": {},
+            "user": "In 1935, Paul supervises officers Brutus Howell, Dean Stanton, Harry Terwilliger, and Percy Wetmore at Cold Mountain Penitentiary. Paul is suffering from a severe bladder infection and receives John Coffey, a physically imposing but mentally challenged black man, into his custody. John had been sentenced to death after being convicted of raping and murdering two white girls. One of the other inmates is a Native-American named Arlen Bitterbuck, who is charged with murder and is the first to be executed. Percy demonstrates a severe sadistic streak, but, as the nephew of Louisiana's First Lady, he is beyond reproach. He is particularly abusive with inmate Eduard Delacroix; he breaks Del's fingers with his baton, steps on a pet mouse named Mr. Jingles, which Del had adopted, repeatedly calls him by a gay slur, and ultimately sabotages his execution by failing to soak the sponge used to conduct electricity to Del's head; Del dies screaming in pain.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.701143",
+          "duration": 9.526894,
+          "cost": 0.00587
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. En 1935, Paul supervise des officiers à la prison de Cold Mountain."
+          },
+          {
+            "meta": {},
+            "text": "2. Paul souffre d'une grave infection de la vessie."
+          },
+          {
+            "meta": {},
+            "text": "3. John Coffey est placé sous la garde de Paul."
+          },
+          {
+            "meta": {},
+            "text": "4. John Coffey est un homme noir physiquement imposant mais mentalement déficient."
+          },
+          {
+            "meta": {},
+            "text": "5. John Coffey a été condamné à mort pour le viol et le meurtre de deux filles blanches."
+          },
+          {
+            "meta": {},
+            "text": "6. Arlen Bitterbuck est un détenu amérindien accusé de meurtre."
+          },
+          {
+            "meta": {},
+            "text": "7. Arlen Bitterbuck est le premier à être exécuté."
+          },
+          {
+            "meta": {},
+            "text": "8. Percy Wetmore montre une tendance sadique sévère."
+          },
+          {
+            "meta": {},
+            "text": "9. Percy est le neveu de la Première Dame de Louisiane."
+          },
+          {
+            "meta": {},
+            "text": "10. Percy est particulièrement abusif envers le détenu Eduard Delacroix."
+          },
+          {
+            "meta": {},
+            "text": "11. Percy casse les doigts de Delacroix avec sa matraque."
+          },
+          {
+            "meta": {},
+            "text": "12. Percy marche sur une souris de compagnie nommée Mr. Jingles."
+          },
+          {
+            "meta": {},
+            "text": "13. Delacroix avait adopté la souris Mr. Jingles."
+          },
+          {
+            "meta": {},
+            "text": "14. Percy appelle Delacroix par une insulte homophobe."
+          },
+          {
+            "meta": {},
+            "text": "15. Percy sabote l'exécution de Delacroix."
+          },
+          {
+            "meta": {},
+            "text": "16. Percy ne trempe pas l'éponge utilisée pour conduire l'électricité à la tête de Delacroix."
+          },
+          {
+            "meta": {},
+            "text": "17. Delacroix meurt en hurlant de douleur."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "In 1935, Paul supervises officers Brutus Howell, Dean Stanton, Harry Terwilliger, and Percy Wetmore at Cold Mountain Penitentiary. Paul is suffering from a severe bladder infection and receives John Coffey, a physically imposing but mentally challenged black man, into his custody. John had been sentenced to death after being convicted of raping and murdering two white girls. One of the other inmates is a Native-American named Arlen Bitterbuck, who is charged with murder and is the first to be executed. Percy demonstrates a severe sadistic streak, but, as the nephew of Louisiana's First Lady, he is beyond reproach. He is particularly abusive with inmate Eduard Delacroix; he breaks Del's fingers with his baton, steps on a pet mouse named Mr. Jingles, which Del had adopted, repeatedly calls him by a gay slur, and ultimately sabotages his execution by failing to soak the sponge used to conduct electricity to Del's head; Del dies screaming in pain.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what is the widest highway in north america ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. King's Highway 401 est une autoroute à accès contrôlé.\n2. Elle est située dans la province canadienne de l'Ontario.\n3. Elle est aussi connue sous le nom de Macdonald–Cartier Freeway.\n4. Elle est communément appelée la four-oh-one.\n5. Elle s'étend sur 828,0 kilomètres.\n6. Elle va de Windsor à la frontière Ontario-Québec.\n7. La section traversant Toronto est la plus fréquentée d'Amérique du Nord.\n8. Cette section est aussi l'une des plus larges.\n9. Elle forme l'épine dorsale du corridor Québec-Windsor avec l'Autoroute 20.\n10. Plus de la moitié de la population canadienne vit le long de ce corridor.\n11. Elle fait partie du Réseau routier national du Canada.\n12. Le Ministère des Transports de l'Ontario l'entretient.\n13. La Police provinciale de l'Ontario la patrouille.\n14. La limite de vitesse est de 100 km/h sur toute sa longueur.",
+          "prompt": {
+            "meta": {},
+            "user": "King's Highway 401, commonly referred to as Highway 401 and also known by its official name as the Macdonald–Cartier Freeway or colloquially as the four-oh-one,[3] is a controlled-access400-series highway in the Canadian province of Ontario. It stretches 828.0 kilometres (514.5 mi) from Windsor in the west to the Ontario–Quebec border in the east. The part of Highway 401 that passes through Toronto is North America's busiest highway,[4][5] and one of the widest.[6][7] Together with Quebec Autoroute 20, it forms the road transportation backbone of the Quebec City–Windsor Corridor, along which over half of Canada's population resides and is also a Core Route in the National Highway System of Canada. The route is maintained by the Ministry of Transportation of Ontario (MTO) and patrolled by the Ontario Provincial Police. The speed limit is 100 km/h (62 mph) throughout its length, unless posted otherwise.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.705316",
+          "duration": 6.218355,
+          "cost": 0.005
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. King's Highway 401 est une autoroute à accès contrôlé."
+          },
+          {
+            "meta": {},
+            "text": "2. Elle est située dans la province canadienne de l'Ontario."
+          },
+          {
+            "meta": {},
+            "text": "3. Elle est aussi connue sous le nom de Macdonald–Cartier Freeway."
+          },
+          {
+            "meta": {},
+            "text": "4. Elle est communément appelée la four-oh-one."
+          },
+          {
+            "meta": {},
+            "text": "5. Elle s'étend sur 828,0 kilomètres."
+          },
+          {
+            "meta": {},
+            "text": "6. Elle va de Windsor à la frontière Ontario-Québec."
+          },
+          {
+            "meta": {},
+            "text": "7. La section traversant Toronto est la plus fréquentée d'Amérique du Nord."
+          },
+          {
+            "meta": {},
+            "text": "8. Cette section est aussi l'une des plus larges."
+          },
+          {
+            "meta": {},
+            "text": "9. Elle forme l'épine dorsale du corridor Québec-Windsor avec l'Autoroute 20."
+          },
+          {
+            "meta": {},
+            "text": "10. Plus de la moitié de la population canadienne vit le long de ce corridor."
+          },
+          {
+            "meta": {},
+            "text": "11. Elle fait partie du Réseau routier national du Canada."
+          },
+          {
+            "meta": {},
+            "text": "12. Le Ministère des Transports de l'Ontario l'entretient."
+          },
+          {
+            "meta": {},
+            "text": "13. La Police provinciale de l'Ontario la patrouille."
+          },
+          {
+            "meta": {},
+            "text": "14. La limite de vitesse est de 100 km/h sur toute sa longueur."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "King's Highway 401, commonly referred to as Highway 401 and also known by its official name as the Macdonald–Cartier Freeway or colloquially as the four-oh-one,[3] is a controlled-access400-series highway in the Canadian province of Ontario. It stretches 828.0 kilometres (514.5 mi) from Windsor in the west to the Ontario–Quebec border in the east. The part of Highway 401 that passes through Toronto is North America's busiest highway,[4][5] and one of the widest.[6][7] Together with Quebec Autoroute 20, it forms the road transportation backbone of the Quebec City–Windsor Corridor, along which over half of Canada's population resides and is also a Core Route in the National Highway System of Canada. The route is maintained by the Ministry of Transportation of Ontario (MTO) and patrolled by the Ontario Provincial Police. The speed limit is 100 km/h (62 mph) throughout its length, unless posted otherwise.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what was the white thing in sausage party ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Frank et Brenda sont choisis pour quitter Shopwell's.\n2. Camille Toh choisit les paquets de Frank et Brenda.\n3. Un pot de Bickle's Honey Mustard est retourné.\n4. Honey Mustard essaie de prévenir les autres produits.\n5. Honey Mustard dit que le Great Beyond est un mensonge.\n6. Personne n'écoute Honey Mustard sauf Frank.\n7. Honey Mustard demande à Frank de trouver Firewater.\n8. Honey Mustard tombe et meurt.\n9. Une collision de chariots se produit accidentellement.\n10. Frank, Brenda et plusieurs produits tombent du chariot.\n11. Une Douche agressive tombe aussi.\n12. La Douche se tord la buse.\n13. La Douche veut se venger de Frank et Brenda.",
+          "prompt": {
+            "meta": {},
+            "user": "After Frank and Brenda's packages are chosen by a woman named Camille Toh to leave Shopwell's, a returned jar of Bickle's Honey Mustard tries to warn the groceries that the Great Beyond is a lie; nobody listens except for Frank. Honey Mustard calls on Frank to seek out a bottle of liquor named Firewater, and then falls to his death. This creates an accidental cart collision that causes Frank, Brenda, and several groceries to fall out, including an aggressive Douche who gets his nozzle bent, and plots revenge against Frank and Brenda.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.712326",
+          "duration": 5.209998,
+          "cost": 0.003775
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Frank et Brenda sont choisis pour quitter Shopwell's."
+          },
+          {
+            "meta": {},
+            "text": "2. Camille Toh choisit les paquets de Frank et Brenda."
+          },
+          {
+            "meta": {},
+            "text": "3. Un pot de Bickle's Honey Mustard est retourné."
+          },
+          {
+            "meta": {},
+            "text": "4. Honey Mustard essaie de prévenir les autres produits."
+          },
+          {
+            "meta": {},
+            "text": "5. Honey Mustard dit que le Great Beyond est un mensonge."
+          },
+          {
+            "meta": {},
+            "text": "6. Personne n'écoute Honey Mustard sauf Frank."
+          },
+          {
+            "meta": {},
+            "text": "7. Honey Mustard demande à Frank de trouver Firewater."
+          },
+          {
+            "meta": {},
+            "text": "8. Honey Mustard tombe et meurt."
+          },
+          {
+            "meta": {},
+            "text": "9. Une collision de chariots se produit accidentellement."
+          },
+          {
+            "meta": {},
+            "text": "10. Frank, Brenda et plusieurs produits tombent du chariot."
+          },
+          {
+            "meta": {},
+            "text": "11. Une Douche agressive tombe aussi."
+          },
+          {
+            "meta": {},
+            "text": "12. La Douche se tord la buse."
+          },
+          {
+            "meta": {},
+            "text": "13. La Douche veut se venger de Frank et Brenda."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "After Frank and Brenda's packages are chosen by a woman named Camille Toh to leave Shopwell's, a returned jar of Bickle's Honey Mustard tries to warn the groceries that the Great Beyond is a lie; nobody listens except for Frank. Honey Mustard calls on Frank to seek out a bottle of liquor named Firewater, and then falls to his death. This creates an accidental cart collision that causes Frank, Brenda, and several groceries to fall out, including an aggressive Douche who gets his nozzle bent, and plots revenge against Frank and Brenda.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what makes the center of an atom stable ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Les électrons dans un atome sont attirés par les protons dans le noyau par la force électromagnétique.\n2. Cette force lie les électrons à l'intérieur d'un puits de potentiel électrostatique entourant le noyau.\n3. Une source d'énergie externe est nécessaire pour qu'un électron s'échappe.\n4. Plus un électron est proche du noyau, plus la force attractive est grande.\n5. Les électrons proches du centre du puits de potentiel nécessitent plus d'énergie pour s'échapper.\n6. Les électrons à des séparations plus grandes nécessitent moins d'énergie pour s'échapper.",
+          "prompt": {
+            "meta": {},
+            "user": "The electrons in an atom are attracted to the protons in the nucleus by the electromagnetic force. This force binds the electrons inside an electrostaticpotential well surrounding the smaller nucleus, which means that an external source of energy is needed for the electron to escape. The closer an electron is to the nucleus, the greater the attractive force. Hence electrons bound near the center of the potential well require more energy to escape than those at greater separations.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.717324",
+          "duration": 7.455126,
+          "cost": 0.0031149999999999997
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Les électrons dans un atome sont attirés par les protons dans le noyau par la force électromagnétique."
+          },
+          {
+            "meta": {},
+            "text": "2. Cette force lie les électrons à l'intérieur d'un puits de potentiel électrostatique entourant le noyau."
+          },
+          {
+            "meta": {},
+            "text": "3. Une source d'énergie externe est nécessaire pour qu'un électron s'échappe."
+          },
+          {
+            "meta": {},
+            "text": "4. Plus un électron est proche du noyau, plus la force attractive est grande."
+          },
+          {
+            "meta": {},
+            "text": "5. Les électrons proches du centre du puits de potentiel nécessitent plus d'énergie pour s'échapper."
+          },
+          {
+            "meta": {},
+            "text": "6. Les électrons à des séparations plus grandes nécessitent moins d'énergie pour s'échapper."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The electrons in an atom are attracted to the protons in the nucleus by the electromagnetic force. This force binds the electrons inside an electrostaticpotential well surrounding the smaller nucleus, which means that an external source of energy is needed for the electron to escape. The closer an electron is to the nucleus, the greater the attractive force. Hence electrons bound near the center of the potential well require more energy to escape than those at greater separations.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who did holly matthews play in waterloo rd ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Elle a fréquenté l'école de théâtre britannique East 15 en 2005.\n2. Elle a quitté l'école après avoir obtenu un rôle important dans le drame de la BBC Waterloo Road.\n3. Elle a joué le rôle de la brute Leigh-Ann Galloway dans Waterloo Road.\n4. Elle a continué à jouer dans la série Doctors de la BBC.\n5. Elle a interprété le personnage de Connie Whitfield dans Doctors.\n6. Elle a joué Josie Clarke, une toxicomane, dans The Bill d'ITV.\n7. Elle est revenue dans la série Doctors de la BBC en 2009.\n8. Elle a incarné Tansy Flack dans Doctors en 2009.",
+          "prompt": {
+            "meta": {},
+            "user": "She attended the British drama school East 15 in 2005, and left after winning a high-profile role in the BBC drama Waterloo Road, playing the bully Leigh-Ann Galloway.[6] Since that role, Matthews has continued to act in BBC's Doctors, playing Connie Whitfield; in ITV's The Bill playing drug addict Josie Clarke; and she was back in the BBC soap Doctors in 2009, playing Tansy Flack.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.723496",
+          "duration": 4.223638,
+          "cost": 0.0033650000000000004
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Elle a fréquenté l'école de théâtre britannique East 15 en 2005."
+          },
+          {
+            "meta": {},
+            "text": "2. Elle a quitté l'école après avoir obtenu un rôle important dans le drame de la BBC Waterloo Road."
+          },
+          {
+            "meta": {},
+            "text": "3. Elle a joué le rôle de la brute Leigh-Ann Galloway dans Waterloo Road."
+          },
+          {
+            "meta": {},
+            "text": "4. Elle a continué à jouer dans la série Doctors de la BBC."
+          },
+          {
+            "meta": {},
+            "text": "5. Elle a interprété le personnage de Connie Whitfield dans Doctors."
+          },
+          {
+            "meta": {},
+            "text": "6. Elle a joué Josie Clarke, une toxicomane, dans The Bill d'ITV."
+          },
+          {
+            "meta": {},
+            "text": "7. Elle est revenue dans la série Doctors de la BBC en 2009."
+          },
+          {
+            "meta": {},
+            "text": "8. Elle a incarné Tansy Flack dans Doctors en 2009."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "She attended the British drama school East 15 in 2005, and left after winning a high-profile role in the BBC drama Waterloo Road, playing the bully Leigh-Ann Galloway.[6] Since that role, Matthews has continued to act in BBC's Doctors, playing Connie Whitfield; in ITV's The Bill playing drug addict Josie Clarke; and she was back in the BBC soap Doctors in 2009, playing Tansy Flack.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who did the first double backflip on a dirt bike ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. En 2006, Travis Pastrana a réalisé un double backflip sur un terrain en montée/sable.\n2. Cette performance a été incluse dans ses films populaires 'Nitro Circus' de Freestyle Motocross.\n3. Le 4 août 2006, il a participé aux X Games 12 à Los Angeles.\n4. Il est devenu le premier à réussir un double backflip en compétition.\n5. Il a accompli un autre tour que beaucoup pensaient impossible.\n6. Il a juré de ne plus jamais refaire ce tour.",
+          "prompt": {
+            "meta": {},
+            "user": "2006 brought footage of Travis Pastrana completing a double backflip on an uphill/sand setup on his popular 'Nitro Circus' Freestyle Motocross movies. On August 4, 2006, at X Games 12 in Los Angeles, he became the first rider to land a double backflip in competition. Having landed another trick that many had considered impossible, he vowed never to do it again.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.730343",
+          "duration": 6.357665,
+          "cost": 0.002815
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. En 2006, Travis Pastrana a réalisé un double backflip sur un terrain en montée/sable."
+          },
+          {
+            "meta": {},
+            "text": "2. Cette performance a été incluse dans ses films populaires 'Nitro Circus' de Freestyle Motocross."
+          },
+          {
+            "meta": {},
+            "text": "3. Le 4 août 2006, il a participé aux X Games 12 à Los Angeles."
+          },
+          {
+            "meta": {},
+            "text": "4. Il est devenu le premier à réussir un double backflip en compétition."
+          },
+          {
+            "meta": {},
+            "text": "5. Il a accompli un autre tour que beaucoup pensaient impossible."
+          },
+          {
+            "meta": {},
+            "text": "6. Il a juré de ne plus jamais refaire ce tour."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "2006 brought footage of Travis Pastrana completing a double backflip on an uphill/sand setup on his popular 'Nitro Circus' Freestyle Motocross movies. On August 4, 2006, at X Games 12 in Los Angeles, he became the first rider to land a double backflip in competition. Having landed another trick that many had considered impossible, he vowed never to do it again.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who won season 10 of dancing with the stars ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. La saison dix de Dancing with the Stars a débuté le 22 mars 2010.\n2. Il n'y a pas eu d'élimination la première semaine de compétition.\n3. La première élimination a eu lieu le 30 mars.\n4. La chanteuse Nicole Scherzinger a remporté la compétition.",
+          "prompt": {
+            "meta": {},
+            "user": "Season ten of Dancing with the Stars premiered on March 22, 2010. There was not an elimination the first week of competition. The first elimination took place on March 30. Singer Nicole Scherzinger won the competition.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.737350",
+          "duration": 4.849933,
+          "cost": 0.0018900000000000002
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. La saison dix de Dancing with the Stars a débuté le 22 mars 2010."
+          },
+          {
+            "meta": {},
+            "text": "2. Il n'y a pas eu d'élimination la première semaine de compétition."
+          },
+          {
+            "meta": {},
+            "text": "3. La première élimination a eu lieu le 30 mars."
+          },
+          {
+            "meta": {},
+            "text": "4. La chanteuse Nicole Scherzinger a remporté la compétition."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Season ten of Dancing with the Stars premiered on March 22, 2010. There was not an elimination the first week of competition. The first elimination took place on March 30. Singer Nicole Scherzinger won the competition.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "when would the quantity of dna double when growing cells ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Le processus de division cellulaire est appelé cycle cellulaire.\n2. Le cycle cellulaire a quatre phases principales.\n3. La première phase est appelée phase G1.\n4. La phase G1 est marquée par la synthèse de diverses enzymes.\n5. Ces enzymes sont nécessaires à la réplication de l'ADN.\n6. La deuxième phase du cycle cellulaire est la phase S.\n7. La phase S est où la réplication de l'ADN produit deux ensembles identiques de chromosomes.\n8. La troisième phase est la phase G2.\n9. La phase G2 implique une synthèse protéique significative.\n10. La production de microtubules se produit principalement pendant la phase G2.\n11. Les microtubules sont nécessaires pour la mitose.\n12. La quatrième phase est la phase M.\n13. La phase M consiste en la division nucléaire et cytoplasmique.\n14. La division nucléaire est appelée caryocinèse.\n15. La division cytoplasmique est appelée cytocinèse.\n16. La formation d'une nouvelle membrane cellulaire accompagne la phase M.\n17. La phase M est la division physique des cellules mère et fille.\n18. La phase M est divisée en plusieurs phases distinctes.\n19. Les phases distinctes de la phase M sont la prophase, la prométaphase, la métaphase, l'anaphase et la télophase.\n20. La cytocinèse suit la télophase.",
+          "prompt": {
+            "meta": {},
+            "user": "The process of cell division, called cell cycle, has four major parts called phases. The first part, called G1 phase is marked by synthesis of various enzymes that are required for DNA replication. The second part of the cell cycle is the S phase, where DNA replication produces two identical sets of chromosomes. The third part is the G2 phase in which a significant protein synthesis occurs, mainly involving the production of microtubules that are required during the process of division, called mitosis. The fourth phase, M phase, consists of nuclear division (karyokinesis) and cytoplasmic division (cytokinesis), accompanied by the formation of a new cell membrane. This is the physical division of 'mother' and 'daughter' cells. The M phase has been broken down into several distinct phases, sequentially known as prophase, prometaphase, metaphase, anaphase and telophase leading to cytokinesis.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.743619",
+          "duration": 11.44734,
+          "cost": 0.006185
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Le processus de division cellulaire est appelé cycle cellulaire."
+          },
+          {
+            "meta": {},
+            "text": "2. Le cycle cellulaire a quatre phases principales."
+          },
+          {
+            "meta": {},
+            "text": "3. La première phase est appelée phase G1."
+          },
+          {
+            "meta": {},
+            "text": "4. La phase G1 est marquée par la synthèse de diverses enzymes."
+          },
+          {
+            "meta": {},
+            "text": "5. Ces enzymes sont nécessaires à la réplication de l'ADN."
+          },
+          {
+            "meta": {},
+            "text": "6. La deuxième phase du cycle cellulaire est la phase S."
+          },
+          {
+            "meta": {},
+            "text": "7. La phase S est où la réplication de l'ADN produit deux ensembles identiques de chromosomes."
+          },
+          {
+            "meta": {},
+            "text": "8. La troisième phase est la phase G2."
+          },
+          {
+            "meta": {},
+            "text": "9. La phase G2 implique une synthèse protéique significative."
+          },
+          {
+            "meta": {},
+            "text": "10. La production de microtubules se produit principalement pendant la phase G2."
+          },
+          {
+            "meta": {},
+            "text": "11. Les microtubules sont nécessaires pour la mitose."
+          },
+          {
+            "meta": {},
+            "text": "12. La quatrième phase est la phase M."
+          },
+          {
+            "meta": {},
+            "text": "13. La phase M consiste en la division nucléaire et cytoplasmique."
+          },
+          {
+            "meta": {},
+            "text": "14. La division nucléaire est appelée caryocinèse."
+          },
+          {
+            "meta": {},
+            "text": "15. La division cytoplasmique est appelée cytocinèse."
+          },
+          {
+            "meta": {},
+            "text": "16. La formation d'une nouvelle membrane cellulaire accompagne la phase M."
+          },
+          {
+            "meta": {},
+            "text": "17. La phase M est la division physique des cellules mère et fille."
+          },
+          {
+            "meta": {},
+            "text": "18. La phase M est divisée en plusieurs phases distinctes."
+          },
+          {
+            "meta": {},
+            "text": "19. Les phases distinctes de la phase M sont la prophase, la prométaphase, la métaphase, l'anaphase et la télophase."
+          },
+          {
+            "meta": {},
+            "text": "20. La cytocinèse suit la télophase."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The process of cell division, called cell cycle, has four major parts called phases. The first part, called G1 phase is marked by synthesis of various enzymes that are required for DNA replication. The second part of the cell cycle is the S phase, where DNA replication produces two identical sets of chromosomes. The third part is the G2 phase in which a significant protein synthesis occurs, mainly involving the production of microtubules that are required during the process of division, called mitosis. The fourth phase, M phase, consists of nuclear division (karyokinesis) and cytoplasmic division (cytokinesis), accompanied by the formation of a new cell membrane. This is the physical division of 'mother' and 'daughter' cells. The M phase has been broken down into several distinct phases, sequentially known as prophase, prometaphase, metaphase, anaphase and telophase leading to cytokinesis.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "when did the battle of palmito ranch happen ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. La bataille de Palmito Ranch est considérée par certains comme la dernière bataille de la guerre de Sécession.\n2. Elle a eu lieu les 12 et 13 mai 1865.\n3. La bataille s'est déroulée sur les rives du Rio Grande.\n4. Elle a eu lieu à l'est de Brownsville, au Texas.\n5. La bataille s'est déroulée à quelques miles du port de Los Brazos de Santiago.\n6. La Confédération avait cessé d'exister à ce moment-là.\n7. Certains soutiennent que cette bataille devrait être classée comme une action postérieure à la guerre.",
+          "prompt": {
+            "meta": {},
+            "user": "The Battle of Palmito Ranch is considered by some criteria as the final battle of the American Civil War. It was fought May 12 and 13, 1865, on the banks of the Rio Grande east of Brownsville, Texas and a few miles from the seaport of Los Brazos de Santiago. Since the Confederacy had ceased to exist, it is also argued that this battle should be classified as a postwar action.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.749075",
+          "duration": 4.820335,
+          "cost": 0.0030600000000000002
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. La bataille de Palmito Ranch est considérée par certains comme la dernière bataille de la guerre de Sécession."
+          },
+          {
+            "meta": {},
+            "text": "2. Elle a eu lieu les 12 et 13 mai 1865."
+          },
+          {
+            "meta": {},
+            "text": "3. La bataille s'est déroulée sur les rives du Rio Grande."
+          },
+          {
+            "meta": {},
+            "text": "4. Elle a eu lieu à l'est de Brownsville, au Texas."
+          },
+          {
+            "meta": {},
+            "text": "5. La bataille s'est déroulée à quelques miles du port de Los Brazos de Santiago."
+          },
+          {
+            "meta": {},
+            "text": "6. La Confédération avait cessé d'exister à ce moment-là."
+          },
+          {
+            "meta": {},
+            "text": "7. Certains soutiennent que cette bataille devrait être classée comme une action postérieure à la guerre."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The Battle of Palmito Ranch is considered by some criteria as the final battle of the American Civil War. It was fought May 12 and 13, 1865, on the banks of the Rio Grande east of Brownsville, Texas and a few miles from the seaport of Los Brazos de Santiago. Since the Confederacy had ceased to exist, it is also argued that this battle should be classified as a postwar action.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who determined the mass to charge ratio of an electron ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Au 19ème siècle, les rapports masse/charge de certains ions ont été mesurés par des méthodes électrochimiques.\n2. En 1897, J. J. Thomson a mesuré pour la première fois le rapport masse/charge de l'électron.\n3. Thomson a démontré que l'électron est une particule avec une masse et une charge.\n4. Le rapport masse/charge de l'électron est beaucoup plus petit que celui de l'ion hydrogène H+.\n5. En 1898, Wilhelm Wien a séparé des ions selon leur rapport masse/charge avec un dispositif optique ionique.\n6. Wien a utilisé des champs électriques et magnétiques superposés pour séparer les ions.\n7. En 1901, Walter Kaufman a mesuré l'augmentation de la masse électromagnétique des électrons rapides.\n8. Cette augmentation de masse est connue aujourd'hui comme l'augmentation de masse relativiste.\n9. En 1913, Thomson a mesuré le rapport masse/charge des ions avec un parabola spectrograph.\n10. Un instrument qui mesure le rapport masse/charge des particules chargées est appelé un spectromètre de masse.",
+          "prompt": {
+            "meta": {},
+            "user": "In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods. In 1897, the mass-to-charge ratio of the electron was first measured by J. J. Thomson. [6] By doing this, he showed that the electron was in fact a particle with a mass and a charge, and that its mass-to-charge ratio was much smaller than that of the hydrogen ion H+. In 1898, Wilhelm Wien separated ions (canal rays) according to their mass-to-charge ratio with an ion optical device with superimposed electric and magnetic fields (Wien filter). In 1901 Walter Kaufman measured the increase of electromagnetic mass of fast electrons (Kaufmann–Bucherer–Neumann experiments), or relativistic mass increase in modern terms. In 1913, Thomson measured the mass-to-charge ratio of ions with an instrument he called a parabola spectrograph.[7] Today, an instrument that measures the mass-to-charge ratio of charged particles is called a mass spectrometer.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.755076",
+          "duration": 7.342927,
+          "cost": 0.00551
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Au 19ème siècle, les rapports masse/charge de certains ions ont été mesurés par des méthodes électrochimiques."
+          },
+          {
+            "meta": {},
+            "text": "2. En 1897, J. J. Thomson a mesuré pour la première fois le rapport masse/charge de l'électron."
+          },
+          {
+            "meta": {},
+            "text": "3. Thomson a démontré que l'électron est une particule avec une masse et une charge."
+          },
+          {
+            "meta": {},
+            "text": "4. Le rapport masse/charge de l'électron est beaucoup plus petit que celui de l'ion hydrogène H+."
+          },
+          {
+            "meta": {},
+            "text": "5. En 1898, Wilhelm Wien a séparé des ions selon leur rapport masse/charge avec un dispositif optique ionique."
+          },
+          {
+            "meta": {},
+            "text": "6. Wien a utilisé des champs électriques et magnétiques superposés pour séparer les ions."
+          },
+          {
+            "meta": {},
+            "text": "7. En 1901, Walter Kaufman a mesuré l'augmentation de la masse électromagnétique des électrons rapides."
+          },
+          {
+            "meta": {},
+            "text": "8. Cette augmentation de masse est connue aujourd'hui comme l'augmentation de masse relativiste."
+          },
+          {
+            "meta": {},
+            "text": "9. En 1913, Thomson a mesuré le rapport masse/charge des ions avec un parabola spectrograph."
+          },
+          {
+            "meta": {},
+            "text": "10. Un instrument qui mesure le rapport masse/charge des particules chargées est appelé un spectromètre de masse."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods. In 1897, the mass-to-charge ratio of the electron was first measured by J. J. Thomson. [6] By doing this, he showed that the electron was in fact a particle with a mass and a charge, and that its mass-to-charge ratio was much smaller than that of the hydrogen ion H+. In 1898, Wilhelm Wien separated ions (canal rays) according to their mass-to-charge ratio with an ion optical device with superimposed electric and magnetic fields (Wien filter). In 1901 Walter Kaufman measured the increase of electromagnetic mass of fast electrons (Kaufmann–Bucherer–Neumann experiments), or relativistic mass increase in modern terms. In 1913, Thomson measured the mass-to-charge ratio of ions with an instrument he called a parabola spectrograph.[7] Today, an instrument that measures the mass-to-charge ratio of charged particles is called a mass spectrometer.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "where does the last name downs come from ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Downs est un nom de famille.\n2. Downs a une origine anglaise ancienne.",
+          "prompt": {
+            "meta": {},
+            "user": "Downs is a surname of Old English origin.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.762075",
+          "duration": 2.380021,
+          "cost": 0.0009850000000000002
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Downs est un nom de famille."
+          },
+          {
+            "meta": {},
+            "text": "2. Downs a une origine anglaise ancienne."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Downs is a surname of Old English origin.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who sang without love where would we be now ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. \"Long Train Runnin'\" est une chanson enregistrée par The Doobie Brothers.\n2. La chanson a été écrite par Tom Johnston, membre du groupe.\n3. Elle figure sur l'album de 1973 \"The Captain and Me\".\n4. La chanson a été sortie en single.\n5. Elle est devenue un succès dans le top 10 du Billboard Hot 100 aux États-Unis.\n6. La chanson a atteint la 8e place du classement.",
+          "prompt": {
+            "meta": {},
+            "user": "'Long Train Runnin'' (or 'Long Train Running') is a song recorded by The Doobie Brothers and written by band member Tom Johnston. It was included on the band's 1973 album The Captain and Me and released as a single, becoming a top 10 hit on the US Billboard Hot 100, peaking at number 8.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.768091",
+          "duration": 7.721037,
+          "cost": 0.002495
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. \"Long Train Runnin'\" est une chanson enregistrée par The Doobie Brothers."
+          },
+          {
+            "meta": {},
+            "text": "2. La chanson a été écrite par Tom Johnston, membre du groupe."
+          },
+          {
+            "meta": {},
+            "text": "3. Elle figure sur l'album de 1973 \"The Captain and Me\"."
+          },
+          {
+            "meta": {},
+            "text": "4. La chanson a été sortie en single."
+          },
+          {
+            "meta": {},
+            "text": "5. Elle est devenue un succès dans le top 10 du Billboard Hot 100 aux États-Unis."
+          },
+          {
+            "meta": {},
+            "text": "6. La chanson a atteint la 8e place du classement."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "'Long Train Runnin'' (or 'Long Train Running') is a song recorded by The Doobie Brothers and written by band member Tom Johnston. It was included on the band's 1973 album The Captain and Me and released as a single, becoming a top 10 hit on the US Billboard Hot 100, peaking at number 8.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what is the value of g on the surface of the moon ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. L'accélération due à la gravité sur la Lune est d'environ 1,625 m/s².\n2. Cette accélération représente environ 16,6% de celle sur Terre.\n3. L'accélération due à la gravité sur la Lune est de 0,16 g.\n4. La variation de l'accélération gravitationnelle sur la Lune est d'environ 0,0253 m/s².\n5. Cette variation représente 1,6% de l'accélération due à la gravité.\n6. Le poids dépend directement de l'accélération gravitationnelle.\n7. Les objets sur la Lune pèsent seulement 16,6% de leur poids sur Terre.",
+          "prompt": {
+            "meta": {},
+            "user": "The acceleration due to gravity on the surface of the Moon is about 1.625 m/s2, about 16.6% that on Earth's surface or 0.16 ɡ. Over the entire surface, the variation in gravitational acceleration is about 0.0253 m/s2 (1.6% of the acceleration due to gravity). Because weight is directly dependent upon gravitational acceleration, things on the Moon will weigh only 16.6% of what they weigh on the Earth.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.774306",
+          "duration": 8.262392,
+          "cost": 0.00345
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. L'accélération due à la gravité sur la Lune est d'environ 1,625 m/s²."
+          },
+          {
+            "meta": {},
+            "text": "2. Cette accélération représente environ 16,6% de celle sur Terre."
+          },
+          {
+            "meta": {},
+            "text": "3. L'accélération due à la gravité sur la Lune est de 0,16 g."
+          },
+          {
+            "meta": {},
+            "text": "4. La variation de l'accélération gravitationnelle sur la Lune est d'environ 0,0253 m/s²."
+          },
+          {
+            "meta": {},
+            "text": "5. Cette variation représente 1,6% de l'accélération due à la gravité."
+          },
+          {
+            "meta": {},
+            "text": "6. Le poids dépend directement de l'accélération gravitationnelle."
+          },
+          {
+            "meta": {},
+            "text": "7. Les objets sur la Lune pèsent seulement 16,6% de leur poids sur Terre."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The acceleration due to gravity on the surface of the Moon is about 1.625 m/s2, about 16.6% that on Earth's surface or 0.16 ɡ. Over the entire surface, the variation in gravitational acceleration is about 0.0253 m/s2 (1.6% of the acceleration due to gravity). Because weight is directly dependent upon gravitational acceleration, things on the Moon will weigh only 16.6% of what they weigh on the Earth.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "when does the door in the wall take place ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. L'histoire se déroule en Angleterre pendant le Moyen Âge.\n2. La peste noire ravage le pays.\n3. Robin est envoyé pour devenir chevalier comme son père.\n4. Robin perd l'usage de ses jambes.\n5. Un médecin rassure Robin que la faiblesse de ses jambes n'est pas due à la peste.\n6. Le médecin est censé venir aider Robin mais ne le fait pas.\n7. Les parents de Robin servent le roi et la reine pendant la guerre.\n8. Les domestiques abandonnent la maison par peur de la peste.\n9. Robin est sauvé par Frère Luke, un moine.\n10. Frère Luke emmène Robin dans un monastère et s'occupe de lui.",
+          "prompt": {
+            "meta": {},
+            "user": "The story, illustrated by the author, is set in England during the Middle Ages, as the Black Death (bubonic plague) is sweeping across the country. Young Robin is sent away to become a knight like his father, but his dreams are endangered when he loses the use of his legs. A doctor reassures Robin that the weakness in his legs is not caused by the plague and the doctor is supposed to come and help him but does not. His parents are away, serving the king and queen during war, and the servants abandon the house, fearing the plague. Robin is saved by Brother Luke, a friar, who finds him and takes him to a monastery and cares for him.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.780140",
+          "duration": 20.198464,
+          "cost": 0.00366
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. L'histoire se déroule en Angleterre pendant le Moyen Âge."
+          },
+          {
+            "meta": {},
+            "text": "2. La peste noire ravage le pays."
+          },
+          {
+            "meta": {},
+            "text": "3. Robin est envoyé pour devenir chevalier comme son père."
+          },
+          {
+            "meta": {},
+            "text": "4. Robin perd l'usage de ses jambes."
+          },
+          {
+            "meta": {},
+            "text": "5. Un médecin rassure Robin que la faiblesse de ses jambes n'est pas due à la peste."
+          },
+          {
+            "meta": {},
+            "text": "6. Le médecin est censé venir aider Robin mais ne le fait pas."
+          },
+          {
+            "meta": {},
+            "text": "7. Les parents de Robin servent le roi et la reine pendant la guerre."
+          },
+          {
+            "meta": {},
+            "text": "8. Les domestiques abandonnent la maison par peur de la peste."
+          },
+          {
+            "meta": {},
+            "text": "9. Robin est sauvé par Frère Luke, un moine."
+          },
+          {
+            "meta": {},
+            "text": "10. Frère Luke emmène Robin dans un monastère et s'occupe de lui."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The story, illustrated by the author, is set in England during the Middle Ages, as the Black Death (bubonic plague) is sweeping across the country. Young Robin is sent away to become a knight like his father, but his dreams are endangered when he loses the use of his legs. A doctor reassures Robin that the weakness in his legs is not caused by the plague and the doctor is supposed to come and help him but does not. His parents are away, serving the king and queen during war, and the servants abandon the house, fearing the plague. Robin is saved by Brother Luke, a friar, who finds him and takes him to a monastery and cares for him.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who surfed for patrick swayze in point break ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Deux mois avant le tournage, Lori Petty, Reeves et Swayze se sont entraînés avec Dennis Jarvis.\n2. L'entraînement a eu lieu sur l'île hawaïenne de Kauai.\n3. Patrick Swayze avait déjà surfé quelques fois.\n4. Keanu Reeves n'avait jamais surfé auparavant.\n5. Lori Petty n'avait jamais été dans l'océan de sa vie.\n6. Les séquences de surf ont été difficiles à tourner pour les acteurs.\n7. Swayze s'est cassé quatre côtes pendant le tournage.\n8. Swayze a refusé d'utiliser une doublure pour de nombreuses scènes de surf.\n9. Swayze n'a jamais utilisé de doublure pour les scènes de combat ou de poursuite en voiture.\n10. Swayze a réalisé lui-même les scènes de parachutisme.\n11. Jim Wallace a trouvé que Swayze était naturellement doué pour le parachutisme.\n12. Swayze a effectué 55 sauts pour le film.\n13. Swayze a basé des aspects de son personnage sur Darrick Doerner.\n14. Darrick Doerner est un surfeur de grosses vagues renommé.\n15. Keanu Reeves a pris goût au surf après avoir appris pour le film.\n16. Reeves a adopté le surf comme passe-temps.",
+          "prompt": {
+            "meta": {},
+            "user": "Two months before filming, Lori Petty, Reeves and Swayze trained with former world-class professional surfer Dennis Jarvis on the Hawaiian island of Kauai. Jarvis remembers, 'Patrick said he'd been on a board a couple of times, Keanu definitely had not surfed before, and Lori had never been in the ocean in her life. Shooting the surfing sequences proved to be challenging for both actors, with Swayze cracking four of his ribs. For many of the surfing scenes, he refused to use a stunt double as he never had one for fight scenes or car chases. He also did the skydiving scenes himself and the film's aerial jump instructor Jim Wallace found that the actor was a natural and took to it right away. The actor ended up making 55 jumps for the film. Swayze actually based aspects of his character after one of his stunt doubles, Darrick Doerner, a top big wave surfer. After learning to surf for the film, Reeves took a liking to it and took it up as a hobby.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.789825",
+          "duration": 10.951641,
+          "cost": 0.00598
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Deux mois avant le tournage, Lori Petty, Reeves et Swayze se sont entraînés avec Dennis Jarvis."
+          },
+          {
+            "meta": {},
+            "text": "2. L'entraînement a eu lieu sur l'île hawaïenne de Kauai."
+          },
+          {
+            "meta": {},
+            "text": "3. Patrick Swayze avait déjà surfé quelques fois."
+          },
+          {
+            "meta": {},
+            "text": "4. Keanu Reeves n'avait jamais surfé auparavant."
+          },
+          {
+            "meta": {},
+            "text": "5. Lori Petty n'avait jamais été dans l'océan de sa vie."
+          },
+          {
+            "meta": {},
+            "text": "6. Les séquences de surf ont été difficiles à tourner pour les acteurs."
+          },
+          {
+            "meta": {},
+            "text": "7. Swayze s'est cassé quatre côtes pendant le tournage."
+          },
+          {
+            "meta": {},
+            "text": "8. Swayze a refusé d'utiliser une doublure pour de nombreuses scènes de surf."
+          },
+          {
+            "meta": {},
+            "text": "9. Swayze n'a jamais utilisé de doublure pour les scènes de combat ou de poursuite en voiture."
+          },
+          {
+            "meta": {},
+            "text": "10. Swayze a réalisé lui-même les scènes de parachutisme."
+          },
+          {
+            "meta": {},
+            "text": "11. Jim Wallace a trouvé que Swayze était naturellement doué pour le parachutisme."
+          },
+          {
+            "meta": {},
+            "text": "12. Swayze a effectué 55 sauts pour le film."
+          },
+          {
+            "meta": {},
+            "text": "13. Swayze a basé des aspects de son personnage sur Darrick Doerner."
+          },
+          {
+            "meta": {},
+            "text": "14. Darrick Doerner est un surfeur de grosses vagues renommé."
+          },
+          {
+            "meta": {},
+            "text": "15. Keanu Reeves a pris goût au surf après avoir appris pour le film."
+          },
+          {
+            "meta": {},
+            "text": "16. Reeves a adopté le surf comme passe-temps."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Two months before filming, Lori Petty, Reeves and Swayze trained with former world-class professional surfer Dennis Jarvis on the Hawaiian island of Kauai. Jarvis remembers, 'Patrick said he'd been on a board a couple of times, Keanu definitely had not surfed before, and Lori had never been in the ocean in her life. Shooting the surfing sequences proved to be challenging for both actors, with Swayze cracking four of his ribs. For many of the surfing scenes, he refused to use a stunt double as he never had one for fight scenes or car chases. He also did the skydiving scenes himself and the film's aerial jump instructor Jim Wallace found that the actor was a natural and took to it right away. The actor ended up making 55 jumps for the film. Swayze actually based aspects of his character after one of his stunt doubles, Darrick Doerner, a top big wave surfer. After learning to surf for the film, Reeves took a liking to it and took it up as a hobby.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what is the film and publication board role ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The Film and Publication Board is often shortened to FPB.\n2. The FPB is a content-classification authority in South Africa.\n3. The FPB operates under the Minister of Communications.\n4. The FPB was established in 1998.\n5. The FPB was created under the Films and Publications Act.\n6. The FPB aims to tackle issues of child pornography.\n7. The FPB addresses issues of child abuse.\n8. The FPB provides ratings to movies.\n9. The FPB provides ratings to music.\n10. The FPB provides ratings to television programs.\n11. The FPB's mandate includes state censorship.",
+          "prompt": {
+            "meta": {},
+            "user": "The Film and Publication Board, often shortened to FPB, is a content-classification and censorship authority in South Africa, operating under the Minister of Communications. The FPB was established in 1998 under the Films and Publications Act, ostensibly to tackle issues of child pornography and child abuse, as well as to provide ratings to publicly consumed media such as movies, music and television programs. Under these directives, its mandate can be considered one of state censorship.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.796860",
+          "duration": 5.255874,
+          "cost": 0.003105
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The Film and Publication Board is often shortened to FPB."
+          },
+          {
+            "meta": {},
+            "text": "2. The FPB is a content-classification authority in South Africa."
+          },
+          {
+            "meta": {},
+            "text": "3. The FPB operates under the Minister of Communications."
+          },
+          {
+            "meta": {},
+            "text": "4. The FPB was established in 1998."
+          },
+          {
+            "meta": {},
+            "text": "5. The FPB was created under the Films and Publications Act."
+          },
+          {
+            "meta": {},
+            "text": "6. The FPB aims to tackle issues of child pornography."
+          },
+          {
+            "meta": {},
+            "text": "7. The FPB addresses issues of child abuse."
+          },
+          {
+            "meta": {},
+            "text": "8. The FPB provides ratings to movies."
+          },
+          {
+            "meta": {},
+            "text": "9. The FPB provides ratings to music."
+          },
+          {
+            "meta": {},
+            "text": "10. The FPB provides ratings to television programs."
+          },
+          {
+            "meta": {},
+            "text": "11. The FPB's mandate includes state censorship."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The Film and Publication Board, often shortened to FPB, is a content-classification and censorship authority in South Africa, operating under the Minister of Communications. The FPB was established in 1998 under the Films and Publications Act, ostensibly to tackle issues of child pornography and child abuse, as well as to provide ratings to publicly consumed media such as movies, music and television programs. Under these directives, its mandate can be considered one of state censorship.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "when did the olympics first allow professional athletes ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Une dispute a eu lieu avant les Jeux olympiques d'hiver de 1984.\n2. La dispute concernait la définition d'un joueur professionnel.\n3. Le CIO avait adopté une règle sur l'éligibilité des joueurs ayant signé un contrat NHL.\n4. Les joueurs ayant joué moins de dix matchs NHL étaient éligibles selon le CIO.\n5. Le Comité olympique des États-Unis considérait tout joueur sous contrat NHL comme professionnel.\n6. Le Comité olympique des États-Unis jugeait ces joueurs inéligibles.\n7. Le CIO a tenu une réunion d'urgence sur cette question.\n8. Le CIO a décidé que les joueurs sous contrat NHL étaient éligibles s'ils n'avaient pas joué de matchs NHL.\n9. Cinq joueurs sur les listes olympiques sont devenus inéligibles.\n10. Ces joueurs inéligibles comprenaient un Autrichien, deux Italiens et deux Canadiens.\n11. Les joueurs ayant joué dans d'autres ligues professionnelles pouvaient participer.\n12. Alan Eagleson a déclaré que la règle ne s'appliquait qu'à la NHL.\n13. Les joueurs sous contrat dans les ligues européennes étaient considérés comme amateurs.\n14. Murray Costello a suggéré un possible retrait du Canada.\n15. En 1986, le CIO a voté pour permettre à tous les athlètes de participer aux Jeux olympiques à partir de 1988.\n16. Les fédérations sportives individuelles pouvaient décider d'autoriser ou non les professionnels.",
+          "prompt": {
+            "meta": {},
+            "user": "Before the 1984 Winter Olympics, a dispute formed over what made a player a professional. The IOC had adopted a rule that made any player who had signed an NHL contract but played less than ten games in the league eligible. However, the United States Olympic Committee maintained that any player contracted with an NHL team was a professional and therefore not eligible to play. The IOC held an emergency meeting that ruled NHL-contracted players were eligible, as long as they had not played in any NHL games. This made five players on Olympic rosters—one Austrian, two Italians and two Canadians—ineligible. Players who had played in other professional leagues—such as the World Hockey Association—were allowed to play. Canadian hockey official Alan Eagleson stated that the rule was only applied to the NHL and that professionally contracted players in European leagues were still considered amateurs. Murray Costello of the CAHA suggested that a Canadian withdrawal was possible. In 1986, the IOC voted to allow all athletes to compete in Olympic Games starting in 1988, but let the individual sport federations decide if they wanted to allow professionals.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.802870",
+          "duration": 9.347682,
+          "cost": 0.00643
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Une dispute a eu lieu avant les Jeux olympiques d'hiver de 1984."
+          },
+          {
+            "meta": {},
+            "text": "2. La dispute concernait la définition d'un joueur professionnel."
+          },
+          {
+            "meta": {},
+            "text": "3. Le CIO avait adopté une règle sur l'éligibilité des joueurs ayant signé un contrat NHL."
+          },
+          {
+            "meta": {},
+            "text": "4. Les joueurs ayant joué moins de dix matchs NHL étaient éligibles selon le CIO."
+          },
+          {
+            "meta": {},
+            "text": "5. Le Comité olympique des États-Unis considérait tout joueur sous contrat NHL comme professionnel."
+          },
+          {
+            "meta": {},
+            "text": "6. Le Comité olympique des États-Unis jugeait ces joueurs inéligibles."
+          },
+          {
+            "meta": {},
+            "text": "7. Le CIO a tenu une réunion d'urgence sur cette question."
+          },
+          {
+            "meta": {},
+            "text": "8. Le CIO a décidé que les joueurs sous contrat NHL étaient éligibles s'ils n'avaient pas joué de matchs NHL."
+          },
+          {
+            "meta": {},
+            "text": "9. Cinq joueurs sur les listes olympiques sont devenus inéligibles."
+          },
+          {
+            "meta": {},
+            "text": "10. Ces joueurs inéligibles comprenaient un Autrichien, deux Italiens et deux Canadiens."
+          },
+          {
+            "meta": {},
+            "text": "11. Les joueurs ayant joué dans d'autres ligues professionnelles pouvaient participer."
+          },
+          {
+            "meta": {},
+            "text": "12. Alan Eagleson a déclaré que la règle ne s'appliquait qu'à la NHL."
+          },
+          {
+            "meta": {},
+            "text": "13. Les joueurs sous contrat dans les ligues européennes étaient considérés comme amateurs."
+          },
+          {
+            "meta": {},
+            "text": "14. Murray Costello a suggéré un possible retrait du Canada."
+          },
+          {
+            "meta": {},
+            "text": "15. En 1986, le CIO a voté pour permettre à tous les athlètes de participer aux Jeux olympiques à partir de 1988."
+          },
+          {
+            "meta": {},
+            "text": "16. Les fédérations sportives individuelles pouvaient décider d'autoriser ou non les professionnels."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Before the 1984 Winter Olympics, a dispute formed over what made a player a professional. The IOC had adopted a rule that made any player who had signed an NHL contract but played less than ten games in the league eligible. However, the United States Olympic Committee maintained that any player contracted with an NHL team was a professional and therefore not eligible to play. The IOC held an emergency meeting that ruled NHL-contracted players were eligible, as long as they had not played in any NHL games. This made five players on Olympic rosters—one Austrian, two Italians and two Canadians—ineligible. Players who had played in other professional leagues—such as the World Hockey Association—were allowed to play. Canadian hockey official Alan Eagleson stated that the rule was only applied to the NHL and that professionally contracted players in European leagues were still considered amateurs. Murray Costello of the CAHA suggested that a Canadian withdrawal was possible. In 1986, the IOC voted to allow all athletes to compete in Olympic Games starting in 1988, but let the individual sport federations decide if they wanted to allow professionals.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who wears the yellow jersey tour de france ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. La classification générale est la plus importante.\n2. Le vainqueur du Tour de France est déterminé par la classification générale.\n3. Depuis 1919, le leader de la classification générale porte le maillot jaune.\n4. Le maillot jaune est appelé \"maillot jaune\" en français.\n5. Le maillot jaune est prononcé [majo ʒon] en français.",
+          "prompt": {
+            "meta": {},
+            "user": "The general classification is the most important classification, the one by which the winner of the Tour de France is determined. Since 1919, the leader of the general classification wears the yellow jersey (French: maillot jaunepronounced [majo ʒon]).",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.808393",
+          "duration": 3.735929,
+          "cost": 0.0021650000000000003
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. La classification générale est la plus importante."
+          },
+          {
+            "meta": {},
+            "text": "2. Le vainqueur du Tour de France est déterminé par la classification générale."
+          },
+          {
+            "meta": {},
+            "text": "3. Depuis 1919, le leader de la classification générale porte le maillot jaune."
+          },
+          {
+            "meta": {},
+            "text": "4. Le maillot jaune est appelé \"maillot jaune\" en français."
+          },
+          {
+            "meta": {},
+            "text": "5. Le maillot jaune est prononcé [majo ʒon] en français."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The general classification is the most important classification, the one by which the winner of the Tour de France is determined. Since 1919, the leader of the general classification wears the yellow jersey (French: maillot jaunepronounced [majo ʒon]).",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who is the founder of the 7th day adventist church ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The Seventh-day Adventist Church originated from the Millerite movement.\n2. The Millerite movement occurred in the 1830s to the 1840s.\n3. The Second Great Awakening was the period during which the Millerite movement took place.\n4. The Seventh-day Adventist Church was officially founded in 1863.\n5. Hiram Edson was a prominent figure in the early church.\n6. James Springer White was a notable early member of the church.\n7. Joseph Bates played a significant role in the early church.\n8. J. N. Andrews was an important figure in the church's early history.\n9. The church expanded from New England to become international.\n10. Evangelicals Donald Barnhouse and Walter Martin reviewed the church in the 20th century.\n11. These reviews led to the church's recognition as a Christian denomination.",
+          "prompt": {
+            "meta": {},
+            "user": "The Seventh-day Adventist Church had its roots in the Millerite movement of the 1830s to the 1840s, during the period of the Second Great Awakening, and was officially founded in 1863. Prominent figures in the early church included Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews. Over the ensuing decades the church expanded from its original base in New England to become an international organization. Significant developments such the reviews initiated by evangelicals Donald Barnhouse and Walter Martin, in the 20th century led to its recognition as a Christian denomination.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.814399",
+          "duration": 5.056187,
+          "cost": 0.0039250000000000005
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The Seventh-day Adventist Church originated from the Millerite movement."
+          },
+          {
+            "meta": {},
+            "text": "2. The Millerite movement occurred in the 1830s to the 1840s."
+          },
+          {
+            "meta": {},
+            "text": "3. The Second Great Awakening was the period during which the Millerite movement took place."
+          },
+          {
+            "meta": {},
+            "text": "4. The Seventh-day Adventist Church was officially founded in 1863."
+          },
+          {
+            "meta": {},
+            "text": "5. Hiram Edson was a prominent figure in the early church."
+          },
+          {
+            "meta": {},
+            "text": "6. James Springer White was a notable early member of the church."
+          },
+          {
+            "meta": {},
+            "text": "7. Joseph Bates played a significant role in the early church."
+          },
+          {
+            "meta": {},
+            "text": "8. J. N. Andrews was an important figure in the church's early history."
+          },
+          {
+            "meta": {},
+            "text": "9. The church expanded from New England to become international."
+          },
+          {
+            "meta": {},
+            "text": "10. Evangelicals Donald Barnhouse and Walter Martin reviewed the church in the 20th century."
+          },
+          {
+            "meta": {},
+            "text": "11. These reviews led to the church's recognition as a Christian denomination."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The Seventh-day Adventist Church had its roots in the Millerite movement of the 1830s to the 1840s, during the period of the Second Great Awakening, and was officially founded in 1863. Prominent figures in the early church included Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews. Over the ensuing decades the church expanded from its original base in New England to become an international organization. Significant developments such the reviews initiated by evangelicals Donald Barnhouse and Walter Martin, in the 20th century led to its recognition as a Christian denomination.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "where is california state university east bay located ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. California State University, East Bay est une université publique.\n2. L'université est située à Hayward, en Californie, aux États-Unis.\n3. L'université fait partie du système des 23 campus de la California State University.\n4. L'université propose 136 domaines d'études de premier cycle.\n5. L'université propose 60 domaines d'études post-baccalauréat.\n6. L'université a été désignée comme une institution de premier plan parmi les universités délivrant des maîtrises dans l'ouest par U.S. News & World Report.\n7. L'université a été reconnue comme l'un des meilleurs collèges de l'ouest par le Princeton Review.",
+          "prompt": {
+            "meta": {},
+            "user": "California State University, East Bay (commonly referred to as Cal State East Bay, CSU East Bay, or CSUEB) is a publicuniversity located in Hayward, California, United States. The university, as part of the 23-campus California State University system, offers 136 undergraduate and 60 post-baccalaureate a reas of study. California State University, East Bay has been designated a top–tier institution among master's–granting universities in the west by U.S. News & World Report[6] and has been recognized as a 'Best in the West' college by the Princeton Review.[6]",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.821401",
+          "duration": 5.689096,
+          "cost": 0.0035050000000000003
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. California State University, East Bay est une université publique."
+          },
+          {
+            "meta": {},
+            "text": "2. L'université est située à Hayward, en Californie, aux États-Unis."
+          },
+          {
+            "meta": {},
+            "text": "3. L'université fait partie du système des 23 campus de la California State University."
+          },
+          {
+            "meta": {},
+            "text": "4. L'université propose 136 domaines d'études de premier cycle."
+          },
+          {
+            "meta": {},
+            "text": "5. L'université propose 60 domaines d'études post-baccalauréat."
+          },
+          {
+            "meta": {},
+            "text": "6. L'université a été désignée comme une institution de premier plan parmi les universités délivrant des maîtrises dans l'ouest par U.S. News & World Report."
+          },
+          {
+            "meta": {},
+            "text": "7. L'université a été reconnue comme l'un des meilleurs collèges de l'ouest par le Princeton Review."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "California State University, East Bay (commonly referred to as Cal State East Bay, CSU East Bay, or CSUEB) is a publicuniversity located in Hayward, California, United States. The university, as part of the 23-campus California State University system, offers 136 undergraduate and 60 post-baccalaureate a reas of study. California State University, East Bay has been designated a top–tier institution among master's–granting universities in the west by U.S. News & World Report[6] and has been recognized as a 'Best in the West' college by the Princeton Review.[6]",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "which is the highest peak of southern india ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Anamudi est une montagne située dans l'État indien du Kerala.\n2. Anamudi est le plus haut sommet du Kerala et du sud de l'Inde.\n3. L'altitude d'Anamudi est de 2 695 mètres.\n4. La proéminence topographique d'Anamudi est de 2 479 mètres.\n5. Anamudi se trouve à la frontière du Taluk de Devikulam, dans le district d'Idukki.\n6. Anamudi se trouve également à la frontière du Taluk de Kothamangalam, dans le district d'Ernakulam.\n7. Le nom Anamudi signifie littéralement \"front d'éléphant\".\n8. Le nom fait référence à la ressemblance de la montagne avec la tête d'un éléphant.",
+          "prompt": {
+            "meta": {},
+            "user": "Anamudi (Malayalam pronunciation: ​[aːnɐmʊɖi], ആനമുടി) is a mountain located in the Indian state of Kerala. It is the highest peak in the Kerala and South India, at an elevation of 2,695 metres (8,842 ft) and a topographic prominence of 2,479 metres (8,133 ft).[3] It lies on the border of Devikulam Taluk, Idukki district and Kothamangalam Taluk, Ernakulam district. The name Anamudi literally translates to 'elephant's forehead,' a reference to the resemblance of the mountain to an elephant's head.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.827401",
+          "duration": 6.033512,
+          "cost": 0.00393
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Anamudi est une montagne située dans l'État indien du Kerala."
+          },
+          {
+            "meta": {},
+            "text": "2. Anamudi est le plus haut sommet du Kerala et du sud de l'Inde."
+          },
+          {
+            "meta": {},
+            "text": "3. L'altitude d'Anamudi est de 2 695 mètres."
+          },
+          {
+            "meta": {},
+            "text": "4. La proéminence topographique d'Anamudi est de 2 479 mètres."
+          },
+          {
+            "meta": {},
+            "text": "5. Anamudi se trouve à la frontière du Taluk de Devikulam, dans le district d'Idukki."
+          },
+          {
+            "meta": {},
+            "text": "6. Anamudi se trouve également à la frontière du Taluk de Kothamangalam, dans le district d'Ernakulam."
+          },
+          {
+            "meta": {},
+            "text": "7. Le nom Anamudi signifie littéralement \"front d'éléphant\"."
+          },
+          {
+            "meta": {},
+            "text": "8. Le nom fait référence à la ressemblance de la montagne avec la tête d'un éléphant."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Anamudi (Malayalam pronunciation: ​[aːnɐmʊɖi], ആനമുടി) is a mountain located in the Indian state of Kerala. It is the highest peak in the Kerala and South India, at an elevation of 2,695 metres (8,842 ft) and a topographic prominence of 2,479 metres (8,133 ft).[3] It lies on the border of Devikulam Taluk, Idukki district and Kothamangalam Taluk, Ernakulam district. The name Anamudi literally translates to 'elephant's forehead,' a reference to the resemblance of the mountain to an elephant's head.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "where did the saying quit cold turkey come from ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Les frissons apparaissent lors de l'arrêt soudain des opioïdes.\n2. Les frissons sont aussi appelés piloérection.\n3. Les personnes dépendantes aux opioïdes peuvent ressentir des frissons.\n4. Les personnes dépendantes à l'héroïne peuvent ressentir des frissons.\n5. L'expression \"kick the habit\" fait référence aux spasmes musculaires.\n6. Les spasmes musculaires surviennent également lors de l'arrêt des opioïdes.",
+          "prompt": {
+            "meta": {},
+            "user": "The 'goose bumps' (piloerection) that occurs with sudden discontinuation in persons dependent on opioids, frequently persons addicted to heroin. Similarly the term 'kick the habit' alludes to the muscle spasms that also occur.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.833064",
+          "duration": 4.072194,
+          "cost": 0.002415
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Les frissons apparaissent lors de l'arrêt soudain des opioïdes."
+          },
+          {
+            "meta": {},
+            "text": "2. Les frissons sont aussi appelés piloérection."
+          },
+          {
+            "meta": {},
+            "text": "3. Les personnes dépendantes aux opioïdes peuvent ressentir des frissons."
+          },
+          {
+            "meta": {},
+            "text": "4. Les personnes dépendantes à l'héroïne peuvent ressentir des frissons."
+          },
+          {
+            "meta": {},
+            "text": "5. L'expression \"kick the habit\" fait référence aux spasmes musculaires."
+          },
+          {
+            "meta": {},
+            "text": "6. Les spasmes musculaires surviennent également lors de l'arrêt des opioïdes."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The 'goose bumps' (piloerection) that occurs with sudden discontinuation in persons dependent on opioids, frequently persons addicted to heroin. Similarly the term 'kick the habit' alludes to the muscle spasms that also occur.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what game are they playing in casino royale ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Baccarat chemin-de-fer est le jeu préféré de James Bond.\n2. James Bond est un agent secret fictif créé par Ian Fleming.\n3. Bond joue à ce jeu dans de nombreux romans.\n4. Le roman \"Casino Royale\" de 1953 tourne autour d'une partie de baccarat.\n5. Dans \"Casino Royale\", Bond joue contre l'agent de SMERSH, Le Chiffre.\n6. La version intégrale de \"Casino Royale\" inclut un guide du jeu.\n7. Le jeu apparaît dans plusieurs adaptations filmées des romans.\n8. Dans l'adaptation télévisée de 1954, Bond est appelé \"Jimmy\" par certains personnages.\n9. Dans cette adaptation, Bond ruine Le Chiffre pour qu'il soit éliminé par ses supérieurs soviétiques.\n10. Dans \"Dr. No\", Bond est introduit en jouant au baccarat.\n11. Le jeu est également présent dans \"Thunderball\".\n12. La version de 1967 de \"Casino Royale\" détaille le jeu de baccarat.\n13. Le jeu apparaît dans \"On Her Majesty's Secret Service\".\n14. Le jeu est aussi dans \"For Your Eyes Only\".\n15. Le jeu est présent dans \"GoldenEye\".",
+          "prompt": {
+            "meta": {},
+            "user": "Baccarat chemin-de-fer is the favoured game of James Bond, the fictional secret agent created by Ian Fleming.[25] Bond plays the game in numerous novels, most notably his 1953 debut, Casino Royale, in which the entire plot revolves around a game between Bond and SMERSH operative Le Chiffre; the unabridged version of the novel includes a primer to the game for readers who are unfamiliar with it. It is also featured in several filmed versions of the novels, including the 1954 television adaption Casino Royale (Climax!), where Bond, referred to as 'Jimmy' by several characters, bankrupts Le Chiffre in order to have him eliminated by his Soviet superiors; Dr. No, where Bond is first introduced playing the game in film; Thunderball; the 1967 version of Casino Royale, which is the most detailed treatment of a baccarat game in any Bond film; On Her Majesty's Secret Service; For Your Eyes Only; and GoldenEye.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.837257",
+          "duration": 5.790204,
+          "cost": 0.0054600000000000004
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Baccarat chemin-de-fer est le jeu préféré de James Bond."
+          },
+          {
+            "meta": {},
+            "text": "2. James Bond est un agent secret fictif créé par Ian Fleming."
+          },
+          {
+            "meta": {},
+            "text": "3. Bond joue à ce jeu dans de nombreux romans."
+          },
+          {
+            "meta": {},
+            "text": "4. Le roman \"Casino Royale\" de 1953 tourne autour d'une partie de baccarat."
+          },
+          {
+            "meta": {},
+            "text": "5. Dans \"Casino Royale\", Bond joue contre l'agent de SMERSH, Le Chiffre."
+          },
+          {
+            "meta": {},
+            "text": "6. La version intégrale de \"Casino Royale\" inclut un guide du jeu."
+          },
+          {
+            "meta": {},
+            "text": "7. Le jeu apparaît dans plusieurs adaptations filmées des romans."
+          },
+          {
+            "meta": {},
+            "text": "8. Dans l'adaptation télévisée de 1954, Bond est appelé \"Jimmy\" par certains personnages."
+          },
+          {
+            "meta": {},
+            "text": "9. Dans cette adaptation, Bond ruine Le Chiffre pour qu'il soit éliminé par ses supérieurs soviétiques."
+          },
+          {
+            "meta": {},
+            "text": "10. Dans \"Dr. No\", Bond est introduit en jouant au baccarat."
+          },
+          {
+            "meta": {},
+            "text": "11. Le jeu est également présent dans \"Thunderball\"."
+          },
+          {
+            "meta": {},
+            "text": "12. La version de 1967 de \"Casino Royale\" détaille le jeu de baccarat."
+          },
+          {
+            "meta": {},
+            "text": "13. Le jeu apparaît dans \"On Her Majesty's Secret Service\"."
+          },
+          {
+            "meta": {},
+            "text": "14. Le jeu est aussi dans \"For Your Eyes Only\"."
+          },
+          {
+            "meta": {},
+            "text": "15. Le jeu est présent dans \"GoldenEye\"."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Baccarat chemin-de-fer is the favoured game of James Bond, the fictional secret agent created by Ian Fleming.[25] Bond plays the game in numerous novels, most notably his 1953 debut, Casino Royale, in which the entire plot revolves around a game between Bond and SMERSH operative Le Chiffre; the unabridged version of the novel includes a primer to the game for readers who are unfamiliar with it. It is also featured in several filmed versions of the novels, including the 1954 television adaption Casino Royale (Climax!), where Bond, referred to as 'Jimmy' by several characters, bankrupts Le Chiffre in order to have him eliminated by his Soviet superiors; Dr. No, where Bond is first introduced playing the game in film; Thunderball; the 1967 version of Casino Royale, which is the most detailed treatment of a baccarat game in any Bond film; On Her Majesty's Secret Service; For Your Eyes Only; and GoldenEye.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who has the power to convict the president upon impeachment ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. L'impeachment est un pouvoir du législatif aux États-Unis.\n2. Il permet de porter des accusations formelles contre un officier civil du gouvernement.\n3. Les accusations concernent des crimes présumés.\n4. La plupart des impeachments concernent des crimes commis en fonction.\n5. Quelques cas ont impliqué des crimes antérieurs.\n6. Le procès sur ces accusations est distinct de l'acte d'impeachment.\n7. La destitution d'un officiel après condamnation est séparée de l'impeachment.\n8. Plusieurs présidents des États-Unis ont fait l'objet de procédures d'impeachment.\n9. Andrew Johnson a été impeached par la Chambre des représentants.\n10. Bill Clinton a été impeached par la Chambre des représentants.\n11. Andrew Johnson a été acquitté par le Sénat.\n12. Bill Clinton a été acquitté par le Sénat.\n13. Richard Nixon a démissionné avant le vote de la Chambre pour l'impeachment.\n14. Le vote pour l'impeachment de Nixon était attendu pour passer.\n15. La menace d'impeachment a poussé Nixon à démissionner.\n16. Aucun président n'a été destitué par impeachment et condamnation.\n17. L'officiel impeached reste en fonction jusqu'à la condamnation.",
+          "prompt": {
+            "meta": {},
+            "user": "Impeachment in the United States is an enumerated power of the legislature that allows formal charges to be brought against a civil officer of government for crimes alleged to have been committed. Most impeachments have concerned alleged crimes committed while in office, though there have been a few cases in which Congress has impeached and convicted officials partly for prior crimes. The actual trial on such charges, and subsequent removal of an official upon conviction, is separate from the act of impeachment itself. Impeachment proceedings have been initiated against several presidents of the United States. Andrew Johnson and Bill Clinton are the only two presidents to have been successfully impeached by the House of Representatives, and both were later acquitted by the Senate. The impeachment process against Richard Nixon was never completed, as Nixon resigned his office before the vote of the full House for impeachment, but such a vote was widely expected to pass, and the threat of it and a subsequent conviction in the Senate was the impetus for Nixon's departure. To date, no president has been removed from office by impeachment and conviction. The impeached official continues in office until conviction.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.843353",
+          "duration": 7.429871,
+          "cost": 0.005900000000000001
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. L'impeachment est un pouvoir du législatif aux États-Unis."
+          },
+          {
+            "meta": {},
+            "text": "2. Il permet de porter des accusations formelles contre un officier civil du gouvernement."
+          },
+          {
+            "meta": {},
+            "text": "3. Les accusations concernent des crimes présumés."
+          },
+          {
+            "meta": {},
+            "text": "4. La plupart des impeachments concernent des crimes commis en fonction."
+          },
+          {
+            "meta": {},
+            "text": "5. Quelques cas ont impliqué des crimes antérieurs."
+          },
+          {
+            "meta": {},
+            "text": "6. Le procès sur ces accusations est distinct de l'acte d'impeachment."
+          },
+          {
+            "meta": {},
+            "text": "7. La destitution d'un officiel après condamnation est séparée de l'impeachment."
+          },
+          {
+            "meta": {},
+            "text": "8. Plusieurs présidents des États-Unis ont fait l'objet de procédures d'impeachment."
+          },
+          {
+            "meta": {},
+            "text": "9. Andrew Johnson a été impeached par la Chambre des représentants."
+          },
+          {
+            "meta": {},
+            "text": "10. Bill Clinton a été impeached par la Chambre des représentants."
+          },
+          {
+            "meta": {},
+            "text": "11. Andrew Johnson a été acquitté par le Sénat."
+          },
+          {
+            "meta": {},
+            "text": "12. Bill Clinton a été acquitté par le Sénat."
+          },
+          {
+            "meta": {},
+            "text": "13. Richard Nixon a démissionné avant le vote de la Chambre pour l'impeachment."
+          },
+          {
+            "meta": {},
+            "text": "14. Le vote pour l'impeachment de Nixon était attendu pour passer."
+          },
+          {
+            "meta": {},
+            "text": "15. La menace d'impeachment a poussé Nixon à démissionner."
+          },
+          {
+            "meta": {},
+            "text": "16. Aucun président n'a été destitué par impeachment et condamnation."
+          },
+          {
+            "meta": {},
+            "text": "17. L'officiel impeached reste en fonction jusqu'à la condamnation."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Impeachment in the United States is an enumerated power of the legislature that allows formal charges to be brought against a civil officer of government for crimes alleged to have been committed. Most impeachments have concerned alleged crimes committed while in office, though there have been a few cases in which Congress has impeached and convicted officials partly for prior crimes. The actual trial on such charges, and subsequent removal of an official upon conviction, is separate from the act of impeachment itself. Impeachment proceedings have been initiated against several presidents of the United States. Andrew Johnson and Bill Clinton are the only two presidents to have been successfully impeached by the House of Representatives, and both were later acquitted by the Senate. The impeachment process against Richard Nixon was never completed, as Nixon resigned his office before the vote of the full House for impeachment, but such a vote was widely expected to pass, and the threat of it and a subsequent conviction in the Senate was the impetus for Nixon's departure. To date, no president has been removed from office by impeachment and conviction. The impeached official continues in office until conviction.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "how long have we been using oil as a fuel source ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. L'utilisation du pétrole remonte à la Chine ancienne il y a plus de 2000 ans.\n2. Le I Ching mentionne l'utilisation de l'huile brute en Chine.\n3. L'huile brute a été découverte, extraite et utilisée en Chine au premier siècle avant notre ère.\n4. Les Chinois ont été les premiers à utiliser le pétrole comme carburant.\n5. L'utilisation du pétrole comme carburant en Chine date du quatrième siècle avant notre ère.",
+          "prompt": {
+            "meta": {},
+            "user": "The use of petroleum dates back to ancient China more than 2000 years ago. In I Ching, one of the earliest Chinese writings cites the use of oil in its raw state without refining was first discovered, extracted, and used in China in the first century BCE. In addition, the Chinese were the first to use petroleum as fuel as the early as the fourth century BCE.[2][3][4][5]",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.849353",
+          "duration": 8.554874,
+          "cost": 0.0025599999999999998
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. L'utilisation du pétrole remonte à la Chine ancienne il y a plus de 2000 ans."
+          },
+          {
+            "meta": {},
+            "text": "2. Le I Ching mentionne l'utilisation de l'huile brute en Chine."
+          },
+          {
+            "meta": {},
+            "text": "3. L'huile brute a été découverte, extraite et utilisée en Chine au premier siècle avant notre ère."
+          },
+          {
+            "meta": {},
+            "text": "4. Les Chinois ont été les premiers à utiliser le pétrole comme carburant."
+          },
+          {
+            "meta": {},
+            "text": "5. L'utilisation du pétrole comme carburant en Chine date du quatrième siècle avant notre ère."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The use of petroleum dates back to ancient China more than 2000 years ago. In I Ching, one of the earliest Chinese writings cites the use of oil in its raw state without refining was first discovered, extracted, and used in China in the first century BCE. In addition, the Chinese were the first to use petroleum as fuel as the early as the fourth century BCE.[2][3][4][5]",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who is presiding officer for impeachment trials against the president of the phil ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Le Président des Philippines peut être jugé.\n2. Le Chef de la Justice de la Cour Suprême des Philippines préside le procès.\n3. Le Chef de la Justice ne vote pas lors du procès.\n4. Un exemple de procès présidentiel a eu lieu en 2001.",
+          "prompt": {
+            "meta": {},
+            "user": "If the President of the Philippines is on trial, such as in 2001, the Chief Justice of the Supreme Court of the Philippines shall preside but not vote.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.856359",
+          "duration": 3.2479249999999995,
+          "cost": 0.001735
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Le Président des Philippines peut être jugé."
+          },
+          {
+            "meta": {},
+            "text": "2. Le Chef de la Justice de la Cour Suprême des Philippines préside le procès."
+          },
+          {
+            "meta": {},
+            "text": "3. Le Chef de la Justice ne vote pas lors du procès."
+          },
+          {
+            "meta": {},
+            "text": "4. Un exemple de procès présidentiel a eu lieu en 2001."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "If the President of the Philippines is on trial, such as in 2001, the Chief Justice of the Supreme Court of the Philippines shall preside but not vote.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "how did the red wings get their name ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The Detroit Red Wings were originally founded as the Detroit Cougars.\n2. The team was established on September 25, 1926.\n3. The Detroit Cougars were one of three teams to join the NHL in 1926.\n4. The Western Canada Hockey League (WCHL) ceased operations.\n5. A Detroit group led by Charles A. Hughes purchased the rights to the Victoria Cougars players.\n6. The new NHL team retained the name 'Cougars.'\n7. The team faced financial difficulties.\n8. In 1930, the team changed its name to the Detroit Falcons.\n9. James E. Norris bought the team out of receivership.\n10. The team was renamed the Detroit Red Wings in 1932.\n11. The Detroit Red Wings played their first game on November 18, 1926.\n12. The team won their first Stanley Cup titles in 1936 and 1937.\n13. The Red Wings have won the Stanley Cup eleven times.\n14. The Red Wings have won more Stanley Cups than any other American team in NHL history.",
+          "prompt": {
+            "meta": {},
+            "user": "The Detroit Red Wings professional ice hockey club was founded as the Detroit Cougars on September 25, 1926, one of three teams to join the National Hockey League (NHL) in 1926. With the demise of the Western Canada Hockey League (WCHL), the rights to the players of the Victoria Cougars were purchased by a Detroit group led by Charles A. Hughes who kept the name 'Cougars' for their NHL club. The new team struggled financially; in 1930, the Cougars changed their name to the Detroit Falcons, and after being bought out of receivership by James E. Norris were renamed as the Detroit Red Wings in 1932. The team played their first game on November 18, 1926, and won their first two Stanley Cup titles in 1936 and 1937. The Red Wings have won the Cup eleven times, more than any other American team in NHL history.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.861070",
+          "duration": 22.551092,
+          "cost": 0.0049499999999999995
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The Detroit Red Wings were originally founded as the Detroit Cougars."
+          },
+          {
+            "meta": {},
+            "text": "2. The team was established on September 25, 1926."
+          },
+          {
+            "meta": {},
+            "text": "3. The Detroit Cougars were one of three teams to join the NHL in 1926."
+          },
+          {
+            "meta": {},
+            "text": "4. The Western Canada Hockey League (WCHL) ceased operations."
+          },
+          {
+            "meta": {},
+            "text": "5. A Detroit group led by Charles A. Hughes purchased the rights to the Victoria Cougars players."
+          },
+          {
+            "meta": {},
+            "text": "6. The new NHL team retained the name 'Cougars.'"
+          },
+          {
+            "meta": {},
+            "text": "7. The team faced financial difficulties."
+          },
+          {
+            "meta": {},
+            "text": "8. In 1930, the team changed its name to the Detroit Falcons."
+          },
+          {
+            "meta": {},
+            "text": "9. James E. Norris bought the team out of receivership."
+          },
+          {
+            "meta": {},
+            "text": "10. The team was renamed the Detroit Red Wings in 1932."
+          },
+          {
+            "meta": {},
+            "text": "11. The Detroit Red Wings played their first game on November 18, 1926."
+          },
+          {
+            "meta": {},
+            "text": "12. The team won their first Stanley Cup titles in 1936 and 1937."
+          },
+          {
+            "meta": {},
+            "text": "13. The Red Wings have won the Stanley Cup eleven times."
+          },
+          {
+            "meta": {},
+            "text": "14. The Red Wings have won more Stanley Cups than any other American team in NHL history."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The Detroit Red Wings professional ice hockey club was founded as the Detroit Cougars on September 25, 1926, one of three teams to join the National Hockey League (NHL) in 1926. With the demise of the Western Canada Hockey League (WCHL), the rights to the players of the Victoria Cougars were purchased by a Detroit group led by Charles A. Hughes who kept the name 'Cougars' for their NHL club. The new team struggled financially; in 1930, the Cougars changed their name to the Detroit Falcons, and after being bought out of receivership by James E. Norris were renamed as the Detroit Red Wings in 1932. The team played their first game on November 18, 1926, and won their first two Stanley Cup titles in 1936 and 1937. The Red Wings have won the Cup eleven times, more than any other American team in NHL history.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what type of dog was in turner and hooch ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Le Dogue de Bordeaux est arrivé aux États-Unis dans les années 1890.\n2. Fidelle de Fenelon est apparu en 1959.\n3. Rugby de la Maison des Arbres est apparu en 1968.\n4. Entre 1969 et 1980, les Dogues de Bordeaux importés aux États-Unis étaient rares.\n5. Quelques éleveurs travaillaient avec le club français SADB.\n6. En 1982, un article a présenté officiellement la race aux amateurs américains.\n7. L'article a été écrit par l'anthropologue américain Dr. Carl Semencic.\n8. L'article a été publié dans le magazine 'Dog World'.\n9. Semencic a également écrit des chapitres sur la race dans ses livres.\n10. Les livres de Semencic ont été publiés par T.F.H. Publications.\n11. Quand l'article de Semencic a été publié, il n'y avait pas de Dogues de Bordeaux aux États-Unis.\n12. Il restait 600 Dogues de Bordeaux dans le monde.\n13. La plupart des Dogues de Bordeaux étaient en France, aux Pays-Bas et à Berlin-Est.\n14. Le nombre de Dogues de Bordeaux était en déclin.\n15. En 1989, le Dogue de Bordeaux est apparu dans le film 'Turner & Hooch'.\n16. Le film 'Turner & Hooch' a été produit par Touchstone.\n17. Le film parle d'un policier et de son partenaire canin.\n18. Beaucoup de gens ne savaient pas que l'animal était un Dogue de Bordeaux.",
+          "prompt": {
+            "meta": {},
+            "user": "Although the Dogue de Bordeaux first arrived in the USA in the 1890s for the show ring, the first documented Dogues de Bordeaux of modern times appeared in 1959 [clarification needed], Fidelle de Fenelon; and in 1968, Rugby de la Maison des Arbres. Between 1969 and 1980, imported Dogues de Bordeaux in the USA were scarce, limited to a few breeders who worked closely with the French Dogue de Bordeaux Club, the SADB. The breed was first 'officially' introduced to American purebred enthusiasts in an article written in 1982 and by the American anthropologist, Dr. Carl Semencic for 'Dog World' magazine. That article, entitled 'Introducing the Dogue de Bordeaux', was followed by chapters dedicated to the Dogue in Semencic's books on dogs, published by T.F.H. Publications of Neptune, New Jersey. When Semencic's first article on the breed was published, there were no Bordeaux Dogues in the United States. There were 600 examples left in the world, mostly in France, the Netherlands and ast Berlin, and the breed's numbers were on the decline. Much later, in 1989, the typical American family saw the Dogue de Bordeaux for the first time on the big screen in Touchstone's movie Turner & Hooch about a policeman and his canine partner, although many people [who?] did not know that the massive slobbering animal was a Dogue de Bordeaux.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.870158",
+          "duration": 14.023346,
+          "cost": 0.00733
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Le Dogue de Bordeaux est arrivé aux États-Unis dans les années 1890."
+          },
+          {
+            "meta": {},
+            "text": "2. Fidelle de Fenelon est apparu en 1959."
+          },
+          {
+            "meta": {},
+            "text": "3. Rugby de la Maison des Arbres est apparu en 1968."
+          },
+          {
+            "meta": {},
+            "text": "4. Entre 1969 et 1980, les Dogues de Bordeaux importés aux États-Unis étaient rares."
+          },
+          {
+            "meta": {},
+            "text": "5. Quelques éleveurs travaillaient avec le club français SADB."
+          },
+          {
+            "meta": {},
+            "text": "6. En 1982, un article a présenté officiellement la race aux amateurs américains."
+          },
+          {
+            "meta": {},
+            "text": "7. L'article a été écrit par l'anthropologue américain Dr. Carl Semencic."
+          },
+          {
+            "meta": {},
+            "text": "8. L'article a été publié dans le magazine 'Dog World'."
+          },
+          {
+            "meta": {},
+            "text": "9. Semencic a également écrit des chapitres sur la race dans ses livres."
+          },
+          {
+            "meta": {},
+            "text": "10. Les livres de Semencic ont été publiés par T.F.H. Publications."
+          },
+          {
+            "meta": {},
+            "text": "11. Quand l'article de Semencic a été publié, il n'y avait pas de Dogues de Bordeaux aux États-Unis."
+          },
+          {
+            "meta": {},
+            "text": "12. Il restait 600 Dogues de Bordeaux dans le monde."
+          },
+          {
+            "meta": {},
+            "text": "13. La plupart des Dogues de Bordeaux étaient en France, aux Pays-Bas et à Berlin-Est."
+          },
+          {
+            "meta": {},
+            "text": "14. Le nombre de Dogues de Bordeaux était en déclin."
+          },
+          {
+            "meta": {},
+            "text": "15. En 1989, le Dogue de Bordeaux est apparu dans le film 'Turner & Hooch'."
+          },
+          {
+            "meta": {},
+            "text": "16. Le film 'Turner & Hooch' a été produit par Touchstone."
+          },
+          {
+            "meta": {},
+            "text": "17. Le film parle d'un policier et de son partenaire canin."
+          },
+          {
+            "meta": {},
+            "text": "18. Beaucoup de gens ne savaient pas que l'animal était un Dogue de Bordeaux."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Although the Dogue de Bordeaux first arrived in the USA in the 1890s for the show ring, the first documented Dogues de Bordeaux of modern times appeared in 1959 [clarification needed], Fidelle de Fenelon; and in 1968, Rugby de la Maison des Arbres. Between 1969 and 1980, imported Dogues de Bordeaux in the USA were scarce, limited to a few breeders who worked closely with the French Dogue de Bordeaux Club, the SADB. The breed was first 'officially' introduced to American purebred enthusiasts in an article written in 1982 and by the American anthropologist, Dr. Carl Semencic for 'Dog World' magazine. That article, entitled 'Introducing the Dogue de Bordeaux', was followed by chapters dedicated to the Dogue in Semencic's books on dogs, published by T.F.H. Publications of Neptune, New Jersey. When Semencic's first article on the breed was published, there were no Bordeaux Dogues in the United States. There were 600 examples left in the world, mostly in France, the Netherlands and ast Berlin, and the breed's numbers were on the decline. Much later, in 1989, the typical American family saw the Dogue de Bordeaux for the first time on the big screen in Touchstone's movie Turner & Hooch about a policeman and his canine partner, although many people [who?] did not know that the massive slobbering animal was a Dogue de Bordeaux.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "where does water come from in cell respiration ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. La phosphorylation oxydative se produit dans les crêtes mitochondriales des eucaryotes.\n2. Elle comprend la chaîne de transport d'électrons.\n3. La chaîne de transport d'électrons établit un gradient de protons à travers la membrane interne.\n4. Le NADH produit par le cycle de Krebs est oxydé.\n5. L'ATP est synthétisé par l'enzyme ATP synthase.\n6. Le gradient chimiosmotique est utilisé pour phosphoryler l'ADP.\n7. Les électrons sont finalement transférés à l'oxygène exogène.\n8. L'ajout de deux protons forme de l'eau.",
+          "prompt": {
+            "meta": {},
+            "user": "In eukaryotes, oxidative phosphorylation occurs in the mitochondrial cristae. It comprises the electron transport chain that establishes a proton gradient (chemiosmotic potential) across the boundary of inner membrane by oxidizing the NADH produced from the Krebs cycle. ATP is synthesized by the ATP synthase enzyme when the chemiosmotic gradient is used to drive the phosphorylation of ADP. The electrons are finally transferred to exogenous oxygen and, with the addition of two protons, water is formed.",
+            "system": "Génère un minimum de phrases numérotées courtes et simples qui décrivent ce paragraphe.\nChaque phrase ne doit contenir qu'une seule information.\nChaque phrase doit être indépendante et aucune phrase ne doit contenir la même information qu'une autre phrase.\nLes phrases ne doivent pas contenir de référence au document source ni à sa page.\nLes phrases doivent être compréhensibles seules et donc ne pas contenir de référence aux autres phrases ni nécessiter les autres phrases pour être comprises.\nLes phrases doivent être générées dans la même langue que le texte du paragraphe."
+          },
+          "name": "gpt-4o",
+          "full_name": "gpt-4o-2024-05-13",
+          "timestamp": "2024-06-04T17:05:16.875158",
+          "duration": 6.077608,
+          "cost": 0.0032849999999999997
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. La phosphorylation oxydative se produit dans les crêtes mitochondriales des eucaryotes."
+          },
+          {
+            "meta": {},
+            "text": "2. Elle comprend la chaîne de transport d'électrons."
+          },
+          {
+            "meta": {},
+            "text": "3. La chaîne de transport d'électrons établit un gradient de protons à travers la membrane interne."
+          },
+          {
+            "meta": {},
+            "text": "4. Le NADH produit par le cycle de Krebs est oxydé."
+          },
+          {
+            "meta": {},
+            "text": "5. L'ATP est synthétisé par l'enzyme ATP synthase."
+          },
+          {
+            "meta": {},
+            "text": "6. Le gradient chimiosmotique est utilisé pour phosphoryler l'ADP."
+          },
+          {
+            "meta": {},
+            "text": "7. Les électrons sont finalement transférés à l'oxygène exogène."
+          },
+          {
+            "meta": {},
+            "text": "8. L'ajout de deux protons forme de l'eau."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "In eukaryotes, oxidative phosphorylation occurs in the mitochondrial cristae. It comprises the electron transport chain that establishes a proton gradient (chemiosmotic potential) across the boundary of inner membrane by oxidizing the NADH produced from the Krebs cycle. ATP is synthesized by the ATP synthase enzyme when the chemiosmotic gradient is used to drive the phosphorylation of ADP. The electrons are finally transferred to exogenous oxygen and, with the addition of two protons, water is formed.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
