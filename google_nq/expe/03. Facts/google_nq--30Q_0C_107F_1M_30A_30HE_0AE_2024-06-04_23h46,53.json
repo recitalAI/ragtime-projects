@@ -1,0 +1,1873 @@
+{
+  "meta": {},
+  "items": [
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what is the story behind 5 nights at freddy's ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The series \"Five Nights at Freddy's\" is based on a fictional restaurant called Freddy Fazbear's Pizza.\n2. The first three games feature the player as a nighttime security guard who must use various tools, including security cameras, to survive against animatronic characters that become mobile and homicidal after hours.\n3. The fourth game takes place in a child's house, where the child must defend against nightmarish versions of the animatronics by closing doors and fleeing on foot.\n4. The fifth game is set in a maintenance facility owned by a sister company of Freddy Fazbear's Pizza, where the player character is a technician who must perform different tasks each night as instructed by an AI voice.\n5. In the sixth game, the player takes on the role of a pizzeria owner who must decorate their establishment with purchasable items and work the night shift, which is similar to the gameplay of the previous games.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The series is centered on the story of a fictional restaurant named Freddy Fazbear's Pizza, a pastiche of restaurants like Chuck E. Cheese's and ShowBiz Pizza Place. The first three games involve the player working as a nighttime security guard, in which they must utilize several tools, most notably checking security cameras, to survive against animatronic characters, which become mobile and homicidal after-hours. The fourth game, which uses different gameplay mechanics from its predecessors, takes place in the house of a child who must defend against nightmarish versions of the animatronics by closing doors and fleeing on foot. The fifth game takes place in a maintenance facility owned by a sister company of Freddy Fazbear's Pizza. The player character is a technician instead of a night guard, who must do different tasks each night as told by an AI voice heard in the game. In the sixth game, the player acts as the owner of a pizzeria which they must decorate with payable items, and must also work the night shift for their pizzeria, which plays similarly to previous games.\nQUESTION: what is the story behind 5 nights at freddy's ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.267846",
+          "duration": 13.805167,
+          "cost": 0.02193
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The series \"Five Nights at Freddy's\" is based on a fictional restaurant called Freddy Fazbear's Pizza."
+          },
+          {
+            "meta": {},
+            "text": "2. The first three games feature the player as a nighttime security guard who must use various tools, including security cameras, to survive against animatronic characters that become mobile and homicidal after hours."
+          },
+          {
+            "meta": {},
+            "text": "3. The fourth game takes place in a child's house, where the child must defend against nightmarish versions of the animatronics by closing doors and fleeing on foot."
+          },
+          {
+            "meta": {},
+            "text": "4. The fifth game is set in a maintenance facility owned by a sister company of Freddy Fazbear's Pizza, where the player character is a technician who must perform different tasks each night as instructed by an AI voice."
+          },
+          {
+            "meta": {},
+            "text": "5. In the sixth game, the player takes on the role of a pizzeria owner who must decorate their establishment with purchasable items and work the night shift, which is similar to the gameplay of the previous games."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The series is centered on the story of a fictional restaurant named Freddy Fazbear's Pizza, a pastiche of restaurants like Chuck E. Cheese's and ShowBiz Pizza Place. The first three games involve the player working as a nighttime security guard, in which they must utilize several tools, most notably checking security cameras, to survive against animatronic characters, which become mobile and homicidal after-hours. The fourth game, which uses different gameplay mechanics from its predecessors, takes place in the house of a child who must defend against nightmarish versions of the animatronics by closing doors and fleeing on foot. The fifth game takes place in a maintenance facility owned by a sister company of Freddy Fazbear's Pizza. The player character is a technician instead of a night guard, who must do different tasks each night as told by an AI voice heard in the game. In the sixth game, the player acts as the owner of a pizzeria which they must decorate with payable items, and must also work the night shift for their pizzeria, which plays similarly to previous games.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what was the prison called in the green mile ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Paul supervises officers at Cold Mountain Penitentiary in 1935.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: In 1935, Paul supervises officers Brutus Howell, Dean Stanton, Harry Terwilliger, and Percy Wetmore at Cold Mountain Penitentiary. Paul is suffering from a severe bladder infection and receives John Coffey, a physically imposing but mentally challenged black man, into his custody. John had been sentenced to death after being convicted of raping and murdering two white girls. One of the other inmates is a Native-American named Arlen Bitterbuck, who is charged with murder and is the first to be executed. Percy demonstrates a severe sadistic streak, but, as the nephew of Louisiana's First Lady, he is beyond reproach. He is particularly abusive with inmate Eduard Delacroix; he breaks Del's fingers with his baton, steps on a pet mouse named Mr. Jingles, which Del had adopted, repeatedly calls him by a gay slur, and ultimately sabotages his execution by failing to soak the sponge used to conduct electricity to Del's head; Del dies screaming in pain.\nQUESTION: what was the prison called in the green mile ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.288534",
+          "duration": 3.330346,
+          "cost": 0.01098
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Paul supervises officers at Cold Mountain Penitentiary in 1935."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "In 1935, Paul supervises officers Brutus Howell, Dean Stanton, Harry Terwilliger, and Percy Wetmore at Cold Mountain Penitentiary. Paul is suffering from a severe bladder infection and receives John Coffey, a physically imposing but mentally challenged black man, into his custody. John had been sentenced to death after being convicted of raping and murdering two white girls. One of the other inmates is a Native-American named Arlen Bitterbuck, who is charged with murder and is the first to be executed. Percy demonstrates a severe sadistic streak, but, as the nephew of Louisiana's First Lady, he is beyond reproach. He is particularly abusive with inmate Eduard Delacroix; he breaks Del's fingers with his baton, steps on a pet mouse named Mr. Jingles, which Del had adopted, repeatedly calls him by a gay slur, and ultimately sabotages his execution by failing to soak the sponge used to conduct electricity to Del's head; Del dies screaming in pain.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what is the widest highway in north america ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. King's Highway 401 is also known as Highway 401, the Macdonald–Cartier Freeway, or the four-oh-one.\n2. This highway is located in the Canadian province of Ontario.\n3. It stretches 828.0 kilometres from Windsor in the west to the Ontario–Quebec border in the east.\n4. The part of Highway 401 that passes through Toronto is North America's busiest and one of the widest highways.\n5. The speed limit on Highway 401 is 100 km/h unless posted otherwise.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: King's Highway 401, commonly referred to as Highway 401 and also known by its official name as the Macdonald–Cartier Freeway or colloquially as the four-oh-one,[3] is a controlled-access400-series highway in the Canadian province of Ontario. It stretches 828.0 kilometres (514.5 mi) from Windsor in the west to the Ontario–Quebec border in the east. The part of Highway 401 that passes through Toronto is North America's busiest highway,[4][5] and one of the widest.[6][7] Together with Quebec Autoroute 20, it forms the road transportation backbone of the Quebec City–Windsor Corridor, along which over half of Canada's population resides and is also a Core Route in the National Highway System of Canada. The route is maintained by the Ministry of Transportation of Ontario (MTO) and patrolled by the Ontario Provincial Police. The speed limit is 100 km/h (62 mph) throughout its length, unless posted otherwise.\nQUESTION: what is the widest highway in north america ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.296574",
+          "duration": 9.201196,
+          "cost": 0.016710000000000003
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. King's Highway 401 is also known as Highway 401, the Macdonald–Cartier Freeway, or the four-oh-one."
+          },
+          {
+            "meta": {},
+            "text": "2. This highway is located in the Canadian province of Ontario."
+          },
+          {
+            "meta": {},
+            "text": "3. It stretches 828.0 kilometres from Windsor in the west to the Ontario–Quebec border in the east."
+          },
+          {
+            "meta": {},
+            "text": "4. The part of Highway 401 that passes through Toronto is North America's busiest and one of the widest highways."
+          },
+          {
+            "meta": {},
+            "text": "5. The speed limit on Highway 401 is 100 km/h unless posted otherwise."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "King's Highway 401, commonly referred to as Highway 401 and also known by its official name as the Macdonald–Cartier Freeway or colloquially as the four-oh-one,[3] is a controlled-access400-series highway in the Canadian province of Ontario. It stretches 828.0 kilometres (514.5 mi) from Windsor in the west to the Ontario–Quebec border in the east. The part of Highway 401 that passes through Toronto is North America's busiest highway,[4][5] and one of the widest.[6][7] Together with Quebec Autoroute 20, it forms the road transportation backbone of the Quebec City–Windsor Corridor, along which over half of Canada's population resides and is also a Core Route in the National Highway System of Canada. The route is maintained by the Ministry of Transportation of Ontario (MTO) and patrolled by the Ontario Provincial Police. The speed limit is 100 km/h (62 mph) throughout its length, unless posted otherwise.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what was the white thing in sausage party ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Frank and Brenda's packages were chosen by a woman named Camille Toh.\n2. A returned jar of Bickle's Honey Mustard tried to warn the groceries about the Great Beyond.\n3. Only Frank listened to Honey Mustard's warning.\n4. Honey Mustard asked Frank to find a bottle of liquor named Firewater.\n5. Honey Mustard fell to his death.\n6. An accidental cart collision occurred.\n7. Frank, Brenda, and several groceries fell out of the cart during the collision.\n8. An aggressive Douche fell out of the cart and his nozzle got bent.\n9. The Douche plotted revenge against Frank and Brenda.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: After Frank and Brenda's packages are chosen by a woman named Camille Toh to leave Shopwell's, a returned jar of Bickle's Honey Mustard tries to warn the groceries that the Great Beyond is a lie; nobody listens except for Frank. Honey Mustard calls on Frank to seek out a bottle of liquor named Firewater, and then falls to his death. This creates an accidental cart collision that causes Frank, Brenda, and several groceries to fall out, including an aggressive Douche who gets his nozzle bent, and plots revenge against Frank and Brenda.\nQUESTION: what was the white thing in sausage party ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.303574",
+          "duration": 8.562955,
+          "cost": 0.01515
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Frank and Brenda's packages were chosen by a woman named Camille Toh."
+          },
+          {
+            "meta": {},
+            "text": "2. A returned jar of Bickle's Honey Mustard tried to warn the groceries about the Great Beyond."
+          },
+          {
+            "meta": {},
+            "text": "3. Only Frank listened to Honey Mustard's warning."
+          },
+          {
+            "meta": {},
+            "text": "4. Honey Mustard asked Frank to find a bottle of liquor named Firewater."
+          },
+          {
+            "meta": {},
+            "text": "5. Honey Mustard fell to his death."
+          },
+          {
+            "meta": {},
+            "text": "6. An accidental cart collision occurred."
+          },
+          {
+            "meta": {},
+            "text": "7. Frank, Brenda, and several groceries fell out of the cart during the collision."
+          },
+          {
+            "meta": {},
+            "text": "8. An aggressive Douche fell out of the cart and his nozzle got bent."
+          },
+          {
+            "meta": {},
+            "text": "9. The Douche plotted revenge against Frank and Brenda."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "After Frank and Brenda's packages are chosen by a woman named Camille Toh to leave Shopwell's, a returned jar of Bickle's Honey Mustard tries to warn the groceries that the Great Beyond is a lie; nobody listens except for Frank. Honey Mustard calls on Frank to seek out a bottle of liquor named Firewater, and then falls to his death. This creates an accidental cart collision that causes Frank, Brenda, and several groceries to fall out, including an aggressive Douche who gets his nozzle bent, and plots revenge against Frank and Brenda.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what makes the center of an atom stable ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The electrons in an atom are attracted to the protons in the nucleus by the electromagnetic force.\n2. This force binds the electrons inside an electrostatic potential well surrounding the nucleus.\n3. An external source of energy is needed for the electron to escape.\n4. The closer an electron is to the nucleus, the greater the attractive force.\n5. Electrons bound near the center of the potential well require more energy to escape than those at greater separations.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The electrons in an atom are attracted to the protons in the nucleus by the electromagnetic force. This force binds the electrons inside an electrostaticpotential well surrounding the smaller nucleus, which means that an external source of energy is needed for the electron to escape. The closer an electron is to the nucleus, the greater the attractive force. Hence electrons bound near the center of the potential well require more energy to escape than those at greater separations.\nQUESTION: what makes the center of an atom stable ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.308886",
+          "duration": 8.345844,
+          "cost": 0.012
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The electrons in an atom are attracted to the protons in the nucleus by the electromagnetic force."
+          },
+          {
+            "meta": {},
+            "text": "2. This force binds the electrons inside an electrostatic potential well surrounding the nucleus."
+          },
+          {
+            "meta": {},
+            "text": "3. An external source of energy is needed for the electron to escape."
+          },
+          {
+            "meta": {},
+            "text": "4. The closer an electron is to the nucleus, the greater the attractive force."
+          },
+          {
+            "meta": {},
+            "text": "5. Electrons bound near the center of the potential well require more energy to escape than those at greater separations."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The electrons in an atom are attracted to the protons in the nucleus by the electromagnetic force. This force binds the electrons inside an electrostaticpotential well surrounding the smaller nucleus, which means that an external source of energy is needed for the electron to escape. The closer an electron is to the nucleus, the greater the attractive force. Hence electrons bound near the center of the potential well require more energy to escape than those at greater separations.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who did holly matthews play in waterloo rd ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Holly Matthews attended the British drama school East 15 in 2005.\n2. She left the school after winning a role in the BBC drama Waterloo Road.\n3. In Waterloo Road, she played the character Leigh-Ann Galloway.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: She attended the British drama school East 15 in 2005, and left after winning a high-profile role in the BBC drama Waterloo Road, playing the bully Leigh-Ann Galloway.[6] Since that role, Matthews has continued to act in BBC's Doctors, playing Connie Whitfield; in ITV's The Bill playing drug addict Josie Clarke; and she was back in the BBC soap Doctors in 2009, playing Tansy Flack.\nQUESTION: who did holly matthews play in waterloo rd ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.317877",
+          "duration": 5.974904,
+          "cost": 0.00969
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Holly Matthews attended the British drama school East 15 in 2005."
+          },
+          {
+            "meta": {},
+            "text": "2. She left the school after winning a role in the BBC drama Waterloo Road."
+          },
+          {
+            "meta": {},
+            "text": "3. In Waterloo Road, she played the character Leigh-Ann Galloway."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "She attended the British drama school East 15 in 2005, and left after winning a high-profile role in the BBC drama Waterloo Road, playing the bully Leigh-Ann Galloway.[6] Since that role, Matthews has continued to act in BBC's Doctors, playing Connie Whitfield; in ITV's The Bill playing drug addict Josie Clarke; and she was back in the BBC soap Doctors in 2009, playing Tansy Flack.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who did the first double backflip on a dirt bike ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Travis Pastrana completed a double backflip on an uphill/sand setup in 2006.\n2. He became the first rider to land a double backflip in competition at X Games 12 in Los Angeles on August 4, 2006.\n3. After landing the trick, Pastrana vowed never to do it again.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: 2006 brought footage of Travis Pastrana completing a double backflip on an uphill/sand setup on his popular 'Nitro Circus' Freestyle Motocross movies. On August 4, 2006, at X Games 12 in Los Angeles, he became the first rider to land a double backflip in competition. Having landed another trick that many had considered impossible, he vowed never to do it again.\nQUESTION: who did the first double backflip on a dirt bike ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.323877",
+          "duration": 6.954292,
+          "cost": 0.01065
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Travis Pastrana completed a double backflip on an uphill/sand setup in 2006."
+          },
+          {
+            "meta": {},
+            "text": "2. He became the first rider to land a double backflip in competition at X Games 12 in Los Angeles on August 4, 2006."
+          },
+          {
+            "meta": {},
+            "text": "3. After landing the trick, Pastrana vowed never to do it again."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "2006 brought footage of Travis Pastrana completing a double backflip on an uphill/sand setup on his popular 'Nitro Circus' Freestyle Motocross movies. On August 4, 2006, at X Games 12 in Los Angeles, he became the first rider to land a double backflip in competition. Having landed another trick that many had considered impossible, he vowed never to do it again.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who won season 10 of dancing with the stars ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Season ten of Dancing with the Stars premiered on March 22, 2010.\n2. Singer Nicole Scherzinger won the competition.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: Season ten of Dancing with the Stars premiered on March 22, 2010. There was not an elimination the first week of competition. The first elimination took place on March 30. Singer Nicole Scherzinger won the competition.\nQUESTION: who won season 10 of dancing with the stars ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.329139",
+          "duration": 4.796213,
+          "cost": 0.0070799999999999995
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Season ten of Dancing with the Stars premiered on March 22, 2010."
+          },
+          {
+            "meta": {},
+            "text": "2. Singer Nicole Scherzinger won the competition."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Season ten of Dancing with the Stars premiered on March 22, 2010. There was not an elimination the first week of competition. The first elimination took place on March 30. Singer Nicole Scherzinger won the competition.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "when would the quantity of dna double when growing cells ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The cell cycle is the process of cell division.\n2. The G1 phase is the first part of the cell cycle where various enzymes are synthesized for DNA replication.\n3. The S phase is the second part of the cell cycle where DNA replication occurs, producing two identical sets of chromosomes.\n4. The G2 phase is the third part of the cell cycle where significant protein synthesis occurs.\n5. The M phase is the fourth part of the cell cycle, consisting of nuclear and cytoplasmic division.\n6. The M phase includes several distinct phases: prophase, prometaphase, metaphase, anaphase, telophase, and cytokinesis.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The process of cell division, called cell cycle, has four major parts called phases. The first part, called G1 phase is marked by synthesis of various enzymes that are required for DNA replication. The second part of the cell cycle is the S phase, where DNA replication produces two identical sets of chromosomes. The third part is the G2 phase in which a significant protein synthesis occurs, mainly involving the production of microtubules that are required during the process of division, called mitosis. The fourth phase, M phase, consists of nuclear division (karyokinesis) and cytoplasmic division (cytokinesis), accompanied by the formation of a new cell membrane. This is the physical division of 'mother' and 'daughter' cells. The M phase has been broken down into several distinct phases, sequentially known as prophase, prometaphase, metaphase, anaphase and telophase leading to cytokinesis.\nQUESTION: when would the quantity of dna double when growing cells ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.334266",
+          "duration": 9.5274,
+          "cost": 0.0177
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The cell cycle is the process of cell division."
+          },
+          {
+            "meta": {},
+            "text": "2. The G1 phase is the first part of the cell cycle where various enzymes are synthesized for DNA replication."
+          },
+          {
+            "meta": {},
+            "text": "3. The S phase is the second part of the cell cycle where DNA replication occurs, producing two identical sets of chromosomes."
+          },
+          {
+            "meta": {},
+            "text": "4. The G2 phase is the third part of the cell cycle where significant protein synthesis occurs."
+          },
+          {
+            "meta": {},
+            "text": "5. The M phase is the fourth part of the cell cycle, consisting of nuclear and cytoplasmic division."
+          },
+          {
+            "meta": {},
+            "text": "6. The M phase includes several distinct phases: prophase, prometaphase, metaphase, anaphase, telophase, and cytokinesis."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The process of cell division, called cell cycle, has four major parts called phases. The first part, called G1 phase is marked by synthesis of various enzymes that are required for DNA replication. The second part of the cell cycle is the S phase, where DNA replication produces two identical sets of chromosomes. The third part is the G2 phase in which a significant protein synthesis occurs, mainly involving the production of microtubules that are required during the process of division, called mitosis. The fourth phase, M phase, consists of nuclear division (karyokinesis) and cytoplasmic division (cytokinesis), accompanied by the formation of a new cell membrane. This is the physical division of 'mother' and 'daughter' cells. The M phase has been broken down into several distinct phases, sequentially known as prophase, prometaphase, metaphase, anaphase and telophase leading to cytokinesis.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "when did the battle of palmito ranch happen ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The Battle of Palmito Ranch happened on May 12 and 13, 1865.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The Battle of Palmito Ranch is considered by some criteria as the final battle of the American Civil War. It was fought May 12 and 13, 1865, on the banks of the Rio Grande east of Brownsville, Texas and a few miles from the seaport of Los Brazos de Santiago. Since the Confederacy had ceased to exist, it is also argued that this battle should be classified as a postwar action.\nQUESTION: when did the battle of palmito ranch happen ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.340774",
+          "duration": 3.736271,
+          "cost": 0.0078000000000000005
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The Battle of Palmito Ranch happened on May 12 and 13, 1865."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The Battle of Palmito Ranch is considered by some criteria as the final battle of the American Civil War. It was fought May 12 and 13, 1865, on the banks of the Rio Grande east of Brownsville, Texas and a few miles from the seaport of Los Brazos de Santiago. Since the Confederacy had ceased to exist, it is also argued that this battle should be classified as a postwar action.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who determined the mass to charge ratio of an electron ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods.\n2. In 1897, J. J. Thomson first measured the mass-to-charge ratio of the electron.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods. In 1897, the mass-to-charge ratio of the electron was first measured by J. J. Thomson. [6] By doing this, he showed that the electron was in fact a particle with a mass and a charge, and that its mass-to-charge ratio was much smaller than that of the hydrogen ion H+. In 1898, Wilhelm Wien separated ions (canal rays) according to their mass-to-charge ratio with an ion optical device with superimposed electric and magnetic fields (Wien filter). In 1901 Walter Kaufman measured the increase of electromagnetic mass of fast electrons (Kaufmann–Bucherer–Neumann experiments), or relativistic mass increase in modern terms. In 1913, Thomson measured the mass-to-charge ratio of ions with an instrument he called a parabola spectrograph.[7] Today, an instrument that measures the mass-to-charge ratio of charged particles is called a mass spectrometer.\nQUESTION: who determined the mass to charge ratio of an electron ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.345271",
+          "duration": 4.568451,
+          "cost": 0.01329
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods."
+          },
+          {
+            "meta": {},
+            "text": "2. In 1897, J. J. Thomson first measured the mass-to-charge ratio of the electron."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods. In 1897, the mass-to-charge ratio of the electron was first measured by J. J. Thomson. [6] By doing this, he showed that the electron was in fact a particle with a mass and a charge, and that its mass-to-charge ratio was much smaller than that of the hydrogen ion H+. In 1898, Wilhelm Wien separated ions (canal rays) according to their mass-to-charge ratio with an ion optical device with superimposed electric and magnetic fields (Wien filter). In 1901 Walter Kaufman measured the increase of electromagnetic mass of fast electrons (Kaufmann–Bucherer–Neumann experiments), or relativistic mass increase in modern terms. In 1913, Thomson measured the mass-to-charge ratio of ions with an instrument he called a parabola spectrograph.[7] Today, an instrument that measures the mass-to-charge ratio of charged particles is called a mass spectrometer.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "where does the last name downs come from ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The surname Downs is of Old English origin.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: Downs is a surname of Old English origin.\nQUESTION: where does the last name downs come from ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.352568",
+          "duration": 3.13042,
+          "cost": 0.0046500000000000005
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The surname Downs is of Old English origin."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Downs is a surname of Old English origin.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who sang without love where would we be now ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. \"Long Train Runnin'\" is a song by The Doobie Brothers.\n2. The song was written by Tom Johnston, a member of the band.\n3. It was part of the 1973 album The Captain and Me.\n4. The song was also released as a single.\n5. It reached number 8 on the US Billboard Hot 100.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: 'Long Train Runnin'' (or 'Long Train Running') is a song recorded by The Doobie Brothers and written by band member Tom Johnston. It was included on the band's 1973 album The Captain and Me and released as a single, becoming a top 10 hit on the US Billboard Hot 100, peaking at number 8.\nQUESTION: who sang without love where would we be now ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.359091",
+          "duration": 6.220669,
+          "cost": 0.010499999999999999
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. \"Long Train Runnin'\" is a song by The Doobie Brothers."
+          },
+          {
+            "meta": {},
+            "text": "2. The song was written by Tom Johnston, a member of the band."
+          },
+          {
+            "meta": {},
+            "text": "3. It was part of the 1973 album The Captain and Me."
+          },
+          {
+            "meta": {},
+            "text": "4. The song was also released as a single."
+          },
+          {
+            "meta": {},
+            "text": "5. It reached number 8 on the US Billboard Hot 100."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "'Long Train Runnin'' (or 'Long Train Running') is a song recorded by The Doobie Brothers and written by band member Tom Johnston. It was included on the band's 1973 album The Captain and Me and released as a single, becoming a top 10 hit on the US Billboard Hot 100, peaking at number 8.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what is the value of g on the surface of the moon ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The value of gravitational acceleration on the Moon's surface is approximately 1.625 m/s2.\n2. This value is about 16.6% of the gravitational acceleration on Earth's surface.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The acceleration due to gravity on the surface of the Moon is about 1.625 m/s2, about 16.6% that on Earth's surface or 0.16 ɡ. Over the entire surface, the variation in gravitational acceleration is about 0.0253 m/s2 (1.6% of the acceleration due to gravity). Because weight is directly dependent upon gravitational acceleration, things on the Moon will weigh only 16.6% of what they weigh on the Earth.\nQUESTION: what is the value of g on the surface of the moon ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.364085",
+          "duration": 5.180177,
+          "cost": 0.00942
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The value of gravitational acceleration on the Moon's surface is approximately 1.625 m/s2."
+          },
+          {
+            "meta": {},
+            "text": "2. This value is about 16.6% of the gravitational acceleration on Earth's surface."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The acceleration due to gravity on the surface of the Moon is about 1.625 m/s2, about 16.6% that on Earth's surface or 0.16 ɡ. Over the entire surface, the variation in gravitational acceleration is about 0.0253 m/s2 (1.6% of the acceleration due to gravity). Because weight is directly dependent upon gravitational acceleration, things on the Moon will weigh only 16.6% of what they weigh on the Earth.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "when does the door in the wall take place ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The story is set in England during the Middle Ages.\n2. The Black Death is sweeping across the country at this time.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The story, illustrated by the author, is set in England during the Middle Ages, as the Black Death (bubonic plague) is sweeping across the country. Young Robin is sent away to become a knight like his father, but his dreams are endangered when he loses the use of his legs. A doctor reassures Robin that the weakness in his legs is not caused by the plague and the doctor is supposed to come and help him but does not. His parents are away, serving the king and queen during war, and the servants abandon the house, fearing the plague. Robin is saved by Brother Luke, a friar, who finds him and takes him to a monastery and cares for him.\nQUESTION: when does the door in the wall take place ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.370414",
+          "duration": 5.024946,
+          "cost": 0.00957
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The story is set in England during the Middle Ages."
+          },
+          {
+            "meta": {},
+            "text": "2. The Black Death is sweeping across the country at this time."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The story, illustrated by the author, is set in England during the Middle Ages, as the Black Death (bubonic plague) is sweeping across the country. Young Robin is sent away to become a knight like his father, but his dreams are endangered when he loses the use of his legs. A doctor reassures Robin that the weakness in his legs is not caused by the plague and the doctor is supposed to come and help him but does not. His parents are away, serving the king and queen during war, and the servants abandon the house, fearing the plague. Robin is saved by Brother Luke, a friar, who finds him and takes him to a monastery and cares for him.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who surfed for patrick swayze in point break ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Lori Petty, Reeves and Swayze trained with professional surfer Dennis Jarvis on the Hawaiian island of Kauai for two months before filming.\n2. Swayze had been on a surfboard a few times before the training.\n3. Swayze refused to use a stunt double for the surfing scenes.\n4. Swayze also performed the skydiving scenes himself.\n5. Swayze based aspects of his character on his stunt double, Darrick Doerner, a big wave surfer.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: Two months before filming, Lori Petty, Reeves and Swayze trained with former world-class professional surfer Dennis Jarvis on the Hawaiian island of Kauai. Jarvis remembers, 'Patrick said he'd been on a board a couple of times, Keanu definitely had not surfed before, and Lori had never been in the ocean in her life. Shooting the surfing sequences proved to be challenging for both actors, with Swayze cracking four of his ribs. For many of the surfing scenes, he refused to use a stunt double as he never had one for fight scenes or car chases. He also did the skydiving scenes himself and the film's aerial jump instructor Jim Wallace found that the actor was a natural and took to it right away. The actor ended up making 55 jumps for the film. Swayze actually based aspects of his character after one of his stunt doubles, Darrick Doerner, a top big wave surfer. After learning to surf for the film, Reeves took a liking to it and took it up as a hobby.\nQUESTION: who surfed for patrick swayze in point break ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.376413",
+          "duration": 8.321124,
+          "cost": 0.01662
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Lori Petty, Reeves and Swayze trained with professional surfer Dennis Jarvis on the Hawaiian island of Kauai for two months before filming."
+          },
+          {
+            "meta": {},
+            "text": "2. Swayze had been on a surfboard a few times before the training."
+          },
+          {
+            "meta": {},
+            "text": "3. Swayze refused to use a stunt double for the surfing scenes."
+          },
+          {
+            "meta": {},
+            "text": "4. Swayze also performed the skydiving scenes himself."
+          },
+          {
+            "meta": {},
+            "text": "5. Swayze based aspects of his character on his stunt double, Darrick Doerner, a big wave surfer."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Two months before filming, Lori Petty, Reeves and Swayze trained with former world-class professional surfer Dennis Jarvis on the Hawaiian island of Kauai. Jarvis remembers, 'Patrick said he'd been on a board a couple of times, Keanu definitely had not surfed before, and Lori had never been in the ocean in her life. Shooting the surfing sequences proved to be challenging for both actors, with Swayze cracking four of his ribs. For many of the surfing scenes, he refused to use a stunt double as he never had one for fight scenes or car chases. He also did the skydiving scenes himself and the film's aerial jump instructor Jim Wallace found that the actor was a natural and took to it right away. The actor ended up making 55 jumps for the film. Swayze actually based aspects of his character after one of his stunt doubles, Darrick Doerner, a top big wave surfer. After learning to surf for the film, Reeves took a liking to it and took it up as a hobby.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what is the film and publication board role ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The Film and Publication Board, also known as FPB, is a content-classification and censorship authority in South Africa.\n2. It operates under the Minister of Communications.\n3. The FPB was established in 1998 under the Films and Publications Act.\n4. Its main role is to tackle issues of child pornography and child abuse.\n5. It also provides ratings to publicly consumed media such as movies, music and television programs.\n6. Its mandate can be considered one of state censorship.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The Film and Publication Board, often shortened to FPB, is a content-classification and censorship authority in South Africa, operating under the Minister of Communications. The FPB was established in 1998 under the Films and Publications Act, ostensibly to tackle issues of child pornography and child abuse, as well as to provide ratings to publicly consumed media such as movies, music and television programs. Under these directives, its mandate can be considered one of state censorship.\nQUESTION: what is the film and publication board role ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.383798",
+          "duration": 7.22489,
+          "cost": 0.01251
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The Film and Publication Board, also known as FPB, is a content-classification and censorship authority in South Africa."
+          },
+          {
+            "meta": {},
+            "text": "2. It operates under the Minister of Communications."
+          },
+          {
+            "meta": {},
+            "text": "3. The FPB was established in 1998 under the Films and Publications Act."
+          },
+          {
+            "meta": {},
+            "text": "4. Its main role is to tackle issues of child pornography and child abuse."
+          },
+          {
+            "meta": {},
+            "text": "5. It also provides ratings to publicly consumed media such as movies, music and television programs."
+          },
+          {
+            "meta": {},
+            "text": "6. Its mandate can be considered one of state censorship."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The Film and Publication Board, often shortened to FPB, is a content-classification and censorship authority in South Africa, operating under the Minister of Communications. The FPB was established in 1998 under the Films and Publications Act, ostensibly to tackle issues of child pornography and child abuse, as well as to provide ratings to publicly consumed media such as movies, music and television programs. Under these directives, its mandate can be considered one of state censorship.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "when did the olympics first allow professional athletes ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. A dispute arose before the 1984 Winter Olympics about the definition of a professional player.\n2. The IOC initially ruled that players who had signed an NHL contract but played less than ten games were eligible.\n3. The United States Olympic Committee disagreed, stating that any player contracted with an NHL team was a professional and not eligible.\n4. An emergency IOC meeting ruled that NHL-contracted players were eligible if they hadn't played in any NHL games.\n5. This ruling made five players on Olympic rosters ineligible.\n6. Players from other professional leagues, like the World Hockey Association, were allowed to play.\n7. Alan Eagleson, a Canadian hockey official, claimed the rule only applied to the NHL.\n8. Murray Costello of the CAHA suggested a possible Canadian withdrawal.\n9. In 1986, the IOC voted to allow all athletes to compete in the Olympic Games starting in 1988.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: Before the 1984 Winter Olympics, a dispute formed over what made a player a professional. The IOC had adopted a rule that made any player who had signed an NHL contract but played less than ten games in the league eligible. However, the United States Olympic Committee maintained that any player contracted with an NHL team was a professional and therefore not eligible to play. The IOC held an emergency meeting that ruled NHL-contracted players were eligible, as long as they had not played in any NHL games. This made five players on Olympic rosters—one Austrian, two Italians and two Canadians—ineligible. Players who had played in other professional leagues—such as the World Hockey Association—were allowed to play. Canadian hockey official Alan Eagleson stated that the rule was only applied to the NHL and that professionally contracted players in European leagues were still considered amateurs. Murray Costello of the CAHA suggested that a Canadian withdrawal was possible. In 1986, the IOC voted to allow all athletes to compete in Olympic Games starting in 1988, but let the individual sport federations decide if they wanted to allow professionals.\nQUESTION: when did the olympics first allow professional athletes ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.388763",
+          "duration": 14.104408,
+          "cost": 0.02157
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. A dispute arose before the 1984 Winter Olympics about the definition of a professional player."
+          },
+          {
+            "meta": {},
+            "text": "2. The IOC initially ruled that players who had signed an NHL contract but played less than ten games were eligible."
+          },
+          {
+            "meta": {},
+            "text": "3. The United States Olympic Committee disagreed, stating that any player contracted with an NHL team was a professional and not eligible."
+          },
+          {
+            "meta": {},
+            "text": "4. An emergency IOC meeting ruled that NHL-contracted players were eligible if they hadn't played in any NHL games."
+          },
+          {
+            "meta": {},
+            "text": "5. This ruling made five players on Olympic rosters ineligible."
+          },
+          {
+            "meta": {},
+            "text": "6. Players from other professional leagues, like the World Hockey Association, were allowed to play."
+          },
+          {
+            "meta": {},
+            "text": "7. Alan Eagleson, a Canadian hockey official, claimed the rule only applied to the NHL."
+          },
+          {
+            "meta": {},
+            "text": "8. Murray Costello of the CAHA suggested a possible Canadian withdrawal."
+          },
+          {
+            "meta": {},
+            "text": "9. In 1986, the IOC voted to allow all athletes to compete in the Olympic Games starting in 1988."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Before the 1984 Winter Olympics, a dispute formed over what made a player a professional. The IOC had adopted a rule that made any player who had signed an NHL contract but played less than ten games in the league eligible. However, the United States Olympic Committee maintained that any player contracted with an NHL team was a professional and therefore not eligible to play. The IOC held an emergency meeting that ruled NHL-contracted players were eligible, as long as they had not played in any NHL games. This made five players on Olympic rosters—one Austrian, two Italians and two Canadians—ineligible. Players who had played in other professional leagues—such as the World Hockey Association—were allowed to play. Canadian hockey official Alan Eagleson stated that the rule was only applied to the NHL and that professionally contracted players in European leagues were still considered amateurs. Murray Costello of the CAHA suggested that a Canadian withdrawal was possible. In 1986, the IOC voted to allow all athletes to compete in Olympic Games starting in 1988, but let the individual sport federations decide if they wanted to allow professionals.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who wears the yellow jersey tour de france ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The leader of the general classification wears the yellow jersey in the Tour de France.\n2. The general classification determines the winner of the Tour de France.\n3. The tradition of the yellow jersey started in 1919.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The general classification is the most important classification, the one by which the winner of the Tour de France is determined. Since 1919, the leader of the general classification wears the yellow jersey (French: maillot jaunepronounced [majo ʒon]).\nQUESTION: who wears the yellow jersey tour de france ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.395760",
+          "duration": 6.166394,
+          "cost": 0.00816
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The leader of the general classification wears the yellow jersey in the Tour de France."
+          },
+          {
+            "meta": {},
+            "text": "2. The general classification determines the winner of the Tour de France."
+          },
+          {
+            "meta": {},
+            "text": "3. The tradition of the yellow jersey started in 1919."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The general classification is the most important classification, the one by which the winner of the Tour de France is determined. Since 1919, the leader of the general classification wears the yellow jersey (French: maillot jaunepronounced [majo ʒon]).",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who is the founder of the 7th day adventist church ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The Seventh-day Adventist Church originated from the Millerite movement of the 1830s to the 1840s.\n2. The church was officially founded in 1863.\n3. Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews were prominent figures in the early church.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The Seventh-day Adventist Church had its roots in the Millerite movement of the 1830s to the 1840s, during the period of the Second Great Awakening, and was officially founded in 1863. Prominent figures in the early church included Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews. Over the ensuing decades the church expanded from its original base in New England to become an international organization. Significant developments such the reviews initiated by evangelicals Donald Barnhouse and Walter Martin, in the 20th century led to its recognition as a Christian denomination.\nQUESTION: who is the founder of the 7th day adventist church ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.401885",
+          "duration": 7.520803,
+          "cost": 0.01158
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The Seventh-day Adventist Church originated from the Millerite movement of the 1830s to the 1840s."
+          },
+          {
+            "meta": {},
+            "text": "2. The church was officially founded in 1863."
+          },
+          {
+            "meta": {},
+            "text": "3. Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews were prominent figures in the early church."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The Seventh-day Adventist Church had its roots in the Millerite movement of the 1830s to the 1840s, during the period of the Second Great Awakening, and was officially founded in 1863. Prominent figures in the early church included Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews. Over the ensuing decades the church expanded from its original base in New England to become an international organization. Significant developments such the reviews initiated by evangelicals Donald Barnhouse and Walter Martin, in the 20th century led to its recognition as a Christian denomination.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "where is california state university east bay located ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. California State University, East Bay is located in Hayward, California, United States.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: California State University, East Bay (commonly referred to as Cal State East Bay, CSU East Bay, or CSUEB) is a publicuniversity located in Hayward, California, United States. The university, as part of the 23-campus California State University system, offers 136 undergraduate and 60 post-baccalaureate a reas of study. California State University, East Bay has been designated a top–tier institution among master's–granting universities in the west by U.S. News & World Report[6] and has been recognized as a 'Best in the West' college by the Princeton Review.[6]\nQUESTION: where is california state university east bay located ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.408294",
+          "duration": 3.724354,
+          "cost": 0.0087
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. California State University, East Bay is located in Hayward, California, United States."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "California State University, East Bay (commonly referred to as Cal State East Bay, CSU East Bay, or CSUEB) is a publicuniversity located in Hayward, California, United States. The university, as part of the 23-campus California State University system, offers 136 undergraduate and 60 post-baccalaureate a reas of study. California State University, East Bay has been designated a top–tier institution among master's–granting universities in the west by U.S. News & World Report[6] and has been recognized as a 'Best in the West' college by the Princeton Review.[6]",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "which is the highest peak of southern india ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Anamudi is a mountain in the Indian state of Kerala.\n2. It is the highest peak in Kerala and South India.\n3. The elevation of Anamudi is 2,695 metres.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: Anamudi (Malayalam pronunciation: ​[aːnɐmʊɖi], ആനമുടി) is a mountain located in the Indian state of Kerala. It is the highest peak in the Kerala and South India, at an elevation of 2,695 metres (8,842 ft) and a topographic prominence of 2,479 metres (8,133 ft).[3] It lies on the border of Devikulam Taluk, Idukki district and Kothamangalam Taluk, Ernakulam district. The name Anamudi literally translates to 'elephant's forehead,' a reference to the resemblance of the mountain to an elephant's head.\nQUESTION: which is the highest peak of southern india ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.412791",
+          "duration": 4.525898,
+          "cost": 0.010950000000000001
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Anamudi is a mountain in the Indian state of Kerala."
+          },
+          {
+            "meta": {},
+            "text": "2. It is the highest peak in Kerala and South India."
+          },
+          {
+            "meta": {},
+            "text": "3. The elevation of Anamudi is 2,695 metres."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Anamudi (Malayalam pronunciation: ​[aːnɐmʊɖi], ആനമുടി) is a mountain located in the Indian state of Kerala. It is the highest peak in the Kerala and South India, at an elevation of 2,695 metres (8,842 ft) and a topographic prominence of 2,479 metres (8,133 ft).[3] It lies on the border of Devikulam Taluk, Idukki district and Kothamangalam Taluk, Ernakulam district. The name Anamudi literally translates to 'elephant's forehead,' a reference to the resemblance of the mountain to an elephant's head.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "where did the saying quit cold turkey come from ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The term 'goose bumps' refers to piloerection that happens when people suddenly stop using opioids.\n2. This condition is common among individuals addicted to heroin.\n3. The phrase 'kick the habit' is related to the muscle spasms that occur in the same situation.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The 'goose bumps' (piloerection) that occurs with sudden discontinuation in persons dependent on opioids, frequently persons addicted to heroin. Similarly the term 'kick the habit' alludes to the muscle spasms that also occur.\nQUESTION: where did the saying quit cold turkey come from ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.419798",
+          "duration": 7.667056,
+          "cost": 0.00876
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The term 'goose bumps' refers to piloerection that happens when people suddenly stop using opioids."
+          },
+          {
+            "meta": {},
+            "text": "2. This condition is common among individuals addicted to heroin."
+          },
+          {
+            "meta": {},
+            "text": "3. The phrase 'kick the habit' is related to the muscle spasms that occur in the same situation."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The 'goose bumps' (piloerection) that occurs with sudden discontinuation in persons dependent on opioids, frequently persons addicted to heroin. Similarly the term 'kick the habit' alludes to the muscle spasms that also occur.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what game are they playing in casino royale ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Baccarat chemin-de-fer is the favoured game of James Bond.\n2. Bond plays the game in numerous novels, including his 1953 debut, Casino Royale.\n3. The entire plot of Casino Royale revolves around a game between Bond and SMERSH operative Le Chiffre.\n4. The game is also featured in several filmed versions of the novels, including the 1954 television adaption Casino Royale.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: Baccarat chemin-de-fer is the favoured game of James Bond, the fictional secret agent created by Ian Fleming.[25] Bond plays the game in numerous novels, most notably his 1953 debut, Casino Royale, in which the entire plot revolves around a game between Bond and SMERSH operative Le Chiffre; the unabridged version of the novel includes a primer to the game for readers who are unfamiliar with it. It is also featured in several filmed versions of the novels, including the 1954 television adaption Casino Royale (Climax!), where Bond, referred to as 'Jimmy' by several characters, bankrupts Le Chiffre in order to have him eliminated by his Soviet superiors; Dr. No, where Bond is first introduced playing the game in film; Thunderball; the 1967 version of Casino Royale, which is the most detailed treatment of a baccarat game in any Bond film; On Her Majesty's Secret Service; For Your Eyes Only; and GoldenEye.\nQUESTION: what game are they playing in casino royale ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.425798",
+          "duration": 6.950265,
+          "cost": 0.015120000000000001
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Baccarat chemin-de-fer is the favoured game of James Bond."
+          },
+          {
+            "meta": {},
+            "text": "2. Bond plays the game in numerous novels, including his 1953 debut, Casino Royale."
+          },
+          {
+            "meta": {},
+            "text": "3. The entire plot of Casino Royale revolves around a game between Bond and SMERSH operative Le Chiffre."
+          },
+          {
+            "meta": {},
+            "text": "4. The game is also featured in several filmed versions of the novels, including the 1954 television adaption Casino Royale."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Baccarat chemin-de-fer is the favoured game of James Bond, the fictional secret agent created by Ian Fleming.[25] Bond plays the game in numerous novels, most notably his 1953 debut, Casino Royale, in which the entire plot revolves around a game between Bond and SMERSH operative Le Chiffre; the unabridged version of the novel includes a primer to the game for readers who are unfamiliar with it. It is also featured in several filmed versions of the novels, including the 1954 television adaption Casino Royale (Climax!), where Bond, referred to as 'Jimmy' by several characters, bankrupts Le Chiffre in order to have him eliminated by his Soviet superiors; Dr. No, where Bond is first introduced playing the game in film; Thunderball; the 1967 version of Casino Royale, which is the most detailed treatment of a baccarat game in any Bond film; On Her Majesty's Secret Service; For Your Eyes Only; and GoldenEye.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who has the power to convict the president upon impeachment ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Impeachment in the United States is a power of the legislature.\n2. The legislature can bring formal charges against a civil officer of government for alleged crimes.\n3. The trial on such charges and subsequent removal of an official upon conviction is separate from the act of impeachment.\n4. The Senate has the power to acquit or convict the impeached official.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: Impeachment in the United States is an enumerated power of the legislature that allows formal charges to be brought against a civil officer of government for crimes alleged to have been committed. Most impeachments have concerned alleged crimes committed while in office, though there have been a few cases in which Congress has impeached and convicted officials partly for prior crimes. The actual trial on such charges, and subsequent removal of an official upon conviction, is separate from the act of impeachment itself. Impeachment proceedings have been initiated against several presidents of the United States. Andrew Johnson and Bill Clinton are the only two presidents to have been successfully impeached by the House of Representatives, and both were later acquitted by the Senate. The impeachment process against Richard Nixon was never completed, as Nixon resigned his office before the vote of the full House for impeachment, but such a vote was widely expected to pass, and the threat of it and a subsequent conviction in the Senate was the impetus for Nixon's departure. To date, no president has been removed from office by impeachment and conviction. The impeached official continues in office until conviction.\nQUESTION: who has the power to convict the president upon impeachment ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.433322",
+          "duration": 6.720187,
+          "cost": 0.014850000000000002
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Impeachment in the United States is a power of the legislature."
+          },
+          {
+            "meta": {},
+            "text": "2. The legislature can bring formal charges against a civil officer of government for alleged crimes."
+          },
+          {
+            "meta": {},
+            "text": "3. The trial on such charges and subsequent removal of an official upon conviction is separate from the act of impeachment."
+          },
+          {
+            "meta": {},
+            "text": "4. The Senate has the power to acquit or convict the impeached official."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Impeachment in the United States is an enumerated power of the legislature that allows formal charges to be brought against a civil officer of government for crimes alleged to have been committed. Most impeachments have concerned alleged crimes committed while in office, though there have been a few cases in which Congress has impeached and convicted officials partly for prior crimes. The actual trial on such charges, and subsequent removal of an official upon conviction, is separate from the act of impeachment itself. Impeachment proceedings have been initiated against several presidents of the United States. Andrew Johnson and Bill Clinton are the only two presidents to have been successfully impeached by the House of Representatives, and both were later acquitted by the Senate. The impeachment process against Richard Nixon was never completed, as Nixon resigned his office before the vote of the full House for impeachment, but such a vote was widely expected to pass, and the threat of it and a subsequent conviction in the Senate was the impetus for Nixon's departure. To date, no president has been removed from office by impeachment and conviction. The impeached official continues in office until conviction.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "how long have we been using oil as a fuel source ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Petroleum was used in ancient China over 2000 years ago.\n2. The Chinese were the first to use petroleum as fuel in the fourth century BCE.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The use of petroleum dates back to ancient China more than 2000 years ago. In I Ching, one of the earliest Chinese writings cites the use of oil in its raw state without refining was first discovered, extracted, and used in China in the first century BCE. In addition, the Chinese were the first to use petroleum as fuel as the early as the fourth century BCE.[2][3][4][5]\nQUESTION: how long have we been using oil as a fuel source ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.438583",
+          "duration": 6.31925,
+          "cost": 0.00834
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Petroleum was used in ancient China over 2000 years ago."
+          },
+          {
+            "meta": {},
+            "text": "2. The Chinese were the first to use petroleum as fuel in the fourth century BCE."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The use of petroleum dates back to ancient China more than 2000 years ago. In I Ching, one of the earliest Chinese writings cites the use of oil in its raw state without refining was first discovered, extracted, and used in China in the first century BCE. In addition, the Chinese were the first to use petroleum as fuel as the early as the fourth century BCE.[2][3][4][5]",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "who is presiding officer for impeachment trials against the president of the phil ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The Chief Justice of the Supreme Court of the Philippines presides over impeachment trials against the President of the Philippines.\n2. The Chief Justice does not vote in these trials.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: If the President of the Philippines is on trial, such as in 2001, the Chief Justice of the Supreme Court of the Philippines shall preside but not vote.\nQUESTION: who is presiding officer for impeachment trials against the president of the phil ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.443622",
+          "duration": 4.70014,
+          "cost": 0.0070799999999999995
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The Chief Justice of the Supreme Court of the Philippines presides over impeachment trials against the President of the Philippines."
+          },
+          {
+            "meta": {},
+            "text": "2. The Chief Justice does not vote in these trials."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "If the President of the Philippines is on trial, such as in 2001, the Chief Justice of the Supreme Court of the Philippines shall preside but not vote.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "how did the red wings get their name ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The Detroit Red Wings professional ice hockey club was originally founded as the Detroit Cougars on September 25, 1926.\n2. In 1930, the team changed their name to the Detroit Falcons.\n3. The team was bought out of receivership by James E. Norris and renamed as the Detroit Red Wings in 1932.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: The Detroit Red Wings professional ice hockey club was founded as the Detroit Cougars on September 25, 1926, one of three teams to join the National Hockey League (NHL) in 1926. With the demise of the Western Canada Hockey League (WCHL), the rights to the players of the Victoria Cougars were purchased by a Detroit group led by Charles A. Hughes who kept the name 'Cougars' for their NHL club. The new team struggled financially; in 1930, the Cougars changed their name to the Detroit Falcons, and after being bought out of receivership by James E. Norris were renamed as the Detroit Red Wings in 1932. The team played their first game on November 18, 1926, and won their first two Stanley Cup titles in 1936 and 1937. The Red Wings have won the Cup eleven times, more than any other American team in NHL history.\nQUESTION: how did the red wings get their name ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.446631",
+          "duration": 5.912459,
+          "cost": 0.01374
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The Detroit Red Wings professional ice hockey club was originally founded as the Detroit Cougars on September 25, 1926."
+          },
+          {
+            "meta": {},
+            "text": "2. In 1930, the team changed their name to the Detroit Falcons."
+          },
+          {
+            "meta": {},
+            "text": "3. The team was bought out of receivership by James E. Norris and renamed as the Detroit Red Wings in 1932."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "The Detroit Red Wings professional ice hockey club was founded as the Detroit Cougars on September 25, 1926, one of three teams to join the National Hockey League (NHL) in 1926. With the demise of the Western Canada Hockey League (WCHL), the rights to the players of the Victoria Cougars were purchased by a Detroit group led by Charles A. Hughes who kept the name 'Cougars' for their NHL club. The new team struggled financially; in 1930, the Cougars changed their name to the Detroit Falcons, and after being bought out of receivership by James E. Norris were renamed as the Detroit Red Wings in 1932. The team played their first game on November 18, 1926, and won their first two Stanley Cup titles in 1936 and 1937. The Red Wings have won the Cup eleven times, more than any other American team in NHL history.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "what type of dog was in turner and hooch ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. The Dogue de Bordeaux was featured in the movie Turner & Hooch.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: Although the Dogue de Bordeaux first arrived in the USA in the 1890s for the show ring, the first documented Dogues de Bordeaux of modern times appeared in 1959 [clarification needed], Fidelle de Fenelon; and in 1968, Rugby de la Maison des Arbres. Between 1969 and 1980, imported Dogues de Bordeaux in the USA were scarce, limited to a few breeders who worked closely with the French Dogue de Bordeaux Club, the SADB. The breed was first 'officially' introduced to American purebred enthusiasts in an article written in 1982 and by the American anthropologist, Dr. Carl Semencic for 'Dog World' magazine. That article, entitled 'Introducing the Dogue de Bordeaux', was followed by chapters dedicated to the Dogue in Semencic's books on dogs, published by T.F.H. Publications of Neptune, New Jersey. When Semencic's first article on the breed was published, there were no Bordeaux Dogues in the United States. There were 600 examples left in the world, mostly in France, the Netherlands and ast Berlin, and the breed's numbers were on the decline. Much later, in 1989, the typical American family saw the Dogue de Bordeaux for the first time on the big screen in Touchstone's movie Turner & Hooch about a policeman and his canine partner, although many people [who?] did not know that the massive slobbering animal was a Dogue de Bordeaux.\nQUESTION: what type of dog was in turner and hooch ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.454629",
+          "duration": 4.991365,
+          "cost": 0.01428
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. The Dogue de Bordeaux was featured in the movie Turner & Hooch."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "Although the Dogue de Bordeaux first arrived in the USA in the 1890s for the show ring, the first documented Dogues de Bordeaux of modern times appeared in 1959 [clarification needed], Fidelle de Fenelon; and in 1968, Rugby de la Maison des Arbres. Between 1969 and 1980, imported Dogues de Bordeaux in the USA were scarce, limited to a few breeders who worked closely with the French Dogue de Bordeaux Club, the SADB. The breed was first 'officially' introduced to American purebred enthusiasts in an article written in 1982 and by the American anthropologist, Dr. Carl Semencic for 'Dog World' magazine. That article, entitled 'Introducing the Dogue de Bordeaux', was followed by chapters dedicated to the Dogue in Semencic's books on dogs, published by T.F.H. Publications of Neptune, New Jersey. When Semencic's first article on the breed was published, there were no Bordeaux Dogues in the United States. There were 600 examples left in the world, mostly in France, the Netherlands and ast Berlin, and the breed's numbers were on the decline. Much later, in 1989, the typical American family saw the Dogue de Bordeaux for the first time on the big screen in Touchstone's movie Turner & Hooch about a policeman and his canine partner, although many people [who?] did not know that the massive slobbering animal was a Dogue de Bordeaux.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {},
+        "text": "where does water come from in cell respiration ?"
+      },
+      "facts": {
+        "llm_answer": {
+          "meta": {},
+          "text": "1. Oxidative phosphorylation in eukaryotes happens in the mitochondrial cristae.\n2. The electron transport chain creates a proton gradient across the inner membrane boundary.\n3. The NADH oxidized from the Krebs cycle is used in this process.\n4. ATP is produced by the ATP synthase enzyme using the chemiosmotic gradient.\n5. The electrons are eventually transferred to exogenous oxygen.\n6. Water is formed with the addition of two protons to the exogenous oxygen.",
+          "prompt": {
+            "meta": {},
+            "user": "PARAGRAPHE: In eukaryotes, oxidative phosphorylation occurs in the mitochondrial cristae. It comprises the electron transport chain that establishes a proton gradient (chemiosmotic potential) across the boundary of inner membrane by oxidizing the NADH produced from the Krebs cycle. ATP is synthesized by the ATP synthase enzyme when the chemiosmotic gradient is used to drive the phosphorylation of ADP. The electrons are finally transferred to exogenous oxygen and, with the addition of two protons, water is formed.\nQUESTION: where does water come from in cell respiration ?",
+            "system": "Génère des phrases numérotées courtes et simples qui décrivent ce PARAGRAPHE.\nGénère le moins de phrases possibles.\nNe génère que des phrases qui permettent de répondre à la QUESTION.\nChaque phrase ne doit contenir qu'une seule information.\nLes phrases ne doivent pas contenir de référence à un document, un paragraphe, une source ou une page.\nNe génère aucune phrase redondante."
+          },
+          "name": "gpt-4",
+          "full_name": "gpt-4-0613",
+          "timestamp": "2024-06-04T23:46:39.459629",
+          "duration": 8.578185,
+          "cost": 0.013049999999999999
+        },
+        "meta": {},
+        "items": [
+          {
+            "meta": {},
+            "text": "1. Oxidative phosphorylation in eukaryotes happens in the mitochondrial cristae."
+          },
+          {
+            "meta": {},
+            "text": "2. The electron transport chain creates a proton gradient across the inner membrane boundary."
+          },
+          {
+            "meta": {},
+            "text": "3. The NADH oxidized from the Krebs cycle is used in this process."
+          },
+          {
+            "meta": {},
+            "text": "4. ATP is produced by the ATP synthase enzyme using the chemiosmotic gradient."
+          },
+          {
+            "meta": {},
+            "text": "5. The electrons are eventually transferred to exogenous oxygen."
+          },
+          {
+            "meta": {},
+            "text": "6. Water is formed with the addition of two protons to the exogenous oxygen."
+          }
+        ]
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": null,
+            "meta": {},
+            "text": "In eukaryotes, oxidative phosphorylation occurs in the mitochondrial cristae. It comprises the electron transport chain that establishes a proton gradient (chemiosmotic potential) across the boundary of inner membrane by oxidizing the NADH produced from the Krebs cycle. ATP is synthesized by the ATP synthase enzyme when the chemiosmotic gradient is used to drive the phosphorylation of ADP. The electrons are finally transferred to exogenous oxygen and, with the addition of two protons, water is formed.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

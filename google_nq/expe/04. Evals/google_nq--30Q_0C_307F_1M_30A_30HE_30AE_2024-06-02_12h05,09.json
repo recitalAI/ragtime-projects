@@ -4,6 +4,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "what is the story behind 5 nights at freddy's ?"
       },
@@ -106,11 +107,31 @@
             "meta": {},
             "text": "The series is centered on the story of a fictional restaurant named Freddy Fazbear's Pizza, a pastiche of restaurants like Chuck E. Cheese's and ShowBiz Pizza Place. The first three games involve the player working as a nighttime security guard, in which they must utilize several tools, most notably checking security cameras, to survive against animatronic characters, which become mobile and homicidal after-hours. The fourth game, which uses different gameplay mechanics from its predecessors, takes place in the house of a child who must defend against nightmarish versions of the animatronics by closing doors and fleeing on foot. The fifth game takes place in a maintenance facility owned by a sister company of Freddy Fazbear's Pizza. The player character is a technician instead of a night guard, who must do different tasks each night as told by an AI voice heard in the game. In the sixth game, the player acts as the owner of a pizzeria which they must decorate with payable items, and must also work the night shift for their pizzeria, which plays similarly to previous games.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The series is centered on the story of a fictional restaurant named Freddy Fazbear's Pizza (1), a pastiche of restaurants like Chuck E. Cheese's and ShowBiz Pizza Place (2). The first three games involve the player working as a nighttime security guard (3), in which they must utilize several tools, most notably checking security cameras (4), to survive against animatronic characters, which become mobile and homicidal after-hours (5). The fourth game, which uses different gameplay mechanics from its predecessors, takes place in the house of a child (6) who must defend against nightmarish versions of the animatronics (7) by closing doors and fleeing on foot (8). The fifth game takes place in a maintenance facility (9) owned by a sister company of Freddy Fazbear's Pizza (10). The player character is a technician instead of a night guard (11), who must do different tasks each night (12) as told by an AI voice heard in the game (13). In the sixth game, the player acts as the owner of a pizzeria (14) which they must decorate with payable items (15), and must also work the night shift for their pizzeria (16), which plays similarly to previous games (17).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. The series is about a fictional restaurant named Freddy Fazbear's Pizza.\n2. 2. Freddy Fazbear's Pizza is inspired by Chuck E. Cheese's and ShowBiz Pizza Place.\n3. 3. The first three games feature the player as a nighttime security guard.\n4. 4. Players must use tools like security cameras to survive.\n5. 5. Animatronic characters become mobile and homicidal after-hours.\n6. 6. The fourth game takes place in a child's house.\n7. 7. The child must defend against nightmarish animatronics.\n8. 8. The child uses doors and fleeing to survive.\n9. 9. The fifth game is set in a maintenance facility.\n10. 10. The facility is owned by a sister company of Freddy Fazbear's Pizza.\n11. 11. The player is a technician in the fifth game.\n12. 12. The technician performs different tasks each night.\n13. 13. An AI voice guides the player in the fifth game.\n14. 14. In the sixth game, the player is the owner of a pizzeria.\n15. 15. The player decorates the pizzeria with payable items.\n16. 16. The player also works the night shift in the sixth game.\n17. 17. The night shift gameplay in the sixth game is similar to previous games.\n\n-- REPONSE --\nThe series is centered on the story of a fictional restaurant named Freddy Fazbear's Pizza, a pastiche of restaurants like Chuck E. Cheese's and ShowBiz Pizza Place. The first three games involve the player working as a nighttime security guard, in which they must utilize several tools, most notably checking security cameras, to survive against animatronic characters, which become mobile and homicidal after-hours. The fourth game, which uses different gameplay mechanics from its predecessors, takes place in the house of a child who must defend against nightmarish versions of the animatronics by closing doors and fleeing on foot. The fifth game takes place in a maintenance facility owned by a sister company of Freddy Fazbear's Pizza. The player character is a technician instead of a night guard, who must do different tasks each night as told by an AI voice heard in the game. In the sixth game, the player acts as the owner of a pizzeria which they must decorate with payable items, and must also work the night shift for their pizzeria, which plays similarly to previous games.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.515140",
+                "duration": 6.674811,
+                "cost": 0.007125
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]"
+              },
+              "text": "The series is centered on the story of a fictional restaurant named Freddy Fazbear's Pizza (1), a pastiche of restaurants like Chuck E. Cheese's and ShowBiz Pizza Place (2). The first three games involve the player working as a nighttime security guard (3), in which they must utilize several tools, most notably checking security cameras (4), to survive against animatronic characters, which become mobile and homicidal after-hours (5). The fourth game, which uses different gameplay mechanics from its predecessors, takes place in the house of a child (6) who must defend against nightmarish versions of the animatronics (7) by closing doors and fleeing on foot (8). The fifth game takes place in a maintenance facility (9) owned by a sister company of Freddy Fazbear's Pizza (10). The player character is a technician instead of a night guard (11), who must do different tasks each night (12) as told by an AI voice heard in the game (13). In the sixth game, the player acts as the owner of a pizzeria (14) which they must decorate with payable items (15), and must also work the night shift for their pizzeria (16), which plays similarly to previous games (17).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -119,6 +140,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "what was the prison called in the green mile ?"
       },
@@ -209,11 +231,31 @@
             "meta": {},
             "text": "In 1935, Paul supervises officers Brutus Howell, Dean Stanton, Harry Terwilliger, and Percy Wetmore at Cold Mountain Penitentiary. Paul is suffering from a severe bladder infection and receives John Coffey, a physically imposing but mentally challenged black man, into his custody. John had been sentenced to death after being convicted of raping and murdering two white girls. One of the other inmates is a Native-American named Arlen Bitterbuck, who is charged with murder and is the first to be executed. Percy demonstrates a severe sadistic streak, but, as the nephew of Louisiana's First Lady, he is beyond reproach. He is particularly abusive with inmate Eduard Delacroix; he breaks Del's fingers with his baton, steps on a pet mouse named Mr. Jingles, which Del had adopted, repeatedly calls him by a gay slur, and ultimately sabotages his execution by failing to soak the sponge used to conduct electricity to Del's head; Del dies screaming in pain.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "In 1935, Paul supervises officers Brutus Howell, Dean Stanton, Harry Terwilliger, and Percy Wetmore at Cold Mountain Penitentiary (1). Paul is suffering from a severe bladder infection (2) and receives John Coffey, a physically imposing but mentally challenged black man (3), into his custody. John had been sentenced to death after being convicted of raping and murdering two white girls (4). One of the other inmates is a Native-American named Arlen Bitterbuck, who is charged with murder (5) and is the first to be executed (6). Percy demonstrates a severe sadistic streak (7), but, as the nephew of Louisiana's First Lady, he is beyond reproach (8). He is particularly abusive with inmate Eduard Delacroix (9); he breaks Del's fingers with his baton (10), steps on a pet mouse named Mr. Jingles (11), which Del had adopted, repeatedly calls him by a gay slur (12), and ultimately sabotages his execution by failing to soak the sponge used to conduct electricity to Del's head (13); Del dies screaming in pain (14).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. En 1935, Paul supervise des officiers à la prison de Cold Mountain.\n2. 2. Paul souffre d'une grave infection de la vessie.\n3. 3. John Coffey est un homme noir physiquement imposant mais mentalement déficient.\n4. 4. John Coffey est condamné à mort pour le viol et le meurtre de deux filles blanches.\n5. 5. Arlen Bitterbuck est un Amérindien accusé de meurtre.\n6. 6. Arlen Bitterbuck est le premier à être exécuté.\n7. 7. Percy Wetmore montre une tendance sadique sévère.\n8. 8. Percy est le neveu de la Première Dame de Louisiane.\n9. 9. Percy est particulièrement abusif envers l'inmate Eduard Delacroix.\n10. 10. Percy casse les doigts de Delacroix avec sa matraque.\n11. 11. Percy marche sur une souris de compagnie nommée Mr. Jingles.\n12. 12. Percy appelle Delacroix par une insulte homophobe.\n13. 13. Percy sabote l'exécution de Delacroix en ne mouillant pas l'éponge.\n14. 14. Delacroix meurt en hurlant de douleur.\n\n-- REPONSE --\nIn 1935, Paul supervises officers Brutus Howell, Dean Stanton, Harry Terwilliger, and Percy Wetmore at Cold Mountain Penitentiary. Paul is suffering from a severe bladder infection and receives John Coffey, a physically imposing but mentally challenged black man, into his custody. John had been sentenced to death after being convicted of raping and murdering two white girls. One of the other inmates is a Native-American named Arlen Bitterbuck, who is charged with murder and is the first to be executed. Percy demonstrates a severe sadistic streak, but, as the nephew of Louisiana's First Lady, he is beyond reproach. He is particularly abusive with inmate Eduard Delacroix; he breaks Del's fingers with his baton, steps on a pet mouse named Mr. Jingles, which Del had adopted, repeatedly calls him by a gay slur, and ultimately sabotages his execution by failing to soak the sponge used to conduct electricity to Del's head; Del dies screaming in pain.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.534448",
+                "duration": 4.854948,
+                "cost": 0.006705000000000001
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]"
+              },
+              "text": "In 1935, Paul supervises officers Brutus Howell, Dean Stanton, Harry Terwilliger, and Percy Wetmore at Cold Mountain Penitentiary (1). Paul is suffering from a severe bladder infection (2) and receives John Coffey, a physically imposing but mentally challenged black man (3), into his custody. John had been sentenced to death after being convicted of raping and murdering two white girls (4). One of the other inmates is a Native-American named Arlen Bitterbuck, who is charged with murder (5) and is the first to be executed (6). Percy demonstrates a severe sadistic streak (7), but, as the nephew of Louisiana's First Lady, he is beyond reproach (8). He is particularly abusive with inmate Eduard Delacroix (9); he breaks Del's fingers with his baton (10), steps on a pet mouse named Mr. Jingles (11), which Del had adopted, repeatedly calls him by a gay slur (12), and ultimately sabotages his execution by failing to soak the sponge used to conduct electricity to Del's head (13); Del dies screaming in pain (14).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -222,6 +264,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "what is the widest highway in north america ?"
       },
@@ -316,11 +359,31 @@
             "meta": {},
             "text": "King's Highway 401, commonly referred to as Highway 401 and also known by its official name as the Macdonald–Cartier Freeway or colloquially as the four-oh-one,[3] is a controlled-access400-series highway in the Canadian province of Ontario. It stretches 828.0 kilometres (514.5 mi) from Windsor in the west to the Ontario–Quebec border in the east. The part of Highway 401 that passes through Toronto is North America's busiest highway,[4][5] and one of the widest.[6][7] Together with Quebec Autoroute 20, it forms the road transportation backbone of the Quebec City–Windsor Corridor, along which over half of Canada's population resides and is also a Core Route in the National Highway System of Canada. The route is maintained by the Ministry of Transportation of Ontario (MTO) and patrolled by the Ontario Provincial Police. The speed limit is 100 km/h (62 mph) throughout its length, unless posted otherwise.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "King's Highway 401, commonly referred to as Highway 401 (1) and also known by its official name as the Macdonald–Cartier Freeway (2) or colloquially as the four-oh-one (3), is a controlled-access (4) 400-series highway in the Canadian province of Ontario (5). It stretches 828.0 kilometres (514.5 mi) (6) from Windsor in the west to the Ontario–Quebec border in the east (7). The part of Highway 401 that passes through Toronto is North America's busiest highway (8), and one of the widest (9). Together with Quebec Autoroute 20, it forms the road transportation backbone of the Quebec City–Windsor Corridor (10), along which over half of Canada's population resides (11) and is also a Core Route in the National Highway System of Canada (12). The route is maintained by the Ministry of Transportation of Ontario (MTO) (13) and patrolled by the Ontario Provincial Police (14). The speed limit is 100 km/h (62 mph) throughout its length, unless posted otherwise (15).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. King's Highway 401 is commonly referred to as Highway 401.\n2. 2. It is also known as the Macdonald–Cartier Freeway.\n3. 3. It is colloquially called the four-oh-one.\n4. 4. Highway 401 is a controlled-access highway.\n5. 5. It is part of the 400-series highways in Ontario.\n6. 6. The highway stretches 828.0 kilometres.\n7. 7. It runs from Windsor to the Ontario–Quebec border.\n8. 8. The section through Toronto is North America's busiest highway.\n9. 9. It is one of the widest highways in North America.\n10. 10. Highway 401 forms part of the Quebec City–Windsor Corridor.\n11. 11. Over half of Canada's population resides along this corridor.\n12. 12. It is a Core Route in the National Highway System of Canada.\n13. 13. The Ministry of Transportation of Ontario maintains the route.\n14. 14. The Ontario Provincial Police patrol the highway.\n15. 15. The speed limit is 100 km/h unless posted otherwise.\n\n-- REPONSE --\nKing's Highway 401, commonly referred to as Highway 401 and also known by its official name as the Macdonald–Cartier Freeway or colloquially as the four-oh-one,[3] is a controlled-access400-series highway in the Canadian province of Ontario. It stretches 828.0 kilometres (514.5 mi) from Windsor in the west to the Ontario–Quebec border in the east. The part of Highway 401 that passes through Toronto is North America's busiest highway,[4][5] and one of the widest.[6][7] Together with Quebec Autoroute 20, it forms the road transportation backbone of the Quebec City–Windsor Corridor, along which over half of Canada's population resides and is also a Core Route in the National Highway System of Canada. The route is maintained by the Ministry of Transportation of Ontario (MTO) and patrolled by the Ontario Provincial Police. The speed limit is 100 km/h (62 mph) throughout its length, unless posted otherwise.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.538110",
+                "duration": 5.655431999999999,
+                "cost": 0.006495000000000001
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+              },
+              "text": "King's Highway 401, commonly referred to as Highway 401 (1) and also known by its official name as the Macdonald–Cartier Freeway (2) or colloquially as the four-oh-one (3), is a controlled-access (4) 400-series highway in the Canadian province of Ontario (5). It stretches 828.0 kilometres (514.5 mi) (6) from Windsor in the west to the Ontario–Quebec border in the east (7). The part of Highway 401 that passes through Toronto is North America's busiest highway (8), and one of the widest (9). Together with Quebec Autoroute 20, it forms the road transportation backbone of the Quebec City–Windsor Corridor (10), along which over half of Canada's population resides (11) and is also a Core Route in the National Highway System of Canada (12). The route is maintained by the Ministry of Transportation of Ontario (MTO) (13) and patrolled by the Ontario Provincial Police (14). The speed limit is 100 km/h (62 mph) throughout its length, unless posted otherwise (15).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -329,6 +392,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "what was the white thing in sausage party ?"
       },
@@ -407,11 +471,31 @@
             "meta": {},
             "text": "After Frank and Brenda's packages are chosen by a woman named Camille Toh to leave Shopwell's, a returned jar of Bickle's Honey Mustard tries to warn the groceries that the Great Beyond is a lie; nobody listens except for Frank. Honey Mustard calls on Frank to seek out a bottle of liquor named Firewater, and then falls to his death. This creates an accidental cart collision that causes Frank, Brenda, and several groceries to fall out, including an aggressive Douche who gets his nozzle bent, and plots revenge against Frank and Brenda.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "After Frank and Brenda's packages are chosen (1) by a woman named Camille Toh (2) to leave Shopwell's, a returned jar of Bickle's Honey Mustard (3) tries to warn the groceries that the Great Beyond is a lie (4); nobody listens except for Frank (5). Honey Mustard calls on Frank to seek out a bottle of liquor named Firewater (6), and then falls to his death (7). This creates an accidental cart collision (8) that causes Frank, Brenda, and several groceries to fall out (9), including an aggressive Douche who gets his nozzle bent (10), and plots revenge against Frank and Brenda (11).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Frank and Brenda's packages are chosen to leave Shopwell's.\n2. 2. A woman named Camille Toh selects the packages.\n3. 3. A jar of Bickle's Honey Mustard is returned.\n4. 4. Honey Mustard tries to warn the groceries about the Great Beyond.\n5. 5. Nobody listens to Honey Mustard except for Frank.\n6. 6. Honey Mustard asks Frank to find a bottle of liquor named Firewater.\n7. 7. Honey Mustard falls to his death.\n8. 8. An accidental cart collision occurs.\n9. 9. Frank, Brenda, and several groceries fall out of the cart.\n10. 10. An aggressive Douche gets his nozzle bent.\n11. 11. Douche plots revenge against Frank and Brenda.\n\n-- REPONSE --\nAfter Frank and Brenda's packages are chosen by a woman named Camille Toh to leave Shopwell's, a returned jar of Bickle's Honey Mustard tries to warn the groceries that the Great Beyond is a lie; nobody listens except for Frank. Honey Mustard calls on Frank to seek out a bottle of liquor named Firewater, and then falls to his death. This creates an accidental cart collision that causes Frank, Brenda, and several groceries to fall out, including an aggressive Douche who gets his nozzle bent, and plots revenge against Frank and Brenda.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.541832",
+                "duration": 3.997645,
+                "cost": 0.004285000000000001
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
+              },
+              "text": "After Frank and Brenda's packages are chosen (1) by a woman named Camille Toh (2) to leave Shopwell's, a returned jar of Bickle's Honey Mustard (3) tries to warn the groceries that the Great Beyond is a lie (4); nobody listens except for Frank (5). Honey Mustard calls on Frank to seek out a bottle of liquor named Firewater (6), and then falls to his death (7). This creates an accidental cart collision (8) that causes Frank, Brenda, and several groceries to fall out (9), including an aggressive Douche who gets his nozzle bent (10), and plots revenge against Frank and Brenda (11).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -420,6 +504,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "what makes the center of an atom stable ?"
       },
@@ -486,11 +571,31 @@
             "meta": {},
             "text": "The electrons in an atom are attracted to the protons in the nucleus by the electromagnetic force. This force binds the electrons inside an electrostaticpotential well surrounding the smaller nucleus, which means that an external source of energy is needed for the electron to escape. The closer an electron is to the nucleus, the greater the attractive force. Hence electrons bound near the center of the potential well require more energy to escape than those at greater separations.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The electrons in an atom are attracted to the protons in the nucleus (1) by the electromagnetic force (2). This force binds the electrons inside an electrostatic potential well (3) surrounding the smaller nucleus (4), which means that an external source of energy is needed for the electron to escape (5). The closer an electron is to the nucleus, the greater the attractive force (6). Hence electrons bound near the center of the potential well require more energy to escape (7) than those at greater separations (8).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Les électrons dans un atome sont attirés par les protons dans le noyau.\n2. 2. Cette attraction est due à la force électromagnétique.\n3. 3. La force électromagnétique lie les électrons dans un puits de potentiel électrostatique.\n4. 4. Le noyau est plus petit que le puits de potentiel électrostatique.\n5. 5. Une source d'énergie externe est nécessaire pour qu'un électron s'échappe.\n6. 6. Plus un électron est proche du noyau, plus la force attractive est grande.\n7. 7. Les électrons proches du centre du puits de potentiel nécessitent plus d'énergie pour s'échapper.\n8. 8. Les électrons plus éloignés du noyau nécessitent moins d'énergie pour s'échapper.\n\n-- REPONSE --\nThe electrons in an atom are attracted to the protons in the nucleus by the electromagnetic force. This force binds the electrons inside an electrostaticpotential well surrounding the smaller nucleus, which means that an external source of energy is needed for the electron to escape. The closer an electron is to the nucleus, the greater the attractive force. Hence electrons bound near the center of the potential well require more energy to escape than those at greater separations.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.547369",
+                "duration": 3.81484,
+                "cost": 0.003745
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8]"
+              },
+              "text": "The electrons in an atom are attracted to the protons in the nucleus (1) by the electromagnetic force (2). This force binds the electrons inside an electrostatic potential well (3) surrounding the smaller nucleus (4), which means that an external source of energy is needed for the electron to escape (5). The closer an electron is to the nucleus, the greater the attractive force (6). Hence electrons bound near the center of the potential well require more energy to escape (7) than those at greater separations (8).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -499,6 +604,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "who did holly matthews play in waterloo rd ?"
       },
@@ -565,11 +671,31 @@
             "meta": {},
             "text": "She attended the British drama school East 15 in 2005, and left after winning a high-profile role in the BBC drama Waterloo Road, playing the bully Leigh-Ann Galloway.[6] Since that role, Matthews has continued to act in BBC's Doctors, playing Connie Whitfield; in ITV's The Bill playing drug addict Josie Clarke; and she was back in the BBC soap Doctors in 2009, playing Tansy Flack.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "She attended the British drama school East 15 in 2005 (1), and left after winning a high-profile role in the BBC drama Waterloo Road (2), playing the bully Leigh-Ann Galloway (3). Since that role, Matthews has continued to act in BBC's Doctors, playing Connie Whitfield (5); in ITV's The Bill playing drug addict Josie Clarke (6); and she was back in the BBC soap Doctors in 2009, playing Tansy Flack (7)(8).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Elle a fréquenté l'école de théâtre britannique East 15 en 2005.\n2. 2. Elle a quitté l'école après avoir obtenu un rôle important dans le drame de la BBC Waterloo Road.\n3. 3. Elle a joué le rôle de la brute Leigh-Ann Galloway dans Waterloo Road.\n4. 4. Elle a continué à jouer dans la série Doctors de la BBC.\n5. 5. Elle a interprété le personnage de Connie Whitfield dans Doctors.\n6. 6. Elle a joué le rôle de Josie Clarke, une toxicomane, dans The Bill d'ITV.\n7. 7. Elle est revenue dans la série Doctors de la BBC en 2009.\n8. 8. Elle a incarné Tansy Flack dans Doctors en 2009.\n\n-- REPONSE --\nShe attended the British drama school East 15 in 2005, and left after winning a high-profile role in the BBC drama Waterloo Road, playing the bully Leigh-Ann Galloway.[6] Since that role, Matthews has continued to act in BBC's Doctors, playing Connie Whitfield; in ITV's The Bill playing drug addict Josie Clarke; and she was back in the BBC soap Doctors in 2009, playing Tansy Flack.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.549993",
+                "duration": 3.087613,
+                "cost": 0.003715
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 0.875,
+                "hallus": 0,
+                "missing": "4",
+                "nb_missing": 1,
+                "facts_in_ans": "[1, 2, 3, 5, 6, 7, 8]"
+              },
+              "text": "She attended the British drama school East 15 in 2005 (1), and left after winning a high-profile role in the BBC drama Waterloo Road (2), playing the bully Leigh-Ann Galloway (3). Since that role, Matthews has continued to act in BBC's Doctors, playing Connie Whitfield (5); in ITV's The Bill playing drug addict Josie Clarke (6); and she was back in the BBC soap Doctors in 2009, playing Tansy Flack (7)(8).",
               "human": 1.0,
-              "auto": null
+              "auto": 0.9333333333333333
             }
           }
         ]
@@ -578,6 +704,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "who did the first double backflip on a dirt bike ?"
       },
@@ -636,11 +763,31 @@
             "meta": {},
             "text": "2006 brought footage of Travis Pastrana completing a double backflip on an uphill/sand setup on his popular 'Nitro Circus' Freestyle Motocross movies. On August 4, 2006, at X Games 12 in Los Angeles, he became the first rider to land a double backflip in competition. Having landed another trick that many had considered impossible, he vowed never to do it again.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "2006 brought footage of Travis Pastrana completing a double backflip on an uphill/sand setup (2) on his popular 'Nitro Circus' Freestyle Motocross movies (3). On August 4, 2006, at X Games 12 in Los Angeles (4), he became the first rider to land a double backflip in competition (5). Having landed another trick that many had considered impossible, he vowed never to do it again (6).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Travis Pastrana a réalisé un double backflip en 2006.\n2. 2. Il a utilisé une configuration en montée/sable pour ce double backflip.\n3. 3. Cette performance a été incluse dans les films 'Nitro Circus' Freestyle Motocross.\n4. 4. Le 4 août 2006, il a exécuté un double backflip aux X Games 12 à Los Angeles.\n5. 5. Il est devenu le premier à réussir un double backflip en compétition.\n6. 6. Il a promis de ne plus jamais refaire ce double backflip.\n\n-- REPONSE --\n2006 brought footage of Travis Pastrana completing a double backflip on an uphill/sand setup on his popular 'Nitro Circus' Freestyle Motocross movies. On August 4, 2006, at X Games 12 in Los Angeles, he became the first rider to land a double backflip in competition. Having landed another trick that many had considered impossible, he vowed never to do it again.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.549993",
+                "duration": 3.331774,
+                "cost": 0.0033150000000000002
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 0.8333333333333334,
+                "hallus": 0,
+                "missing": "1",
+                "nb_missing": 1,
+                "facts_in_ans": "[2, 3, 4, 5, 6]"
+              },
+              "text": "2006 brought footage of Travis Pastrana completing a double backflip on an uphill/sand setup (2) on his popular 'Nitro Circus' Freestyle Motocross movies (3). On August 4, 2006, at X Games 12 in Los Angeles (4), he became the first rider to land a double backflip in competition (5). Having landed another trick that many had considered impossible, he vowed never to do it again (6).",
               "human": 1.0,
-              "auto": null
+              "auto": 0.9090909090909091
             }
           }
         ]
@@ -649,6 +796,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "who won season 10 of dancing with the stars ?"
       },
@@ -699,11 +847,31 @@
             "meta": {},
             "text": "Season ten of Dancing with the Stars premiered on March 22, 2010. There was not an elimination the first week of competition. The first elimination took place on March 30. Singer Nicole Scherzinger won the competition.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "Season ten of Dancing with the Stars premiered on March 22, 2010 (1). There was not an elimination the first week of competition (2). The first elimination took place on March 30 (3). Singer Nicole Scherzinger won the competition (4).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Season ten of Dancing with the Stars premiered on March 22, 2010.\n2. 2. There was no elimination in the first week of competition.\n3. 3. The first elimination occurred on March 30.\n4. 4. Singer Nicole Scherzinger won the competition.\n\n-- REPONSE --\nSeason ten of Dancing with the Stars premiered on March 22, 2010. There was not an elimination the first week of competition. The first elimination took place on March 30. Singer Nicole Scherzinger won the competition.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.558719",
+                "duration": 3.617233,
+                "cost": 0.00218
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4]"
+              },
+              "text": "Season ten of Dancing with the Stars premiered on March 22, 2010 (1). There was not an elimination the first week of competition (2). The first elimination took place on March 30 (3). Singer Nicole Scherzinger won the competition (4).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -712,6 +880,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "when would the quantity of dna double when growing cells ?"
       },
@@ -814,11 +983,31 @@
             "meta": {},
             "text": "The process of cell division, called cell cycle, has four major parts called phases. The first part, called G1 phase is marked by synthesis of various enzymes that are required for DNA replication. The second part of the cell cycle is the S phase, where DNA replication produces two identical sets of chromosomes. The third part is the G2 phase in which a significant protein synthesis occurs, mainly involving the production of microtubules that are required during the process of division, called mitosis. The fourth phase, M phase, consists of nuclear division (karyokinesis) and cytoplasmic division (cytokinesis), accompanied by the formation of a new cell membrane. This is the physical division of 'mother' and 'daughter' cells. The M phase has been broken down into several distinct phases, sequentially known as prophase, prometaphase, metaphase, anaphase and telophase leading to cytokinesis.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The process of cell division, called cell cycle, has four major parts called phases (1). The first part, called G1 phase (2) is marked by synthesis of various enzymes that are required for DNA replication (3). The second part of the cell cycle is the S phase (4), where DNA replication produces two identical sets of chromosomes (5). The third part is the G2 phase (6) in which a significant protein synthesis occurs (7), mainly involving the production of microtubules (8) that are required during the process of division, called mitosis (?). The fourth phase, M phase (9), consists of nuclear division (karyokinesis) (10, 11) and cytoplasmic division (cytokinesis) (10, 12), accompanied by the formation of a new cell membrane (13). This is the physical division of 'mother' and 'daughter' cells (14). The M phase has been broken down into several distinct phases (15), sequentially known as prophase, prometaphase, metaphase, anaphase and telophase (16) leading to cytokinesis (17).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Le cycle cellulaire comporte quatre phases principales.\n2. 2. La première phase est appelée phase G1.\n3. 3. La phase G1 est marquée par la synthèse d'enzymes nécessaires à la réplication de l'ADN.\n4. 4. La deuxième phase du cycle cellulaire est la phase S.\n5. 5. La phase S est le moment où la réplication de l'ADN produit deux ensembles identiques de chromosomes.\n6. 6. La troisième phase est la phase G2.\n7. 7. La phase G2 implique une synthèse protéique significative.\n8. 8. La production de microtubules se produit principalement pendant la phase G2.\n9. 9. La quatrième phase est la phase M.\n10. 10. La phase M consiste en la division nucléaire et cytoplasmique.\n11. 11. La division nucléaire est appelée caryocinèse.\n12. 12. La division cytoplasmique est appelée cytocinèse.\n13. 13. La phase M aboutit à la formation d'une nouvelle membrane cellulaire.\n14. 14. La phase M est la division physique des cellules mère et fille.\n15. 15. La phase M est subdivisée en plusieurs phases distinctes.\n16. 16. Les phases de la phase M sont prophase, prométaphase, métaphase, anaphase et télophase.\n17. 17. La cytocinèse suit la télophase.\n\n-- REPONSE --\nThe process of cell division, called cell cycle, has four major parts called phases. The first part, called G1 phase is marked by synthesis of various enzymes that are required for DNA replication. The second part of the cell cycle is the S phase, where DNA replication produces two identical sets of chromosomes. The third part is the G2 phase in which a significant protein synthesis occurs, mainly involving the production of microtubules that are required during the process of division, called mitosis. The fourth phase, M phase, consists of nuclear division (karyokinesis) and cytoplasmic division (cytokinesis), accompanied by the formation of a new cell membrane. This is the physical division of 'mother' and 'daughter' cells. The M phase has been broken down into several distinct phases, sequentially known as prophase, prometaphase, metaphase, anaphase and telophase leading to cytokinesis.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.562800",
+                "duration": 4.841272,
+                "cost": 0.00685
+              },
+              "meta": {
+                "precision": 0.9444444444444444,
+                "recall": 1.0,
+                "hallus": 1,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17]"
+              },
+              "text": "The process of cell division, called cell cycle, has four major parts called phases (1). The first part, called G1 phase (2) is marked by synthesis of various enzymes that are required for DNA replication (3). The second part of the cell cycle is the S phase (4), where DNA replication produces two identical sets of chromosomes (5). The third part is the G2 phase (6) in which a significant protein synthesis occurs (7), mainly involving the production of microtubules (8) that are required during the process of division, called mitosis (?). The fourth phase, M phase (9), consists of nuclear division (karyokinesis) (10, 11) and cytoplasmic division (cytokinesis) (10, 12), accompanied by the formation of a new cell membrane (13). This is the physical division of 'mother' and 'daughter' cells (14). The M phase has been broken down into several distinct phases (15), sequentially known as prophase, prometaphase, metaphase, anaphase and telophase (16) leading to cytokinesis (17).",
               "human": 1.0,
-              "auto": null
+              "auto": 0.9714285714285714
             }
           }
         ]
@@ -827,6 +1016,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "when did the battle of palmito ranch happen ?"
       },
@@ -889,11 +1079,31 @@
             "meta": {},
             "text": "The Battle of Palmito Ranch is considered by some criteria as the final battle of the American Civil War. It was fought May 12 and 13, 1865, on the banks of the Rio Grande east of Brownsville, Texas and a few miles from the seaport of Los Brazos de Santiago. Since the Confederacy had ceased to exist, it is also argued that this battle should be classified as a postwar action.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The Battle of Palmito Ranch is considered by some criteria as the final battle of the American Civil War (1). It was fought May 12 and 13, 1865 (2), on the banks of the Rio Grande (3) east of Brownsville, Texas (4) and a few miles from the seaport of Los Brazos de Santiago (5). Since the Confederacy had ceased to exist (6), it is also argued that this battle should be classified as a postwar action (7).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. The Battle of Palmito Ranch is considered the final battle of the American Civil War by some criteria.\n2. 2. The battle occurred on May 12 and 13, 1865.\n3. 3. It took place on the banks of the Rio Grande.\n4. 4. The location was east of Brownsville, Texas.\n5. 5. The battle site was a few miles from the seaport of Los Brazos de Santiago.\n6. 6. The Confederacy had ceased to exist by the time of this battle.\n7. 7. Some argue that the battle should be classified as a postwar action.\n\n-- REPONSE --\nThe Battle of Palmito Ranch is considered by some criteria as the final battle of the American Civil War. It was fought May 12 and 13, 1865, on the banks of the Rio Grande east of Brownsville, Texas and a few miles from the seaport of Los Brazos de Santiago. Since the Confederacy had ceased to exist, it is also argued that this battle should be classified as a postwar action.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.566985",
+                "duration": 3.601901,
+                "cost": 0.0035
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7]"
+              },
+              "text": "The Battle of Palmito Ranch is considered by some criteria as the final battle of the American Civil War (1). It was fought May 12 and 13, 1865 (2), on the banks of the Rio Grande (3) east of Brownsville, Texas (4) and a few miles from the seaport of Los Brazos de Santiago (5). Since the Confederacy had ceased to exist (6), it is also argued that this battle should be classified as a postwar action (7).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -902,6 +1112,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "who determined the mass to charge ratio of an electron ?"
       },
@@ -976,11 +1187,31 @@
             "meta": {},
             "text": "In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods. In 1897, the mass-to-charge ratio of the electron was first measured by J. J. Thomson. [6] By doing this, he showed that the electron was in fact a particle with a mass and a charge, and that its mass-to-charge ratio was much smaller than that of the hydrogen ion H+. In 1898, Wilhelm Wien separated ions (canal rays) according to their mass-to-charge ratio with an ion optical device with superimposed electric and magnetic fields (Wien filter). In 1901 Walter Kaufman measured the increase of electromagnetic mass of fast electrons (Kaufmann–Bucherer–Neumann experiments), or relativistic mass increase in modern terms. In 1913, Thomson measured the mass-to-charge ratio of ions with an instrument he called a parabola spectrograph.[7] Today, an instrument that measures the mass-to-charge ratio of charged particles is called a mass spectrometer.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods (1). In 1897, the mass-to-charge ratio of the electron was first measured by J. J. Thomson (2). By doing this, he showed that the electron was in fact a particle with a mass and a charge (3), and that its mass-to-charge ratio was much smaller than that of the hydrogen ion H+ (4). In 1898, Wilhelm Wien separated ions (canal rays) according to their mass-to-charge ratio with an ion optical device with superimposed electric and magnetic fields (Wien filter) (5)(6). In 1901 Walter Kaufman measured the increase of electromagnetic mass of fast electrons (Kaufmann–Bucherer–Neumann experiments), or relativistic mass increase in modern terms (7)(8). In 1913, Thomson measured the mass-to-charge ratio of ions with an instrument he called a parabola spectrograph (9). Today, an instrument that measures the mass-to-charge ratio of charged particles is called a mass spectrometer (10).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods.\n2. 2. In 1897, J. J. Thomson first measured the mass-to-charge ratio of the electron.\n3. 3. Thomson showed that the electron was a particle with a mass and a charge.\n4. 4. The mass-to-charge ratio of the electron was much smaller than that of the hydrogen ion H+.\n5. 5. In 1898, Wilhelm Wien separated ions according to their mass-to-charge ratio.\n6. 6. Wien used an ion optical device with superimposed electric and magnetic fields.\n7. 7. In 1901, Walter Kaufman measured the increase of electromagnetic mass of fast electrons.\n8. 8. This increase is known as relativistic mass increase in modern terms.\n9. 9. In 1913, Thomson measured the mass-to-charge ratio of ions with a parabola spectrograph.\n10. 10. An instrument that measures the mass-to-charge ratio of charged particles is called a mass spectrometer.\n\n-- REPONSE --\nIn the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods. In 1897, the mass-to-charge ratio of the electron was first measured by J. J. Thomson. [6] By doing this, he showed that the electron was in fact a particle with a mass and a charge, and that its mass-to-charge ratio was much smaller than that of the hydrogen ion H+. In 1898, Wilhelm Wien separated ions (canal rays) according to their mass-to-charge ratio with an ion optical device with superimposed electric and magnetic fields (Wien filter). In 1901 Walter Kaufman measured the increase of electromagnetic mass of fast electrons (Kaufmann–Bucherer–Neumann experiments), or relativistic mass increase in modern terms. In 1913, Thomson measured the mass-to-charge ratio of ions with an instrument he called a parabola spectrograph.[7] Today, an instrument that measures the mass-to-charge ratio of charged particles is called a mass spectrometer.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.570127",
+                "duration": 5.100104,
+                "cost": 0.006465
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]"
+              },
+              "text": "In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods (1). In 1897, the mass-to-charge ratio of the electron was first measured by J. J. Thomson (2). By doing this, he showed that the electron was in fact a particle with a mass and a charge (3), and that its mass-to-charge ratio was much smaller than that of the hydrogen ion H+ (4). In 1898, Wilhelm Wien separated ions (canal rays) according to their mass-to-charge ratio with an ion optical device with superimposed electric and magnetic fields (Wien filter) (5)(6). In 1901 Walter Kaufman measured the increase of electromagnetic mass of fast electrons (Kaufmann–Bucherer–Neumann experiments), or relativistic mass increase in modern terms (7)(8). In 1913, Thomson measured the mass-to-charge ratio of ions with an instrument he called a parabola spectrograph (9). Today, an instrument that measures the mass-to-charge ratio of charged particles is called a mass spectrometer (10).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -989,6 +1220,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "where does the last name downs come from ?"
       },
@@ -1031,11 +1263,31 @@
             "meta": {},
             "text": "Downs is a surname of Old English origin.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "Downs is a surname (1) of Old English origin (2).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Downs est un nom de famille.\n2. 2. Downs a une origine anglaise ancienne.\n\n-- REPONSE --\nDowns is a surname of Old English origin.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.577535",
+                "duration": 2.177551,
+                "cost": 0.00119
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2]"
+              },
+              "text": "Downs is a surname (1) of Old English origin (2).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -1044,6 +1296,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "who sang without love where would we be now ?"
       },
@@ -1102,11 +1355,31 @@
             "meta": {},
             "text": "'Long Train Runnin'' (or 'Long Train Running') is a song recorded by The Doobie Brothers and written by band member Tom Johnston. It was included on the band's 1973 album The Captain and Me and released as a single, becoming a top 10 hit on the US Billboard Hot 100, peaking at number 8.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "'Long Train Runnin'' (or 'Long Train Running') is a song recorded by The Doobie Brothers (1) and written by band member Tom Johnston (2). It was included on the band's 1973 album The Captain and Me (3) and released as a single (4), becoming a top 10 hit on the US Billboard Hot 100 (5), peaking at number 8 (6).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. \"Long Train Runnin'\" est une chanson enregistrée par The Doobie Brothers.\n2. 2. La chanson a été écrite par Tom Johnston, membre du groupe.\n3. 3. Elle figure sur l'album de 1973 \"The Captain and Me\".\n4. 4. La chanson a été publiée en single.\n5. 5. Elle est devenue un succès dans le top 10 du Billboard Hot 100 aux États-Unis.\n6. 6. La chanson a atteint la huitième place du classement.\n\n-- REPONSE --\n'Long Train Runnin'' (or 'Long Train Running') is a song recorded by The Doobie Brothers and written by band member Tom Johnston. It was included on the band's 1973 album The Captain and Me and released as a single, becoming a top 10 hit on the US Billboard Hot 100, peaking at number 8.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.581182",
+                "duration": 3.218772,
+                "cost": 0.00302
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6]"
+              },
+              "text": "'Long Train Runnin'' (or 'Long Train Running') is a song recorded by The Doobie Brothers (1) and written by band member Tom Johnston (2). It was included on the band's 1973 album The Captain and Me (3) and released as a single (4), becoming a top 10 hit on the US Billboard Hot 100 (5), peaking at number 8 (6).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -1115,6 +1388,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "what is the value of g on the surface of the moon ?"
       },
@@ -1177,11 +1451,31 @@
             "meta": {},
             "text": "The acceleration due to gravity on the surface of the Moon is about 1.625 m/s2, about 16.6% that on Earth's surface or 0.16 ɡ. Over the entire surface, the variation in gravitational acceleration is about 0.0253 m/s2 (1.6% of the acceleration due to gravity). Because weight is directly dependent upon gravitational acceleration, things on the Moon will weigh only 16.6% of what they weigh on the Earth.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The acceleration due to gravity on the surface of the Moon is about 1.625 m/s² (1), about 16.6% that on Earth's surface (2) or 0.16 ɡ (3). Over the entire surface, the variation in gravitational acceleration is about 0.0253 m/s² (4) (1.6% of the acceleration due to gravity) (5). Because weight is directly dependent upon gravitational acceleration (6), things on the Moon will weigh only 16.6% of what they weigh on the Earth (7).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. The acceleration due to gravity on the Moon is about 1.625 m/s².\n2. 2. The Moon's gravity is about 16.6% of Earth's gravity.\n3. 3. The Moon's gravity is approximately 0.16 times Earth's gravity.\n4. 4. The variation in gravitational acceleration on the Moon's surface is about 0.0253 m/s².\n5. 5. The variation in gravitational acceleration on the Moon is 1.6% of its average value.\n6. 6. Weight depends directly on gravitational acceleration.\n7. 7. Objects on the Moon weigh 16.6% of their weight on Earth.\n\n-- REPONSE --\nThe acceleration due to gravity on the surface of the Moon is about 1.625 m/s2, about 16.6% that on Earth's surface or 0.16 ɡ. Over the entire surface, the variation in gravitational acceleration is about 0.0253 m/s2 (1.6% of the acceleration due to gravity). Because weight is directly dependent upon gravitational acceleration, things on the Moon will weigh only 16.6% of what they weigh on the Earth.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.584888",
+                "duration": 4.600376,
+                "cost": 0.00379
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7]"
+              },
+              "text": "The acceleration due to gravity on the surface of the Moon is about 1.625 m/s² (1), about 16.6% that on Earth's surface (2) or 0.16 ɡ (3). Over the entire surface, the variation in gravitational acceleration is about 0.0253 m/s² (4) (1.6% of the acceleration due to gravity) (5). Because weight is directly dependent upon gravitational acceleration (6), things on the Moon will weigh only 16.6% of what they weigh on the Earth (7).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -1190,6 +1484,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "when does the door in the wall take place ?"
       },
@@ -1276,11 +1571,31 @@
             "meta": {},
             "text": "The story, illustrated by the author, is set in England during the Middle Ages, as the Black Death (bubonic plague) is sweeping across the country. Young Robin is sent away to become a knight like his father, but his dreams are endangered when he loses the use of his legs. A doctor reassures Robin that the weakness in his legs is not caused by the plague and the doctor is supposed to come and help him but does not. His parents are away, serving the king and queen during war, and the servants abandon the house, fearing the plague. Robin is saved by Brother Luke, a friar, who finds him and takes him to a monastery and cares for him.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The story, illustrated by the author (3), is set in England during the Middle Ages (1), as the Black Death (bubonic plague) is sweeping across the country (2). Young Robin is sent away to become a knight (4) like his father (5), but his dreams are endangered when he loses the use of his legs (6). A doctor reassures Robin that the weakness in his legs is not caused by the plague (7) and the doctor is supposed to come and help him but does not (8). His parents are away, serving the king and queen during war (9), and the servants abandon the house, fearing the plague (10). Robin is saved by Brother Luke, a friar, who finds him (11) and takes him to a monastery (12) and cares for him (13).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. The story is set in England during the Middle Ages.\n2. 2. The Black Death is sweeping across the country.\n3. 3. The author illustrated the story.\n4. 4. Young Robin is sent away to become a knight.\n5. 5. Robin's father is a knight.\n6. 6. Robin loses the use of his legs.\n7. 7. A doctor reassures Robin that his leg weakness is not caused by the plague.\n8. 8. The doctor is supposed to come and help Robin but does not.\n9. 9. Robin's parents are serving the king and queen during war.\n10. 10. The servants abandon the house, fearing the plague.\n11. 11. Brother Luke, a friar, finds Robin.\n12. 12. Brother Luke takes Robin to a monastery.\n13. 13. Brother Luke cares for Robin.\n\n-- REPONSE --\nThe story, illustrated by the author, is set in England during the Middle Ages, as the Black Death (bubonic plague) is sweeping across the country. Young Robin is sent away to become a knight like his father, but his dreams are endangered when he loses the use of his legs. A doctor reassures Robin that the weakness in his legs is not caused by the plague and the doctor is supposed to come and help him but does not. His parents are away, serving the king and queen during war, and the servants abandon the house, fearing the plague. Robin is saved by Brother Luke, a friar, who finds him and takes him to a monastery and cares for him.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.588374",
+                "duration": 4.393074,
+                "cost": 0.004995
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13]"
+              },
+              "text": "The story, illustrated by the author (3), is set in England during the Middle Ages (1), as the Black Death (bubonic plague) is sweeping across the country (2). Young Robin is sent away to become a knight (4) like his father (5), but his dreams are endangered when he loses the use of his legs (6). A doctor reassures Robin that the weakness in his legs is not caused by the plague (7) and the doctor is supposed to come and help him but does not (8). His parents are away, serving the king and queen during war (9), and the servants abandon the house, fearing the plague (10). Robin is saved by Brother Luke, a friar, who finds him (11) and takes him to a monastery (12) and cares for him (13).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -1289,6 +1604,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "who surfed for patrick swayze in point break ?"
       },
@@ -1383,11 +1699,31 @@
             "meta": {},
             "text": "Two months before filming, Lori Petty, Reeves and Swayze trained with former world-class professional surfer Dennis Jarvis on the Hawaiian island of Kauai. Jarvis remembers, 'Patrick said he'd been on a board a couple of times, Keanu definitely had not surfed before, and Lori had never been in the ocean in her life. Shooting the surfing sequences proved to be challenging for both actors, with Swayze cracking four of his ribs. For many of the surfing scenes, he refused to use a stunt double as he never had one for fight scenes or car chases. He also did the skydiving scenes himself and the film's aerial jump instructor Jim Wallace found that the actor was a natural and took to it right away. The actor ended up making 55 jumps for the film. Swayze actually based aspects of his character after one of his stunt doubles, Darrick Doerner, a top big wave surfer. After learning to surf for the film, Reeves took a liking to it and took it up as a hobby.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "Two months before filming, Lori Petty, Reeves and Swayze trained with former world-class professional surfer Dennis Jarvis (1) on the Hawaiian island of Kauai (2). Jarvis remembers, 'Patrick said he'd been on a board a couple of times (3), Keanu definitely had not surfed before (4), and Lori had never been in the ocean in her life (5). Shooting the surfing sequences proved to be challenging for both actors (6), with Swayze cracking four of his ribs (7). For many of the surfing scenes, he refused to use a stunt double (8) as he never had one for fight scenes or car chases (9). He also did the skydiving scenes himself (10) and the film's aerial jump instructor Jim Wallace found that the actor was a natural and took to it right away (11). The actor ended up making 55 jumps for the film (12). Swayze actually based aspects of his character after one of his stunt doubles, Darrick Doerner (13), a top big wave surfer (14). After learning to surf for the film, Reeves took a liking to it and took it up as a hobby (15).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Two months before filming, Lori Petty, Keanu Reeves, and Patrick Swayze trained with Dennis Jarvis.\n2. 2. The training took place on the Hawaiian island of Kauai.\n3. 3. Patrick Swayze had been on a surfboard a couple of times before.\n4. 4. Keanu Reeves had never surfed before.\n5. 5. Lori Petty had never been in the ocean in her life.\n6. 6. Shooting the surfing sequences was challenging for the actors.\n7. 7. Patrick Swayze cracked four of his ribs during the surfing sequences.\n8. 8. Swayze refused to use a stunt double for many of the surfing scenes.\n9. 9. Swayze never used a stunt double for fight scenes or car chases.\n10. 10. Swayze performed the skydiving scenes himself.\n11. 11. Jim Wallace, the film's aerial jump instructor, found Swayze to be a natural at skydiving.\n12. 12. Swayze made 55 jumps for the film.\n13. 13. Swayze based aspects of his character on his stunt double, Darrick Doerner.\n14. 14. Darrick Doerner was a top big wave surfer.\n15. 15. After learning to surf for the film, Keanu Reeves took up surfing as a hobby.\n\n-- REPONSE --\nTwo months before filming, Lori Petty, Reeves and Swayze trained with former world-class professional surfer Dennis Jarvis on the Hawaiian island of Kauai. Jarvis remembers, 'Patrick said he'd been on a board a couple of times, Keanu definitely had not surfed before, and Lori had never been in the ocean in her life. Shooting the surfing sequences proved to be challenging for both actors, with Swayze cracking four of his ribs. For many of the surfing scenes, he refused to use a stunt double as he never had one for fight scenes or car chases. He also did the skydiving scenes himself and the film's aerial jump instructor Jim Wallace found that the actor was a natural and took to it right away. The actor ended up making 55 jumps for the film. Swayze actually based aspects of his character after one of his stunt doubles, Darrick Doerner, a top big wave surfer. After learning to surf for the film, Reeves took a liking to it and took it up as a hobby.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.594520",
+                "duration": 5.421909,
+                "cost": 0.00707
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+              },
+              "text": "Two months before filming, Lori Petty, Reeves and Swayze trained with former world-class professional surfer Dennis Jarvis (1) on the Hawaiian island of Kauai (2). Jarvis remembers, 'Patrick said he'd been on a board a couple of times (3), Keanu definitely had not surfed before (4), and Lori had never been in the ocean in her life (5). Shooting the surfing sequences proved to be challenging for both actors (6), with Swayze cracking four of his ribs (7). For many of the surfing scenes, he refused to use a stunt double (8) as he never had one for fight scenes or car chases (9). He also did the skydiving scenes himself (10) and the film's aerial jump instructor Jim Wallace found that the actor was a natural and took to it right away (11). The actor ended up making 55 jumps for the film (12). Swayze actually based aspects of his character after one of his stunt doubles, Darrick Doerner (13), a top big wave surfer (14). After learning to surf for the film, Reeves took a liking to it and took it up as a hobby (15).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -1396,6 +1732,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "what is the film and publication board role ?"
       },
@@ -1474,11 +1811,31 @@
             "meta": {},
             "text": "The Film and Publication Board, often shortened to FPB, is a content-classification and censorship authority in South Africa, operating under the Minister of Communications. The FPB was established in 1998 under the Films and Publications Act, ostensibly to tackle issues of child pornography and child abuse, as well as to provide ratings to publicly consumed media such as movies, music and television programs. Under these directives, its mandate can be considered one of state censorship.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The Film and Publication Board (1), often shortened to FPB (1), is a content-classification (2) and censorship authority in South Africa (?), operating under the Minister of Communications (3). The FPB was established in 1998 (4) under the Films and Publications Act (5), ostensibly to tackle issues of child pornography (6) and child abuse (7), as well as to provide ratings to publicly consumed media such as movies (8), music (9), and television programs (10). Under these directives, its mandate can be considered one of state censorship (11).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. The Film and Publication Board is often shortened to FPB.\n2. 2. The FPB is a content-classification authority in South Africa.\n3. 3. The FPB operates under the Minister of Communications.\n4. 4. The FPB was established in 1998.\n5. 5. The FPB was created under the Films and Publications Act.\n6. 6. The FPB aims to tackle issues of child pornography.\n7. 7. The FPB addresses issues of child abuse.\n8. 8. The FPB provides ratings to movies.\n9. 9. The FPB rates music.\n10. 10. The FPB rates television programs.\n11. 11. The FPB's mandate includes state censorship.\n\n-- REPONSE --\nThe Film and Publication Board, often shortened to FPB, is a content-classification and censorship authority in South Africa, operating under the Minister of Communications. The FPB was established in 1998 under the Films and Publications Act, ostensibly to tackle issues of child pornography and child abuse, as well as to provide ratings to publicly consumed media such as movies, music and television programs. Under these directives, its mandate can be considered one of state censorship.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.597528",
+                "duration": 3.809292,
+                "cost": 0.003875
+              },
+              "meta": {
+                "precision": 0.9166666666666666,
+                "recall": 1.0,
+                "hallus": 1,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
+              },
+              "text": "The Film and Publication Board (1), often shortened to FPB (1), is a content-classification (2) and censorship authority in South Africa (?), operating under the Minister of Communications (3). The FPB was established in 1998 (4) under the Films and Publications Act (5), ostensibly to tackle issues of child pornography (6) and child abuse (7), as well as to provide ratings to publicly consumed media such as movies (8), music (9), and television programs (10). Under these directives, its mandate can be considered one of state censorship (11).",
               "human": 1.0,
-              "auto": null
+              "auto": 0.9565217391304348
             }
           }
         ]
@@ -1487,6 +1844,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "when did the olympics first allow professional athletes ?"
       },
@@ -1585,11 +1943,31 @@
             "meta": {},
             "text": "Before the 1984 Winter Olympics, a dispute formed over what made a player a professional. The IOC had adopted a rule that made any player who had signed an NHL contract but played less than ten games in the league eligible. However, the United States Olympic Committee maintained that any player contracted with an NHL team was a professional and therefore not eligible to play. The IOC held an emergency meeting that ruled NHL-contracted players were eligible, as long as they had not played in any NHL games. This made five players on Olympic rosters—one Austrian, two Italians and two Canadians—ineligible. Players who had played in other professional leagues—such as the World Hockey Association—were allowed to play. Canadian hockey official Alan Eagleson stated that the rule was only applied to the NHL and that professionally contracted players in European leagues were still considered amateurs. Murray Costello of the CAHA suggested that a Canadian withdrawal was possible. In 1986, the IOC voted to allow all athletes to compete in Olympic Games starting in 1988, but let the individual sport federations decide if they wanted to allow professionals.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "Before the 1984 Winter Olympics, a dispute formed over what made a player a professional (1, 2). The IOC had adopted a rule that made any player who had signed an NHL contract but played less than ten games in the league eligible (3, 4). However, the United States Olympic Committee maintained that any player contracted with an NHL team was a professional and therefore not eligible to play (5, 6). The IOC held an emergency meeting (7) that ruled NHL-contracted players were eligible, as long as they had not played in any NHL games (8). This made five players on Olympic rosters—one Austrian, two Italians and two Canadians—ineligible (9, 10). Players who had played in other professional leagues—such as the World Hockey Association—were allowed to play (11). Canadian hockey official Alan Eagleson stated that the rule was only applied to the NHL (12) and that professionally contracted players in European leagues were still considered amateurs (13). Murray Costello of the CAHA suggested that a Canadian withdrawal was possible (14). In 1986, the IOC voted to allow all athletes to compete in Olympic Games starting in 1988, but let the individual sport federations decide if they wanted to allow professionals (15, 16).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Une dispute a eu lieu avant les Jeux olympiques d'hiver de 1984.\n2. 2. La dispute concernait la définition d'un joueur professionnel.\n3. 3. Le CIO avait adopté une règle concernant les joueurs ayant signé un contrat NHL.\n4. 4. Les joueurs ayant joué moins de dix matchs NHL étaient éligibles selon le CIO.\n5. 5. Le Comité olympique des États-Unis considérait tout joueur sous contrat NHL comme professionnel.\n6. 6. Le Comité olympique des États-Unis jugeait ces joueurs inéligibles.\n7. 7. Le CIO a tenu une réunion d'urgence sur cette question.\n8. 8. Le CIO a décidé que les joueurs sous contrat NHL étaient éligibles s'ils n'avaient pas joué de matchs NHL.\n9. 9. Cinq joueurs sur les listes olympiques sont devenus inéligibles.\n10. 10. Ces joueurs inéligibles comprenaient un Autrichien, deux Italiens et deux Canadiens.\n11. 11. Les joueurs ayant joué dans d'autres ligues professionnelles pouvaient jouer.\n12. 12. Alan Eagleson a déclaré que la règle ne s'appliquait qu'à la NHL.\n13. 13. Les joueurs sous contrat dans les ligues européennes étaient considérés comme amateurs.\n14. 14. Murray Costello a suggéré un possible retrait du Canada.\n15. 15. En 1986, le CIO a voté pour permettre à tous les athlètes de participer aux Jeux olympiques.\n16. 16. Les fédérations sportives individuelles pouvaient décider d'autoriser les professionnels.\n\n-- REPONSE --\nBefore the 1984 Winter Olympics, a dispute formed over what made a player a professional. The IOC had adopted a rule that made any player who had signed an NHL contract but played less than ten games in the league eligible. However, the United States Olympic Committee maintained that any player contracted with an NHL team was a professional and therefore not eligible to play. The IOC held an emergency meeting that ruled NHL-contracted players were eligible, as long as they had not played in any NHL games. This made five players on Olympic rosters—one Austrian, two Italians and two Canadians—ineligible. Players who had played in other professional leagues—such as the World Hockey Association—were allowed to play. Canadian hockey official Alan Eagleson stated that the rule was only applied to the NHL and that professionally contracted players in European leagues were still considered amateurs. Murray Costello of the CAHA suggested that a Canadian withdrawal was possible. In 1986, the IOC voted to allow all athletes to compete in Olympic Games starting in 1988, but let the individual sport federations decide if they wanted to allow professionals.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.601469",
+                "duration": 5.85123,
+                "cost": 0.00757
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]"
+              },
+              "text": "Before the 1984 Winter Olympics, a dispute formed over what made a player a professional (1, 2). The IOC had adopted a rule that made any player who had signed an NHL contract but played less than ten games in the league eligible (3, 4). However, the United States Olympic Committee maintained that any player contracted with an NHL team was a professional and therefore not eligible to play (5, 6). The IOC held an emergency meeting (7) that ruled NHL-contracted players were eligible, as long as they had not played in any NHL games (8). This made five players on Olympic rosters—one Austrian, two Italians and two Canadians—ineligible (9, 10). Players who had played in other professional leagues—such as the World Hockey Association—were allowed to play (11). Canadian hockey official Alan Eagleson stated that the rule was only applied to the NHL (12) and that professionally contracted players in European leagues were still considered amateurs (13). Murray Costello of the CAHA suggested that a Canadian withdrawal was possible (14). In 1986, the IOC voted to allow all athletes to compete in Olympic Games starting in 1988, but let the individual sport federations decide if they wanted to allow professionals (15, 16).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -1598,6 +1976,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "who wears the yellow jersey tour de france ?"
       },
@@ -1652,11 +2031,31 @@
             "meta": {},
             "text": "The general classification is the most important classification, the one by which the winner of the Tour de France is determined. Since 1919, the leader of the general classification wears the yellow jersey (French: maillot jaunepronounced [majo ʒon]).",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The general classification is the most important classification (1), the one by which the winner of the Tour de France is determined (2). Since 1919, the leader of the general classification wears the yellow jersey (3) (French: maillot jaune (4) pronounced [majo ʒon]).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Le classement général est le plus important.\n2. 2. Le vainqueur du Tour de France est déterminé par le classement général.\n3. 3. Depuis 1919, le leader du classement général porte le maillot jaune.\n4. 4. Le maillot jaune est appelé \"maillot jaune\" en français.\n5. 5. Le maillot jaune est un symbole de leadership dans le Tour de France.\n\n-- REPONSE --\nThe general classification is the most important classification, the one by which the winner of the Tour de France is determined. Since 1919, the leader of the general classification wears the yellow jersey (French: maillot jaunepronounced [majo ʒon]).",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.605497",
+                "duration": 2.917479,
+                "cost": 0.002475
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 0.8,
+                "hallus": 0,
+                "missing": "5",
+                "nb_missing": 1,
+                "facts_in_ans": "[1, 2, 3, 4]"
+              },
+              "text": "The general classification is the most important classification (1), the one by which the winner of the Tour de France is determined (2). Since 1919, the leader of the general classification wears the yellow jersey (3) (French: maillot jaune (4) pronounced [majo ʒon]).",
               "human": 1.0,
-              "auto": null
+              "auto": 0.888888888888889
             }
           }
         ]
@@ -1665,6 +2064,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "who is the founder of the 7th day adventist church ?"
       },
@@ -1743,11 +2143,31 @@
             "meta": {},
             "text": "The Seventh-day Adventist Church had its roots in the Millerite movement of the 1830s to the 1840s, during the period of the Second Great Awakening, and was officially founded in 1863. Prominent figures in the early church included Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews. Over the ensuing decades the church expanded from its original base in New England to become an international organization. Significant developments such the reviews initiated by evangelicals Donald Barnhouse and Walter Martin, in the 20th century led to its recognition as a Christian denomination.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The Seventh-day Adventist Church had its roots in the Millerite movement (1) of the 1830s to the 1840s (2), during the period of the Second Great Awakening (3), and was officially founded in 1863 (4). Prominent figures in the early church included Hiram Edson (5), James Springer White (6), Joseph Bates (7), and J. N. Andrews (8). Over the ensuing decades the church expanded from its original base in New England to become an international organization (9). Significant developments such the reviews initiated by evangelicals Donald Barnhouse and Walter Martin (10), in the 20th century led to its recognition as a Christian denomination (11).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. The Seventh-day Adventist Church originated from the Millerite movement.\n2. 2. The Millerite movement occurred during the 1830s to the 1840s.\n3. 3. The Second Great Awakening was the period of the Millerite movement.\n4. 4. The Seventh-day Adventist Church was officially founded in 1863.\n5. 5. Hiram Edson was a prominent figure in the early church.\n6. 6. James Springer White was a key early member of the church.\n7. 7. Joseph Bates played a significant role in the early church.\n8. 8. J. N. Andrews was an important early figure in the church.\n9. 9. The church expanded from New England to become international.\n10. 10. Evangelicals Donald Barnhouse and Walter Martin reviewed the church in the 20th century.\n11. 11. The church was recognized as a Christian denomination in the 20th century.\n\n-- REPONSE --\nThe Seventh-day Adventist Church had its roots in the Millerite movement of the 1830s to the 1840s, during the period of the Second Great Awakening, and was officially founded in 1863. Prominent figures in the early church included Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews. Over the ensuing decades the church expanded from its original base in New England to become an international organization. Significant developments such the reviews initiated by evangelicals Donald Barnhouse and Walter Martin, in the 20th century led to its recognition as a Christian denomination.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.612737",
+                "duration": 3.961924,
+                "cost": 0.00465
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]"
+              },
+              "text": "The Seventh-day Adventist Church had its roots in the Millerite movement (1) of the 1830s to the 1840s (2), during the period of the Second Great Awakening (3), and was officially founded in 1863 (4). Prominent figures in the early church included Hiram Edson (5), James Springer White (6), Joseph Bates (7), and J. N. Andrews (8). Over the ensuing decades the church expanded from its original base in New England to become an international organization (9). Significant developments such the reviews initiated by evangelicals Donald Barnhouse and Walter Martin (10), in the 20th century led to its recognition as a Christian denomination (11).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -1756,6 +2176,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "where is california state university east bay located ?"
       },
@@ -1822,11 +2243,31 @@
             "meta": {},
             "text": "California State University, East Bay (commonly referred to as Cal State East Bay, CSU East Bay, or CSUEB) is a publicuniversity located in Hayward, California, United States. The university, as part of the 23-campus California State University system, offers 136 undergraduate and 60 post-baccalaureate a reas of study. California State University, East Bay has been designated a top–tier institution among master's–granting universities in the west by U.S. News & World Report[6] and has been recognized as a 'Best in the West' college by the Princeton Review.[6]",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "California State University, East Bay (commonly referred to as Cal State East Bay, CSU East Bay, or CSUEB) is a public university (1) located in Hayward, California, United States (2). The university, as part of the 23-campus California State University system (3)(4), offers 136 undergraduate (5) and 60 post-baccalaureate areas of study (6). California State University, East Bay has been designated a top–tier institution among master's–granting universities in the west by U.S. News & World Report (7) and has been recognized as a 'Best in the West' college by the Princeton Review (8).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. California State University, East Bay is a public university.\n2. 2. The university is located in Hayward, California.\n3. 3. It is part of the California State University system.\n4. 4. The university system has 23 campuses.\n5. 5. Cal State East Bay offers 136 undergraduate areas of study.\n6. 6. The university offers 60 post-baccalaureate areas of study.\n7. 7. U.S. News & World Report has designated the university as a top-tier institution among master's-granting universities in the west.\n8. 8. The Princeton Review has recognized the university as a 'Best in the West' college.\n\n-- REPONSE --\nCalifornia State University, East Bay (commonly referred to as Cal State East Bay, CSU East Bay, or CSUEB) is a publicuniversity located in Hayward, California, United States. The university, as part of the 23-campus California State University system, offers 136 undergraduate and 60 post-baccalaureate a reas of study. California State University, East Bay has been designated a top–tier institution among master's–granting universities in the west by U.S. News & World Report[6] and has been recognized as a 'Best in the West' college by the Princeton Review.[6]",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.616667",
+                "duration": 4.325777,
+                "cost": 0.00425
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8]"
+              },
+              "text": "California State University, East Bay (commonly referred to as Cal State East Bay, CSU East Bay, or CSUEB) is a public university (1) located in Hayward, California, United States (2). The university, as part of the 23-campus California State University system (3)(4), offers 136 undergraduate (5) and 60 post-baccalaureate areas of study (6). California State University, East Bay has been designated a top–tier institution among master's–granting universities in the west by U.S. News & World Report (7) and has been recognized as a 'Best in the West' college by the Princeton Review (8).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -1835,6 +2276,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "which is the highest peak of southern india ?"
       },
@@ -1905,11 +2347,31 @@
             "meta": {},
             "text": "Anamudi (Malayalam pronunciation: ​[aːnɐmʊɖi], ആനമുടി) is a mountain located in the Indian state of Kerala. It is the highest peak in the Kerala and South India, at an elevation of 2,695 metres (8,842 ft) and a topographic prominence of 2,479 metres (8,133 ft).[3] It lies on the border of Devikulam Taluk, Idukki district and Kothamangalam Taluk, Ernakulam district. The name Anamudi literally translates to 'elephant's forehead,' a reference to the resemblance of the mountain to an elephant's head.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "Anamudi (Malayalam pronunciation: ​[aːnɐmʊɖi], ആനമുടി) is a mountain located in the Indian state of Kerala (1). It is the highest peak in the Kerala (2) and South India (3), at an elevation of 2,695 metres (8,842 ft) (4) and a topographic prominence of 2,479 metres (8,133 ft) (5). It lies on the border of Devikulam Taluk, Idukki district (6, 7) and Kothamangalam Taluk, Ernakulam district (6, 7). The name Anamudi literally translates to 'elephant's forehead' (8), a reference to the resemblance of the mountain to an elephant's head (9).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Anamudi is a mountain in Kerala, India.\n2. 2. It is the highest peak in Kerala.\n3. 3. It is the highest peak in South India.\n4. 4. Anamudi has an elevation of 2,695 metres.\n5. 5. The topographic prominence of Anamudi is 2,479 metres.\n6. 6. Anamudi is located on the border of Devikulam Taluk and Kothamangalam Taluk.\n7. 7. It is situated in Idukki district and Ernakulam district.\n8. 8. The name Anamudi means 'elephant's forehead.'\n9. 9. The mountain resembles an elephant's head.\n\n-- REPONSE --\nAnamudi (Malayalam pronunciation: ​[aːnɐmʊɖi], ആനമുടി) is a mountain located in the Indian state of Kerala. It is the highest peak in the Kerala and South India, at an elevation of 2,695 metres (8,842 ft) and a topographic prominence of 2,479 metres (8,133 ft).[3] It lies on the border of Devikulam Taluk, Idukki district and Kothamangalam Taluk, Ernakulam district. The name Anamudi literally translates to 'elephant's forehead,' a reference to the resemblance of the mountain to an elephant's head.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.620883",
+                "duration": 4.3866700000000005,
+                "cost": 0.0048400000000000006
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+              },
+              "text": "Anamudi (Malayalam pronunciation: ​[aːnɐmʊɖi], ആനമുടി) is a mountain located in the Indian state of Kerala (1). It is the highest peak in the Kerala (2) and South India (3), at an elevation of 2,695 metres (8,842 ft) (4) and a topographic prominence of 2,479 metres (8,133 ft) (5). It lies on the border of Devikulam Taluk, Idukki district (6, 7) and Kothamangalam Taluk, Ernakulam district (6, 7). The name Anamudi literally translates to 'elephant's forehead' (8), a reference to the resemblance of the mountain to an elephant's head (9).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -1918,6 +2380,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "where did the saying quit cold turkey come from ?"
       },
@@ -1976,11 +2439,31 @@
             "meta": {},
             "text": "The 'goose bumps' (piloerection) that occurs with sudden discontinuation in persons dependent on opioids, frequently persons addicted to heroin. Similarly the term 'kick the habit' alludes to the muscle spasms that also occur.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The 'goose bumps' (piloerection) (1) that occurs with sudden discontinuation (2) in persons dependent on opioids (3), frequently persons addicted to heroin (4). Similarly the term 'kick the habit' alludes to the muscle spasms (5) that also occur (6).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Les frissons sont appelés piloérection.\n2. 2. La piloérection survient lors de l'arrêt soudain des opioïdes.\n3. 3. Les personnes dépendantes aux opioïdes peuvent avoir des frissons.\n4. 4. Les personnes dépendantes à l'héroïne peuvent avoir des frissons.\n5. 5. L'expression \"kick the habit\" fait référence aux spasmes musculaires.\n6. 6. Les spasmes musculaires surviennent aussi lors de l'arrêt des opioïdes.\n\n-- REPONSE --\nThe 'goose bumps' (piloerection) that occurs with sudden discontinuation in persons dependent on opioids, frequently persons addicted to heroin. Similarly the term 'kick the habit' alludes to the muscle spasms that also occur.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.627689",
+                "duration": 3.21443,
+                "cost": 0.002605
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6]"
+              },
+              "text": "The 'goose bumps' (piloerection) (1) that occurs with sudden discontinuation (2) in persons dependent on opioids (3), frequently persons addicted to heroin (4). Similarly the term 'kick the habit' alludes to the muscle spasms (5) that also occur (6).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -1989,6 +2472,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "what game are they playing in casino royale ?"
       },
@@ -2083,11 +2567,31 @@
             "meta": {},
             "text": "Baccarat chemin-de-fer is the favoured game of James Bond, the fictional secret agent created by Ian Fleming.[25] Bond plays the game in numerous novels, most notably his 1953 debut, Casino Royale, in which the entire plot revolves around a game between Bond and SMERSH operative Le Chiffre; the unabridged version of the novel includes a primer to the game for readers who are unfamiliar with it. It is also featured in several filmed versions of the novels, including the 1954 television adaption Casino Royale (Climax!), where Bond, referred to as 'Jimmy' by several characters, bankrupts Le Chiffre in order to have him eliminated by his Soviet superiors; Dr. No, where Bond is first introduced playing the game in film; Thunderball; the 1967 version of Casino Royale, which is the most detailed treatment of a baccarat game in any Bond film; On Her Majesty's Secret Service; For Your Eyes Only; and GoldenEye.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "Baccarat chemin-de-fer is the favoured game of James Bond (1), the fictional secret agent created by Ian Fleming (2). Bond plays the game in numerous novels (3), most notably his 1953 debut, Casino Royale (4), in which the entire plot revolves around a game between Bond and SMERSH operative Le Chiffre (5); the unabridged version of the novel includes a primer to the game for readers who are unfamiliar with it (6). It is also featured in several filmed versions of the novels (7), including the 1954 television adaption Casino Royale (Climax!), where Bond, referred to as 'Jimmy' by several characters (9), bankrupts Le Chiffre in order to have him eliminated by his Soviet superiors (8); Dr. No, where Bond is first introduced playing the game in film (10); Thunderball (11); the 1967 version of Casino Royale, which is the most detailed treatment of a baccarat game in any Bond film (12); On Her Majesty's Secret Service (13); For Your Eyes Only (14); and GoldenEye (15).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Baccarat chemin-de-fer is James Bond's favoured game.\n2. 2. James Bond is a fictional secret agent created by Ian Fleming.\n3. 3. Bond plays baccarat chemin-de-fer in numerous novels.\n4. 4. The 1953 novel Casino Royale revolves around a game of baccarat.\n5. 5. In Casino Royale, Bond plays against SMERSH operative Le Chiffre.\n6. 6. The unabridged version of Casino Royale includes a primer on baccarat.\n7. 7. Baccarat chemin-de-fer is featured in several filmed versions of Bond novels.\n8. 8. In the 1954 television adaptation of Casino Royale, Bond bankrupts Le Chiffre.\n9. 9. In the 1954 adaptation, Bond is referred to as 'Jimmy' by several characters.\n10. 10. Bond is first introduced playing baccarat in the film Dr. No.\n11. 11. Baccarat is also featured in the film Thunderball.\n12. 12. The 1967 version of Casino Royale has the most detailed baccarat game.\n13. 13. Baccarat appears in the film On Her Majesty's Secret Service.\n14. 14. The game is included in the film For Your Eyes Only.\n15. 15. Baccarat is featured in the film GoldenEye.\n\n-- REPONSE --\nBaccarat chemin-de-fer is the favoured game of James Bond, the fictional secret agent created by Ian Fleming.[25] Bond plays the game in numerous novels, most notably his 1953 debut, Casino Royale, in which the entire plot revolves around a game between Bond and SMERSH operative Le Chiffre; the unabridged version of the novel includes a primer to the game for readers who are unfamiliar with it. It is also featured in several filmed versions of the novels, including the 1954 television adaption Casino Royale (Climax!), where Bond, referred to as 'Jimmy' by several characters, bankrupts Le Chiffre in order to have him eliminated by his Soviet superiors; Dr. No, where Bond is first introduced playing the game in film; Thunderball; the 1967 version of Casino Royale, which is the most detailed treatment of a baccarat game in any Bond film; On Her Majesty's Secret Service; For Your Eyes Only; and GoldenEye.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.630305",
+                "duration": 4.910976,
+                "cost": 0.006655
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]"
+              },
+              "text": "Baccarat chemin-de-fer is the favoured game of James Bond (1), the fictional secret agent created by Ian Fleming (2). Bond plays the game in numerous novels (3), most notably his 1953 debut, Casino Royale (4), in which the entire plot revolves around a game between Bond and SMERSH operative Le Chiffre (5); the unabridged version of the novel includes a primer to the game for readers who are unfamiliar with it (6). It is also featured in several filmed versions of the novels (7), including the 1954 television adaption Casino Royale (Climax!), where Bond, referred to as 'Jimmy' by several characters (9), bankrupts Le Chiffre in order to have him eliminated by his Soviet superiors (8); Dr. No, where Bond is first introduced playing the game in film (10); Thunderball (11); the 1967 version of Casino Royale, which is the most detailed treatment of a baccarat game in any Bond film (12); On Her Majesty's Secret Service (13); For Your Eyes Only (14); and GoldenEye (15).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -2096,6 +2600,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "who has the power to convict the president upon impeachment ?"
       },
@@ -2186,11 +2691,31 @@
             "meta": {},
             "text": "Impeachment in the United States is an enumerated power of the legislature that allows formal charges to be brought against a civil officer of government for crimes alleged to have been committed. Most impeachments have concerned alleged crimes committed while in office, though there have been a few cases in which Congress has impeached and convicted officials partly for prior crimes. The actual trial on such charges, and subsequent removal of an official upon conviction, is separate from the act of impeachment itself. Impeachment proceedings have been initiated against several presidents of the United States. Andrew Johnson and Bill Clinton are the only two presidents to have been successfully impeached by the House of Representatives, and both were later acquitted by the Senate. The impeachment process against Richard Nixon was never completed, as Nixon resigned his office before the vote of the full House for impeachment, but such a vote was widely expected to pass, and the threat of it and a subsequent conviction in the Senate was the impetus for Nixon's departure. To date, no president has been removed from office by impeachment and conviction. The impeached official continues in office until conviction.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "Impeachment in the United States is an enumerated power of the legislature (1) that allows formal charges to be brought against a civil officer of government (2) for crimes alleged to have been committed (3). Most impeachments have concerned alleged crimes committed while in office (4), though there have been a few cases in which Congress has impeached and convicted officials partly for prior crimes (5). The actual trial on such charges, and subsequent removal of an official upon conviction, is separate from the act of impeachment itself (6). Impeachment proceedings have been initiated against several presidents of the United States (7). Andrew Johnson and Bill Clinton are the only two presidents to have been successfully impeached by the House of Representatives (8, 9), and both were later acquitted by the Senate (10). The impeachment process against Richard Nixon was never completed, as Nixon resigned his office before the vote of the full House for impeachment (11), but such a vote was widely expected to pass, and the threat of it and a subsequent conviction in the Senate was the impetus for Nixon's departure (12). To date, no president has been removed from office by impeachment and conviction (13). The impeached official continues in office until conviction (14).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Impeachment is a power of the U.S. legislature.\n2. 2. Impeachment allows formal charges against a civil officer.\n3. 3. Charges can be for crimes allegedly committed.\n4. 4. Most impeachments concern crimes committed while in office.\n5. 5. Some impeachments have included prior crimes.\n6. 6. The trial and removal are separate from impeachment.\n7. 7. Several U.S. presidents have faced impeachment proceedings.\n8. 8. Andrew Johnson was impeached by the House of Representatives.\n9. 9. Bill Clinton was impeached by the House of Representatives.\n10. 10. Both Johnson and Clinton were acquitted by the Senate.\n11. 11. Richard Nixon resigned before a full House vote on impeachment.\n12. 12. Nixon's resignation was due to the threat of impeachment and conviction.\n13. 13. No president has been removed from office by impeachment and conviction.\n14. 14. An impeached official remains in office until conviction.\n\n-- REPONSE --\nImpeachment in the United States is an enumerated power of the legislature that allows formal charges to be brought against a civil officer of government for crimes alleged to have been committed. Most impeachments have concerned alleged crimes committed while in office, though there have been a few cases in which Congress has impeached and convicted officials partly for prior crimes. The actual trial on such charges, and subsequent removal of an official upon conviction, is separate from the act of impeachment itself. Impeachment proceedings have been initiated against several presidents of the United States. Andrew Johnson and Bill Clinton are the only two presidents to have been successfully impeached by the House of Representatives, and both were later acquitted by the Senate. The impeachment process against Richard Nixon was never completed, as Nixon resigned his office before the vote of the full House for impeachment, but such a vote was widely expected to pass, and the threat of it and a subsequent conviction in the Senate was the impetus for Nixon's departure. To date, no president has been removed from office by impeachment and conviction. The impeached official continues in office until conviction.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.634403",
+                "duration": 5.579273,
+                "cost": 0.006795000000000001
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]"
+              },
+              "text": "Impeachment in the United States is an enumerated power of the legislature (1) that allows formal charges to be brought against a civil officer of government (2) for crimes alleged to have been committed (3). Most impeachments have concerned alleged crimes committed while in office (4), though there have been a few cases in which Congress has impeached and convicted officials partly for prior crimes (5). The actual trial on such charges, and subsequent removal of an official upon conviction, is separate from the act of impeachment itself (6). Impeachment proceedings have been initiated against several presidents of the United States (7). Andrew Johnson and Bill Clinton are the only two presidents to have been successfully impeached by the House of Representatives (8, 9), and both were later acquitted by the Senate (10). The impeachment process against Richard Nixon was never completed, as Nixon resigned his office before the vote of the full House for impeachment (11), but such a vote was widely expected to pass, and the threat of it and a subsequent conviction in the Senate was the impetus for Nixon's departure (12). To date, no president has been removed from office by impeachment and conviction (13). The impeached official continues in office until conviction (14).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -2199,6 +2724,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "how long have we been using oil as a fuel source ?"
       },
@@ -2269,11 +2795,31 @@
             "meta": {},
             "text": "The use of petroleum dates back to ancient China more than 2000 years ago. In I Ching, one of the earliest Chinese writings cites the use of oil in its raw state without refining was first discovered, extracted, and used in China in the first century BCE. In addition, the Chinese were the first to use petroleum as fuel as the early as the fourth century BCE.[2][3][4][5]",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The use of petroleum dates back to ancient China more than 2000 years ago (2). In I Ching, one of the earliest Chinese writings (3) cites the use of oil in its raw state (4) without refining was first discovered, extracted, and used in China in the first century BCE (5)(6)(7). In addition, the Chinese were the first to use petroleum as fuel as the early as the fourth century BCE (8)(9).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. The use of petroleum dates back to ancient China.\n2. 2. Petroleum was used in China more than 2000 years ago.\n3. 3. I Ching is one of the earliest Chinese writings.\n4. 4. I Ching cites the use of oil in its raw state.\n5. 5. Oil was first discovered in China in the first century BCE.\n6. 6. Oil was extracted in China in the first century BCE.\n7. 7. Oil was used in China in the first century BCE.\n8. 8. The Chinese were the first to use petroleum as fuel.\n9. 9. Petroleum was used as fuel in China as early as the fourth century BCE.\n\n-- REPONSE --\nThe use of petroleum dates back to ancient China more than 2000 years ago. In I Ching, one of the earliest Chinese writings cites the use of oil in its raw state without refining was first discovered, extracted, and used in China in the first century BCE. In addition, the Chinese were the first to use petroleum as fuel as the early as the fourth century BCE.[2][3][4][5]",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.637451",
+                "duration": 3.303055,
+                "cost": 0.0034000000000000002
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 0.8888888888888888,
+                "hallus": 0,
+                "missing": "1",
+                "nb_missing": 1,
+                "facts_in_ans": "[2, 3, 4, 5, 6, 7, 8, 9]"
+              },
+              "text": "The use of petroleum dates back to ancient China more than 2000 years ago (2). In I Ching, one of the earliest Chinese writings (3) cites the use of oil in its raw state (4) without refining was first discovered, extracted, and used in China in the first century BCE (5)(6)(7). In addition, the Chinese were the first to use petroleum as fuel as the early as the fourth century BCE (8)(9).",
               "human": 1.0,
-              "auto": null
+              "auto": 0.9411764705882353
             }
           }
         ]
@@ -2282,6 +2828,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "who is presiding officer for impeachment trials against the president of the phil ?"
       },
@@ -2332,11 +2879,31 @@
             "meta": {},
             "text": "If the President of the Philippines is on trial, such as in 2001, the Chief Justice of the Supreme Court of the Philippines shall preside but not vote.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "If the President of the Philippines is on trial, such as in 2001 (4), the Chief Justice of the Supreme Court of the Philippines shall preside (2) but not vote (3).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Le Président des Philippines peut être jugé.\n2. 2. Le Chef de la Justice de la Cour Suprême des Philippines préside le procès.\n3. 3. Le Chef de la Justice ne vote pas lors du procès.\n4. 4. Un exemple de procès présidentiel a eu lieu en 2001.\n\n-- REPONSE --\nIf the President of the Philippines is on trial, such as in 2001, the Chief Justice of the Supreme Court of the Philippines shall preside but not vote.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.641480",
+                "duration": 2.807857,
+                "cost": 0.0019399999999999999
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 0.75,
+                "hallus": 0,
+                "missing": "1",
+                "nb_missing": 1,
+                "facts_in_ans": "[2, 3, 4]"
+              },
+              "text": "If the President of the Philippines is on trial, such as in 2001 (4), the Chief Justice of the Supreme Court of the Philippines shall preside (2) but not vote (3).",
               "human": 1.0,
-              "auto": null
+              "auto": 0.8571428571428571
             }
           }
         ]
@@ -2345,6 +2912,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "how did the red wings get their name ?"
       },
@@ -2435,11 +3003,31 @@
             "meta": {},
             "text": "The Detroit Red Wings professional ice hockey club was founded as the Detroit Cougars on September 25, 1926, one of three teams to join the National Hockey League (NHL) in 1926. With the demise of the Western Canada Hockey League (WCHL), the rights to the players of the Victoria Cougars were purchased by a Detroit group led by Charles A. Hughes who kept the name 'Cougars' for their NHL club. The new team struggled financially; in 1930, the Cougars changed their name to the Detroit Falcons, and after being bought out of receivership by James E. Norris were renamed as the Detroit Red Wings in 1932. The team played their first game on November 18, 1926, and won their first two Stanley Cup titles in 1936 and 1937. The Red Wings have won the Cup eleven times, more than any other American team in NHL history.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "The Detroit Red Wings professional ice hockey club was founded as the Detroit Cougars (1) on September 25, 1926 (2), one of three teams to join the National Hockey League (NHL) in 1926 (3). With the demise of the Western Canada Hockey League (WCHL), the rights to the players of the Victoria Cougars were purchased by a Detroit group (4) led by Charles A. Hughes (5) who kept the name 'Cougars' for their NHL club (6). The new team struggled financially (7); in 1930, the Cougars changed their name to the Detroit Falcons (8), and after being bought out of receivership by James E. Norris (9) were renamed as the Detroit Red Wings in 1932 (10). The team played their first game on November 18, 1926 (11), and won their first two Stanley Cup titles in 1936 and 1937 (12). The Red Wings have won the Cup eleven times (13), more than any other American team in NHL history (14).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. The Detroit Red Wings were originally founded as the Detroit Cougars.\n2. 2. The team was founded on September 25, 1926.\n3. 3. The Detroit Cougars were one of three teams to join the NHL in 1926.\n4. 4. The rights to the players of the Victoria Cougars were purchased by a Detroit group.\n5. 5. Charles A. Hughes led the group that purchased the Victoria Cougars' players.\n6. 6. The new NHL team kept the name 'Cougars'.\n7. 7. The team struggled financially in its early years.\n8. 8. In 1930, the team changed its name to the Detroit Falcons.\n9. 9. James E. Norris bought the team out of receivership.\n10. 10. The team was renamed the Detroit Red Wings in 1932.\n11. 11. The Detroit Red Wings played their first game on November 18, 1926.\n12. 12. The team won their first Stanley Cup titles in 1936 and 1937.\n13. 13. The Red Wings have won the Stanley Cup eleven times.\n14. 14. The Red Wings have won more Stanley Cups than any other American team in NHL history.\n\n-- REPONSE --\nThe Detroit Red Wings professional ice hockey club was founded as the Detroit Cougars on September 25, 1926, one of three teams to join the National Hockey League (NHL) in 1926. With the demise of the Western Canada Hockey League (WCHL), the rights to the players of the Victoria Cougars were purchased by a Detroit group led by Charles A. Hughes who kept the name 'Cougars' for their NHL club. The new team struggled financially; in 1930, the Cougars changed their name to the Detroit Falcons, and after being bought out of receivership by James E. Norris were renamed as the Detroit Red Wings in 1932. The team played their first game on November 18, 1926, and won their first two Stanley Cup titles in 1936 and 1937. The Red Wings have won the Cup eleven times, more than any other American team in NHL history.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.647541",
+                "duration": 5.074423,
+                "cost": 0.006435
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]"
+              },
+              "text": "The Detroit Red Wings professional ice hockey club was founded as the Detroit Cougars (1) on September 25, 1926 (2), one of three teams to join the National Hockey League (NHL) in 1926 (3). With the demise of the Western Canada Hockey League (WCHL), the rights to the players of the Victoria Cougars were purchased by a Detroit group (4) led by Charles A. Hughes (5) who kept the name 'Cougars' for their NHL club (6). The new team struggled financially (7); in 1930, the Cougars changed their name to the Detroit Falcons (8), and after being bought out of receivership by James E. Norris (9) were renamed as the Detroit Red Wings in 1932 (10). The team played their first game on November 18, 1926 (11), and won their first two Stanley Cup titles in 1936 and 1937 (12). The Red Wings have won the Cup eleven times (13), more than any other American team in NHL history (14).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -2448,6 +3036,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "what type of dog was in turner and hooch ?"
       },
@@ -2546,11 +3135,31 @@
             "meta": {},
             "text": "Although the Dogue de Bordeaux first arrived in the USA in the 1890s for the show ring, the first documented Dogues de Bordeaux of modern times appeared in 1959 [clarification needed], Fidelle de Fenelon; and in 1968, Rugby de la Maison des Arbres. Between 1969 and 1980, imported Dogues de Bordeaux in the USA were scarce, limited to a few breeders who worked closely with the French Dogue de Bordeaux Club, the SADB. The breed was first 'officially' introduced to American purebred enthusiasts in an article written in 1982 and by the American anthropologist, Dr. Carl Semencic for 'Dog World' magazine. That article, entitled 'Introducing the Dogue de Bordeaux', was followed by chapters dedicated to the Dogue in Semencic's books on dogs, published by T.F.H. Publications of Neptune, New Jersey. When Semencic's first article on the breed was published, there were no Bordeaux Dogues in the United States. There were 600 examples left in the world, mostly in France, the Netherlands and ast Berlin, and the breed's numbers were on the decline. Much later, in 1989, the typical American family saw the Dogue de Bordeaux for the first time on the big screen in Touchstone's movie Turner & Hooch about a policeman and his canine partner, although many people [who?] did not know that the massive slobbering animal was a Dogue de Bordeaux.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "Although the Dogue de Bordeaux first arrived in the USA in the 1890s for the show ring (1), the first documented Dogues de Bordeaux of modern times appeared in 1959, Fidelle de Fenelon (2); and in 1968, Rugby de la Maison des Arbres (3). Between 1969 and 1980, imported Dogues de Bordeaux in the USA were scarce (4), limited to a few breeders who worked closely with the French Dogue de Bordeaux Club, the SADB (5). The breed was first 'officially' introduced to American purebred enthusiasts in an article written in 1982 (6) and by the American anthropologist, Dr. Carl Semencic (7) for 'Dog World' magazine (8). That article, entitled 'Introducing the Dogue de Bordeaux', was followed by chapters dedicated to the Dogue in Semencic's books on dogs, published by T.F.H. Publications of Neptune, New Jersey (9, 10). When Semencic's first article on the breed was published, there were no Bordeaux Dogues in the United States (11). There were 600 examples left in the world, mostly in France, the Netherlands and East Berlin (12), and the breed's numbers were on the decline (13). Much later, in 1989, the typical American family saw the Dogue de Bordeaux for the first time on the big screen in Touchstone's movie Turner & Hooch (14, 15) about a policeman and his canine partner, although many people did not know that the massive slobbering animal was a Dogue de Bordeaux (16).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Le Dogue de Bordeaux est arrivé aux États-Unis dans les années 1890 pour les expositions canines.\n2. 2. Fidelle de Fenelon est un Dogue de Bordeaux documenté en 1959.\n3. 3. Rugby de la Maison des Arbres est un Dogue de Bordeaux documenté en 1968.\n4. 4. Entre 1969 et 1980, les Dogues de Bordeaux importés aux États-Unis étaient rares.\n5. 5. Quelques éleveurs américains collaboraient avec le club français SADB.\n6. 6. En 1982, un article a officiellement présenté le Dogue de Bordeaux aux amateurs américains de chiens de race pure.\n7. 7. L'article a été écrit par l'anthropologue américain Dr. Carl Semencic.\n8. 8. L'article a été publié dans le magazine 'Dog World'.\n9. 9. Semencic a également écrit des chapitres sur le Dogue de Bordeaux dans ses livres.\n10. 10. Les livres de Semencic ont été publiés par T.F.H. Publications de Neptune, New Jersey.\n11. 11. Quand l'article de Semencic a été publié, il n'y avait pas de Dogues de Bordeaux aux États-Unis.\n12. 12. Il restait 600 Dogues de Bordeaux dans le monde, principalement en France, aux Pays-Bas et à Berlin-Est.\n13. 13. Le nombre de Dogues de Bordeaux était en déclin.\n14. 14. En 1989, le Dogue de Bordeaux est apparu dans le film 'Turner & Hooch'.\n15. 15. Le film 'Turner & Hooch' a été produit par Touchstone.\n16. 16. Beaucoup de gens ne savaient pas que le chien du film était un Dogue de Bordeaux.\n\n-- REPONSE --\nAlthough the Dogue de Bordeaux first arrived in the USA in the 1890s for the show ring, the first documented Dogues de Bordeaux of modern times appeared in 1959 [clarification needed], Fidelle de Fenelon; and in 1968, Rugby de la Maison des Arbres. Between 1969 and 1980, imported Dogues de Bordeaux in the USA were scarce, limited to a few breeders who worked closely with the French Dogue de Bordeaux Club, the SADB. The breed was first 'officially' introduced to American purebred enthusiasts in an article written in 1982 and by the American anthropologist, Dr. Carl Semencic for 'Dog World' magazine. That article, entitled 'Introducing the Dogue de Bordeaux', was followed by chapters dedicated to the Dogue in Semencic's books on dogs, published by T.F.H. Publications of Neptune, New Jersey. When Semencic's first article on the breed was published, there were no Bordeaux Dogues in the United States. There were 600 examples left in the world, mostly in France, the Netherlands and ast Berlin, and the breed's numbers were on the decline. Much later, in 1989, the typical American family saw the Dogue de Bordeaux for the first time on the big screen in Touchstone's movie Turner & Hooch about a policeman and his canine partner, although many people [who?] did not know that the massive slobbering animal was a Dogue de Bordeaux.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.651877",
+                "duration": 9.039618,
+                "cost": 0.009420000000000001
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16]"
+              },
+              "text": "Although the Dogue de Bordeaux first arrived in the USA in the 1890s for the show ring (1), the first documented Dogues de Bordeaux of modern times appeared in 1959, Fidelle de Fenelon (2); and in 1968, Rugby de la Maison des Arbres (3). Between 1969 and 1980, imported Dogues de Bordeaux in the USA were scarce (4), limited to a few breeders who worked closely with the French Dogue de Bordeaux Club, the SADB (5). The breed was first 'officially' introduced to American purebred enthusiasts in an article written in 1982 (6) and by the American anthropologist, Dr. Carl Semencic (7) for 'Dog World' magazine (8). That article, entitled 'Introducing the Dogue de Bordeaux', was followed by chapters dedicated to the Dogue in Semencic's books on dogs, published by T.F.H. Publications of Neptune, New Jersey (9, 10). When Semencic's first article on the breed was published, there were no Bordeaux Dogues in the United States (11). There were 600 examples left in the world, mostly in France, the Netherlands and East Berlin (12), and the breed's numbers were on the decline (13). Much later, in 1989, the typical American family saw the Dogue de Bordeaux for the first time on the big screen in Touchstone's movie Turner & Hooch (14, 15) about a policeman and his canine partner, although many people did not know that the massive slobbering animal was a Dogue de Bordeaux (16).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]
@@ -2559,6 +3168,7 @@
     {
       "meta": {},
       "question": {
+        "llm_answer": null,
         "meta": {},
         "text": "where does water come from in cell respiration ?"
       },
@@ -2629,11 +3239,31 @@
             "meta": {},
             "text": "In eukaryotes, oxidative phosphorylation occurs in the mitochondrial cristae. It comprises the electron transport chain that establishes a proton gradient (chemiosmotic potential) across the boundary of inner membrane by oxidizing the NADH produced from the Krebs cycle. ATP is synthesized by the ATP synthase enzyme when the chemiosmotic gradient is used to drive the phosphorylation of ADP. The electrons are finally transferred to exogenous oxygen and, with the addition of two protons, water is formed.",
             "eval": {
-              "llm_answer": null,
-              "meta": {},
-              "text": "",
+              "llm_answer": {
+                "meta": {},
+                "text": "In eukaryotes, oxidative phosphorylation occurs in the mitochondrial cristae (1). It comprises the electron transport chain (2) that establishes a proton gradient (3) (chemiosmotic potential) (4) across the boundary of inner membrane by oxidizing the NADH produced from the Krebs cycle (5). ATP is synthesized by the ATP synthase enzyme (6) when the chemiosmotic gradient is used to drive the phosphorylation of ADP (7). The electrons are finally transferred to exogenous oxygen (8) and, with the addition of two protons, water is formed (9).",
+                "prompt": {
+                  "meta": {},
+                  "user": "-- FAITS --\n1. 1. Oxidative phosphorylation occurs in the mitochondrial cristae in eukaryotes.\n2. 2. The electron transport chain is part of oxidative phosphorylation.\n3. 3. The electron transport chain establishes a proton gradient across the inner membrane.\n4. 4. The proton gradient is also known as chemiosmotic potential.\n5. 5. NADH from the Krebs cycle is oxidized in the electron transport chain.\n6. 6. ATP is synthesized by the ATP synthase enzyme.\n7. 7. The chemiosmotic gradient drives the phosphorylation of ADP.\n8. 8. Electrons are transferred to exogenous oxygen.\n9. 9. Water is formed with the addition of two protons.\n\n-- REPONSE --\nIn eukaryotes, oxidative phosphorylation occurs in the mitochondrial cristae. It comprises the electron transport chain that establishes a proton gradient (chemiosmotic potential) across the boundary of inner membrane by oxidizing the NADH produced from the Krebs cycle. ATP is synthesized by the ATP synthase enzyme when the chemiosmotic gradient is used to drive the phosphorylation of ADP. The electrons are finally transferred to exogenous oxygen and, with the addition of two protons, water is formed.",
+                  "system": "Tu dois comparer une liste numérotée de FAITS avec une REPONSE.\n        Tu dois reprendre exactement la REPONSE en insérant dans le texte le numéro du FAIT auquel correspond exactement le passage ou la phrase.\n        Si la phrase correspond à plusieurs FAITS, indique les entre parenthèses.\n        Il ne faut pas insérer le FAIT s'il est en contradiction avec le passage ou la phrase.\n        Si un passage ou une phrase dans la REPONSE ne correspond à aucun FAIT il faut mettre un point d'interrogation entre parenthèses (?)\n        sauf si ce passage fait référence à un emplacement dans le document, auquel cas il ne faut rien indiquer."
+                },
+                "name": "gpt-4o",
+                "full_name": "gpt-4o-2024-05-13",
+                "timestamp": "2024-06-02T12:05:00.654998",
+                "duration": 3.682683,
+                "cost": 0.003935
+              },
+              "meta": {
+                "precision": 1.0,
+                "recall": 1.0,
+                "hallus": 0,
+                "missing": "",
+                "nb_missing": 0,
+                "facts_in_ans": "[1, 2, 3, 4, 5, 6, 7, 8, 9]"
+              },
+              "text": "In eukaryotes, oxidative phosphorylation occurs in the mitochondrial cristae (1). It comprises the electron transport chain (2) that establishes a proton gradient (3) (chemiosmotic potential) (4) across the boundary of inner membrane by oxidizing the NADH produced from the Krebs cycle (5). ATP is synthesized by the ATP synthase enzyme (6) when the chemiosmotic gradient is used to drive the phosphorylation of ADP (7). The electrons are finally transferred to exogenous oxygen (8) and, with the addition of two protons, water is formed (9).",
               "human": 1.0,
-              "auto": null
+              "auto": 1.0
             }
           }
         ]

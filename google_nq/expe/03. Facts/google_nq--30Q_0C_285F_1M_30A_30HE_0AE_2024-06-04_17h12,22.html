@@ -1,0 +1,1548 @@
+<!--
+This Jinja templates needs the "expe" variable to generate the HTML.
+Moreover, it uses several boolean variables to control the rendering:
+- "show_answers": True to show the answers for each model
+- "show_chunks": True to show the Chunks in a table (images on the left column, text on the right)
+- "show_facts": True to show the Facts
+- "show_evals": True to show the Evaluations
+-->
+<html>
+<head>
+  <style>
+    h3 {
+      background-color: LightGray;
+      padding: 0px;
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: #FFFFFF;
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    img {
+      width: 100%;
+      width: 800;
+      display: block;
+    }
+
+    .my_img {
+      width: 100px;
+      vertical-align: middle;
+    }
+
+    * {
+      font-family: Arial
+    }
+
+    .collapsible {
+      background-color: #777;
+      border-bottom: 1px solid #ccc;
+      color: white;
+      cursor: pointer;
+      padding: 3px;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0px;
+      display: none;
+      overflow: hidden;
+      /*background-color: #f1f1f1;*/
+    }
+    .facts {
+      text-decoration: underline;
+      color: #0000EE;
+      font-weight: bold;
+    }
+    .hallus {
+      text-decoration: underline;
+      color: #FF1111;
+      font-weight: bold;
+    } 
+    .model_name {
+      background-color: #ffffa0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <span style="font-size: 20px;">30Q_0C_285F_1M_30A_30HE_0AE_2024-06-04_17h12,22</span>
+  <!-- For each QA -->
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>1. what is the story behind 5 nights at freddy's ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The series is based on a fictional restaurant called Freddy Fazbear's Pizza.<br/>
+        
+          <span class="facts">2.</span> Freddy Fazbear's Pizza is a pastiche of restaurants like Chuck E. Cheese's and ShowBiz Pizza Place.<br/>
+        
+          <span class="facts">3.</span> The first three games involve the player working as a nighttime security guard.<br/>
+        
+          <span class="facts">4.</span> The player must use several tools, including security cameras, to survive against animatronic characters.<br/>
+        
+          <span class="facts">5.</span> The animatronic characters become mobile and homicidal after-hours.<br/>
+        
+          <span class="facts">6.</span> The fourth game takes place in the house of a child.<br/>
+        
+          <span class="facts">7.</span> The child must defend against nightmarish versions of the animatronics by closing doors and fleeing on foot.<br/>
+        
+          <span class="facts">8.</span> The fifth game is set in a maintenance facility owned by a sister company of Freddy Fazbear's Pizza.<br/>
+        
+          <span class="facts">9.</span> The player character in the fifth game is a technician, not a night guard.<br/>
+        
+          <span class="facts">10.</span> The technician must perform different tasks each night as instructed by an AI voice.<br/>
+        
+          <span class="facts">11.</span> In the sixth game, the player acts as the owner of a pizzeria.<br/>
+        
+          <span class="facts">12.</span> The player must decorate their pizzeria with items that can be purchased.<br/>
+        
+          <span class="facts">13.</span> The player must also work the night shift for their pizzeria in the sixth game.<br/>
+        
+          <span class="facts">14.</span> The gameplay of the night shift in the sixth game is similar to previous games.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The series is centered on the story of a fictional restaurant named Freddy Fazbear's Pizza, a pastiche of restaurants like Chuck E. Cheese's and ShowBiz Pizza Place. The first three games involve the player working as a nighttime security guard, in which they must utilize several tools, most notably checking security cameras, to survive against animatronic characters, which become mobile and homicidal after-hours. The fourth game, which uses different gameplay mechanics from its predecessors, takes place in the house of a child who must defend against nightmarish versions of the animatronics by closing doors and fleeing on foot. The fifth game takes place in a maintenance facility owned by a sister company of Freddy Fazbear's Pizza. The player character is a technician instead of a night guard, who must do different tasks each night as told by an AI voice heard in the game. In the sixth game, the player acts as the owner of a pizzeria which they must decorate with payable items, and must also work the night shift for their pizzeria, which plays similarly to previous games.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>2. what was the prison called in the green mile ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> En 1935, Paul supervise les officiers Brutus Howell, Dean Stanton, Harry Terwilliger et Percy Wetmore à la prison de Cold Mountain.<br/>
+        
+          <span class="facts">2.</span> Paul souffre d'une grave infection de la vessie.<br/>
+        
+          <span class="facts">3.</span> John Coffey, un homme noir physiquement imposant mais mentalement déficient, est placé sous la garde de Paul.<br/>
+        
+          <span class="facts">4.</span> John a été condamné à mort après avoir été reconnu coupable du viol et du meurtre de deux jeunes filles blanches.<br/>
+        
+          <span class="facts">5.</span> Un autre détenu est un Amérindien nommé Arlen Bitterbuck, qui a été accusé de meurtre.<br/>
+        
+          <span class="facts">6.</span> Arlen Bitterbuck est le premier à être exécuté.<br/>
+        
+          <span class="facts">7.</span> Percy montre une tendance sadique sévère.<br/>
+        
+          <span class="facts">8.</span> Percy est le neveu de la première dame de Louisiane, il est donc intouchable.<br/>
+        
+          <span class="facts">9.</span> Percy est particulièrement abusif envers le détenu Eduard Delacroix.<br/>
+        
+          <span class="facts">10.</span> Percy brise les doigts de Del avec sa matraque.<br/>
+        
+          <span class="facts">11.</span> Percy écrase un souris de compagnie nommée Mr. Jingles, que Del avait adoptée.<br/>
+        
+          <span class="facts">12.</span> Percy appelle constamment Del par une insulte homophobe.<br/>
+        
+          <span class="facts">13.</span> Percy sabote l'exécution de Del en ne trempant pas l'éponge utilisée pour conduire l'électricité à la tête de Del.<br/>
+        
+          <span class="facts">14.</span> Del meurt en hurlant de douleur.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          In 1935, Paul supervises officers Brutus Howell, Dean Stanton, Harry Terwilliger, and Percy Wetmore at Cold Mountain Penitentiary. Paul is suffering from a severe bladder infection and receives John Coffey, a physically imposing but mentally challenged black man, into his custody. John had been sentenced to death after being convicted of raping and murdering two white girls. One of the other inmates is a Native-American named Arlen Bitterbuck, who is charged with murder and is the first to be executed. Percy demonstrates a severe sadistic streak, but, as the nephew of Louisiana's First Lady, he is beyond reproach. He is particularly abusive with inmate Eduard Delacroix; he breaks Del's fingers with his baton, steps on a pet mouse named Mr. Jingles, which Del had adopted, repeatedly calls him by a gay slur, and ultimately sabotages his execution by failing to soak the sponge used to conduct electricity to Del's head; Del dies screaming in pain.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>3. what is the widest highway in north america ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> King's Highway 401 is also known as Highway 401.<br/>
+        
+          <span class="facts">2.</span> The official name of Highway 401 is the Macdonald–Cartier Freeway.<br/>
+        
+          <span class="facts">3.</span> Highway 401 is colloquially referred to as the four-oh-one.<br/>
+        
+          <span class="facts">4.</span> This highway is a controlled-access 400-series highway.<br/>
+        
+          <span class="facts">5.</span> Highway 401 is located in the Canadian province of Ontario.<br/>
+        
+          <span class="facts">6.</span> The highway stretches 828.0 kilometres from Windsor to the Ontario–Quebec border.<br/>
+        
+          <span class="facts">7.</span> The part of Highway 401 that passes through Toronto is North America's busiest highway.<br/>
+        
+          <span class="facts">8.</span> Highway 401 is also one of the widest highways in North America.<br/>
+        
+          <span class="facts">9.</span> Highway 401, together with Quebec Autoroute 20, forms the road transportation backbone of the Quebec City–Windsor Corridor.<br/>
+        
+          <span class="facts">10.</span> Over half of Canada's population resides along the Quebec City–Windsor Corridor.<br/>
+        
+          <span class="facts">11.</span> Highway 401 is a Core Route in the National Highway System of Canada.<br/>
+        
+          <span class="facts">12.</span> The Ministry of Transportation of Ontario maintains the route.<br/>
+        
+          <span class="facts">13.</span> The Ontario Provincial Police patrol Highway 401.<br/>
+        
+          <span class="facts">14.</span> The speed limit on Highway 401 is 100 km/h, unless posted otherwise.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          King's Highway 401, commonly referred to as Highway 401 and also known by its official name as the Macdonald–Cartier Freeway or colloquially as the four-oh-one,[3] is a controlled-access400-series highway in the Canadian province of Ontario. It stretches 828.0 kilometres (514.5 mi) from Windsor in the west to the Ontario–Quebec border in the east. The part of Highway 401 that passes through Toronto is North America's busiest highway,[4][5] and one of the widest.[6][7] Together with Quebec Autoroute 20, it forms the road transportation backbone of the Quebec City–Windsor Corridor, along which over half of Canada's population resides and is also a Core Route in the National Highway System of Canada. The route is maintained by the Ministry of Transportation of Ontario (MTO) and patrolled by the Ontario Provincial Police. The speed limit is 100 km/h (62 mph) throughout its length, unless posted otherwise.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>4. what was the white thing in sausage party ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Frank and Brenda are packages chosen by a woman named Camille Toh.<br/>
+        
+          <span class="facts">2.</span> Camille Toh is shopping at Shopwell's.<br/>
+        
+          <span class="facts">3.</span> A jar of Bickle's Honey Mustard returns to Shopwell's.<br/>
+        
+          <span class="facts">4.</span> The Honey Mustard tries to warn the groceries about the Great Beyond being a lie.<br/>
+        
+          <span class="facts">5.</span> Only Frank listens to the Honey Mustard's warning.<br/>
+        
+          <span class="facts">6.</span> Honey Mustard advises Frank to find a bottle of liquor named Firewater.<br/>
+        
+          <span class="facts">7.</span> The Honey Mustard falls to his death.<br/>
+        
+          <span class="facts">8.</span> An accidental cart collision happens at Shopwell's.<br/>
+        
+          <span class="facts">9.</span> Frank, Brenda, and several other groceries fall out of the cart during the collision.<br/>
+        
+          <span class="facts">10.</span> An aggressive product named Douche falls out of the cart as well.<br/>
+        
+          <span class="facts">11.</span> Douche's nozzle gets bent in the accident.<br/>
+        
+          <span class="facts">12.</span> Douche plans revenge against Frank and Brenda.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          After Frank and Brenda's packages are chosen by a woman named Camille Toh to leave Shopwell's, a returned jar of Bickle's Honey Mustard tries to warn the groceries that the Great Beyond is a lie; nobody listens except for Frank. Honey Mustard calls on Frank to seek out a bottle of liquor named Firewater, and then falls to his death. This creates an accidental cart collision that causes Frank, Brenda, and several groceries to fall out, including an aggressive Douche who gets his nozzle bent, and plots revenge against Frank and Brenda.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>5. what makes the center of an atom stable ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Les électrons dans un atome sont attirés par les protons dans le noyau par la force électromagnétique.<br/>
+        
+          <span class="facts">2.</span> Cette force lie les électrons à l'intérieur d'un puits de potentiel électrostatique qui entoure le noyau plus petit.<br/>
+        
+          <span class="facts">3.</span> Une source externe d'énergie est nécessaire pour que l'électron puisse s'échapper.<br/>
+        
+          <span class="facts">4.</span> Plus un électron est proche du noyau, plus la force d'attraction est grande.<br/>
+        
+          <span class="facts">5.</span> Les électrons liés près du centre du puits de potentiel nécessitent plus d'énergie pour s'échapper que ceux qui sont plus éloignés.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The electrons in an atom are attracted to the protons in the nucleus by the electromagnetic force. This force binds the electrons inside an electrostaticpotential well surrounding the smaller nucleus, which means that an external source of energy is needed for the electron to escape. The closer an electron is to the nucleus, the greater the attractive force. Hence electrons bound near the center of the potential well require more energy to escape than those at greater separations.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>6. who did holly matthews play in waterloo rd ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> She was a student at the British drama school East 15 in 2005.<br/>
+        
+          <span class="facts">2.</span> She left the drama school after securing a significant role in the BBC drama Waterloo Road.<br/>
+        
+          <span class="facts">3.</span> In Waterloo Road, she portrayed the character of a bully named Leigh-Ann Galloway.<br/>
+        
+          <span class="facts">4.</span> After Waterloo Road, she continued her acting career in the BBC's Doctors.<br/>
+        
+          <span class="facts">5.</span> In BBC's Doctors, she played the character Connie Whitfield.<br/>
+        
+          <span class="facts">6.</span> She also acted in ITV's The Bill where she played a drug addict named Josie Clarke.<br/>
+        
+          <span class="facts">7.</span> She returned to the BBC soap Doctors in 2009.<br/>
+        
+          <span class="facts">8.</span> In her return to Doctors, she played the character Tansy Flack.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          She attended the British drama school East 15 in 2005, and left after winning a high-profile role in the BBC drama Waterloo Road, playing the bully Leigh-Ann Galloway.[6] Since that role, Matthews has continued to act in BBC's Doctors, playing Connie Whitfield; in ITV's The Bill playing drug addict Josie Clarke; and she was back in the BBC soap Doctors in 2009, playing Tansy Flack.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>7. who did the first double backflip on a dirt bike ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Travis Pastrana completed a double backflip on an uphill/sand setup in 2006.<br/>
+        
+          <span class="facts">2.</span> The double backflip was performed in his 'Nitro Circus' Freestyle Motocross movies.<br/>
+        
+          <span class="facts">3.</span> On August 4, 2006, Travis Pastrana landed a double backflip at X Games 12 in Los Angeles.<br/>
+        
+          <span class="facts">4.</span> He was the first rider to land a double backflip in competition.<br/>
+        
+          <span class="facts">5.</span> After landing the trick, Travis Pastrana decided never to do it again.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          2006 brought footage of Travis Pastrana completing a double backflip on an uphill/sand setup on his popular 'Nitro Circus' Freestyle Motocross movies. On August 4, 2006, at X Games 12 in Los Angeles, he became the first rider to land a double backflip in competition. Having landed another trick that many had considered impossible, he vowed never to do it again.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>8. who won season 10 of dancing with the stars ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Season ten of Dancing with the Stars started on March 22, 2010.<br/>
+        
+          <span class="facts">2.</span> There was no elimination during the first week of the competition.<br/>
+        
+          <span class="facts">3.</span> The first elimination occurred on March 30.<br/>
+        
+          <span class="facts">4.</span> Nicole Scherzinger, a singer, was the winner of the competition.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Season ten of Dancing with the Stars premiered on March 22, 2010. There was not an elimination the first week of competition. The first elimination took place on March 30. Singer Nicole Scherzinger won the competition.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>9. when would the quantity of dna double when growing cells ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The cell cycle is the process of cell division.<br/>
+        
+          <span class="facts">2.</span> The cell cycle consists of four major parts known as phases.<br/>
+        
+          <span class="facts">3.</span> The first phase of the cell cycle is the G1 phase.<br/>
+        
+          <span class="facts">4.</span> The G1 phase involves the synthesis of enzymes needed for DNA replication.<br/>
+        
+          <span class="facts">5.</span> The second phase of the cell cycle is the S phase.<br/>
+        
+          <span class="facts">6.</span> During the S phase, DNA replication occurs, producing two identical sets of chromosomes.<br/>
+        
+          <span class="facts">7.</span> The third phase of the cell cycle is the G2 phase.<br/>
+        
+          <span class="facts">8.</span> The G2 phase involves significant protein synthesis, mainly the production of microtubules.<br/>
+        
+          <span class="facts">9.</span> Microtubules are required during the process of cell division, known as mitosis.<br/>
+        
+          <span class="facts">10.</span> The fourth phase of the cell cycle is the M phase.<br/>
+        
+          <span class="facts">11.</span> The M phase involves nuclear division, also known as karyokinesis.<br/>
+        
+          <span class="facts">12.</span> The M phase also involves cytoplasmic division, or cytokinesis.<br/>
+        
+          <span class="facts">13.</span> The formation of a new cell membrane accompanies the M phase.<br/>
+        
+          <span class="facts">14.</span> The physical division of 'mother' and 'daughter' cells occurs during the M phase.<br/>
+        
+          <span class="facts">15.</span> The M phase is further divided into several distinct phases.<br/>
+        
+          <span class="facts">16.</span> These distinct phases of the M phase are prophase, prometaphase, metaphase, anaphase, and telophase.<br/>
+        
+          <span class="facts">17.</span> The final stage of the M phase is cytokinesis.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The process of cell division, called cell cycle, has four major parts called phases. The first part, called G1 phase is marked by synthesis of various enzymes that are required for DNA replication. The second part of the cell cycle is the S phase, where DNA replication produces two identical sets of chromosomes. The third part is the G2 phase in which a significant protein synthesis occurs, mainly involving the production of microtubules that are required during the process of division, called mitosis. The fourth phase, M phase, consists of nuclear division (karyokinesis) and cytoplasmic division (cytokinesis), accompanied by the formation of a new cell membrane. This is the physical division of 'mother' and 'daughter' cells. The M phase has been broken down into several distinct phases, sequentially known as prophase, prometaphase, metaphase, anaphase and telophase leading to cytokinesis.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>10. when did the battle of palmito ranch happen ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The Battle of Palmito Ranch is viewed as the last battle of the American Civil War by some standards.<br/>
+        
+          <span class="facts">2.</span> This battle took place on May 12 and 13, 1865.<br/>
+        
+          <span class="facts">3.</span> The location of the battle was on the banks of the Rio Grande, east of Brownsville, Texas.<br/>
+        
+          <span class="facts">4.</span> The Battle of Palmito Ranch occurred a few miles from the seaport of Los Brazos de Santiago.<br/>
+        
+          <span class="facts">5.</span> Some argue that this battle should be considered a postwar action as the Confederacy had already ceased to exist.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The Battle of Palmito Ranch is considered by some criteria as the final battle of the American Civil War. It was fought May 12 and 13, 1865, on the banks of the Rio Grande east of Brownsville, Texas and a few miles from the seaport of Los Brazos de Santiago. Since the Confederacy had ceased to exist, it is also argued that this battle should be classified as a postwar action.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>11. who determined the mass to charge ratio of an electron ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> In the 19th century, the mass-to-charge ratios of some ions were measured using electrochemical methods.<br/>
+        
+          <span class="facts">2.</span> J. J. Thomson first measured the mass-to-charge ratio of the electron in 1897.<br/>
+        
+          <span class="facts">3.</span> Thomson's measurements proved that the electron is a particle with both mass and charge.<br/>
+        
+          <span class="facts">4.</span> The mass-to-charge ratio of an electron is smaller than that of a hydrogen ion H+.<br/>
+        
+          <span class="facts">5.</span> In 1898, Wilhelm Wien separated ions based on their mass-to-charge ratio using an ion optical device.<br/>
+        
+          <span class="facts">6.</span> Wien's device used superimposed electric and magnetic fields, also known as a Wien filter.<br/>
+        
+          <span class="facts">7.</span> Walter Kaufman measured the increase of electromagnetic mass of fast electrons in 1901.<br/>
+        
+          <span class="facts">8.</span> Kaufman's experiments are now referred to as the Kaufmann–Bucherer–Neumann experiments.<br/>
+        
+          <span class="facts">9.</span> In 1913, Thomson measured the mass-to-charge ratio of ions using a parabola spectrograph.<br/>
+        
+          <span class="facts">10.</span> Today, a mass spectrometer is used to measure the mass-to-charge ratio of charged particles.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          In the 19th century, the mass-to-charge ratios of some ions were measured by electrochemical methods. In 1897, the mass-to-charge ratio of the electron was first measured by J. J. Thomson. [6] By doing this, he showed that the electron was in fact a particle with a mass and a charge, and that its mass-to-charge ratio was much smaller than that of the hydrogen ion H+. In 1898, Wilhelm Wien separated ions (canal rays) according to their mass-to-charge ratio with an ion optical device with superimposed electric and magnetic fields (Wien filter). In 1901 Walter Kaufman measured the increase of electromagnetic mass of fast electrons (Kaufmann–Bucherer–Neumann experiments), or relativistic mass increase in modern terms. In 1913, Thomson measured the mass-to-charge ratio of ions with an instrument he called a parabola spectrograph.[7] Today, an instrument that measures the mass-to-charge ratio of charged particles is called a mass spectrometer.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>12. where does the last name downs come from ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Downs est un nom de famille.<br/>
+        
+          <span class="facts">2.</span> L'origine du nom de famille Downs est vieille anglaise.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Downs is a surname of Old English origin.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>13. who sang without love where would we be now ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> "Long Train Runnin'" is a song by The Doobie Brothers.<br/>
+        
+          <span class="facts">2.</span> The song was written by Tom Johnston, a member of the band.<br/>
+        
+          <span class="facts">3.</span> "Long Train Runnin'" was included in the 1973 album The Captain and Me.<br/>
+        
+          <span class="facts">4.</span> The song was also released as a single.<br/>
+        
+          <span class="facts">5.</span> It became a top 10 hit on the US Billboard Hot 100.<br/>
+        
+          <span class="facts">6.</span> The song peaked at number 8 on the US Billboard Hot 100.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          'Long Train Runnin'' (or 'Long Train Running') is a song recorded by The Doobie Brothers and written by band member Tom Johnston. It was included on the band's 1973 album The Captain and Me and released as a single, becoming a top 10 hit on the US Billboard Hot 100, peaking at number 8.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>14. what is the value of g on the surface of the moon ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The acceleration due to gravity on the Moon's surface is approximately 1.625 m/s2.<br/>
+        
+          <span class="facts">2.</span> This acceleration is about 16.6% of that on Earth's surface.<br/>
+        
+          <span class="facts">3.</span> The acceleration due to gravity on the Moon is equivalent to 0.16 g.<br/>
+        
+          <span class="facts">4.</span> The variation in gravitational acceleration across the Moon's surface is approximately 0.0253 m/s2.<br/>
+        
+          <span class="facts">5.</span> This variation represents 1.6% of the Moon's gravitational acceleration.<br/>
+        
+          <span class="facts">6.</span> Weight is directly dependent on gravitational acceleration.<br/>
+        
+          <span class="facts">7.</span> Objects on the Moon weigh only 16.6% of their weight on Earth.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The acceleration due to gravity on the surface of the Moon is about 1.625 m/s2, about 16.6% that on Earth's surface or 0.16 ɡ. Over the entire surface, the variation in gravitational acceleration is about 0.0253 m/s2 (1.6% of the acceleration due to gravity). Because weight is directly dependent upon gravitational acceleration, things on the Moon will weigh only 16.6% of what they weigh on the Earth.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>15. when does the door in the wall take place ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The story is set in England during the Middle Ages.<br/>
+        
+          <span class="facts">2.</span> The Black Death is sweeping across the country in the story.<br/>
+        
+          <span class="facts">3.</span> The story is illustrated by the author.<br/>
+        
+          <span class="facts">4.</span> The main character of the story is a young boy named Robin.<br/>
+        
+          <span class="facts">5.</span> Robin is sent away to become a knight like his father.<br/>
+        
+          <span class="facts">6.</span> Robin loses the use of his legs, endangering his dreams.<br/>
+        
+          <span class="facts">7.</span> A doctor reassures Robin that his leg weakness is not caused by the plague.<br/>
+        
+          <span class="facts">8.</span> The doctor who is supposed to help Robin does not come.<br/>
+        
+          <span class="facts">9.</span> Robin's parents are away, serving the king and queen during a war.<br/>
+        
+          <span class="facts">10.</span> The servants abandon Robin's house due to fear of the plague.<br/>
+        
+          <span class="facts">11.</span> Robin is saved by a friar named Brother Luke.<br/>
+        
+          <span class="facts">12.</span> Brother Luke finds Robin and takes him to a monastery.<br/>
+        
+          <span class="facts">13.</span> Brother Luke cares for Robin at the monastery.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The story, illustrated by the author, is set in England during the Middle Ages, as the Black Death (bubonic plague) is sweeping across the country. Young Robin is sent away to become a knight like his father, but his dreams are endangered when he loses the use of his legs. A doctor reassures Robin that the weakness in his legs is not caused by the plague and the doctor is supposed to come and help him but does not. His parents are away, serving the king and queen during war, and the servants abandon the house, fearing the plague. Robin is saved by Brother Luke, a friar, who finds him and takes him to a monastery and cares for him.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>16. who surfed for patrick swayze in point break ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Lori Petty, Reeves, and Swayze trained with professional surfer Dennis Jarvis two months before filming.<br/>
+        
+          <span class="facts">2.</span> Their training took place on the Hawaiian island of Kauai.<br/>
+        
+          <span class="facts">3.</span> Patrick Swayze had some previous experience with surfing.<br/>
+        
+          <span class="facts">4.</span> Keanu Reeves had never surfed before the training.<br/>
+        
+          <span class="facts">5.</span> Lori Petty had never been in the ocean before the training.<br/>
+        
+          <span class="facts">6.</span> The surfing sequences were challenging for the actors.<br/>
+        
+          <span class="facts">7.</span> Swayze injured himself during filming, cracking four ribs.<br/>
+        
+          <span class="facts">8.</span> Swayze refused to use a stunt double for the surfing scenes.<br/>
+        
+          <span class="facts">9.</span> Swayze also performed his own skydiving scenes.<br/>
+        
+          <span class="facts">10.</span> Jim Wallace, the film's aerial jump instructor, found Swayze to be a natural at skydiving.<br/>
+        
+          <span class="facts">11.</span> Swayze made a total of 55 jumps for the film.<br/>
+        
+          <span class="facts">12.</span> Swayze based aspects of his character on his stunt double, Darrick Doerner.<br/>
+        
+          <span class="facts">13.</span> Darrick Doerner is a top big wave surfer.<br/>
+        
+          <span class="facts">14.</span> After learning to surf for the film, Reeves took up surfing as a hobby.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Two months before filming, Lori Petty, Reeves and Swayze trained with former world-class professional surfer Dennis Jarvis on the Hawaiian island of Kauai. Jarvis remembers, 'Patrick said he'd been on a board a couple of times, Keanu definitely had not surfed before, and Lori had never been in the ocean in her life. Shooting the surfing sequences proved to be challenging for both actors, with Swayze cracking four of his ribs. For many of the surfing scenes, he refused to use a stunt double as he never had one for fight scenes or car chases. He also did the skydiving scenes himself and the film's aerial jump instructor Jim Wallace found that the actor was a natural and took to it right away. The actor ended up making 55 jumps for the film. Swayze actually based aspects of his character after one of his stunt doubles, Darrick Doerner, a top big wave surfer. After learning to surf for the film, Reeves took a liking to it and took it up as a hobby.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>17. what is the film and publication board role ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The Film and Publication Board, also known as FPB, is a South African authority.<br/>
+        
+          <span class="facts">2.</span> The FPB is responsible for content-classification and censorship.<br/>
+        
+          <span class="facts">3.</span> The FPB operates under the Minister of Communications.<br/>
+        
+          <span class="facts">4.</span> The FPB was established in 1998.<br/>
+        
+          <span class="facts">5.</span> The establishment of the FPB was under the Films and Publications Act.<br/>
+        
+          <span class="facts">6.</span> The FPB was created to address issues of child pornography and child abuse.<br/>
+        
+          <span class="facts">7.</span> The FPB also provides ratings for publicly consumed media.<br/>
+        
+          <span class="facts">8.</span> The types of media rated by the FPB include movies, music, and television programs.<br/>
+        
+          <span class="facts">9.</span> The FPB's mandate can be seen as state censorship.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The Film and Publication Board, often shortened to FPB, is a content-classification and censorship authority in South Africa, operating under the Minister of Communications. The FPB was established in 1998 under the Films and Publications Act, ostensibly to tackle issues of child pornography and child abuse, as well as to provide ratings to publicly consumed media such as movies, music and television programs. Under these directives, its mandate can be considered one of state censorship.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>18. when did the olympics first allow professional athletes ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> A dispute arose before the 1984 Winter Olympics regarding the definition of a professional player.<br/>
+        
+          <span class="facts">2.</span> The International Olympic Committee (IOC) had a rule that players who had signed an NHL contract but played less than ten games were eligible.<br/>
+        
+          <span class="facts">3.</span> The United States Olympic Committee disagreed, stating that any player contracted with an NHL team was a professional.<br/>
+        
+          <span class="facts">4.</span> The IOC held an emergency meeting to clarify that NHL-contracted players were eligible if they had not played in any NHL games.<br/>
+        
+          <span class="facts">5.</span> This ruling made five players on Olympic rosters ineligible.<br/>
+        
+          <span class="facts">6.</span> These ineligible players included one Austrian, two Italians, and two Canadians.<br/>
+        
+          <span class="facts">7.</span> Players who had played in other professional leagues, like the World Hockey Association, were allowed to participate.<br/>
+        
+          <span class="facts">8.</span> Alan Eagleson, a Canadian hockey official, claimed that the rule was only applied to the NHL.<br/>
+        
+          <span class="facts">9.</span> Eagleson also stated that professionally contracted players in European leagues were still considered amateurs.<br/>
+        
+          <span class="facts">10.</span> Murray Costello from the CAHA suggested that a Canadian withdrawal from the Olympics was possible.<br/>
+        
+          <span class="facts">11.</span> In 1986, the IOC voted to allow all athletes to compete in the Olympic Games starting in 1988.<br/>
+        
+          <span class="facts">12.</span> The decision to allow professionals was left to the individual sport federations.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Before the 1984 Winter Olympics, a dispute formed over what made a player a professional. The IOC had adopted a rule that made any player who had signed an NHL contract but played less than ten games in the league eligible. However, the United States Olympic Committee maintained that any player contracted with an NHL team was a professional and therefore not eligible to play. The IOC held an emergency meeting that ruled NHL-contracted players were eligible, as long as they had not played in any NHL games. This made five players on Olympic rosters—one Austrian, two Italians and two Canadians—ineligible. Players who had played in other professional leagues—such as the World Hockey Association—were allowed to play. Canadian hockey official Alan Eagleson stated that the rule was only applied to the NHL and that professionally contracted players in European leagues were still considered amateurs. Murray Costello of the CAHA suggested that a Canadian withdrawal was possible. In 1986, the IOC voted to allow all athletes to compete in Olympic Games starting in 1988, but let the individual sport federations decide if they wanted to allow professionals.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>19. who wears the yellow jersey tour de france ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The general classification is the most important classification in the Tour de France.<br/>
+        
+          <span class="facts">2.</span> The winner of the Tour de France is determined by the general classification.<br/>
+        
+          <span class="facts">3.</span> Since 1919, the leader of the general classification has worn a yellow jersey.<br/>
+        
+          <span class="facts">4.</span> The yellow jersey is known as "maillot jaune" in French.<br/>
+        
+          <span class="facts">5.</span> The pronunciation of "maillot jaune" in French is [majo ʒon].<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The general classification is the most important classification, the one by which the winner of the Tour de France is determined. Since 1919, the leader of the general classification wears the yellow jersey (French: maillot jaunepronounced [majo ʒon]).<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>20. who is the founder of the 7th day adventist church ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The Seventh-day Adventist Church originated from the Millerite movement of the 1830s to the 1840s.<br/>
+        
+          <span class="facts">2.</span> The church was officially founded in 1863.<br/>
+        
+          <span class="facts">3.</span> The Second Great Awakening was the period during which the church was formed.<br/>
+        
+          <span class="facts">4.</span> Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews were prominent figures in the early church.<br/>
+        
+          <span class="facts">5.</span> The church expanded from its original base in New England to become an international organization over the decades.<br/>
+        
+          <span class="facts">6.</span> Evangelicals Donald Barnhouse and Walter Martin initiated significant reviews in the 20th century.<br/>
+        
+          <span class="facts">7.</span> The Seventh-day Adventist Church is recognized as a Christian denomination due to these reviews.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The Seventh-day Adventist Church had its roots in the Millerite movement of the 1830s to the 1840s, during the period of the Second Great Awakening, and was officially founded in 1863. Prominent figures in the early church included Hiram Edson, James Springer White, Joseph Bates, and J. N. Andrews. Over the ensuing decades the church expanded from its original base in New England to become an international organization. Significant developments such the reviews initiated by evangelicals Donald Barnhouse and Walter Martin, in the 20th century led to its recognition as a Christian denomination.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>21. where is california state university east bay located ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> California State University, East Bay is also known as Cal State East Bay, CSU East Bay, or CSUEB.<br/>
+        
+          <span class="facts">2.</span> This university is a public institution.<br/>
+        
+          <span class="facts">3.</span> It is located in Hayward, California, United States.<br/>
+        
+          <span class="facts">4.</span> The university is part of the 23-campus California State University system.<br/>
+        
+          <span class="facts">5.</span> It offers 136 undergraduate areas of study.<br/>
+        
+          <span class="facts">6.</span> It also offers 60 post-baccalaureate areas of study.<br/>
+        
+          <span class="facts">7.</span> U.S. News & World Report has designated it as a top-tier institution among master's-granting universities in the west.<br/>
+        
+          <span class="facts">8.</span> The Princeton Review has recognized it as a 'Best in the West' college.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          California State University, East Bay (commonly referred to as Cal State East Bay, CSU East Bay, or CSUEB) is a publicuniversity located in Hayward, California, United States. The university, as part of the 23-campus California State University system, offers 136 undergraduate and 60 post-baccalaureate a reas of study. California State University, East Bay has been designated a top–tier institution among master's–granting universities in the west by U.S. News & World Report[6] and has been recognized as a 'Best in the West' college by the Princeton Review.[6]<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>22. which is the highest peak of southern india ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Anamudi est une montagne située dans l'État indien du Kerala.<br/>
+        
+          <span class="facts">2.</span> C'est le plus haut sommet du Kerala et du sud de l'Inde.<br/>
+        
+          <span class="facts">3.</span> L'altitude d'Anamudi est de 2 695 mètres.<br/>
+        
+          <span class="facts">4.</span> La proéminence topographique d'Anamudi est de 2 479 mètres.<br/>
+        
+          <span class="facts">5.</span> Anamudi se trouve à la frontière de Devikulam Taluk, dans le district d'Idukki et de Kothamangalam Taluk, dans le district d'Ernakulam.<br/>
+        
+          <span class="facts">6.</span> Le nom Anamudi signifie littéralement "front d'éléphant".<br/>
+        
+          <span class="facts">7.</span> Le nom Anamudi est une référence à la ressemblance de la montagne avec la tête d'un éléphant.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Anamudi (Malayalam pronunciation: ​[aːnɐmʊɖi], ആനമുടി) is a mountain located in the Indian state of Kerala. It is the highest peak in the Kerala and South India, at an elevation of 2,695 metres (8,842 ft) and a topographic prominence of 2,479 metres (8,133 ft).[3] It lies on the border of Devikulam Taluk, Idukki district and Kothamangalam Taluk, Ernakulam district. The name Anamudi literally translates to 'elephant's forehead,' a reference to the resemblance of the mountain to an elephant's head.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>23. where did the saying quit cold turkey come from ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> "Goose bumps" is another term for piloerection.<br/>
+        
+          <span class="facts">2.</span> Piloerection can occur in people who suddenly stop using opioids.<br/>
+        
+          <span class="facts">3.</span> This condition is common among individuals addicted to heroin.<br/>
+        
+          <span class="facts">4.</span> The phrase "kick the habit" refers to quitting a dependency.<br/>
+        
+          <span class="facts">5.</span> Muscle spasms can occur when a person stops using a substance they are dependent on.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The 'goose bumps' (piloerection) that occurs with sudden discontinuation in persons dependent on opioids, frequently persons addicted to heroin. Similarly the term 'kick the habit' alludes to the muscle spasms that also occur.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>24. what game are they playing in casino royale ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Baccarat chemin-de-fer is James Bond's preferred game.<br/>
+        
+          <span class="facts">2.</span> James Bond is a fictional secret agent created by Ian Fleming.<br/>
+        
+          <span class="facts">3.</span> Bond plays Baccarat chemin-de-fer in many novels.<br/>
+        
+          <span class="facts">4.</span> The 1953 novel, Casino Royale, prominently features the game.<br/>
+        
+          <span class="facts">5.</span> The plot of Casino Royale revolves around a game between Bond and SMERSH operative Le Chiffre.<br/>
+        
+          <span class="facts">6.</span> The unabridged version of Casino Royale includes a primer to Baccarat chemin-de-fer.<br/>
+        
+          <span class="facts">7.</span> Baccarat chemin-de-fer is also featured in several filmed versions of the novels.<br/>
+        
+          <span class="facts">8.</span> The 1954 television adaptation Casino Royale (Climax!) features the game.<br/>
+        
+          <span class="facts">9.</span> In the 1954 adaptation, Bond bankrupts Le Chiffre playing Baccarat chemin-de-fer.<br/>
+        
+          <span class="facts">10.</span> Le Chiffre is eliminated by his Soviet superiors after being bankrupted by Bond.<br/>
+        
+          <span class="facts">11.</span> The film Dr. No introduces Bond playing Baccarat chemin-de-fer for the first time.<br/>
+        
+          <span class="facts">12.</span> The game is also featured in the film Thunderball.<br/>
+        
+          <span class="facts">13.</span> The 1967 version of Casino Royale provides the most detailed depiction of a Baccarat chemin-de-fer game in any Bond film.<br/>
+        
+          <span class="facts">14.</span> Baccarat chemin-de-fer is also featured in the film On Her Majesty's Secret Service.<br/>
+        
+          <span class="facts">15.</span> The game is also depicted in the film For Your Eyes Only.<br/>
+        
+          <span class="facts">16.</span> The film GoldenEye also features Baccarat chemin-de-fer.<br/>
+        
+          <span class="facts">17.</span> In some adaptations, Bond is referred to as 'Jimmy'.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Baccarat chemin-de-fer is the favoured game of James Bond, the fictional secret agent created by Ian Fleming.[25] Bond plays the game in numerous novels, most notably his 1953 debut, Casino Royale, in which the entire plot revolves around a game between Bond and SMERSH operative Le Chiffre; the unabridged version of the novel includes a primer to the game for readers who are unfamiliar with it. It is also featured in several filmed versions of the novels, including the 1954 television adaption Casino Royale (Climax!), where Bond, referred to as 'Jimmy' by several characters, bankrupts Le Chiffre in order to have him eliminated by his Soviet superiors; Dr. No, where Bond is first introduced playing the game in film; Thunderball; the 1967 version of Casino Royale, which is the most detailed treatment of a baccarat game in any Bond film; On Her Majesty's Secret Service; For Your Eyes Only; and GoldenEye.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>25. who has the power to convict the president upon impeachment ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Impeachment is a power of the legislature in the United States.<br/>
+        
+          <span class="facts">2.</span> This power allows formal charges to be brought against a civil officer of government for alleged crimes.<br/>
+        
+          <span class="facts">3.</span> Most impeachments have been related to crimes allegedly committed while in office.<br/>
+        
+          <span class="facts">4.</span> There have been cases where officials were impeached and convicted partly for crimes committed before their term.<br/>
+        
+          <span class="facts">5.</span> The trial on impeachment charges and the removal of an official upon conviction are separate from the impeachment itself.<br/>
+        
+          <span class="facts">6.</span> Several presidents of the United States have faced impeachment proceedings.<br/>
+        
+          <span class="facts">7.</span> Andrew Johnson and Bill Clinton are the only two presidents who have been successfully impeached by the House of Representatives.<br/>
+        
+          <span class="facts">8.</span> Both Andrew Johnson and Bill Clinton were later acquitted by the Senate.<br/>
+        
+          <span class="facts">9.</span> The impeachment process against Richard Nixon was not completed because he resigned before the House could vote on his impeachment.<br/>
+        
+          <span class="facts">10.</span> The threat of impeachment and conviction in the Senate was a factor in Nixon's decision to resign.<br/>
+        
+          <span class="facts">11.</span> No president has been removed from office by impeachment and conviction to date.<br/>
+        
+          <span class="facts">12.</span> An impeached official remains in office until they are convicted.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Impeachment in the United States is an enumerated power of the legislature that allows formal charges to be brought against a civil officer of government for crimes alleged to have been committed. Most impeachments have concerned alleged crimes committed while in office, though there have been a few cases in which Congress has impeached and convicted officials partly for prior crimes. The actual trial on such charges, and subsequent removal of an official upon conviction, is separate from the act of impeachment itself. Impeachment proceedings have been initiated against several presidents of the United States. Andrew Johnson and Bill Clinton are the only two presidents to have been successfully impeached by the House of Representatives, and both were later acquitted by the Senate. The impeachment process against Richard Nixon was never completed, as Nixon resigned his office before the vote of the full House for impeachment, but such a vote was widely expected to pass, and the threat of it and a subsequent conviction in the Senate was the impetus for Nixon's departure. To date, no president has been removed from office by impeachment and conviction. The impeached official continues in office until conviction.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>26. how long have we been using oil as a fuel source ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Petroleum has been used for over 2000 years.<br/>
+        
+          <span class="facts">2.</span> The ancient Chinese were the first to discover and use petroleum.<br/>
+        
+          <span class="facts">3.</span> The use of petroleum was mentioned in I Ching, one of the earliest Chinese writings.<br/>
+        
+          <span class="facts">4.</span> The Chinese used petroleum in its raw, unrefined state.<br/>
+        
+          <span class="facts">5.</span> This use of raw petroleum in China dates back to the first century BCE.<br/>
+        
+          <span class="facts">6.</span> The Chinese were also the first to use petroleum as fuel.<br/>
+        
+          <span class="facts">7.</span> The use of petroleum as fuel in China started as early as the fourth century BCE.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The use of petroleum dates back to ancient China more than 2000 years ago. In I Ching, one of the earliest Chinese writings cites the use of oil in its raw state without refining was first discovered, extracted, and used in China in the first century BCE. In addition, the Chinese were the first to use petroleum as fuel as the early as the fourth century BCE.[2][3][4][5]<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>27. who is presiding officer for impeachment trials against the president of the phil ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The President of the Philippines can be put on trial.<br/>
+        
+          <span class="facts">2.</span> In 2001, the President of the Philippines was on trial.<br/>
+        
+          <span class="facts">3.</span> The Chief Justice of the Supreme Court of the Philippines presides over the trial of the President.<br/>
+        
+          <span class="facts">4.</span> The Chief Justice of the Supreme Court of the Philippines does not vote in the trial of the President.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          If the President of the Philippines is on trial, such as in 2001, the Chief Justice of the Supreme Court of the Philippines shall preside but not vote.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>28. how did the red wings get their name ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The Detroit Red Wings is a professional ice hockey club.<br/>
+        
+          <span class="facts">2.</span> The team was originally founded as the Detroit Cougars on September 25, 1926.<br/>
+        
+          <span class="facts">3.</span> The Detroit Cougars were one of three teams to join the National Hockey League in 1926.<br/>
+        
+          <span class="facts">4.</span> The rights to the players of the Victoria Cougars were bought by a Detroit group led by Charles A. Hughes.<br/>
+        
+          <span class="facts">5.</span> The Detroit group decided to keep the name 'Cougars' for their NHL club.<br/>
+        
+          <span class="facts">6.</span> The team faced financial struggles in its early years.<br/>
+        
+          <span class="facts">7.</span> In 1930, the team's name was changed to the Detroit Falcons.<br/>
+        
+          <span class="facts">8.</span> The team was bought out of receivership by James E. Norris and renamed as the Detroit Red Wings in 1932.<br/>
+        
+          <span class="facts">9.</span> The Detroit Red Wings played their first game on November 18, 1926.<br/>
+        
+          <span class="facts">10.</span> The team won their first Stanley Cup titles in 1936 and 1937.<br/>
+        
+          <span class="facts">11.</span> The Detroit Red Wings have won the Stanley Cup eleven times.<br/>
+        
+          <span class="facts">12.</span> The Red Wings have won more Stanley Cups than any other American team in NHL history.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          The Detroit Red Wings professional ice hockey club was founded as the Detroit Cougars on September 25, 1926, one of three teams to join the National Hockey League (NHL) in 1926. With the demise of the Western Canada Hockey League (WCHL), the rights to the players of the Victoria Cougars were purchased by a Detroit group led by Charles A. Hughes who kept the name 'Cougars' for their NHL club. The new team struggled financially; in 1930, the Cougars changed their name to the Detroit Falcons, and after being bought out of receivership by James E. Norris were renamed as the Detroit Red Wings in 1932. The team played their first game on November 18, 1926, and won their first two Stanley Cup titles in 1936 and 1937. The Red Wings have won the Cup eleven times, more than any other American team in NHL history.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>29. what type of dog was in turner and hooch ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> The Dogue de Bordeaux first arrived in the USA in the 1890s for the show ring.<br/>
+        
+          <span class="facts">2.</span> The first documented Dogues de Bordeaux of modern times appeared in 1959.<br/>
+        
+          <span class="facts">3.</span> Fidelle de Fenelon was one of the first modern Dogues de Bordeaux.<br/>
+        
+          <span class="facts">4.</span> Rugby de la Maison des Arbres was another early modern Dogue de Bordeaux, appearing in 1968.<br/>
+        
+          <span class="facts">5.</span> Between 1969 and 1980, imported Dogues de Bordeaux in the USA were scarce.<br/>
+        
+          <span class="facts">6.</span> A few breeders worked closely with the French Dogue de Bordeaux Club, the SADB.<br/>
+        
+          <span class="facts">7.</span> The breed was officially introduced to American purebred enthusiasts in an article written in 1982.<br/>
+        
+          <span class="facts">8.</span> The article was written by the American anthropologist, Dr. Carl Semencic.<br/>
+        
+          <span class="facts">9.</span> The article was published in 'Dog World' magazine.<br/>
+        
+          <span class="facts">10.</span> The article was entitled 'Introducing the Dogue de Bordeaux'.<br/>
+        
+          <span class="facts">11.</span> Semencic also wrote chapters dedicated to the Dogue in his books on dogs.<br/>
+        
+          <span class="facts">12.</span> Semencic's books were published by T.F.H. Publications of Neptune, New Jersey.<br/>
+        
+          <span class="facts">13.</span> When Semencic's first article on the breed was published, there were no Bordeaux Dogues in the United States.<br/>
+        
+          <span class="facts">14.</span> At that time, there were 600 examples of the breed left in the world.<br/>
+        
+          <span class="facts">15.</span> Most of these dogs were in France, the Netherlands and East Berlin.<br/>
+        
+          <span class="facts">16.</span> The breed's numbers were on the decline when Semencic's article was published.<br/>
+        
+          <span class="facts">17.</span> The typical American family saw the Dogue de Bordeaux for the first time on the big screen in 1989.<br/>
+        
+          <span class="facts">18.</span> The movie was Touchstone's Turner & Hooch.<br/>
+        
+          <span class="facts">19.</span> The movie was about a policeman and his canine partner.<br/>
+        
+          <span class="facts">20.</span> Many people did not know that the massive slobbering animal in the movie was a Dogue de Bordeaux.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Although the Dogue de Bordeaux first arrived in the USA in the 1890s for the show ring, the first documented Dogues de Bordeaux of modern times appeared in 1959 [clarification needed], Fidelle de Fenelon; and in 1968, Rugby de la Maison des Arbres. Between 1969 and 1980, imported Dogues de Bordeaux in the USA were scarce, limited to a few breeders who worked closely with the French Dogue de Bordeaux Club, the SADB. The breed was first 'officially' introduced to American purebred enthusiasts in an article written in 1982 and by the American anthropologist, Dr. Carl Semencic for 'Dog World' magazine. That article, entitled 'Introducing the Dogue de Bordeaux', was followed by chapters dedicated to the Dogue in Semencic's books on dogs, published by T.F.H. Publications of Neptune, New Jersey. When Semencic's first article on the breed was published, there were no Bordeaux Dogues in the United States. There were 600 examples left in the world, mostly in France, the Netherlands and ast Berlin, and the breed's numbers were on the decline. Much later, in 1989, the typical American family saw the Dogue de Bordeaux for the first time on the big screen in Touchstone's movie Turner & Hooch about a policeman and his canine partner, although many people [who?] did not know that the massive slobbering animal was a Dogue de Bordeaux.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>30. where does water come from in cell respiration ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Oxidative phosphorylation in eukaryotes takes place in the mitochondrial cristae.<br/>
+        
+          <span class="facts">2.</span> The process involves the electron transport chain.<br/>
+        
+          <span class="facts">3.</span> The electron transport chain creates a proton gradient across the boundary of the inner membrane.<br/>
+        
+          <span class="facts">4.</span> This proton gradient is also known as a chemiosmotic potential.<br/>
+        
+          <span class="facts">5.</span> The chemiosmotic potential is established by oxidizing NADH.<br/>
+        
+          <span class="facts">6.</span> NADH is a product of the Krebs cycle.<br/>
+        
+          <span class="facts">7.</span> ATP synthesis is facilitated by the ATP synthase enzyme.<br/>
+        
+          <span class="facts">8.</span> The phosphorylation of ADP is driven by the chemiosmotic gradient.<br/>
+        
+          <span class="facts">9.</span> Electrons are eventually transferred to exogenous oxygen.<br/>
+        
+          <span class="facts">10.</span> The addition of two protons to exogenous oxygen results in the formation of water.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          In eukaryotes, oxidative phosphorylation occurs in the mitochondrial cristae. It comprises the electron transport chain that establishes a proton gradient (chemiosmotic potential) across the boundary of inner membrane by oxidizing the NADH produced from the Krebs cycle. ATP is synthesized by the ATP synthase enzyme when the chemiosmotic gradient is used to drive the phosphorylation of ADP. The electrons are finally transferred to exogenous oxygen and, with the addition of two protons, water is formed.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].nextElementSibling.style.display = "block"
+    }
+  </script>
+</body>
+
+</html>
