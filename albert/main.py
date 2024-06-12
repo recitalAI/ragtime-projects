@@ -1,9 +1,19 @@
 PROJECT_NAME: str = "Albert"
 
 import ragtime
-from ragtime.pipeline import run_pipeline, LLMs_from_names
-from ragtime.prompters import AnsPrompterBase, FactPrompterFR, EvalPrompterFR
-from classes import LLM, Albert_LLM, Prompter_from_human_evaluated_Expe
+from ragtime.pipeline import LLMs_from_names
+from ragtime.prompters import (
+    Prompter,
+    AnsPrompterBase,
+    FactPrompterJazz,
+    EvalPrompterFR,
+)
+from classes import LLM, Albert_LLM, EvalPrompterLSA
+from ragtime.generators import AnsGenerator, FactGenerator, EvalGenerator
+
+from pathlib import Path
+
+from ragtime.expe import Expe, QA
 
 # always start with init_project before importing ragtime.config values since they are updated
 # with init_project and import works by value and not by reference, so values imported before
@@ -13,130 +23,157 @@ from ragtime.config import (
     FOLDER_ANSWERS,
     FOLDER_FACTS,
     FOLDER_EVALS,
-    FOLDER_SST_TEMPLATES,
+    FOLDER_VALIDATION_SETS,
     FOLDER_HTML_TEMPLATES,
 )
 
-name: str = "HF_QCM_reconcilie_V1{}.json"
+#############################
+#   Generators
+#############################
 
 
-def pipeline(
-    start_form: str = None, stop_after: str = None, folder_name=None, suffixe=None
-):
-    prompter = AnsPrompterBase()  # Prompter_from_human_evaluated_Expe()
-    llms_for_answers_generator: list[LLM] = []
+def answers_generator(path: Path) -> Path:
+    expe: Expe = Expe(path)
 
-    llms_for_answers_generator.extend(
-        LLMs_from_names(
-            prompter=prompter,
-            names=[
-                "gpt-4o",
-                "mistral/mistral-large-latest",
-                "groq/llama3-8b-8192",
-                "groq/llama3-70b-8192",
-                "groq/mixtral-8x7b-32768",
-                "groq/gemma-7b-it",
-            ],
-        )
+    # Génération des réponses
+    # Prompter -> AnsPrompterBase
+    # LLMs -> groq/llama3-70b-8192, Albert_LLM
+
+    prompter: Prompter = AnsPrompterBase()
+
+    llms_for_answers_generator: list[LLM] = LLMs_from_names(
+        prompter=prompter, names=["groq/llama3-70b-8192"]
     )
     llms_for_answers_generator.append(Albert_LLM(prompter=prompter))
 
-    llms_for_facts_generator: list[LLM] = LLMs_from_names(
-        prompter=FactPrompterFR(), names=["gpt-4o"]
+    answer_generator: AnsGenerator = AnsGenerator(llms=llms_for_answers_generator)
+    answer_generator.generate(expe=expe)
+
+    output_path: Path = FOLDER_ANSWERS / path.name
+    path_to_return: Path = expe.save_to_json(path=output_path)
+    expe.save_to_html(
+        path=output_path,
+        template_path=FOLDER_HTML_TEMPLATES / "basic_template.jinja",
+        b_show_answers=False,
+    )
+    return path_to_return
+
+
+def facts_generator(path: Path) -> Path:
+    expe: Expe = Expe(path)
+
+    # Génération des faits
+    # Prompter -> FactPrompterJazz
+    # Faits générés par gpt-4
+
+    prompter: Prompter = FactPrompterJazz()
+
+    eval_gen: FactGenerator = FactGenerator(llms=["gpt-4"], prompter=prompter)
+    eval_gen.generate(expe=expe)
+
+    output_path: Path = FOLDER_FACTS / path.name
+    path_to_return: Path = expe.save_to_json(path=output_path)
+    expe.save_to_html(
+        path=output_path,
+        template_path=FOLDER_HTML_TEMPLATES / "basic_template.jinja",
+        b_show_answers=False,
+    )
+    return path_to_return
+
+
+def evals_generator(path: Path, prompter: Prompter) -> Path:
+    expe: Expe = Expe(path)
+
+    # Génération des évaluations
+    # Prompter -> EvalPrompterLSA
+    # Evaluations générés par gpt-4
+
+    eval_gen: EvalGenerator = EvalGenerator(llms="gpt-4", prompter=prompter)
+    eval_gen.generate(expe=expe)
+
+    output_path: Path = FOLDER_EVALS / path.name
+    path_to_return: Path = expe.save_to_json(path=output_path)
+    expe.save_to_html(
+        path=output_path,
+        template_path=FOLDER_HTML_TEMPLATES / "basic_template.jinja",
+        b_show_answers=False,
+    )
+    return path_to_return
+
+
+#############################
+#   Scenario
+#############################
+
+
+def scenario_classic(path: Path) -> Path:
+    """
+    Ceci est un scenario classic allant de la génération des faits d'après les réponses humaines jusqu'à la génération des évaluations
+    """
+    path = facts_generator(path)
+    path = answers_generator(path)
+    path = evals_generator(path, EvalPrompterFR())
+    return path
+
+
+def scenario_clean_bad_questions(path: Path) -> Path:
+    """
+    La liste suivante sont les questions supprimer du dataset d'origine car les réponses fournis ne permettent pas de générer des faits utilisable pour l'évaluation
+
+    "question": "Quel formulaire cerfa utiliser pour renouveler une Carte Nationale d’Identité (CNI) ?"
+    "answers": "Aucun des formulaires cerfa mentionnés ci-dessus."
+
+    "question": "Comment acheter un timbre fiscal en ligne pour payer les frais de renouvellement de la carte d'identité ?"
+    "answers": "Aucune des réponses n’est la bonne"
+
+    "question": "Comment renouveler son passeport en ligne et éviter d'avoir à utiliser un formulaire cartonné au guichet ?"
+    "answers": "Aucune des réponses n’est la bonne"
+
+    "question": "Quelle est la date limite pour déposer ma demande de départ à la retraite en tant que fonctionnaire ?"
+    "answers": "L'assurance Retraite traite uniquement  les carrières qui appartiennent au régime général "
+    """
+
+    questions_to_remove: list[str] = [
+        "Quel formulaire cerfa utiliser pour renouveler une Carte Nationale d’Identité (CNI) ?",
+        "Comment acheter un timbre fiscal en ligne pour payer les frais de renouvellement de la carte d'identité ?",
+        "Comment renouveler son passeport en ligne et éviter d'avoir à utiliser un formulaire cartonné au guichet ?",
+        "Quelle est la date limite pour déposer ma demande de départ à la retraite en tant que fonctionnaire ?",
+    ]
+
+    expe: Expe = Expe(path)
+    new_expe: Expe = Expe()
+    for qa in expe:
+        if qa.question.text not in questions_to_remove:
+            new_expe.append(qa)
+    return new_expe.save_to_json(path=path)
+
+
+def scenario_based_on_validation_sets() -> Path:
+    """
+    Ce scénario génére deux evaluation basé sur les réponses des llms évaluer.
+    """
+    path: Path = (
+        FOLDER_VALIDATION_SETS
+        / "2024-06-11_validation_set_GPT4o-EvalPrompterFR_29Q_86F.json"
+    )
+    path = answers_generator(path)
+    evals_generator(path, EvalPrompterFR())
+    evals_generator(path, EvalPrompterLSA())
+
+
+if __name__ == "__main__":
+    # Definissez un nom de fichier par le quel vous souhaitez débuter
+    # et le dossier dans le quel il se trouve
+    file_name: str = "HF_QCM_reconcilie_V1--33Q_0C_0F_0M_33A_33HE_0AE.json"
+    folder: Path = Path(
+        FOLDER_ANSWERS,
+        # FOLDER_FACTS,
+        # FOLDER_EVALS,
+        # FOLDER_VALIDATION_SETS,
     )
 
-    llms_for_evals_generator: list[LLM] = LLMs_from_names(
-        prompter=EvalPrompterFR(), names=["gpt-4"]
-    )
+    # Choisissez parmis un des scenarios suivant.
 
-    configuration: dict = {
-        "file_name": name.format(suffixe or ""),
-        "folder_name": folder_name or FOLDER_ANSWERS,
-        "generate": {
-            "answers": {
-                "llms": llms_for_answers_generator,
-                "export": {"html": {}},
-            },
-            "facts": {
-                "llms": llms_for_facts_generator,
-                "export": {"html": {}},
-            },
-            "evals": {
-                "llms": llms_for_evals_generator,
-                "export": {"html": {}},
-            },
-        },
-    }
-
-    run_pipeline(
-        start_from=start_form,
-        stop_after=stop_after,
-        configuration=configuration,
-    )
-
-
-# pipeline(
-#     start_form="evals",
-#     folder_name=FOLDER_FACTS,
-#     suffixe="--33Q_0C_169F_8M_264A_33HE_0AE_2024-06-03_14h33,24",
-# )
-
-
-def merge_humanEvaluation_toGeneratedAnswers():
-    from ragtime.expe import Expe, QA
-
-    expe_human: Expe = Expe(FOLDER_ANSWERS / name.format(""))
-
-    suffixe: str = "--33Q_0C_0F_7M_231A_0HE_0AE_2024-06-03_13h47,46"
-    expe_to_complet: Expe = Expe(FOLDER_ANSWERS / name.format(suffixe))
-
-    def haveSameQuestion(qa_a: QA, qa_b: QA):
-        return qa_a.question.text == qa_b.question.text
-
-    for qa_to_complet in expe_to_complet:
-        # find the corresponding question in the human evaluated set
-        human_qa = next(
-            (item for item in expe_human if haveSameQuestion(item, qa_to_complet)),
-            None,
-        )
-        if human_qa and len(human_qa.answers) > 0:
-            qa_to_complet.answers.append(human_qa.answers[0])
-
-    expe_to_complet.save_to_json(path=FOLDER_ANSWERS / name.format(""))
-
-
-# from ragtime.expe import Expe
-
-# file_name: str = (
-#     "HF_QCM_reconcilie_V1--33Q_0C_431F_7M_231A_231HE_216AE_2024-05-31_15h54,52.json"
-# )
-# expe: Expe = Expe(FOLDER_EVALS / file_name)
-
-# expe.save_to_spreadsheet(
-#     path=FOLDER_EVALS / file_name,
-#     template_path=FOLDER_SST_TEMPLATES / "Test_template.xlsx",
-# )
-
-
-from ragtime.expe import Expe
-
-
-file_name: str = name.format("--33Q_0C_169F_8M_264A_33HE_200AE_2024-06-03_15h22,05")
-expe: Expe = Expe(FOLDER_EVALS / file_name)
-
-expe.save_to_html(
-    path=FOLDER_EVALS / file_name,
-    template_path=FOLDER_HTML_TEMPLATES / "basic_template.jinja",
-    render_params={
-        "show_answers": False,
-        "show_chunks": True,
-        "show_facts": True,
-        "show_evals": True,
-    },
-)
-
-# try to replay the post processing of a specific question / llm answer
-#   - load the Expe
-#       - find the question by similarity
-#           - find the llm by name
-#   - feed the Eval object to the corresponding post-processing
+    # scenario_classic(folder / file_name)
+    # scenario_clean_bad_questions(folder / file_name)
+    # scenario_based_on_validation_sets()

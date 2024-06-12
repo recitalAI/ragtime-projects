@@ -1,15 +1,16 @@
-from ragtime.base import call_api, REQ_POST
+from ragtime.base import call_api, REQ_POST, div0
 from ragtime.prompters import Prompter, Prompt
 from ragtime.llms import LLM
-from ragtime.expe import QA, Chunks, Prompt, Question, Answer, Eval, LLMAnswer
+from ragtime.expe import QA, Prompt, Answer, Facts, Eval, LLMAnswer
 from ragtime.config import logger
 
 
-from typing import Optional
 from datetime import datetime
 import sseclient
 import asyncio
 import os
+import re
+
 
 ALBERT_EMAIL: str = os.getenv("ALBERT_EMAIL")
 ALBERT_USERNAME: str = os.getenv("ALBERT_USERNAME")
@@ -142,27 +143,71 @@ class Albert_LLM(LLM):
         )
 
 
-class Prompter_from_human_evaluated_Expe(Prompter):
+class EvalPrompterLSA(Prompter):
     """
-    This simple prompter just send the question as is to the LLM
-    and does not perform any post-processing
+    Prompt: FAITS and REPONSE - expect the REPONSE to be rewritten including the FACTS in the text
+    Post_process: analyse cited factsfacts not cited, and facts invented (?)
     """
 
-    system: str = ""
+    system: str = """Vous devez comparer une liste numérotée de FAITS avec une REPONSE. Votre tâche consiste à évaluer la présence de chaque FAIT dans la REPONSE, en suivant ces règles :
 
-    def get_prompt(self, question: Question, chunks: Optional[Chunks] = None) -> Prompt:
+Reproduire la REPONSE telle quelle, en insérant entre parenthèses le numéro de chaque FAIT dont l'idée principale est présente dans la REPONSE.
+Si une phrase de la REPONSE correspond à plusieurs FAITS, indiquer les numéros de ces FAITS entre parenthèses, séparés par une virgule (ex : (1,2)).
+Ne valider un FAIT que si toute son idée principale est clairement exprimée dans la REPONSE ou peut être déduite de la REPONSE dans son ensemble.
+Si une partie de la REPONSE ne correspond à aucun FAIT, insérer un point d'interrogation entre parenthèses (?) à cet endroit.
+Si une partie de la REPONSE fait référence à un emplacement dans un document (ex : page X), ne rien indiquer pour cette partie.
+
+Quelques précisions :
+
+Ne vous fiez pas à la formulation exacte des FAITS, mais concentrez-vous sur leurs idées principales.
+Une idée peut être exprimée différemment dans la REPONSE par rapport aux FAITS, l'essentiel est que le sens soit le même.
+Si une idée est sous-entendue ou peut être déduite de l'ensemble de la REPONSE, vous pouvez valider le FAIT correspondant.
+        """
+
+    def get_prompt(self, answer: Answer, facts: Facts) -> Prompt:
         result: Prompt = Prompt()
-        result.user = f"{question.text}"
+        facts_as_str: str = "\n".join(
+            f"{i}. {fact.text}" for i, fact in enumerate(facts, start=1)
+        )
+        result.user = f"-- FAITS --\n{facts_as_str}\n\n-- REPONSE --\n{answer.text}"
         result.system = self.system
         return result
 
-    def post_process(self, qa: QA = None, cur_obj: Answer = None):
-        """
-        Does not do anything by default, but can be overridden to add fields in meta data for instance
-        """
-        cur_obj.text = cur_obj.llm_answer.text
-        if len(qa.answers.items) > 0:
-            cur_obj.eval = Eval(
-                text=qa.answers.items[0].text,
-                human=qa.answers.items[0].eval.human,
-            )
+    def post_process(self, qa: QA, cur_obj: Eval):
+        answer: str = cur_obj.llm_answer.text if cur_obj.llm_answer.text != "[]" else ""
+        # removes the word FAIT before the fact number as it is sometimes generated in the answer
+        answer = answer.replace("(FAIT ", "(")
+        # get the set of facts numbers from answer
+        facts_in_answer: set[int] = set(
+            [
+                int(s)
+                for s in ",".join(re.findall("\([\d+,+\s+]+\)", answer))
+                .replace("(", "")
+                .replace(")", "")
+                .split(",")
+                if s
+            ]
+        )
+        # get the numbers in the true facts
+        true_facts: set[int] = set(
+            [int(s.text[0] if s.text[1] == "." else s.text[:2]) for s in qa.facts if s]
+        )
+        true_facts_in_answer: set[int] = facts_in_answer & true_facts
+        true_facts_not_in_answer: set[int] = true_facts - true_facts_in_answer
+        # get the number of extra facts (?) - they are not always hallucinations, sometimes just true facts not interesting and not included as usefule facts
+        nb_extra_facts_in_answer: int = len(re.findall("\(\?\)", answer))
+        # compute metrics
+        precision: float = div0(
+            len(true_facts_in_answer), len(facts_in_answer) + nb_extra_facts_in_answer
+        )
+        recall: float = div0(len(true_facts_in_answer), len(true_facts))
+        cur_obj.meta["precision"] = precision
+        cur_obj.meta["recall"] = recall
+        cur_obj.meta["extra"] = nb_extra_facts_in_answer
+        cur_obj.meta["missing"] = ", ".join(
+            str(v) for v in list(true_facts_not_in_answer)
+        )
+        cur_obj.meta["nb_missing"] = len(true_facts_not_in_answer)
+        cur_obj.meta["facts_in_ans"] = str(sorted(facts_in_answer))
+        cur_obj.auto = div0(2 * precision * recall, precision + recall)
+        cur_obj.text = answer
