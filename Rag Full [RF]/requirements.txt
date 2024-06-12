@@ -1,0 +1,16 @@
+llama-index-llms-openai
+llama-index-retrievers-bm25
+litellm
+lazy_import
+langdetect
+unidecode
+pathlib
+typing
+py_setenv
+llama-index
+pypdf
+sentence-transformers
+ragtime
+spacy
+enum
+google-cloud-aiplatform
