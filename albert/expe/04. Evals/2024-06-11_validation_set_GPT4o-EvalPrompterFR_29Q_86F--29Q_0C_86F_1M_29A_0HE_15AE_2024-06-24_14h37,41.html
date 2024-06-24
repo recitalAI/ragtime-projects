@@ -1,0 +1,1810 @@
+<!--
+This Jinja templates needs the "expe" variable to generate the HTML.
+Moreover, it uses several boolean variables to control the rendering:
+- "show_answers": True to show the answers for each model
+- "show_chunks": True to show the Chunks in a table (images on the left column, text on the right)
+- "show_facts": True to show the Facts
+- "show_evals": True to show the Evaluations
+-->
+<html>
+<head>
+  <style>
+    h3 {
+      background-color: LightGray;
+      padding: 0px;
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: #FFFFFF;
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    img {
+      width: 100%;
+      width: 800;
+      display: block;
+    }
+
+    .my_img {
+      width: 100px;
+      vertical-align: middle;
+    }
+
+    * {
+      font-family: Arial
+    }
+
+    .collapsible {
+      background-color: #777;
+      border-bottom: 1px solid #ccc;
+      color: white;
+      cursor: pointer;
+      padding: 3px;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0px;
+      display: none;
+      overflow: hidden;
+      /*background-color: #f1f1f1;*/
+    }
+    .facts {
+      text-decoration: underline;
+      color: #0000EE;
+      font-weight: bold;
+    }
+    .extra {
+      text-decoration: underline;
+      color: #FF1111;
+      font-weight: bold;
+    } 
+    .model_name {
+      background-color: #ffffa0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <span style="font-size: 20px;">29Q_0C_86F_1M_29A_0HE_15AE_2024-06-24_14h37,41</span>
+  <!-- For each QA -->
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>1. Comment contester un PV reçu depuis l’Italie ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Il faut regarder sur le PV les modalités de contestation.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les informations fournies, il n'y a pas de réponse spécifique pour contester un PV reçu depuis l'Italie. Cependant, voici quelques éléments de réponse qui pourraient être utiles :
+
+* Si le PV a été émis à la suite d'un contrôle automatisé par radar, vous pouvez contester en ligne ou par courrier, en suivant les étapes mentionnées dans le cas Votre véhicule a été flashé par un radar du document Permis de conduire à points : comment faire une réclamation ? (lien 1).
+* Si le PV a été émis en raison d'une infraction commise dans un transport en commun, vous pouvez contester en suivant les étapes mentionnées dans le document Peut-on contester un procès-verbal (une amende) reçue dans les transports en commun ? (lien 2).
+* Si le PV a été émis en raison d'une autre infraction, vous pouvez contester en suivant les étapes mentionnées dans le document Usurpation de plaque d'immatriculation d'un véhicule (Contester l'amende)" (lien 3).
+
+Il est important de vérifier les spécificités de la procédure de contestation applicable en Italie et de prendre conseil auprès d'un avocat ou d'un organisme compétent si vous êtes en difficulté.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 0 [] -
+            Missing: 1 [1] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not mention that "Il faut regarder sur le PV les modalités de contestation." Instead, it provides general advice on how to contest a ticket received from Italy, depending on the type of infraction.
+Part in the paragraph: N/A
+
+[EXTRA] = 1 - The paragraph provides additional information on how to contest a ticket depending on the type of infraction, which is not mentioned in the fact.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>2. Une mairie peut-elle refuser un formulaire cerfa pour une demande de renouvellement de Carte Nationale d’Identité (CNI) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Une mairie ne peut pas refuser un formulaire cerfa pour une demande de renouvellement de CNI.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, la réponse est non, une mairie ne peut pas refuser un formulaire Cerfa pour une demande de renouvellement de Carte Nationale d'Identité (CNI). En effet, la mairie n'est pas compétente pour accepter ou refuser une demande de carte d'identité, elle enregistre la demande et la transmet aux services préfectoraux.
+
+En cas de difficultés, vous pouvez saisir le préfet.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.75 -
+            Ok: 1 [1] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "une mairie ne peut pas refuser un formulaire Cerfa pour une demande de renouvellement de Carte Nationale d'Identité (CNI)" which supports the first fact. 
+Part in the paragraph: "la réponse est non, une mairie ne peut pas refuser un formulaire Cerfa pour une demande de renouvellement de Carte Nationale d'Identité (CNI)"
+
+[EXTRA] = 1 - The paragraph provides additional information about what to do in case of difficulties, which is not mentioned in the facts. Part in the paragraph: "En cas de difficultés, vous pouvez saisir le préfet."<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>3. Comment renouveler une Carte Nationale d’Identité (CNI) sans passer par la pré-demande en ligne ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Aller dans une mairie équipée d'une station d'enregistrement.<br/>
+        
+          <span class="facts">2.</span> Trouver un rendez-vous dans une mairie équipée avec le moteur de recherche de l'ANTS.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, il est possible de renouveler une Carte Nationale d'Identité (CNI) sans faire de pré-demande en ligne, mais il est important de prendre rendez-vous à l'avance car de nombreuses mairies exigent que le dépôt du dossier se fasse uniquement sur rendez-vous.
+
+Il est également possible de renouveler sa carte d'identité à n'importe quelle mairie équipée d'une station d'enregistrement, à condition de présenter les documents nécessaires et de suivre les étapes de la démarche.
+
+Il est important de noter que si vous êtes en France, vous pouvez renouveler votre carte d'identité gratuitement, à condition de pouvoir présenter l'ancienne carte.
+
+Si vous êtes à l'étranger, vous devrez vous déplacer au consulat ou à l'ambassade et vous renseigner sur les formalités à suivre.
+
+En résumé, il n'y a pas de réponse unique à cette question, car la démarche de renouvellement de la carte d'identité dépend de votre situation personnelle et de votre lieu de résidence.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 1 [1] -
+            Missing: 1 [2] - 
+            Hallus : 0 [] - 
+            Nb extra: 4 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "Il est également possible de renouveler sa carte d'identité à n'importe quelle mairie équipée d'une station d'enregistrement" which supports the first fact. 
+Part in the paragraph: "Il est également possible de renouveler sa carte d'identité à n'importe quelle mairie équipée d'une station d'enregistrement"
+
+2.[NOT FOUND] - The paragraph does not mention anything about finding an appointment in a town hall equipped with the ANTS search engine, which is the second fact.
+Part in the paragraph: N/A
+
+[EXTRA] = 4
+- The paragraph mentions that "il est possible de renouveler une Carte Nationale d'Identité (CNI) sans faire de pré-demande en ligne, mais il est important de prendre rendez-vous à l'avance car de nombreuses mairies exigent que le dépôt du dossier se fasse uniquement sur rendez-vous."
+- The paragraph mentions that "il est important de noter que si vous êtes en France, vous pouvez renouveler votre carte d'identité gratuitement, à condition de pouvoir présenter l'ancienne carte."
+- The paragraph mentions that "Si vous êtes à l'étranger, vous devrez vous déplacer au consulat ou à l'ambassade et vous renseigner sur les formalités à suivre."
+- The paragraph mentions that "En résumé, il n'y a pas de réponse unique à cette question, car la démarche de renouvellement de la carte d'identité dépend de votre situation personnelle et de votre lieu de résidence."<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>4. Peut-on corriger les informations mises sur une pré-demande en ligne pour le renouvellement d’une Carte Nationale d’Identité (CNI) après le paiement du timbre fiscal ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> En cas d'erreur, il faut remplir une nouvelle pré-demande.<br/>
+        
+          <span class="facts">2.</span> La pré-demande n'est pas payante.<br/>
+        
+          <span class="facts">3.</span> Le timbre fiscal est consommé au moment du dépôt en mairie.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les informations fournies, il est possible de corriger les informations mises sur une pré-demande en ligne pour le renouvellement d'une Carte Nationale d'Identité (CNI) avant le paiement du timbre fiscal. En effet, la pré-demande permet de gagner du temps lors du dépôt du dossier et permet de corriger les erreurs avant de valider la demande.
+
+Cependant, il est important de noter que si la pré-demande est déjà validée et que le timbre fiscal a été payé, il est impossible de corriger les informations. Il est donc recommandé de vérifier soigneusement les informations avant de valider la pré-demande et de payer le timbre fiscal.
+
+Il est également important de consulter les informations fournies à l'adresse https://www.service-public.fr/particuliers/vosdroits/F21089 pour obtenir des informations précises sur la démarche de renouvellement de la CNI.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 1 [3] -
+            Missing: 1 [2] - 
+            Hallus : 1 [1] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1. [HALLU] - The paragraph states that "il est possible de corriger les informations mises sur une pré-demande en ligne pour le renouvellement d'une Carte Nationale d'Identité (CNI) avant le paiement du timbre fiscal", which contradicts the first fact that states that a new pre-application must be filled out in case of an error.
+Part in the paragraph: "il est possible de corriger les informations mises sur une pré-demande en ligne pour le renouvellement d'une Carte Nationale d'Identité (CNI) avant le paiement du timbre fiscal"
+
+2. [NOT FOUND] - The paragraph does not provide information on whether the pre-application is free or not, which is the second fact.
+Part in the paragraph: N/A
+
+3. [OK] - The paragraph states that "si la pré-demande est déjà validée et que le timbre fiscal a été payé, il est impossible de corriger les informations", which supports the third fact that the fiscal stamp is consumed at the time of deposit in the town hall.
+Part in the paragraph: "si la pré-demande est déjà validée et que le timbre fiscal a été payé, il est impossible de corriger les informations"
+
+[EXTRA] = 1 - The paragraph provides additional information about the process of renewing a National Identity Card (CNI) and the importance of checking the information before validating the pre-application and paying the fiscal stamp, which is not mentioned in the facts.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>5. La mairie accepte-t-elle de corriger des fautes de frappe dans une pré-demande de carte d’identité ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> La mairie n'accepte pas de corriger des fautes de frappe pour la pré-demande de carte d'identité.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, il est possible de faire une pré-demande en ligne pour demander un rendez-vous dans une mairie équipée pour déposer le dossier de carte d'identité (https://www.service-public.fr/particuliers/vosdroits/F1759 et https://www.service-public.fr/particuliers/vosdroits/F21089). Cependant, il n'y a pas de mention spécifique quant à la correction de fautes de frappe dans une pré-demande de carte d'identité.
+
+Il est donc impossible pour moi de répondre à cette question avec certitude. Si vous avez une pré-demande de carte d'identité avec des fautes de frappe, il est recommandé de contacter la mairie pour obtenir des informations sur les modalités de correction de ces erreurs.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 0 [] -
+            Missing: 1 [1] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not provide any information about the city hall not accepting to correct typos for the pre-request of an identity card.
+Part in the paragraph: "Cependant, il n'y a pas de mention spécifique quant à la correction de fautes de frappe dans une pré-demande de carte d'identité."
+
+[EXTRA] = 1 - The paragraph provides extra information about the process of making a pre-request online for an appointment at a city hall equipped to file an identity card application. This information is not related to the fact provided. Part in the paragraph: "Selon les sources fournies, il est possible de faire une pré-demande en ligne pour demander un rendez-vous dans une mairie équipée pour déposer le dossier de carte d'identité."<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>6. Le fils est né en France et a la nationalité française. La mère la nationalité tunisienne. Le père les deux nationalités (naturalisé français). Sur le formulaire de l’ANTS, quelle réponse choisir à la question « la personne est française parce que : »</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Le fils est né en France.<br/>
+        
+          <span class="facts">2.</span> Le père est naturalisé français.<br/>
+        
+          <span class="facts">3.</span> Le fils a la nationalité française.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les informations fournies, le fils est français de naissance, car au moins l'un de ses parents (le père) est français. La nationalité du père est constatée le jour de la naissance de l'enfant et durant sa minorité, et la nationalité de l'enfant reste acquise même si la filiation est contestée après sa majorité.
+
+Il n'est pas nécessaire de remplir le champ la personne est française parce que :  car le fils est français de naissance et la réponse est déjà établie.
+
+Source : https://www.service-public.fr/particuliers/vosdroits/F3068<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.92 -
+            Ok: 3 [1, 2, 3] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1. [OK] - The paragraph states that "le fils est français de naissance" which supports the first fact. 
+Part in the paragraph: "le fils est français de naissance"
+
+2. [OK] - The paragraph states that "au moins l'un de ses parents (le père) est français" which supports the second fact.
+Part in the paragraph: "au moins l'un de ses parents (le père) est français"
+
+3. [OK] - The paragraph states that "la nationalité de l'enfant reste acquise même si la filiation est contestée après sa majorité" which supports the third fact.
+Part in the paragraph: "la nationalité de l'enfant reste acquise même si la filiation est contestée après sa majorité"
+
+[EXTRA] = 1 - The information about not needing to fill in the field "la personne est française parce que" is off topic and does not match the factual ideas.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>7. Comment refaire une carte grise si l’ancien propriétaire a perdu la carte d’origine ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Faire une demande de duplicata de la carte grise. <br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, voici les informations qui peuvent vous aider à répondre à la question :
+
+* Si la carte grise est détériorée, vous pouvez demander un duplicata, et le coût de ce duplicata est non spécifié dans les sources fournies.
+* Si la carte grise est retrouvée après avoir demandé un duplicata, vous ne pouvez pas annuler la procédure, et la carte grise retrouvée est invalidée.
+* Si la carte grise est détériorée, vous pouvez conserver la carte grise détériorée car elle pourra vous être réclamée, et vous pourrez la détruire 5 ans après avoir reçu le duplicata.
+* Si vous recevez un duplicata, vous devrez conserver l'ancienne carte grise pendant 5 ans, puis la détruire.
+
+En résumé, pour refaire une carte grise si l’ancien propriétaire a perdu la carte d’origine, il n'y a pas de réponse spécifique dans les sources fournies. Cependant, vous pouvez essayer de contacter le service des impôts ou la préfecture pour obtenir plus d'informations sur la procédure à suivre.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.25 -
+            Ok: 1 [1] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 3 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "Si la carte grise est détériorée, vous pouvez demander un duplicata" which supports the first fact. 
+Part in the paragraph: "Si la carte grise est détériorée, vous pouvez demander un duplicata"
+
+[EXTRA] = 3
+- The paragraph provides information about what to do if the original registration card is found after requesting a duplicate, which is not mentioned in the facts.
+- The paragraph provides information about what to do with the damaged registration card, which is not mentioned in the facts.
+- The paragraph provides information about what to do if the previous owner has lost the original card, which is not mentioned in the facts.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>8. Je suis un mineur, qui doit faire la demande de passeport pour moi ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Le responsable exerçant l'autorité parentale doit faire la demande.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les informations fournies, pour faire la demande de passeport, le mineur et son responsable (père, mère ou tuteur) doivent se présenter ensemble au guichet. Le responsable doit exercer l'autorité parentale et présenter sa propre pièce d'identité.
+
+Il n'y a pas de réponse explicite qui précise qui doit spécifiquement faire la demande de passeport, mais il est clair que le responsable (père, mère ou tuteur) doit accompagner le mineur et exercer l'autorité parentale.
+
+Je ne suis pas sûr de la réponse exacte, car il n'y a pas de mention spécifique dans les sources fournies qui précise qui doit faire la demande de passeport.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.75 -
+            Ok: 1 [1] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph implies that "Le responsable exerçant l'autorité parentale doit faire la demande" as it mentions that the responsible person (father, mother or guardian) must accompany the minor and exercise parental authority.
+Part in the paragraph: "Le responsable doit exercer l'autorité parentale et présenter sa propre pièce d'identité."
+
+[EXTRA] = 1 - The paragraph mentions that the minor and the responsible person must present themselves together at the counter, which is an extra context not mentioned in the facts.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>9. Comment prendre rendez-vous pour faire une demande de carte d'identité auprès de la mairie?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Utilisez le moteur de recherche de l'ANTS pour trouver un rendez-vous dans une mairie équipée<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, pour prendre rendez-vous pour faire une demande de carte d'identité auprès de la mairie, vous pouvez utiliser le moteur de recherche de l'ANTS pour trouver un rendez-vous dans une mairie équipée. Vous pouvez également préparer la démarche en faisant une pré-demande en ligne, mais ce n'est pas une obligation.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.75 -
+            Ok: 1 [1] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "vous pouvez utiliser le moteur de recherche de l'ANTS pour trouver un rendez-vous dans une mairie équipée" which supports the first fact. 
+Part in the paragraph: "vous pouvez utiliser le moteur de recherche de l'ANTS pour trouver un rendez-vous dans une mairie équipée"
+
+[EXTRA] = 1 - The paragraph provides additional information about the possibility of making a pre-request online, which is not mentioned in the facts. Part in the paragraph: "Vous pouvez également préparer la démarche en faisant une pré-demande en ligne, mais ce n'est pas une obligation."<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>10. Comment contester un FPS et quelles sont les étapes à suivre ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Contester le FPS en ligne ou par courrier.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, pour contester un Forfait Post-Stationnement (FPS), les étapes à suivre sont les suivantes :
+
+1. Recours administratif préalable obligatoire (Rapo) : vous devez contester le FPS par courrier à la commune ou à son prestataire, en expliquant les circonstances de fait et de droit qui vous font contester le FPS. Vous devez joindre au rapport la copie de l'avis de paiement du FPS contesté. Vous recevrez une réponse dans un délai d'un mois.
+2. Si le Rapo est refusé ou si vous n'obtenez pas de réponse, vous pouvez saisir la Commission du contentieux du stationnement payant (CCSP) :
+	* Par courrier : vous devez compléter et signer le formulaire Cerfa n°15817, joindre les documents suivants : copie de l'avis de paiement du FPS contesté, copie du Rapo, copie de l'accusé de réception postale ou électronique du Rapo et copie de la décision de la commune ou de la société ayant établi le FPS à la suite de votre recours. Vous devez envoyer un dossier par FPS contesté.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.75 -
+            Ok: 1 [1] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "vous devez contester le FPS par courrier à la commune ou à son prestataire" which supports the first fact. 
+Part in the paragraph: "vous devez contester le FPS par courrier à la commune ou à son prestataire"
+
+[EXTRA] = 1 - The paragraph provides additional information about the process of contesting a Forfait Post-Stationnement (FPS) that is not mentioned in the facts. This includes the steps to follow if the initial contestation is refused or if no response is received.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>11. Comment obtenir un passeport ou un visa pour un mineur franco-tunisien?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> En se rendant sur le site de l'ANTS pour remplir une pré demande en ligne de passeport<br/>
+        
+          <span class="facts">2.</span> Suivre les indications sur le site de l'ANTS pour déposer la demande en mairie<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, il n'y a pas de réponse spécifique pour obtenir un passeport ou un visa pour un mineur franco-tunisien. Les sources ne mentionnent pas les formalités spécifiques pour les mineurs franco-tunisiens.
+
+Cependant, pour les mineurs franco-tunisiens, il est recommandé de consulter le site du Conseil aux voyageurs et de se renseigner auprès des autorités de Tunisie avant le voyage. Il est également recommandé de prendre contact avec l'ambassade de Tunisie pour obtenir des informations sur les formalités d'entrée et de séjour en Tunisie pour les mineurs franco-tunisiens.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 0 [] -
+            Missing: 2 [1, 2] - 
+            Hallus : 0 [] - 
+            Nb extra: 2 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not mention anything about "se rendre sur le site de l'ANTS pour remplir une pré demande en ligne de passeport". 
+No part in the paragraph supports this fact.
+
+2.[NOT FOUND] - The paragraph does not mention anything about "suivre les indications sur le site de l'ANTS pour déposer la demande en mairie".
+No part in the paragraph supports this fact.
+
+[EXTRA] = 2 - The paragraph talks about "consulter le site du Conseil aux voyageurs" and "prendre contact avec l'ambassade de Tunisie pour obtenir des informations sur les formalités d'entrée et de séjour en Tunisie pour les mineurs franco-tunisiens" which are not related to the facts.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>12. Comment contester une amende d'infraction routière en ligne ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Vous pouvez contester l'amende en ligne en consultant l'avis de contravention pour connaître la procédure à suivre.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, il est possible de contester une amende d'infraction routière en ligne ou par courrier, selon les cas. Voici les procédures à suivre :
+
+* Si le véhicule a été flashé par un radar, il est possible de contester l'amende en ligne ou par courrier (source : https://www.service-public.fr/particuliers/vosdroits/F35218)
+* Si le véhicule a été intercepté, il est possible de contester l'amende en ligne ou par courrier (source : https://www.service-public.fr/particuliers/vosdroits/F35218)
+* Si le véhicule a été prêté ou loué, ou s'il s'agit d'un véhicule d'entreprise, il est possible de contester l'amende en ligne ou par courrier (source : https://www.service-public.fr/particuliers/vosdroits/F35218)
+* Si le véhicule a été volé, détruit, vendu ou si vous êtes victime d'une usurpation de plaques, il est possible de contester l'amende en ligne ou par courrier (source : https://www.service-public.fr/particuliers/vosdroits/F35218)
+
+Il est important de consulter l'avis de contravention pour connaître la procédure à suivre.
+
+Il est également possible de contester l'amende en ligne sur le site de l'Agence nationale de traitement automatisé des infractions (ANTA) ou par courrier recommandé avec accusé de réception (source : https://www.service-public.fr/particuliers/vosdroits/F34375)
+
+Il est important de noter que si vous payez l'amende, cela signifie que vous reconnaissez avoir commis l'infraction et vous ne pouvez plus contester.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.75 -
+            Ok: 1 [1] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "Il est possible de contester une amende d'infraction routière en ligne" and "Il est important de consulter l'avis de contravention pour connaître la procédure à suivre" which supports the first fact. 
+Part in the paragraph: "Il est possible de contester une amende d'infraction routière en ligne" and "Il est important de consulter l'avis de contravention pour connaître la procédure à suivre"
+
+[EXTRA] = 1 - The paragraph provides additional information about contesting a fine in different situations (vehicle flashed by a radar, vehicle intercepted, vehicle loaned or rented, company vehicle, vehicle stolen, destroyed, sold or if you are a victim of license plate usurpation) and the consequences of paying the fine.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>13. Une mairie peut-elle refuser un formulaire papier pour une demande de renouvellement de Carte Nationale d’Identité (CNI) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Une mairie ne peut pas refuser un formulaire papier pour une demande de renouvellement de CNI<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les informations fournies, la réponse est non, une mairie ne peut pas refuser un formulaire papier pour une demande de renouvellement de Carte Nationale d’Identité (CNI) car la loi rend obligatoire la délivrance de ce document.
+
+En effet, la carte d'identité est un document administratif qui doit être délivré par la mairie, et la mairie est tenue de remettre les documents dont la loi rend obligatoire leur délivrance (article 1 de l'arrêté du 12 juillet 2013).
+
+Cependant, il est important de noter que la mairie peut refuser de délivrer une copie certifiée conforme d'un document destiné à une administration française, mais pas un formulaire papier pour une demande de renouvellement de Carte Nationale d’Identité (CNI).<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.50 -
+            Ok: 1 [1] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 2 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "une mairie ne peut pas refuser un formulaire papier pour une demande de renouvellement de Carte Nationale d’Identité (CNI)" which supports the first fact. 
+Part in the paragraph: "la réponse est non, une mairie ne peut pas refuser un formulaire papier pour une demande de renouvellement de Carte Nationale d’Identité (CNI)"
+
+[EXTRA] = 2
+The paragraph provides additional information about the obligation of the town hall to issue documents required by law (article 1 of the decree of July 12, 2013) and the fact that the town hall can refuse to issue a certified copy of a document intended for a French administration. These are extra ideas not related to the fact.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>14. En quoi consiste l'intermédiation financière du service public des pensions alimentaires géré par la Caf et la MSA ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> L'intermédiation financière implique l'Aripa.<br/>
+        
+          <span class="facts">2.</span> L'Aripa agit comme intermédiaire entre le parent débiteur et le parent créancier.<br/>
+        
+          <span class="facts">3.</span> L'Aripa verse la pension alimentaire au parent créancier.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, l'intermédiation financière du service public des pensions alimentaires géré par la Caf (Caisse d'allocations familiales) et la MSA (Mutualité sociale agricole) consiste à permettre le paiement de la pension alimentaire d'un parent à l'autre, en cas de décision judiciaire ou d'accord amiable entre les parents. Voici les principaux points clés :
+
+* L'intermédiation financière est un dispositif qui permet de sécuriser les versements de pension alimentaire entre les parents.
+* Le parent débiteur verse mensuellement le montant de la pension alimentaire à l'Aripa (Agence de recouvrement et intermédiation des pensions alimentaires), qui se charge ensuite de verser le montant prévu au parent créancier.
+* L'intermédiation financière est accessible à tous, que vous soyez allocataire ou non.
+* Elle est disponible même en l'absence d'accord de l'autre parent.
+* L'intermédiation prend fin dans les cas suivants : décès de l'un ou l'autre des parents ou de l'enfant, date prévue dans le titre exécutoire, nouveau titre exécutoire supprimant la pension alimentaire ou mettant fin à l'intermédiation, ou demande d'un parent avec le consentement de l'autre parent (sauf en cas de violences intrafamiliales).
+
+En résumé, l'intermédiation financière est un service qui permet de sécuriser les versements de pension alimentaire entre les parents, en cas de décision judiciaire ou d'accord amiable entre les parents, et est géré par la Caf et la MSA.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.75 -
+            Ok: 3 [1, 2, 3] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 3 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "L'intermédiation financière implique l'Aripa" which supports the first fact. 
+Part in the paragraph: "Le parent débiteur verse mensuellement le montant de la pension alimentaire à l'Aripa (Agence de recouvrement et intermédiation des pensions alimentaires)"
+
+2.[OK] - The paragraph states that "L'Aripa agit comme intermédiaire entre le parent débiteur et le parent créancier" which supports the second fact.
+Part in the paragraph: "Le parent débiteur verse mensuellement le montant de la pension alimentaire à l'Aripa (Agence de recouvrement et intermédiation des pensions alimentaires), qui se charge ensuite de verser le montant prévu au parent créancier."
+
+3.[OK] - The paragraph states that "L'Aripa verse la pension alimentaire au parent créancier" which supports the third fact.
+Part in the paragraph: "qui se charge ensuite de verser le montant prévu au parent créancier."
+
+[EXTRA] = 3
+- "L'intermédiation financière est un dispositif qui permet de sécuriser les versements de pension alimentaire entre les parents."
+- "L'intermédiation financière est accessible à tous, que vous soyez allocataire ou non."
+- "Elle est disponible même en l'absence d'accord de l'autre parent."<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>15. Quelles sont les conditions pour toucher une retraite à taux plein par la MSA ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Si vous êtes salarié agricole, l'âge de départ à la retraite est de 64 ans pour les personnes nées à partir du 1er janvier 1968.<br/>
+        
+          <span class="facts">2.</span> Si vous êtes salarié agricole, l'âge de départ à la retraite recule de 3 mois par génération pour les personnes nées entre le 1er septembre 1961 et le 31 décembre 1967.<br/>
+        
+          <span class="facts">3.</span> Si vous êtes salarié agricole, il faut disposer de 172 trimestres pour les générations nées à partir de 1965.<br/>
+        
+          <span class="facts">4.</span> Si vous êtes salarié agricole, il est possible de prétendre un départ en retraite à partir de 58 ans si vous avez commencé à travailler avant 16 ans<br/>
+        
+          <span class="facts">5.</span> Si vous êtes salarié agricole, il est possible de prétendre un départ en retraite à partir de 60 ans si vous avez commencé à travailler avant 18 ans<br/>
+        
+          <span class="facts">6.</span> Si vous êtes salarié agricole, il est possible de prétendre un départ en retraite à partir de 62 ans si vous avez commencé à travailler avant 20 ans<br/>
+        
+          <span class="facts">7.</span> Si vous êtes salarié agricole, il est possible de prétendre un départ en retraite à partir de 63 ans si vous avez commencé à travailler avant 21 ans<br/>
+        
+          <span class="facts">8.</span> Si vous êtes non-salarié agricole et si vous êtes chef d'exploitation, votre retraite est composée d'une retraite de base et d'une retraite complémentaire (RCO) gérées par la MSA. cf. site MSA.FR<br/>
+        
+          <span class="facts">9.</span> Si vous êtes non-salarié agricole et si vous êtes chef d'entreprise agricole, votre retraite est composée d'une retraite de base et d'une retraite complémentaire (RCO) gérées par la MSA. cf. site MSA.FR<br/>
+        
+          <span class="facts">10.</span> Si vous êtes non-salarié agricole et si vous êtes chef collaborateur, votre retraite est composée d'une retraite de base et d'une retraite complémentaire (RCO) gérées par la MSA. cf. site MSA.FR<br/>
+        
+          <span class="facts">11.</span> Si vous êtes non-salarié agricole et si vous êtes aide familial, votre retraite est composée d'une retraite de base et d'une retraite complémentaire (RCO) gérées par la MSA. cf. site MSA.FR<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, pour toucher une retraite à taux plein par la MSA (Mutualité sociale agricole), il n'y a pas d'âge minimum. Cependant, si vous avez suffisamment de trimestres pour percevoir une retraite à taux plein, vous ne pouvez pas toucher l'Allocation de solidarité spécifique (ASS) après l'âge légal de départ à la retraite.
+
+Il est important de noter que les conditions d'attribution d'une retraite à taux plein par la MSA sont différentes de celles de l'Allocation de solidarité spécifique (ASS). Il est donc recommandé de contacter la MSA pour connaître les éventuelles démarches à suivre et les conditions spécifiques à remplir pour toucher une retraite à taux plein.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 0 [] -
+            Missing: 11 [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11] - 
+            Hallus : 0 [] - 
+            Nb extra: 2 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1. [NOT FOUND] - The paragraph does not mention the specific retirement age for agricultural employees born after January 1, 1968.
+2. [NOT FOUND] - The paragraph does not mention the retirement age moving back by 3 months per generation for those born between September 1, 1961, and December 31, 1967.
+3. [NOT FOUND] - The paragraph does not mention the requirement of 172 quarters for generations born after 1965.
+4. [NOT FOUND] - The paragraph does not mention the possibility of retiring from the age of 58 for those who started working before the age of 16.
+5. [NOT FOUND] - The paragraph does not mention the possibility of retiring from the age of 60 for those who started working before the age of 18.
+6. [NOT FOUND] - The paragraph does not mention the possibility of retiring from the age of 62 for those who started working before the age of 20.
+7. [NOT FOUND] - The paragraph does not mention the possibility of retiring from the age of 63 for those who started working before the age of 21.
+8. [NOT FOUND] - The paragraph does not mention the retirement plan for non-salaried agricultural workers who are farm operators.
+9. [NOT FOUND] - The paragraph does not mention the retirement plan for non-salaried agricultural workers who are agricultural business owners.
+10. [NOT FOUND] - The paragraph does not mention the retirement plan for non-salaried agricultural workers who are collaborating chiefs.
+11. [NOT FOUND] - The paragraph does not mention the retirement plan for non-salaried agricultural workers who are family helpers.
+
+[EXTRA] = 2 - The paragraph mentions that there is no minimum age to receive a full-rate retirement from the MSA and that the conditions for receiving a full-rate retirement from the MSA are different from those of the Specific Solidarity Allowance (ASS).<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>16. Comment estimer / simuler sa retraite si vous êtes à la mutuelle des salariés agricoles (MSA)?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Vous pouvez utiliser le simulateur interrégime 'www.info-retraite.fr'<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          En tant que demandeur de 25 ans et plus, pour estimer votre RSA, vous pouvez utiliser le simulateur de calcul de l'Assurance Recherche et Sécurité Sociale (ARS) de la Mutualité sociale agricole (MSA) de votre lieu de travail effectif.
+
+Selon les informations fournies, le montant du RSA est calculé en prenant en compte un montant forfaitaire qui varie selon la composition de votre foyer et le nombre d'enfants à charge, ainsi que les ressources prises en compte de votre foyer.
+
+Il est également important de noter que votre retraite est revalorisée au 1er janvier de chaque année.
+
+Pour estimer votre retraite, vous pouvez utiliser le simulateur de calcul de la retraite du salarié du secteur privé, qui vous indiquera le taux qui sert à calculer votre pension de retraite.
+
+Enfin, si vous changez de situation professionnelle, il est important de vous rapprocher de la MSA pour connaître les éventuelles démarches à suivre.
+
+En résumé, pour estimer votre retraite si vous êtes à la mutuelle des salariés agricoles (MSA), vous pouvez utiliser le simulateur de calcul de l'ARSM et prendre en compte les informations fournies sur le montant forfaitaire et les ressources prises en compte de votre foyer.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 0 [] -
+            Missing: 1 [1] - 
+            Hallus : 0 [] - 
+            Nb extra: 5 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not mention the use of 'www.info-retraite.fr' simulator. It talks about the use of other simulators but not the one mentioned in the fact.
+Part in the paragraph: "Pour estimer votre retraite, vous pouvez utiliser le simulateur de calcul de la retraite du salarié du secteur privé, qui vous indiquera le taux qui sert à calculer votre pension de retraite."
+
+[EXTRA] = 5
+- The paragraph talks about the RSA estimation which is not mentioned in the facts.
+- The paragraph mentions the revaluation of retirement at the beginning of each year which is not mentioned in the facts.
+- The paragraph talks about the change of professional situation which is not mentioned in the facts.
+- The paragraph mentions the use of ARSM simulator which is not mentioned in the facts.
+- The paragraph talks about the calculation of RSA taking into account a lump sum and the resources of your household which is not mentioned in the facts.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>17. Quelles sont les implications d'une faute inexcusable de l'employeur en cas de maladie professionnelle ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> La rente d'incapacité permanente est majorée.<br/>
+        
+          <span class="facts">2.</span> Une indemnisation pour des préjudices non couverts par la rente est accordée.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, si la faute inexcusable de l'employeur est reconnue comme étant la cause de la maladie professionnelle, le salarié peut bénéficier d'une indemnisation complémentaire et de la réparation intégrale des préjudices subis et non indemnisés par la rente, tels que les souffrances physiques et morales, les préjudices esthétiques et d'agrément, les préjudices résultant de la perte ou de la diminution de ses possibilités de promotion professionnelle.
+
+En outre, si le salarié conserve des séquelles dues à la maladie professionnelle, un taux d'incapacité permanente (IPP) est déterminé par l'organisme de Sécurité sociale (CPAM ou MSA) et permet de percevoir une indemnisation sous forme de capital ou de rente viagère.
+
+En cas de faute inexcusable de l'employeur, le salarié peut saisir la CPAM ou la MSA pour obtenir une indemnisation et une réparation des préjudices, et peut également saisir le conseil de prud'hommes pour obtenir réparation des préjudices à l'origine de la prise d'acte de la rupture du contrat de travail.
+
+En résumé, les implications d'une faute inexcusable de l'employeur en cas de maladie professionnelle sont une indemnisation complémentaire et la réparation intégrale des préjudices, ainsi qu'un taux d'incapacité permanente déterminé par l'organisme de Sécurité sociale.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.75 -
+            Ok: 2 [1, 2] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 2 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "un taux d'incapacité permanente (IPP) est déterminé par l'organisme de Sécurité sociale (CPAM ou MSA) et permet de percevoir une indemnisation sous forme de capital ou de rente viagère." which supports the first fact. 
+Part in the paragraph: "un taux d'incapacité permanente (IPP) est déterminé par l'organisme de Sécurité sociale (CPAM ou MSA) et permet de percevoir une indemnisation sous forme de capital ou de rente viagère."
+
+2.[OK] - The paragraph states that "le salarié peut bénéficier d'une indemnisation complémentaire et de la réparation intégrale des préjudices subis et non indemnisés par la rente" which supports the second fact.
+Part in the paragraph: "le salarié peut bénéficier d'une indemnisation complémentaire et de la réparation intégrale des préjudices subis et non indemnisés par la rente"
+
+[EXTRA] = 2 - The paragraph includes two extra ideas: "En cas de faute inexcusable de l'employeur, le salarié peut saisir la CPAM ou la MSA pour obtenir une indemnisation et une réparation des préjudices, et peut également saisir le conseil de prud'hommes pour obtenir réparation des préjudices à l'origine de la prise d'acte de la rupture du contrat de travail." and "les implications d'une faute inexcusable de l'employeur en cas de maladie professionnelle sont une indemnisation complémentaire et la réparation intégrale des préjudices, ainsi qu'un taux d'incapacité permanente déterminé par l'organisme de Sécurité sociale."<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>18. Comment définit-on l'IPP (MSA) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> L'IPP est défini par le médecin conseil de la MSA en relation avec le médecin traitant<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, l'IPP (incapacité permanente de travail) est définie comme suit :
+
+* Dans le cas d'une maladie professionnelle, en cas d'IPP, vous avez droit à une indemnisation spécifique et à une indemnisation complémentaire en cas de faute importante de l'employeur (source : https://www.service-public.fr/particuliers/vosdroits/F31880)
+* Pour les personnes relevant du régime agricole, l'IPP est gérée par la Mutualité sociale agricole (MSA) (source : https://www.service-public.fr/particuliers/vosdroits/F31880 et https://www.service-public.fr/particuliers/vosdroits/F31462)
+
+Il n'y a pas de définition spécifique de l'IPP (MSA) dans les sources fournies, mais on peut en déduire que l'IPP est une incapacité permanente de travail liée à une maladie professionnelle, gérée par la MSA pour les personnes relevant du régime agricole.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 0 [] -
+            Missing: 1 [1] - 
+            Hallus : 0 [] - 
+            Nb extra: 2 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not mention that "L'IPP est défini par le médecin conseil de la MSA en relation avec le médecin traitant". It only states that the IPP is managed by the MSA for people under the agricultural regime.
+Part in the paragraph: "Pour les personnes relevant du régime agricole, l'IPP est gérée par la Mutualité sociale agricole (MSA)"
+
+[EXTRA] = 2
+The paragraph provides two extra ideas:
+1. In the case of an occupational disease, in case of IPP, you are entitled to specific compensation and additional compensation in case of significant fault of the employer.
+2. The IPP is a permanent incapacity for work related to an occupational disease.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>19. Quelles sont les missions de l'Agence de recouvrement et d'intermédiation des pensions alimentaires (Aripa) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Aider les personnes à recevoir ou à verser une pension alimentaire.<br/>
+        
+          <span class="facts">2.</span> Servir d'intermédiaire pour assurer le paiement d'une pension.<br/>
+        
+          <span class="facts">3.</span> Conseiller chaque parent en cas d'impayés.<br/>
+        
+          <span class="facts">4.</span> Récupérer les sommes dues en cas d'impayés.<br/>
+        
+          <span class="facts">5.</span> Récupérer les sommes auprès d'un tiers si nécessaire.<br/>
+        
+          <span class="facts">6.</span> Orienter les parents dans les démarches si la pension alimentaire n'est pas encore fixée.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, les missions de l'Agence de recouvrement et d'intermédiation des pensions alimentaires (Aripa) sont :
+
+* Intermédier entre le parent qui doit payer et le parent qui doit recevoir la pension alimentaire.
+* Recouvrer les sommes dues en cas d'impayés (pension alimentaire non versée ou incomplète).
+* Procéder à un recouvrement forcé, par exemple en recouvrant directement auprès de l'employeur, de la banque, de la caisse de sécurité sociale ou de retraite, France Travail (anciennement Pôle emploi)...
+* Recouvrer des créances à l'étranger et des pensions alimentaires ordonnées à l'étranger.
+* Intervenir en cas de trop-perçu par le créancier et ajuster les échéances à venir ou saisir le tribunal judiciaire d'une demande de remboursement.
+* Revaloriser la pension alimentaire chaque année selon les indices et clauses prévues dans les décisions.
+
+Il est important de noter que l'Aripa est un service gratuit pour les deux parents (débiteur et créancier) et qu'en cas d'impayé, le débiteur doit payer des frais de gestion à hauteur de 7,5 % de la somme due pour un recouvrement amiable et 10 % de l'arriéré pour un recouvrement forcé.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.46 -
+            Ok: 4 [1, 2, 4, 5] -
+            Missing: 2 [3, 6] - 
+            Hallus : 0 [] - 
+            Nb extra: 3 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "Intermédier entre le parent qui doit payer et le parent qui doit recevoir la pension alimentaire" which supports the first fact. 
+Part in the paragraph: "Intermédier entre le parent qui doit payer et le parent qui doit recevoir la pension alimentaire."
+
+2.[OK] - The paragraph states that "Intermédier entre le parent qui doit payer et le parent qui doit recevoir la pension alimentaire" which supports the second fact.
+Part in the paragraph: "Intermédier entre le parent qui doit payer et le parent qui doit recevoir la pension alimentaire."
+
+3.[NOT FOUND] - The paragraph does not mention that the agency advises each parent in case of non-payment.
+Part in the paragraph: N/A
+
+4.[OK] - The paragraph states that "Recouvrer les sommes dues en cas d'impayés (pension alimentaire non versée ou incomplète)" which supports the fourth fact.
+Part in the paragraph: "Recouvrer les sommes dues en cas d'impayés (pension alimentaire non versée ou incomplète)."
+
+5.[OK] - The paragraph states that "Procéder à un recouvrement forcé, par exemple en recouvrant directement auprès de l'employeur, de la banque, de la caisse de sécurité sociale ou de retraite, France Travail (anciennement Pôle emploi)..." which supports the fifth fact.
+Part in the paragraph: "Procéder à un recouvrement forcé, par exemple en recouvrant directement auprès de l'employeur, de la banque, de la caisse de sécurité sociale ou de retraite, France Travail (anciennement Pôle emploi)..."
+
+6.[NOT FOUND] - The paragraph does not mention that the agency guides parents in the procedures if the alimony is not yet fixed.
+Part in the paragraph: N/A
+
+[EXTRA] = 3 - The paragraph mentions that the agency recovers debts abroad and alimony ordered abroad, intervenes in case of overpayment by the creditor and adjusts the upcoming deadlines or seizes the judicial court with a request for reimbursement, and revalues the alimony each year according to the indices and clauses provided for in the decisions. These are extra ideas not mentioned in the facts.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>20. Quand un abattement de 10% est-il mis en place sur une retraite anticipée ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Il n'y a plus d'abattement sur les nouvelles retraites retraite complémentaire depuis décembre 2023.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, il semblerait que l'abattement de 10% ne soit pas spécifiquement mentionné pour les retraites anticipées. L'article F415 de Service-Public.fr parle de l'abattement de 10% pour les pensions déclarées, mais il ne précise pas si c'est spécifique aux retraites anticipées.
+
+Cependant, il est important de noter que les pensions de retraite peuvent être soumises à des règles spécifiques en fonction de leur nature et de l'âge du retraitant. Il est donc recommandé de vérifier les conditions spécifiques de votre retraite et de consulter un professionnel fiscal pour obtenir des conseils précis sur les impôts à déclarer.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 0 [] -
+            Missing: 1 [1] - 
+            Hallus : 0 [] - 
+            Nb extra: 2 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1. [NOT FOUND] - The paragraph does not mention anything about the removal of the discount on new complementary retirements since December 2023.
+Part in the paragraph: None.
+
+[EXTRA] = 2
+- The paragraph discusses the 10% discount for declared pensions, which is not related to the fact.
+- The paragraph also advises to check the specific conditions of your retirement and consult a tax professional for precise advice on taxes to declare, which is also not related to the fact.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>21. Comment prendre rendez-vous avec l’assurance retraite (régime général)?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> A partir du site de l'assurance retraite, en prenant rendez-vous sur l'espace personnel.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Voici les réponses à vos questions basées sur les sources fournies :
+
+* Pouvez-vous choisir la date de votre départ à la retraite ? : Oui, vous pouvez choisir la date de votre départ à la retraite en soumettant votre demande de retraite entre 4 et 5 mois avant la date souhaitée (Source : https://www.service-public.fr/particuliers/vosdroits/F13941).
+* Comment faire votre demande de retraite ? : Vous pouvez faire votre demande de retraite en ligne sur le site officiel Info-retraite en utilisant le service Demander ma retraite, ou contacter directement l'une des caisses de retraite auprès desquelles vous avez cotisé (Sources : https://www.service-public.fr/particuliers/vosdroits/F24617 et https://www.service-public.fr/particuliers/vosdroits/F13941).
+* Devez-vous informer votre administration employeur de la date de votre départ ? : Oui, si vous êtes fonctionnaire, vous devez informer votre administration employeur de la date de votre départ par lettre recommandée avec accusé de réception (LRAR) (Source : https://www.service-public.fr/particuliers/vosdroits/F31541). Si vous êtes salarié, vous devez également informer votre employeur de votre départ (Source : https://www.service-public.fr/particuliers/vosdroits/F13941).
+* Quand débute le versement de vos pensions de retraite ? : Le versement des pensions de retraite débute généralement à la date de départ souhaitée (Source : https://www.service-public.fr/particuliers/vosdroits/F13941).
+* Devez-vous informer votre employeur de la date de votre départ ? : Oui, si vous êtes salarié, vous devez informer votre employeur de votre départ (Source : https://www.service-public.fr/particuliers/vosdroits/F13941).
+
+En ce qui concerne la question Comment prendre rendez-vous avec l’assurance retraite (régime général) ?", je ne connais pas la réponse car le lien fourni ne mentionne pas de service de prendre rendez-vous avec l'assurance retraite (régime général).<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 0 [] -
+            Missing: 1 [1] - 
+            Hallus : 0 [] - 
+            Nb extra: 5 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not mention anything about "A partir du site de l'assurance retraite, en prenant rendez-vous sur l'espace personnel." 
+There is no part in the paragraph related to this fact.
+
+[EXTRA] = 5. The paragraph provides information on how to choose the retirement date, how to apply for retirement, the need to inform the employer about the retirement date, the start of retirement pensions, and the need to inform the employer about the departure date. These are all extra ideas not related to the fact.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>22. Quelles sont les étapes pour préparer sereinement son départ à la retraite?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Ouvrir un espace sur le site de l'assurance retraite.<br/>
+        
+          <span class="facts">2.</span> Se renseigner sur les différentes possibilités de départ en retraite.<br/>
+        
+          <span class="facts">3.</span> Consulter son relevé de carrière.<br/>
+        
+          <span class="facts">4.</span> S'inscrire à l'agenda retraite.<br/>
+        
+          <span class="facts">5.</span> Estimer le montant de sa retraite.<br/>
+        
+          <span class="facts">6.</span> S'informer sur le cumul emploi-retraite et la retraite progressive.<br/>
+        
+          <span class="facts">7.</span> Faire sa demande de retraite.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, voici les étapes pour préparer sereinement son départ à la retraite :
+
+1. **Se renseigner sur les conditions de départ à la retraite** : Il est important de connaître les conditions générales de départ à la retraite, notamment l'âge minimum de départ, les conditions de départ anticipé, les conditions de départ progressive, etc.
+2. **Consultation du relevé de carrière** : Il est recommandé de consulter son relevé de carrière pour estimer le montant de sa retraite.
+3. **Estimation du montant de la retraite** : Il est important d'estimer le montant de sa retraite pour planifier sa transition vers la retraite.
+4. **Information sur le cumul emploi-retraite** : Si l'on souhaite poursuivre un emploi à temps partiel ou intégral après la retraite, il est important de connaître les règles du cumul emploi-retraite.
+5. **Faire sa demande de retraite** : Une fois que les étapes précédentes sont achevées, il est temps de faire sa demande de retraite.
+6. **Récupérer les sommes placées sur les plans d'épargne retraite** : Il est important de récupérer les sommes placées sur les plans d'épargne retraite pour utiliser les fonds pour la retraite.
+7. **Informer sur les indemnités de départ en retraite** : Si l'on est salarié du secteur privé, il est important de connaître les indemnités de départ en retraite dont on peut bénéficier de la part de son employeur.
+
+Il est également recommandé de s'inscrire sur le site officiel Info-retraite pour disposer d'une information personnalisée sur sa retraite et pour réaliser une demande unique de retraite valable auprès de toutes ses caisses de retraite.
+
+Il est important de noter que les étapes ci-dessus sont valables pour les salariés du secteur privé, les fonctionnaires et les contractuels de la fonction publique. Il est important de vérifier les spécificités de son régime de retraite pour les étapes à suivre.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.54 -
+            Ok: 5 [2, 3, 5, 6, 7] -
+            Missing: 2 [1, 4] - 
+            Hallus : 0 [] - 
+            Nb extra: 3 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not mention the fact of "Ouvrir un espace sur le site de l'assurance retraite". 
+Part in the paragraph: None
+
+2.[OK] - The paragraph states that "Se renseigner sur les conditions de départ à la retraite" which supports the second fact.
+Part in the paragraph: "Se renseigner sur les conditions de départ à la retraite"
+
+3.[OK] - The paragraph states that "Consultation du relevé de carrière" which supports the third fact.
+Part in the paragraph: "Consultation du relevé de carrière"
+
+4.[NOT FOUND] - The paragraph does not mention the fact of "S'inscrire à l'agenda retraite". 
+Part in the paragraph: None
+
+5.[OK] - The paragraph states that "Estimation du montant de la retraite" which supports the fifth fact.
+Part in the paragraph: "Estimation du montant de la retraite"
+
+6.[OK] - The paragraph states that "Information sur le cumul emploi-retraite" which supports the sixth fact.
+Part in the paragraph: "Information sur le cumul emploi-retraite"
+
+7.[OK] - The paragraph states that "Faire sa demande de retraite" which supports the seventh fact.
+Part in the paragraph: "Faire sa demande de retraite"
+
+[EXTRA] = 3. The paragraph includes three extra ideas: "Récupérer les sommes placées sur les plans d'épargne retraite", "Informer sur les indemnités de départ en retraite", and "s'inscrire sur le site officiel Info-retraite pour disposer d'une information personnalisée sur sa retraite et pour réaliser une demande unique de retraite valable auprès de toutes ses caisses de retraite".<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>23. Comment demander sa retraite en ligne ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Connectez-vous au site officiel Info retraite.<br/>
+        
+          <span class="facts">2.</span> Utilisez le service 'Demander ma retraite'.<br/>
+        
+          <span class="facts">3.</span> La connection peut se faire via France Connect<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, pour demander sa retraite en ligne, vous pouvez utiliser le service Demander ma retraite" sur le site officiel Info retraite. Ce service vous permet de faire une seule demande qui est transmise automatiquement à l'ensemble des caisses de retraite de base et complémentaires auprès desquelles vous avez droit à une pension de retraite. Vous devez compléter le formulaire en ligne, joindre les justificatifs demandés scannés ou photographiés, et suivre l'état d'avancement de votre demande. Il est important de faire votre demande au moins 4 à 5 mois avant la date de départ souhaitée.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.50 -
+            Ok: 2 [1, 2] -
+            Missing: 1 [3] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "vous pouvez utiliser le service Demander ma retraite" sur le site officiel Info retraite" which supports the first fact. 
+Part in the paragraph: "vous pouvez utiliser le service Demander ma retraite" sur le site officiel Info retraite"
+
+2.[OK] - The paragraph states that "pour demander sa retraite en ligne, vous pouvez utiliser le service Demander ma retraite" which supports the second fact.
+Part in the paragraph: "pour demander sa retraite en ligne, vous pouvez utiliser le service Demander ma retraite"
+
+3.[NOT FOUND] - The paragraph does not mention anything about connecting via France Connect, which is the third fact.
+Part in the paragraph: N/A
+
+[EXTRA] = 1 - The paragraph provides additional information about the process of requesting retirement, which is not mentioned in the facts. This includes the need to complete an online form, attach scanned or photographed supporting documents, and track the progress of your request. It also advises to make the request 4 to 5 months before the desired departure date.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>24. Si vous êtes au régime général de retraite, comment demander sa retraite en ligne sur www.lassuranceretraite.fr ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Utilisez le service 'Demander ma retraite' sur le site Info retraite.<br/>
+        
+          <span class="facts">2.</span> Complétez le formulaire personnalisé et pré-rempli.<br/>
+        
+          <span class="facts">3.</span> Joignez les justificatifs demandés scannés ou photographiés.<br/>
+        
+          <span class="facts">4.</span> Faites votre demande de retraite 5 mois avant la date de départ souhaitée.<br/>
+        
+          <span class="facts">5.</span> La demande en ligne sera automatiquement transmise à toutes les caisses de retraite concernées.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, pour demander sa retraite en ligne sur www.lassuranceretraite.fr, il est nécessaire de suivre les étapes suivantes :
+
+1. Utiliser le service Demander ma retraite sur le site officiel Info retraite.
+2. Compléter le formulaire de demande de retraite en ligne, qui est personnalisé et pré-rempli de certaines informations.
+3. Joindre les justificatifs demandés scannés ou photographiés.
+4. Suivre l'état d'avancement de votre demande à tout moment.
+5. Faire votre demande de retraite au moins 5 mois avant la date de départ souhaitée.
+
+Il n'est pas spécifié si vous pouvez choisir la date de votre départ à la retraite, car cela dépend de votre situation professionnelle et des règles applicables à votre régime de retraite.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.65 -
+            Ok: 4 [1, 2, 3, 4] -
+            Missing: 1 [5] - 
+            Hallus : 0 [] - 
+            Nb extra: 2 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "Utiliser le service Demander ma retraite sur le site officiel Info retraite" which supports the first fact. 
+Part in the paragraph: "1. Utiliser le service Demander ma retraite sur le site officiel Info retraite."
+
+2.[OK] - The paragraph states that "Compléter le formulaire de demande de retraite en ligne, qui est personnalisé et pré-rempli de certaines informations" which supports the second fact.
+Part in the paragraph: "2. Compléter le formulaire de demande de retraite en ligne, qui est personnalisé et pré-rempli de certaines informations."
+
+3.[OK] - The paragraph states that "Joindre les justificatifs demandés scannés ou photographiés" which supports the third fact.
+Part in the paragraph: "3. Joindre les justificatifs demandés scannés ou photographiés."
+
+4.[OK] - The paragraph states that "Faire votre demande de retraite au moins 5 mois avant la date de départ souhaitée" which supports the fourth fact.
+Part in the paragraph: "5. Faire votre demande de retraite au moins 5 mois avant la date de départ souhaitée."
+
+5.[NOT FOUND] - The paragraph does not mention that "La demande en ligne sera automatiquement transmise à toutes les caisses de retraite concernées."
+Part in the paragraph: N/A
+
+[EXTRA] = 2 - The paragraph includes two extra ideas: "Suivre l'état d'avancement de votre demande à tout moment" and "Il n'est pas spécifié si vous pouvez choisir la date de votre départ à la retraite, car cela dépend de votre situation professionnelle et des règles applicables à votre régime de retraite."<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>25. Qu’est-ce que la notification de retraite ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> La notification de retraite indique le montant de la retraite.<br/>
+        
+          <span class="facts">2.</span> Elle précise la date de départ en retraite.<br/>
+        
+          <span class="facts">3.</span> Elle justifie le statut de retraité.<br/>
+        
+          <span class="facts">4.</span> Chaque régime envoie sa propre notification.<br/>
+        
+          <span class="facts">5.</span> Ce document doit être conservé impérativement.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, la notification de retraite est appelée demande unique de retraite" (voir https://www.service-public.fr/particuliers/vosdroits/F24617). C'est un service en ligne qui vous permet de demander votre retraite auprès de toutes vos caisses de retraite avec une seule démarche.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 0 [] -
+            Missing: 5 [1, 2, 3, 4, 5] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1. [NOT FOUND] - The paragraph does not mention that "La notification de retraite indique le montant de la retraite."
+No part in the paragraph supports this fact.
+
+2. [NOT FOUND] - The paragraph does not mention that "Elle précise la date de départ en retraite."
+No part in the paragraph supports this fact.
+
+3. [NOT FOUND] - The paragraph does not mention that "Elle justifie le statut de retraité."
+No part in the paragraph supports this fact.
+
+4. [NOT FOUND] - The paragraph does not mention that "Chaque régime envoie sa propre notification."
+No part in the paragraph supports this fact.
+
+5. [NOT FOUND] - The paragraph does not mention that "Ce document doit être conservé impérativement."
+No part in the paragraph supports this fact.
+
+[EXTRA] = 1 - The paragraph mentions that "la notification de retraite est appelée demande unique de retraite" and "C'est un service en ligne qui vous permet de demander votre retraite auprès de toutes vos caisses de retraite avec une seule démarche." which are not mentioned in the facts.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>26. Quelles sont les conditions pour bénéficier d'une retraite anticipée et quel impact cela a-t-il sur le taux de retraite ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Une retraite anticipée pour carrière longue est possible, si vous avez commencé à travailler avant : 16 ans ; 18 ans ; 20 ans ; 21 ans, et si vous réunissez au moins 5 trimestres avant la fin de l’année civile de vos 16, 18, 20 ou 21 ans<br/>
+        
+          <span class="facts">2.</span> Une retraite anticipée pour carrière longue est possible, si vous avez commencé à travailler avant : 16 ans ; 18 ans ; 20 ans ; 21 ans, et si vous réunissez au moins 4 trimestres si vous êtes né au cours du dernier trimestre de l’année<br/>
+        
+          <span class="facts">3.</span> Une retraite anticipée pour carrière longue est possible, si vous avez commencé à travailler avant : 16 ans ; 18 ans ; 20 ans ; 21 ans, et si vous avez débuté votre carrière au régime des non-salariés agricoles.<br/>
+        
+          <span class="facts">4.</span> Vous pouvez prendre une retraite anticipée pour travailleur handicapé si vous réunissez un nombre minimum de trimestres cotisés.<br/>
+        
+          <span class="facts">5.</span> Pour un travailleur handicapé toutes les périodes de cotisations à un régime de retraite français ou de la zone d'application des règlements européens sont retenues.<br/>
+        
+          <span class="facts">6.</span> Pour un travailleur handicapé les périodes cotisées à l’étranger peuvent également être retenues si un accord de sécurité sociale est signé avec la France. <br/>
+        
+          <span class="facts">7.</span> Pour un travailleur handicapé certains rachats, les trimestres d’assurance vieillesse des parents au foyer (AVPF) et les périodes de volontariat associatif, ne sont pas retenus dans la durée cotisée.<br/>
+        
+          <span class="facts">8.</span> Vous pouvez prendre une retraite anticipée pour travailleur handicapé si pendant votre période d’activité antérieures au 31 décembre 2015 étiez atteint d’une incapacité permanente au moins égale à 50%<br/>
+        
+          <span class="facts">9.</span> Vous pouvez prendre une retraite anticipée pour travailleur handicapé si pendant votre période d’activité vous étiez reconnu travailleur handicapé<br/>
+        
+          <span class="facts">10.</span> Vous pouvez prendre une retraite anticipée pour travailleur handicapé si pendant votre période d’activité vous étiez en situation de handicap comparable au taux d’incapacité permanente de 50 %.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, voici les conditions pour bénéficier d'une retraite anticipée et l'impact sur le taux de retraite :
+
+* Retraite anticipée pour handicap :
+	+ Conditions : avoir un handicap qui empêche de poursuivre son activité professionnelle, avoir au moins 10 ans de cotisations sociales ou être titulaire d'une pension d'invalidité.
+	+ Impact sur le taux de retraite : le montant de la retraite anticipée est calculé en fonction du nombre de trimestres cotisés et du salaire de référence.
+* Retraite anticipée pour incapacité permanente :
+	+ Conditions : être déclaré inapte au travail, avoir au moins 10 ans de cotisations sociales ou être titulaire d'une pension d'invalidité.
+	+ Impact sur le taux de retraite : le montant de la retraite anticipée est calculé en fonction du nombre de trimestres cotisés et du salaire de référence.
+* Retraite anticipée pour inaptitude au travail :
+	+ Conditions : être déclaré inapte au travail, avoir au moins 10 ans de cotisations sociales ou être titulaire d'une pension d'invalidité.
+	+ Impact sur le taux de retraite : le montant de la retraite anticipée est calculé en fonction du nombre de trimestres cotisés et du salaire de référence.
+* Retraite anticipée pour carrière longue :
+	+ Conditions : avoir commencé à travailler jeune, avoir au moins 40 ans de cotisations sociales ou être titulaire d'une pension de vieillesse.
+	+ Impact sur le taux de retraite : le montant de la retraite anticipée est calculé en fonction du nombre de trimestres cotisés et du salaire de référence.
+
+En général, les conditions pour bénéficier d'une retraite anticipée sont liées à une incapacité permanente, un handicap ou une longue carrière professionnelle. L'impact sur le taux de retraite dépend du nombre de trimestres cotisés et du salaire de référence.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 1 [4] -
+            Missing: 9 [1, 2, 3, 5, 6, 7, 8, 9, 10] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not mention the specific ages (16, 18, 20, 21 years) or the requirement of having at least 5 quarters before the end of the calendar year of your 16, 18, 20 or 21 years for early retirement for a long career.
+Part in the paragraph: None
+
+2.[NOT FOUND] - The paragraph does not mention the specific requirement of having at least 4 quarters if you were born in the last quarter of the year for early retirement for a long career.
+Part in the paragraph: None
+
+3.[NOT FOUND] - The paragraph does not mention the specific requirement of having started your career in the non-salaried agricultural regime for early retirement for a long career.
+Part in the paragraph: None
+
+4.[OK] - The paragraph states that "le montant de la retraite anticipée est calculé en fonction du nombre de trimestres cotisés" which supports the fourth fact.
+Part in the paragraph: "le montant de la retraite anticipée est calculé en fonction du nombre de trimestres cotisés"
+
+5.[NOT FOUND] - The paragraph does not mention that all periods of contributions to a French retirement scheme or within the application area of European regulations are taken into account for a disabled worker.
+Part in the paragraph: None
+
+6.[NOT FOUND] - The paragraph does not mention that periods contributed abroad can also be taken into account for a disabled worker if a social security agreement is signed with France.
+Part in the paragraph: None
+
+7.[NOT FOUND] - The paragraph does not mention that certain buybacks, quarters of old-age insurance for stay-at-home parents (AVPF) and periods of voluntary association are not taken into account in the contributed duration for a disabled worker.
+Part in the paragraph: None
+
+8.[NOT FOUND] - The paragraph does not mention the specific requirement of having a permanent disability of at least 50% during your activity period prior to December 31, 2015 for early retirement for a disabled worker.
+Part in the paragraph: None
+
+9.[NOT FOUND] - The paragraph does not mention the specific requirement of being recognized as a disabled worker during your activity period for early retirement for a disabled worker.
+Part in the paragraph: None
+
+10.[NOT FOUND] - The paragraph does not mention the specific requirement of being in a situation of disability comparable to a permanent disability rate of 50% during your activity period for early retirement for a disabled worker.
+Part in the paragraph: None
+
+[EXTRA] = 1 - The paragraph mentions the conditions for early retirement due to permanent incapacity and unfitness for work, which are not mentioned in the facts.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>27. À quel âge peut-on prendre sa retraite en France et quelles sont les conditions pour un départ anticipé ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> L’âge légal de départ à la retraite est de 64 ans pour ceux nés à partir du 1er janvier 1968.<br/>
+        
+          <span class="facts">2.</span> Si vous êtes né entre le 1er septembre 1961 et le 31 décembre 1967, l’âge légal augmente progressivement de 62 ans à 64 ans, avec 3 mois supplémentaires par année de naissance.<br/>
+        
+          <span class="facts">3.</span> On peut prendre sa retraite avant l’âge légal si on a commencé à travailler avant 16, 18, 20 ou 21 ans et si au moins 5 trimestres sont réunis avant la fin de l’année civile de ses 16, 18, 20 ou 21 ans.<br/>
+        
+          <span class="facts">4.</span> On peut prendre sa retraite avant l’âge légal si on a commencé à travailler avant 16, 18, 20 ou 21 ans et si 4 trimestres sont réunis si on est né au cours du dernier trimestre de l’année.<br/>
+        
+          <span class="facts">5.</span> On peut prendre sa retraite avant l’âge légal si on a commencé à travailler avant 16, 18, 20 ou 21 ans et si 4 trimestres sont réunis si on a débuté sa carrière au régime des non-salariés agricoles.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, voici les réponses à votre question :
+
+À partir de quel âge un salarié peut-il partir en retraite ?
+
+* Si vous êtes atteint d'une incapacité permanente à la suite d'un accident du travail ou d'une maladie professionnelle, vous pouvez partir en retraite à tout moment.
+* Si vous avez été exposé à l'amiante au cours de votre vie professionnelle, vous pouvez partir en retraite à tout moment.
+
+Pour les autres cas, il n'y a pas de réponse spécifique.
+
+Pour partir en retraite anticipée pour carrière longue, les conditions à remplir sont :
+
+* Avoir commencé à travailler avant 16, 18, 20 ou 21 ans
+* Avoir un nombre déterminé de trimestres d'assurance retraite cotisés (tous régimes confondus) dont un certain nombre avant avant 16, 18, 20 ou 21 ans.
+
+Il est également possible de partir en retraite anticipée si vous avez accumulé un certain nombre de trimestres indemnisés de maladie et accidents du travail, de maternité et d'adoption, de pension d'invalidité, de majoration de durée d'assurance attribués dans le cadre du compte professionnel de prévention, ou d'assurance vieillesse des parents au foyer et des aidants, dans la limite de 4 trimestres.
+
+Enfin, si votre employeur vous met d'office à la retraite, vous avez droit à une indemnité de mise à la retraite.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 1 [3] -
+            Missing: 4 [1, 2, 4, 5] - 
+            Hallus : 0 [] - 
+            Nb extra: 3 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not mention the legal retirement age for those born from January 1, 1968. 
+
+2.[NOT FOUND] - The paragraph does not mention the progressive increase in the legal retirement age from 62 to 64 years for those born between September 1, 1961, and December 31, 1967.
+
+3.[OK] - The paragraph states that "Pour partir en retraite anticipée pour carrière longue, les conditions à remplir sont : Avoir commencé à travailler avant 16, 18, 20 ou 21 ans" which supports the third fact.
+Part in the paragraph: "Pour partir en retraite anticipée pour carrière longue, les conditions à remplir sont : Avoir commencé à travailler avant 16, 18, 20 ou 21 ans"
+
+4.[NOT FOUND] - The paragraph does not mention the condition of having 4 quarters if one was born in the last quarter of the year.
+
+5.[NOT FOUND] - The paragraph does not mention the condition of having 4 quarters if one started their career in the non-salaried agricultural regime.
+
+[EXTRA] = 3 - The paragraph mentions the possibility of retiring at any time in case of permanent incapacity due to a work accident or occupational disease, exposure to asbestos during professional life, and the possibility of early retirement if a certain number of quarters have been accumulated due to illness and work accidents, maternity and adoption, disability pension, insurance duration increase awarded in the context of the professional prevention account, or old-age insurance for stay-at-home parents and caregivers. It also mentions the right to a retirement allowance if the employer forcibly retires the employee.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>28. Quelle est la procédure pour demander sa pension de retraite auprès de l'Assurance retraite?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> La demande de retraite peut également être faite en ligne sur le site de l'assuranceretraite.fr via le service 'Demander ma retraite'<br/>
+        
+          <span class="facts">2.</span> La demande doit être effectuée 4 mois avant la date de départ choisie.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les informations fournies, voici la procédure pour demander sa pension de retraite :
+
+* Pour les agents publics : il est recommandé de prévenir son administration employeur de la date de départ par lettre recommandée avec accusé de réception (LRAR). Ensuite, une demande de retraite unique peut être faite en ligne, qui sera automatiquement transmise à l'ensemble des caisses de retraite auprès desquelles le demandeur a des droits à pension.
+* Pour les salariés : il est possible d'ouvrir un compte personnel retraite pour accéder à des informations et des services personnalisés, tels que la simulation d'âge de départ et de montant, la correction de carrière et la demande de retraite. La procédure de demande de retraite n'est pas spécifiée.
+
+Il n'y a pas de réponse claire sur la procédure à suivre pour demander sa pension de retraite auprès de l'Assurance retraite, car il s'agit de deux procédures différentes pour les agents publics et les salariés. Cependant, il est recommandé aux agents publics de prévenir leur administration employeur de la date de départ et aux salariés de contacter France Travail (anciennement Pôle emploi) ou leur employeur pour obtenir des conseils et des informations sur la démarche à suivre.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : N/A -
+            Ok: 0 [] -
+            Missing: 2 [1, 2] - 
+            Hallus : 0 [] - 
+            Nb extra: 3 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not mention the fact that "La demande de retraite peut également être faite en ligne sur le site de l'assuranceretraite.fr via le service 'Demander ma retraite'". 
+There is no part in the paragraph related to this fact.
+
+2.[NOT FOUND] - The paragraph does not mention the fact that "La demande doit être effectuée 4 mois avant la date de départ choisie".
+There is no part in the paragraph related to this fact.
+
+[EXTRA] = 3
+- The paragraph mentions that "Pour les agents publics : il est recommandé de prévenir son administration employeur de la date de départ par lettre recommandée avec accusé de réception (LRAR). Ensuite, une demande de retraite unique peut être faite en ligne, qui sera automatiquement transmise à l'ensemble des caisses de retraite auprès desquelles le demandeur a des droits à pension."
+- The paragraph mentions that "Pour les salariés : il est possible d'ouvrir un compte personnel retraite pour accéder à des informations et des services personnalisés, tels que la simulation d'âge de départ et de montant, la correction de carrière et la demande de retraite. La procédure de demande de retraite n'est pas spécifiée."
+- The paragraph mentions that "Cependant, il est recommandé aux agents publics de prévenir leur administration employeur de la date de départ et aux salariés de contacter France Travail (anciennement Pôle emploi) ou leur employeur pour obtenir des conseils et des informations sur la démarche à suivre."<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>29. Si j'ai des périodes de carrière dans différents régimes de retraite, comment puis-je obtenir une correction de carrière et estimer le montant total de ma retraite?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts</h3>
+        
+          <span class="facts">1.</span> Avant de faire une estimation du montant il faut faire une mise à jour de sa carrière à adapter selon les régimes concernés<br/>
+        
+          <span class="facts">2.</span> L'assurance Retraite traite uniquement les carrières qui appartiennent au régime général<br/>
+        
+          <span class="facts">3.</span> Il convient de s'adresser aux institutions compétentes pour tout autre régime.<br/>
+        
+          <span class="facts">4.</span> Dans le cas d'une carrière interrégime, le site info retraite semble être adapté pour visualiser l'ensemble de sa carrière<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">AgentPublic/llama3-instruct-8b</span> &nbsp;
+          Selon les sources fournies, si vous avez des périodes de carrière dans différents régimes de retraite, vous pouvez obtenir une correction de carrière et estimer le montant total de votre retraite en suivant les étapes suivantes :
+
+1. Créez un compte retraite sur le site officiel Info retraite et consultez votre relevé de carrière.
+2. Vous pouvez consulter votre relevé de carrière sur le site Info retraite ou le télécharger et l'imprimer.
+3. Si vous constatez des anomalies ou des périodes d'activité non prises en compte, vous pouvez demander la correction à partir de votre compte retraite, à partir de 55 ans, ou auprès de vos caisses de retraite dont les coordonnées sont fournies si vous êtes âgé de moins de 55 ans.
+4. Une fois que vos périodes de carrière sont corrigées, vous pouvez estimer le montant total de votre retraite en utilisant le service Mon estimation retraite" de votre compte retraite.
+5. Vous pouvez également utiliser le service Liste de vos caisses de retraite" pour retrouver la liste de vos caisses de retraite et leurs coordonnées.
+6. Enfin, vous pouvez effectuer une simulation du montant de votre retraite à différents âges de départ en utilisant le service Mon estimation retraite" de votre compte retraite.
+
+Il est important de noter que si vous êtes polypensionné (ou pluripensionné), vous devrez prendre en compte les pensions de toutes les caisses de retraite auxquelles vous avez cotisé pour estimer le montant total de votre retraite.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.19 -
+            Ok: 2 [1, 4] -
+            Missing: 2 [2, 3] - 
+            Hallus : 0 [] - 
+            Nb extra: 3 - 
+            Human : N/A -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph supports the first fact by stating that "Une fois que vos périodes de carrière sont corrigées, vous pouvez estimer le montant total de votre retraite en utilisant le service Mon estimation retraite" de votre compte retraite."
+Part in the paragraph: "Une fois que vos périodes de carrière sont corrigées, vous pouvez estimer le montant total de votre retraite en utilisant le service Mon estimation retraite" de votre compte retraite."
+
+2.[NOT FOUND] - The paragraph does not mention that "L'assurance Retraite traite uniquement les carrières qui appartiennent au régime général". 
+
+3.[NOT FOUND] - The paragraph does not mention that "Il convient de s'adresser aux institutions compétentes pour tout autre régime."
+
+4.[OK] - The paragraph supports the fourth fact by stating that "Créez un compte retraite sur le site officiel Info retraite et consultez votre relevé de carrière." and "Vous pouvez consulter votre relevé de carrière sur le site Info retraite ou le télécharger et l'imprimer."
+Part in the paragraph: "Créez un compte retraite sur le site officiel Info retraite et consultez votre relevé de carrière." and "Vous pouvez consulter votre relevé de carrière sur le site Info retraite ou le télécharger et l'imprimer."
+
+[EXTRA] = 3. The paragraph provides additional information about how to correct career periods, how to estimate the total amount of retirement, and how to perform a simulation of the retirement amount at different departure ages.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].nextElementSibling.style.display = "block"
+    }
+  </script>
+</body>
+
+</html>
