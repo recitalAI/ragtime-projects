@@ -1,0 +1,1171 @@
+<!--
+This Jinja templates needs the "expe" variable to generate the HTML.
+Moreover, it uses several boolean variables to control the rendering:
+- "show_answers": True to show the answers for each model
+- "show_chunks": True to show the Chunks in a table (images on the left column, text on the right)
+- "show_facts": True to show the Facts
+- "show_evals": True to show the Evaluations
+-->
+<html>
+<head>
+  <style>
+    h3 {
+      background-color: LightGray;
+      padding: 0px;
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: #FFFFFF;
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    img {
+      width: 100%;
+      width: 800;
+      display: block;
+    }
+
+    .my_img {
+      width: 100px;
+      vertical-align: middle;
+    }
+
+    * {
+      font-family: Arial
+    }
+
+    .collapsible {
+      background-color: #777;
+      border-bottom: 1px solid #ccc;
+      color: white;
+      cursor: pointer;
+      padding: 3px;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0px;
+      display: none;
+      overflow: hidden;
+      /*background-color: #f1f1f1;*/
+    }
+    .facts {
+      text-decoration: underline;
+      color: #0000EE;
+      font-weight: bold;
+    }
+    .extra {
+      text-decoration: underline;
+      color: #FF1111;
+      font-weight: bold;
+    } 
+    .model_name {
+      background-color: #ffffa0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <span style="font-size: 20px;">29Q_0C_101F_1M_29A_29HE_0AE_2024-06-21_09h35,59</span>
+  <!-- For each QA -->
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>1. Comment contester un PV reçu depuis l’Italie ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Les documents des opérateurs ne contiennent pas la réponse à la question.<br/>
+        
+          <span class="facts">2.</span> Service public.fr ne traite que des démarches françaises.<br/>
+        
+          <span class="facts">3.</span> Pour contester un PV reçu depuis l'Italie, il faut regarder les modalités de contestation sur le PV.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          La réponse à cette question ne peut se trouver ni sur les documents des opérateurs, ni sur service public.fr, qui par définition ne traite que des démarches françaises. La seule bonne réponse possible est qu'il faut regarder sur le PV les modalités de contestation. <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>2. Une mairie peut-elle refuser un formulaire cerfa pour une demande de renouvellement de Carte Nationale d’Identité (CNI) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Une mairie ne peut pas refuser un formulaire cerfa pour une demande de renouvellement de CNI.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Non, une mairie ne peut pas refuser un formulaire cerfa pour une demande de renouvellement de CNI.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>3. Comment renouveler une Carte Nationale d’Identité (CNI) sans passer par la pré-demande en ligne ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> On peut renouveler une Carte Nationale d’Identité (CNI) en se rendant dans une mairie équipée d'une station d'enregistrement.<br/>
+        
+          <span class="facts">2.</span> Il est possible de trouver un rendez-vous dans une mairie équipée grâce au moteur de recherche de l'ANTS.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          En se rendant dans n'importe quelle mairie équipée d'une station d'enregistrement, sans obligation de pré-demande en ligne. Ou en trouvant un rendez-vous dans une mairie équipée avec l'aide du moteur de recherche de l'ANTS<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>4. Peut-on corriger les informations mises sur une pré-demande en ligne pour le renouvellement d’une Carte Nationale d’Identité (CNI) après le paiement du timbre fiscal ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> On ne peut pas corriger les informations sur une pré-demande en ligne pour le renouvellement d'une CNI après le paiement du timbre fiscal.<br/>
+        
+          <span class="facts">2.</span> En cas d'erreur, il faut remplir une nouvelle pré-demande.<br/>
+        
+          <span class="facts">3.</span> La pré-demande n'est pas payante.<br/>
+        
+          <span class="facts">4.</span> Le timbre fiscal est consommé au moment du dépôt en mairie.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Non, en cas d'erreur il faut remplr une nouvelle pré demande. La pré demande n'est pas payante, le timbre fiscal est consommé au moment du dépôt en mairie.  <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>5. La mairie accepte-t-elle de corriger des fautes de frappe dans une pré-demande de carte d’identité ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> La mairie n'accepte pas de corriger des fautes de frappe dans une pré-demande de carte d'identité.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Non, la mairie n'accepte pas de corriger des fautes de frappe dans la pré-demande.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>6. Le fils est né en France et a la nationalité française. La mère la nationalité tunisienne. Le père les deux nationalités (naturalisé français). Sur le formulaire de l’ANTS, quelle réponse choisir à la question « la personne est française parce que : »</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> L'individu est né en France.<br/>
+        
+          <span class="facts">2.</span> Un de ses parents est français.<br/>
+        
+          <span class="facts">3.</span> Son père possède la nationalité française.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Vous êtes né en France et au moins un de vos parents est français<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>7. Comment refaire une carte grise si l’ancien propriétaire a perdu la carte d’origine ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Il faut faire une demande de duplicata de la carte grise.<br/>
+        
+          <span class="facts">2.</span> Cette demande est nécessaire si l'ancien propriétaire a perdu la carte d'origine.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Faire une demande de duplicata de la carte grise.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>8. Je suis un mineur, qui doit faire la demande de passeport pour moi ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Le responsable exerçant l'autorité parentale doit faire la demande de passeport pour un mineur.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Le responsable exerçant l'autorité parentale doit faire la demande pour moi.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>9. Comment prendre rendez-vous pour faire une demande de carte d'identité auprès de la mairie?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Le moteur de recherche de l'ANTS permet de trouver un rendez-vous.<br/>
+        
+          <span class="facts">2.</span> Ce rendez-vous peut être pris dans une mairie équipée.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Utilisez le moteur de recherche de l'ANTS pour trouver un rendez-vous dans une mairie équipée<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>10. Comment contester un FPS et quelles sont les étapes à suivre ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Le FPS peut être contesté en ligne.<br/>
+        
+          <span class="facts">2.</span> Le FPS peut aussi être contesté par courrier.<br/>
+        
+          <span class="facts">3.</span> La contestation du FPS doit se baser sur l'avis de contravention.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Il faut contester le FPS en ligne ou par courrier, en s'appuyant sur l'avis de contravention.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>11. Comment obtenir un passeport ou un visa pour un mineur franco-tunisien?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Il faut se rendre sur le site de l'ANTS pour remplir une pré demande de passeport.<br/>
+        
+          <span class="facts">2.</span> Il faut suivre les indications pour déposer la demande en mairie.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          En se rendant sur le site de l'ANTS pour remplir une pré demande en ligne de passeport puis en suivant les indications pour déposer la demande en mairie<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>12. Comment contester une amende d'infraction routière en ligne ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Il est possible de contester une amende en ligne.<br/>
+        
+          <span class="facts">2.</span> Pour contester, il faut consulter l'avis de contravention.<br/>
+        
+          <span class="facts">3.</span> L'avis de contravention indique la procédure à suivre.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Vous pouvez contester l'amende en ligne en consultant l'avis de contravention pour connaître la procédure à suivre.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>13. Une mairie peut-elle refuser un formulaire papier pour une demande de renouvellement de Carte Nationale d’Identité (CNI) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Une mairie ne peut pas refuser un formulaire papier pour une demande de renouvellement de CNI.<br/>
+        
+          <span class="facts">2.</span> Elle doit traiter toutes les demandes de renouvellement de CNI.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Non, une mairie ne peut pas refuser un formulaire papier pour une demande de renouvellement de CNI, elle doit traiter toutes les demandes.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>14. En quoi consiste l'intermédiation financière du service public des pensions alimentaires géré par la Caf et la MSA ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> L'intermédiation financière est un dispositif géré par l'Aripa.<br/>
+        
+          <span class="facts">2.</span> Dans ce dispositif, l'Aripa agit comme intermédiaire entre le parent débiteur et le parent créancier.<br/>
+        
+          <span class="facts">3.</span> L'Aripa verse la pension alimentaire au parent créancier.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          L'intermédiation financière est un dispositif dans lequel l'Aripa est l'intermédiaire entre le parent débiteur et le parent créancier, et verse la pension alimentaire au parent créancier.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>15. Quelles sont les conditions pour toucher une retraite à taux plein par la MSA ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Pour les personnes nées après le 1er janvier 1968, l'âge de départ à la retraite est de 64 ans.<br/>
+        
+          <span class="facts">2.</span> Pour celles nées entre le 1er septembre 1961 et le 31 décembre 1967, l'âge de départ à la retraite augmente de 3 mois par génération.<br/>
+        
+          <span class="facts">3.</span> Pour obtenir une retraite à taux plein à 64 ans, il faut avoir cotisé pendant 43 ans, soit 172 trimestres.<br/>
+        
+          <span class="facts">4.</span> Cette durée d'assurance s'applique aux personnes nées à partir de 1965.<br/>
+        
+          <span class="facts">5.</span> L'augmentation de la durée d'assurance se fait à raison d'un trimestre par an pour les personnes nées entre le 1er septembre 1961 et le 31 décembre 1964.<br/>
+        
+          <span class="facts">6.</span> Les personnes ayant commencé à travailler jeune peuvent partir à la retraite avant 64 ans.<br/>
+        
+          <span class="facts">7.</span> Il existe quatre âges de départ à la retraite : 58 ans pour ceux qui ont commencé à travailler avant 16 ans, 60 ans pour ceux qui ont commencé avant 18 ans, 62 ans pour ceux qui ont commencé avant 20 ans et 63 ans pour ceux qui ont commencé avant 21 ans.<br/>
+        
+          <span class="facts">8.</span> Il faut également justifier de trimestres acquis avant ces âges et d'une certaine durée d'assurance cotisée.<br/>
+        
+          <span class="facts">9.</span> Pour les non-salariés agricoles, la retraite est composée d'une retraite de base et d'une retraite complémentaire gérées par la MSA.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          SI vous êtes salarié agricole
+Pour les personnes nées à compter du 1er janvier 1968 : l’âge de départ à la retraite est reculé de 62 à 64 ans
+Pour les personnes nées à compter du 1er septembre 1961 jusqu’au 31 décembre 1967 : L’âge de départ à la retraite recule de 3 mois par génération.
+Pour partir dès 64 ans avec le taux maximum (ou taux plein), il faut disposer d’un certain nombre de trimestres. La durée d’assurance pour bénéficier d’une retraite à taux maximum est portée à 43 ans, soit 172 trimestres pour les générations nées à partir de 1965.
+L’augmentation s’effectuera progressivement à raison d’un trimestre par an pour les générations nées entre le 1er septembre 1961 et le 31 décembre 1964.
+Si vous avez commencé à travailler jeune, vous pouvez prétendre à partir avant 64 ans.
+Il existe désormais 4 bornes d’âge : 
+- À partir de 58 ans si vous avez commencé à travailler avant 16 ans
+- À partir de 60 ans si vous avez commencé à travailler avant 18 ans
+- À partir de 62 ans si vous avez commencé à travailler avant 20 ans
+- À partir de 63 ans si vous avez commencé à travailler avant 21 ans
+À noter qu’il est également nécessaire de justifier de trimestres acquis avant ces âges et d’une certaine durée d’assurance cotisée.
+
+Si vous êtes non-salarié agricole
+Si vous êtes chef d'exploitation ou d'entreprise agricole, collaborateur ou aide familial, votre retraite est composée d'une retraite de base et d'une retraite complémentaire (RCO) gérées par la MSA.
+cf. site MSA.FR<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>16. Comment estimer / simuler sa retraite si vous êtes à la mutuelle des salariés agricoles (MSA)?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Le simulateur interrégime 'www.info-retraite.fr' est utilisable pour estimer sa retraite.<br/>
+        
+          <span class="facts">2.</span> Ce simulateur est applicable même pour les membres de la mutuelle des salariés agricoles (MSA).<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Vous pouvez utiliser le simulateur interrégime 'www.info-retraite.fr'<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>17. Quelles sont les implications d'une faute inexcusable de l'employeur en cas de maladie professionnelle ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> La faute inexcusable de l'employeur entraîne une majoration de la rente d'incapacité permanente.<br/>
+        
+          <span class="facts">2.</span> Elle provoque aussi une indemnisation pour des préjudices non couverts par la rente.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Si la faute inexcusable de l'employeur est reconnue, cela entraîne une majoration de la rente d'incapacité permanente et une indemnisation pour des préjudices non couverts par la rente.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>18. Comment définit-on l'IPP (MSA) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> L'invalidité peut être causée par une maladie, un accident non professionnel ou une usure prématurée de l'organisme.<br/>
+        
+          <span class="facts">2.</span> L'état d'incapacité est évalué par le médecin conseil de la MSA en collaboration avec le médecin traitant.<br/>
+        
+          <span class="facts">3.</span> Le taux d'IPP définitif peut être modifié selon l'évolution de l'état de santé.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          L'invalidité peut résulter d'une maladie, d'un accident non professionnel ou d'une usure prématurée de l'organisme. L'état d'incapacité est apprécié par le médecin conseil de la MSA en relation avec le médecin traitant.
+Le taux d'IPP définitif peut être révisé en fonction de l'évolution de l'état de santé.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>19. Quelles sont les missions de l'Agence de recouvrement et d'intermédiation des pensions alimentaires (Aripa) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> L'ARIPA est l'Agence de Recouvrement et d'Intermédiation des Pensions Alimentaires.<br/>
+        
+          <span class="facts">2.</span> L'ARIPA est un service public géré par les CAF et la MSA.<br/>
+        
+          <span class="facts">3.</span> L'ARIPA aide les personnes à recevoir ou à verser une pension alimentaire.<br/>
+        
+          <span class="facts">4.</span> L'ARIPA peut servir d'intermédiaire pour assurer le paiement d'une pension.<br/>
+        
+          <span class="facts">5.</span> En cas d'impayés, l'ARIPA peut conseiller chaque parent et récupérer les sommes dues.<br/>
+        
+          <span class="facts">6.</span> Si nécessaire, l'ARIPA récupère les sommes auprès d'un tiers.<br/>
+        
+          <span class="facts">7.</span> Si la pension alimentaire n'est pas encore fixée, l'ARIPA oriente les parents dans les démarches.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          L'ARIPA est l'Agence de Recouvrement et d'Intermédiation des Pensions Alimentaires. C'est un service public qui est géré par les CAF et la MSA en vue d'aider les personnes à recevoir ou à verser une pension alimentaire. Elle peut servir d'intermédiaire pour assurer le paiement d'une pension. En cas d'impayés elle peut conseiller chaque parent et récupérer les sommes dues. Si besoin, elle récupère les sommes auprès d'un tiers (employeur, France Travail, banque).
+Si la pension alimentaire n'est pas encore fixée, elle oriente les parents dans les démarches<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>20. Quand un abattement de 10% est-il mis en place sur une retraite anticipée ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> La question ne correspond pas au paragraphe fourni. Il n'y a aucune information sur un abattement de 10% sur une retraite anticipée dans le paragraphe.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+           Il n'y a plus d'abattement sur les nouvelles retraites retraite complémentaire depuis décembre 2023.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>21. Comment prendre rendez-vous avec l’assurance retraite (régime général)?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> On peut prendre rendez-vous avec l'assurance retraite sur leur site web.<br/>
+        
+          <span class="facts">2.</span> Le rendez-vous se fait via l'espace personnel.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          A partir du site de l'assurance retraite, en prenant rendez-vous sur l'espace personnel.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>22. Quelles sont les étapes pour préparer sereinement son départ à la retraite?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> L'ouverture d'un espace sur le site de l'assurance retraite est la première étape.<br/>
+        
+          <span class="facts">2.</span> La consultation des différentes possibilités de départ en retraite est la deuxième étape.<br/>
+        
+          <span class="facts">3.</span> La consultation du relevé de carrière est la troisième étape.<br/>
+        
+          <span class="facts">4.</span> L'inscription à l'agenda retraite est la quatrième étape.<br/>
+        
+          <span class="facts">5.</span> L'estimation du montant de la retraite est la cinquième étape.<br/>
+        
+          <span class="facts">6.</span> L'information sur le cumul emploi-retraite et la retraite progressive est la sixième étape.<br/>
+        
+          <span class="facts">7.</span> La demande de retraite est la dernière étape.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          En ouvrant un espace sur le site de l'assurance retraite, je me renseigne sur les différentes possibilités de départ en retraite, je consulte mon relevé de carrière, je m'inscris à l'agenda retraite j'estime le montant de ma retraite, je m'informe sur le cumul emploi-retraite et la retraite progressive, et enfin, je fais ma demande de retraite.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>23. Comment demander sa retraite en ligne ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Il faut se connecter au site officiel Info retraite.<br/>
+        
+          <span class="facts">2.</span> Le service 'Demander ma retraite' doit être utilisé.<br/>
+        
+          <span class="facts">3.</span> La connexion peut se faire via France Connect.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          En se connectant au site officiel Info retraite et en utilisant le service 'Demander ma retraite'. La connection peut se faire via France Connect<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>24. Si vous êtes au régime général de retraite, comment demander sa retraite en ligne sur www.lassuranceretraite.fr ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Le service 'Demander ma retraite' est disponible sur le site officiel Info retraite.<br/>
+        
+          <span class="facts">2.</span> Le formulaire personnalisé et pré-rempli doit être complété pour demander la retraite.<br/>
+        
+          <span class="facts">3.</span> Les justificatifs demandés doivent être scannés ou photographiés et joints à la demande.<br/>
+        
+          <span class="facts">4.</span> La demande de retraite doit être faite 5 mois avant la date de départ souhaitée.<br/>
+        
+          <span class="facts">5.</span> La demande en ligne est automatiquement transmise à toutes les caisses de retraite où l'individu a des droits à pension.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          En utilisant le service 'Demander ma retraite' sur le site officiel Info retraite, en complétant le formulaire personnalisé et pré-rempli et en joignant les justificatifs demandés scannés ou photographiés. Vous devez faire votre demande de retraite 5 mois avant la date de départ souhaitée. La demande en ligne sera alors automatiquement transmise à l'ensemble des caisses de retraite auprès desquelles vous avez des droits à pension.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>25. Qu’est-ce que la notification de retraite ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> La notification de retraite est le titre officiel de retraite.<br/>
+        
+          <span class="facts">2.</span> Elle indique le montant de la retraite.<br/>
+        
+          <span class="facts">3.</span> Elle précise la date de départ en retraite.<br/>
+        
+          <span class="facts">4.</span> Elle justifie du statut de retraité.<br/>
+        
+          <span class="facts">5.</span> Chaque régime envoie sa propre notification de retraite.<br/>
+        
+          <span class="facts">6.</span> Ce document doit être conservé impérativement.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Il s'agit du Titre officiel de retraite :  indiquant le montant et la date de départ en retraite et justifie de votre statut de retraité. Chaque régime envoie sa propre notification. Ce docuement est à conserver impérativement.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>26. Quelles sont les conditions pour bénéficier d'une retraite anticipée et quel impact cela a-t-il sur le taux de retraite ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> La retraite anticipée pour carrière longue (RACL) est possible si le travail a commencé avant 16, 18, 20 ou 21 ans.<br/>
+        
+          <span class="facts">2.</span> Pour la RACL, il faut avoir réuni au moins 5 trimestres avant la fin de l'année civile des 16, 18, 20 ou 21 ans.<br/>
+        
+          <span class="facts">3.</span> Si la personne est née au dernier trimestre de l'année ou a débuté sa carrière au régime des non-salariés agricoles, 4 trimestres suffisent pour la RACL.<br/>
+        
+          <span class="facts">4.</span> La retraite anticipée pour travailleur handicapé nécessite un nombre minimum de trimestres cotisés.<br/>
+        
+          <span class="facts">5.</span> Les périodes de cotisations à un régime de retraite français ou de la zone d'application des règlements européens sont retenues pour la retraite anticipée pour travailleur handicapé.<br/>
+        
+          <span class="facts">6.</span> Les périodes cotisées à l'étranger peuvent être retenues pour la retraite anticipée pour travailleur handicapé si un accord de sécurité sociale est signé avec la France.<br/>
+        
+          <span class="facts">7.</span> Certains rachats, les trimestres d'assurance vieillesse des parents au foyer (AVPF) et les périodes de volontariat associatif, ne sont pas retenus dans la durée cotisée pour la retraite anticipée pour travailleur handicapé.<br/>
+        
+          <span class="facts">8.</span> Pour la retraite anticipée pour travailleur handicapé, il faut avoir exercé son activité professionnelle en étant atteint d'une incapacité permanente au moins égale à 50% ou en étant en situation de handicap comparable au taux d'incapacité permanente de 50%.<br/>
+        
+          <span class="facts">9.</span> Le paragraphe ne fournit pas d'information sur l'impact de la retraite anticipée sur le taux de retraite.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Préciser s'il s'agit d'une retraite anticipée pour carrière longue ou d'une retraite anticipée travailleur handicapés
+
+Conditions pour la RACL : 
+Vous pouvez prendre votre retraite avant l’âge légal, si vous avez commencé à travailler avant : 16 ans ; 18 ans ; 20 ans ; 21 ans, et si vous réunissez au moins 5 trimestres avant la fin de l’année civile de vos 16, 18, 20 ou 21 ans. 4 trimestres suffisent si vous êtes né au cours du dernier trimestre de l’année ou si vous avez débuté votre carrière au régime des non-salariés agricoles. Conditions pour les travailleurs handicapés : vous pouvez prendre une retraite anticipée pour travailleur handicapé si :  - vous réunissez un nombre minimum de trimestres cotisés. Toutes les périodes de cotisations à un régime de retraite français ou de la zone d'application des règlements européens sont retenues. Les périodes cotisées à l’étranger peuvent également être retenues si un accord de sécurité sociale est signé avec la France. Certains rachats, les trimestres d’assurance vieillesse des parents au foyer (AVPF) et les périodes de volontariat associatif, ne sont pas retenus dans la durée cotisée ; - vous avez soit exercé votre activité professionnelle, pendant cette période, en étant atteint d’une incapacité permanente au moins égale à 50 % (ou, pour les périodes antérieures au 31 décembre 2015, soit exercé votre activité professionnelle en étant reconnu travailleur handicapé) ou en étant en situation de handicap comparable au taux d’incapacité permanente de 50 %.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>27. À quel âge peut-on prendre sa retraite en France et quelles sont les conditions pour un départ anticipé ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> L'âge légal de départ à la retraite en France est de 64 ans pour ceux nés à partir du 1er janvier 1968.<br/>
+        
+          <span class="facts">2.</span> Pour ceux nés entre le 1er septembre 1961 et le 31 décembre 1967, l'âge légal de départ à la retraite augmente progressivement de 62 à 64 ans, avec une augmentation de 3 mois par année de naissance.<br/>
+        
+          <span class="facts">3.</span> Un départ à la retraite anticipé est possible si le travail a commencé avant l'âge de 16, 18, 20 ou 21 ans.<br/>
+        
+          <span class="facts">4.</span> Pour un départ anticipé, il faut avoir réuni au moins 5 trimestres de travail avant la fin de l'année civile des 16, 18, 20 ou 21 ans.<br/>
+        
+          <span class="facts">5.</span> Seuls 4 trimestres sont nécessaires pour un départ anticipé si la personne est née au cours du dernier trimestre de l'année ou a commencé sa carrière au régime des non-salariés agricoles.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          L’âge légal de départ à la retraite est de 64 ans si vous êtes né à partir du 1er janvier 1968. Si vous êtes né entre le 1er septembre 1961 et le 31 décembre 1967, l’âge légal augmente progressivement de 62 ans à 64 ans, avec 3 mois supplémentaires par année de naissance. Vous pouvez prendre votre retraite avant l’âge légal, si vous avez commencé à travailler avant : 16 ans ; 18 ans ; 20 ans ; 21 ans, et si vous réunissez au moins 5 trimestres avant la fin de l’année civile de vos 16, 18, 20 ou 21 ans. 4 trimestres suffisent si vous êtes né au cours du dernier trimestre de l’année ou si vous avez débuté votre carrière au régime des non-salariés agricoles.<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>28. Quelle est la procédure pour demander sa pension de retraite auprès de l'Assurance retraite?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> La demande de retraite peut être faite en ligne.<br/>
+        
+          <span class="facts">2.</span> Elle se fait sur le site de l'assuranceretraite.fr.<br/>
+        
+          <span class="facts">3.</span> Le service utilisé pour cette demande est 'Demander ma retraite'.<br/>
+        
+          <span class="facts">4.</span> La demande doit être effectuée 4 mois avant la date de départ choisie.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          La demande de retraite peut également être faite en ligne sur le site de l'assuranceretraite.fr via le service 'Demander ma retraite' Cette demande doit être effectué 4 mois avant la date de départ choisie et non 6 mois<br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>29. Si j'ai des périodes de carrière dans différents régimes de retraite, comment puis-je obtenir une correction de carrière et estimer le montant total de ma retraite?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4)</i></h3>
+        
+          <span class="facts">1.</span> Pour estimer le montant de la retraite, il faut d'abord mettre à jour sa carrière.<br/>
+        
+          <span class="facts">2.</span> L'Assurance Retraite ne traite que les carrières du régime général.<br/>
+        
+          <span class="facts">3.</span> Pour les autres régimes, il faut contacter les institutions compétentes.<br/>
+        
+          <span class="facts">4.</span> Le site info retraite est recommandé pour visualiser une carrière interrégime.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name"></span> &nbsp;
+          Avant de faire une estimation du montant il faut faire une mise à jour de sa carrière à adapter selon les régimes concernés L'assurance Retraite traite uniquement  les carrières qui appartiennent au régime général Il convient de s'adresser aux institutions compétentes pour tout autre régime. Dans le cas d'une carrière interrégime, le site info retraite semble être adapté pour visualiser l'ensemble de sa carrière <br /><br />
+          <!-- Evals -->
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].nextElementSibling.style.display = "block"
+    }
+  </script>
+</body>
+
+</html>
