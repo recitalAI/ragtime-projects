@@ -1,5 +1,6 @@
 # What do LLM think?
 In this example, we show how to use Ragtime 🎹 to determine if LLMs have cultural or political bias :) There are some interesting research papers on this topic:
+- [Hagendorff, T. et al., Machine Psychology, arXiv Aug 2024](https://arxiv.org/abs/2303.13988)
 - [Nangioa, N. et al., CrowS-Pairs: A Challenge Dataset for Measuring Social Biases in Masked Language Models, EMNLP 2020](https://aclanthology.org/2020.emnlp-main.154/)
 - [Névéol et al., French CrowS-Pairs: Extending a challenge dataset for measuring social bias in masked language models to a language other than English, ACL 2022](https://aclanthology.org/2022.acl-long.583)
 - [Bang, Y. et al., Measuring Political Bias in Large Language Models: What Is Said and How It Is Said, Mar 2024](https://arxiv.org/abs/2403.18932)
