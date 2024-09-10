@@ -1,0 +1,637 @@
+<!--
+This Jinja templates needs the "expe" variable to generate the HTML.
+Moreover, it uses several boolean variables to control the rendering:
+- "show_answers": True to show the answers for each model
+- "show_chunks": True to show the Chunks in a table (images on the left column, text on the right)
+- "show_facts": True to show the Facts
+- "show_evals": True to show the Evaluations
+-->
+<html>
+<head>
+  <style>
+    h3 {
+      background-color: LightGray;
+      padding: 0px;
+    }
+
+    table {
+      border-collapse: collapse;
+      background-color: #FFFFFF;
+    }
+
+    tr {
+      border-bottom: 1px solid #ccc;
+    }
+
+    img {
+      width: 100%;
+      width: 800;
+      display: block;
+    }
+
+    .my_img {
+      width: 100px;
+      vertical-align: middle;
+    }
+
+    * {
+      font-family: Arial
+    }
+
+    .collapsible {
+      background-color: #777;
+      border-bottom: 1px solid #ccc;
+      color: white;
+      cursor: pointer;
+      padding: 3px;
+      width: 100%;
+      text-align: left;
+      outline: none;
+      font-size: 15px;
+    }
+
+    .active,
+    .collapsible:hover {
+      background-color: #555;
+    }
+
+    .content {
+      padding: 0px;
+      display: none;
+      overflow: hidden;
+      /*background-color: #f1f1f1;*/
+    }
+    .facts {
+      text-decoration: underline;
+      color: #0000EE;
+      font-weight: bold;
+    }
+    .extra {
+      text-decoration: underline;
+      color: #FF1111;
+      font-weight: bold;
+    } 
+    .model_name {
+      background-color: #ffffa0;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <span style="font-size: 20px;">10Q_0C_30F_1M_10A_10HE_10AE_2024-06-25_18h42,45</span>
+  <!-- For each QA -->
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>1. Qu'est-ce que l'estimateur de Monte-Carlo ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4o)</i></h3>
+        
+          <span class="facts">1.</span> L'estimateur de Monte-Carlo est noté ˆθn.<br/>
+        
+          <span class="facts">2.</span> Il est défini par la formule ˆθn := 1/n ∑n i=1 Zi.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          L'estimateur de Monte-Carlo est défini comme ˆθn:=1/n∑n i=1Zi.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 1.00 -
+            Ok: 2 [1, 2] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 0 - 
+            Human : 1.00 -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "L'estimateur de Monte-Carlo est noté ˆθn" which supports the first fact. 
+Part in the paragraph: "L'estimateur de Monte-Carlo"
+
+2.[OK] - The paragraph states that "Il est défini par la formule ˆθn := 1/n ∑n i=1 Zi" which supports the second fact.
+Part in the paragraph: "est défini comme ˆθn:=1/n∑n i=1Zi."
+
+[EXTRA] = 0<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>2. Qu'est-ce qu'un modèle Bayésien ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4o)</i></h3>
+        
+          <span class="facts">1.</span> Un modèle Bayésien concerne une variable aléatoire ou une suite de variables aléatoires.<br/>
+        
+          <span class="facts">2.</span> Il inclut une loi conditionnelle.<br/>
+        
+          <span class="facts">3.</span> Il inclut une loi a priori.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Un modèle Bayésien est la donnée, pour une v.a. (ou une suite de v.a.), d’une loi conditionnelle et d’une loi a priori.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 1.00 -
+            Ok: 3 [1, 2, 3] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 0 - 
+            Human : 1.00 -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "Un modèle Bayésien est la donnée, pour une v.a. (ou une suite de v.a.)" which supports the first fact. 
+Part in the paragraph: "Un modèle Bayésien est la donnée, pour une v.a. (ou une suite de v.a.)"
+
+2.[OK] - The paragraph states that "d’une loi conditionnelle" which supports the second fact.
+Part in the paragraph: "d’une loi conditionnelle"
+
+3.[OK] - The paragraph states that "d’une loi a priori" which supports the third fact.
+Part in the paragraph: "et d’une loi a priori."
+
+[EXTRA] = 0<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>3. Qu'est-ce que la constante de renormalisation Z(x) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4o)</i></h3>
+        
+          <span class="facts">1.</span> La constante de renormalisation Z(x) est définie par une intégrale.<br/>
+        
+          <span class="facts">2.</span> L'intégrale est Z(x) = ∫Θ f(x|θ)π(θ)dθ.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          La constante de renormalisation Z(x) est définie par l'intégrale Z(x) = ∫Θ f(x|θ)π(θ)dθ.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 1.00 -
+            Ok: 2 [1, 2] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 0 - 
+            Human : 1.00 -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "La constante de renormalisation Z(x) est définie par une intégrale" which supports the first fact. 
+Part in the paragraph: "La constante de renormalisation Z(x) est définie par une intégrale"
+
+2.[OK] - The paragraph states that "L'intégrale est Z(x) = ∫Θ f(x|θ)π(θ)dθ" which supports the second fact.
+Part in the paragraph: "l'intégrale Z(x) = ∫Θ f(x|θ)π(θ)dθ."
+
+[EXTRA] = 0<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>4. Qu'est-ce que la vraisemblance L(θ,σ2;x1,...,xn) ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4o)</i></h3>
+        
+          <span class="facts">1.</span> La vraisemblance est proportionnelle à σ⁻ⁿ.<br/>
+        
+          <span class="facts">2.</span> La vraisemblance inclut un terme exponentiel.<br/>
+        
+          <span class="facts">3.</span> Le terme exponentiel est exp(-1/2σ²(s²ₙ + n(¯x - θ)²)).<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          La vraisemblance vaut L(θ,σ2;x1,...,xn)∝σ−nexp(−1/2σ2(s2n+n(¯x−θ)2)).<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 1.00 -
+            Ok: 3 [1, 2, 3] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 0 - 
+            Human : 1.00 -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "La vraisemblance est proportionnelle à σ⁻ⁿ" which supports the first fact. 
+Part in the paragraph: "La vraisemblance vaut L(θ,σ2;x1,...,xn)∝σ−n"
+
+2.[OK] - The paragraph states that "La vraisemblance inclut un terme exponentiel" which supports the second fact.
+Part in the paragraph: "exp(−1/2σ2(s2n+n(¯x−θ)2))"
+
+3.[OK] - The paragraph states that "Le terme exponentiel est exp(-1/2σ²(s²ₙ + n(¯x - θ)²))" which supports the third fact.
+Part in the paragraph: "exp(−1/2σ2(s2n+n(¯x−θ)2))"
+
+[EXTRA] = 0<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>5. Qu'est-ce qu'un paramètre de position ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4o)</i></h3>
+        
+          <span class="facts">1.</span> Un paramètre de position est un paramètre θ.<br/>
+        
+          <span class="facts">2.</span> La famille de lois {f(.|θ)}θ∈Rd est invariante par translation.<br/>
+        
+          <span class="facts">3.</span> f(.|θ) = f(.−θ).<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Un paramètre de position est un paramètre θ pour lequel la famille de lois {f(.|θ)}θ∈Rd est invariante par translation, c’est-à-dire que f(.|θ) = f(.−θ).<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 1.00 -
+            Ok: 3 [1, 2, 3] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 0 - 
+            Human : 1.00 -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "Un paramètre de position est un paramètre θ" which supports the first fact. 
+Part in the paragraph: "Un paramètre de position est un paramètre θ"
+
+2.[OK] - The paragraph states that "La famille de lois {f(.|θ)}θ∈Rd est invariante par translation" which supports the second fact.
+Part in the paragraph: "la famille de lois {f(.|θ)}θ∈Rd est invariante par translation"
+
+3.[OK] - The paragraph states that "f(.|θ) = f(.−θ)" which supports the third fact.
+Part in the paragraph: "c’est-à-dire que f(.|θ) = f(.−θ)"
+
+[EXTRA] = 0<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>6. Qui sont les auteurs du document ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4o)</i></h3>
+        
+          <span class="facts">1.</span> Yann Traonmilin.<br/>
+        
+          <span class="facts">2.</span> Adrien Richou.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Yann Traonmilin et Adrien Richou.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 1.00 -
+            Ok: 2 [1, 2] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 0 - 
+            Human : 1.00 -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "Yann Traonmilin" which supports the first fact. 
+Part in the paragraph: "Yann Traonmilin"
+
+2.[OK] - The paragraph states that "Adrien Richou" which supports the second fact.
+Part in the paragraph: "Adrien Richou"
+
+[EXTRA] = 0<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>7. Qu'est-ce que la loi a priori dans le paradigme bayésien ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4o)</i></h3>
+        
+          <span class="facts">1.</span> La loi a priori est une information sur le paramètre inconnu θ.<br/>
+        
+          <span class="facts">2.</span> Elle prend la forme d'une loi sur l'espace des paramètres Θ.<br/>
+        
+          <span class="facts">3.</span> Elle est notée π.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          La loi a priori est une information sur le paramètre inconnu θ, prenant la forme d'une loi sur l'espace des paramètres Θ notée π.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 1.00 -
+            Ok: 3 [1, 2, 3] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 0 - 
+            Human : 1.00 -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "La loi a priori est une information sur le paramètre inconnu θ" which supports the first fact. 
+Part in the paragraph: "La loi a priori est une information sur le paramètre inconnu θ"
+
+2.[OK] - The paragraph states that "Elle prend la forme d'une loi sur l'espace des paramètres Θ" which supports the second fact.
+Part in the paragraph: "prenant la forme d'une loi sur l'espace des paramètres Θ"
+
+3.[OK] - The paragraph states that "Elle est notée π" which supports the third fact.
+Part in the paragraph: "notée π."
+
+[EXTRA] = 0<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>8. Quelles lois classiques forment des familles exponentielles ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4o)</i></h3>
+        
+          <span class="facts">1.</span> Loi de Bernoulli<br/>
+        
+          <span class="facts">2.</span> Loi de Poisson<br/>
+        
+          <span class="facts">3.</span> Loi binomiale (avec n fixé)<br/>
+        
+          <span class="facts">4.</span> Loi exponentielle<br/>
+        
+          <span class="facts">5.</span> Loi normale<br/>
+        
+          <span class="facts">6.</span> Loi gamma<br/>
+        
+          <span class="facts">7.</span> Loi beta<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          Les lois de Bernoulli, Poisson, binomiale (avec n fixé), exponentielle, χ2, normale, gamma, beta, ...<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.96 -
+            Ok: 7 [1, 2, 3, 4, 5, 6, 7] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 1 - 
+            Human : 1.00 -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "Loi de Bernoulli" which supports the first fact. 
+Part in the paragraph: "Les lois de Bernoulli"
+
+2.[OK] - The paragraph states that "Loi de Poisson" which supports the second fact.
+Part in the paragraph: ", Poisson"
+
+3.[OK] - The paragraph states that "Loi binomiale (avec n fixé)" which supports the third fact.
+Part in the paragraph: ", binomiale (avec n fixé)"
+
+4.[OK] - The paragraph states that "Loi exponentielle" which supports the fourth fact.
+Part in the paragraph: ", exponentielle"
+
+5.[OK] - The paragraph states that "Loi normale" which supports the fifth fact.
+Part in the paragraph: ", normale"
+
+6.[OK] - The paragraph states that "Loi gamma" which supports the sixth fact.
+Part in the paragraph: ", gamma"
+
+7.[OK] - The paragraph states that "Loi beta" which supports the seventh fact.
+Part in the paragraph: ", beta"
+
+[EXTRA] = 1 - The paragraph mentions "χ2" which is not included in the facts.<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>9. Qu'est-ce que l'algorithme de Metropolis-Hastings cherche à obtenir ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4o)</i></h3>
+        
+          <span class="facts">1.</span> L'algorithme de Metropolis-Hastings cherche à obtenir une chaîne de Markov.<br/>
+        
+          <span class="facts">2.</span> Cette chaîne de Markov doit admettre g comme mesure invariante.<br/>
+        
+          <span class="facts">3.</span> La chaîne de Markov ne doit pas inclure Z dans le noyau de transition.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          On veut une chaîne de Markov qui admette g comme mesure invariante et telle que Z n'apparaisse pas dans le noyau de transition.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 0.58 -
+            Ok: 2 [2, 3] -
+            Missing: 1 [1] - 
+            Hallus : 0 [] - 
+            Nb extra: 0 - 
+            Human : 1.00 -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[NOT FOUND] - The paragraph does not mention "L'algorithme de Metropolis-Hastings cherche à obtenir une chaîne de Markov" which is the first fact. 
+
+2.[OK] - The paragraph states that "On veut une chaîne de Markov qui admette g comme mesure invariante" which supports the second fact.
+Part in the paragraph: "On veut une chaîne de Markov qui admette g comme mesure invariante"
+
+3.[OK] - The paragraph states that "Z n'apparaisse pas dans le noyau de transition" which supports the third fact.
+Part in the paragraph: "et telle que Z n'apparaisse pas dans le noyau de transition."
+
+[EXTRA] = 0<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+    <!-- Question -->
+    <button type="button" class="collapsible">
+      <h2>10. Pourquoi l'utilisation de modèles hiérarchiques est-elle justifiée ?</h2>
+    </button>
+    <div class="content">
+      <!-- Facts -->
+      
+        <h3>Facts <i>(gpt-4o)</i></h3>
+        
+          <span class="facts">1.</span> Les modèles hiérarchiques introduisent de la dépendance entre les probabilités de survie.<br/>
+        
+          <span class="facts">2.</span> Ils permettent de tirer des informations d'un hôpital pour les appliquer à d'autres hôpitaux.<br/>
+        
+      
+      <!-- Answers -->
+      
+        <h3>Answers</h3>
+        
+          <span class="model_name">gpt-4o-2024-05-13</span> &nbsp;
+          L'utilisation de modèles hiérarchiques est justifiée car elle introduit de la dépendance entre les probabilités de survie et permet de tirer des informations d'un hôpital pour les appliquer à d'autres hôpitaux.<br /><br />
+          <!-- Evals -->
+          
+            <i>Auto : 1.00 -
+            Ok: 2 [1, 2] -
+            Missing: 0 [] - 
+            Hallus : 0 [] - 
+            Nb extra: 0 - 
+            Human : 1.00 -
+            Eval made with "gpt-4"</i>&nbsp;&gt;&nbsp;
+            1.[OK] - The paragraph states that "Les modèles hiérarchiques introduisent de la dépendance entre les probabilités de survie" which supports the first fact. 
+Part in the paragraph: "elle introduit de la dépendance entre les probabilités de survie"
+
+2.[OK] - The paragraph states that "Ils permettent de tirer des informations d'un hôpital pour les appliquer à d'autres hôpitaux" which supports the second fact.
+Part in the paragraph: "permet de tirer des informations d'un hôpital pour les appliquer à d'autres hôpitaux."
+
+[EXTRA] = 0<br/><br/>
+          
+        
+      
+      <!-- Chunks -->
+      
+        <h3>Chunks</h3>
+        <table>
+          
+        </table>
+      
+    </div>
+  
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function () {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+          content.style.display = "none";
+        } else {
+          content.style.display = "block";
+        }
+      });
+    }
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].nextElementSibling.style.display = "block"
+    }
+  </script>
+</body>
+
+</html>

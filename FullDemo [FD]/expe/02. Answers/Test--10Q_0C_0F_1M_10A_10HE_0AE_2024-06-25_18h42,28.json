@@ -1,0 +1,535 @@
+{
+  "meta": {},
+  "items": [
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {
+          "Node id": "baf5f65b-287e-4dfe-aec2-0a22b6d5c012",
+          "display_name": "StatBayesiennes.pdf",
+          "page_number": "13",
+          "chunk": "Proposition 4.1. La quantit´ e\nˆIN=1\nNN∑\ni=1h(θi)\nest un estimateur sans biais et fortement consistant de I.\nOn a ´ egalement la normalit´ e asymptotique de l’estimateur.\nProposition 4.2. On noteKla matrice de covariance de h(θ). Alors on a\n√\nN(ˆIN−I)L− →Np(0,K).\nEn pratique on d´ eduit du r´ esultat pr´ ec´ edent des r´ egions de conﬁance. Pour cela on a n´ eanmoins\nbesoin deK, ou au moins une estimation de Ken utilisant le lemme de Slutsky. On rappelle qu’un\nestimateur classique de Kest donn´ e par\nˆKi,j\nN=1\nN−1N∑\nm=1(h(θm)i−h(θ)i\nm)(h(θm)j−h(θ)j\nm).\nRemarque 4.1.\n— La variance, et donc la pr´ ecision de l’approximation, augmente lin´ eairement avec la dimen-\nsion. Pour les m´ ethodes d’int´ egration num´ eriques classiques (reposant sur des grilles), la\npr´ ecision augmente exponentiellement avec la dimension : c’est le ﬂ´ eau de la dimension\n(curse of dimensionality en anglais).\n— Dans le cas des statistique bay´ esienne, on connaˆ ıt gqu’` a une constante de renormalisation\npr` es. On ne peut donc pas appliquer ces m´ ethodes directement.\n4.2 M´ ethodes de Monte Carlo par chaˆ ıne de Markov (MCMC)\nLe but des m´ ethodes MCMC est d’approcher la loi g` a l’aide d’une chaˆ ıne de Markov de mesure\ninvarianteg. On peut ensuite utiliser cela pour faire de l’estimation. En eﬀet, si Z1,...,Zn∼π(θ|x)\nalors on peut prendre comme estimateur de θ\n—ˆθn:=1\nn∑n\ni=1Zi(estimateur de Monte-Carlo),\n— ou ˆθn:= mediane( Z1,...,Zn),\n— ou ˆθn:= argmax hist( Z1,...,Zn).\nL’id´ ee g´ en´ erale des m´ ethodes MCMC est de consid´ erer en chaˆ ıne de Markov qui produit des\n´ echantillons corr´ el´ es\nθ0→θ1→θ2→...\ntels que pour isuﬃsamment grand, θisuit a peu pr` es la loi g.\n4.2.1 G´ en´ eralit´ es sur les chaˆ ınes de Markov\nOn noteXl’espace d’´ etat. Dans la suite Xest soit ﬁni, soit inﬁni d´ enombrable, soit c’est Rd.\nD´ eﬁnition 4.1. Une chaˆ ıne de Markov (X0,X1,...)avecXi∈X est une suite de variables al´ ea-\ntoires v´ eriﬁant\nf(Xi+1|Xi,...,X 1) =K(Xi+1|Xi)\no` uK:X×X→ R+, appel´ e noyau de Markov ou noyau de transition, v´ eriﬁe : pour tout x∈X,\nx′↦→K(x′|x)est une densit´ e de probabilit´ e (ou loi discr` ete).\n13"
+        },
+        "text": "Qu'est-ce que l'estimateur de Monte-Carlo ?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "Qu'est-ce que l'estimateur de Monte-Carlo ?\nL'estimateur de Monte-Carlo est défini comme ˆθn:=1/n∑n i=1Zi.\n\nPourquoi a-t-on besoin de la matrice de covariance K ?\nOn a besoin de la matrice de covariance K pour déduire des régions de confiance en utilisant le lemme de Slutsky.\n\nComment les méthodes MCMC approchent-elles la loi g ?\nLes méthodes MCMC approchent la loi g à l’aide d’une chaîne de Markov de mesure invariante g.",
+              "prompt": {
+                "meta": {},
+                "user": "Les informations contextuelles sont ci-dessous: \n Proposition 4.1. La quantit´ e\nˆIN=1\nNN∑\ni=1h(θi)\nest un estimateur sans biais et fortement consistant de I.\nOn a ´ egalement la normalit´ e asymptotique de l’estimateur.\nProposition 4.2. On noteKla matrice de covariance de h(θ). Alors on a\n√\nN(ˆIN−I)L− →Np(0,K).\nEn pratique on d´ eduit du r´ esultat pr´ ec´ edent des r´ egions de conﬁance. Pour cela on a n´ eanmoins\nbesoin deK, ou au moins une estimation de Ken utilisant le lemme de Slutsky. On rappelle qu’un\nestimateur classique de Kest donn´ e par\nˆKi,j\nN=1\nN−1N∑\nm=1(h(θm)i−h(θ)i\nm)(h(θm)j−h(θ)j\nm).\nRemarque 4.1.\n— La variance, et donc la pr´ ecision de l’approximation, augmente lin´ eairement avec la dimen-\nsion. Pour les m´ ethodes d’int´ egration num´ eriques classiques (reposant sur des grilles), la\npr´ ecision augmente exponentiellement avec la dimension : c’est le ﬂ´ eau de la dimension\n(curse of dimensionality en anglais).\n— Dans le cas des statistique bay´ esienne, on connaˆ ıt gqu’` a une constante de renormalisation\npr` es. On ne peut donc pas appliquer ces m´ ethodes directement.\n4.2 M´ ethodes de Monte Carlo par chaˆ ıne de Markov (MCMC)\nLe but des m´ ethodes MCMC est d’approcher la loi g` a l’aide d’une chaˆ ıne de Markov de mesure\ninvarianteg. On peut ensuite utiliser cela pour faire de l’estimation. En eﬀet, si Z1,...,Zn∼π(θ|x)\nalors on peut prendre comme estimateur de θ\n—ˆθn:=1\nn∑n\ni=1Zi(estimateur de Monte-Carlo),\n— ou ˆθn:= mediane( Z1,...,Zn),\n— ou ˆθn:= argmax hist( Z1,...,Zn).\nL’id´ ee g´ en´ erale des m´ ethodes MCMC est de consid´ erer en chaˆ ıne de Markov qui produit des\n´ echantillons corr´ el´ es\nθ0→θ1→θ2→...\ntels que pour isuﬃsamment grand, θisuit a peu pr` es la loi g.\n4.2.1 G´ en´ eralit´ es sur les chaˆ ınes de Markov\nOn noteXl’espace d’´ etat. Dans la suite Xest soit ﬁni, soit inﬁni d´ enombrable, soit c’est Rd.\nD´ eﬁnition 4.1. Une chaˆ ıne de Markov (X0,X1,...)avecXi∈X est une suite de variables al´ ea-\ntoires v´ eriﬁant\nf(Xi+1|Xi,...,X 1) =K(Xi+1|Xi)\no` uK:X×X→ R+, appel´ e noyau de Markov ou noyau de transition, v´ eriﬁe : pour tout x∈X,\nx′↦→K(x′|x)est une densit´ e de probabilit´ e (ou loi discr` ete).\n13",
+                "system": "Votre tâche consiste à préparer 3 questions sur le texte dans le contexte avec leur réponse complète. Les questions doivent être variées dans l'ensemble du document. Limitez les questions aux informations contextuelles fournies. Tu dois impérativement donner dans ta réponse les questions et leur réponse en suivant la même structure si dessous(sans explication supplémentaire ou autre) et chaque question et chaque réponse dans une ligne séparée(sans numérotation).\n        Example :\n        Qu'est ce que .... ?\nLa .....\n\n Pourquoi ...... ?\nLe .....\n\nQuand .... ?\nLa .....\n\n",
+                "prompter": "QuestAnsPrompterFR"
+              },
+              "name": "gpt-4o",
+              "full_name": "gpt-4o-2024-05-13",
+              "timestamp": "2024-06-25T18:42:22.870479",
+              "duration": 3.86242,
+              "cost": 0.006425
+            },
+            "meta": {},
+            "text": "L'estimateur de Monte-Carlo est défini comme ˆθn:=1/n∑n i=1Zi.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {
+          "Node id": "57864ccd-15aa-4251-b53c-654e4527a73b",
+          "display_name": "StatBayesiennes.pdf",
+          "page_number": "4",
+          "chunk": "D´ eﬁnition 1.5 (Loi a priori) .Soit(fθ)θ∈Θune famille de densit´ es de probabilit´ e ` a param` etre dans\nΘ. Une loi a priori πest une loi de probabilit´ e (densit´ e de probabilit´ e) sur Θ.\nD´ eﬁnition 1.6. Ainsi la loi jointe des observations de X= (X1,···,Xn)est conditionnelle ` a θet\nest not´ eef(x|θ) =f(x1,···,xn|θ)dans le cas continu et P(X=x|θ) =P(X1=x1,···,Xn=xn|θ)\ndans le cas discret. Dans le cas continu, on s’autorise ` a noter f(X|θ)la densit´ e jointe de la v.a.\nX.\nD´ eﬁnition 1.7 (Mod` ele Bay´ esien) .Unmod` ele Bay´ esien est la donn´ ee, pour une v.a. (ou une\nsuite de v.a.) d’une loi conditionnelle et d’une loi a priori :\nX∼f(X|θ)\nθ∼π(12)\nA partir d’un mod` ele Bay´ esien, on peut calculer une loi a posteriori surθ, cette loi n’est rien\nd’autre que la loi de θconditionnellement aux observations X.\nD´ eﬁnition 1.8 (Loi a posteriori) .On peut s´ eparer les situations en 4 cat´ egories selon que la loi\ndeXest discr` ete ou continue ou que la loi a priori est discr` ete ou continue.\n1. La loi de Xet la loi a priori sont discr` etes.\nC’est le cas des trois exemples de l’introduction.\nDans cettte situation la loi a posteriori est enti` erement d´ eﬁnie par les valeurs\nP(θ=θi|X=x) =P(X=x|θ=θi)P(θ=θi)\nP(X=x)\n=P(X=x|θ=θi)P(θ=θi)∑\nkP(X=x|θ=θk)P(θ=θk).\n2. La loi de Xest discr` ete et la loi de θest continue de densit´ e not´ ee π. Dans ce cas, la loi a\nposteriori est une loi continue (` a densit´ e) et est d´ eﬁnie par :\nπ(θ|X=x) =P(X=x|θ)π(θ)∫\nu∈ΘP(X=x|u)π(u)d(u)(13)\n3. La loi de Xest continue et la loi a priori πsurθest discr` ete. La loi a posteriori est une loi\ndiscr` ete, comme la loi a priori et elle est d´ eﬁnie par les probabilit´ es suivantes :\nP(θ=θi|X) =f(X|θ=θi)P(θ=θi)∑\nkf(X|θ=θk)P(θ=θk)\n4. La loi de Xet la loi a priori πsurθsont continues. Dans ce cas, la loi a posteriori est\ncontinue et sa densit´ e est donn´ ee par Comme dans le cas pr´ ec´ edent on peut exprimer la loi\na posteriori de la mani` ere suivante :\nπ(θ|X) =f(X|θ)π(θ)∫\nu∈Θf(X|u)π(u)du\nCes 4 formulations ne sont que 4 sp´ eciﬁcations d’un mˆ eme ´ egalit´ e que l’on r´ esume souvent sous\nla forme continue/continue.\n4"
+        },
+        "text": "Qu'est-ce qu'un modèle Bayésien ?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "Qu'est-ce qu'une loi a priori ?\nUne loi a priori π est une loi de probabilité (densité de probabilité) sur Θ.\n\nQu'est-ce qu'un modèle Bayésien ?\nUn modèle Bayésien est la donnée, pour une v.a. (ou une suite de v.a.), d’une loi conditionnelle et d’une loi a priori.\n\nComment est définie la loi a posteriori lorsque la loi de X et la loi a priori sont continues ?\nLa loi a posteriori est continue et sa densité est donnée par π(θ|X) = f(X|θ)π(θ) / ∫u∈Θ f(X|u)π(u)du.",
+              "prompt": {
+                "meta": {},
+                "user": "Les informations contextuelles sont ci-dessous: \n D´ eﬁnition 1.5 (Loi a priori) .Soit(fθ)θ∈Θune famille de densit´ es de probabilit´ e ` a param` etre dans\nΘ. Une loi a priori πest une loi de probabilit´ e (densit´ e de probabilit´ e) sur Θ.\nD´ eﬁnition 1.6. Ainsi la loi jointe des observations de X= (X1,···,Xn)est conditionnelle ` a θet\nest not´ eef(x|θ) =f(x1,···,xn|θ)dans le cas continu et P(X=x|θ) =P(X1=x1,···,Xn=xn|θ)\ndans le cas discret. Dans le cas continu, on s’autorise ` a noter f(X|θ)la densit´ e jointe de la v.a.\nX.\nD´ eﬁnition 1.7 (Mod` ele Bay´ esien) .Unmod` ele Bay´ esien est la donn´ ee, pour une v.a. (ou une\nsuite de v.a.) d’une loi conditionnelle et d’une loi a priori :\nX∼f(X|θ)\nθ∼π(12)\nA partir d’un mod` ele Bay´ esien, on peut calculer une loi a posteriori surθ, cette loi n’est rien\nd’autre que la loi de θconditionnellement aux observations X.\nD´ eﬁnition 1.8 (Loi a posteriori) .On peut s´ eparer les situations en 4 cat´ egories selon que la loi\ndeXest discr` ete ou continue ou que la loi a priori est discr` ete ou continue.\n1. La loi de Xet la loi a priori sont discr` etes.\nC’est le cas des trois exemples de l’introduction.\nDans cettte situation la loi a posteriori est enti` erement d´ eﬁnie par les valeurs\nP(θ=θi|X=x) =P(X=x|θ=θi)P(θ=θi)\nP(X=x)\n=P(X=x|θ=θi)P(θ=θi)∑\nkP(X=x|θ=θk)P(θ=θk).\n2. La loi de Xest discr` ete et la loi de θest continue de densit´ e not´ ee π. Dans ce cas, la loi a\nposteriori est une loi continue (` a densit´ e) et est d´ eﬁnie par :\nπ(θ|X=x) =P(X=x|θ)π(θ)∫\nu∈ΘP(X=x|u)π(u)d(u)(13)\n3. La loi de Xest continue et la loi a priori πsurθest discr` ete. La loi a posteriori est une loi\ndiscr` ete, comme la loi a priori et elle est d´ eﬁnie par les probabilit´ es suivantes :\nP(θ=θi|X) =f(X|θ=θi)P(θ=θi)∑\nkf(X|θ=θk)P(θ=θk)\n4. La loi de Xet la loi a priori πsurθsont continues. Dans ce cas, la loi a posteriori est\ncontinue et sa densit´ e est donn´ ee par Comme dans le cas pr´ ec´ edent on peut exprimer la loi\na posteriori de la mani` ere suivante :\nπ(θ|X) =f(X|θ)π(θ)∫\nu∈Θf(X|u)π(u)du\nCes 4 formulations ne sont que 4 sp´ eciﬁcations d’un mˆ eme ´ egalit´ e que l’on r´ esume souvent sous\nla forme continue/continue.\n4",
+                "system": "Votre tâche consiste à préparer 3 questions sur le texte dans le contexte avec leur réponse complète. Les questions doivent être variées dans l'ensemble du document. Limitez les questions aux informations contextuelles fournies. Tu dois impérativement donner dans ta réponse les questions et leur réponse en suivant la même structure si dessous(sans explication supplémentaire ou autre) et chaque question et chaque réponse dans une ligne séparée(sans numérotation).\n        Example :\n        Qu'est ce que .... ?\nLa .....\n\n Pourquoi ...... ?\nLe .....\n\nQuand .... ?\nLa .....\n\n",
+                "prompter": "QuestAnsPrompterFR"
+              },
+              "name": "gpt-4o",
+              "full_name": "gpt-4o-2024-05-13",
+              "timestamp": "2024-06-25T18:42:22.878445",
+              "duration": 5.494227,
+              "cost": 0.006975
+            },
+            "meta": {},
+            "text": "Un modèle Bayésien est la donnée, pour une v.a. (ou une suite de v.a.), d’une loi conditionnelle et d’une loi a priori.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {
+          "Node id": "48ddd3a9-019c-41b2-bf14-f3f454f64984",
+          "display_name": "StatBayesiennes.pdf",
+          "page_number": "12",
+          "chunk": "— Au cours du 19` eme si` ecle et du 20` eme si` ecle les m´ ethodes fr´ equentistes supplantent large-\nment les m´ ethodes bay´ esiennes.\n— Depuis le d´ ebut des ann´ ees 1980, on note un retour tr` es important de la recherche et des\napplications des m´ ethodes bay´ esiennes.\nOn peut se demander pourquoi il a fallu attendre si tard pour que la statistique bay´ esienne revienne\nau premier plan. La raison est simple : la statistique bay´ esienne n´ ecessite souvent des calculs poten-\ntiellement lourds ou infaisable lorsque l’on sort des exemples simples, il a donc fallu attendre que\ndes m´ ethodes de r´ esolution num´ erique soient suﬃsamment performantes pour permettre d’obtenir\ndes approximations num´ eriques en des temps raisonnables.\nNous allons pr´ eciser tout cela. Dans toute la suite on note El’espace des observations et Θ\nl’espace des param` etres, un sous-ensemble de Rp. On rappelle les notations suivantes :\n— mod` ele f(x|θ)\n— loi a prioriπ(θ)\n— loi a posteriori π(θ|x)∝f(x|θ)π(θ).\nEn particulier on a\nπ(θ|x) =f(x|θ)π(θ)\nZ(x)\navec la constante de renormalisation\nZ(x) =∫\nΘf(x|θ)π(θ)dθ.\nEn pratique, le calcul de cette int´ egrale est potentiellement probl´ ematique, surtout si Θ est de\ndimension grande. Ce probl` eme de calcul d’int´ egrale apparaˆ ıt ´ egalement ailleurs.\n— Inf´ erence : la moyenne a posteriori est donn´ ee par\nE[θ|x] =∫\nΘθπ(θ|x)dθ.\n— R´ egion de conﬁance :\nP(θ∈S|x) =∫\nSπ(θ|x)dθ.\n— Densit´ es a posteriori marginales\nπ(θ1|x) =∫\n...∫\nπ(θ1,...,θn|x)dθ2...dθn.\nL’utilisation de m´ ethodes de Monte-Carlo pour approximer num´ eriquement ces int´ egrales a permis\nde sortir du cadre simple des lois conjugu´ ees et d’´ elargir consid´ erablement le spectre d’application\ndes m´ ethodes bay´ esiennes.\n4.1 M´ ethodes de Monte Carlo\nDe mani` ere g´ en´ erale on cherche ` a approcher la quantit´ e (suppos´ ee bien d´ eﬁnie)\nI=E[h(θ)] =∫\nΘh(θ)g(θ)dθ\nlorsque l’on connaˆ ıt gla densit´ e de θ. On suppose dans un premier temps que l’on sait ´ echantillonner\nselong. On noteθ1,...,θNun ´ echantillon i.i.d. de cette loi.\n12"
+        },
+        "text": "Qu'est-ce que la constante de renormalisation Z(x) ?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "Pourquoi la statistique bayésienne a-t-elle mis du temps à revenir au premier plan ?\nLa statistique bayésienne nécessite souvent des calculs potentiellement lourds ou infaisables, il a donc fallu attendre que des méthodes de résolution numérique soient suffisamment performantes.\n\nQu'est-ce que la constante de renormalisation Z(x) ?\nLa constante de renormalisation Z(x) est définie par l'intégrale Z(x) = ∫Θ f(x|θ)π(θ)dθ.\n\nDepuis quand observe-t-on un retour important des méthodes bayésiennes ?\nDepuis le début des années 1980, on note un retour très important de la recherche et des applications des méthodes bayésiennes.",
+              "prompt": {
+                "meta": {},
+                "user": "Les informations contextuelles sont ci-dessous: \n — Au cours du 19` eme si` ecle et du 20` eme si` ecle les m´ ethodes fr´ equentistes supplantent large-\nment les m´ ethodes bay´ esiennes.\n— Depuis le d´ ebut des ann´ ees 1980, on note un retour tr` es important de la recherche et des\napplications des m´ ethodes bay´ esiennes.\nOn peut se demander pourquoi il a fallu attendre si tard pour que la statistique bay´ esienne revienne\nau premier plan. La raison est simple : la statistique bay´ esienne n´ ecessite souvent des calculs poten-\ntiellement lourds ou infaisable lorsque l’on sort des exemples simples, il a donc fallu attendre que\ndes m´ ethodes de r´ esolution num´ erique soient suﬃsamment performantes pour permettre d’obtenir\ndes approximations num´ eriques en des temps raisonnables.\nNous allons pr´ eciser tout cela. Dans toute la suite on note El’espace des observations et Θ\nl’espace des param` etres, un sous-ensemble de Rp. On rappelle les notations suivantes :\n— mod` ele f(x|θ)\n— loi a prioriπ(θ)\n— loi a posteriori π(θ|x)∝f(x|θ)π(θ).\nEn particulier on a\nπ(θ|x) =f(x|θ)π(θ)\nZ(x)\navec la constante de renormalisation\nZ(x) =∫\nΘf(x|θ)π(θ)dθ.\nEn pratique, le calcul de cette int´ egrale est potentiellement probl´ ematique, surtout si Θ est de\ndimension grande. Ce probl` eme de calcul d’int´ egrale apparaˆ ıt ´ egalement ailleurs.\n— Inf´ erence : la moyenne a posteriori est donn´ ee par\nE[θ|x] =∫\nΘθπ(θ|x)dθ.\n— R´ egion de conﬁance :\nP(θ∈S|x) =∫\nSπ(θ|x)dθ.\n— Densit´ es a posteriori marginales\nπ(θ1|x) =∫\n...∫\nπ(θ1,...,θn|x)dθ2...dθn.\nL’utilisation de m´ ethodes de Monte-Carlo pour approximer num´ eriquement ces int´ egrales a permis\nde sortir du cadre simple des lois conjugu´ ees et d’´ elargir consid´ erablement le spectre d’application\ndes m´ ethodes bay´ esiennes.\n4.1 M´ ethodes de Monte Carlo\nDe mani` ere g´ en´ erale on cherche ` a approcher la quantit´ e (suppos´ ee bien d´ eﬁnie)\nI=E[h(θ)] =∫\nΘh(θ)g(θ)dθ\nlorsque l’on connaˆ ıt gla densit´ e de θ. On suppose dans un premier temps que l’on sait ´ echantillonner\nselong. On noteθ1,...,θNun ´ echantillon i.i.d. de cette loi.\n12",
+                "system": "Votre tâche consiste à préparer 3 questions sur le texte dans le contexte avec leur réponse complète. Les questions doivent être variées dans l'ensemble du document. Limitez les questions aux informations contextuelles fournies. Tu dois impérativement donner dans ta réponse les questions et leur réponse en suivant la même structure si dessous(sans explication supplémentaire ou autre) et chaque question et chaque réponse dans une ligne séparée(sans numérotation).\n        Example :\n        Qu'est ce que .... ?\nLa .....\n\n Pourquoi ...... ?\nLe .....\n\nQuand .... ?\nLa .....\n\n",
+                "prompter": "QuestAnsPrompterFR"
+              },
+              "name": "gpt-4o",
+              "full_name": "gpt-4o-2024-05-13",
+              "timestamp": "2024-06-25T18:42:22.917057",
+              "duration": 4.823316,
+              "cost": 0.006255
+            },
+            "meta": {},
+            "text": "La constante de renormalisation Z(x) est définie par l'intégrale Z(x) = ∫Θ f(x|θ)π(θ)dθ.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {
+          "Node id": "7805e77d-6439-4491-8c2c-6085bd5790fb",
+          "display_name": "StatBayesiennes.pdf",
+          "page_number": "10",
+          "chunk": "2.4.1 Un premier a priori\nOn se place en dimension 1 et on consid` ere un ´ echantillon X1,...,Xni.i.d. de loiN(θ,σ2). On\nnote\n¯xn=1\nnn∑\ni=1xi, s2\nn=n∑\ni=1(xi−¯xn)2.\nLa vraisemblance vaut\nL(θ,σ2;x1,...,xn)∝σ−nexp(\n−1\n2σ2(s2\nn+n(¯x−θ)2))\n.\nEn supposant θetσind´ ependants et en appliquant le principe d’invariance on peut prendre l’ a\npriori non informatif π(θ,σ) =1\nσ. C’est ´ egalement l’ a priori de Jeﬀreys. On trouve alors\nπ(x|θ,σ2)∝σ−1exp(\n−n\nσ2(¯xn−θ)2)\n(σ−2)n\n2exp(\n−s2\nn\n2σ2)\n.\nOn a donc la loi a posteriori suivante :\nProposition 2.3.\nπ(θ|σ,x)∼N(¯xn,σ2\nn)\nπ(σ2|x)∼IG(n−1\n2,s2\nn\n2)\no` u la loiIG(α,β)est la loi inverse gamma de densit´ e\nβα\nΓ(α)xα+1e−β/xχ]0,+∞[(x).\nCe premier r´ esultat est partiellement int´ eressant car nous n’obtenons pas une loi conjugu´ ee.\n2.4.2 Loi a priori conjugu´ ee\nPour obtenir une loi a priori conjugu´ ee et au vue du r´ esultat pr´ ec´ edent, on va introduire une\nd´ ependance entre θetσ2. On consid` ere la loi a priori suivante :\nπ(θ,σ2) =π1(θ|σ2)π2(σ2)\no` u\nπ1(θ|σ2)∼N(\nθ0,σ2\nn0)\nπ2(σ2)∼IG(ν\n2,s2\n0\n2)\n.\nNotons que l’on a 4 hyperparam` etres θ0,n0,νets2\n0. On trouve alors la loi a posteriori suivante :\nπ(θ,σ2|x)∝σ−n−ν−3exp(\n−1\n2σ2(s2\n1+n1(θ−θ1)2))\n10"
+        },
+        "text": "Qu'est-ce que la vraisemblance L(θ,σ2;x1,...,xn) ?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "Qu'est-ce que la vraisemblance L(θ,σ2;x1,...,xn) ?\nLa vraisemblance vaut L(θ,σ2;x1,...,xn)∝σ−nexp(−1/2σ2(s2n+n(¯x−θ)2)).\n\nQuelle est la loi a posteriori de π(θ|σ,x) ?\nLa loi a posteriori de π(θ|σ,x) est π(θ|σ,x)∼N(¯xn,σ2/n).\n\nQuels sont les hyperparamètres dans la loi a priori conjuguée ?\nLes hyperparamètres dans la loi a priori conjuguée sont θ0, n0, ν et s2 0.",
+              "prompt": {
+                "meta": {},
+                "user": "Les informations contextuelles sont ci-dessous: \n 2.4.1 Un premier a priori\nOn se place en dimension 1 et on consid` ere un ´ echantillon X1,...,Xni.i.d. de loiN(θ,σ2). On\nnote\n¯xn=1\nnn∑\ni=1xi, s2\nn=n∑\ni=1(xi−¯xn)2.\nLa vraisemblance vaut\nL(θ,σ2;x1,...,xn)∝σ−nexp(\n−1\n2σ2(s2\nn+n(¯x−θ)2))\n.\nEn supposant θetσind´ ependants et en appliquant le principe d’invariance on peut prendre l’ a\npriori non informatif π(θ,σ) =1\nσ. C’est ´ egalement l’ a priori de Jeﬀreys. On trouve alors\nπ(x|θ,σ2)∝σ−1exp(\n−n\nσ2(¯xn−θ)2)\n(σ−2)n\n2exp(\n−s2\nn\n2σ2)\n.\nOn a donc la loi a posteriori suivante :\nProposition 2.3.\nπ(θ|σ,x)∼N(¯xn,σ2\nn)\nπ(σ2|x)∼IG(n−1\n2,s2\nn\n2)\no` u la loiIG(α,β)est la loi inverse gamma de densit´ e\nβα\nΓ(α)xα+1e−β/xχ]0,+∞[(x).\nCe premier r´ esultat est partiellement int´ eressant car nous n’obtenons pas une loi conjugu´ ee.\n2.4.2 Loi a priori conjugu´ ee\nPour obtenir une loi a priori conjugu´ ee et au vue du r´ esultat pr´ ec´ edent, on va introduire une\nd´ ependance entre θetσ2. On consid` ere la loi a priori suivante :\nπ(θ,σ2) =π1(θ|σ2)π2(σ2)\no` u\nπ1(θ|σ2)∼N(\nθ0,σ2\nn0)\nπ2(σ2)∼IG(ν\n2,s2\n0\n2)\n.\nNotons que l’on a 4 hyperparam` etres θ0,n0,νets2\n0. On trouve alors la loi a posteriori suivante :\nπ(θ,σ2|x)∝σ−n−ν−3exp(\n−1\n2σ2(s2\n1+n1(θ−θ1)2))\n10",
+                "system": "Votre tâche consiste à préparer 3 questions sur le texte dans le contexte avec leur réponse complète. Les questions doivent être variées dans l'ensemble du document. Limitez les questions aux informations contextuelles fournies. Tu dois impérativement donner dans ta réponse les questions et leur réponse en suivant la même structure si dessous(sans explication supplémentaire ou autre) et chaque question et chaque réponse dans une ligne séparée(sans numérotation).\n        Example :\n        Qu'est ce que .... ?\nLa .....\n\n Pourquoi ...... ?\nLe .....\n\nQuand .... ?\nLa .....\n\n",
+                "prompter": "QuestAnsPrompterFR"
+              },
+              "name": "gpt-4o",
+              "full_name": "gpt-4o-2024-05-13",
+              "timestamp": "2024-06-25T18:42:22.919741",
+              "duration": 5.706729,
+              "cost": 0.00587
+            },
+            "meta": {},
+            "text": "La vraisemblance vaut L(θ,σ2;x1,...,xn)∝σ−nexp(−1/2σ2(s2n+n(¯x−θ)2)).",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {
+          "Node id": "62b84768-85b7-4e9c-bbeb-c7fc768c16eb",
+          "display_name": "StatBayesiennes.pdf",
+          "page_number": "8",
+          "chunk": "2.3 Loi a priori non informative\nDans le cas o` u on dispose que de peu d’informations sur θ, on peut choisir des loi a priori dites\npeu ou non informatives. On souhaite que l’ a priori intervienne de fa¸ con minimale dans la loi a\nposteriori , i.e. que les donn´ ees parlent d’elles mˆ eme.\n2.3.1 Lois invariantes\n— Soitfune densit´ e sur Rd, la famille de lois {f(.|θ)}θ∈Rdavecf(.|θ) =f(.−θ) est invariante\npar translation : en eﬀet, si X∼f(x|θ) alorsX+θ0∼f(x|θ+θ0). On dit dans ce cas que\nθest un param` etre de position . Comme{f(.|θ)}θ∈Rd={f(.|θ+θ0)}θ∈Rd, il est naturel de\ndemander ` a la loi a prioriπd’ˆ etre invariante par translation, c’est ` a dire qu’elle satisfasse\nπ(θ) =π(θ+θ0) pour tous θ0∈Θ. On trouve alors que πest constante, c’est-` a-dire la loi\n(´ eventuellement impropre) uniforme sur Θ.\n— Si la famille de lois est param´ etr´ ee par un param` etre d’´ echelle, c’est ` a dire que l’on a f(x|σ) =\n1\nσf(x\nσ) pourσ∈R+∗etfune densit´ e sur Rd, alors elle est invariante par changement\nd’´ echelle : Si X∼f(x|σ), alorsαY∼f(x|σα) avecα > 0. On dit dans ce cas que σest\nun param` etre d’´ echelle . Comme{f(.|σ)}σ∈R+∗={f(.|σα)}σ∈R+∗, il est naturel de demander\n` a la loi a prioriπd’ˆ etre invariante par changement d’´ echelle, c’est-` a-dire qu’elle satisfasse\nπ(σ) =απ(ασ) pour tous α > 0. Ceci implique que π(σ) =c/σo` ucest une constante.\nDans ce cas la mesure invariante n’est plus constante.\nCes approches invariantes sont parfois d’un int´ erˆ et limit´ e pour plusieurs raisons :\n— possibilit´ e d’avoir plusieurs structures d’invariance,\n— possibilit´ e de ne pas avoir de structure d’invariance,\n— parfois artiﬁciel, sans int´ erˆ et pratique.\n2.3.2 Loi a priori de Jeﬀreys\nIntuitivement, si l’on ne veut pas d’un a priori informatif, on pourrait penser que la meilleure\nstrat´ egie est de prendre la loi uniforme sur Θ.\nExemple : On s’int´ eresse ` a la probabilit´ e de naissance d’une ﬁlle not´ ee θ∈[0,1]. On peut\nprendre la loi a priori uniforme sur [0 ,1].\nCette approche soul` eve tout de mˆ eme un probl` eme tr` es important : la notion de non-information\nd´ epend de la param´ etrisation du probl` eme ! Par exemple, si θa pour loi a prioriU([0,1]) et si\nφ= log(θ\n1−θ)\nest une reparam´ etrisation du mod` ele, alors l’ a priori surφa pour densit´ e π(φ) =\ne−φ\n(1+e−φ)2qui semble beaucoup plus informatif... On voit ainsi qu’une bonne notion de loi a priori\nnon-informative est une loi invariante par reparam´ etrisation.\nLa loi a priori de Jeﬀreys est fond´ ee sur l’information de Fisher.\na) Cas unidimensionnel.\nOn rappelle la d´ eﬁnition de l’information de Fischer :\nI(θ) =E[⏐⏐⏐⏐∂\n∂θlogf(X|θ)⏐⏐⏐⏐2]\nqui, sous certaines conditions de r´ egularit´ e, peut se r´ e´ ecrire\nI(θ) =−E[∂2\n∂θ2logf(X|θ)]\n.\n8"
+        },
+        "text": "Qu'est-ce qu'un paramètre de position ?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "Qu'est-ce qu'une loi a priori non informative ?\nUne loi a priori non informative est choisie lorsque l'on dispose de peu d’informations sur θ et on souhaite que l’a priori intervienne de façon minimale dans la loi a posteriori.\n\nQu'est-ce qu'un paramètre de position ?\nUn paramètre de position est un paramètre θ pour lequel la famille de lois {f(.|θ)}θ∈Rd est invariante par translation, c’est-à-dire que f(.|θ) = f(.−θ).\n\nQuelle est la définition de l'information de Fisher en cas unidimensionnel ?\nL'information de Fisher en cas unidimensionnel est définie par I(θ) = E[|∂/∂θ log f(X|θ)|²] et peut se réécrire sous certaines conditions de régularité comme I(θ) = -E[∂²/∂θ² log f(X|θ)].",
+              "prompt": {
+                "meta": {},
+                "user": "Les informations contextuelles sont ci-dessous: \n 2.3 Loi a priori non informative\nDans le cas o` u on dispose que de peu d’informations sur θ, on peut choisir des loi a priori dites\npeu ou non informatives. On souhaite que l’ a priori intervienne de fa¸ con minimale dans la loi a\nposteriori , i.e. que les donn´ ees parlent d’elles mˆ eme.\n2.3.1 Lois invariantes\n— Soitfune densit´ e sur Rd, la famille de lois {f(.|θ)}θ∈Rdavecf(.|θ) =f(.−θ) est invariante\npar translation : en eﬀet, si X∼f(x|θ) alorsX+θ0∼f(x|θ+θ0). On dit dans ce cas que\nθest un param` etre de position . Comme{f(.|θ)}θ∈Rd={f(.|θ+θ0)}θ∈Rd, il est naturel de\ndemander ` a la loi a prioriπd’ˆ etre invariante par translation, c’est ` a dire qu’elle satisfasse\nπ(θ) =π(θ+θ0) pour tous θ0∈Θ. On trouve alors que πest constante, c’est-` a-dire la loi\n(´ eventuellement impropre) uniforme sur Θ.\n— Si la famille de lois est param´ etr´ ee par un param` etre d’´ echelle, c’est ` a dire que l’on a f(x|σ) =\n1\nσf(x\nσ) pourσ∈R+∗etfune densit´ e sur Rd, alors elle est invariante par changement\nd’´ echelle : Si X∼f(x|σ), alorsαY∼f(x|σα) avecα > 0. On dit dans ce cas que σest\nun param` etre d’´ echelle . Comme{f(.|σ)}σ∈R+∗={f(.|σα)}σ∈R+∗, il est naturel de demander\n` a la loi a prioriπd’ˆ etre invariante par changement d’´ echelle, c’est-` a-dire qu’elle satisfasse\nπ(σ) =απ(ασ) pour tous α > 0. Ceci implique que π(σ) =c/σo` ucest une constante.\nDans ce cas la mesure invariante n’est plus constante.\nCes approches invariantes sont parfois d’un int´ erˆ et limit´ e pour plusieurs raisons :\n— possibilit´ e d’avoir plusieurs structures d’invariance,\n— possibilit´ e de ne pas avoir de structure d’invariance,\n— parfois artiﬁciel, sans int´ erˆ et pratique.\n2.3.2 Loi a priori de Jeﬀreys\nIntuitivement, si l’on ne veut pas d’un a priori informatif, on pourrait penser que la meilleure\nstrat´ egie est de prendre la loi uniforme sur Θ.\nExemple : On s’int´ eresse ` a la probabilit´ e de naissance d’une ﬁlle not´ ee θ∈[0,1]. On peut\nprendre la loi a priori uniforme sur [0 ,1].\nCette approche soul` eve tout de mˆ eme un probl` eme tr` es important : la notion de non-information\nd´ epend de la param´ etrisation du probl` eme ! Par exemple, si θa pour loi a prioriU([0,1]) et si\nφ= log(θ\n1−θ)\nest une reparam´ etrisation du mod` ele, alors l’ a priori surφa pour densit´ e π(φ) =\ne−φ\n(1+e−φ)2qui semble beaucoup plus informatif... On voit ainsi qu’une bonne notion de loi a priori\nnon-informative est une loi invariante par reparam´ etrisation.\nLa loi a priori de Jeﬀreys est fond´ ee sur l’information de Fisher.\na) Cas unidimensionnel.\nOn rappelle la d´ eﬁnition de l’information de Fischer :\nI(θ) =E[⏐⏐⏐⏐∂\n∂θlogf(X|θ)⏐⏐⏐⏐2]\nqui, sous certaines conditions de r´ egularit´ e, peut se r´ e´ ecrire\nI(θ) =−E[∂2\n∂θ2logf(X|θ)]\n.\n8",
+                "system": "Votre tâche consiste à préparer 3 questions sur le texte dans le contexte avec leur réponse complète. Les questions doivent être variées dans l'ensemble du document. Limitez les questions aux informations contextuelles fournies. Tu dois impérativement donner dans ta réponse les questions et leur réponse en suivant la même structure si dessous(sans explication supplémentaire ou autre) et chaque question et chaque réponse dans une ligne séparée(sans numérotation).\n        Example :\n        Qu'est ce que .... ?\nLa .....\n\n Pourquoi ...... ?\nLe .....\n\nQuand .... ?\nLa .....\n\n",
+                "prompter": "QuestAnsPrompterFR"
+              },
+              "name": "gpt-4o",
+              "full_name": "gpt-4o-2024-05-13",
+              "timestamp": "2024-06-25T18:42:22.936109",
+              "duration": 4.90162,
+              "cost": 0.008475
+            },
+            "meta": {},
+            "text": "Un paramètre de position est un paramètre θ pour lequel la famille de lois {f(.|θ)}θ∈Rd est invariante par translation, c’est-à-dire que f(.|θ) = f(.−θ).",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {
+          "Node id": "119d97a1-e627-4c70-8a8a-62e21bf16da5",
+          "display_name": "StatBayesiennes.pdf",
+          "page_number": "1",
+          "chunk": "Introduction aux Statistiques Bay ´ esiennes\nYann Traonmilin - Adrien Richou\n(Bas´ ees dur les notes de cours de Charles Dossal et de J´ er´ emie Bigot)\nCe document est susceptible d’ˆ etre mis ` a jour au cours de l’UE\n2018\nIntroduction\nConsid´ erons quatre probl` emes d’inf´ erence statistique.\n1. Une machine ` a sous disposant d’un bouton donne 1EUR avec une probabilit´ e θet 0 EUR\nsinon. On cherche ` a estimer cette probabilit´ e.\n2. Pour une ´ etude de march´ e, on cherche ` a estimer la moyenne du prix de vente d’un produit.\n3. Un informateur nous pr´ eviens que 30% des machines ` a sous ont une probabilit´ e θ1de donner\n1EUR, le reste a une probabilit´ e θ2. On cherche ` a savoir ` a quelle type appartient cette\nmachine.\n4. Une soci´ et´ e de conseil nous propose de faire l’´ etude du prix de vente. Pour un produit, on\nfait une ´ etude parall` ele pour ´ etudier si l’information qu’elle propose est ﬁable.\nDans chacun de ces exemples, on cherche ` a estimer ` a partir d’observations un param` etre d´ e-\ncrivant la distribution de probabilit´ e. On remarque que dans les exemples 3 et 4, on dispose d’une\ninformation suppl´ ementaire sur ce param` etre. Ce cours est destin´ e ` a donner un cadre pr´ ecis pour\nl’utilisation de cette information a priori dans un probl` eme d’inf´ erence.\n1 Introduction aux principes de l’inf´ erence bay´ esienne.\n1.1 Rappels de probabilit´ es\nD´ eﬁnition 1.1 (Probabilit´ e conditionnelle) .SoitAetBdeux ´ ev´ enements tels que P(B)̸= 0,\nalors\nP(A|B) :=P(A∩B)\nP(B)(1)\nTh´ eor` eme 1.1 (Probabilit´ es totales) .SoitAetBdeux ´ ev´ enements tels que P(B)̸= 0, alors\nP(B) =P(B|A)P(A) +P(B|¯A)P(¯A) (2)\nDem.\nP(B) =P(B∩A) +P(B∩¯A) =P(B|A)P(A) +P(B|¯A)P(¯A) (3)\n1"
+        },
+        "text": "Qui sont les auteurs du document ?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "Qui sont les auteurs du document ?\nYann Traonmilin et Adrien Richou.\n\nQuel est l'objectif principal du cours mentionné dans le document ?\nDonner un cadre précis pour l'utilisation de l'information a priori dans un problème d'inférence.\n\nQuelle est la définition de la probabilité conditionnelle selon le document ?\nP(A|B) := P(A∩B) / P(B).",
+              "prompt": {
+                "meta": {},
+                "user": "Les informations contextuelles sont ci-dessous: \n Introduction aux Statistiques Bay ´ esiennes\nYann Traonmilin - Adrien Richou\n(Bas´ ees dur les notes de cours de Charles Dossal et de J´ er´ emie Bigot)\nCe document est susceptible d’ˆ etre mis ` a jour au cours de l’UE\n2018\nIntroduction\nConsid´ erons quatre probl` emes d’inf´ erence statistique.\n1. Une machine ` a sous disposant d’un bouton donne 1EUR avec une probabilit´ e θet 0 EUR\nsinon. On cherche ` a estimer cette probabilit´ e.\n2. Pour une ´ etude de march´ e, on cherche ` a estimer la moyenne du prix de vente d’un produit.\n3. Un informateur nous pr´ eviens que 30% des machines ` a sous ont une probabilit´ e θ1de donner\n1EUR, le reste a une probabilit´ e θ2. On cherche ` a savoir ` a quelle type appartient cette\nmachine.\n4. Une soci´ et´ e de conseil nous propose de faire l’´ etude du prix de vente. Pour un produit, on\nfait une ´ etude parall` ele pour ´ etudier si l’information qu’elle propose est ﬁable.\nDans chacun de ces exemples, on cherche ` a estimer ` a partir d’observations un param` etre d´ e-\ncrivant la distribution de probabilit´ e. On remarque que dans les exemples 3 et 4, on dispose d’une\ninformation suppl´ ementaire sur ce param` etre. Ce cours est destin´ e ` a donner un cadre pr´ ecis pour\nl’utilisation de cette information a priori dans un probl` eme d’inf´ erence.\n1 Introduction aux principes de l’inf´ erence bay´ esienne.\n1.1 Rappels de probabilit´ es\nD´ eﬁnition 1.1 (Probabilit´ e conditionnelle) .SoitAetBdeux ´ ev´ enements tels que P(B)̸= 0,\nalors\nP(A|B) :=P(A∩B)\nP(B)(1)\nTh´ eor` eme 1.1 (Probabilit´ es totales) .SoitAetBdeux ´ ev´ enements tels que P(B)̸= 0, alors\nP(B) =P(B|A)P(A) +P(B|¯A)P(¯A) (2)\nDem.\nP(B) =P(B∩A) +P(B∩¯A) =P(B|A)P(A) +P(B|¯A)P(¯A) (3)\n1",
+                "system": "Votre tâche consiste à préparer 3 questions sur le texte dans le contexte avec leur réponse complète. Les questions doivent être variées dans l'ensemble du document. Limitez les questions aux informations contextuelles fournies. Tu dois impérativement donner dans ta réponse les questions et leur réponse en suivant la même structure si dessous(sans explication supplémentaire ou autre) et chaque question et chaque réponse dans une ligne séparée(sans numérotation).\n        Example :\n        Qu'est ce que .... ?\nLa .....\n\n Pourquoi ...... ?\nLe .....\n\nQuand .... ?\nLa .....\n\n",
+                "prompter": "QuestAnsPrompterFR"
+              },
+              "name": "gpt-4o",
+              "full_name": "gpt-4o-2024-05-13",
+              "timestamp": "2024-06-25T18:42:22.938709",
+              "duration": 3.765218,
+              "cost": 0.004785
+            },
+            "meta": {},
+            "text": "Yann Traonmilin et Adrien Richou.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {
+          "Node id": "e588138c-57c2-417d-a42f-d1f0724f8540",
+          "display_name": "StatBayesiennes.pdf",
+          "page_number": "3",
+          "chunk": "Exemples :\n1. On consid` ere nvariables al´ eatoires ( Xi)i⩽niid suivant une loi gausienne N(θ,σ2) o` uθ∈R\netσ2est suppos´ e ﬁx´ e et connu. On note gla densit´ e de la loi jointe :\ng(x) =fθ(x1,···,xn) =n∏\ni=11√\n2πσe−1\n2σ2(xi−θ)2=L(θ,x 1,···,xn).\nCette loi jointe vue comme une fonction L(θ,x 1,···,xn) desxiet du param` etre θest la\nfonction de vraisemblance.\n2. On consid` ere nv.a. i.i.d. (X1,X2,···,Xn) suivant une loi de Bernoulli de param` etre θ,B(θ),\nθ∈[0,1].\nL(θ,x 1,x2,···,xn) =n∏\ni=1P(Xi=xi|θ) =θs(1−θ)n−s\no` us=∑n\ni=1xi.\nUne large gamme de m´ ethodes d’estimation repose sur la technique du maximum de vraisem-\nblance\nˆθ= arg max\nθ∈ΘL(θ,x). (9)\nDans ces deux exemples, on a\nˆθ=1\nnn∑\ni=1xi.\nDem. 1. On prend le log de L, ce qui revient ` a calculer\nˆθ= arg min\nθ∈[0,1]∑\ni=1,n(xi−θ)2= arg min\nθ∈[0,1]G(θ). (10)\nOn cherche ˆθtel queG′(ˆθ) = 0, ce qui donne∑\ni=1,nˆθ−xi= 0 et ˆθ=1\nn∑\ni=1,nxi\n2. On prend le log de L, ce qui revient ` a calculer\nˆθ= arg max\nθ∈Rslog(θ) + (n−s) log(1−θ) = arg max\nθ∈RG(θ) (11)\nOn cherche ˆθtel queG′(ˆθ) = 0, ce qui donnes\nˆθ−n−s\n1−ˆθ= 0 et ˆθ=s\nn\n1.3 Le paradigme bays´ esien.\nOn dispose d’une information a priori sur le param` etre inconnu θ. Cette information prend la\nforme d’une loi sur l’espace des param` etres Θ not´ ee πqui s’appelle la loi a priori. Le param` etre\nθdevient une variable al´ eatoire et on note θ∼π. Ainsi la notion de probabilit´ e ou densit´ e de\nprobabilit´ e param´ etr´ e par θn’a plus vraiment de sens. Les notions de l’approche fr´ equentiste\nsont remplac´ ees par des notions de probabilit´ es, d’ind´ ependance et de densit´ es de probabilit´ e\nconditionnelles ` a θ(Lorsque l’on se place d’un un cadre uniquement bay´ esien, on se permettra\nde ne pas mentionner ce caract` ere conditionnel).\n3"
+        },
+        "text": "Qu'est-ce que la loi a priori dans le paradigme bayésien ?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "Qu'est-ce que la fonction de vraisemblance ?\nLa fonction de vraisemblance est la loi jointe vue comme une fonction des variables aléatoires et du paramètre θ.\n\nQuelle est la méthode d'estimation mentionnée dans le texte ?\nLa méthode d'estimation mentionnée est la technique du maximum de vraisemblance.\n\nQu'est-ce que la loi a priori dans le paradigme bayésien ?\nLa loi a priori est une information sur le paramètre inconnu θ, prenant la forme d'une loi sur l'espace des paramètres Θ notée π.",
+              "prompt": {
+                "meta": {},
+                "user": "Les informations contextuelles sont ci-dessous: \n Exemples :\n1. On consid` ere nvariables al´ eatoires ( Xi)i⩽niid suivant une loi gausienne N(θ,σ2) o` uθ∈R\netσ2est suppos´ e ﬁx´ e et connu. On note gla densit´ e de la loi jointe :\ng(x) =fθ(x1,···,xn) =n∏\ni=11√\n2πσe−1\n2σ2(xi−θ)2=L(θ,x 1,···,xn).\nCette loi jointe vue comme une fonction L(θ,x 1,···,xn) desxiet du param` etre θest la\nfonction de vraisemblance.\n2. On consid` ere nv.a. i.i.d. (X1,X2,···,Xn) suivant une loi de Bernoulli de param` etre θ,B(θ),\nθ∈[0,1].\nL(θ,x 1,x2,···,xn) =n∏\ni=1P(Xi=xi|θ) =θs(1−θ)n−s\no` us=∑n\ni=1xi.\nUne large gamme de m´ ethodes d’estimation repose sur la technique du maximum de vraisem-\nblance\nˆθ= arg max\nθ∈ΘL(θ,x). (9)\nDans ces deux exemples, on a\nˆθ=1\nnn∑\ni=1xi.\nDem. 1. On prend le log de L, ce qui revient ` a calculer\nˆθ= arg min\nθ∈[0,1]∑\ni=1,n(xi−θ)2= arg min\nθ∈[0,1]G(θ). (10)\nOn cherche ˆθtel queG′(ˆθ) = 0, ce qui donne∑\ni=1,nˆθ−xi= 0 et ˆθ=1\nn∑\ni=1,nxi\n2. On prend le log de L, ce qui revient ` a calculer\nˆθ= arg max\nθ∈Rslog(θ) + (n−s) log(1−θ) = arg max\nθ∈RG(θ) (11)\nOn cherche ˆθtel queG′(ˆθ) = 0, ce qui donnes\nˆθ−n−s\n1−ˆθ= 0 et ˆθ=s\nn\n1.3 Le paradigme bays´ esien.\nOn dispose d’une information a priori sur le param` etre inconnu θ. Cette information prend la\nforme d’une loi sur l’espace des param` etres Θ not´ ee πqui s’appelle la loi a priori. Le param` etre\nθdevient une variable al´ eatoire et on note θ∼π. Ainsi la notion de probabilit´ e ou densit´ e de\nprobabilit´ e param´ etr´ e par θn’a plus vraiment de sens. Les notions de l’approche fr´ equentiste\nsont remplac´ ees par des notions de probabilit´ es, d’ind´ ependance et de densit´ es de probabilit´ e\nconditionnelles ` a θ(Lorsque l’on se place d’un un cadre uniquement bay´ esien, on se permettra\nde ne pas mentionner ce caract` ere conditionnel).\n3",
+                "system": "Votre tâche consiste à préparer 3 questions sur le texte dans le contexte avec leur réponse complète. Les questions doivent être variées dans l'ensemble du document. Limitez les questions aux informations contextuelles fournies. Tu dois impérativement donner dans ta réponse les questions et leur réponse en suivant la même structure si dessous(sans explication supplémentaire ou autre) et chaque question et chaque réponse dans une ligne séparée(sans numérotation).\n        Example :\n        Qu'est ce que .... ?\nLa .....\n\n Pourquoi ...... ?\nLe .....\n\nQuand .... ?\nLa .....\n\n",
+                "prompter": "QuestAnsPrompterFR"
+              },
+              "name": "gpt-4o",
+              "full_name": "gpt-4o-2024-05-13",
+              "timestamp": "2024-06-25T18:42:22.941623",
+              "duration": 3.838939,
+              "cost": 0.00614
+            },
+            "meta": {},
+            "text": "La loi a priori est une information sur le paramètre inconnu θ, prenant la forme d'une loi sur l'espace des paramètres Θ notée π.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {
+          "Node id": "c1613727-39fa-4057-b7d9-c45b522abd87",
+          "display_name": "StatBayesiennes.pdf",
+          "page_number": "7",
+          "chunk": "La vraisemblance compl` ete d’une s´ equence ( x1,...,xn) s’´ ecrit\nf(x|θ) = exp(\n⟨η(θ),n∑\ni=1T(xi)⟩−nB(θ))(n∏\ni=1h(xi))\n.\nTn(x) =∑n\ni=1T(xi) est appel´ e vecteur de statistiques exhaustives pourθ. Cette statistique contient\ntoute l’information de l’´ echantillon sur les param` etres de la loi de probabilit´ e. Nous renvoyons le\nlecteur int´ eress´ e par la notion de statistique exhaustive ` a un cours avanc´ e de statistique classique.\nIl est habituel d’´ ecrire le mod` ele exponentiel sous la forme dite canonique en le reparam´ etrant\n(on pose ˜θi=ηi(θ)) ce qui donne\nf(x|θ) = exp(\n⟨˜θ,T(x)⟩−A(˜θ))\nh(x).\nLa plupart des lois classiques forment des familles exponentielles. On peut citer par exemple\nles lois de Bernoulli, Poisson, binomiale (avec nﬁx´ e), exponentielle, χ2, normale, gamma, beta, ...\nA contrario, les lois dont le support d´ epend de θne forment jamais des familles exponentielles.\nProposition 2.1. Soitf(x,θ)appartenant ` a une famille exponentielle canonique. Alors une fa-\nmille de loi a priori conjugu´ ee pour f(x,θ)est donn´ ee par :\nπ(θ) =K(µ,λ) exp(⟨θ,µ⟩−λA(θ))\no` u(µ,λ)sont des param` etres ( µde dimension setλde dimension 1) et K(µ,λ)est une constante\nde renormalisation. Dans ce cas la loi a posteriori est de la forme :\nπ(θ|x)∝exp(⟨(µ+T(x)),θ⟩−(λ+ 1)A(θ)).\nDem.\nπ(θ|x)∝f(x|θ)π(θ)\n∝exp (⟨θ,T(x)⟩−A(θ)) exp(⟨θ,µ⟩−λA(θ))\n∝exp(⟨(µ+T(x)),θ⟩−(λ+ 1)A(θ)).\nExemple : exercice 4 du TD2.\nRemarque 2.1. La proposition 2.1 est formelle, elle peut aboutir ` a des lois π(θ)non int´ egrables !\nDans la suite on pourra ´ eventuellement consid´ erer des lois πtelles que∫\nθπ(θ)dθ= +∞\nOn parle alors de distribution impropre .\nImportant : la distribution a posteriori doit ˆ etre d´ eﬁnie i.e.∫\nθf(x|θ)π(θ)dθ< +∞.\nExemples :\n— SiXsuit une loi normale N(θ,1) et queπest la mesure de Lebesgue sur Ralors\n∫\nθ∈Rf(x|θ)dθ=∫\nθ∈R1√\n2πe−(x−θ)2\n2dθ= 1\net ainsi la loi a posteriori estπ(θ|X) =N(X,1).\n— Exercice 5 du TD2.\n7"
+        },
+        "text": "Quelles lois classiques forment des familles exponentielles ?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "Qu'est-ce que Tn(x) ?\nTn(x) =∑n i=1T(xi) est appelé vecteur de statistiques exhaustives pour θ.\n\nQuelles lois classiques forment des familles exponentielles ?\nLes lois de Bernoulli, Poisson, binomiale (avec n fixé), exponentielle, χ2, normale, gamma, beta, ...\n\nQuelle est la forme de la loi a posteriori selon la proposition 2.1 ?\nπ(θ|x)∝exp(⟨(µ+T(x)),θ⟩−(λ+ 1)A(θ)).",
+              "prompt": {
+                "meta": {},
+                "user": "Les informations contextuelles sont ci-dessous: \n La vraisemblance compl` ete d’une s´ equence ( x1,...,xn) s’´ ecrit\nf(x|θ) = exp(\n⟨η(θ),n∑\ni=1T(xi)⟩−nB(θ))(n∏\ni=1h(xi))\n.\nTn(x) =∑n\ni=1T(xi) est appel´ e vecteur de statistiques exhaustives pourθ. Cette statistique contient\ntoute l’information de l’´ echantillon sur les param` etres de la loi de probabilit´ e. Nous renvoyons le\nlecteur int´ eress´ e par la notion de statistique exhaustive ` a un cours avanc´ e de statistique classique.\nIl est habituel d’´ ecrire le mod` ele exponentiel sous la forme dite canonique en le reparam´ etrant\n(on pose ˜θi=ηi(θ)) ce qui donne\nf(x|θ) = exp(\n⟨˜θ,T(x)⟩−A(˜θ))\nh(x).\nLa plupart des lois classiques forment des familles exponentielles. On peut citer par exemple\nles lois de Bernoulli, Poisson, binomiale (avec nﬁx´ e), exponentielle, χ2, normale, gamma, beta, ...\nA contrario, les lois dont le support d´ epend de θne forment jamais des familles exponentielles.\nProposition 2.1. Soitf(x,θ)appartenant ` a une famille exponentielle canonique. Alors une fa-\nmille de loi a priori conjugu´ ee pour f(x,θ)est donn´ ee par :\nπ(θ) =K(µ,λ) exp(⟨θ,µ⟩−λA(θ))\no` u(µ,λ)sont des param` etres ( µde dimension setλde dimension 1) et K(µ,λ)est une constante\nde renormalisation. Dans ce cas la loi a posteriori est de la forme :\nπ(θ|x)∝exp(⟨(µ+T(x)),θ⟩−(λ+ 1)A(θ)).\nDem.\nπ(θ|x)∝f(x|θ)π(θ)\n∝exp (⟨θ,T(x)⟩−A(θ)) exp(⟨θ,µ⟩−λA(θ))\n∝exp(⟨(µ+T(x)),θ⟩−(λ+ 1)A(θ)).\nExemple : exercice 4 du TD2.\nRemarque 2.1. La proposition 2.1 est formelle, elle peut aboutir ` a des lois π(θ)non int´ egrables !\nDans la suite on pourra ´ eventuellement consid´ erer des lois πtelles que∫\nθπ(θ)dθ= +∞\nOn parle alors de distribution impropre .\nImportant : la distribution a posteriori doit ˆ etre d´ eﬁnie i.e.∫\nθf(x|θ)π(θ)dθ< +∞.\nExemples :\n— SiXsuit une loi normale N(θ,1) et queπest la mesure de Lebesgue sur Ralors\n∫\nθ∈Rf(x|θ)dθ=∫\nθ∈R1√\n2πe−(x−θ)2\n2dθ= 1\net ainsi la loi a posteriori estπ(θ|X) =N(X,1).\n— Exercice 5 du TD2.\n7",
+                "system": "Votre tâche consiste à préparer 3 questions sur le texte dans le contexte avec leur réponse complète. Les questions doivent être variées dans l'ensemble du document. Limitez les questions aux informations contextuelles fournies. Tu dois impérativement donner dans ta réponse les questions et leur réponse en suivant la même structure si dessous(sans explication supplémentaire ou autre) et chaque question et chaque réponse dans une ligne séparée(sans numérotation).\n        Example :\n        Qu'est ce que .... ?\nLa .....\n\n Pourquoi ...... ?\nLe .....\n\nQuand .... ?\nLa .....\n\n",
+                "prompter": "QuestAnsPrompterFR"
+              },
+              "name": "gpt-4o",
+              "full_name": "gpt-4o-2024-05-13",
+              "timestamp": "2024-06-25T18:42:22.961328",
+              "duration": 3.762827,
+              "cost": 0.006575000000000001
+            },
+            "meta": {},
+            "text": "Les lois de Bernoulli, Poisson, binomiale (avec n fixé), exponentielle, χ2, normale, gamma, beta, ...",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {
+          "Node id": "3decf875-15c4-4bef-a1ba-61cb73ca26bd",
+          "display_name": "StatBayesiennes.pdf",
+          "page_number": "15",
+          "chunk": "Remarque 4.2.\n—1\nN∑N\ni=1h(Xi)est un estimateur fortement consistant de∫\nXh(x)g(x)dxmais pas n´ ecessai-\nrement sans biais.\n— LesXisont corr´ el´ ees, contrairement au cadre classique d’application de la loi forte des\ngrands nombres.\n— Les premi` eres v.a. Xipeuvent avoir une loi tr` es ´ eloign´ ee de la loi g, il peut donc ˆ etre\nint´ eressant de ne pas en tenir compte pour am´ eliorer l’approximation :\n1\nN−N0+ 1N∑\ni=N0h(Xi)→∫\nXh(x)g(x)dx p.s.\n4.2.2 Algorithme de Metropolis-Hastings\nOn revient au sujet d’´ etude initial. On suppose que gs’´ ecritg(θ) =γ(θ)/ZavecZune constante\nde renormalisation. On a ´ egalement X= Θ. On veut une chaˆ ıne de Markov qui admette gcomme\nmesure invariante et telle que Zn’apparaisse pas dans le noyau de transition. Pour cela on se donne\nun noyau de Markov q(θ′|θ) et on consid` ere l’algorithme de Metropolis-Hastings.\nAlgorithme 4.1.\n— On d´ eﬁnie une valeur initiale θ0,\n— Pouri= 1,...,N\n1. On propose une nouvelle valeur θ∗∼q(.|θi−1)(loi de proposition)\n2. On calcule le taux d’acceptation\nα(θ∗,θi−1) = min(\n1,g(θ∗)q(θi−1|θ∗)\ng(θi−1)q(θ∗|θi−1))\n3. Avec probabilit´ e α, on prendθi=θ∗et avec probabilit´ e 1−α θi=θi−1.\nProposition 4.7. La mesuregv´ eriﬁe la condition d’´ equilibre pour le noyau de Metropolis-Hastings.\nPreuve. On va montrer que le noyau Kde la chaˆ ıne de Markov g´ en´ er´ ee par l’algorithme de\nMetropolis-Hastings v´ eriﬁe la condition d’´ equilibre (15). On commence par calculer le noyau\nK(θ′|θ). remarquons que c’est une loi qui n’est ni a densit´ e ( θ′=θavec une probabilit´ e po-\ntentiellement non nulle) ni discr` ete. On a\nK(θ′|θ) =q(θ′|θ)α(θ′,θ) +(\n1−∫\nΘq(θ′|θ)α(θ′,θ)dθ′)\nδθ.\nSiθ′=θ, (15) est trivialement v´ eriﬁ´ ee. On suppose donc θ′̸=θ. Alors\ng(θ)K(θ′|θ) =g(θ)q(θ′|θ)α(θ′,θ)\n={\ng(θ)q(θ′|θ) sig(θ′)q(θ|θ′)⩾g(θ)q(θ′|θ)\ng(θ′)q(θ|θ′) sig(θ′)q(θ|θ′)⩽g(θ)q(θ′|θ)\n= inf{g(θ)q(θ′|θ),g(θ′)q(θ|θ′)}.\nDonc par sym´ etrie on a\ng(θ)K(θ′|θ) =g(θ′)K(θ|θ)\nce qui prouve le r´ esultat.\n15"
+        },
+        "text": "Qu'est-ce que l'algorithme de Metropolis-Hastings cherche à obtenir ?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "Qu'est-ce que l'algorithme de Metropolis-Hastings cherche à obtenir ?\nOn veut une chaîne de Markov qui admette g comme mesure invariante et telle que Z n'apparaisse pas dans le noyau de transition.\n\nPourquoi peut-il être intéressant de ne pas tenir compte des premières v.a. Xi ?\nLes premières v.a. Xi peuvent avoir une loi très éloignée de la loi g, il peut donc être intéressant de ne pas en tenir compte pour améliorer l’approximation.\n\nComment est calculé le taux d'acceptation dans l'algorithme de Metropolis-Hastings ?\nLe taux d'acceptation est calculé comme α(θ∗,θi−1) = min(1, g(θ∗)q(θi−1|θ∗) / g(θi−1)q(θ∗|θi−1)).",
+              "prompt": {
+                "meta": {},
+                "user": "Les informations contextuelles sont ci-dessous: \n Remarque 4.2.\n—1\nN∑N\ni=1h(Xi)est un estimateur fortement consistant de∫\nXh(x)g(x)dxmais pas n´ ecessai-\nrement sans biais.\n— LesXisont corr´ el´ ees, contrairement au cadre classique d’application de la loi forte des\ngrands nombres.\n— Les premi` eres v.a. Xipeuvent avoir une loi tr` es ´ eloign´ ee de la loi g, il peut donc ˆ etre\nint´ eressant de ne pas en tenir compte pour am´ eliorer l’approximation :\n1\nN−N0+ 1N∑\ni=N0h(Xi)→∫\nXh(x)g(x)dx p.s.\n4.2.2 Algorithme de Metropolis-Hastings\nOn revient au sujet d’´ etude initial. On suppose que gs’´ ecritg(θ) =γ(θ)/ZavecZune constante\nde renormalisation. On a ´ egalement X= Θ. On veut une chaˆ ıne de Markov qui admette gcomme\nmesure invariante et telle que Zn’apparaisse pas dans le noyau de transition. Pour cela on se donne\nun noyau de Markov q(θ′|θ) et on consid` ere l’algorithme de Metropolis-Hastings.\nAlgorithme 4.1.\n— On d´ eﬁnie une valeur initiale θ0,\n— Pouri= 1,...,N\n1. On propose une nouvelle valeur θ∗∼q(.|θi−1)(loi de proposition)\n2. On calcule le taux d’acceptation\nα(θ∗,θi−1) = min(\n1,g(θ∗)q(θi−1|θ∗)\ng(θi−1)q(θ∗|θi−1))\n3. Avec probabilit´ e α, on prendθi=θ∗et avec probabilit´ e 1−α θi=θi−1.\nProposition 4.7. La mesuregv´ eriﬁe la condition d’´ equilibre pour le noyau de Metropolis-Hastings.\nPreuve. On va montrer que le noyau Kde la chaˆ ıne de Markov g´ en´ er´ ee par l’algorithme de\nMetropolis-Hastings v´ eriﬁe la condition d’´ equilibre (15). On commence par calculer le noyau\nK(θ′|θ). remarquons que c’est une loi qui n’est ni a densit´ e ( θ′=θavec une probabilit´ e po-\ntentiellement non nulle) ni discr` ete. On a\nK(θ′|θ) =q(θ′|θ)α(θ′,θ) +(\n1−∫\nΘq(θ′|θ)α(θ′,θ)dθ′)\nδθ.\nSiθ′=θ, (15) est trivialement v´ eriﬁ´ ee. On suppose donc θ′̸=θ. Alors\ng(θ)K(θ′|θ) =g(θ)q(θ′|θ)α(θ′,θ)\n={\ng(θ)q(θ′|θ) sig(θ′)q(θ|θ′)⩾g(θ)q(θ′|θ)\ng(θ′)q(θ|θ′) sig(θ′)q(θ|θ′)⩽g(θ)q(θ′|θ)\n= inf{g(θ)q(θ′|θ),g(θ′)q(θ|θ′)}.\nDonc par sym´ etrie on a\ng(θ)K(θ′|θ) =g(θ′)K(θ|θ)\nce qui prouve le r´ esultat.\n15",
+                "system": "Votre tâche consiste à préparer 3 questions sur le texte dans le contexte avec leur réponse complète. Les questions doivent être variées dans l'ensemble du document. Limitez les questions aux informations contextuelles fournies. Tu dois impérativement donner dans ta réponse les questions et leur réponse en suivant la même structure si dessous(sans explication supplémentaire ou autre) et chaque question et chaque réponse dans une ligne séparée(sans numérotation).\n        Example :\n        Qu'est ce que .... ?\nLa .....\n\n Pourquoi ...... ?\nLe .....\n\nQuand .... ?\nLa .....\n\n",
+                "prompter": "QuestAnsPrompterFR"
+              },
+              "name": "gpt-4o",
+              "full_name": "gpt-4o-2024-05-13",
+              "timestamp": "2024-06-25T18:42:22.972853",
+              "duration": 4.581281,
+              "cost": 0.007825
+            },
+            "meta": {},
+            "text": "On veut une chaîne de Markov qui admette g comme mesure invariante et telle que Z n'apparaisse pas dans le noyau de transition.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    },
+    {
+      "meta": {},
+      "question": {
+        "llm_answer": null,
+        "meta": {
+          "Node id": "c30c186d-ccbe-44c3-8fa3-aac17c7ada38",
+          "display_name": "StatBayesiennes.pdf",
+          "page_number": "18",
+          "chunk": "Exemple 5.1. On ´ etudie l’eﬃcacit´ e d’un traitement cardiaque.\n— Le patient idans l’hˆ opital ja la probabilit´ e de survie θj.\n— Il est raisonnable de consid´ erer que les θj, qui repr´ esentent un ´ echantillon des probabilit´ es\nde survie, devraient ˆ etre li´ ees entre elles. On suppose donc que les θjsont eux-mˆ eme des\n´ echantillons d’une distribution de population, de param` etre inconnu µ.\n— Grˆ ace ` a l’utilisation de ce mod` ele hi´ erarchique, des observations de patients dans un hˆ opital\njapportent de l’information sur les probabilit´ es de survie dans d’autres hˆ opitaux.\n5.2 Justiﬁcation th´ eorique\nL’utilisation de mod` eles hi´ erarchiques est une mani` ere d’introduire de la d´ ependance entre les\nlesθi. Elle peut ´ egalement se justiﬁer d’un point de vue th´ eorique.\nD´ eﬁnition 5.1. Soient (Xi)i∈N∗des variables al´ eatoires.\nPourn⩾2ﬁx´ e,X1,...,Xnest dit ´ echangeable si (X1,....,Xn)a mˆ eme loi que (Xσ(1),...,Xσ(n))\npour toute permutation σ∈Sn.\n(Xi)i∈N∗est dit ´ echangeable si (X1,...,Xn)sont ´ echangeables pour tout n⩾2.\nRemarque 5.1.\n— Les (Xi)i∈N∗sont ´ echangeables si l’information contenue dans les (Xi)i∈N∗est ind´ ependante\nde l’ordre dans lequel les donn´ ees sont collect´ ees.\n— Si les (Xi)i∈N∗sont ´ echangeables, les variables ont n´ ecessairement mˆ eme loi.\n— Des variables i.i.d. sont ´ echangeables.\n— Soit (X1,...,Xn)un vecteur gaussien de moyenne met de matrice de covariance Σ.(X1,...,Xn)\nest ´ echangeable si et seulement si\n— toutes les composantes de msont ´ egales,\n— tous les ´ el´ ements de la diagonale de Σsont ´ egaux,\n— tous les coeﬃcients non diagonaux de Σsont ´ egaux.\nL’hypoth` ese d’´ echangeabilit´ e a de fortes implications math´ ematiques. Un th´ eor` eme du initia-\nlement ` a De Finetti et g´ en´ eralis´ e par Hewitt et Savage dit que si X1,...,Xnsont des variables\nal´ eatoires r´ eelles ´ echangeables de distribution f. alors il existe une variable latente θ∈Θ de loiπ\ntelle que les X1,...,Xnsont ind´ ependantes conditionnellement ` a θ. On a alors :\nf(y1,....,yn) =∫\nΘn∏\ni=1f(yi|θ)π(θ)dθ.\n— Ce th´ eor` eme justiﬁe l’approche bay´ esienne.\n— Si les param` etres θisont ´ echangeables alors il exister un mod` ele param´ etrique et il doit exis-\nter un a priori sur le param` etre du mod` ele : ce th´ eor` eme justiﬁe donc ´ egalement l’approche\ndes mod` eles hi´ erarchiques.\n—θpeut ˆ etre de dimension ﬁnie ou inﬁnie... Le th´ eor` eme ne donne qu’un r´ esultat d’existence\net d’unicit´ e, il n’est pas constructif.\n5.3 Un cas pratique\nOn consid` ere N´ el` eves du lyc´ ee d’une ville appartenant ` a Mlyc´ ees diﬀ´ erents.\nLe niveau d’un ´ el` eve yi,j,j` eme ´ el` eve du lyc´ ee ipeut ˆ etre mod´ elis´ e par une variable r´ eelle yi,j=\n18"
+        },
+        "text": "Pourquoi l'utilisation de modèles hiérarchiques est-elle justifiée ?"
+      },
+      "facts": {
+        "llm_answer": null,
+        "meta": {},
+        "items": []
+      },
+      "chunks": {
+        "meta": {},
+        "items": []
+      },
+      "answers": {
+        "meta": {},
+        "items": [
+          {
+            "llm_answer": {
+              "meta": {},
+              "text": "Qu'est-ce que l'échangeabilité implique pour les variables aléatoires ?\nL'échangeabilité implique que les variables aléatoires ont la même loi et que l'information contenue dans ces variables est indépendante de l'ordre de collecte des données.\n\nPourquoi l'utilisation de modèles hiérarchiques est-elle justifiée ?\nL'utilisation de modèles hiérarchiques est justifiée car elle introduit de la dépendance entre les probabilités de survie et permet de tirer des informations d'un hôpital pour les appliquer à d'autres hôpitaux.\n\nQuel théorème justifie l'approche bayésienne et les modèles hiérarchiques ?\nLe théorème de De Finetti, généralisé par Hewitt et Savage, justifie l'approche bayésienne et les modèles hiérarchiques en montrant que des variables aléatoires échangeables peuvent être conditionnellement indépendantes par rapport à une variable latente.",
+              "prompt": {
+                "meta": {},
+                "user": "Les informations contextuelles sont ci-dessous: \n Exemple 5.1. On ´ etudie l’eﬃcacit´ e d’un traitement cardiaque.\n— Le patient idans l’hˆ opital ja la probabilit´ e de survie θj.\n— Il est raisonnable de consid´ erer que les θj, qui repr´ esentent un ´ echantillon des probabilit´ es\nde survie, devraient ˆ etre li´ ees entre elles. On suppose donc que les θjsont eux-mˆ eme des\n´ echantillons d’une distribution de population, de param` etre inconnu µ.\n— Grˆ ace ` a l’utilisation de ce mod` ele hi´ erarchique, des observations de patients dans un hˆ opital\njapportent de l’information sur les probabilit´ es de survie dans d’autres hˆ opitaux.\n5.2 Justiﬁcation th´ eorique\nL’utilisation de mod` eles hi´ erarchiques est une mani` ere d’introduire de la d´ ependance entre les\nlesθi. Elle peut ´ egalement se justiﬁer d’un point de vue th´ eorique.\nD´ eﬁnition 5.1. Soient (Xi)i∈N∗des variables al´ eatoires.\nPourn⩾2ﬁx´ e,X1,...,Xnest dit ´ echangeable si (X1,....,Xn)a mˆ eme loi que (Xσ(1),...,Xσ(n))\npour toute permutation σ∈Sn.\n(Xi)i∈N∗est dit ´ echangeable si (X1,...,Xn)sont ´ echangeables pour tout n⩾2.\nRemarque 5.1.\n— Les (Xi)i∈N∗sont ´ echangeables si l’information contenue dans les (Xi)i∈N∗est ind´ ependante\nde l’ordre dans lequel les donn´ ees sont collect´ ees.\n— Si les (Xi)i∈N∗sont ´ echangeables, les variables ont n´ ecessairement mˆ eme loi.\n— Des variables i.i.d. sont ´ echangeables.\n— Soit (X1,...,Xn)un vecteur gaussien de moyenne met de matrice de covariance Σ.(X1,...,Xn)\nest ´ echangeable si et seulement si\n— toutes les composantes de msont ´ egales,\n— tous les ´ el´ ements de la diagonale de Σsont ´ egaux,\n— tous les coeﬃcients non diagonaux de Σsont ´ egaux.\nL’hypoth` ese d’´ echangeabilit´ e a de fortes implications math´ ematiques. Un th´ eor` eme du initia-\nlement ` a De Finetti et g´ en´ eralis´ e par Hewitt et Savage dit que si X1,...,Xnsont des variables\nal´ eatoires r´ eelles ´ echangeables de distribution f. alors il existe une variable latente θ∈Θ de loiπ\ntelle que les X1,...,Xnsont ind´ ependantes conditionnellement ` a θ. On a alors :\nf(y1,....,yn) =∫\nΘn∏\ni=1f(yi|θ)π(θ)dθ.\n— Ce th´ eor` eme justiﬁe l’approche bay´ esienne.\n— Si les param` etres θisont ´ echangeables alors il exister un mod` ele param´ etrique et il doit exis-\nter un a priori sur le param` etre du mod` ele : ce th´ eor` eme justiﬁe donc ´ egalement l’approche\ndes mod` eles hi´ erarchiques.\n—θpeut ˆ etre de dimension ﬁnie ou inﬁnie... Le th´ eor` eme ne donne qu’un r´ esultat d’existence\net d’unicit´ e, il n’est pas constructif.\n5.3 Un cas pratique\nOn consid` ere N´ el` eves du lyc´ ee d’une ville appartenant ` a Mlyc´ ees diﬀ´ erents.\nLe niveau d’un ´ el` eve yi,j,j` eme ´ el` eve du lyc´ ee ipeut ˆ etre mod´ elis´ e par une variable r´ eelle yi,j=\n18",
+                "system": "Votre tâche consiste à préparer 3 questions sur le texte dans le contexte avec leur réponse complète. Les questions doivent être variées dans l'ensemble du document. Limitez les questions aux informations contextuelles fournies. Tu dois impérativement donner dans ta réponse les questions et leur réponse en suivant la même structure si dessous(sans explication supplémentaire ou autre) et chaque question et chaque réponse dans une ligne séparée(sans numérotation).\n        Example :\n        Qu'est ce que .... ?\nLa .....\n\n Pourquoi ...... ?\nLe .....\n\nQuand .... ?\nLa .....\n\n",
+                "prompter": "QuestAnsPrompterFR"
+              },
+              "name": "gpt-4o",
+              "full_name": "gpt-4o-2024-05-13",
+              "timestamp": "2024-06-25T18:42:22.989431",
+              "duration": 4.572075,
+              "cost": 0.00827
+            },
+            "meta": {},
+            "text": "L'utilisation de modèles hiérarchiques est justifiée car elle introduit de la dépendance entre les probabilités de survie et permet de tirer des informations d'un hôpital pour les appliquer à d'autres hôpitaux.",
+            "eval": {
+              "llm_answer": null,
+              "meta": {},
+              "text": "",
+              "human": 1.0,
+              "auto": null
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
