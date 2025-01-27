@@ -16,14 +16,7 @@ pip install -e .
 If you have an error `(A "pyproject.toml" file was found, but editable mode currently requires a setup.py based build.)`, upgrade `pip`.
 
 ## Create your project
-Create a folder where you will create your Ragtime 🎹 projects. In this folder, create a `main.py` file containing:
-```
-PROJECT_NAME:str = "your-project-name"
-
-from ragtime import config
-config.init_project(name=PROJECT_NAME, init_type='copy_base_files')
-```
-Set the `PROJECT_NAME` variable with your project name and run the script.
+Edit `PROJECT_NAME` in the `main.py` file and run it.
 
 This will create a subfolder named according to `PROJECT_NAME` containing:
 - folder `expe`: contains 4 sub-folders containing the data which will be created at each step of your experiments
@@ -34,6 +27,8 @@ This will create a subfolder named according to `PROJECT_NAME` containing:
 - `LICENSE`: MIT by default - don't forget to add you name / company in it
 - `README.md`: your project's doc
 - `.gitignore`
+
+*At this point, don't forget to set `PROJECT_NAME` in the `main.py` in your project folder.*
 
 # Examples
 Several examples are given to illustrate how to use Ragtime 🎹:
