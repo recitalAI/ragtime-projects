@@ -2,7 +2,7 @@ PROJECT_NAME:str = "deepseek"
 
 import ragtime
 from ragtime import expe, generators
-from ragtime.expe import QA, Chunks, Prompt, Expe, Answer, Question, WithLLMAnswer
+from ragtime.expe import QA, Chunks, Prompt, Eval, Expe, Answer, Question, WithLLMAnswer
 import json
 from pathlib import Path
 
@@ -26,7 +26,8 @@ with open(FOLDER_QUESTIONS / "Culture_Validation_set_100Q.json") as f:
 for json_qa in json_all_qa:
     qa:QA = QA()
     qa.question.text = json_qa["question"]
-    qa.answers.append(Answer(text=json_qa["answer"]))
+    answer:Answer = Answer(text=json_qa["answer"], eval=Eval(human=1.0))
+    qa.answers.append(answer)
     expe.append(qa)
 
 expe.save_to_json(FOLDER_ANSWERS / "cultural_qa")
